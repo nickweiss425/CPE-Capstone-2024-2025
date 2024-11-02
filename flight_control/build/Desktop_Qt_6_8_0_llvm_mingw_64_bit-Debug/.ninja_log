@@ -1,0 +1,18 @@
+# ninja log v5
+134	1342	7522318328559443	C:/Users/ManFr/Desktop/OneDrive - Cal Poly/Documents and Notes/Senior/Fall Quarter/CPE 350/CPE-Capstone-2024-2025/flight_control/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Debug/flight_control_autogen/mocs_compilation.cpp	8080edf1bd798d80
+134	1342	7522318328559443	C:/Users/ManFr/Desktop/OneDrive - Cal Poly/Documents and Notes/Senior/Fall Quarter/CPE 350/CPE-Capstone-2024-2025/flight_control/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Debug/flight_control_autogen/timestamp	8080edf1bd798d80
+134	1342	7522318328559443	flight_control_autogen/mocs_compilation.cpp	8080edf1bd798d80
+23	153	7522318621321955	C:/Users/ManFr/Desktop/OneDrive - Cal Poly/Documents and Notes/Senior/Fall Quarter/CPE 350/CPE-Capstone-2024-2025/flight_control/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Debug/CMakeFiles/cmake.verify_globs	9ff9aa0f5ba1bf56
+134	1342	7522318328559443	flight_control_autogen/timestamp	8080edf1bd798d80
+1353	3083	7522318346951875	CMakeFiles/flight_control.dir/flight_control_autogen/mocs_compilation.cpp.obj	6740877721e49567
+1380	3138	7522318347497650	CMakeFiles/flight_control.dir/mainwindow.cpp.obj	923956eab101a3f4
+1377	3124	7522318347367648	CMakeFiles/flight_control.dir/main.cpp.obj	12f378eda6d7957c
+3138	3330	7522318349418239	flight_control.exe	ed6667d6a71ed3e2
+153	1043	7522318630087879	build.ninja	dc18629bf2079261
+20	150	0	C:/Users/ManFr/Desktop/OneDrive - Cal Poly/Documents and Notes/Senior/Fall Quarter/CPE 350/CPE-Capstone-2024-2025/flight_control/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Debug/CMakeFiles/cmake.verify_globs	9ff9aa0f5ba1bf56
+161	389	7522318603399244	flight_control_autogen/timestamp	8080edf1bd798d80
+161	389	7522318603399244	flight_control_autogen/mocs_compilation.cpp	8080edf1bd798d80
+161	389	7522318603399244	C:/Users/ManFr/Desktop/OneDrive - Cal Poly/Documents and Notes/Senior/Fall Quarter/CPE 350/CPE-Capstone-2024-2025/flight_control/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Debug/flight_control_autogen/timestamp	8080edf1bd798d80
+161	389	7522318603399244	C:/Users/ManFr/Desktop/OneDrive - Cal Poly/Documents and Notes/Senior/Fall Quarter/CPE 350/CPE-Capstone-2024-2025/flight_control/build/Desktop_Qt_6_8_0_llvm_mingw_64_bit-Debug/flight_control_autogen/mocs_compilation.cpp	8080edf1bd798d80
+430	2267	7522318653436496	CMakeFiles/flight_control.dir/mainwindow.cpp.obj	923956eab101a3f4
+2267	2475	7522318655509557	flight_control.exe	ed6667d6a71ed3e2
