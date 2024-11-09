@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>map.qml</file>
+        <file>coordinatedisplay.qml</file>
+    </qresource>
+</RCC>
