@@ -18,7 +18,7 @@ class MinimalPublisher : public QObject, public rclcpp::Node {
     		MinimalPublisher();
 
 	signals:
-`  		void coordinatesUpdated(double latitude, double longitude, double altitude);
+      		void coordinatesUpdated(double latitude, double longitude, double altitude);
 
 	private:
     		void timer_callback();
