@@ -52,6 +52,8 @@ class VideoPublisher : public rclcpp::Node
         sensor_msgs::msg::Image::SharedPtr msg = cv_bridge::CvImage(
             std_msgs::msg::Header(), "bgr8", frame).toImageMsg();
 
+        RCLCPP_INFO(this->get_logger(), "Publishing frame");
+
         // Publish the image directly
         publisher_->publish(*msg);
     }
