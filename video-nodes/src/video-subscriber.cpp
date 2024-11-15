@@ -16,6 +16,11 @@ class VideoSubscriber : public rclcpp::Node
         // Create a standard subscriber to subscribe to the "camera/image" topic
         subscription_ = this->create_subscription<sensor_msgs::msg::Image>(
             "camera/image", 10, std::bind(&VideoSubscriber::image_callback, this, std::placeholders::_1));
+
+        // Create opencv window
+        cv::namedWindow("Received Image", cv::WINDOW_NORMAL); 
+        cv::resizeWindow("Received Image", 800, 600);
+
     }
 
   private:
