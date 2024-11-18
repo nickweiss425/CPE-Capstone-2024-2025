@@ -1,7 +1,7 @@
-import QtQuick 6.8
-import QtQuick.Controls 6.8
-import QtLocation 6.8
-import QtPositioning 6.8
+import QtQuick 2.15
+import QtQuick.Window 2.15
+import QtLocation 5.15
+import QtPositioning 5.15
 
 Rectangle {
     width: 800
@@ -11,6 +11,14 @@ Rectangle {
     Plugin {
         id: mapPlugin
         name: "osm"
+        PluginParameter {
+            name: "osm.mapping.providersrepository.disabled"
+            value: "true"
+        }
+        PluginParameter {
+            name: "osm.mapping.providersrepository.address"
+            value: "http://maps-redirect.qt.io/osm/5.15/"
+        }
     }
 
     Map {
@@ -19,7 +27,7 @@ Rectangle {
         plugin: mapPlugin
         center: QtPositioning.coordinate(35.29325218150845, -120.67996453769021)
         zoomLevel: 14
-        property geoCoordinate startCentroid
+        property var startCentroid
 
         PinchHandler {
             id: pinch
