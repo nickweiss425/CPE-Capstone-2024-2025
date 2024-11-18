@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "qvboxlayout": "cpp",
+        "qtabwidget": "cpp",
+        "qpushbutton": "cpp",
+        "qmainwindow": "cpp",
+        "qquickwidget": "cpp",
+        "qmessagebox": "cpp"
+    }
+}
