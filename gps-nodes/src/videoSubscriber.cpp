@@ -13,8 +13,11 @@ void VideoSubscriber::image_callback(const sensor_msgs::msg::Image::SharedPtr ms
         try {
             // Convert the ROS image message to an OpenCV image and then a QImage
             cv::Mat frame = cv_bridge::toCvShare(msg, "bgr8")->image;
-	    QImage image(frame.data, frame.cols, frame.rows, frame.step, QImage::Format_BGR888);
-	    emit imageReceived(image.copy());
+            cv::Mat resizedFrame;
+            cv::resize(frame, resizedFrame, cv::Size(800, 600));
+            
+	        QImage image(resizedFrame.data, resizedFrame.cols, resizedFrame.rows, resizedFrame.step, QImage::Format_BGR888);
+	        emit imageReceived(image.copy());
         } catch (const cv_bridge::Exception& e) {
             RCLCPP_ERROR(this->get_logger(), "Could not convert image: %s", e.what());
         }
