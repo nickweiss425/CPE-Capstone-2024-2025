@@ -28,4 +28,4 @@ class MinimalPublisher : public QObject, public rclcpp::Node {
 		double x_;
 };
 
-#endif
+#endif // PUBLISHER_H

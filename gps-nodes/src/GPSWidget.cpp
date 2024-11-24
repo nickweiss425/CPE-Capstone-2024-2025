@@ -1,6 +1,7 @@
 #include "GPSWidget.h"
 #include "subscriber.h"
 #include "publisher.h"
+#include <QVBoxLayout>
 
 using namespace std::chrono_literals;
 

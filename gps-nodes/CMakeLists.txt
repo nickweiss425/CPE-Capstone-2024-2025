@@ -9,6 +9,8 @@ endif()
 find_package(rclcpp REQUIRED)
 find_package(ament_cmake REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(cv_bridge REQUIRED)
+find_package(OpenCV REQUIRED)
 find_package(Qt5 REQUIRED COMPONENTS Widgets)
 
 # Add the main.cpp file
@@ -19,6 +21,9 @@ set(SOURCES
     src/publisher.cpp
     src/MainWidget.cpp
     src/ROSThread.cpp
+    src/VideoStreamWidget.cpp
+    src/videoSubscriber.cpp
+    src/TabWidget.cpp
 )
 
 # Add the main.h file for moc
@@ -29,6 +34,9 @@ set(HEADERS
     include/publisher.h
     include/MainWidget.h
     include/ROSThread.h
+    include/VideoStreamWidget.h
+    include/videoSubscriber.h
+    include/TabWidget.h
 )
 
 # Run moc on the header file
@@ -38,7 +46,14 @@ qt5_wrap_cpp(MOC_SOURCES ${HEADERS})
 add_executable(${PROJECT_NAME} ${SOURCES} ${MOC_SOURCES})
 #add_executable(talker src/publisher.cpp)
 #add_executable(listener src/subscriber.cpp)
-ament_target_dependencies(${PROJECT_NAME} rclcpp Qt5 sensor_msgs)
+ament_target_dependencies(${PROJECT_NAME}
+       rclcpp
+       sensor_msgs
+       cv_bridge
+       Qt5
+       OpenCV
+)
+
 #ament_target_dependencies(talker rclcpp sensor_msgs)
 #ament_target_dependencies(listener rclcpp sensor_msgs)
 
