@@ -5,4 +5,4 @@
 
 int main(int argc, char *argv[]);
 
-#endif
+#endif // MAIN_H

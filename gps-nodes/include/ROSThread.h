@@ -21,5 +21,5 @@ private:
     std::shared_ptr<rclcpp::Node> node_; // ROS 2 node to spin
 };
 
-#endif
+#endif // ROSTHREAD_H
 

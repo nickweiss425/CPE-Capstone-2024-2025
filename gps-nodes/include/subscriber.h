@@ -20,4 +20,4 @@ private:
     rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr subscription_;
 };
 
-#endif
+#endif // SUBSCRIBER_H
