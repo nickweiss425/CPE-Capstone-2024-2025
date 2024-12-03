@@ -1,18 +1,17 @@
 /********************************************************************************
-** Form generated from reading UI file 'flight_controlvlwsar.ui'
+** Form generated from reading UI file 'flight_controlANhoNd.ui'
 **
 ** Created by: Qt User Interface Compiler version 5.15.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef FLIGHT_CONTROLVLWSAR_H
-#define FLIGHT_CONTROLVLWSAR_H
+#ifndef FLIGHT_CONTROLANHOND_H
+#define FLIGHT_CONTROLANHOND_H
 
 #include <QtCore/QVariant>
 #include <QtQuickWidgets/QQuickWidget>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLineEdit>
@@ -22,6 +21,7 @@
 #include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include "videowidget.hpp"
 
 QT_BEGIN_NAMESPACE
 
@@ -52,7 +52,7 @@ public:
     QQuickWidget *mapView;
     QWidget *tabVideo;
     QVBoxLayout *verticalLayoutVideo;
-    QGraphicsView *videoView;
+    VideoStreamWidget *videoWidget;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -163,11 +163,10 @@ public:
         tabVideo->setObjectName(QString::fromUtf8("tabVideo"));
         verticalLayoutVideo = new QVBoxLayout(tabVideo);
         verticalLayoutVideo->setObjectName(QString::fromUtf8("verticalLayoutVideo"));
-        videoView = new QGraphicsView(tabVideo);
-        videoView->setObjectName(QString::fromUtf8("videoView"));
-        videoView->setMinimumSize(QSize(600, 400));
+        videoWidget = new VideoStreamWidget(tabVideo);
+        videoWidget->setObjectName(QString::fromUtf8("videoWidget"));
 
-        verticalLayoutVideo->addWidget(videoView);
+        verticalLayoutVideo->addWidget(videoWidget);
 
         tabWidget->addTab(tabVideo, QString());
 
@@ -177,7 +176,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -215,4 +214,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // FLIGHT_CONTROLVLWSAR_H
+#endif // FLIGHT_CONTROLANHOND_H

@@ -3,18 +3,20 @@
 
 #include <QMessageBox>
 #include <QQuickWidget>
+#include <QMediaPlayer>
+#include <QVideoWidget>
 
 MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent), ui(new Ui::MainWindow), videoScene(new QGraphicsScene(this)) {
+    : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
 
     // Set up the map scene in the mapView
     ui->mapView->setSource(QUrl::fromLocalFile("../map.qml"));
     ui->mapView->setResizeMode(QQuickWidget::SizeRootObjectToView);
 
-    // Set up the video scene in the videoView
-    ui->videoView->setScene(videoScene);
-    videoScene->addText("Video Placeholder");
+    // Set up the video widget in the videoView
+    ui->videoWidget->setObjectName("videoWidget");
+    
 
     // Set default placeholder text for coordinate boxes
     ui->latitudeBox->setText("0.000000");
