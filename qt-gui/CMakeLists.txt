@@ -9,12 +9,16 @@ endif()
 find_package(rclcpp REQUIRED)
 find_package(ament_cmake REQUIRED)
 find_package(sensor_msgs REQUIRED)
-find_package(Qt5 REQUIRED COMPONENTS Core Quick QuickControls2 Widgets QuickWidgets Location Positioning QmlImportScanner)
+find_package(cv_bridge REQUIRED)
+find_package(Qt5 REQUIRED COMPONENTS Core Quick QuickControls2 Widgets QuickWidgets Location Positioning QmlImportScanner Multimedia MultimediaWidgets)
 
 # Add the main.cpp file
 set(SOURCES
     src/main.cpp
     src/mainwindow.cpp
+    src/videosubscriber.cpp
+    src/videowidget.cpp
+    src/ROSThread.cpp
 )
 
 # Specify the UI file
@@ -28,6 +32,9 @@ qt5_wrap_ui(UI_HEADERS ${UIS})
 # Add the main.h file for moc
 set(HEADERS
     include/mainwindow.hpp
+    include/videosubscriber.hpp
+    include/videowidget.hpp
+    include/ROSThread.h
 )
 
 # Run moc on the header file
@@ -51,6 +58,9 @@ target_link_libraries(${PROJECT_NAME}
     Qt5::QuickWidgets
     Qt5::Location
     Qt5::Positioning
+    Qt5::Multimedia
+    Qt5::MultimediaWidgets
+    cv_bridge::cv_bridge
 )
 
 install(TARGETS

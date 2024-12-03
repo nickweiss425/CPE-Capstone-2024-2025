@@ -5,6 +5,7 @@
         "qpushbutton": "cpp",
         "qmainwindow": "cpp",
         "qquickwidget": "cpp",
-        "qmessagebox": "cpp"
+        "qmessagebox": "cpp",
+        "qvideowidget": "cpp"
     }
 }
