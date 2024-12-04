@@ -1,75 +1,107 @@
 import QtQuick 2.15
-import QtQuick.Window 2.15
+import QtQuick.Controls 2.15
 import QtLocation 5.15
 import QtPositioning 5.15
 
 Rectangle {
+    id: root
+    visible: true
     width: 800
     height: 600
-    visible: true
 
-    Plugin {
-        id: mapPlugin
-        name: "osm"
-        PluginParameter {
-            name: "osm.mapping.providersrepository.disabled"
-            value: "true"
+    property var currentLocation: QtPositioning.coordinate(0, 0)
+
+    // Store markers and path
+    property var markers: []
+    property var pathCoordinates: []
+
+    // Component for the marker
+    Component {
+        id: markerComponent
+        Rectangle {
+            width: 20
+            height: 20
+            radius: 10
+            color: "red"
+            border.color: "black"
         }
-        PluginParameter {
-            name: "osm.mapping.providersrepository.address"
-            value: "http://maps-redirect.qt.io/osm/5.15/"
+    }
+
+    // Component for the path
+    Component {
+        id: pathComponent
+        MapPolyline {
+            line.width: 3
+            line.color: "blue"
+            path: pathCoordinates
         }
     }
 
     Map {
         id: map
         anchors.fill: parent
-        plugin: mapPlugin
-        center: QtPositioning.coordinate(35.29325218150845, -120.67996453769021)
-        zoomLevel: 14
-        property var startCentroid
+        plugin: Plugin {
+            name: "mapboxgl"
+            PluginParameter { 
+                name: "mapbox.access_token"
+                value: "YOUR-API-KEY-HERE" 
+            }
+        }
+        center: currentLocation
+        zoomLevel: 12
 
-        PinchHandler {
-            id: pinch
-            target: null
-            onActiveChanged: if (active) {
-                map.startCentroid = map.toCoordinate(pinch.centroid.position, false)
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                if (mouse.button === Qt.LeftButton) {
+                    var coordinate = map.toCoordinate(Qt.point(mouse.x, mouse.y))
+                    addMarker(coordinate)
+                }
             }
-            onScaleChanged: (delta) => {
-                map.zoomLevel += Math.log2(delta)
-                map.alignCoordinateToPoint(map.startCentroid, pinch.centroid.position)
+        }
+    }
+
+    // Create and maintain the path line
+    Loader {
+        id: pathLoader
+        sourceComponent: pathComponent
+        onLoaded: {
+            if (item) {
+                map.addMapItem(item)
             }
-            onRotationChanged: (delta) => {
-                map.bearing -= delta
-                map.alignCoordinateToPoint(map.startCentroid, pinch.centroid.position)
-            }
-            grabPermissions: PointerHandler.TakeOverForbidden
         }
-        WheelHandler {
-            id: wheel
-            // workaround for QTBUG-87646 / QTBUG-112394 / QTBUG-112432:
-            // Magic Mouse pretends to be a trackpad but doesn't work with PinchHandler
-            // and we don't yet distinguish mice and trackpads on Wayland either
-            acceptedDevices: Qt.platform.pluginName === "cocoa" || Qt.platform.pluginName === "wayland"
-                             ? PointerDevice.Mouse | PointerDevice.TouchPad
-                             : PointerDevice.Mouse
-            rotationScale: 1/120
-            property: "zoomLevel"
+    }
+
+    // Modified addMarker function
+    function addMarker(coordinate) {
+        var marker = Qt.createQmlObject(
+            'import QtLocation 5.15; MapQuickItem { }',
+            map,
+            "dynamicMarker"
+        )
+        
+        var markerItem = markerComponent.createObject(null)
+        
+        marker.coordinate = coordinate
+        marker.anchorPoint = Qt.point(markerItem.width/2, markerItem.height/2)
+        marker.sourceItem = markerItem
+        
+        map.addMapItem(marker)
+        markers.push(marker)
+        
+        // Add coordinate to path
+        pathCoordinates.push(coordinate)
+        // Force update of the polyline
+        pathLoader.item.path = pathCoordinates
+    }
+
+    // Function to clear all markers and path
+    function clearMap() {
+        for (var i = 0; i < markers.length; i++) {
+            map.removeMapItem(markers[i])
         }
-        DragHandler {
-            id: drag
-            target: null
-            onTranslationChanged: (delta) => map.pan(-delta.x, -delta.y)
-        }
-        Shortcut {
-            enabled: map.zoomLevel < map.maximumZoomLevel
-            sequence: StandardKey.ZoomIn
-            onActivated: map.zoomLevel = Math.round(map.zoomLevel + 1)
-        }
-        Shortcut {
-            enabled: map.zoomLevel > map.minimumZoomLevel
-            sequence: StandardKey.ZoomOut
-            onActivated: map.zoomLevel = Math.round(map.zoomLevel - 1)
-        }
+        markers = []
+        pathCoordinates = []
+        pathLoader.item.path = []
     }
 }

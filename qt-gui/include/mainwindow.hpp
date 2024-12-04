@@ -19,15 +19,12 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    QGraphicsScene *videoScene; // Scene for video rendering
     GPSWidget *gpsWidget;       // GPS widget for displaying coordinates
 
     void setupConnections(); // Function to handle signal-slot connections
 
 private slots:
-    void addWaypoint();       // Slot to handle waypoint addition
     void startRecording();    // Slot for "Start Recording" button
     void stopRecording();     // Slot for "Stop Recording" button
     void stopFlight();        // Slot for "Stop Flight" button
-    void updateCoordinates(); // Slot to update drone's coordinates
 };

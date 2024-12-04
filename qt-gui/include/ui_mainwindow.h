@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtQuickWidgets/QQuickWidget>
+#include <QQmlContext>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
@@ -157,7 +158,7 @@ public:
         mapView = new QQuickWidget(tabMap);
         mapView->setObjectName(QString::fromUtf8("mapView"));
         mapView->setResizeMode(QQuickWidget::SizeRootObjectToView);
-        mapView->setSource(QUrl(QString::fromUtf8("")));
+        mapView->setSource(QUrl(QString::fromUtf8("../map.qml")));
 
         gridLayoutMap->addWidget(mapView, 0, 0, 2, 1);
 
