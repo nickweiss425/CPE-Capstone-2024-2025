@@ -10,12 +10,8 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
 
-    // Set up the map scene in the mapView
-    ui->mapView->setSource(QUrl::fromLocalFile("../map.qml"));
-    ui->mapView->setResizeMode(QQuickWidget::SizeRootObjectToView);
-
     // Set up the GPS coordinates display
-    this->gpsWidget = new GPSWidget(ui->longitudeBox, ui->latitudeBox, ui->altitudeBox);
+    gpsWidget = new GPSWidget(ui->longitudeBox, ui->latitudeBox, ui->altitudeBox);
 
     // Set up the video widget in the videoView
     ui->videoWidget->setObjectName("videoWidget");
@@ -40,10 +36,6 @@ void MainWindow::setupConnections() {
     connect(ui->stopFlightButton, &QPushButton::clicked, this, &MainWindow::stopFlight);
 }
 
-void MainWindow::addWaypoint() {
-    
-}
-
 void MainWindow::startRecording() {
     QMessageBox::information(this, "Start Recording", "Recording started.");
 }
@@ -54,8 +46,4 @@ void MainWindow::stopRecording() {
 
 void MainWindow::stopFlight() {
     QMessageBox::warning(this, "Stop Flight", "Flight stopped!");
-}
-
-void MainWindow::updateCoordinates() {
-
 }
