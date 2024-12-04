@@ -19,6 +19,8 @@ set(SOURCES
     src/videosubscriber.cpp
     src/videowidget.cpp
     src/ROSThread.cpp
+    src/gpswidget.cpp
+    src/gpssubscriber.cpp
 )
 
 # Specify the UI file
@@ -35,6 +37,8 @@ set(HEADERS
     include/videosubscriber.hpp
     include/videowidget.hpp
     include/ROSThread.h
+    include/gpswidget.hpp
+    include/gpssubscriber.hpp
 )
 
 # Run moc on the header file
@@ -42,11 +46,7 @@ qt5_wrap_cpp(MOC_SOURCES ${HEADERS})
 
 # Create executables
 add_executable(${PROJECT_NAME} ${SOURCES} ${MOC_SOURCES})
-#add_executable(talker src/publisher.cpp)
-#add_executable(listener src/subscriber.cpp)
 ament_target_dependencies(${PROJECT_NAME} rclcpp Qt5 sensor_msgs)
-#ament_target_dependencies(talker rclcpp sensor_msgs)
-#ament_target_dependencies(listener rclcpp sensor_msgs)
 
 # Include directories
 target_include_directories(${PROJECT_NAME} PRIVATE include)

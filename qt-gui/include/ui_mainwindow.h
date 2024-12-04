@@ -75,11 +75,13 @@ public:
         coordinateLayout->setObjectName(QString::fromUtf8("coordinateLayout"));
         latitudeBox = new QLineEdit(tabMap);
         latitudeBox->setObjectName(QString::fromUtf8("latitudeBox"));
+        latitudeBox->setReadOnly(true);
 
         coordinateLayout->addWidget(latitudeBox);
 
         longitudeBox = new QLineEdit(tabMap);
         longitudeBox->setObjectName(QString::fromUtf8("longitudeBox"));
+        longitudeBox->setReadOnly(true);
 
         coordinateLayout->addWidget(longitudeBox);
 
@@ -90,6 +92,7 @@ public:
         altitudeLayout->setObjectName(QString::fromUtf8("altitudeLayout"));
         altitudeBox = new QLineEdit(tabMap);
         altitudeBox->setObjectName(QString::fromUtf8("altitudeBox"));
+        altitudeBox->setReadOnly(true);
 
         altitudeLayout->addWidget(altitudeBox);
 
@@ -176,7 +179,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(1); // Video tab
 
 
         QMetaObject::connectSlotsByName(MainWindow);

@@ -14,13 +14,16 @@ MainWindow::MainWindow(QWidget *parent)
     ui->mapView->setSource(QUrl::fromLocalFile("../map.qml"));
     ui->mapView->setResizeMode(QQuickWidget::SizeRootObjectToView);
 
+    // Set up the GPS coordinates display
+    this->gpsWidget = new GPSWidget(ui->longitudeBox, ui->latitudeBox, ui->altitudeBox);
+
     // Set up the video widget in the videoView
     ui->videoWidget->setObjectName("videoWidget");
-    
 
     // Set default placeholder text for coordinate boxes
     ui->latitudeBox->setText("0.000000");
     ui->longitudeBox->setText("0.000000");
+    ui->altitudeBox->setText("0.000000");
 
     // Connect buttons to their slots
     setupConnections();
@@ -28,6 +31,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow() {
     delete ui;
+    rclcpp::shutdown();
 }
 
 void MainWindow::setupConnections() {
@@ -53,6 +57,5 @@ void MainWindow::stopFlight() {
 }
 
 void MainWindow::updateCoordinates() {
-    ui->latitudeBox->setText("37.7749");
-    ui->longitudeBox->setText("-122.4194");
+
 }

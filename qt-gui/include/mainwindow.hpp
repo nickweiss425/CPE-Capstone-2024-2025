@@ -2,6 +2,7 @@
 
 #include <QMainWindow>
 #include <QGraphicsScene>
+#include "gpswidget.hpp"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,6 +20,7 @@ public:
 private:
     Ui::MainWindow *ui;
     QGraphicsScene *videoScene; // Scene for video rendering
+    GPSWidget *gpsWidget;       // GPS widget for displaying coordinates
 
     void setupConnections(); // Function to handle signal-slot connections
 
