@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtQuickWidgets/QQuickWidget>
 #include <QQmlContext>
+#include <QQmlError>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
@@ -83,6 +84,7 @@ public:
         longitudeBox = new QLineEdit(tabMap);
         longitudeBox->setObjectName(QString::fromUtf8("longitudeBox"));
         longitudeBox->setReadOnly(true);
+        longitudeBox->setInputMask(QString::fromUtf8("99.999"));
 
         coordinateLayout->addWidget(longitudeBox);
 
@@ -93,7 +95,6 @@ public:
         altitudeLayout->setObjectName(QString::fromUtf8("altitudeLayout"));
         altitudeBox = new QLineEdit(tabMap);
         altitudeBox->setObjectName(QString::fromUtf8("altitudeBox"));
-        altitudeBox->setReadOnly(true);
 
         altitudeLayout->addWidget(altitudeBox);
 
@@ -158,7 +159,7 @@ public:
         mapView = new QQuickWidget(tabMap);
         mapView->setObjectName(QString::fromUtf8("mapView"));
         mapView->setResizeMode(QQuickWidget::SizeRootObjectToView);
-        mapView->setSource(QUrl(QString::fromUtf8("../map.qml")));
+        mapView->setSource(QUrl("qrc:/map.qml"));
 
         gridLayoutMap->addWidget(mapView, 0, 0, 2, 1);
 
@@ -180,7 +181,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(1); // Video tab
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);

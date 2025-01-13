@@ -1,5 +1,5 @@
-import QtQuick 2.15
-import QtQuick.Controls 2.15
+import QtQuick 2.2
+import QtQuick.Controls 2.2
 import QtLocation 5.15
 import QtPositioning 5.15
 
@@ -9,7 +9,7 @@ Rectangle {
     width: 800
     height: 600
 
-    property var currentLocation: QtPositioning.coordinate(0, 0)
+    property var currentLocation: QtPositioning.coordinate(35.29115049008509, -120.67617270722539)
 
     // Store markers and path
     property var markers: []
@@ -44,7 +44,7 @@ Rectangle {
             name: "mapboxgl"
             PluginParameter { 
                 name: "mapbox.access_token"
-                value: "YOUR-API-KEY-HERE" 
+                value: "pk.eyJ1IjoibWFuZnJvbXBhYmIiLCJhIjoiY200OXV6dTR1MDB2MTJqcHRib3BtZHcwayJ9.Xb9A69GpWoJQSifEN0qPjQ" 
             }
         }
         center: currentLocation

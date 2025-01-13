@@ -5,6 +5,8 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+set(CMAKE_AUTORCC ON)
+
 # Find dependencies
 find_package(rclcpp REQUIRED)
 find_package(ament_cmake REQUIRED)
@@ -45,7 +47,7 @@ set(HEADERS
 qt5_wrap_cpp(MOC_SOURCES ${HEADERS})
 
 # Create executables
-add_executable(${PROJECT_NAME} ${SOURCES} ${MOC_SOURCES})
+add_executable(${PROJECT_NAME} ${SOURCES} ${MOC_SOURCES} resources.qrc)
 ament_target_dependencies(${PROJECT_NAME} rclcpp Qt5 sensor_msgs)
 
 # Include directories
@@ -65,8 +67,6 @@ target_link_libraries(${PROJECT_NAME}
 
 install(TARGETS
   ${PROJECT_NAME}
-  #talker
-  #listener
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
