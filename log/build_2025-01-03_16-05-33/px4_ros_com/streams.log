@@ -1,0 +1,26 @@
+[0.024s] Invoking command in '/home/niweiss/ws_sensor_combined/build/px4_ros_com': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/px4_ros_com -- -j16 -l16
+[0.045s] [35m[1mConsolidate compiler generated dependencies of target offboard_launch[0m
+[0.053s] [ 12%] Built target frame_transforms
+[0.053s] [ 25%] Built target vehicle_gps_position_listener
+[0.053s] [ 25%] Built target ament_cmake_python_copy_px4_ros_com
+[0.053s] [ 50%] Built target sensor_combined_listener
+[0.053s] [ 50%] Built target offboard_control_srv
+[0.054s] [ 62%] Built target offboard_paths
+[0.055s] [ 81%] [32mBuilding CXX object CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o[0m
+[0.055s] [ 81%] Built target debug_vect_advertiser
+[0.055s] [ 93%] Built target offboard_control
+[0.155s] running egg_info
+[0.161s] writing px4_ros_com.egg-info/PKG-INFO
+[0.162s] writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+[0.162s] writing top-level names to px4_ros_com.egg-info/top_level.txt
+[0.184s] reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.185s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.202s] [ 93%] Built target ament_cmake_python_build_px4_ros_com_egg
+[1.297s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.297s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:185:56:[m[K [01;31m[Kerror: [m[Kinvalid cast from type ‘[01m[Kchar*[m[K’ to type ‘[01m[Kfloat[m[K’
+[1.297s]   185 |         rclcpp::spin(std::make_shared<OffboardControl>([01;31m[K(float) argv[1][m[K));
+[1.297s]       |                                                        [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.817s] gmake[2]: *** [CMakeFiles/offboard_launch.dir/build.make:76: CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o] Error 1
+[1.817s] gmake[1]: *** [CMakeFiles/Makefile2:310: CMakeFiles/offboard_launch.dir/all] Error 2
+[1.817s] gmake: *** [Makefile:146: all] Error 2
+[1.819s] Invoked command in '/home/niweiss/ws_sensor_combined/build/px4_ros_com' returned '2': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/px4_ros_com -- -j16 -l16

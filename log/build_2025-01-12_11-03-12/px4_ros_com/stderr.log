@@ -1,0 +1,15 @@
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In constructor ‘[01m[KOffboardControl::OffboardControl(float)[m[K’:
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:67:73:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KOffboardControl[m[K’ does not have any field named ‘[01m[Kcurrent_state_[m[K’
+   67 |         OffboardControl(float initial_altitude) : Node("drone_launch"), [01;31m[Kcurrent_state_[m[K(FlightState::TAKEOFF) // initialize node (base class constructor)
+      |                                                                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:75:45:[m[K [01;31m[Kerror: [m[K‘[01m[KFlightControllerNode[m[K’ has not been declared
+   75 |             "desired_state", 10, std::bind(&[01;31m[KFlightControllerNode[m[K::stateCallback, this, std::placeholders::_1));
+      |                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::stateCallback(std_msgs::msg::Int32_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:125:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_state_[m[K’ was not declared in this scope
+  125 |             [01;31m[Kcurrent_state_[m[K = static_cast<FlightState>(state_int);
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/offboard_launch.dir/build.make:76: CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:310: CMakeFiles/offboard_launch.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

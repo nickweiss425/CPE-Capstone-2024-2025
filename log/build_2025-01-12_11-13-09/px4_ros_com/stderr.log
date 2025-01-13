@@ -1,0 +1,7 @@
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In constructor ‘[01m[KOffboardControl::OffboardControl(float)[m[K’:
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:77:45:[m[K [01;31m[Kerror: [m[K‘[01m[KFlightControllerNode[m[K’ has not been declared
+   77 |             "desired_state", 10, std::bind(&[01;31m[KFlightControllerNode[m[K::stateCallback, this, std::placeholders::_1));
+      |                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/offboard_launch.dir/build.make:76: CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:310: CMakeFiles/offboard_launch.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

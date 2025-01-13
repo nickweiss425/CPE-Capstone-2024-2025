@@ -1,0 +1,66 @@
+[0.041s] Invoking command in '/home/niweiss/ws_sensor_combined/build/px4_ros_com': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/px4_ros_com -- -j16 -l16
+[0.053s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.130s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.242s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.243s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.247s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.254s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.262s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.269s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.270s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.288s] -- Found px4_msgs: 2.0.1 (/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake)
+[0.294s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.310s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.310s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.595s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.614s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.626s] -- Found rclpy: 3.3.14 (/opt/ros/humble/share/rclpy/cmake)
+[2.630s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.670s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.671s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.671s] -- Configured cppcheck include dirs: /home/niweiss/ws_sensor_combined/src/px4_ros_com/include;$<BUILD_INTERFACE:/home/niweiss/ws_sensor_combined/src/px4_ros_com/include/px4_ros_com>
+[2.671s] -- Configured cppcheck exclude dirs and/or files: 
+[2.673s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.673s] -- Configured cpplint exclude dirs and/or files: 
+[2.673s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.674s] -- Added test 'lint_cmake' to check CMake code style
+[2.674s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.675s] -- Added test 'uncrustify' to check C / C++ code style
+[2.675s] -- Configured uncrustify additional arguments: 
+[2.676s] -- Added test 'xmllint' to check XML markup files
+[2.677s] -- Configuring done
+[2.692s] -- Generating done
+[2.693s] -- Build files have been written to: /home/niweiss/ws_sensor_combined/build/px4_ros_com
+[2.708s] [35m[1mConsolidate compiler generated dependencies of target frame_transforms[0m
+[2.708s] [35m[1mConsolidate compiler generated dependencies of target debug_vect_advertiser[0m
+[2.708s] [35m[1mConsolidate compiler generated dependencies of target vehicle_gps_position_listener[0m
+[2.709s] [35m[1mConsolidate compiler generated dependencies of target sensor_combined_listener[0m
+[2.709s] [35m[1mConsolidate compiler generated dependencies of target offboard_control_srv[0m
+[2.709s] [35m[1mConsolidate compiler generated dependencies of target offboard_control[0m
+[2.709s] [35m[1mConsolidate compiler generated dependencies of target offboard_launch[0m
+[2.709s] [35m[1mConsolidate compiler generated dependencies of target offboard_paths[0m
+[2.719s] [  0%] Built target ament_cmake_python_copy_px4_ros_com
+[2.719s] [ 12%] Built target frame_transforms
+[2.719s] [ 25%] Built target sensor_combined_listener
+[2.720s] [ 31%] [32mBuilding CXX object CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o[0m
+[2.720s] [ 43%] Built target offboard_control_srv
+[2.720s] [ 68%] Built target vehicle_gps_position_listener
+[2.720s] [ 68%] Built target debug_vect_advertiser
+[2.720s] [ 81%] Built target offboard_control
+[2.721s] [ 93%] Built target offboard_paths
+[2.808s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:46:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/int32.hpp: No such file or directory
+[2.808s]    46 | #include [01;31m[K"std_msgs/msg/int32.hpp"[m[K
+[2.808s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.808s] compilation terminated.
+[2.810s] gmake[2]: *** [CMakeFiles/offboard_launch.dir/build.make:76: CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o] Error 1
+[2.811s] gmake[1]: *** [CMakeFiles/Makefile2:310: CMakeFiles/offboard_launch.dir/all] Error 2
+[2.811s] gmake[1]: *** Waiting for unfinished jobs....
+[2.830s] running egg_info
+[2.838s] writing px4_ros_com.egg-info/PKG-INFO
+[2.838s] writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+[2.839s] writing top-level names to px4_ros_com.egg-info/top_level.txt
+[2.861s] reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[2.861s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[2.876s] [ 93%] Built target ament_cmake_python_build_px4_ros_com_egg
+[2.876s] gmake: *** [Makefile:146: all] Error 2
+[2.879s] Invoked command in '/home/niweiss/ws_sensor_combined/build/px4_ros_com' returned '2': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/px4_ros_com -- -j16 -l16

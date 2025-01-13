@@ -1,0 +1,86 @@
+[0.035s] Invoking command in '/home/niweiss/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp:/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp:/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/ws_sensor_combined/install/px4_ros_com/lib:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/px4_ros_com -- -j16 -l16
+[0.064s] [35m[1mConsolidate compiler generated dependencies of target offboard_launch[0m
+[0.070s] [ 11%] Built target frame_transforms
+[0.070s] [ 22%] Built target offboard_control
+[0.071s] [ 33%] Built target vehicle_gps_position_listener
+[0.071s] [ 44%] Built target offboard_paths
+[0.071s] [ 55%] Built target debug_vect_advertiser
+[0.071s] [ 66%] Built target sensor_combined_listener
+[0.072s] [ 77%] Built target flight_state_pub
+[0.074s] [ 88%] Built target offboard_control_srv
+[0.074s] [ 88%] Built target ament_cmake_python_copy_px4_ros_com
+[0.080s] [ 94%] [32mBuilding CXX object CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o[0m
+[0.183s] running egg_info
+[0.191s] writing px4_ros_com.egg-info/PKG-INFO
+[0.192s] writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+[0.192s] writing top-level names to px4_ros_com.egg-info/top_level.txt
+[0.214s] reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.215s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.231s] [ 94%] Built target ament_cmake_python_build_px4_ros_com_egg
+[1.689s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.689s]                  from [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:45[m[K:
+[1.689s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::stateCallback(std_msgs::msg::Int32_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.689s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:156:64:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kconst char*[m[K’
+[1.689s]   156 |             RCLCPP_INFO(this->get_logger(), [01;31m[KflightStateToString(state_int)[m[K);
+[1.689s]       |                                             [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[1.689s]       |                                                                [01;31m[K|[m[K
+[1.689s]       |                                                                [01;31m[Kstd::string {aka std::__cxx11::basic_string<char>}[m[K
+[1.689s] In file included from [01m[K/opt/ros/humble/include/rmw/rmw/types.h:28[m[K,
+[1.689s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/types.h:20[m[K,
+[1.689s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/log_level.h:22[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/arguments.h:21[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/context.h:28[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/guard_condition.h:26[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:30[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.690s]                  from [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:45[m[K:
+[1.690s] [01m[K/opt/ros/humble/include/rcutils/rcutils/logging.h:479:16:[m[K [01;36m[Knote: [m[K  initializing argument 4 of ‘[01m[Kvoid rcutils_log(const rcutils_log_location_t*, int, const char*, const char*, ...)[m[K’
+[1.690s]   479 |   [01;36m[Kconst char * format[m[K,
+[1.690s]       |   [01;36m[K~~~~~~~~~~~~~^~~~~~[m[K
+[1.690s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.690s]                  from [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:45[m[K:
+[1.690s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:158:64:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kconst char*[m[K’
+[1.690s]   158 |             RCLCPP_WARN(this->get_logger(), [01;31m[KflightStateToString(state_int)[m[K);
+[1.690s]       |                                             [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[1.690s]       |                                                                [01;31m[K|[m[K
+[1.690s]       |                                                                [01;31m[Kstd::string {aka std::__cxx11::basic_string<char>}[m[K
+[1.690s] In file included from [01m[K/opt/ros/humble/include/rmw/rmw/types.h:28[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/types.h:20[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/log_level.h:22[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/arguments.h:21[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/context.h:28[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/guard_condition.h:26[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:30[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.690s]                  from [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:45[m[K:
+[1.690s] [01m[K/opt/ros/humble/include/rcutils/rcutils/logging.h:479:16:[m[K [01;36m[Knote: [m[K  initializing argument 4 of ‘[01m[Kvoid rcutils_log(const rcutils_log_location_t*, int, const char*, const char*, ...)[m[K’
+[1.690s]   479 |   [01;36m[Kconst char * format[m[K,
+[1.690s]       |   [01;36m[K~~~~~~~~~~~~~^~~~~~[m[K
+[3.378s] gmake[2]: *** [CMakeFiles/offboard_launch.dir/build.make:76: CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o] Error 1
+[3.379s] gmake[1]: *** [CMakeFiles/Makefile2:312: CMakeFiles/offboard_launch.dir/all] Error 2
+[3.379s] gmake: *** [Makefile:146: all] Error 2
+[3.381s] Invoked command in '/home/niweiss/ws_sensor_combined/build/px4_ros_com' returned '2': CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp:/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp:/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/ws_sensor_combined/install/px4_ros_com/lib:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/px4_ros_com -- -j16 -l16

@@ -1,0 +1,866 @@
+[0.345s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.346s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7efc3fefab30>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7efc3ffe33a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7efc3ffe33a0>>, mixin_verb=('build',))
+[0.424s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.424s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.424s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.425s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.425s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.425s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.425s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/niweiss/ws_sensor_combined'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib) by extensions ['ignore', 'ignore_ament_install']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib) by extension 'ignore'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib) by extension 'ignore_ament_install'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib) by extensions ['colcon_pkg']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib) by extension 'colcon_pkg'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib) by extensions ['colcon_meta']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib) by extension 'colcon_meta'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib) by extensions ['ros']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib) by extension 'ros'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib) by extensions ['cmake', 'python']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib) by extension 'cmake'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib) by extension 'python'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib) by extensions ['python_setup_py']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib) by extension 'python_setup_py'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples) by extensions ['ignore', 'ignore_ament_install']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples) by extension 'ignore'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples) by extension 'ignore_ament_install'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples) by extensions ['colcon_pkg']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples) by extension 'colcon_pkg'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples) by extensions ['colcon_meta']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples) by extension 'colcon_meta'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples) by extensions ['ros']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples) by extension 'ros'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples) by extensions ['cmake', 'python']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples) by extension 'cmake'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples) by extension 'python'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples) by extensions ['python_setup_py']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples) by extension 'python_setup_py'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp) by extension 'ignore'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp) by extension 'ignore_ament_install'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp) by extensions ['colcon_pkg']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp) by extension 'colcon_pkg'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp) by extensions ['colcon_meta']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp) by extension 'colcon_meta'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp) by extensions ['ros']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp) by extension 'ros'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp) by extensions ['cmake', 'python']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp) by extension 'cmake'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp) by extension 'python'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp) by extensions ['python_setup_py']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp) by extension 'python_setup_py'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes) by extensions ['ignore', 'ignore_ament_install']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes) by extension 'ignore'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes) by extension 'ignore_ament_install'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes) by extensions ['colcon_pkg']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes) by extension 'colcon_pkg'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes) by extensions ['colcon_meta']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes) by extension 'colcon_meta'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes) by extensions ['ros']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes) by extension 'ros'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes) by extensions ['cmake', 'python']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes) by extension 'cmake'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes) by extension 'python'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes) by extensions ['python_setup_py']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes) by extension 'python_setup_py'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/fw_attitude) by extensions ['ignore', 'ignore_ament_install']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/fw_attitude) by extension 'ignore'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/fw_attitude) by extension 'ignore_ament_install'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/fw_attitude) by extensions ['colcon_pkg']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/fw_attitude) by extension 'colcon_pkg'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/fw_attitude) by extensions ['colcon_meta']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/fw_attitude) by extension 'colcon_meta'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/fw_attitude) by extensions ['ros']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/fw_attitude) by extension 'ros'
+[0.452s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4-ros2-interface-lib/examples/cpp/modes/fw_attitude' with type 'ros.ament_cmake' and name 'example_mode_fw_attitude_cpp'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/goto) by extensions ['ignore', 'ignore_ament_install']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/goto) by extension 'ignore'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/goto) by extension 'ignore_ament_install'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/goto) by extensions ['colcon_pkg']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/goto) by extension 'colcon_pkg'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/goto) by extensions ['colcon_meta']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/goto) by extension 'colcon_meta'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/goto) by extensions ['ros']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/goto) by extension 'ros'
+[0.454s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4-ros2-interface-lib/examples/cpp/modes/goto' with type 'ros.ament_cmake' and name 'example_mode_goto_cpp'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/goto_global) by extensions ['ignore', 'ignore_ament_install']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/goto_global) by extension 'ignore'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/goto_global) by extension 'ignore_ament_install'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/goto_global) by extensions ['colcon_pkg']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/goto_global) by extension 'colcon_pkg'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/goto_global) by extensions ['colcon_meta']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/goto_global) by extension 'colcon_meta'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/goto_global) by extensions ['ros']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/goto_global) by extension 'ros'
+[0.455s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4-ros2-interface-lib/examples/cpp/modes/goto_global' with type 'ros.ament_cmake' and name 'example_mode_goto_global_cpp'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/manual) by extensions ['ignore', 'ignore_ament_install']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/manual) by extension 'ignore'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/manual) by extension 'ignore_ament_install'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/manual) by extensions ['colcon_pkg']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/manual) by extension 'colcon_pkg'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/manual) by extensions ['colcon_meta']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/manual) by extension 'colcon_meta'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/manual) by extensions ['ros']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/manual) by extension 'ros'
+[0.457s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4-ros2-interface-lib/examples/cpp/modes/manual' with type 'ros.ament_cmake' and name 'example_mode_manual_cpp'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/mode_with_executor) by extensions ['ignore', 'ignore_ament_install']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/mode_with_executor) by extension 'ignore'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/mode_with_executor) by extension 'ignore_ament_install'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/mode_with_executor) by extensions ['colcon_pkg']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/mode_with_executor) by extension 'colcon_pkg'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/mode_with_executor) by extensions ['colcon_meta']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/mode_with_executor) by extension 'colcon_meta'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/mode_with_executor) by extensions ['ros']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/mode_with_executor) by extension 'ros'
+[0.458s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4-ros2-interface-lib/examples/cpp/modes/mode_with_executor' with type 'ros.ament_cmake' and name 'example_mode_with_executor_cpp'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/rtl_replacement) by extensions ['ignore', 'ignore_ament_install']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/rtl_replacement) by extension 'ignore'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/rtl_replacement) by extension 'ignore_ament_install'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/rtl_replacement) by extensions ['colcon_pkg']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/rtl_replacement) by extension 'colcon_pkg'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/rtl_replacement) by extensions ['colcon_meta']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/rtl_replacement) by extension 'colcon_meta'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/rtl_replacement) by extensions ['ros']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/modes/rtl_replacement) by extension 'ros'
+[0.459s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4-ros2-interface-lib/examples/cpp/modes/rtl_replacement' with type 'ros.ament_cmake' and name 'example_mode_rtl_replacement_cpp'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation) by extension 'ignore'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation) by extension 'ignore_ament_install'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation) by extensions ['colcon_pkg']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation) by extension 'colcon_pkg'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation) by extensions ['colcon_meta']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation) by extension 'colcon_meta'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation) by extensions ['ros']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation) by extension 'ros'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation) by extensions ['cmake', 'python']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation) by extension 'cmake'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation) by extension 'python'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation) by extensions ['python_setup_py']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation) by extension 'python_setup_py'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation/global_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation/global_navigation) by extension 'ignore'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation/global_navigation) by extension 'ignore_ament_install'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation/global_navigation) by extensions ['colcon_pkg']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation/global_navigation) by extension 'colcon_pkg'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation/global_navigation) by extensions ['colcon_meta']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation/global_navigation) by extension 'colcon_meta'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation/global_navigation) by extensions ['ros']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation/global_navigation) by extension 'ros'
+[0.461s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4-ros2-interface-lib/examples/cpp/navigation/global_navigation' with type 'ros.ament_cmake' and name 'example_global_navigation_cpp'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation/local_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation/local_navigation) by extension 'ignore'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation/local_navigation) by extension 'ignore_ament_install'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation/local_navigation) by extensions ['colcon_pkg']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation/local_navigation) by extension 'colcon_pkg'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation/local_navigation) by extensions ['colcon_meta']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation/local_navigation) by extension 'colcon_meta'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation/local_navigation) by extensions ['ros']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/examples/cpp/navigation/local_navigation) by extension 'ros'
+[0.462s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4-ros2-interface-lib/examples/cpp/navigation/local_navigation' with type 'ros.ament_cmake' and name 'example_local_navigation_cpp'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/px4_ros2_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/px4_ros2_cpp) by extension 'ignore'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/px4_ros2_cpp) by extension 'ignore_ament_install'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/px4_ros2_cpp) by extensions ['colcon_pkg']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/px4_ros2_cpp) by extension 'colcon_pkg'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/px4_ros2_cpp) by extensions ['colcon_meta']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/px4_ros2_cpp) by extension 'colcon_meta'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/px4_ros2_cpp) by extensions ['ros']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/px4_ros2_cpp) by extension 'ros'
+[0.463s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4-ros2-interface-lib/px4_ros2_cpp' with type 'ros.ament_cmake' and name 'px4_ros2_cpp'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/scripts) by extension 'ignore'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/scripts) by extension 'ignore_ament_install'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/scripts) by extensions ['colcon_pkg']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/scripts) by extension 'colcon_pkg'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/scripts) by extensions ['colcon_meta']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/scripts) by extension 'colcon_meta'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/scripts) by extensions ['ros']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/scripts) by extension 'ros'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/scripts) by extensions ['cmake', 'python']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/scripts) by extension 'cmake'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/scripts) by extension 'python'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/scripts) by extensions ['python_setup_py']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4-ros2-interface-lib/scripts) by extension 'python_setup_py'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore_ament_install'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_pkg']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_pkg'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_meta']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_meta'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ros']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ros'
+[0.466s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_msgs' with type 'ros.ament_cmake' and name 'px4_msgs'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ignore', 'ignore_ament_install']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore_ament_install'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_pkg']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_pkg'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_meta']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_meta'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ros']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ros'
+[0.467s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_ros_com' with type 'ros.ament_cmake' and name 'px4_ros_com'
+[0.467s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.467s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.467s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.467s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.467s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.491s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.492s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.494s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/humble
+[0.495s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_args' from command line to 'None'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target' from command line to 'None'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.516s] DEBUG:colcon.colcon_core.verb:Building package 'px4_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/niweiss/ws_sensor_combined/build/px4_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/niweiss/ws_sensor_combined/install/px4_msgs', 'merge_install': False, 'path': '/home/niweiss/ws_sensor_combined/src/px4_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'px4_ros2_cpp' build argument 'cmake_args' from command line to 'None'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'px4_ros2_cpp' build argument 'cmake_target' from command line to 'None'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'px4_ros2_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'px4_ros2_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'px4_ros2_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'px4_ros2_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'px4_ros2_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'px4_ros2_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'px4_ros2_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.516s] DEBUG:colcon.colcon_core.verb:Building package 'px4_ros2_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/niweiss/ws_sensor_combined/build/px4_ros2_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp', 'merge_install': False, 'path': '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp', 'symlink_install': False, 'test_result_base': None}
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_args' from command line to 'None'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target' from command line to 'None'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_cache' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_first' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_force_configure' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'ament_cmake_args' from command line to 'None'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_cmake_args' from command line to 'None'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.517s] DEBUG:colcon.colcon_core.verb:Building package 'px4_ros_com' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/niweiss/ws_sensor_combined/build/px4_ros_com', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/niweiss/ws_sensor_combined/install/px4_ros_com', 'merge_install': False, 'path': '/home/niweiss/ws_sensor_combined/src/px4_ros_com', 'symlink_install': False, 'test_result_base': None}
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'example_global_navigation_cpp' build argument 'cmake_args' from command line to 'None'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'example_global_navigation_cpp' build argument 'cmake_target' from command line to 'None'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'example_global_navigation_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'example_global_navigation_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'example_global_navigation_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'example_global_navigation_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'example_global_navigation_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'example_global_navigation_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'example_global_navigation_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.517s] DEBUG:colcon.colcon_core.verb:Building package 'example_global_navigation_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/niweiss/ws_sensor_combined/build/example_global_navigation_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp', 'merge_install': False, 'path': '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/navigation/global_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'example_local_navigation_cpp' build argument 'cmake_args' from command line to 'None'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'example_local_navigation_cpp' build argument 'cmake_target' from command line to 'None'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'example_local_navigation_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'example_local_navigation_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'example_local_navigation_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'example_local_navigation_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'example_local_navigation_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'example_local_navigation_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'example_local_navigation_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.517s] DEBUG:colcon.colcon_core.verb:Building package 'example_local_navigation_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/niweiss/ws_sensor_combined/build/example_local_navigation_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp', 'merge_install': False, 'path': '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/navigation/local_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_fw_attitude_cpp' build argument 'cmake_args' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_fw_attitude_cpp' build argument 'cmake_target' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_fw_attitude_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_fw_attitude_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_fw_attitude_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_fw_attitude_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_fw_attitude_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_fw_attitude_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_fw_attitude_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.518s] DEBUG:colcon.colcon_core.verb:Building package 'example_mode_fw_attitude_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/niweiss/ws_sensor_combined/build/example_mode_fw_attitude_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp', 'merge_install': False, 'path': '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/modes/fw_attitude', 'symlink_install': False, 'test_result_base': None}
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_goto_cpp' build argument 'cmake_args' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_goto_cpp' build argument 'cmake_target' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_goto_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_goto_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_goto_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_goto_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_goto_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_goto_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_goto_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.518s] DEBUG:colcon.colcon_core.verb:Building package 'example_mode_goto_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/niweiss/ws_sensor_combined/build/example_mode_goto_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp', 'merge_install': False, 'path': '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/modes/goto', 'symlink_install': False, 'test_result_base': None}
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_goto_global_cpp' build argument 'cmake_args' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_goto_global_cpp' build argument 'cmake_target' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_goto_global_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_goto_global_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_goto_global_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_goto_global_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_goto_global_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_goto_global_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'example_mode_goto_global_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.518s] DEBUG:colcon.colcon_core.verb:Building package 'example_mode_goto_global_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/niweiss/ws_sensor_combined/build/example_mode_goto_global_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp', 'merge_install': False, 'path': '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/modes/goto_global', 'symlink_install': False, 'test_result_base': None}
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_manual_cpp' build argument 'cmake_args' from command line to 'None'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_manual_cpp' build argument 'cmake_target' from command line to 'None'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_manual_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_manual_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_manual_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_manual_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_manual_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_manual_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_manual_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.519s] DEBUG:colcon.colcon_core.verb:Building package 'example_mode_manual_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/niweiss/ws_sensor_combined/build/example_mode_manual_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp', 'merge_install': False, 'path': '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/modes/manual', 'symlink_install': False, 'test_result_base': None}
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_rtl_replacement_cpp' build argument 'cmake_args' from command line to 'None'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_rtl_replacement_cpp' build argument 'cmake_target' from command line to 'None'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_rtl_replacement_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_rtl_replacement_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_rtl_replacement_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_rtl_replacement_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_rtl_replacement_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_rtl_replacement_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_rtl_replacement_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.519s] DEBUG:colcon.colcon_core.verb:Building package 'example_mode_rtl_replacement_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/niweiss/ws_sensor_combined/build/example_mode_rtl_replacement_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp', 'merge_install': False, 'path': '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/modes/rtl_replacement', 'symlink_install': False, 'test_result_base': None}
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_with_executor_cpp' build argument 'cmake_args' from command line to 'None'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_with_executor_cpp' build argument 'cmake_target' from command line to 'None'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_with_executor_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_with_executor_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_with_executor_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_with_executor_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_with_executor_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_with_executor_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'example_mode_with_executor_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.519s] DEBUG:colcon.colcon_core.verb:Building package 'example_mode_with_executor_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/niweiss/ws_sensor_combined/build/example_mode_with_executor_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp', 'merge_install': False, 'path': '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/modes/mode_with_executor', 'symlink_install': False, 'test_result_base': None}
+[0.519s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.520s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.520s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/niweiss/ws_sensor_combined/src/px4_msgs' with build type 'ament_cmake'
+[0.521s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/niweiss/ws_sensor_combined/src/px4_msgs'
+[0.526s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.527s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.527s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.536s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/px4_msgs -- -j16 -l16
+[1.271s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/px4_msgs -- -j16 -l16
+[3.445s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/px4_msgs
+[3.705s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[3.705s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/px4_msgs
+[3.710s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_msgs' for CMake module files
+[3.712s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_msgs' for CMake config files
+[3.718s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[3.718s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[3.719s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[3.720s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[3.720s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_msgs/lib'
+[3.721s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[3.721s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[3.721s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[3.721s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[3.721s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_msgs/bin'
+[3.721s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[3.721s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_msgs/lib/python3.10/site-packages'
+[3.721s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_msgs/bin'
+[3.722s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.ps1'
+[3.722s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.dsv'
+[3.723s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.sh'
+[3.723s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.bash'
+[3.724s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.zsh'
+[3.731s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[5.718s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[5.718s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_msgs' for CMake module files
+[5.718s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_msgs' for CMake config files
+[5.720s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[5.720s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[5.721s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[5.722s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[5.723s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_msgs/lib'
+[5.723s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[5.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[5.723s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[5.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[5.723s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_msgs/bin'
+[5.723s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[5.724s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_msgs/lib/python3.10/site-packages'
+[5.724s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_msgs/bin'
+[5.724s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.ps1'
+[5.724s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.dsv'
+[5.724s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.sh'
+[5.725s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.bash'
+[5.725s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.zsh'
+[5.725s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[5.725s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp' with build type 'ament_cmake'
+[5.725s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp'
+[5.726s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.726s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.727s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/niweiss/ws_sensor_combined/src/px4_ros_com' with build type 'ament_cmake'
+[5.727s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/niweiss/ws_sensor_combined/src/px4_ros_com'
+[5.728s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.728s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.749s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/build/px4_ros2_cpp': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/px4_ros2_cpp -- -j16 -l16
+[5.753s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/build/px4_ros_com': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/px4_ros_com -- -j16 -l16
+[5.852s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/build/px4_ros2_cpp' returned '0': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/px4_ros2_cpp -- -j16 -l16
+[5.906s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/build/px4_ros2_cpp': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/px4_ros2_cpp
+[5.917s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros2_cpp)
+[5.917s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/build/px4_ros2_cpp' returned '0': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/px4_ros2_cpp
+[5.918s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp' for CMake module files
+[5.919s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp' for CMake config files
+[5.922s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros2_cpp', 'cmake_prefix_path')
+[5.922s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/hook/cmake_prefix_path.ps1'
+[5.922s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/hook/cmake_prefix_path.dsv'
+[5.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/hook/cmake_prefix_path.sh'
+[5.923s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib'
+[5.923s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros2_cpp', 'ld_library_path_lib')
+[5.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/hook/ld_library_path_lib.ps1'
+[5.924s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/hook/ld_library_path_lib.dsv'
+[5.924s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/hook/ld_library_path_lib.sh'
+[5.924s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/bin'
+[5.924s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib/pkgconfig/px4_ros2_cpp.pc'
+[5.924s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib/python3.10/site-packages'
+[5.924s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/bin'
+[5.924s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/package.ps1'
+[5.925s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/package.dsv'
+[5.925s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/package.sh'
+[5.925s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/package.bash'
+[5.925s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/package.zsh'
+[5.926s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/colcon-core/packages/px4_ros2_cpp)
+[5.979s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros2_cpp)
+[5.979s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp' for CMake module files
+[5.979s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp' for CMake config files
+[5.979s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros2_cpp', 'cmake_prefix_path')
+[5.979s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/hook/cmake_prefix_path.ps1'
+[5.980s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/hook/cmake_prefix_path.dsv'
+[5.980s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/hook/cmake_prefix_path.sh'
+[5.980s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib'
+[5.980s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros2_cpp', 'ld_library_path_lib')
+[5.980s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/hook/ld_library_path_lib.ps1'
+[5.980s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/hook/ld_library_path_lib.dsv'
+[5.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/hook/ld_library_path_lib.sh'
+[5.981s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/bin'
+[5.981s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib/pkgconfig/px4_ros2_cpp.pc'
+[5.981s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib/python3.10/site-packages'
+[5.981s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/bin'
+[5.981s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/package.ps1'
+[5.982s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/package.dsv'
+[5.982s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/package.sh'
+[5.983s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/package.bash'
+[5.983s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/package.zsh'
+[5.983s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/colcon-core/packages/px4_ros2_cpp)
+[5.984s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/navigation/global_navigation' with build type 'ament_cmake'
+[5.984s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/navigation/global_navigation'
+[5.984s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.984s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.986s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/navigation/local_navigation' with build type 'ament_cmake'
+[5.986s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/navigation/local_navigation'
+[5.987s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.987s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.989s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/modes/fw_attitude' with build type 'ament_cmake'
+[5.989s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/modes/fw_attitude'
+[5.989s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.989s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.991s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/modes/goto' with build type 'ament_cmake'
+[5.991s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/modes/goto'
+[5.992s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.992s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.994s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/modes/goto_global' with build type 'ament_cmake'
+[5.994s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/modes/goto_global'
+[5.994s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.994s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.996s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/modes/manual' with build type 'ament_cmake'
+[5.997s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/modes/manual'
+[5.997s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.997s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.999s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/modes/rtl_replacement' with build type 'ament_cmake'
+[5.999s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/modes/rtl_replacement'
+[5.999s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.002s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/modes/mode_with_executor' with build type 'ament_cmake'
+[6.002s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/modes/mode_with_executor'
+[6.002s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.002s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.025s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/build/example_local_navigation_cpp': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/example_local_navigation_cpp -- -j16 -l16
+[6.032s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/build/example_mode_goto_cpp': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/example_mode_goto_cpp -- -j16 -l16
+[6.036s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/build/example_mode_goto_global_cpp': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/example_mode_goto_global_cpp -- -j16 -l16
+[6.040s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/build/example_global_navigation_cpp': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/example_global_navigation_cpp -- -j16 -l16
+[6.045s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/build/example_mode_fw_attitude_cpp': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/example_mode_fw_attitude_cpp -- -j16 -l16
+[6.048s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/build/example_mode_manual_cpp': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/example_mode_manual_cpp -- -j16 -l16
+[6.052s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/build/example_mode_with_executor_cpp': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/example_mode_with_executor_cpp -- -j16 -l16
+[6.060s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/build/example_mode_rtl_replacement_cpp': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/example_mode_rtl_replacement_cpp -- -j16 -l16
+[6.076s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/build/example_local_navigation_cpp' returned '0': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/example_local_navigation_cpp -- -j16 -l16
+[6.081s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/build/example_mode_goto_cpp' returned '0': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/example_mode_goto_cpp -- -j16 -l16
+[6.085s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/build/example_global_navigation_cpp' returned '0': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/example_global_navigation_cpp -- -j16 -l16
+[6.087s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/build/example_mode_goto_global_cpp' returned '0': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/example_mode_goto_global_cpp -- -j16 -l16
+[6.097s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/build/example_mode_goto_cpp': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/example_mode_goto_cpp
+[6.100s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/build/example_mode_fw_attitude_cpp' returned '0': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/example_mode_fw_attitude_cpp -- -j16 -l16
+[6.102s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/build/example_local_navigation_cpp': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/example_local_navigation_cpp
+[6.111s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/build/example_mode_manual_cpp' returned '0': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/example_mode_manual_cpp -- -j16 -l16
+[6.114s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(example_mode_goto_cpp)
+[6.115s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/build/example_mode_with_executor_cpp' returned '0': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/example_mode_with_executor_cpp -- -j16 -l16
+[6.115s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp' for CMake module files
+[6.115s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/build/example_mode_goto_global_cpp': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/example_mode_goto_global_cpp
+[6.116s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/build/example_global_navigation_cpp': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/example_global_navigation_cpp
+[6.116s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/build/example_mode_rtl_replacement_cpp' returned '0': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/example_mode_rtl_replacement_cpp -- -j16 -l16
+[6.117s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/build/example_mode_goto_cpp' returned '0': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/example_mode_goto_cpp
+[6.117s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp' for CMake config files
+[6.118s] Level 1:colcon.colcon_core.shell:create_environment_hook('example_mode_goto_cpp', 'cmake_prefix_path')
+[6.118s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/share/example_mode_goto_cpp/hook/cmake_prefix_path.ps1'
+[6.119s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/share/example_mode_goto_cpp/hook/cmake_prefix_path.dsv'
+[6.119s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/share/example_mode_goto_cpp/hook/cmake_prefix_path.sh'
+[6.120s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/lib'
+[6.120s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/bin'
+[6.120s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/lib/pkgconfig/example_mode_goto_cpp.pc'
+[6.120s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/lib/python3.10/site-packages'
+[6.120s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/bin'
+[6.120s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/share/example_mode_goto_cpp/package.ps1'
+[6.121s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/share/example_mode_goto_cpp/package.dsv'
+[6.121s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/share/example_mode_goto_cpp/package.sh'
+[6.121s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/share/example_mode_goto_cpp/package.bash'
+[6.121s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/share/example_mode_goto_cpp/package.zsh'
+[6.122s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/share/colcon-core/packages/example_mode_goto_cpp)
+[6.126s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(example_local_navigation_cpp)
+[6.126s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp' for CMake module files
+[6.129s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/build/example_local_navigation_cpp' returned '0': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/example_local_navigation_cpp
+[6.129s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp' for CMake config files
+[6.130s] Level 1:colcon.colcon_core.shell:create_environment_hook('example_local_navigation_cpp', 'cmake_prefix_path')
+[6.130s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/share/example_local_navigation_cpp/hook/cmake_prefix_path.ps1'
+[6.130s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/share/example_local_navigation_cpp/hook/cmake_prefix_path.dsv'
+[6.130s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/share/example_local_navigation_cpp/hook/cmake_prefix_path.sh'
+[6.131s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/lib'
+[6.131s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/bin'
+[6.131s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/lib/pkgconfig/example_local_navigation_cpp.pc'
+[6.131s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/lib/python3.10/site-packages'
+[6.131s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/bin'
+[6.131s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/share/example_local_navigation_cpp/package.ps1'
+[6.132s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/share/example_local_navigation_cpp/package.dsv'
+[6.132s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/share/example_local_navigation_cpp/package.sh'
+[6.132s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/share/example_local_navigation_cpp/package.bash'
+[6.132s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/share/example_local_navigation_cpp/package.zsh'
+[6.132s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/share/colcon-core/packages/example_local_navigation_cpp)
+[6.135s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(example_mode_goto_global_cpp)
+[6.135s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/build/example_mode_fw_attitude_cpp': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/example_mode_fw_attitude_cpp
+[6.135s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp' for CMake module files
+[6.135s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/build/example_mode_goto_global_cpp' returned '0': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/example_mode_goto_global_cpp
+[6.136s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp' for CMake config files
+[6.137s] Level 1:colcon.colcon_core.shell:create_environment_hook('example_mode_goto_global_cpp', 'cmake_prefix_path')
+[6.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/hook/cmake_prefix_path.ps1'
+[6.138s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/hook/cmake_prefix_path.dsv'
+[6.138s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/hook/cmake_prefix_path.sh'
+[6.138s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/lib'
+[6.138s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/bin'
+[6.138s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/lib/pkgconfig/example_mode_goto_global_cpp.pc'
+[6.138s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/lib/python3.10/site-packages'
+[6.138s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/bin'
+[6.139s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/package.ps1'
+[6.139s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/package.dsv'
+[6.139s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/package.sh'
+[6.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/package.bash'
+[6.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/package.zsh'
+[6.140s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/colcon-core/packages/example_mode_goto_global_cpp)
+[6.141s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(example_global_navigation_cpp)
+[6.141s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp' for CMake module files
+[6.142s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/build/example_global_navigation_cpp' returned '0': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/example_global_navigation_cpp
+[6.143s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp' for CMake config files
+[6.143s] Level 1:colcon.colcon_core.shell:create_environment_hook('example_global_navigation_cpp', 'cmake_prefix_path')
+[6.143s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/share/example_global_navigation_cpp/hook/cmake_prefix_path.ps1'
+[6.144s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/share/example_global_navigation_cpp/hook/cmake_prefix_path.dsv'
+[6.144s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/share/example_global_navigation_cpp/hook/cmake_prefix_path.sh'
+[6.145s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/lib'
+[6.145s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/bin'
+[6.145s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/lib/pkgconfig/example_global_navigation_cpp.pc'
+[6.145s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/lib/python3.10/site-packages'
+[6.145s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/bin'
+[6.145s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/share/example_global_navigation_cpp/package.ps1'
+[6.146s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/share/example_global_navigation_cpp/package.dsv'
+[6.146s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/share/example_global_navigation_cpp/package.sh'
+[6.146s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/share/example_global_navigation_cpp/package.bash'
+[6.146s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/share/example_global_navigation_cpp/package.zsh'
+[6.146s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/share/colcon-core/packages/example_global_navigation_cpp)
+[6.154s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/build/example_mode_manual_cpp': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/example_mode_manual_cpp
+[6.156s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/build/example_mode_with_executor_cpp': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/example_mode_with_executor_cpp
+[6.158s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(example_mode_goto_cpp)
+[6.158s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp' for CMake module files
+[6.159s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/build/example_mode_rtl_replacement_cpp': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/example_mode_rtl_replacement_cpp
+[6.165s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp' for CMake config files
+[6.165s] Level 1:colcon.colcon_core.shell:create_environment_hook('example_mode_goto_cpp', 'cmake_prefix_path')
+[6.165s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/share/example_mode_goto_cpp/hook/cmake_prefix_path.ps1'
+[6.166s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/share/example_mode_goto_cpp/hook/cmake_prefix_path.dsv'
+[6.166s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/share/example_mode_goto_cpp/hook/cmake_prefix_path.sh'
+[6.166s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/lib'
+[6.167s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/bin'
+[6.167s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/lib/pkgconfig/example_mode_goto_cpp.pc'
+[6.167s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/lib/python3.10/site-packages'
+[6.167s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/bin'
+[6.167s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/share/example_mode_goto_cpp/package.ps1'
+[6.168s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/share/example_mode_goto_cpp/package.dsv'
+[6.168s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/share/example_mode_goto_cpp/package.sh'
+[6.168s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/share/example_mode_goto_cpp/package.bash'
+[6.169s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/share/example_mode_goto_cpp/package.zsh'
+[6.169s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp/share/colcon-core/packages/example_mode_goto_cpp)
+[6.170s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(example_mode_fw_attitude_cpp)
+[6.170s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp' for CMake module files
+[6.171s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/build/example_mode_fw_attitude_cpp' returned '0': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/example_mode_fw_attitude_cpp
+[6.172s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp' for CMake config files
+[6.173s] Level 1:colcon.colcon_core.shell:create_environment_hook('example_mode_fw_attitude_cpp', 'cmake_prefix_path')
+[6.173s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/hook/cmake_prefix_path.ps1'
+[6.174s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/hook/cmake_prefix_path.dsv'
+[6.174s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/hook/cmake_prefix_path.sh'
+[6.174s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/lib'
+[6.174s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/bin'
+[6.174s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/lib/pkgconfig/example_mode_fw_attitude_cpp.pc'
+[6.175s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/lib/python3.10/site-packages'
+[6.175s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/bin'
+[6.175s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/package.ps1'
+[6.175s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/package.dsv'
+[6.175s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/package.sh'
+[6.176s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/package.bash'
+[6.176s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/package.zsh'
+[6.176s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/colcon-core/packages/example_mode_fw_attitude_cpp)
+[6.177s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(example_local_navigation_cpp)
+[6.177s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp' for CMake module files
+[6.178s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp' for CMake config files
+[6.178s] Level 1:colcon.colcon_core.shell:create_environment_hook('example_local_navigation_cpp', 'cmake_prefix_path')
+[6.178s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/share/example_local_navigation_cpp/hook/cmake_prefix_path.ps1'
+[6.179s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/share/example_local_navigation_cpp/hook/cmake_prefix_path.dsv'
+[6.179s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/share/example_local_navigation_cpp/hook/cmake_prefix_path.sh'
+[6.179s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/lib'
+[6.179s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/bin'
+[6.179s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/lib/pkgconfig/example_local_navigation_cpp.pc'
+[6.179s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/lib/python3.10/site-packages'
+[6.179s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/bin'
+[6.180s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/share/example_local_navigation_cpp/package.ps1'
+[6.180s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/share/example_local_navigation_cpp/package.dsv'
+[6.180s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/share/example_local_navigation_cpp/package.sh'
+[6.180s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/share/example_local_navigation_cpp/package.bash'
+[6.181s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/share/example_local_navigation_cpp/package.zsh'
+[6.181s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp/share/colcon-core/packages/example_local_navigation_cpp)
+[6.181s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(example_mode_goto_global_cpp)
+[6.182s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp' for CMake module files
+[6.182s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp' for CMake config files
+[6.182s] Level 1:colcon.colcon_core.shell:create_environment_hook('example_mode_goto_global_cpp', 'cmake_prefix_path')
+[6.182s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/hook/cmake_prefix_path.ps1'
+[6.183s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/hook/cmake_prefix_path.dsv'
+[6.183s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/hook/cmake_prefix_path.sh'
+[6.183s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/lib'
+[6.183s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/bin'
+[6.183s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/lib/pkgconfig/example_mode_goto_global_cpp.pc'
+[6.183s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/lib/python3.10/site-packages'
+[6.184s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/bin'
+[6.184s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/package.ps1'
+[6.184s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/package.dsv'
+[6.184s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/package.sh'
+[6.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/package.bash'
+[6.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/package.zsh'
+[6.185s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/colcon-core/packages/example_mode_goto_global_cpp)
+[6.185s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(example_mode_manual_cpp)
+[6.185s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp' for CMake module files
+[6.186s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/build/example_mode_manual_cpp' returned '0': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/example_mode_manual_cpp
+[6.187s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp' for CMake config files
+[6.187s] Level 1:colcon.colcon_core.shell:create_environment_hook('example_mode_manual_cpp', 'cmake_prefix_path')
+[6.187s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/share/example_mode_manual_cpp/hook/cmake_prefix_path.ps1'
+[6.187s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/share/example_mode_manual_cpp/hook/cmake_prefix_path.dsv'
+[6.188s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/share/example_mode_manual_cpp/hook/cmake_prefix_path.sh'
+[6.188s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/lib'
+[6.188s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/bin'
+[6.188s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/lib/pkgconfig/example_mode_manual_cpp.pc'
+[6.188s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/lib/python3.10/site-packages'
+[6.188s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/bin'
+[6.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/share/example_mode_manual_cpp/package.ps1'
+[6.189s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/share/example_mode_manual_cpp/package.dsv'
+[6.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/share/example_mode_manual_cpp/package.sh'
+[6.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/share/example_mode_manual_cpp/package.bash'
+[6.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/share/example_mode_manual_cpp/package.zsh'
+[6.189s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/share/colcon-core/packages/example_mode_manual_cpp)
+[6.190s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(example_mode_with_executor_cpp)
+[6.190s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp' for CMake module files
+[6.191s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/build/example_mode_with_executor_cpp' returned '0': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/example_mode_with_executor_cpp
+[6.191s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp' for CMake config files
+[6.193s] Level 1:colcon.colcon_core.shell:create_environment_hook('example_mode_with_executor_cpp', 'cmake_prefix_path')
+[6.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/share/example_mode_with_executor_cpp/hook/cmake_prefix_path.ps1'
+[6.194s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/share/example_mode_with_executor_cpp/hook/cmake_prefix_path.dsv'
+[6.194s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/share/example_mode_with_executor_cpp/hook/cmake_prefix_path.sh'
+[6.194s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/lib'
+[6.194s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/bin'
+[6.194s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/lib/pkgconfig/example_mode_with_executor_cpp.pc'
+[6.194s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/lib/python3.10/site-packages'
+[6.195s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/bin'
+[6.195s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/share/example_mode_with_executor_cpp/package.ps1'
+[6.195s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/share/example_mode_with_executor_cpp/package.dsv'
+[6.195s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/share/example_mode_with_executor_cpp/package.sh'
+[6.196s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/share/example_mode_with_executor_cpp/package.bash'
+[6.196s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/share/example_mode_with_executor_cpp/package.zsh'
+[6.196s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/share/colcon-core/packages/example_mode_with_executor_cpp)
+[6.197s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(example_mode_rtl_replacement_cpp)
+[6.197s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp' for CMake module files
+[6.197s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/build/example_mode_rtl_replacement_cpp' returned '0': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/example_mode_rtl_replacement_cpp
+[6.199s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp' for CMake config files
+[6.201s] Level 1:colcon.colcon_core.shell:create_environment_hook('example_mode_rtl_replacement_cpp', 'cmake_prefix_path')
+[6.201s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/share/example_mode_rtl_replacement_cpp/hook/cmake_prefix_path.ps1'
+[6.201s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/share/example_mode_rtl_replacement_cpp/hook/cmake_prefix_path.dsv'
+[6.202s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/share/example_mode_rtl_replacement_cpp/hook/cmake_prefix_path.sh'
+[6.202s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/lib'
+[6.202s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/bin'
+[6.202s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/lib/pkgconfig/example_mode_rtl_replacement_cpp.pc'
+[6.202s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/lib/python3.10/site-packages'
+[6.202s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/bin'
+[6.202s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/share/example_mode_rtl_replacement_cpp/package.ps1'
+[6.203s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/share/example_mode_rtl_replacement_cpp/package.dsv'
+[6.203s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/share/example_mode_rtl_replacement_cpp/package.sh'
+[6.203s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/share/example_mode_rtl_replacement_cpp/package.bash'
+[6.203s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/share/example_mode_rtl_replacement_cpp/package.zsh'
+[6.203s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/share/colcon-core/packages/example_mode_rtl_replacement_cpp)
+[6.204s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(example_global_navigation_cpp)
+[6.204s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp' for CMake module files
+[6.204s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp' for CMake config files
+[6.205s] Level 1:colcon.colcon_core.shell:create_environment_hook('example_global_navigation_cpp', 'cmake_prefix_path')
+[6.205s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/share/example_global_navigation_cpp/hook/cmake_prefix_path.ps1'
+[6.205s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/share/example_global_navigation_cpp/hook/cmake_prefix_path.dsv'
+[6.205s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/share/example_global_navigation_cpp/hook/cmake_prefix_path.sh'
+[6.205s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/lib'
+[6.206s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/bin'
+[6.206s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/lib/pkgconfig/example_global_navigation_cpp.pc'
+[6.206s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/lib/python3.10/site-packages'
+[6.206s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/bin'
+[6.206s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/share/example_global_navigation_cpp/package.ps1'
+[6.206s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/share/example_global_navigation_cpp/package.dsv'
+[6.207s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/share/example_global_navigation_cpp/package.sh'
+[6.207s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/share/example_global_navigation_cpp/package.bash'
+[6.207s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/share/example_global_navigation_cpp/package.zsh'
+[6.207s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp/share/colcon-core/packages/example_global_navigation_cpp)
+[6.209s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(example_mode_fw_attitude_cpp)
+[6.210s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp' for CMake module files
+[6.210s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp' for CMake config files
+[6.210s] Level 1:colcon.colcon_core.shell:create_environment_hook('example_mode_fw_attitude_cpp', 'cmake_prefix_path')
+[6.210s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/hook/cmake_prefix_path.ps1'
+[6.210s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/hook/cmake_prefix_path.dsv'
+[6.211s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/hook/cmake_prefix_path.sh'
+[6.211s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/lib'
+[6.211s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/bin'
+[6.211s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/lib/pkgconfig/example_mode_fw_attitude_cpp.pc'
+[6.211s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/lib/python3.10/site-packages'
+[6.211s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/bin'
+[6.212s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/package.ps1'
+[6.212s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/package.dsv'
+[6.213s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/package.sh'
+[6.213s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/package.bash'
+[6.213s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/package.zsh'
+[6.213s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/colcon-core/packages/example_mode_fw_attitude_cpp)
+[6.214s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(example_mode_manual_cpp)
+[6.214s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp' for CMake module files
+[6.215s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp' for CMake config files
+[6.215s] Level 1:colcon.colcon_core.shell:create_environment_hook('example_mode_manual_cpp', 'cmake_prefix_path')
+[6.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/share/example_mode_manual_cpp/hook/cmake_prefix_path.ps1'
+[6.215s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/share/example_mode_manual_cpp/hook/cmake_prefix_path.dsv'
+[6.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/share/example_mode_manual_cpp/hook/cmake_prefix_path.sh'
+[6.216s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/lib'
+[6.216s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/bin'
+[6.216s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/lib/pkgconfig/example_mode_manual_cpp.pc'
+[6.216s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/lib/python3.10/site-packages'
+[6.216s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/bin'
+[6.216s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/share/example_mode_manual_cpp/package.ps1'
+[6.217s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/share/example_mode_manual_cpp/package.dsv'
+[6.217s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/share/example_mode_manual_cpp/package.sh'
+[6.217s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/share/example_mode_manual_cpp/package.bash'
+[6.217s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/share/example_mode_manual_cpp/package.zsh'
+[6.217s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp/share/colcon-core/packages/example_mode_manual_cpp)
+[6.218s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(example_mode_with_executor_cpp)
+[6.218s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp' for CMake module files
+[6.219s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp' for CMake config files
+[6.219s] Level 1:colcon.colcon_core.shell:create_environment_hook('example_mode_with_executor_cpp', 'cmake_prefix_path')
+[6.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/share/example_mode_with_executor_cpp/hook/cmake_prefix_path.ps1'
+[6.219s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/share/example_mode_with_executor_cpp/hook/cmake_prefix_path.dsv'
+[6.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/share/example_mode_with_executor_cpp/hook/cmake_prefix_path.sh'
+[6.220s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/lib'
+[6.220s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/bin'
+[6.220s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/lib/pkgconfig/example_mode_with_executor_cpp.pc'
+[6.220s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/lib/python3.10/site-packages'
+[6.220s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/bin'
+[6.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/share/example_mode_with_executor_cpp/package.ps1'
+[6.221s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/share/example_mode_with_executor_cpp/package.dsv'
+[6.221s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/share/example_mode_with_executor_cpp/package.sh'
+[6.221s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/share/example_mode_with_executor_cpp/package.bash'
+[6.221s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/share/example_mode_with_executor_cpp/package.zsh'
+[6.221s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp/share/colcon-core/packages/example_mode_with_executor_cpp)
+[6.222s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(example_mode_rtl_replacement_cpp)
+[6.222s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp' for CMake module files
+[6.223s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp' for CMake config files
+[6.223s] Level 1:colcon.colcon_core.shell:create_environment_hook('example_mode_rtl_replacement_cpp', 'cmake_prefix_path')
+[6.223s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/share/example_mode_rtl_replacement_cpp/hook/cmake_prefix_path.ps1'
+[6.224s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/share/example_mode_rtl_replacement_cpp/hook/cmake_prefix_path.dsv'
+[6.224s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/share/example_mode_rtl_replacement_cpp/hook/cmake_prefix_path.sh'
+[6.224s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/lib'
+[6.224s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/bin'
+[6.224s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/lib/pkgconfig/example_mode_rtl_replacement_cpp.pc'
+[6.224s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/lib/python3.10/site-packages'
+[6.224s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/bin'
+[6.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/share/example_mode_rtl_replacement_cpp/package.ps1'
+[6.225s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/share/example_mode_rtl_replacement_cpp/package.dsv'
+[6.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/share/example_mode_rtl_replacement_cpp/package.sh'
+[6.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/share/example_mode_rtl_replacement_cpp/package.bash'
+[6.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/share/example_mode_rtl_replacement_cpp/package.zsh'
+[6.226s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp/share/colcon-core/packages/example_mode_rtl_replacement_cpp)
+[8.017s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/build/px4_ros_com' returned '2': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/px4_ros_com -- -j16 -l16
+[8.038s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[8.038s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_ros_com' for CMake module files
+[8.039s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_ros_com' for CMake config files
+[8.042s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[8.042s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[8.042s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[8.042s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[8.043s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_ros_com/lib'
+[8.043s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'ld_library_path_lib')
+[8.043s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.ps1'
+[8.044s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.dsv'
+[8.044s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.sh'
+[8.044s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_ros_com/bin'
+[8.044s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[8.044s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_ros_com/lib/python3.10/site-packages'
+[8.045s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/install/px4_ros_com/bin'
+[8.045s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[8.045s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[8.045s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.sh'
+[8.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.bash'
+[8.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[8.046s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[8.056s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.057s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.057s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[8.057s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.077s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[8.077s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.077s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.077s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.078s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[8.078s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.078s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/niweiss/ws_sensor_combined/install/local_setup.ps1'
+[8.079s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/niweiss/ws_sensor_combined/install/_local_setup_util_ps1.py'
+[8.080s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/niweiss/ws_sensor_combined/install/setup.ps1'
+[8.081s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/niweiss/ws_sensor_combined/install/local_setup.sh'
+[8.081s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/niweiss/ws_sensor_combined/install/_local_setup_util_sh.py'
+[8.081s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/niweiss/ws_sensor_combined/install/setup.sh'
+[8.082s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/niweiss/ws_sensor_combined/install/local_setup.bash'
+[8.082s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/niweiss/ws_sensor_combined/install/setup.bash'
+[8.083s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/niweiss/ws_sensor_combined/install/local_setup.zsh'
+[8.084s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/niweiss/ws_sensor_combined/install/setup.zsh'

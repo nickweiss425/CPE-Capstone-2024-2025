@@ -1,0 +1,7 @@
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:185:56:[m[K [01;31m[Kerror: [m[Kinvalid cast from type ‘[01m[Kchar*[m[K’ to type ‘[01m[Kfloat[m[K’
+  185 |         rclcpp::spin(std::make_shared<OffboardControl>([01;31m[K(float) argv[1][m[K));
+      |                                                        [01;31m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/offboard_launch.dir/build.make:76: CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:310: CMakeFiles/offboard_launch.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,27 @@
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_paths.cpp:[m[K In lambda function:
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_paths.cpp:85:23:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   85 |                 float [01;35m[Kx[m[K = radius_ * std::cos(angle_);
+      |                       [01;35m[K^[m[K
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_paths.cpp:86:23:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   86 |                 float [01;35m[Ky[m[K = radius_ * std::sin(angle_);
+      |                       [01;35m[K^[m[K
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_paths.cpp:96:52:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOffboardControl::publish_trajectory_setpoint(float&, float&, float&)[m[K’
+   96 |                         [01;31m[Kpublish_trajectory_setpoint(x, y, altitude_)[m[K;
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_paths.cpp:124:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid OffboardControl::publish_trajectory_setpoint(float)[m[K’
+  124 |         void [01;36m[Kpublish_trajectory_setpoint[m[K(float position);
+      |              [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_paths.cpp:124:14:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_paths.cpp:[m[K At global scope:
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_paths.cpp:169:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid OffboardControl::publish_trajectory_setpoint(float, float, float)[m[K’
+  169 | void [01;31m[KOffboardControl[m[K::publish_trajectory_setpoint(float x, float y, float z)
+      |      [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_paths.cpp:124:14:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid OffboardControl::publish_trajectory_setpoint(float)[m[K’
+  124 |         void [01;36m[Kpublish_trajectory_setpoint[m[K(float position);
+      |              [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_paths.cpp:55:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass OffboardControl[m[K’ defined here
+   55 | class [01;36m[KOffboardControl[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/offboard_paths.dir/build.make:76: CMakeFiles/offboard_paths.dir/src/examples/offboard/offboard_paths.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:308: CMakeFiles/offboard_paths.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

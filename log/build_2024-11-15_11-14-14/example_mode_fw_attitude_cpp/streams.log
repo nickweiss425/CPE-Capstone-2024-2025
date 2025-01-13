@@ -1,0 +1,51 @@
+[0.087s] Invoking command in '/home/niweiss/ws_sensor_combined/build/example_mode_fw_attitude_cpp': CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp:/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp:/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/niweiss/ws_sensor_combined/install/px4_ros_com/lib /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/example_mode_fw_attitude_cpp -- -j16 -l16
+[0.154s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.314s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.453s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.456s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.464s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.476s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.489s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.525s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.527s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.804s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.860s] -- Found px4_ros2_cpp: 0.0.1 (/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/cmake)
+[3.878s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.925s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.926s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.926s] -- Configured cppcheck include dirs: /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/modes/fw_attitude/include
+[3.926s] -- Configured cppcheck exclude dirs and/or files: 
+[3.926s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.926s] -- Configured cpplint exclude dirs and/or files: 
+[3.927s] -- Added test 'lint_cmake' to check CMake code style
+[3.927s] -- Added test 'uncrustify' to check C / C++ code style
+[3.927s] -- Configured uncrustify additional arguments: 
+[3.928s] -- Added test 'xmllint' to check XML markup files
+[3.929s] -- Configuring done
+[3.938s] -- Generating done
+[3.939s] -- Build files have been written to: /home/niweiss/ws_sensor_combined/build/example_mode_fw_attitude_cpp
+[3.956s] [35m[1mConsolidate compiler generated dependencies of target example_mode_fw_attitude[0m
+[3.971s] [ 50%] [32mBuilding CXX object CMakeFiles/example_mode_fw_attitude.dir/src/main.cpp.o[0m
+[7.061s] [100%] [32m[1mLinking CXX executable example_mode_fw_attitude[0m
+[7.656s] [100%] Built target example_mode_fw_attitude
+[7.662s] Invoked command in '/home/niweiss/ws_sensor_combined/build/example_mode_fw_attitude_cpp' returned '0': CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp:/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp:/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/niweiss/ws_sensor_combined/install/px4_ros_com/lib /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/example_mode_fw_attitude_cpp -- -j16 -l16
+[7.676s] Invoking command in '/home/niweiss/ws_sensor_combined/build/example_mode_fw_attitude_cpp': CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp:/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp:/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/niweiss/ws_sensor_combined/install/px4_ros_com/lib /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/example_mode_fw_attitude_cpp
+[7.679s] -- Install configuration: ""
+[7.681s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/lib/example_mode_fw_attitude_cpp/example_mode_fw_attitude
+[7.681s] -- Set runtime path of "/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/lib/example_mode_fw_attitude_cpp/example_mode_fw_attitude" to ""
+[7.682s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/ament_index/resource_index/package_run_dependencies/example_mode_fw_attitude_cpp
+[7.682s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/ament_index/resource_index/parent_prefix_path/example_mode_fw_attitude_cpp
+[7.682s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/environment/ament_prefix_path.sh
+[7.682s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/environment/ament_prefix_path.dsv
+[7.683s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/environment/path.sh
+[7.683s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/environment/path.dsv
+[7.683s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/local_setup.bash
+[7.683s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/local_setup.sh
+[7.683s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/local_setup.zsh
+[7.683s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/local_setup.dsv
+[7.683s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/package.dsv
+[7.683s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/ament_index/resource_index/packages/example_mode_fw_attitude_cpp
+[7.683s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/cmake/example_mode_fw_attitude_cppConfig.cmake
+[7.683s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/cmake/example_mode_fw_attitude_cppConfig-version.cmake
+[7.683s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp/share/example_mode_fw_attitude_cpp/package.xml
+[7.685s] Invoked command in '/home/niweiss/ws_sensor_combined/build/example_mode_fw_attitude_cpp' returned '0': CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp:/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp:/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/niweiss/ws_sensor_combined/install/px4_ros_com/lib /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/example_mode_fw_attitude_cpp
