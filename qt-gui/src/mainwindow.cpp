@@ -13,6 +13,9 @@ MainWindow::MainWindow(QWidget *parent)
     // Set up the GPS coordinates display
     gpsWidget = new GPSWidget(ui->longitudeBox, ui->latitudeBox, ui->altitudeBox);
 
+    // Set up the flight state publisher
+    statePublisher = new StatePublisher();
+
     // Set up the video widget in the videoView
     ui->videoWidget->setObjectName("videoWidget");
 
@@ -56,6 +59,7 @@ void MainWindow::initializeButtons() {
 
 void MainWindow::unlockButtons() {
     // Enable buttons after start flight
+    ui->startFlightButton->setEnabled(false);
     ui->toggleRecordingButton->setEnabled(true);
     ui->stopFlightButton->setEnabled(true);
 
@@ -67,7 +71,7 @@ void MainWindow::unlockButtons() {
 }
 
 void MainWindow::startFlight() {
-    QMessageBox::information(this, "Start Flight", "Drone ready");
+    statePublisher->publish_state(TAKEOFF);
     unlockButtons();
 }
 
@@ -83,6 +87,7 @@ void MainWindow::toggleRecording() {
 }
 
 void MainWindow::stopFlight() {
+    statePublisher->publish_state(LANDING);
     initializeButtons();
     recording = false;
     ui->toggleRecordingButton->setText(QCoreApplication::translate("MainWindow", "\342\217\272", nullptr));
