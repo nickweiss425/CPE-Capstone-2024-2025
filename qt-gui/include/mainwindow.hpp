@@ -3,6 +3,7 @@
 #include <QMainWindow>
 #include <QGraphicsScene>
 #include "gpswidget.hpp"
+#include "flightstatepublisher.hpp"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,7 +20,9 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    StatePublisher *statePublisher; // Publisher for flight state
     GPSWidget *gpsWidget;       // GPS widget for displaying coordinates
+
     bool recording = false;     // Flag to indicate if recording is in progress
 
     void setupConnections(); // Function to handle signal-slot connections

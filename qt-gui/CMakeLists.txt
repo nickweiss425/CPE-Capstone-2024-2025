@@ -23,15 +23,8 @@ set(SOURCES
     src/ROSThread.cpp
     src/gpswidget.cpp
     src/gpssubscriber.cpp
+    src/flightstatepublisher.cpp
 )
-
-# Specify the UI file
-set(UIS
-    mainwindow.ui
-)
-
-# Wrap the UI file
-qt5_wrap_ui(UI_HEADERS ${UIS})
 
 # Add the main.h file for moc
 set(HEADERS
@@ -41,6 +34,7 @@ set(HEADERS
     include/ROSThread.h
     include/gpswidget.hpp
     include/gpssubscriber.hpp
+    include/flightstatepublisher.hpp
 )
 
 # Run moc on the header file

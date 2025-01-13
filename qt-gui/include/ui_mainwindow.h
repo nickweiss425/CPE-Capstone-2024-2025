@@ -132,11 +132,6 @@ public:
         gridLayoutMap->addLayout(altitudeLayout, 2, 0, 1, 1);
 
         buttonLayout = new QHBoxLayout();
-        buttonLayout->setObjectName(QString::fromUtf8("buttonLayout"));
-        startFlightButton = new QPushButton(tabMap);
-        startFlightButton->setObjectName(QString::fromUtf8("startFlightButton"));
-
-        buttonLayout->addWidget(startFlightButton);
 
         toggleRecordingButton = new QPushButton(tabMap);
         toggleRecordingButton->setObjectName(QString::fromUtf8("toggleRecordingButton"));
@@ -148,6 +143,11 @@ public:
 
         buttonLayout->addWidget(stopFlightButton);
 
+        buttonLayout->setObjectName(QString::fromUtf8("buttonLayout"));
+        startFlightButton = new QPushButton(tabMap);
+        startFlightButton->setObjectName(QString::fromUtf8("startFlightButton"));
+
+        buttonLayout->addWidget(startFlightButton);
 
         gridLayoutMap->addLayout(buttonLayout, 2, 1, 1, 1);
 
