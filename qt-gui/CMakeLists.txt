@@ -23,6 +23,8 @@ set(SOURCES
     src/ROSThread.cpp
     src/gpswidget.cpp
     src/gpssubscriber.cpp
+    src/imuwidget.cpp
+    src/imusubscriber.cpp
     src/flightstatepublisher.cpp
 )
 
@@ -34,6 +36,8 @@ set(HEADERS
     include/ROSThread.h
     include/gpswidget.hpp
     include/gpssubscriber.hpp
+    include/imuwidget.hpp
+    include/imusubscriber.hpp
     include/flightstatepublisher.hpp
 )
 

@@ -28,9 +28,10 @@ IMUWidget::~IMUWidget() {
     rclcpp::shutdown();
 }
 
-void IMUWidget::updateText(float64 orientation_covar[9], float64 angular_vel_covar[9], float64 linear_accel_covar[9]) {
-    imu_textbox_->append(
-        QString::number(orientation_covar[0]),
-        QString::number(orientation_covar[1]),
-        QString::number(orientation_covar[2]));
+void IMUWidget::updateText(
+    const std::array<double, 9> orientation_covariance,
+    const std::array<double, 9> angular_velocity_covariance,
+    const std::array<double, 9> linear_acceleration_covariance)
+{
+    imu_textbox_->append("TESTING DATA ");
 }

@@ -12,9 +12,13 @@ public:
     IMUSubscriber();
 
 signals:
-    void dataUpdated(float64 orientation_covariance[9], float64 angular_velocity_covariance[9], float64 linear_acceleration_covariance[9]);
+    void dataUpdated(
+        const std::array<double, 9> orientation_covariance,
+        const std::array<double, 9> angular_velocity_covariance,
+        const std::array<double, 9> linear_acceleration_covariance
+    );
 
 private:
-    void topic_callback(const sensor_msgs::msg::IMU &msg);
-    rclcpp::Subscription<sensor_msgs::msg::IMU>::SharedPtr subscription_;
+    void topic_callback(const sensor_msgs::msg::Imu &msg);
+    rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr subscription_;
 };
