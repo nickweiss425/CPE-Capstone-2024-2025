@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtQuickWidgets/QQuickWidget>
 #include <QQmlContext>
+#include <QQmlError>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
@@ -46,8 +47,8 @@ public:
     QPushButton *hoverControlButton4;
     QPushButton *confirmHoverButton;
     QHBoxLayout *buttonLayout;
-    QPushButton *startRecordingButton;
-    QPushButton *stopRecordingButton;
+    QPushButton *startFlightButton;
+    QPushButton *toggleRecordingButton;
     QPushButton *stopFlightButton;
     QTextBrowser *sensorData;
     QQuickWidget *mapView;
@@ -83,6 +84,7 @@ public:
         longitudeBox = new QLineEdit(tabMap);
         longitudeBox->setObjectName(QString::fromUtf8("longitudeBox"));
         longitudeBox->setReadOnly(true);
+        longitudeBox->setInputMask(QString::fromUtf8("99.999"));
 
         coordinateLayout->addWidget(longitudeBox);
 
@@ -93,7 +95,6 @@ public:
         altitudeLayout->setObjectName(QString::fromUtf8("altitudeLayout"));
         altitudeBox = new QLineEdit(tabMap);
         altitudeBox->setObjectName(QString::fromUtf8("altitudeBox"));
-        altitudeBox->setReadOnly(true);
 
         altitudeLayout->addWidget(altitudeBox);
 
@@ -131,22 +132,22 @@ public:
         gridLayoutMap->addLayout(altitudeLayout, 2, 0, 1, 1);
 
         buttonLayout = new QHBoxLayout();
-        buttonLayout->setObjectName(QString::fromUtf8("buttonLayout"));
-        startRecordingButton = new QPushButton(tabMap);
-        startRecordingButton->setObjectName(QString::fromUtf8("startRecordingButton"));
 
-        buttonLayout->addWidget(startRecordingButton);
+        toggleRecordingButton = new QPushButton(tabMap);
+        toggleRecordingButton->setObjectName(QString::fromUtf8("toggleRecordingButton"));
 
-        stopRecordingButton = new QPushButton(tabMap);
-        stopRecordingButton->setObjectName(QString::fromUtf8("stopRecordingButton"));
-
-        buttonLayout->addWidget(stopRecordingButton);
+        buttonLayout->addWidget(toggleRecordingButton);
 
         stopFlightButton = new QPushButton(tabMap);
         stopFlightButton->setObjectName(QString::fromUtf8("stopFlightButton"));
 
         buttonLayout->addWidget(stopFlightButton);
 
+        buttonLayout->setObjectName(QString::fromUtf8("buttonLayout"));
+        startFlightButton = new QPushButton(tabMap);
+        startFlightButton->setObjectName(QString::fromUtf8("startFlightButton"));
+
+        buttonLayout->addWidget(startFlightButton);
 
         gridLayoutMap->addLayout(buttonLayout, 2, 1, 1, 1);
 
@@ -158,7 +159,7 @@ public:
         mapView = new QQuickWidget(tabMap);
         mapView->setObjectName(QString::fromUtf8("mapView"));
         mapView->setResizeMode(QQuickWidget::SizeRootObjectToView);
-        mapView->setSource(QUrl(QString::fromUtf8("../map.qml")));
+        mapView->setSource(QUrl("qrc:/map.qml"));
 
         gridLayoutMap->addWidget(mapView, 0, 0, 2, 1);
 
@@ -180,7 +181,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(1); // Video tab
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -198,9 +199,10 @@ public:
         hoverControlButton3->setText(QCoreApplication::translate("MainWindow", "F8", nullptr));
         hoverControlButton4->setText(QCoreApplication::translate("MainWindow", "S", nullptr));
         confirmHoverButton->setText(QCoreApplication::translate("MainWindow", "\342\234\224", nullptr));
-        startRecordingButton->setText(QCoreApplication::translate("MainWindow", "Start Recording", nullptr));
-        stopRecordingButton->setText(QCoreApplication::translate("MainWindow", "Stop Recording", nullptr));
+        startFlightButton->setText(QCoreApplication::translate("MainWindow", "Start Flight", nullptr));
+        toggleRecordingButton->setText(QCoreApplication::translate("MainWindow", "\342\217\272", nullptr));
         stopFlightButton->setText(QCoreApplication::translate("MainWindow", "Stop Flight", nullptr));
+        toggleRecordingButton->setMaximumHeight(startFlightButton->sizeHint().height());
         sensorData->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
