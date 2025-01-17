@@ -14,9 +14,10 @@ public:
 
 public slots:
     void updateText(
-        float64 orientation_covar[9],
-        float64 angular_vel_covar[9],
-        float64 linear_accel_covar[9]);
+        const std::array<double, 9> orientation_covariance,
+        const std::array<double, 9> angular_velocity_covariance,
+        const std::array<double, 9> linear_acceleration_covariance
+    );
 
 private:
     QTextBrowser *imu_textbox_;

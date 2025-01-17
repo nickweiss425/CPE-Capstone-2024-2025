@@ -1,2 +1,5 @@
 qt-gui/build
 qt-gui/.vscode
+build/
+install/
+log/
