@@ -13,8 +13,8 @@ void IMUSubscriber::topic_callback(const sensor_msgs::msg::Imu &msg)
     // RCLCPP_INFO(this->get_logger(), "subscribing to imu data");
 
     emit dataUpdated(
-        msg.orientation_covariance,
-        msg.angular_velocity_covariance,
-        msg.linear_acceleration_covariance
+        msg.orientation,
+        msg.angular_velocity,
+        msg.linear_acceleration
     );
 }

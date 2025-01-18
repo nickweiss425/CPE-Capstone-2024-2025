@@ -4,6 +4,8 @@
 #include <QObject>
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/imu.hpp"
+#include "geometry_msgs/msg/quaternion.hpp"
+#include "geometry_msgs/msg/vector3.hpp"
 
 class IMUSubscriber : public QObject, public rclcpp::Node {
     Q_OBJECT
@@ -13,9 +15,9 @@ public:
 
 signals:
     void dataUpdated(
-        const std::array<double, 9> orientation_covariance,
-        const std::array<double, 9> angular_velocity_covariance,
-        const std::array<double, 9> linear_acceleration_covariance
+        const geometry_msgs::msg::Quaternion orientation,
+        const geometry_msgs::msg::Vector3 angular_velocity,
+        const geometry_msgs::msg::Vector3 linear_acceleration
     );
 
 private:

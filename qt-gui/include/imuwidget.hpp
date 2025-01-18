@@ -14,9 +14,9 @@ public:
 
 public slots:
     void updateText(
-        const std::array<double, 9> orientation_covariance,
-        const std::array<double, 9> angular_velocity_covariance,
-        const std::array<double, 9> linear_acceleration_covariance
+        const geometry_msgs::msg::Quaternion orientation,
+        const geometry_msgs::msg::Vector3 angular_velocity,
+        const geometry_msgs::msg::Vector3 linear_acceleration
     );
 
 private:

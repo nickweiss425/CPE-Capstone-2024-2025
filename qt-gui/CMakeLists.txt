@@ -11,6 +11,7 @@ set(CMAKE_AUTORCC ON)
 find_package(rclcpp REQUIRED)
 find_package(ament_cmake REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(Qt5 REQUIRED COMPONENTS Core Quick QuickControls2 Widgets QuickWidgets Location Positioning QmlImportScanner Multimedia MultimediaWidgets)
 
@@ -46,7 +47,7 @@ qt5_wrap_cpp(MOC_SOURCES ${HEADERS})
 
 # Create executables
 add_executable(${PROJECT_NAME} ${SOURCES} ${MOC_SOURCES} resources.qrc)
-ament_target_dependencies(${PROJECT_NAME} rclcpp Qt5 sensor_msgs)
+ament_target_dependencies(${PROJECT_NAME} rclcpp Qt5 sensor_msgs geometry_msgs)
 
 # Include directories
 target_include_directories(${PROJECT_NAME} PRIVATE include)
