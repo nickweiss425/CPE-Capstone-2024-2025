@@ -3,6 +3,7 @@
 #include <QMainWindow>
 #include <QGraphicsScene>
 #include "gpswidget.hpp"
+#include "imuwidget.hpp"
 #include "flightstatepublisher.hpp"
 
 QT_BEGIN_NAMESPACE
@@ -22,6 +23,7 @@ private:
     Ui::MainWindow *ui;
     StatePublisher *statePublisher; // Publisher for flight state
     GPSWidget *gpsWidget;       // GPS widget for displaying coordinates
+    IMUWidget *imuWidget;       // IMU widget for displaying imu data
 
     bool recording = false;     // Flag to indicate if recording is in progress
 

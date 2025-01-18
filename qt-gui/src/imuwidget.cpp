@@ -1,10 +1,10 @@
 #include "imuwidget.hpp"
+#include <iostream>
 
 using std::placeholders::_1;
 
 IMUWidget::IMUWidget(QTextBrowser *data)
     : imu_textbox_(data), imuSubscriber_(nullptr) {
-
     imuSubscriber_ = std::make_shared<IMUSubscriber>();
 
     if (!imuSubscriber_) {
