@@ -1,2 +1,6 @@
 qt-gui/build
 qt-gui/.vscode
+lora/build
+lora/install
+lora/log
+
