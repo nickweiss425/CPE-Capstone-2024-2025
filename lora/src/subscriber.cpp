@@ -1,4 +1,5 @@
 #include "subscriber.hpp"
+#include "serialstructs.hpp"
 
 int main(int argc, char * argv[])
 {
@@ -16,6 +17,20 @@ LoraSubscriber::LoraSubscriber(): Node("lora_subscriber") {
           "/imu", 10, std::bind(&LoraSubscriber::imu_topic_callback, this, _1));
     flight_state_subscription_ = this->create_subscription<std_msgs::msg::Int32>(
           "desired_state", 10, std::bind(&LoraSubscriber::flight_state_topic_callback, this, _1));
+
+    /* init serial port */
+    serial_.Open("/dev/serial/by-id/usb-1a86_USB_Single_Serial_578E022985-if00");
+    serial_.SetBaudRate(LibSerial::BaudRate::BAUD_115200);
+
+    if (!serial_.IsOpen()) {
+        RCLCPP_ERROR(this->get_logger(), "Failed to open serial port"); 
+        return;
+    }
+}
+
+LoraSubscriber::~LoraSubscriber() {
+    /* close the serial connection */
+    serial_.Close();
 }
 
 void LoraSubscriber::gps_topic_callback(const sensor_msgs::msg::NavSatFix &msg)
@@ -31,5 +46,10 @@ void LoraSubscriber::imu_topic_callback(const sensor_msgs::msg::Imu &msg)
 void LoraSubscriber::flight_state_topic_callback(const std_msgs::msg::Int32 &msg)
 {
     RCLCPP_INFO(this->get_logger(), "LORA subscriber handling flight state"); 
+    flight_state_serialized fs; 
+    fs.state = msg.data;
+
+    /* write to serial port */
+    serial_ << reinterpret_cast<uint8_t*>(&fs);
 }
 
