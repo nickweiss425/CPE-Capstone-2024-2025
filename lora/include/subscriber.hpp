@@ -1,7 +1,8 @@
 /* The subscriber subscribes to ROS2 topics, and forwards those data over LORA */
+#pragma once
 
 #include <memory>
-
+#include "libserial/SerialStream.h"
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/nav_sat_fix.hpp"
 #include "sensor_msgs/msg/imu.hpp"
@@ -12,6 +13,7 @@ class LoraSubscriber : public rclcpp::Node
 {
 public:
     LoraSubscriber();
+    ~LoraSubscriber();
 
 private:
     /* callback for each topic */
@@ -23,5 +25,8 @@ private:
     rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr gps_subscription_;
     rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_subscription_;
     rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr flight_state_subscription_;
+
+    /* libserial */
+    LibSerial::SerialStream serial_;
 };
 

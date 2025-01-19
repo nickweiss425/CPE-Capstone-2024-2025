@@ -11,9 +11,13 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
+# Manually link libserial
+find_library(SERIAL_LIB serial)
+
 include_directories(include)
 
 add_executable(listener src/subscriber.cpp)
+target_link_libraries(listener ${SERIAL_LIB})
 ament_target_dependencies(listener rclcpp std_msgs sensor_msgs)
 
 install(TARGETS
