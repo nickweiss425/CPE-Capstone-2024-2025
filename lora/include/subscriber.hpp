@@ -1,3 +1,5 @@
+/* The subscriber subscribes to ROS2 topics, and forwards those data over LORA */
+
 #include <memory>
 
 #include "rclcpp/rclcpp.hpp"
