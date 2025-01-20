@@ -19,12 +19,12 @@ LoraSubscriber::LoraSubscriber(): Node("lora_subscriber") {
           "desired_state", 10, std::bind(&LoraSubscriber::flight_state_topic_callback, this, _1));
 
     /* init serial port */
-    serial_.Open("/dev/serial/by-id/usb-1a86_USB_Single_Serial_578E022985-if00");
-    serial_.SetBaudRate(LibSerial::BaudRate::BAUD_115200);
-
-    if (!serial_.IsOpen()) {
-        RCLCPP_ERROR(this->get_logger(), "Failed to open serial port"); 
-        return;
+    try {
+        serial_.Open("/dev/ttyACM0");
+        serial_.SetBaudRate(LibSerial::BaudRate::BAUD_115200);
+    }
+    catch (const LibSerial::OpenFailed& e) {
+        RCLCPP_ERROR(this->get_logger(), "Failed to open serial port: %s", e.what()); 
     }
 }
 
