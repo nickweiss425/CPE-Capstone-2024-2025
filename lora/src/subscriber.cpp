@@ -36,17 +36,27 @@ LoraSubscriber::~LoraSubscriber() {
 void LoraSubscriber::gps_topic_callback(const sensor_msgs::msg::NavSatFix &msg)
 {
     RCLCPP_INFO(this->get_logger(), "LORA subscriber handling gps"); 
+    gps_serialized_t gps;
+    gps.latitude = msg.latitude;
+    gps.longitude = msg.longitude;
+    gps.altitude = msg.altitude;
+    serial_ << reinterpret_cast<uint8_t*>(&gps);
 }
 
 void LoraSubscriber::imu_topic_callback(const sensor_msgs::msg::Imu &msg)
 {
     RCLCPP_INFO(this->get_logger(), "LORA subscriber handling imu"); 
+    imu_serialized_t imu;
+    imu.orientation = msg.orientation;
+    imu.angular_velocity = msg.angular_velocity;
+    imu.linear_acceleration = msg.linear_acceleration;
+    serial_ << reinterpret_cast<uint8_t*>(&imu);
 }
 
 void LoraSubscriber::flight_state_topic_callback(const std_msgs::msg::Int32 &msg)
 {
     RCLCPP_INFO(this->get_logger(), "LORA subscriber handling flight state"); 
-    flight_state_serialized fs; 
+    flight_state_serialized_t fs; 
     fs.state = msg.data;
 
     /* write to serial port */
