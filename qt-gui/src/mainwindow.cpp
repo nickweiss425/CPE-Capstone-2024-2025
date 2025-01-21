@@ -13,6 +13,9 @@ MainWindow::MainWindow(QWidget *parent)
     // Set up the GPS coordinates display
     gpsWidget = new GPSWidget(ui->longitudeBox, ui->latitudeBox, ui->altitudeBox);
 
+    // Set up the IMU data stream
+    imuWidget = new IMUWidget(ui->sensorData);
+
     // Set up the flight state publisher
     statePublisher = new StatePublisher();
 
@@ -23,6 +26,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->latitudeBox->setText("0.000000");
     ui->longitudeBox->setText("0.000000");
     ui->altitudeBox->setText("0.000000");
+
+    ui->sensorData->setText("placeholder data");
 
     // Create exit handler
     std::signal(SIGINT, MainWindow::signalHandler);
