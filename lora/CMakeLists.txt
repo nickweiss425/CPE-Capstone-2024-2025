@@ -16,12 +16,16 @@ find_library(SERIAL_LIB serial)
 
 include_directories(include)
 
-add_executable(listener src/subscriber.cpp)
-target_link_libraries(listener ${SERIAL_LIB})
-ament_target_dependencies(listener rclcpp std_msgs sensor_msgs)
+add_executable(subscriber src/lorasubscriber.cpp)
+add_executable(publisher src/lorapublisher.cpp)
+target_link_libraries(subscriber ${SERIAL_LIB})
+target_link_libraries(publisher ${SERIAL_LIB})
+ament_target_dependencies(subscriber rclcpp std_msgs sensor_msgs)
+ament_target_dependencies(publisher rclcpp std_msgs sensor_msgs)
 
 install(TARGETS
-  listener
+  subscriber
+  publisher
   DESTINATION lib/${PROJECT_NAME})
 
 ament_package()

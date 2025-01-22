@@ -1,4 +1,4 @@
-#include "subscriber.hpp"
+#include "lorasubscriber.hpp"
 #include "serialstructs.hpp"
 
 int main(int argc, char * argv[])
