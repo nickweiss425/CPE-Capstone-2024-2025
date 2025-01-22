@@ -3,5 +3,5 @@ newgrp dialout\
 cd lora\
 colcon build\
 source install/setup.bash\
-ros2 run lora listener\
+ros2 run lora [subscriber] [publisher]
 
