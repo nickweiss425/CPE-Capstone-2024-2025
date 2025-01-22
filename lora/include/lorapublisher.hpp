@@ -27,5 +27,10 @@ private:
 
     /* libserial */
     LibSerial::SerialStream serial_;
+
+    /* publishing functions */
+    void publish_gps(uint8_t *raw_msg);
+    void publish_imu(uint8_t *raw_msg);
+    void publish_state(uint8_t *raw_msg);
 };
 
