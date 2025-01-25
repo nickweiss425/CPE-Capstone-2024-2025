@@ -10,6 +10,11 @@ int main(int argc, char * argv[])
 }
 
 LoraSubscriber::LoraSubscriber(): Node("lora_subscriber") {
+    /* get path argument */
+    this->declare_parameter("path", "/dev/null");
+    std::string path;
+    this->get_parameter("path", path);
+
     /* init subscriptions */
     gps_subscription_ = this->create_subscription<sensor_msgs::msg::NavSatFix>(
           "/gps/fix", 10, std::bind(&LoraSubscriber::gps_topic_callback, this, _1));
@@ -20,7 +25,7 @@ LoraSubscriber::LoraSubscriber(): Node("lora_subscriber") {
 
     /* init serial port */
     try {
-        serial_.Open("/dev/ttyACM0");
+        serial_.Open(path);
         serial_.SetBaudRate(LibSerial::BaudRate::BAUD_115200);
     }
     catch (const LibSerial::OpenFailed& e) {

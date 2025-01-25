@@ -12,6 +12,11 @@ int main(int argc, char * argv[])
 }
 
 LoraPublisher::LoraPublisher(): Node("lora_publisher") {
+    /* get path argument */
+    this->declare_parameter("path", "/dev/null");
+    std::string path;
+    this->get_parameter("path", path);
+
     /* init publishers */
     gps_publisher_ = this->create_publisher<sensor_msgs::msg::NavSatFix>("/gps/fix", 10);
     imu_publisher_ = this->create_publisher<sensor_msgs::msg::Imu>("/imu", 10);
@@ -19,7 +24,7 @@ LoraPublisher::LoraPublisher(): Node("lora_publisher") {
 
     /* init serial port */
     try {
-        serial_.Open("/dev/ttyACM0");
+        serial_.Open(path);
         serial_.SetBaudRate(LibSerial::BaudRate::BAUD_115200);
         timer_ = this->create_wall_timer(
             100ms, std::bind(&LoraPublisher::timer_callback, this));
