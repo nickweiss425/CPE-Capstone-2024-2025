@@ -27,6 +27,7 @@ set(SOURCES
     src/imuwidget.cpp
     src/imusubscriber.cpp
     src/flightstatepublisher.cpp
+    src/dataLogger.cpp
 )
 
 # Add the main.h file for moc
@@ -40,6 +41,7 @@ set(HEADERS
     include/imuwidget.hpp
     include/imusubscriber.hpp
     include/flightstatepublisher.hpp
+    include/dataLogger.hpp
 )
 
 # Run moc on the header file

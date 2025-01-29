@@ -5,6 +5,8 @@
 #include "gpswidget.hpp"
 #include "imuwidget.hpp"
 #include "flightstatepublisher.hpp"
+#include "dataLogger.hpp"
+#include "ROSThread.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -18,14 +20,15 @@ class MainWindow : public QMainWindow {
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    /*static bool recording;     // Flag to indicate if recording is in progress
+    bool getRecording();
+    void setRecording(bool recordingSet);*/
 
 private:
     Ui::MainWindow *ui;
     StatePublisher *statePublisher; // Publisher for flight state
     GPSWidget *gpsWidget;       // GPS widget for displaying coordinates
     IMUWidget *imuWidget;       // IMU widget for displaying imu data
-
-    bool recording = false;     // Flag to indicate if recording is in progress
 
     void setupConnections(); // Function to handle signal-slot connections
     void initializeButtons(); // Function to initialize button states
