@@ -1,4 +1,5 @@
 #include "gpswidget.hpp"
+#include "dataLogger.hpp"
 
 using std::placeholders::_1;
 
@@ -31,4 +32,8 @@ void GPSWidget::updateLocation(const double &longitude, const double &latitude, 
     longitudeBox_->setText(QString::number(longitude));
     latitudeBox_->setText(QString::number(latitude));
     altitudeBox_->setText(QString::number(altitude));
+    auto dataLogger_ = DataLogger::getInstance();
+    if (dataLogger_->getRecording()) {
+        dataLogger_->log_data(std::string("hello world"));
+    }
 }

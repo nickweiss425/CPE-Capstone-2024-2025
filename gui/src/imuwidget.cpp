@@ -1,4 +1,5 @@
 #include "imuwidget.hpp"
+#include "dataLogger.hpp"
 #include <array>
 #include <iostream>
 #include <QMetaType>
@@ -43,22 +44,35 @@ void IMUWidget::updateText(
     const geometry_msgs::msg::Vector3 linear_acceleration)
 {
     // Print quaternion data (x, y, z, w)
-    imu_textbox_->append(QString("Orientation: x=%1, y=%2, z=%3, w=%4")
+    QString quaternionText = QString("Orientation: x=%1, y=%2, z=%3, w=%4")
                          .arg(orientation.x)
                          .arg(orientation.y)
                          .arg(orientation.z)
-                         .arg(orientation.w));
+                         .arg(orientation.w);
+    imu_textbox_->append(quaternionText);
 
     // Print angular velocity data (x, y, z)
-    imu_textbox_->append(QString("Angular Velocity: x=%1, y=%2, z=%3")
+    QString velocityText = QString("Angular Velocity: x=%1, y=%2, z=%3")
                          .arg(angular_velocity.x)
                          .arg(angular_velocity.y)
-                         .arg(angular_velocity.z));
+                         .arg(angular_velocity.z);
+    imu_textbox_->append(velocityText);
 
     // Print linear acceleration data (x, y, z)
-    imu_textbox_->append(QString("Linear Acceleration: x=%1, y=%2, z=%3\n")
+    QString accelerationText = QString("Linear Acceleration: x=%1, y=%2, z=%3\n")
                          .arg(linear_acceleration.x)
                          .arg(linear_acceleration.y)
-                         .arg(linear_acceleration.z));
+                         .arg(linear_acceleration.z);
+    imu_textbox_->append(accelerationText);
+
+    auto dataLogger_ = DataLogger::getInstance();
+    if (dataLogger_->getRecording()) {
+        dataLogger_->log_data(quaternionText.toStdString());
+        dataLogger_->log_data(std::string("\n"));
+        dataLogger_->log_data(velocityText.toStdString());
+        dataLogger_->log_data(std::string("\n"));
+        dataLogger_->log_data(accelerationText.toStdString());
+        dataLogger_->log_data(std::string("\n"));
+    }
 }
 

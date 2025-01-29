@@ -28,6 +28,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->altitudeBox->setText("0.000000");
 
     ui->sensorData->setText("placeholder data");
+    //recording = false;
 
     // Create exit handler
     std::signal(SIGINT, MainWindow::signalHandler);
@@ -39,6 +40,7 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow() {
     delete ui;
     stopFlight();
+    DataLogger::shutdown();
     rclcpp::shutdown();
 }
 
@@ -81,20 +83,37 @@ void MainWindow::startFlight() {
 }
 
 void MainWindow::toggleRecording() {
-    switch (recording) {
+    auto dataLogger_ = DataLogger::getInstance();
+    switch (dataLogger_->getRecording()) {
         case false:
             ui->toggleRecordingButton->setText(QCoreApplication::translate("MainWindow", "\342\217\271", nullptr));
             break;
         case true:
             ui->toggleRecordingButton->setText(QCoreApplication::translate("MainWindow", "\342\217\272", nullptr));
     }
-    recording = !recording;
+
+    if (dataLogger_->getRecording()) {
+        dataLogger_->close_file();
+    } else {
+        dataLogger_->create_file();
+        dataLogger_->log_data(std::string("hello world"));
+    }
+    //recording = !recording;
+    dataLogger_->switchRecording();
 }
+
+/*bool MainWindow::getRecording() {
+    return recording;
+}
+
+void MainWindow::setRecording(bool recordingSet) {
+    recording = recordingSet;
+}*/
 
 void MainWindow::stopFlight() {
     statePublisher->publish_state(LANDING);
     initializeButtons();
-    recording = false;
+    //recording = false;
     ui->toggleRecordingButton->setText(QCoreApplication::translate("MainWindow", "\342\217\272", nullptr));
 }
 
