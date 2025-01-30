@@ -45,7 +45,16 @@ void LoraSubscriber::gps_topic_callback(const sensor_msgs::msg::NavSatFix &msg)
     gps.latitude = msg.latitude;
     gps.longitude = msg.longitude;
     gps.altitude = msg.altitude;
-    serial_ << reinterpret_cast<uint8_t*>(&gps);
+
+    /* create byte array to hold data */
+    uint8_t buffer[sizeof(gps_serialized_t)];
+    std::memcpy(buffer, &gps, sizeof(gps_serialized_t));
+
+    /* write to serial port byte by byte*/
+    for (int i = 0; i < (int)sizeof(gps_serialized_t); i++)
+    {
+        serial_ << buffer[i];
+    }
 }
 
 void LoraSubscriber::imu_topic_callback(const sensor_msgs::msg::Imu &msg)
@@ -55,7 +64,16 @@ void LoraSubscriber::imu_topic_callback(const sensor_msgs::msg::Imu &msg)
     imu.orientation = msg.orientation;
     imu.angular_velocity = msg.angular_velocity;
     imu.linear_acceleration = msg.linear_acceleration;
-    serial_ << reinterpret_cast<uint8_t*>(&imu);
+
+    /* create byte array to hold data */
+    uint8_t buffer[sizeof(imu_serialized_t)];
+    std::memcpy(buffer, &imu, sizeof(imu_serialized_t));
+
+    /* write to serial port byte by byte*/
+    for (int i = 0; i < (int)sizeof(imu_serialized_t); i++)
+    {
+        serial_ << buffer[i];
+    }
 }
 
 void LoraSubscriber::flight_state_topic_callback(const std_msgs::msg::Int32 &msg)
@@ -69,7 +87,7 @@ void LoraSubscriber::flight_state_topic_callback(const std_msgs::msg::Int32 &msg
     std::memcpy(buffer, &fs, sizeof(flight_state_serialized_t));
 
     /* write to serial port byte by byte*/
-    for (int i = 0; i < sizeof(flight_state_serialized_t); i++)
+    for (int i = 0; i < (int)sizeof(flight_state_serialized_t); i++)
     {
         serial_ << buffer[i];
     }
