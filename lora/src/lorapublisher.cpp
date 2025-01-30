@@ -65,19 +65,19 @@ void LoraPublisher::timer_callback()
     topic_st topic = (topic_st)msg[0];
 
     /* figure out how many bytes are left */
-    size_t remaining_bytes = 0;
+    size_t total_bytes = 0;
     switch(topic)
     {
         case topic_st::GPS:
-	    remaining_bytes = sizeof(gps_serialized_t);
+	    total_bytes = sizeof(gps_serialized_t);
 	    RCLCPP_INFO(this->get_logger(), "Received GPS message");
             break;
 	case topic_st::IMU:
-	    remaining_bytes = sizeof(imu_serialized_t);
+	    total_bytes = sizeof(imu_serialized_t);
 	    RCLCPP_INFO(this->get_logger(), "Received IMU message");
             break;
 	case topic_st::DESIRED_STATE:
-	    remaining_bytes = sizeof(flight_state_serialized_t);
+	    total_bytes = sizeof(flight_state_serialized_t);
 	    RCLCPP_INFO(this->get_logger(), "Received STATE message");
             break;
         default:
@@ -87,14 +87,14 @@ void LoraPublisher::timer_callback()
     }
     
     /* read the rest */
-    while (serial_.IsDataAvailable() && bytes_read < MAX_SIZE && bytes_read < remaining_bytes + 1)
+    while (serial_.IsDataAvailable() && bytes_read < MAX_SIZE && bytes_read < total_bytes)
     {
         serial_ >> msg[bytes_read++];
     }
 
-    RCLCPP_INFO(this->get_logger(), "Bytes read: %d", bytes_read);
+    RCLCPP_INFO(this->get_logger(), "Bytes read: %d, Total bytes: %d", bytes_read, total_bytes);
 
-    if (bytes_read >= remaining_bytes + 1)
+    if (bytes_read >= total_bytes)
     {
         switch (topic)
 	{
