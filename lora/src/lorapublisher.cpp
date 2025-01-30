@@ -11,6 +11,7 @@ int main(int argc, char * argv[])
     return 0;
 }
 
+
 LoraPublisher::LoraPublisher(): Node("lora_publisher") {
     /* get path argument */
     this->declare_parameter("path", "/dev/null");
@@ -27,17 +28,19 @@ LoraPublisher::LoraPublisher(): Node("lora_publisher") {
         serial_.Open(path);
         serial_.SetBaudRate(LibSerial::BaudRate::BAUD_115200);
         timer_ = this->create_wall_timer(
-            100ms, std::bind(&LoraPublisher::timer_callback, this));
+            500ms, std::bind(&LoraPublisher::timer_callback, this));
     }
     catch (const LibSerial::OpenFailed& e) {
         RCLCPP_ERROR(this->get_logger(), "Failed to open serial port: %s", e.what()); 
     }
 }
 
+
 LoraPublisher::~LoraPublisher() {
     /* close the serial connection */
     serial_.Close();
 }
+
 
 /* read from serial port and reconstruct message */
 void LoraPublisher::timer_callback()
@@ -46,25 +49,77 @@ void LoraPublisher::timer_callback()
 
     /* read message */
     uint8_t *msg = new uint8_t[MAX_SIZE];
-    serial_ >> msg;
-    topic_st *topic = (topic_st *)msg;
-    switch(*topic)
+    size_t bytes_read = 0;
+
+    /* get one byte for topic */
+    if (serial_.IsDataAvailable())
     {
-        case GPS:
-            publish_gps(msg);
+        serial_ >> msg[bytes_read++];
+    }
+    else
+    {
+        RCLCPP_WARN(this->get_logger(), "No data available to read.");
+        delete[] msg;
+        return;
+    }
+    topic_st topic = (topic_st)msg[0];
+
+    /* figure out how many bytes are left */
+    size_t remaining_bytes = 0;
+    switch(topic)
+    {
+        case topic_st::GPS:
+	    remaining_bytes = sizeof(gps_serialized_t);
+	    RCLCPP_INFO(this->get_logger(), "Received GPS message");
             break;
-        case IMU:
-            publish_imu(msg);
+	case topic_st::IMU:
+	    remaining_bytes = sizeof(imu_serialized_t);
+	    RCLCPP_INFO(this->get_logger(), "Received IMU message");
             break;
-        case DESIRED_STATE:
-            publish_state(msg);
+	case topic_st::DESIRED_STATE:
+	    remaining_bytes = sizeof(flight_state_serialized_t);
+	    RCLCPP_INFO(this->get_logger(), "Received STATE message");
             break;
         default:
-            break;
+	    RCLCPP_INFO(this->get_logger(), "Received unknown message");
+	    delete[] msg;
+	    return;
+    }
+    
+    /* read the rest */
+    while (serial_.IsDataAvailable() && bytes_read < MAX_SIZE && bytes_read < remaining_bytes + 1)
+    {
+        serial_ >> msg[bytes_read++];
+    }
+
+    RCLCPP_INFO(this->get_logger(), "Bytes read: %d", bytes_read);
+
+    if (bytes_read >= remaining_bytes + 1)
+    {
+        switch (topic)
+	{
+	    case topic_st::GPS:
+                publish_gps(msg);
+                break;
+	    case topic_st::IMU:
+                publish_imu(msg);
+                break;
+	    case topic_st::DESIRED_STATE:
+                publish_state(msg);
+                break;
+            default:
+                RCLCPP_INFO(this->get_logger(), "Received unknown message topic.");
+                break;
+         }
+    }
+    else
+    {
+         RCLCPP_WARN(this->get_logger(), "Incomplete message received.");
     }
 
     delete[] msg;
 }
+
 
 void LoraPublisher::publish_gps(uint8_t *raw_msg)
 {
