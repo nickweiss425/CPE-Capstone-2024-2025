@@ -64,7 +64,14 @@ void LoraSubscriber::flight_state_topic_callback(const std_msgs::msg::Int32 &msg
     flight_state_serialized_t fs; 
     fs.state = msg.data;
 
-    /* write to serial port */
-    serial_ << reinterpret_cast<uint8_t*>(&fs);
+    /* create byte array to hold data */
+    uint8_t buffer[sizeof(flight_state_serialized_t)];
+    std::memcpy(buffer, &fs, sizeof(flight_state_serialized_t));
+
+    /* write to serial port byte by byte*/
+    for (int i = 0; i < sizeof(flight_state_serialized_t); i++)
+    {
+        serial_ << buffer[i];
+    }
 }
 
