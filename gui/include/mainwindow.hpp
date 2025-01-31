@@ -5,7 +5,7 @@
 #include "gpswidget.hpp"
 #include "imuwidget.hpp"
 #include "flightstatepublisher.hpp"
-#include "dataLogger.hpp"
+#include "datalogger.hpp"
 #include "ROSThread.h"
 
 QT_BEGIN_NAMESPACE
@@ -20,9 +20,6 @@ class MainWindow : public QMainWindow {
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    /*static bool recording;     // Flag to indicate if recording is in progress
-    bool getRecording();
-    void setRecording(bool recordingSet);*/
 
 private:
     Ui::MainWindow *ui;
