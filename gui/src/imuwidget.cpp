@@ -1,5 +1,5 @@
 #include "imuwidget.hpp"
-#include "dataLogger.hpp"
+#include "datalogger.hpp"
 #include <array>
 #include <iostream>
 #include <QMetaType>
@@ -68,11 +68,8 @@ void IMUWidget::updateText(
     auto dataLogger_ = DataLogger::getInstance();
     if (dataLogger_->getRecording()) {
         dataLogger_->log_data(quaternionText.toStdString());
-        dataLogger_->log_data(std::string("\n"));
         dataLogger_->log_data(velocityText.toStdString());
-        dataLogger_->log_data(std::string("\n"));
         dataLogger_->log_data(accelerationText.toStdString());
-        dataLogger_->log_data(std::string("\n"));
     }
 }
 

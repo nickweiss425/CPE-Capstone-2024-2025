@@ -1,5 +1,5 @@
 #include "gpswidget.hpp"
-#include "dataLogger.hpp"
+#include "datalogger.hpp"
 
 using std::placeholders::_1;
 
@@ -32,8 +32,15 @@ void GPSWidget::updateLocation(const double &longitude, const double &latitude, 
     longitudeBox_->setText(QString::number(longitude));
     latitudeBox_->setText(QString::number(latitude));
     altitudeBox_->setText(QString::number(altitude));
+
+    QString longitudeText = QString("Longitude: %1\n") .arg(longitude);
+    QString latitudeText = QString("Latitude: %1\n") .arg(latitude);
+    QString altitudeText = QString("Altitude: %1\n") .arg(altitude);
+
     auto dataLogger_ = DataLogger::getInstance();
     if (dataLogger_->getRecording()) {
-        dataLogger_->log_data(std::string("hello world"));
+        dataLogger_->log_data(longitudeText.toStdString());
+        dataLogger_->log_data(latitudeText.toStdString());
+        dataLogger_->log_data(altitudeText.toStdString());
     }
 }
