@@ -44,8 +44,8 @@ cdr_serialize(
   cdr << ros_message.lateral_speed_setpoint_normalized;
   // Member: yaw_rate_setpoint
   cdr << ros_message.yaw_rate_setpoint;
-  // Member: yaw_rate_setpoint_normalized
-  cdr << ros_message.yaw_rate_setpoint_normalized;
+  // Member: speed_diff_setpoint_normalized
+  cdr << ros_message.speed_diff_setpoint_normalized;
   // Member: yaw_setpoint
   cdr << ros_message.yaw_setpoint;
   return true;
@@ -75,8 +75,8 @@ cdr_deserialize(
   // Member: yaw_rate_setpoint
   cdr >> ros_message.yaw_rate_setpoint;
 
-  // Member: yaw_rate_setpoint_normalized
-  cdr >> ros_message.yaw_rate_setpoint_normalized;
+  // Member: speed_diff_setpoint_normalized
+  cdr >> ros_message.speed_diff_setpoint_normalized;
 
   // Member: yaw_setpoint
   cdr >> ros_message.yaw_setpoint;
@@ -133,9 +133,9 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: yaw_rate_setpoint_normalized
+  // Member: speed_diff_setpoint_normalized
   {
-    size_t item_size = sizeof(ros_message.yaw_rate_setpoint_normalized);
+    size_t item_size = sizeof(ros_message.speed_diff_setpoint_normalized);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -223,7 +223,7 @@ max_serialized_size_RoverMecanumSetpoint(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Member: yaw_rate_setpoint_normalized
+  // Member: speed_diff_setpoint_normalized
   {
     size_t array_size = 1;
 

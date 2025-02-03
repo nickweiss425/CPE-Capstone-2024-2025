@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/tiltrotor_extra_controls__struct.hpp"
 #include "px4_msgs/msg/detail/tiltrotor_extra_controls__builder.hpp"
 #include "px4_msgs/msg/detail/tiltrotor_extra_controls__traits.hpp"
+#include "px4_msgs/msg/detail/tiltrotor_extra_controls__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__TILTROTOR_EXTRA_CONTROLS_HPP_

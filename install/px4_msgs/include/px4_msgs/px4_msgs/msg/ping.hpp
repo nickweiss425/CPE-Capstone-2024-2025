@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/ping__struct.hpp"
 #include "px4_msgs/msg/detail/ping__builder.hpp"
 #include "px4_msgs/msg/detail/ping__traits.hpp"
+#include "px4_msgs/msg/detail/ping__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__PING_HPP_

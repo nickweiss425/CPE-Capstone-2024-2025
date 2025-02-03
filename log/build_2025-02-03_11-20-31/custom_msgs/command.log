@@ -1,0 +1,2 @@
+Invoking command in '/home/niweiss/ws_sensor_combined/build/custom_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/niweiss/ws_sensor_combined/src/custom_msgs -DCMAKE_INSTALL_PREFIX=/home/niweiss/ws_sensor_combined/install/custom_msgs
+Invoked command in '/home/niweiss/ws_sensor_combined/build/custom_msgs' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/niweiss/ws_sensor_combined/src/custom_msgs -DCMAKE_INSTALL_PREFIX=/home/niweiss/ws_sensor_combined/install/custom_msgs

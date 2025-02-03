@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/gpio_out__struct.hpp"
 #include "px4_msgs/msg/detail/gpio_out__builder.hpp"
 #include "px4_msgs/msg/detail/gpio_out__traits.hpp"
+#include "px4_msgs/msg/detail/gpio_out__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__GPIO_OUT_HPP_

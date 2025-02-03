@@ -40,10 +40,14 @@ struct RoverMecanumStatus_
     {
       this->timestamp = 0ull;
       this->measured_forward_speed = 0.0f;
+      this->adjusted_forward_speed_setpoint = 0.0f;
       this->measured_lateral_speed = 0.0f;
-      this->adjusted_yaw_rate_setpoint = 0.0f;
+      this->adjusted_lateral_speed_setpoint = 0.0f;
       this->measured_yaw_rate = 0.0f;
+      this->clyaw_yaw_rate_setpoint = 0.0f;
+      this->adjusted_yaw_rate_setpoint = 0.0f;
       this->measured_yaw = 0.0f;
+      this->adjusted_yaw_setpoint = 0.0f;
       this->pid_yaw_rate_integral = 0.0f;
       this->pid_yaw_integral = 0.0f;
       this->pid_forward_throttle_integral = 0.0f;
@@ -59,10 +63,14 @@ struct RoverMecanumStatus_
     {
       this->timestamp = 0ull;
       this->measured_forward_speed = 0.0f;
+      this->adjusted_forward_speed_setpoint = 0.0f;
       this->measured_lateral_speed = 0.0f;
-      this->adjusted_yaw_rate_setpoint = 0.0f;
+      this->adjusted_lateral_speed_setpoint = 0.0f;
       this->measured_yaw_rate = 0.0f;
+      this->clyaw_yaw_rate_setpoint = 0.0f;
+      this->adjusted_yaw_rate_setpoint = 0.0f;
       this->measured_yaw = 0.0f;
+      this->adjusted_yaw_setpoint = 0.0f;
       this->pid_yaw_rate_integral = 0.0f;
       this->pid_yaw_integral = 0.0f;
       this->pid_forward_throttle_integral = 0.0f;
@@ -77,18 +85,30 @@ struct RoverMecanumStatus_
   using _measured_forward_speed_type =
     float;
   _measured_forward_speed_type measured_forward_speed;
+  using _adjusted_forward_speed_setpoint_type =
+    float;
+  _adjusted_forward_speed_setpoint_type adjusted_forward_speed_setpoint;
   using _measured_lateral_speed_type =
     float;
   _measured_lateral_speed_type measured_lateral_speed;
-  using _adjusted_yaw_rate_setpoint_type =
+  using _adjusted_lateral_speed_setpoint_type =
     float;
-  _adjusted_yaw_rate_setpoint_type adjusted_yaw_rate_setpoint;
+  _adjusted_lateral_speed_setpoint_type adjusted_lateral_speed_setpoint;
   using _measured_yaw_rate_type =
     float;
   _measured_yaw_rate_type measured_yaw_rate;
+  using _clyaw_yaw_rate_setpoint_type =
+    float;
+  _clyaw_yaw_rate_setpoint_type clyaw_yaw_rate_setpoint;
+  using _adjusted_yaw_rate_setpoint_type =
+    float;
+  _adjusted_yaw_rate_setpoint_type adjusted_yaw_rate_setpoint;
   using _measured_yaw_type =
     float;
   _measured_yaw_type measured_yaw;
+  using _adjusted_yaw_setpoint_type =
+    float;
+  _adjusted_yaw_setpoint_type adjusted_yaw_setpoint;
   using _pid_yaw_rate_integral_type =
     float;
   _pid_yaw_rate_integral_type pid_yaw_rate_integral;
@@ -115,16 +135,22 @@ struct RoverMecanumStatus_
     this->measured_forward_speed = _arg;
     return *this;
   }
+  Type & set__adjusted_forward_speed_setpoint(
+    const float & _arg)
+  {
+    this->adjusted_forward_speed_setpoint = _arg;
+    return *this;
+  }
   Type & set__measured_lateral_speed(
     const float & _arg)
   {
     this->measured_lateral_speed = _arg;
     return *this;
   }
-  Type & set__adjusted_yaw_rate_setpoint(
+  Type & set__adjusted_lateral_speed_setpoint(
     const float & _arg)
   {
-    this->adjusted_yaw_rate_setpoint = _arg;
+    this->adjusted_lateral_speed_setpoint = _arg;
     return *this;
   }
   Type & set__measured_yaw_rate(
@@ -133,10 +159,28 @@ struct RoverMecanumStatus_
     this->measured_yaw_rate = _arg;
     return *this;
   }
+  Type & set__clyaw_yaw_rate_setpoint(
+    const float & _arg)
+  {
+    this->clyaw_yaw_rate_setpoint = _arg;
+    return *this;
+  }
+  Type & set__adjusted_yaw_rate_setpoint(
+    const float & _arg)
+  {
+    this->adjusted_yaw_rate_setpoint = _arg;
+    return *this;
+  }
   Type & set__measured_yaw(
     const float & _arg)
   {
     this->measured_yaw = _arg;
+    return *this;
+  }
+  Type & set__adjusted_yaw_setpoint(
+    const float & _arg)
+  {
+    this->adjusted_yaw_setpoint = _arg;
     return *this;
   }
   Type & set__pid_yaw_rate_integral(
@@ -212,16 +256,28 @@ struct RoverMecanumStatus_
     if (this->measured_forward_speed != other.measured_forward_speed) {
       return false;
     }
+    if (this->adjusted_forward_speed_setpoint != other.adjusted_forward_speed_setpoint) {
+      return false;
+    }
     if (this->measured_lateral_speed != other.measured_lateral_speed) {
       return false;
     }
-    if (this->adjusted_yaw_rate_setpoint != other.adjusted_yaw_rate_setpoint) {
+    if (this->adjusted_lateral_speed_setpoint != other.adjusted_lateral_speed_setpoint) {
       return false;
     }
     if (this->measured_yaw_rate != other.measured_yaw_rate) {
       return false;
     }
+    if (this->clyaw_yaw_rate_setpoint != other.clyaw_yaw_rate_setpoint) {
+      return false;
+    }
+    if (this->adjusted_yaw_rate_setpoint != other.adjusted_yaw_rate_setpoint) {
+      return false;
+    }
     if (this->measured_yaw != other.measured_yaw) {
+      return false;
+    }
+    if (this->adjusted_yaw_setpoint != other.adjusted_yaw_setpoint) {
       return false;
     }
     if (this->pid_yaw_rate_integral != other.pid_yaw_rate_integral) {

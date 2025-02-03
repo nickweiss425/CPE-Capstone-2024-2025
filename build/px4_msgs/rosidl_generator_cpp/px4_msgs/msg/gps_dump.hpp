@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/gps_dump__struct.hpp"
 #include "px4_msgs/msg/detail/gps_dump__builder.hpp"
 #include "px4_msgs/msg/detail/gps_dump__traits.hpp"
+#include "px4_msgs/msg/detail/gps_dump__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__GPS_DUMP_HPP_

@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/landing_target_pose__struct.hpp"
 #include "px4_msgs/msg/detail/landing_target_pose__builder.hpp"
 #include "px4_msgs/msg/detail/landing_target_pose__traits.hpp"
+#include "px4_msgs/msg/detail/landing_target_pose__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__LANDING_TARGET_POSE_HPP_

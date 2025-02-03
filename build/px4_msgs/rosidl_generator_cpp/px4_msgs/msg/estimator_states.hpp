@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/estimator_states__struct.hpp"
 #include "px4_msgs/msg/detail/estimator_states__builder.hpp"
 #include "px4_msgs/msg/detail/estimator_states__traits.hpp"
+#include "px4_msgs/msg/detail/estimator_states__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__ESTIMATOR_STATES_HPP_

@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/gimbal_manager_information__struct.hpp"
 #include "px4_msgs/msg/detail/gimbal_manager_information__builder.hpp"
 #include "px4_msgs/msg/detail/gimbal_manager_information__traits.hpp"
+#include "px4_msgs/msg/detail/gimbal_manager_information__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__GIMBAL_MANAGER_INFORMATION_HPP_

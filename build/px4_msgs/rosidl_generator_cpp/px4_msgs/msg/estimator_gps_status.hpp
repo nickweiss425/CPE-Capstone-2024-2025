@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/estimator_gps_status__struct.hpp"
 #include "px4_msgs/msg/detail/estimator_gps_status__builder.hpp"
 #include "px4_msgs/msg/detail/estimator_gps_status__traits.hpp"
+#include "px4_msgs/msg/detail/estimator_gps_status__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__ESTIMATOR_GPS_STATUS_HPP_

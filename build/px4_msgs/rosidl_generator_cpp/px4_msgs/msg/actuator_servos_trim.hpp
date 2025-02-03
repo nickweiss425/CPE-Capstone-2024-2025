@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/actuator_servos_trim__struct.hpp"
 #include "px4_msgs/msg/detail/actuator_servos_trim__builder.hpp"
 #include "px4_msgs/msg/detail/actuator_servos_trim__traits.hpp"
+#include "px4_msgs/msg/detail/actuator_servos_trim__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__ACTUATOR_SERVOS_TRIM_HPP_

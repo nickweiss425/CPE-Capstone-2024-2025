@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/cpuload__struct.hpp"
 #include "px4_msgs/msg/detail/cpuload__builder.hpp"
 #include "px4_msgs/msg/detail/cpuload__traits.hpp"
+#include "px4_msgs/msg/detail/cpuload__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__CPULOAD_HPP_

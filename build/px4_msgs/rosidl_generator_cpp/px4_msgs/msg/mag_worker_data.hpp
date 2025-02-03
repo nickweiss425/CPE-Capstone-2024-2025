@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/mag_worker_data__struct.hpp"
 #include "px4_msgs/msg/detail/mag_worker_data__builder.hpp"
 #include "px4_msgs/msg/detail/mag_worker_data__traits.hpp"
+#include "px4_msgs/msg/detail/mag_worker_data__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__MAG_WORKER_DATA_HPP_

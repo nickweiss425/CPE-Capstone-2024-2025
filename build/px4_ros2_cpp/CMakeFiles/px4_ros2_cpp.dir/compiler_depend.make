@@ -428,12 +428,14 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/health_and_arming_checks.cpp.o: /home
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -482,6 +484,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/health_and_arming_checks.cpp.o: /home
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -497,6 +500,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/health_and_arming_checks.cpp.o: /home
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -507,6 +512,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/health_and_arming_checks.cpp.o: /home
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /usr/include/c++/11/cmath \
@@ -559,6 +566,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/health_and_arming_checks.cpp.o: /home
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -567,6 +575,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/health_and_arming_checks.cpp.o: /home
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -575,6 +584,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/health_and_arming_checks.cpp.o: /home
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -590,13 +600,16 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/health_and_arming_checks.cpp.o: /home
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -629,26 +642,32 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/health_and_arming_checks.cpp.o: /home
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -670,27 +689,34 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/health_and_arming_checks.cpp.o: /home
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_request__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_request__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_request__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_request__type_support.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/register_ext_component_reply.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_reply__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_reply__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_reply__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_reply__type_support.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/unregister_ext_component.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/unregister_ext_component__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/unregister_ext_component__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/unregister_ext_component__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/unregister_ext_component__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/mode.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/mode_completed.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__type_support.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_control_mode.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__type_support.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_status.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/health_and_arming_checks.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/arming_check_reply.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__struct.hpp \
@@ -698,10 +724,12 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/health_and_arming_checks.cpp.o: /home
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__traits.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__type_support.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/arming_check_request.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/requirement_flags.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/events.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/overrides.hpp \
@@ -709,11 +737,13 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/health_and_arming_checks.cpp.o: /home
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/manual_control_input.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/manual_control_setpoint.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_setpoint__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_setpoint__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_setpoint__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_setpoint__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/context.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/setpoint_base.hpp
 
@@ -963,6 +993,12 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/manual_control_input.cpp.o: /home/niw
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_setpoint__type_support.hpp \
+  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
   /usr/include/signal.h \
@@ -1081,8 +1117,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/manual_control_input.cpp.o: /home/niw
   /opt/ros/humble/include/rcl/rcl/wait.h \
   /opt/ros/humble/include/rcl/rcl/client.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
   /opt/ros/humble/include/rcl/rcl/event_callback.h \
   /opt/ros/humble/include/rmw/rmw/event_callback_type.h \
   /opt/ros/humble/include/rcl/rcl/node.h \
@@ -1090,7 +1124,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/manual_control_input.cpp.o: /home/niw
   /opt/ros/humble/include/rcl/rcl/domain_id.h \
   /opt/ros/humble/include/rcl/rcl/service.h \
   /opt/ros/humble/include/rcl/rcl/subscription.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
   /opt/ros/humble/include/rmw/rmw/message_sequence.h \
   /opt/ros/humble/include/rcl/rcl/timer.h \
   /opt/ros/humble/include/rcl/rcl/time.h \
@@ -1148,12 +1181,13 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/manual_control_input.cpp.o: /home/niw
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -1202,6 +1236,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/manual_control_input.cpp.o: /home/niw
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -1217,6 +1252,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/manual_control_input.cpp.o: /home/niw
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -1227,6 +1264,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/manual_control_input.cpp.o: /home/niw
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /usr/include/c++/11/cmath \
@@ -1279,6 +1318,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/manual_control_input.cpp.o: /home/niw
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -1287,6 +1327,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/manual_control_input.cpp.o: /home/niw
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -1295,6 +1336,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/manual_control_input.cpp.o: /home/niw
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -1310,13 +1352,16 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/manual_control_input.cpp.o: /home/niw
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -1349,26 +1394,32 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/manual_control_input.cpp.o: /home/niw
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -1394,30 +1445,36 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/manual_control_input.cpp.o: /home/niw
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__traits.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/mode.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/mode_completed.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__type_support.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_control_mode.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__type_support.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_status.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/health_and_arming_checks.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/arming_check_request.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/events.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/overrides.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/config_overrides.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/setpoint_base.hpp
 
 CMakeFiles/px4_ros2_cpp.dir/src/components/message_compatibility_check.cpp.o: /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/components/message_compatibility_check.cpp \
@@ -1847,12 +1904,14 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/message_compatibility_check.cpp.o: /h
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -1901,6 +1960,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/message_compatibility_check.cpp.o: /h
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -1916,6 +1976,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/message_compatibility_check.cpp.o: /h
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -1926,6 +1988,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/message_compatibility_check.cpp.o: /h
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /usr/include/c++/11/cmath \
@@ -1978,6 +2042,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/message_compatibility_check.cpp.o: /h
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -1986,6 +2051,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/message_compatibility_check.cpp.o: /h
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -1994,6 +2060,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/message_compatibility_check.cpp.o: /h
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -2009,13 +2076,16 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/message_compatibility_check.cpp.o: /h
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -2048,26 +2118,32 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/message_compatibility_check.cpp.o: /h
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -2089,10 +2165,13 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/message_compatibility_check.cpp.o: /h
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/message_format_request__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/message_format_request__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/message_format_request__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/message_format_request__type_support.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/message_format_response.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/message_format_response__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/message_format_response__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/message_format_response__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/message_format_response__type_support.hpp \
   /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_package_share_directory.hpp \
   /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h \
   /usr/include/c++/11/fstream \
@@ -2546,12 +2625,14 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode.cpp.o: /home/niweiss/ws_sensor_c
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -2600,6 +2681,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode.cpp.o: /home/niweiss/ws_sensor_c
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -2615,6 +2697,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode.cpp.o: /home/niweiss/ws_sensor_c
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -2625,6 +2709,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode.cpp.o: /home/niweiss/ws_sensor_c
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /usr/include/c++/11/cmath \
@@ -2677,6 +2763,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode.cpp.o: /home/niweiss/ws_sensor_c
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -2685,6 +2772,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode.cpp.o: /home/niweiss/ws_sensor_c
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -2693,6 +2781,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode.cpp.o: /home/niweiss/ws_sensor_c
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -2708,13 +2797,16 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode.cpp.o: /home/niweiss/ws_sensor_c
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -2747,26 +2839,32 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode.cpp.o: /home/niweiss/ws_sensor_c
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -2788,14 +2886,18 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode.cpp.o: /home/niweiss/ws_sensor_c
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__type_support.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_control_mode.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__type_support.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_status.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/health_and_arming_checks.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/arming_check_reply.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__struct.hpp \
@@ -2803,10 +2905,12 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode.cpp.o: /home/niweiss/ws_sensor_c
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__traits.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__type_support.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/arming_check_request.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/requirement_flags.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/events.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/overrides.hpp \
@@ -2814,11 +2918,13 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode.cpp.o: /home/niweiss/ws_sensor_c
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/manual_control_input.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/manual_control_setpoint.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_setpoint__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_setpoint__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_setpoint__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_setpoint__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/context.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/setpoint_base.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/message_compatibility_check.hpp \
@@ -2828,14 +2934,17 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode.cpp.o: /home/niweiss/ws_sensor_c
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_request__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_request__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_request__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_request__type_support.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/register_ext_component_reply.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_reply__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_reply__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_reply__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_reply__type_support.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/unregister_ext_component.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/unregister_ext_component__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/unregister_ext_component__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/unregister_ext_component__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/unregister_ext_component__type_support.hpp \
   /usr/include/c++/11/cfloat \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h
 
@@ -3267,12 +3376,14 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode_executor.cpp.o: /home/niweiss/ws
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -3321,6 +3432,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode_executor.cpp.o: /home/niweiss/ws
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -3336,6 +3448,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode_executor.cpp.o: /home/niweiss/ws
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -3346,6 +3460,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode_executor.cpp.o: /home/niweiss/ws
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /usr/include/c++/11/cmath \
@@ -3398,6 +3514,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode_executor.cpp.o: /home/niweiss/ws
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -3406,6 +3523,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode_executor.cpp.o: /home/niweiss/ws
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -3414,6 +3532,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode_executor.cpp.o: /home/niweiss/ws
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -3429,13 +3548,16 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode_executor.cpp.o: /home/niweiss/ws
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -3468,26 +3590,32 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode_executor.cpp.o: /home/niweiss/ws
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -3509,14 +3637,18 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode_executor.cpp.o: /home/niweiss/ws
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__type_support.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_control_mode.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__type_support.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_status.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/health_and_arming_checks.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/arming_check_reply.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__struct.hpp \
@@ -3524,10 +3656,12 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode_executor.cpp.o: /home/niweiss/ws
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__traits.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__type_support.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/arming_check_request.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/requirement_flags.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/events.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/overrides.hpp \
@@ -3535,21 +3669,25 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode_executor.cpp.o: /home/niweiss/ws
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/manual_control_input.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/manual_control_setpoint.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_setpoint__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_setpoint__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_setpoint__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_setpoint__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/context.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/setpoint_base.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_command.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__type_support.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_command_ack.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command_ack__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command_ack__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command_ack__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command_ack__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/message_compatibility_check.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/wait_for_fmu.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/components/registration.hpp \
@@ -3557,14 +3695,17 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/mode_executor.cpp.o: /home/niweiss/ws
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_request__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_request__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_request__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_request__type_support.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/register_ext_component_reply.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_reply__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_reply__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_reply__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_reply__type_support.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/unregister_ext_component.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/unregister_ext_component__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/unregister_ext_component__builder.hpp \
-  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/unregister_ext_component__traits.hpp
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/unregister_ext_component__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/unregister_ext_component__type_support.hpp
 
 CMakeFiles/px4_ros2_cpp.dir/src/components/overrides.cpp.o: /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/components/overrides.cpp \
   /usr/include/stdc-predef.h \
@@ -3993,12 +4134,14 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/overrides.cpp.o: /home/niweiss/ws_sen
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -4047,6 +4190,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/overrides.cpp.o: /home/niweiss/ws_sen
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -4062,6 +4206,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/overrides.cpp.o: /home/niweiss/ws_sen
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -4072,6 +4218,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/overrides.cpp.o: /home/niweiss/ws_sen
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /usr/include/c++/11/cmath \
@@ -4124,6 +4272,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/overrides.cpp.o: /home/niweiss/ws_sen
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -4132,6 +4281,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/overrides.cpp.o: /home/niweiss/ws_sen
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -4140,6 +4290,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/overrides.cpp.o: /home/niweiss/ws_sen
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -4155,13 +4306,16 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/overrides.cpp.o: /home/niweiss/ws_sen
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -4194,26 +4348,32 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/overrides.cpp.o: /home/niweiss/ws_sen
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -4234,7 +4394,9 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/overrides.cpp.o: /home/niweiss/ws_sen
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/config_overrides.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__builder.hpp \
-  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__traits.hpp
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__type_support.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
 CMakeFiles/px4_ros2_cpp.dir/src/components/registration.cpp.o: /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/components/registration.cpp \
   /usr/include/stdc-predef.h \
@@ -4663,12 +4825,14 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/registration.cpp.o: /home/niweiss/ws_
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -4717,6 +4881,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/registration.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -4732,6 +4897,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/registration.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -4742,6 +4909,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/registration.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /usr/include/c++/11/cmath \
@@ -4794,6 +4963,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/registration.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -4802,6 +4972,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/registration.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -4810,6 +4981,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/registration.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -4825,13 +4997,16 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/registration.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -4864,26 +5039,32 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/registration.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -4905,27 +5086,34 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/registration.cpp.o: /home/niweiss/ws_
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_request__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_request__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_request__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_request__type_support.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/register_ext_component_reply.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_reply__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_reply__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_reply__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_reply__type_support.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/unregister_ext_component.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/unregister_ext_component__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/unregister_ext_component__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/unregister_ext_component__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/unregister_ext_component__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/mode.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/mode_completed.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__type_support.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_control_mode.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__type_support.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_status.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/health_and_arming_checks.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/arming_check_reply.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__struct.hpp \
@@ -4933,10 +5121,12 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/registration.cpp.o: /home/niweiss/ws_
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__traits.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__type_support.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/arming_check_request.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/requirement_flags.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/events.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/overrides.hpp \
@@ -4944,11 +5134,13 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/registration.cpp.o: /home/niweiss/ws_
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/manual_control_input.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/manual_control_setpoint.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_setpoint__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_setpoint__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_setpoint__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_setpoint__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/context.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/setpoint_base.hpp \
   /usr/include/c++/11/random \
@@ -5383,12 +5575,14 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/wait_for_fmu.cpp.o: /home/niweiss/ws_
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -5437,6 +5631,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/wait_for_fmu.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -5452,6 +5647,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/wait_for_fmu.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -5462,6 +5659,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/wait_for_fmu.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /usr/include/c++/11/cmath \
@@ -5514,6 +5713,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/wait_for_fmu.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -5522,6 +5722,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/wait_for_fmu.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -5530,6 +5731,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/wait_for_fmu.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -5545,13 +5747,16 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/wait_for_fmu.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -5584,26 +5789,32 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/wait_for_fmu.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -5624,7 +5835,9 @@ CMakeFiles/px4_ros2_cpp.dir/src/components/wait_for_fmu.cpp.o: /home/niweiss/ws_
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_status.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__builder.hpp \
-  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__traits.hpp
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__type_support.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
 CMakeFiles/px4_ros2_cpp.dir/src/control/peripheral_actuators.cpp.o: /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/control/peripheral_actuators.cpp \
   /usr/include/stdc-predef.h \
@@ -5872,6 +6085,12 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/peripheral_actuators.cpp.o: /home/niweis
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__type_support.hpp \
+  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   /usr/include/eigen3/Eigen/Core \
   /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
   /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
@@ -6160,8 +6379,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/peripheral_actuators.cpp.o: /home/niweis
   /opt/ros/humble/include/rcl/rcl/wait.h \
   /opt/ros/humble/include/rcl/rcl/client.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
   /opt/ros/humble/include/rcl/rcl/event_callback.h \
   /opt/ros/humble/include/rmw/rmw/event_callback_type.h \
   /opt/ros/humble/include/rcl/rcl/node.h \
@@ -6169,7 +6386,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/peripheral_actuators.cpp.o: /home/niweis
   /opt/ros/humble/include/rcl/rcl/domain_id.h \
   /opt/ros/humble/include/rcl/rcl/service.h \
   /opt/ros/humble/include/rcl/rcl/subscription.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
   /opt/ros/humble/include/rmw/rmw/message_sequence.h \
   /opt/ros/humble/include/rcl/rcl/timer.h \
   /opt/ros/humble/include/rcl/rcl/time.h \
@@ -6227,12 +6443,13 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/peripheral_actuators.cpp.o: /home/niweis
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -6280,6 +6497,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/peripheral_actuators.cpp.o: /home/niweis
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -6295,6 +6513,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/peripheral_actuators.cpp.o: /home/niweis
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -6305,6 +6525,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/peripheral_actuators.cpp.o: /home/niweis
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp \
@@ -6333,6 +6555,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/peripheral_actuators.cpp.o: /home/niweis
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -6341,6 +6564,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/peripheral_actuators.cpp.o: /home/niweis
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -6349,6 +6573,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/peripheral_actuators.cpp.o: /home/niweis
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -6364,13 +6589,16 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/peripheral_actuators.cpp.o: /home/niweis
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -6403,26 +6631,32 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/peripheral_actuators.cpp.o: /home/niweis
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -6444,6 +6678,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/peripheral_actuators.cpp.o: /home/niweis
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/context.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/requirement_flags.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/arming_check_reply.hpp \
@@ -6451,7 +6686,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/peripheral_actuators.cpp.o: /home/niweis
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__traits.hpp \
-  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__type_support.hpp
 
 CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/direct_actuators.cpp.o: /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/control/setpoint_types/direct_actuators.cpp \
   /usr/include/stdc-predef.h \
@@ -6699,10 +6935,17 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/direct_actuators.cpp.o: /
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_motors__type_support.hpp \
+  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/actuator_servos.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_servos__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_servos__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_servos__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_servos__type_support.hpp \
   /usr/include/eigen3/Eigen/Core \
   /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
   /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
@@ -6991,8 +7234,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/direct_actuators.cpp.o: /
   /opt/ros/humble/include/rcl/rcl/wait.h \
   /opt/ros/humble/include/rcl/rcl/client.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
   /opt/ros/humble/include/rcl/rcl/event_callback.h \
   /opt/ros/humble/include/rmw/rmw/event_callback_type.h \
   /opt/ros/humble/include/rcl/rcl/node.h \
@@ -7000,7 +7241,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/direct_actuators.cpp.o: /
   /opt/ros/humble/include/rcl/rcl/domain_id.h \
   /opt/ros/humble/include/rcl/rcl/service.h \
   /opt/ros/humble/include/rcl/rcl/subscription.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
   /opt/ros/humble/include/rmw/rmw/message_sequence.h \
   /opt/ros/humble/include/rcl/rcl/timer.h \
   /opt/ros/humble/include/rcl/rcl/time.h \
@@ -7058,12 +7298,13 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/direct_actuators.cpp.o: /
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -7111,6 +7352,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/direct_actuators.cpp.o: /
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -7126,6 +7368,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/direct_actuators.cpp.o: /
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -7136,6 +7380,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/direct_actuators.cpp.o: /
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp \
@@ -7164,6 +7410,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/direct_actuators.cpp.o: /
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -7172,6 +7419,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/direct_actuators.cpp.o: /
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -7180,6 +7428,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/direct_actuators.cpp.o: /
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -7195,13 +7444,16 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/direct_actuators.cpp.o: /
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -7234,26 +7486,32 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/direct_actuators.cpp.o: /
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -7275,6 +7533,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/direct_actuators.cpp.o: /
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/context.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/requirement_flags.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/arming_check_reply.hpp \
@@ -7282,7 +7541,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/direct_actuators.cpp.o: /
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__traits.hpp \
-  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__type_support.hpp
 
 CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/attitude.cpp.o: /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/control/setpoint_types/experimental/attitude.cpp \
   /usr/include/stdc-predef.h \
@@ -7530,6 +7790,12 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/attitude.cpp
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__type_support.hpp \
+  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   /usr/include/eigen3/Eigen/Eigen \
   /usr/include/eigen3/Eigen/Dense \
   /usr/include/eigen3/Eigen/Core \
@@ -7954,8 +8220,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/attitude.cpp
   /opt/ros/humble/include/rcl/rcl/wait.h \
   /opt/ros/humble/include/rcl/rcl/client.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
   /opt/ros/humble/include/rcl/rcl/event_callback.h \
   /opt/ros/humble/include/rmw/rmw/event_callback_type.h \
   /opt/ros/humble/include/rcl/rcl/node.h \
@@ -7963,7 +8227,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/attitude.cpp
   /opt/ros/humble/include/rcl/rcl/domain_id.h \
   /opt/ros/humble/include/rcl/rcl/service.h \
   /opt/ros/humble/include/rcl/rcl/subscription.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
   /opt/ros/humble/include/rmw/rmw/message_sequence.h \
   /opt/ros/humble/include/rcl/rcl/timer.h \
   /opt/ros/humble/include/rcl/rcl/time.h \
@@ -8021,12 +8284,13 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/attitude.cpp
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -8074,6 +8338,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/attitude.cpp
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -8089,6 +8354,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/attitude.cpp
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -8099,6 +8366,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/attitude.cpp
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp \
@@ -8127,6 +8396,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/attitude.cpp
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -8135,6 +8405,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/attitude.cpp
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -8143,6 +8414,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/attitude.cpp
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -8158,13 +8430,16 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/attitude.cpp
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -8197,26 +8472,32 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/attitude.cpp
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -8238,6 +8519,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/attitude.cpp
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/context.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/requirement_flags.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/arming_check_reply.hpp \
@@ -8246,6 +8528,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/attitude.cpp
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__traits.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/utils/geometry.hpp
 
 CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/rates.cpp.o: /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/control/setpoint_types/experimental/rates.cpp \
@@ -8494,6 +8777,12 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/rates.cpp.o:
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_rates_setpoint__type_support.hpp \
+  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   /usr/include/eigen3/Eigen/Core \
   /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
   /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
@@ -8782,8 +9071,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/rates.cpp.o:
   /opt/ros/humble/include/rcl/rcl/wait.h \
   /opt/ros/humble/include/rcl/rcl/client.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
   /opt/ros/humble/include/rcl/rcl/event_callback.h \
   /opt/ros/humble/include/rmw/rmw/event_callback_type.h \
   /opt/ros/humble/include/rcl/rcl/node.h \
@@ -8791,7 +9078,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/rates.cpp.o:
   /opt/ros/humble/include/rcl/rcl/domain_id.h \
   /opt/ros/humble/include/rcl/rcl/service.h \
   /opt/ros/humble/include/rcl/rcl/subscription.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
   /opt/ros/humble/include/rmw/rmw/message_sequence.h \
   /opt/ros/humble/include/rcl/rcl/timer.h \
   /opt/ros/humble/include/rcl/rcl/time.h \
@@ -8849,12 +9135,13 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/rates.cpp.o:
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -8902,6 +9189,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/rates.cpp.o:
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -8917,6 +9205,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/rates.cpp.o:
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -8927,6 +9217,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/rates.cpp.o:
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp \
@@ -8955,6 +9247,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/rates.cpp.o:
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -8963,6 +9256,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/rates.cpp.o:
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -8971,6 +9265,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/rates.cpp.o:
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -8986,13 +9281,16 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/rates.cpp.o:
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -9025,26 +9323,32 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/rates.cpp.o:
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -9066,6 +9370,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/rates.cpp.o:
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/context.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/requirement_flags.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/arming_check_reply.hpp \
@@ -9073,7 +9378,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/rates.cpp.o:
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__traits.hpp \
-  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__type_support.hpp
 
 CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/trajectory.cpp.o: /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/control/setpoint_types/experimental/trajectory.cpp \
   /usr/include/stdc-predef.h \
@@ -9321,6 +9627,12 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/trajectory.c
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__type_support.hpp \
+  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   /usr/include/eigen3/Eigen/Eigen \
   /usr/include/eigen3/Eigen/Dense \
   /usr/include/eigen3/Eigen/Core \
@@ -9745,8 +10057,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/trajectory.c
   /opt/ros/humble/include/rcl/rcl/wait.h \
   /opt/ros/humble/include/rcl/rcl/client.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
   /opt/ros/humble/include/rcl/rcl/event_callback.h \
   /opt/ros/humble/include/rmw/rmw/event_callback_type.h \
   /opt/ros/humble/include/rcl/rcl/node.h \
@@ -9754,7 +10064,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/trajectory.c
   /opt/ros/humble/include/rcl/rcl/domain_id.h \
   /opt/ros/humble/include/rcl/rcl/service.h \
   /opt/ros/humble/include/rcl/rcl/subscription.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
   /opt/ros/humble/include/rmw/rmw/message_sequence.h \
   /opt/ros/humble/include/rcl/rcl/timer.h \
   /opt/ros/humble/include/rcl/rcl/time.h \
@@ -9812,12 +10121,13 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/trajectory.c
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -9865,6 +10175,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/trajectory.c
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -9880,6 +10191,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/trajectory.c
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -9890,6 +10203,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/trajectory.c
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp \
@@ -9918,6 +10233,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/trajectory.c
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -9926,6 +10242,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/trajectory.c
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -9934,6 +10251,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/trajectory.c
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -9949,13 +10267,16 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/trajectory.c
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -9988,26 +10309,32 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/trajectory.c
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -10029,6 +10356,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/trajectory.c
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/context.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/requirement_flags.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/arming_check_reply.hpp \
@@ -10036,7 +10364,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/experimental/trajectory.c
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__traits.hpp \
-  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__type_support.hpp
 
 CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/goto.cpp.o: /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/control/setpoint_types/goto.cpp \
   /usr/include/stdc-predef.h \
@@ -10284,6 +10613,12 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/goto.cpp.o: /home/niweiss
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/goto_setpoint__type_support.hpp \
+  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   /usr/include/eigen3/Eigen/Eigen \
   /usr/include/eigen3/Eigen/Dense \
   /usr/include/eigen3/Eigen/Core \
@@ -10709,8 +11044,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/goto.cpp.o: /home/niweiss
   /opt/ros/humble/include/rcl/rcl/wait.h \
   /opt/ros/humble/include/rcl/rcl/client.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
   /opt/ros/humble/include/rcl/rcl/event_callback.h \
   /opt/ros/humble/include/rmw/rmw/event_callback_type.h \
   /opt/ros/humble/include/rcl/rcl/node.h \
@@ -10718,7 +11051,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/goto.cpp.o: /home/niweiss
   /opt/ros/humble/include/rcl/rcl/domain_id.h \
   /opt/ros/humble/include/rcl/rcl/service.h \
   /opt/ros/humble/include/rcl/rcl/subscription.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
   /opt/ros/humble/include/rmw/rmw/message_sequence.h \
   /opt/ros/humble/include/rcl/rcl/timer.h \
   /opt/ros/humble/include/rcl/rcl/time.h \
@@ -10775,12 +11107,13 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/goto.cpp.o: /home/niweiss
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -10828,6 +11161,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/goto.cpp.o: /home/niweiss
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -10843,6 +11177,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/goto.cpp.o: /home/niweiss
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -10853,6 +11189,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/goto.cpp.o: /home/niweiss
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp \
@@ -10881,6 +11219,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/goto.cpp.o: /home/niweiss
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -10889,6 +11228,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/goto.cpp.o: /home/niweiss
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -10897,6 +11237,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/goto.cpp.o: /home/niweiss
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -10912,13 +11253,16 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/goto.cpp.o: /home/niweiss
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -10951,26 +11295,32 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/goto.cpp.o: /home/niweiss
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -10992,6 +11342,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/goto.cpp.o: /home/niweiss
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/context.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/requirement_flags.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/arming_check_reply.hpp \
@@ -11000,11 +11351,13 @@ CMakeFiles/px4_ros2_cpp.dir/src/control/setpoint_types/goto.cpp.o: /home/niweiss
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__traits.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/utils/geodesic.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_local_position.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__builder.hpp \
-  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__traits.hpp
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__type_support.hpp
 
 CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/global_position_measurement_interface.cpp.o: /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/navigation/experimental/global_position_measurement_interface.cpp \
   /usr/include/stdc-predef.h \
@@ -11433,12 +11786,14 @@ CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/global_position_measurem
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -11487,6 +11842,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/global_position_measurem
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -11502,6 +11858,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/global_position_measurem
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -11512,6 +11870,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/global_position_measurem
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /usr/include/c++/11/cmath \
@@ -11564,6 +11924,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/global_position_measurem
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -11572,6 +11933,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/global_position_measurem
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -11580,6 +11942,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/global_position_measurem
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -11595,13 +11958,16 @@ CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/global_position_measurem
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -11634,26 +12000,32 @@ CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/global_position_measurem
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -11955,6 +12327,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/global_position_measurem
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_global_position__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_global_position__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_global_position__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_global_position__type_support.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/navigation/experimental/navigation_interface_base.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/context.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/requirement_flags.hpp \
@@ -11963,7 +12337,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/global_position_measurem
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__traits.hpp \
-  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__type_support.hpp
 
 CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/local_position_measurement_interface.cpp.o: /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/navigation/experimental/local_position_measurement_interface.cpp \
   /usr/include/stdc-predef.h \
@@ -12391,12 +12766,14 @@ CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/local_position_measureme
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -12445,6 +12822,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/local_position_measureme
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -12460,6 +12838,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/local_position_measureme
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -12470,6 +12850,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/local_position_measureme
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /usr/include/c++/11/cmath \
@@ -12522,6 +12904,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/local_position_measureme
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -12530,6 +12913,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/local_position_measureme
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -12538,6 +12922,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/local_position_measureme
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -12553,13 +12938,16 @@ CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/local_position_measureme
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -12592,26 +12980,32 @@ CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/local_position_measureme
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -12914,6 +13308,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/local_position_measureme
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__type_support.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/frame.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/navigation/experimental/navigation_interface_base.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/context.hpp \
@@ -12923,7 +13319,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/navigation/experimental/local_position_measureme
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__traits.hpp \
-  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__type_support.hpp
 
 CMakeFiles/px4_ros2_cpp.dir/src/odometry/angular_velocity.cpp.o: /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/odometry/angular_velocity.cpp \
   /usr/include/stdc-predef.h \
@@ -13490,6 +13887,12 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/angular_velocity.cpp.o: /home/niweiss/w
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_angular_velocity__type_support.hpp \
+  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/context.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
@@ -13595,8 +13998,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/angular_velocity.cpp.o: /home/niweiss/w
   /opt/ros/humble/include/rcl/rcl/wait.h \
   /opt/ros/humble/include/rcl/rcl/client.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
   /opt/ros/humble/include/rcl/rcl/event_callback.h \
   /opt/ros/humble/include/rmw/rmw/event_callback_type.h \
   /opt/ros/humble/include/rcl/rcl/node.h \
@@ -13604,7 +14005,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/angular_velocity.cpp.o: /home/niweiss/w
   /opt/ros/humble/include/rcl/rcl/domain_id.h \
   /opt/ros/humble/include/rcl/rcl/service.h \
   /opt/ros/humble/include/rcl/rcl/subscription.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
   /opt/ros/humble/include/rmw/rmw/message_sequence.h \
   /opt/ros/humble/include/rcl/rcl/timer.h \
   /opt/ros/humble/include/rcl/rcl/time.h \
@@ -13662,12 +14062,13 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/angular_velocity.cpp.o: /home/niweiss/w
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -13715,6 +14116,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/angular_velocity.cpp.o: /home/niweiss/w
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -13730,6 +14132,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/angular_velocity.cpp.o: /home/niweiss/w
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -13740,6 +14144,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/angular_velocity.cpp.o: /home/niweiss/w
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp \
@@ -13768,6 +14174,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/angular_velocity.cpp.o: /home/niweiss/w
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -13776,6 +14183,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/angular_velocity.cpp.o: /home/niweiss/w
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -13784,6 +14192,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/angular_velocity.cpp.o: /home/niweiss/w
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -13799,13 +14208,16 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/angular_velocity.cpp.o: /home/niweiss/w
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -13838,26 +14250,32 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/angular_velocity.cpp.o: /home/niweiss/w
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -13882,6 +14300,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/angular_velocity.cpp.o: /home/niweiss/w
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__traits.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/utils/subscription.hpp
 
 CMakeFiles/px4_ros2_cpp.dir/src/odometry/attitude.cpp.o: /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/odometry/attitude.cpp \
@@ -14449,6 +14868,12 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/attitude.cpp.o: /home/niweiss/ws_sensor
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__type_support.hpp \
+  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/context.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
@@ -14554,8 +14979,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/attitude.cpp.o: /home/niweiss/ws_sensor
   /opt/ros/humble/include/rcl/rcl/wait.h \
   /opt/ros/humble/include/rcl/rcl/client.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
   /opt/ros/humble/include/rcl/rcl/event_callback.h \
   /opt/ros/humble/include/rmw/rmw/event_callback_type.h \
   /opt/ros/humble/include/rcl/rcl/node.h \
@@ -14563,7 +14986,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/attitude.cpp.o: /home/niweiss/ws_sensor
   /opt/ros/humble/include/rcl/rcl/domain_id.h \
   /opt/ros/humble/include/rcl/rcl/service.h \
   /opt/ros/humble/include/rcl/rcl/subscription.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
   /opt/ros/humble/include/rmw/rmw/message_sequence.h \
   /opt/ros/humble/include/rcl/rcl/timer.h \
   /opt/ros/humble/include/rcl/rcl/time.h \
@@ -14621,12 +15043,13 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/attitude.cpp.o: /home/niweiss/ws_sensor
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -14674,6 +15097,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/attitude.cpp.o: /home/niweiss/ws_sensor
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -14689,6 +15113,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/attitude.cpp.o: /home/niweiss/ws_sensor
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -14699,6 +15125,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/attitude.cpp.o: /home/niweiss/ws_sensor
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp \
@@ -14727,6 +15155,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/attitude.cpp.o: /home/niweiss/ws_sensor
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -14735,6 +15164,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/attitude.cpp.o: /home/niweiss/ws_sensor
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -14743,6 +15173,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/attitude.cpp.o: /home/niweiss/ws_sensor
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -14758,13 +15189,16 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/attitude.cpp.o: /home/niweiss/ws_sensor
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -14797,26 +15231,32 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/attitude.cpp.o: /home/niweiss/ws_sensor
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -14841,6 +15281,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/attitude.cpp.o: /home/niweiss/ws_sensor
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__traits.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/utils/geometry.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/utils/subscription.hpp
 
@@ -15409,6 +15850,12 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/global_position.cpp.o: /home/niweiss/ws
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_global_position__type_support.hpp \
+  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/context.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
@@ -15514,8 +15961,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/global_position.cpp.o: /home/niweiss/ws
   /opt/ros/humble/include/rcl/rcl/wait.h \
   /opt/ros/humble/include/rcl/rcl/client.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
   /opt/ros/humble/include/rcl/rcl/event_callback.h \
   /opt/ros/humble/include/rmw/rmw/event_callback_type.h \
   /opt/ros/humble/include/rcl/rcl/node.h \
@@ -15523,7 +15968,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/global_position.cpp.o: /home/niweiss/ws
   /opt/ros/humble/include/rcl/rcl/domain_id.h \
   /opt/ros/humble/include/rcl/rcl/service.h \
   /opt/ros/humble/include/rcl/rcl/subscription.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
   /opt/ros/humble/include/rmw/rmw/message_sequence.h \
   /opt/ros/humble/include/rcl/rcl/timer.h \
   /opt/ros/humble/include/rcl/rcl/time.h \
@@ -15581,12 +16025,13 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/global_position.cpp.o: /home/niweiss/ws
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -15634,6 +16079,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/global_position.cpp.o: /home/niweiss/ws
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -15649,6 +16095,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/global_position.cpp.o: /home/niweiss/ws
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -15659,6 +16107,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/global_position.cpp.o: /home/niweiss/ws
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp \
@@ -15687,6 +16137,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/global_position.cpp.o: /home/niweiss/ws
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -15695,6 +16146,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/global_position.cpp.o: /home/niweiss/ws
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -15703,6 +16155,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/global_position.cpp.o: /home/niweiss/ws
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -15718,13 +16171,16 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/global_position.cpp.o: /home/niweiss/ws
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -15757,26 +16213,32 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/global_position.cpp.o: /home/niweiss/ws
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -15801,6 +16263,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/global_position.cpp.o: /home/niweiss/ws
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__traits.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/utils/subscription.hpp
 
 CMakeFiles/px4_ros2_cpp.dir/src/odometry/local_position.cpp.o: /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/odometry/local_position.cpp \
@@ -16368,6 +16831,12 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/local_position.cpp.o: /home/niweiss/ws_
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__type_support.hpp \
+  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/context.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
@@ -16473,8 +16942,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/local_position.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/rcl/rcl/wait.h \
   /opt/ros/humble/include/rcl/rcl/client.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
   /opt/ros/humble/include/rcl/rcl/event_callback.h \
   /opt/ros/humble/include/rmw/rmw/event_callback_type.h \
   /opt/ros/humble/include/rcl/rcl/node.h \
@@ -16482,7 +16949,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/local_position.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/rcl/rcl/domain_id.h \
   /opt/ros/humble/include/rcl/rcl/service.h \
   /opt/ros/humble/include/rcl/rcl/subscription.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
   /opt/ros/humble/include/rmw/rmw/message_sequence.h \
   /opt/ros/humble/include/rcl/rcl/timer.h \
   /opt/ros/humble/include/rcl/rcl/time.h \
@@ -16540,12 +17006,13 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/local_position.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -16593,6 +17060,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/local_position.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -16608,6 +17076,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/local_position.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -16618,6 +17088,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/local_position.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp \
@@ -16646,6 +17118,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/local_position.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -16654,6 +17127,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/local_position.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -16662,6 +17136,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/local_position.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -16677,13 +17152,16 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/local_position.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -16716,26 +17194,32 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/local_position.cpp.o: /home/niweiss/ws_
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -16760,6 +17244,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/odometry/local_position.cpp.o: /home/niweiss/ws_
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__traits.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/utils/subscription.hpp
 
 CMakeFiles/px4_ros2_cpp.dir/src/utils/geodesic.cpp.o: /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/utils/geodesic.cpp \
@@ -17494,12 +17979,14 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/geodesic.cpp.o: /home/niweiss/ws_sensor_co
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
   /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
-  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
   /opt/ros/humble/include/rmw/rmw/error_handling.h \
   /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp \
@@ -17547,6 +18034,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/geodesic.cpp.o: /home/niweiss/ws_sensor_co
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -17562,6 +18050,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/geodesic.cpp.o: /home/niweiss/ws_sensor_co
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -17572,6 +18062,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/geodesic.cpp.o: /home/niweiss/ws_sensor_co
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp \
+  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp \
@@ -17600,6 +18092,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/geodesic.cpp.o: /home/niweiss/ws_sensor_co
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
@@ -17608,6 +18101,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/geodesic.cpp.o: /home/niweiss/ws_sensor_co
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
@@ -17616,6 +18110,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/geodesic.cpp.o: /home/niweiss/ws_sensor_co
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp \
   /opt/ros/humble/include/rcutils/rcutils/shared_library.h \
@@ -17631,13 +18126,16 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/geodesic.cpp.o: /home/niweiss/ws_sensor_co
   /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -17670,26 +18168,32 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/geodesic.cpp.o: /home/niweiss/ws_sensor_co
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
   /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
+  /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
   /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
   /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp \
@@ -17711,6 +18215,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/geodesic.cpp.o: /home/niweiss/ws_sensor_co
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__struct.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__type_support.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/context.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/requirement_flags.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/arming_check_reply.hpp \
@@ -17719,6 +18225,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/geodesic.cpp.o: /home/niweiss/ws_sensor_co
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__builder.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__traits.hpp \
   /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__type_support.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/utils/map_projection_impl.hpp \
   /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/utils/geometry.hpp
 
@@ -18265,11 +18772,65 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/utils/geodesic.cpp:
 
-/usr/include/linux/close_range.h:
+/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/odometry/global_position.cpp:
 
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__type_support.hpp:
 
-/opt/ros/humble/include/rmw/rmw/ret_types.h:
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__traits.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__builder.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__struct.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_attitude.hpp:
+
+/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/odometry/attitude.cpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_angular_velocity__type_support.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_angular_velocity__traits.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_angular_velocity__builder.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_angular_velocity__struct.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_angular_velocity.hpp:
+
+/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/odometry/angular_velocity.cpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__type_support.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__traits.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__builder.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__struct.hpp:
+
+/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/navigation/experimental/local_position_measurement_interface.hpp:
+
+/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/navigation/experimental/local_position_measurement_interface.cpp:
+
+/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/navigation/experimental/navigation_interface_base.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_global_position__traits.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_global_position__struct.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_global_position.hpp:
+
+/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/navigation/experimental/global_position_measurement_interface.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__type_support.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__traits.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__builder.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__struct.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/goto_setpoint.hpp:
+
+/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/control/setpoint_types/goto.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
 
@@ -18302,8 +18863,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:
 
 /opt/ros/humble/include/rmw/rmw/qos_profiles.h:
-
-/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/odometry/angular_velocity.cpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
 
@@ -18349,6 +18908,10 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/eigen3/Eigen/src/Core/ConditionEstimator.h:
 
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/goto_setpoint__struct.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp:
@@ -18385,11 +18948,15 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /opt/ros/humble/include/rclcpp/rclcpp/exceptions.hpp:
 
-/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp:
-
 /opt/ros/humble/include/rcl/rcl/logging_rosout.h:
 
 /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h:
+
+/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/CommaInitializer.h:
 
 /usr/include/c++/11/bits/locale_conv.h:
 
@@ -18411,6 +18978,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:
 
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/goto_setpoint__type_support.hpp:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/ros_message_intra_process_buffer.hpp:
@@ -18422,6 +18991,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/message_format_response__struct.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__type_support.hpp:
 
 /usr/include/eigen3/Eigen/src/SparseLU/SparseLU_Memory.h:
 
@@ -18443,6 +19014,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
 
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp:
@@ -18454,8 +19027,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /opt/ros/humble/include/rclcpp/rclcpp/exceptions/exceptions.hpp:
 
 /usr/include/c++/11/sstream:
-
-/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/control/setpoint_types/goto.hpp:
 
 /usr/include/c++/11/optional:
 
@@ -18495,6 +19066,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/c++/11/bits/regex_automaton.tcc:
 
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command_ack__type_support.hpp:
+
 /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/control/setpoint_types/experimental/rates.cpp:
 
 /usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:
@@ -18531,8 +19104,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/types.h:
 
-/usr/include/c++/11/codecvt:
-
 /usr/include/assert.h:
 
 /usr/include/c++/11/bits/allocated_ptr.h:
@@ -18550,8 +19121,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /opt/ros/humble/include/rmw/rmw/events_statuses/liveliness_changed.h:
 
 /usr/include/c++/11/bit:
-
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_angular_velocity__traits.hpp:
 
 /opt/ros/humble/include/rmw/rmw/qos_policy_kind.h:
 
@@ -18577,11 +19146,11 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /opt/ros/humble/include/rcutils/rcutils/types/string_array.h:
 
-/opt/ros/humble/include/rcutils/rcutils/types/hash_map.h:
-
 /usr/include/c++/11/variant:
 
 /opt/ros/humble/include/rcutils/rcutils/types/char_array.h:
+
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_enable_topic_statistics.hpp:
 
@@ -18595,13 +19164,13 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /opt/ros/humble/include/rcutils/rcutils/error_handling.h:
 
-/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/control/setpoint_types/experimental/attitude.cpp:
-
 /opt/ros/humble/include/rmw/rmw/types.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
 
 /opt/ros/humble/include/rcl/rcl/macros.h:
+
+/opt/ros/humble/include/rmw/rmw/ret_types.h:
 
 /opt/ros/humble/include/rmw/rmw/macros.h:
 
@@ -18751,13 +19320,15 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_odometry.hpp:
+
+/usr/include/c++/11/bits/std_function.h:
+
 /usr/include/c++/11/mutex:
 
 /opt/ros/humble/include/rcl/rcl/types.h:
 
 /opt/ros/humble/include/rcutils/rcutils/types/uint8_array.h:
-
-/usr/include/eigen3/Eigen/src/SVD/SVDBase.h:
 
 /usr/include/c++/11/bits/stl_pair.h:
 
@@ -18793,15 +19364,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__traits.hpp:
-
 /usr/include/eigen3/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h:
-
-/usr/include/c++/11/pstl/glue_numeric_defs.h:
-
-/usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h:
-
-/usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h:
 
 /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/odometry/local_position.cpp:
 
@@ -18810,10 +19373,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
 /usr/include/locale.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp:
-
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/goto_setpoint__struct.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
@@ -18873,13 +19432,15 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
 
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/goto_setpoint__builder.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/BandMatrix.h:
+
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
-
-/usr/include/c++/11/bits/std_function.h:
-
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_odometry.hpp:
 
 /usr/include/c++/11/iostream:
 
@@ -18895,17 +19456,15 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:
 
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__traits.hpp:
-
 /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/navigation/experimental/global_position_measurement_interface.cpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/c++/11/bits/range_access.h:
-
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/goto_setpoint.hpp:
 
 /opt/ros/humble/include/rcl/rcl/allocator.h:
 
@@ -18916,12 +19475,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /usr/include/x86_64-linux-gnu/bits/sigstack.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
-
-/usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h:
-
-/opt/ros/humble/include/rcpputils/rcpputils/thread_safety_annotations.hpp:
-
-/usr/include/c++/11/bits/atomic_base.h:
 
 /usr/include/c++/11/bits/random.tcc:
 
@@ -18957,10 +19510,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
-/opt/ros/humble/include/rcl/rcl/node_options.h:
-
-/usr/include/features-time64.h:
-
 /usr/include/c++/11/system_error:
 
 /usr/include/c++/11/bits/exception.h:
@@ -18979,13 +19528,23 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/ctype.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp:
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_local_position.hpp:
 
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__traits.hpp:
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
+
+/opt/ros/humble/include/rcl/rcl/node_options.h:
+
+/usr/include/features-time64.h:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
+
+/opt/ros/humble/include/rcutils/rcutils/types/array_list.h:
 
 /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/context.hpp:
 
@@ -19006,6 +19565,10 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
+
+/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/utils/subscription.hpp:
+
+/usr/include/linux/errno.h:
 
 /usr/include/c++/11/streambuf:
 
@@ -19061,14 +19624,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h:
 
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_buffer.hpp:
-
-/usr/include/c++/11/bitset:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp:
 
 /usr/include/c++/11/bits/std_mutex.h:
@@ -19107,6 +19662,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/eigen3/Eigen/Cholesky:
 
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__type_support.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
@@ -19129,9 +19686,9 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/libintl.h:
 
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
 
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/c++/11/bits/stl_set.h:
 
@@ -19142,8 +19699,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
 
 /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/components/message_compatibility_check.cpp:
-
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_angular_velocity__struct.hpp:
 
 /usr/include/c++/11/atomic:
 
@@ -19156,6 +19711,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__type_support.hpp:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
@@ -19179,9 +19736,17 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
 
+/usr/include/c++/11/bits/std_thread.h:
+
 /opt/ros/humble/include/rcl/rcl/init_options.h:
 
 /opt/ros/humble/include/rcutils/rcutils/allocator.h:
+
+/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/odometry/attitude.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/SolveTriangular.h:
+
+/usr/include/c++/11/bits/functexcept.h:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
@@ -19205,6 +19770,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/c++/11/bits/atomic_futex.h:
 
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_global_position__type_support.hpp:
+
 /usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h:
 
 /usr/include/c++/11/backward/auto_ptr.h:
@@ -19220,6 +19787,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
@@ -19295,8 +19864,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/stdio.h:
 
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__struct.hpp:
-
 /opt/ros/humble/include/rcl/rcl/arguments.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
@@ -19335,6 +19902,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/x86_64-linux-gnu/bits/signum-arch.h:
 
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
+
 /usr/include/eigen3/Eigen/SparseCholesky:
 
 /usr/include/eigen3/Eigen/src/Core/util/MKL_support.h:
@@ -19346,10 +19915,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /usr/include/c++/11/tr1/gamma.tcc:
 
 /opt/ros/humble/include/rmw/rmw/message_sequence.h:
-
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__struct.hpp:
-
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__builder.hpp:
 
 /usr/include/c++/11/bits/ios_base.h:
 
@@ -19429,8 +19994,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h:
 
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_global_position__traits.hpp:
-
 /usr/include/c++/11/bits/unique_ptr.h:
 
 /usr/include/c++/11/bits/stl_relops.h:
@@ -19465,15 +20028,19 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/c++/11/bits/shared_ptr_atomic.h:
 
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
 /usr/include/c++/11/bits/parse_numbers.h:
 
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
-/usr/include/c++/11/future:
+/usr/include/c++/11/codecvt:
 
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_angular_velocity.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp:
+
+/usr/include/c++/11/future:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_intra_process_buffer_type.hpp:
 
@@ -19485,8 +20052,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/eigen3/Eigen/src/SparseCore/SparseProduct.h:
 
-/opt/ros/humble/include/rcutils/rcutils/types/array_list.h:
-
 /usr/include/c++/11/ios:
 
 /usr/include/c++/11/utility:
@@ -19496,8 +20061,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /usr/include/c++/11/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/11/stdexcept:
-
-/usr/include/c++/11/bits/std_thread.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
@@ -19549,9 +20112,33 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/c++/11/bits/stl_bvector.h:
 
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
+
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_buffer.hpp:
+
+/usr/include/c++/11/bitset:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
+
+/usr/include/c++/11/pstl/glue_numeric_defs.h:
+
+/usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h:
+
+/usr/include/c++/11/bits/atomic_base.h:
+
+/opt/ros/humble/include/rcpputils/rcpputils/thread_safety_annotations.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/get_message_type_support_handle.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:
 
@@ -19580,8 +20167,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp:
 
 /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/components/manual_control_input.cpp:
 
@@ -19619,9 +20204,7 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
 
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
-
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_local_position.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp:
 
 /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp:
 
@@ -19649,9 +20232,15 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/eigen3/Eigen/src/Core/CwiseUnaryView.h:
 
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp:
 
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
 
 /usr/include/c++/11/bits/unordered_set.h:
 
@@ -19666,6 +20255,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /opt/ros/humble/include/rclcpp/rclcpp/node_options.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__type_support.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_client.hpp:
 
@@ -19683,9 +20274,9 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_service.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/create_timer.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp:
 
-/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/odometry/global_position.cpp:
+/opt/ros/humble/include/rclcpp/rclcpp/create_timer.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface_traits.hpp:
 
@@ -19705,6 +20296,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/message_format_request__struct.hpp:
 
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/message_format_response__type_support.hpp:
+
 /usr/include/eigen3/Eigen/src/Core/MapBase.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp:
@@ -19715,7 +20308,21 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp:
 
+/usr/include/eigen3/Eigen/src/SVD/SVDBase.h:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__type_support.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp:
+
+/usr/include/c++/11/bits/refwrap.h:
+
+/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__builder.hpp:
+
+/usr/include/eigen3/Eigen/src/SVD/BDCSVD.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:
 
@@ -19725,9 +20332,11 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h:
 
-/usr/include/c++/11/bits/hash_bytes.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp:
+/opt/ros/humble/include/rcutils/rcutils/types/hash_map.h:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__type_support.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp:
 
@@ -19738,8 +20347,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_event_handler.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_service.hpp:
-
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__builder.hpp:
 
 /usr/include/c++/11/tr1/riemann_zeta.tcc:
 
@@ -19763,6 +20370,10 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_request__traits.hpp:
 
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_request__type_support.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h:
+
 /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h:
 
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/register_ext_component_reply.hpp:
@@ -19777,6 +20388,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/eigen3/Eigen/src/Core/TriangularMatrix.h:
 
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_reply__type_support.hpp:
+
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/unregister_ext_component.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/sigstksz.h:
@@ -19788,6 +20401,12 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /usr/include/c++/11/cstring:
 
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/unregister_ext_component__traits.hpp:
+
+/usr/include/linux/close_range.h:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/unregister_ext_component__type_support.hpp:
+
+/usr/include/eigen3/Eigen/Householder:
 
 /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/mode.hpp:
 
@@ -19814,6 +20433,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__traits.hpp:
 
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_control_mode.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_servos__type_support.hpp:
 
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_status.hpp:
 
@@ -19847,6 +20468,12 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
 
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__type_support.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_setpoint__type_support.hpp:
+
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__struct.hpp:
 
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__builder.hpp:
@@ -19856,6 +20483,14 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__traits.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__type_support.hpp:
+
+/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/utils/geodesic.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_rates_setpoint__struct.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/Solve.h:
 
 /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/common/requirement_flags.hpp:
 
@@ -19897,17 +20532,23 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/c++/11/bits/deque.tcc:
 
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/message_format_request__type_support.hpp:
+
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h:
+
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/message_format_response__traits.hpp:
 
 /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h:
 
 /usr/include/c++/11/fstream:
 
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
 
 /usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:
-
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_global_position.hpp:
 
 /usr/include/c++/11/bits/fstream.tcc:
 
@@ -19971,8 +20612,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/eigen3/Eigen/Core:
 
-/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/odometry/attitude.cpp:
-
 /usr/include/eigen3/Eigen/src/Core/util/Macros.h:
 
 /usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h:
@@ -19980,6 +20619,8 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
 
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__struct.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_rates_setpoint__type_support.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
 
@@ -20016,6 +20657,12 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /usr/include/eigen3/Eigen/src/SparseCore/SparseColEtree.h:
 
 /usr/include/eigen3/Eigen/src/Core/util/Constants.h:
+
+/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/odometry/angular_velocity.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/Meta.h:
 
 /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:
 
@@ -20087,17 +20734,17 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h:
 
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
+
 /usr/include/c++/11/tr1/bessel_function.tcc:
 
 /usr/include/eigen3/Eigen/src/Core/util/ReshapedHelper.h:
 
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h:
-
 /usr/include/eigen3/Eigen/src/Core/IO.h:
 
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_global_position__builder.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
 
@@ -20127,14 +20774,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h:
 
-/usr/include/c++/11/bits/refwrap.h:
-
-/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h:
-
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__builder.hpp:
-
-/usr/include/eigen3/Eigen/src/SVD/BDCSVD.h:
-
 /usr/include/c++/11/tr1/ell_integral.tcc:
 
 /usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h:
@@ -20150,6 +20789,12 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/Array.h:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/goto_setpoint__traits.hpp:
+
+/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/control/setpoint_types/experimental/trajectory.cpp:
+
+/usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:
 
 /usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h:
 
@@ -20188,14 +20833,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h:
 
 /usr/include/eigen3/Eigen/src/Core/Redux.h:
-
-/usr/include/eigen3/Eigen/src/Core/CommaInitializer.h:
-
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_rates_setpoint__struct.hpp:
-
-/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/utils/geodesic.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/Solve.h:
 
 /usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h:
 
@@ -20237,8 +20874,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/eigen3/Eigen/src/Core/StlIterators.h:
 
-/usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h:
-
 /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:
 
 /usr/include/eigen3/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h:
@@ -20255,6 +20890,10 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_motors__builder.hpp:
 
+/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/control/setpoint_types/experimental/attitude.cpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_motors__type_support.hpp:
+
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/actuator_servos.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:
@@ -20265,8 +20904,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_servos__struct.hpp:
 
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__builder.hpp:
-
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_servos__builder.hpp:
 
 /usr/include/eigen3/Eigen/SparseLU:
@@ -20274,6 +20911,12 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /usr/include/eigen3/Eigen/src/IterativeLinearSolvers/LeastSquareConjugateGradient.h:
 
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__traits.hpp:
+
+/usr/include/c++/11/bits/hash_bytes.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp:
+
+/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__type_support.hpp:
 
 /usr/include/asm-generic/errno.h:
 
@@ -20308,8 +20951,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/components/registration.hpp:
 
 /usr/include/eigen3/Eigen/QR:
-
-/usr/include/eigen3/Eigen/Householder:
 
 /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/components/message_compatibility_check.hpp:
 
@@ -20389,12 +21030,6 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 
 /usr/include/eigen3/Eigen/src/SparseCore/SparsePermutation.h:
 
-/usr/include/eigen3/Eigen/src/Core/SolveTriangular.h:
-
-/usr/include/c++/11/bits/functexcept.h:
-
-/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/odometry/attitude.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp:
 
 /opt/ros/humble/include/rcl/rcl/client.h:
@@ -20448,41 +21083,3 @@ CMakeFiles/px4_ros2_cpp.dir/src/utils/map_projection_impl.cpp.o: /home/niweiss/w
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp:
 
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__builder.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/BandMatrix.h:
-
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/goto_setpoint__builder.hpp:
-
-/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/control/setpoint_types/experimental/trajectory.cpp:
-
-/usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:
-
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/goto_setpoint__traits.hpp:
-
-/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/navigation/experimental/global_position_measurement_interface.hpp:
-
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_global_position__struct.hpp:
-
-/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/navigation/experimental/navigation_interface_base.hpp:
-
-/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/src/navigation/experimental/local_position_measurement_interface.cpp:
-
-/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/navigation/experimental/local_position_measurement_interface.hpp:
-
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__traits.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/Meta.h:
-
-/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/odometry/angular_velocity.hpp:
-
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_angular_velocity__builder.hpp:
-
-/usr/include/linux/errno.h:
-
-/home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/px4_ros2_cpp/include/px4_ros2/utils/subscription.hpp:
-
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_attitude.hpp:
-
-/home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__struct.hpp:

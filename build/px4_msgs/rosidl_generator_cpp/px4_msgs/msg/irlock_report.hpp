@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/irlock_report__struct.hpp"
 #include "px4_msgs/msg/detail/irlock_report__builder.hpp"
 #include "px4_msgs/msg/detail/irlock_report__traits.hpp"
+#include "px4_msgs/msg/detail/irlock_report__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__IRLOCK_REPORT_HPP_

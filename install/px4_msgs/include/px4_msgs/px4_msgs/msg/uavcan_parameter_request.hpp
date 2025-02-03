@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/uavcan_parameter_request__struct.hpp"
 #include "px4_msgs/msg/detail/uavcan_parameter_request__builder.hpp"
 #include "px4_msgs/msg/detail/uavcan_parameter_request__traits.hpp"
+#include "px4_msgs/msg/detail/uavcan_parameter_request__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__UAVCAN_PARAMETER_REQUEST_HPP_

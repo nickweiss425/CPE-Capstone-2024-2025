@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/buffer128__struct.hpp"
 #include "px4_msgs/msg/detail/buffer128__builder.hpp"
 #include "px4_msgs/msg/detail/buffer128__traits.hpp"
+#include "px4_msgs/msg/detail/buffer128__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__BUFFER128_HPP_

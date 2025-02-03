@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/mavlink_tunnel__struct.hpp"
 #include "px4_msgs/msg/detail/mavlink_tunnel__builder.hpp"
 #include "px4_msgs/msg/detail/mavlink_tunnel__traits.hpp"
+#include "px4_msgs/msg/detail/mavlink_tunnel__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__MAVLINK_TUNNEL_HPP_

@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/power_button_state__struct.hpp"
 #include "px4_msgs/msg/detail/power_button_state__builder.hpp"
 #include "px4_msgs/msg/detail/power_button_state__traits.hpp"
+#include "px4_msgs/msg/detail/power_button_state__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__POWER_BUTTON_STATE_HPP_

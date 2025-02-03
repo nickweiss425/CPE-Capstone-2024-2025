@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/estimator_selector_status__struct.hpp"
 #include "px4_msgs/msg/detail/estimator_selector_status__builder.hpp"
 #include "px4_msgs/msg/detail/estimator_selector_status__traits.hpp"
+#include "px4_msgs/msg/detail/estimator_selector_status__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__ESTIMATOR_SELECTOR_STATUS_HPP_

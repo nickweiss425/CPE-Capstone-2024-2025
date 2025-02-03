@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/gimbal_controls__struct.hpp"
 #include "px4_msgs/msg/detail/gimbal_controls__builder.hpp"
 #include "px4_msgs/msg/detail/gimbal_controls__traits.hpp"
+#include "px4_msgs/msg/detail/gimbal_controls__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__GIMBAL_CONTROLS_HPP_

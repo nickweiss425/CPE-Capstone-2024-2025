@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/vehicle_trajectory_waypoint__struct.hpp"
 #include "px4_msgs/msg/detail/vehicle_trajectory_waypoint__builder.hpp"
 #include "px4_msgs/msg/detail/vehicle_trajectory_waypoint__traits.hpp"
+#include "px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__VEHICLE_TRAJECTORY_WAYPOINT_HPP_

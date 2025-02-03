@@ -24,14 +24,22 @@ typedef struct px4_msgs__msg__RoverMecanumStatus
   uint64_t timestamp;
   /// Measured speed in body x direction. Positiv: forwards, Negativ: backwards
   float measured_forward_speed;
+  /// Speed setpoint after applying slew rate
+  float adjusted_forward_speed_setpoint;
   /// Measured speed in body y direction. Positiv: right, Negativ: left
   float measured_lateral_speed;
-  /// Yaw rate setpoint output of the closed loop yaw controller
-  float adjusted_yaw_rate_setpoint;
+  /// Speed setpoint after applying slew rate
+  float adjusted_lateral_speed_setpoint;
   /// Measured yaw rate
   float measured_yaw_rate;
+  /// Yaw rate setpoint output by the closed loop yaw controller
+  float clyaw_yaw_rate_setpoint;
+  /// Yaw rate setpoint from the closed loop yaw controller
+  float adjusted_yaw_rate_setpoint;
   /// Measured yaw
   float measured_yaw;
+  /// Yaw setpoint after applying slew rate
+  float adjusted_yaw_setpoint;
   /// Integral of the PID for the closed loop yaw rate controller
   float pid_yaw_rate_integral;
   /// Integral of the PID for the closed loop yaw controller

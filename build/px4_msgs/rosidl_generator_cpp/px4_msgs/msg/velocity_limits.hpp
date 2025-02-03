@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/velocity_limits__struct.hpp"
 #include "px4_msgs/msg/detail/velocity_limits__builder.hpp"
 #include "px4_msgs/msg/detail/velocity_limits__traits.hpp"
+#include "px4_msgs/msg/detail/velocity_limits__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__VELOCITY_LIMITS_HPP_

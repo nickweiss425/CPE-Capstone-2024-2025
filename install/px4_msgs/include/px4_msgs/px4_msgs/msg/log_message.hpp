@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/log_message__struct.hpp"
 #include "px4_msgs/msg/detail/log_message__builder.hpp"
 #include "px4_msgs/msg/detail/log_message__traits.hpp"
+#include "px4_msgs/msg/detail/log_message__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__LOG_MESSAGE_HPP_

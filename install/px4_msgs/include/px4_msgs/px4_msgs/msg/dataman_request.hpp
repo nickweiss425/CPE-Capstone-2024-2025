@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/dataman_request__struct.hpp"
 #include "px4_msgs/msg/detail/dataman_request__builder.hpp"
 #include "px4_msgs/msg/detail/dataman_request__traits.hpp"
+#include "px4_msgs/msg/detail/dataman_request__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__DATAMAN_REQUEST_HPP_

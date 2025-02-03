@@ -43,7 +43,7 @@ struct EstimatorAidSource2d_
       this->estimator_instance = 0;
       this->device_id = 0ul;
       this->time_last_fuse = 0ull;
-      std::fill<typename std::array<float, 2>::iterator, float>(this->observation.begin(), this->observation.end(), 0.0f);
+      std::fill<typename std::array<double, 2>::iterator, double>(this->observation.begin(), this->observation.end(), 0.0);
       std::fill<typename std::array<float, 2>::iterator, float>(this->observation_variance.begin(), this->observation_variance.end(), 0.0f);
       std::fill<typename std::array<float, 2>::iterator, float>(this->innovation.begin(), this->innovation.end(), 0.0f);
       std::fill<typename std::array<float, 2>::iterator, float>(this->innovation_filtered.begin(), this->innovation_filtered.end(), 0.0f);
@@ -72,7 +72,7 @@ struct EstimatorAidSource2d_
       this->estimator_instance = 0;
       this->device_id = 0ul;
       this->time_last_fuse = 0ull;
-      std::fill<typename std::array<float, 2>::iterator, float>(this->observation.begin(), this->observation.end(), 0.0f);
+      std::fill<typename std::array<double, 2>::iterator, double>(this->observation.begin(), this->observation.end(), 0.0);
       std::fill<typename std::array<float, 2>::iterator, float>(this->observation_variance.begin(), this->observation_variance.end(), 0.0f);
       std::fill<typename std::array<float, 2>::iterator, float>(this->innovation.begin(), this->innovation.end(), 0.0f);
       std::fill<typename std::array<float, 2>::iterator, float>(this->innovation_filtered.begin(), this->innovation_filtered.end(), 0.0f);
@@ -101,7 +101,7 @@ struct EstimatorAidSource2d_
     uint64_t;
   _time_last_fuse_type time_last_fuse;
   using _observation_type =
-    std::array<float, 2>;
+    std::array<double, 2>;
   _observation_type observation;
   using _observation_variance_type =
     std::array<float, 2>;
@@ -160,7 +160,7 @@ struct EstimatorAidSource2d_
     return *this;
   }
   Type & set__observation(
-    const std::array<float, 2> & _arg)
+    const std::array<double, 2> & _arg)
   {
     this->observation = _arg;
     return *this;

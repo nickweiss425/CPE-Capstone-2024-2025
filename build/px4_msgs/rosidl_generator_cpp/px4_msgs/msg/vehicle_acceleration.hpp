@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/vehicle_acceleration__struct.hpp"
 #include "px4_msgs/msg/detail/vehicle_acceleration__builder.hpp"
 #include "px4_msgs/msg/detail/vehicle_acceleration__traits.hpp"
+#include "px4_msgs/msg/detail/vehicle_acceleration__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__VEHICLE_ACCELERATION_HPP_

@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/ulog_stream_ack__struct.hpp"
 #include "px4_msgs/msg/detail/ulog_stream_ack__builder.hpp"
 #include "px4_msgs/msg/detail/ulog_stream_ack__traits.hpp"
+#include "px4_msgs/msg/detail/ulog_stream_ack__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__ULOG_STREAM_ACK_HPP_

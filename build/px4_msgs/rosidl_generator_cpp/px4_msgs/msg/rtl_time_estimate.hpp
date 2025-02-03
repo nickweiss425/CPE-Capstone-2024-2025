@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/rtl_time_estimate__struct.hpp"
 #include "px4_msgs/msg/detail/rtl_time_estimate__builder.hpp"
 #include "px4_msgs/msg/detail/rtl_time_estimate__traits.hpp"
+#include "px4_msgs/msg/detail/rtl_time_estimate__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__RTL_TIME_ESTIMATE_HPP_

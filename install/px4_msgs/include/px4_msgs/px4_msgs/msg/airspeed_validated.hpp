@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/airspeed_validated__struct.hpp"
 #include "px4_msgs/msg/detail/airspeed_validated__builder.hpp"
 #include "px4_msgs/msg/detail/airspeed_validated__traits.hpp"
+#include "px4_msgs/msg/detail/airspeed_validated__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__AIRSPEED_VALIDATED_HPP_

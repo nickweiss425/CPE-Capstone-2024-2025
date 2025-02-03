@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/sensor_correction__struct.hpp"
 #include "px4_msgs/msg/detail/sensor_correction__builder.hpp"
 #include "px4_msgs/msg/detail/sensor_correction__traits.hpp"
+#include "px4_msgs/msg/detail/sensor_correction__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__SENSOR_CORRECTION_HPP_

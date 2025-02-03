@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/vehicle_command_ack__struct.hpp"
 #include "px4_msgs/msg/detail/vehicle_command_ack__builder.hpp"
 #include "px4_msgs/msg/detail/vehicle_command_ack__traits.hpp"
+#include "px4_msgs/msg/detail/vehicle_command_ack__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__VEHICLE_COMMAND_ACK_HPP_

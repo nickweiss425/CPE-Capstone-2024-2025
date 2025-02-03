@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/vehicle_angular_velocity__struct.hpp"
 #include "px4_msgs/msg/detail/vehicle_angular_velocity__builder.hpp"
 #include "px4_msgs/msg/detail/vehicle_angular_velocity__traits.hpp"
+#include "px4_msgs/msg/detail/vehicle_angular_velocity__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__VEHICLE_ANGULAR_VELOCITY_HPP_

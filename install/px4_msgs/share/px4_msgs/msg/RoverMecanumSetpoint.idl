@@ -34,8 +34,8 @@ module px4_msgs {
       float yaw_rate_setpoint;
 
       @verbatim (language="comment", text=
-        "[-1, 1] Desired normalized yaw rate")
-      float yaw_rate_setpoint_normalized;
+        "[-1, 1] Normalized speed difference between the left and right wheels")
+      float speed_diff_setpoint_normalized;
 
       @verbatim (language="comment", text=
         "Desired yaw (heading)")

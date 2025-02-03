@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/manual_control_switches__struct.hpp"
 #include "px4_msgs/msg/detail/manual_control_switches__builder.hpp"
 #include "px4_msgs/msg/detail/manual_control_switches__traits.hpp"
+#include "px4_msgs/msg/detail/manual_control_switches__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__MANUAL_CONTROL_SWITCHES_HPP_

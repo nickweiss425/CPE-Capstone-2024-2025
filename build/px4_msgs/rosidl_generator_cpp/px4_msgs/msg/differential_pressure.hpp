@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/differential_pressure__struct.hpp"
 #include "px4_msgs/msg/detail/differential_pressure__builder.hpp"
 #include "px4_msgs/msg/detail/differential_pressure__traits.hpp"
+#include "px4_msgs/msg/detail/differential_pressure__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__DIFFERENTIAL_PRESSURE_HPP_

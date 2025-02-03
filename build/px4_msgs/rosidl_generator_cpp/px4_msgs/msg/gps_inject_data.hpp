@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/gps_inject_data__struct.hpp"
 #include "px4_msgs/msg/detail/gps_inject_data__builder.hpp"
 #include "px4_msgs/msg/detail/gps_inject_data__traits.hpp"
+#include "px4_msgs/msg/detail/gps_inject_data__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__GPS_INJECT_DATA_HPP_

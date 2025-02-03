@@ -39,6 +39,13 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
+  // member: adjusted_forward_speed_setpoint
+  {
+    out << "adjusted_forward_speed_setpoint: ";
+    rosidl_generator_traits::value_to_yaml(msg.adjusted_forward_speed_setpoint, out);
+    out << ", ";
+  }
+
   // member: measured_lateral_speed
   {
     out << "measured_lateral_speed: ";
@@ -46,10 +53,10 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
-  // member: adjusted_yaw_rate_setpoint
+  // member: adjusted_lateral_speed_setpoint
   {
-    out << "adjusted_yaw_rate_setpoint: ";
-    rosidl_generator_traits::value_to_yaml(msg.adjusted_yaw_rate_setpoint, out);
+    out << "adjusted_lateral_speed_setpoint: ";
+    rosidl_generator_traits::value_to_yaml(msg.adjusted_lateral_speed_setpoint, out);
     out << ", ";
   }
 
@@ -60,10 +67,31 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
+  // member: clyaw_yaw_rate_setpoint
+  {
+    out << "clyaw_yaw_rate_setpoint: ";
+    rosidl_generator_traits::value_to_yaml(msg.clyaw_yaw_rate_setpoint, out);
+    out << ", ";
+  }
+
+  // member: adjusted_yaw_rate_setpoint
+  {
+    out << "adjusted_yaw_rate_setpoint: ";
+    rosidl_generator_traits::value_to_yaml(msg.adjusted_yaw_rate_setpoint, out);
+    out << ", ";
+  }
+
   // member: measured_yaw
   {
     out << "measured_yaw: ";
     rosidl_generator_traits::value_to_yaml(msg.measured_yaw, out);
+    out << ", ";
+  }
+
+  // member: adjusted_yaw_setpoint
+  {
+    out << "adjusted_yaw_setpoint: ";
+    rosidl_generator_traits::value_to_yaml(msg.adjusted_yaw_setpoint, out);
     out << ", ";
   }
 
@@ -120,6 +148,16 @@ inline void to_block_style_yaml(
     out << "\n";
   }
 
+  // member: adjusted_forward_speed_setpoint
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "adjusted_forward_speed_setpoint: ";
+    rosidl_generator_traits::value_to_yaml(msg.adjusted_forward_speed_setpoint, out);
+    out << "\n";
+  }
+
   // member: measured_lateral_speed
   {
     if (indentation > 0) {
@@ -130,13 +168,13 @@ inline void to_block_style_yaml(
     out << "\n";
   }
 
-  // member: adjusted_yaw_rate_setpoint
+  // member: adjusted_lateral_speed_setpoint
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "adjusted_yaw_rate_setpoint: ";
-    rosidl_generator_traits::value_to_yaml(msg.adjusted_yaw_rate_setpoint, out);
+    out << "adjusted_lateral_speed_setpoint: ";
+    rosidl_generator_traits::value_to_yaml(msg.adjusted_lateral_speed_setpoint, out);
     out << "\n";
   }
 
@@ -150,6 +188,26 @@ inline void to_block_style_yaml(
     out << "\n";
   }
 
+  // member: clyaw_yaw_rate_setpoint
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "clyaw_yaw_rate_setpoint: ";
+    rosidl_generator_traits::value_to_yaml(msg.clyaw_yaw_rate_setpoint, out);
+    out << "\n";
+  }
+
+  // member: adjusted_yaw_rate_setpoint
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "adjusted_yaw_rate_setpoint: ";
+    rosidl_generator_traits::value_to_yaml(msg.adjusted_yaw_rate_setpoint, out);
+    out << "\n";
+  }
+
   // member: measured_yaw
   {
     if (indentation > 0) {
@@ -157,6 +215,16 @@ inline void to_block_style_yaml(
     }
     out << "measured_yaw: ";
     rosidl_generator_traits::value_to_yaml(msg.measured_yaw, out);
+    out << "\n";
+  }
+
+  // member: adjusted_yaw_setpoint
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "adjusted_yaw_setpoint: ";
+    rosidl_generator_traits::value_to_yaml(msg.adjusted_yaw_setpoint, out);
     out << "\n";
   }
 

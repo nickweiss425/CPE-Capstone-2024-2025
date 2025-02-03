@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/vehicle_magnetometer__struct.hpp"
 #include "px4_msgs/msg/detail/vehicle_magnetometer__builder.hpp"
 #include "px4_msgs/msg/detail/vehicle_magnetometer__traits.hpp"
+#include "px4_msgs/msg/detail/vehicle_magnetometer__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__VEHICLE_MAGNETOMETER_HPP_

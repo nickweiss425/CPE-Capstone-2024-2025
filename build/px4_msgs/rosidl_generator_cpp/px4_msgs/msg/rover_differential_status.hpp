@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/rover_differential_status__struct.hpp"
 #include "px4_msgs/msg/detail/rover_differential_status__builder.hpp"
 #include "px4_msgs/msg/detail/rover_differential_status__traits.hpp"
+#include "px4_msgs/msg/detail/rover_differential_status__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__ROVER_DIFFERENTIAL_STATUS_HPP_

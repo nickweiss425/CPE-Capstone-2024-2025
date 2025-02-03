@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/control_allocator_status__struct.hpp"
 #include "px4_msgs/msg/detail/control_allocator_status__builder.hpp"
 #include "px4_msgs/msg/detail/control_allocator_status__traits.hpp"
+#include "px4_msgs/msg/detail/control_allocator_status__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__CONTROL_ALLOCATOR_STATUS_HPP_

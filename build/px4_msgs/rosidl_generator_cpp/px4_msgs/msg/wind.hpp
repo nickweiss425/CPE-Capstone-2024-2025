@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/wind__struct.hpp"
 #include "px4_msgs/msg/detail/wind__builder.hpp"
 #include "px4_msgs/msg/detail/wind__traits.hpp"
+#include "px4_msgs/msg/detail/wind__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__WIND_HPP_

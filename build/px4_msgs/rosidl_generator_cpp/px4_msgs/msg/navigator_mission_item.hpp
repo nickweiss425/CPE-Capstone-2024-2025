@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/navigator_mission_item__struct.hpp"
 #include "px4_msgs/msg/detail/navigator_mission_item__builder.hpp"
 #include "px4_msgs/msg/detail/navigator_mission_item__traits.hpp"
+#include "px4_msgs/msg/detail/navigator_mission_item__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__NAVIGATOR_MISSION_ITEM_HPP_

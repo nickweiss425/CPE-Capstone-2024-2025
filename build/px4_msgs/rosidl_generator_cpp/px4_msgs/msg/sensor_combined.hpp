@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/sensor_combined__struct.hpp"
 #include "px4_msgs/msg/detail/sensor_combined__builder.hpp"
 #include "px4_msgs/msg/detail/sensor_combined__traits.hpp"
+#include "px4_msgs/msg/detail/sensor_combined__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__SENSOR_COMBINED_HPP_

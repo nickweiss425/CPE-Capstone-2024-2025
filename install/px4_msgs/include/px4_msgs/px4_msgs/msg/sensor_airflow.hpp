@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/sensor_airflow__struct.hpp"
 #include "px4_msgs/msg/detail/sensor_airflow__builder.hpp"
 #include "px4_msgs/msg/detail/sensor_airflow__traits.hpp"
+#include "px4_msgs/msg/detail/sensor_airflow__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__SENSOR_AIRFLOW_HPP_

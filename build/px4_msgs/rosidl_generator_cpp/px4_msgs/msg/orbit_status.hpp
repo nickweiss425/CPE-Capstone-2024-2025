@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/orbit_status__struct.hpp"
 #include "px4_msgs/msg/detail/orbit_status__builder.hpp"
 #include "px4_msgs/msg/detail/orbit_status__traits.hpp"
+#include "px4_msgs/msg/detail/orbit_status__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__ORBIT_STATUS_HPP_

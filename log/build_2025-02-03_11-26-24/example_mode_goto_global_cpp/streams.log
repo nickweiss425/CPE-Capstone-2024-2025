@@ -1,0 +1,74 @@
+[0.105s] Invoking command in '/home/niweiss/ws_sensor_combined/build/example_mode_goto_global_cpp': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/modes/goto_global -DCMAKE_INSTALL_PREFIX=/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp
+[0.260s] -- The C compiler identification is GNU 11.4.0
+[0.530s] -- The CXX compiler identification is GNU 11.4.0
+[0.757s] -- Detecting C compiler ABI info
+[0.873s] -- Detecting C compiler ABI info - done
+[0.883s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.883s] -- Detecting C compile features
+[0.884s] -- Detecting C compile features - done
+[0.888s] -- Detecting CXX compiler ABI info
+[1.006s] -- Detecting CXX compiler ABI info - done
+[1.017s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.018s] -- Detecting CXX compile features
+[1.018s] -- Detecting CXX compile features - done
+[1.020s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.026s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.028s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.462s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.570s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[1.694s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.699s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.708s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.724s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.745s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.796s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.800s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.515s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.093s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.933s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.941s] -- Looking for pthread.h
+[5.119s] -- Looking for pthread.h - found
+[5.119s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.260s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.260s] -- Found Threads: TRUE  
+[5.362s] -- Found px4_ros2_cpp: 0.0.1 (/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/cmake)
+[5.389s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.570s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.575s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.577s] -- Configured cppcheck include dirs: /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/modes/goto_global/include
+[5.577s] -- Configured cppcheck exclude dirs and/or files: 
+[5.579s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.579s] -- Configured cpplint exclude dirs and/or files: 
+[5.580s] -- Added test 'lint_cmake' to check CMake code style
+[5.584s] -- Added test 'uncrustify' to check C / C++ code style
+[5.584s] -- Configured uncrustify additional arguments: 
+[5.584s] -- Added test 'xmllint' to check XML markup files
+[5.584s] -- Configuring done
+[5.601s] -- Generating done
+[5.607s] -- Build files have been written to: /home/niweiss/ws_sensor_combined/build/example_mode_goto_global_cpp
+[5.624s] Invoked command in '/home/niweiss/ws_sensor_combined/build/example_mode_goto_global_cpp' returned '0': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/niweiss/ws_sensor_combined/src/px4-ros2-interface-lib/examples/cpp/modes/goto_global -DCMAKE_INSTALL_PREFIX=/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp
+[5.625s] Invoking command in '/home/niweiss/ws_sensor_combined/build/example_mode_goto_global_cpp': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/example_mode_goto_global_cpp -- -j16 -l16
+[5.703s] [ 50%] [32mBuilding CXX object CMakeFiles/example_mode_goto_global.dir/src/main.cpp.o[0m
+[16.087s] [100%] [32m[1mLinking CXX executable example_mode_goto_global[0m
+[17.126s] [100%] Built target example_mode_goto_global
+[17.136s] Invoked command in '/home/niweiss/ws_sensor_combined/build/example_mode_goto_global_cpp' returned '0': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/example_mode_goto_global_cpp -- -j16 -l16
+[17.139s] Invoking command in '/home/niweiss/ws_sensor_combined/build/example_mode_goto_global_cpp': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/example_mode_goto_global_cpp
+[17.146s] -- Install configuration: ""
+[17.146s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/lib/example_mode_goto_global_cpp/example_mode_goto_global
+[17.147s] -- Set runtime path of "/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/lib/example_mode_goto_global_cpp/example_mode_goto_global" to ""
+[17.148s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/ament_index/resource_index/package_run_dependencies/example_mode_goto_global_cpp
+[17.148s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/ament_index/resource_index/parent_prefix_path/example_mode_goto_global_cpp
+[17.149s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/environment/ament_prefix_path.sh
+[17.149s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/environment/ament_prefix_path.dsv
+[17.150s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/environment/path.sh
+[17.150s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/environment/path.dsv
+[17.150s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/local_setup.bash
+[17.150s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/local_setup.sh
+[17.151s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/local_setup.zsh
+[17.152s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/local_setup.dsv
+[17.152s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/package.dsv
+[17.153s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/ament_index/resource_index/packages/example_mode_goto_global_cpp
+[17.153s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/cmake/example_mode_goto_global_cppConfig.cmake
+[17.153s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/cmake/example_mode_goto_global_cppConfig-version.cmake
+[17.154s] -- Installing: /home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp/share/example_mode_goto_global_cpp/package.xml
+[17.156s] Invoked command in '/home/niweiss/ws_sensor_combined/build/example_mode_goto_global_cpp' returned '0': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/example_mode_goto_global_cpp

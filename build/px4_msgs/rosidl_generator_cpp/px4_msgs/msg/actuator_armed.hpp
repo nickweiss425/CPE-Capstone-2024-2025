@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/actuator_armed__struct.hpp"
 #include "px4_msgs/msg/detail/actuator_armed__builder.hpp"
 #include "px4_msgs/msg/detail/actuator_armed__traits.hpp"
+#include "px4_msgs/msg/detail/actuator_armed__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__ACTUATOR_ARMED_HPP_

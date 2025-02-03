@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/sensor_gps__struct.hpp"
 #include "px4_msgs/msg/detail/sensor_gps__builder.hpp"
 #include "px4_msgs/msg/detail/sensor_gps__traits.hpp"
+#include "px4_msgs/msg/detail/sensor_gps__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__SENSOR_GPS_HPP_

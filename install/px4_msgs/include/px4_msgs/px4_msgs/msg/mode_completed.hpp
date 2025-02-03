@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/mode_completed__struct.hpp"
 #include "px4_msgs/msg/detail/mode_completed__builder.hpp"
 #include "px4_msgs/msg/detail/mode_completed__traits.hpp"
+#include "px4_msgs/msg/detail/mode_completed__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__MODE_COMPLETED_HPP_

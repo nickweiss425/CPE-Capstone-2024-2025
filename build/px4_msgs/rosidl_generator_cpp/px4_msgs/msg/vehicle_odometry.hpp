@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/vehicle_odometry__struct.hpp"
 #include "px4_msgs/msg/detail/vehicle_odometry__builder.hpp"
 #include "px4_msgs/msg/detail/vehicle_odometry__traits.hpp"
+#include "px4_msgs/msg/detail/vehicle_odometry__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__VEHICLE_ODOMETRY_HPP_

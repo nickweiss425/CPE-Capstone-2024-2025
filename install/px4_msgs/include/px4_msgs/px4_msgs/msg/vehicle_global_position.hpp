@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/vehicle_global_position__struct.hpp"
 #include "px4_msgs/msg/detail/vehicle_global_position__builder.hpp"
 #include "px4_msgs/msg/detail/vehicle_global_position__traits.hpp"
+#include "px4_msgs/msg/detail/vehicle_global_position__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__VEHICLE_GLOBAL_POSITION_HPP_

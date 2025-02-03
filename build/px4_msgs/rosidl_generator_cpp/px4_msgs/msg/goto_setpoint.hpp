@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/goto_setpoint__struct.hpp"
 #include "px4_msgs/msg/detail/goto_setpoint__builder.hpp"
 #include "px4_msgs/msg/detail/goto_setpoint__traits.hpp"
+#include "px4_msgs/msg/detail/goto_setpoint__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__GOTO_SETPOINT_HPP_

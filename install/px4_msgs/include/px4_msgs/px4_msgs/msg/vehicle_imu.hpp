@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/vehicle_imu__struct.hpp"
 #include "px4_msgs/msg/detail/vehicle_imu__builder.hpp"
 #include "px4_msgs/msg/detail/vehicle_imu__traits.hpp"
+#include "px4_msgs/msg/detail/vehicle_imu__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__VEHICLE_IMU_HPP_

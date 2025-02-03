@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/orb_test__struct.hpp"
 #include "px4_msgs/msg/detail/orb_test__builder.hpp"
 #include "px4_msgs/msg/detail/orb_test__traits.hpp"
+#include "px4_msgs/msg/detail/orb_test__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__ORB_TEST_HPP_

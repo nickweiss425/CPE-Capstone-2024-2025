@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/qshell_req__struct.hpp"
 #include "px4_msgs/msg/detail/qshell_req__builder.hpp"
 #include "px4_msgs/msg/detail/qshell_req__traits.hpp"
+#include "px4_msgs/msg/detail/qshell_req__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__QSHELL_REQ_HPP_

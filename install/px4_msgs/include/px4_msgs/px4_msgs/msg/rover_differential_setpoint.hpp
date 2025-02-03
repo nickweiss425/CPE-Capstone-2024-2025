@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/rover_differential_setpoint__struct.hpp"
 #include "px4_msgs/msg/detail/rover_differential_setpoint__builder.hpp"
 #include "px4_msgs/msg/detail/rover_differential_setpoint__traits.hpp"
+#include "px4_msgs/msg/detail/rover_differential_setpoint__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__ROVER_DIFFERENTIAL_SETPOINT_HPP_

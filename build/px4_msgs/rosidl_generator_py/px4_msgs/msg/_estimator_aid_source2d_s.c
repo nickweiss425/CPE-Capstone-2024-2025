@@ -111,12 +111,12 @@ bool px4_msgs__msg__estimator_aid_source2d__convert_from_py(PyObject * _pymsg, v
       PyArrayObject * seq_field = (PyArrayObject *)field;
       Py_INCREF(seq_field);
       assert(PyArray_NDIM(seq_field) == 1);
-      assert(PyArray_TYPE(seq_field) == NPY_FLOAT32);
+      assert(PyArray_TYPE(seq_field) == NPY_FLOAT64);
       Py_ssize_t size = 2;
-      float * dest = ros_message->observation;
+      double * dest = ros_message->observation;
       for (Py_ssize_t i = 0; i < size; ++i) {
-        float tmp = *(npy_float32 *)PyArray_GETPTR1(seq_field, i);
-        memcpy(&dest[i], &tmp, sizeof(float));
+        double tmp = *(npy_float64 *)PyArray_GETPTR1(seq_field, i);
+        memcpy(&dest[i], &tmp, sizeof(double));
       }
       Py_DECREF(seq_field);
     }
@@ -372,11 +372,11 @@ PyObject * px4_msgs__msg__estimator_aid_source2d__convert_to_py(void * raw_ros_m
     assert(strcmp(field->ob_type->tp_name, "numpy.ndarray") == 0);
     PyArrayObject * seq_field = (PyArrayObject *)field;
     assert(PyArray_NDIM(seq_field) == 1);
-    assert(PyArray_TYPE(seq_field) == NPY_FLOAT32);
-    assert(sizeof(npy_float32) == sizeof(float));
-    npy_float32 * dst = (npy_float32 *)PyArray_GETPTR1(seq_field, 0);
-    float * src = &(ros_message->observation[0]);
-    memcpy(dst, src, 2 * sizeof(float));
+    assert(PyArray_TYPE(seq_field) == NPY_FLOAT64);
+    assert(sizeof(npy_float64) == sizeof(double));
+    npy_float64 * dst = (npy_float64 *)PyArray_GETPTR1(seq_field, 0);
+    double * src = &(ros_message->observation[0]);
+    memcpy(dst, src, 2 * sizeof(double));
     Py_DECREF(field);
   }
   {  // observation_variance

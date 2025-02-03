@@ -41,38 +41,38 @@ size_t px4_msgs__msg__EstimatorAidSource2d__rosidl_typesupport_introspection_c__
 const void * px4_msgs__msg__EstimatorAidSource2d__rosidl_typesupport_introspection_c__get_const_function__EstimatorAidSource2d__observation(
   const void * untyped_member, size_t index)
 {
-  const float * member =
-    (const float *)(untyped_member);
+  const double * member =
+    (const double *)(untyped_member);
   return &member[index];
 }
 
 void * px4_msgs__msg__EstimatorAidSource2d__rosidl_typesupport_introspection_c__get_function__EstimatorAidSource2d__observation(
   void * untyped_member, size_t index)
 {
-  float * member =
-    (float *)(untyped_member);
+  double * member =
+    (double *)(untyped_member);
   return &member[index];
 }
 
 void px4_msgs__msg__EstimatorAidSource2d__rosidl_typesupport_introspection_c__fetch_function__EstimatorAidSource2d__observation(
   const void * untyped_member, size_t index, void * untyped_value)
 {
-  const float * item =
-    ((const float *)
+  const double * item =
+    ((const double *)
     px4_msgs__msg__EstimatorAidSource2d__rosidl_typesupport_introspection_c__get_const_function__EstimatorAidSource2d__observation(untyped_member, index));
-  float * value =
-    (float *)(untyped_value);
+  double * value =
+    (double *)(untyped_value);
   *value = *item;
 }
 
 void px4_msgs__msg__EstimatorAidSource2d__rosidl_typesupport_introspection_c__assign_function__EstimatorAidSource2d__observation(
   void * untyped_member, size_t index, const void * untyped_value)
 {
-  float * item =
-    ((float *)
+  double * item =
+    ((double *)
     px4_msgs__msg__EstimatorAidSource2d__rosidl_typesupport_introspection_c__get_function__EstimatorAidSource2d__observation(untyped_member, index));
-  const float * value =
-    (const float *)(untyped_value);
+  const double * value =
+    (const double *)(untyped_value);
   *item = *value;
 }
 
@@ -434,7 +434,7 @@ static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__Estimato
   },
   {
     "observation",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     true,  // is array

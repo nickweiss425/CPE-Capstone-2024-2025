@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/actuator_servos__struct.hpp"
 #include "px4_msgs/msg/detail/actuator_servos__builder.hpp"
 #include "px4_msgs/msg/detail/actuator_servos__traits.hpp"
+#include "px4_msgs/msg/detail/actuator_servos__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__ACTUATOR_SERVOS_HPP_

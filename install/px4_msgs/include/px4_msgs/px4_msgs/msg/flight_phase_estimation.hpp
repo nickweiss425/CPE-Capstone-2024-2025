@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/flight_phase_estimation__struct.hpp"
 #include "px4_msgs/msg/detail/flight_phase_estimation__builder.hpp"
 #include "px4_msgs/msg/detail/flight_phase_estimation__traits.hpp"
+#include "px4_msgs/msg/detail/flight_phase_estimation__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__FLIGHT_PHASE_ESTIMATION_HPP_

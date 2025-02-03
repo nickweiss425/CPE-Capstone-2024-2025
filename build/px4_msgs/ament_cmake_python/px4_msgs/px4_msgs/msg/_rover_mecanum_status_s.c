@@ -68,6 +68,15 @@ bool px4_msgs__msg__rover_mecanum_status__convert_from_py(PyObject * _pymsg, voi
     ros_message->measured_forward_speed = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
+  {  // adjusted_forward_speed_setpoint
+    PyObject * field = PyObject_GetAttrString(_pymsg, "adjusted_forward_speed_setpoint");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->adjusted_forward_speed_setpoint = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
   {  // measured_lateral_speed
     PyObject * field = PyObject_GetAttrString(_pymsg, "measured_lateral_speed");
     if (!field) {
@@ -77,13 +86,13 @@ bool px4_msgs__msg__rover_mecanum_status__convert_from_py(PyObject * _pymsg, voi
     ros_message->measured_lateral_speed = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // adjusted_yaw_rate_setpoint
-    PyObject * field = PyObject_GetAttrString(_pymsg, "adjusted_yaw_rate_setpoint");
+  {  // adjusted_lateral_speed_setpoint
+    PyObject * field = PyObject_GetAttrString(_pymsg, "adjusted_lateral_speed_setpoint");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->adjusted_yaw_rate_setpoint = (float)PyFloat_AS_DOUBLE(field);
+    ros_message->adjusted_lateral_speed_setpoint = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
   {  // measured_yaw_rate
@@ -95,6 +104,24 @@ bool px4_msgs__msg__rover_mecanum_status__convert_from_py(PyObject * _pymsg, voi
     ros_message->measured_yaw_rate = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
+  {  // clyaw_yaw_rate_setpoint
+    PyObject * field = PyObject_GetAttrString(_pymsg, "clyaw_yaw_rate_setpoint");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->clyaw_yaw_rate_setpoint = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // adjusted_yaw_rate_setpoint
+    PyObject * field = PyObject_GetAttrString(_pymsg, "adjusted_yaw_rate_setpoint");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->adjusted_yaw_rate_setpoint = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
   {  // measured_yaw
     PyObject * field = PyObject_GetAttrString(_pymsg, "measured_yaw");
     if (!field) {
@@ -102,6 +129,15 @@ bool px4_msgs__msg__rover_mecanum_status__convert_from_py(PyObject * _pymsg, voi
     }
     assert(PyFloat_Check(field));
     ros_message->measured_yaw = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // adjusted_yaw_setpoint
+    PyObject * field = PyObject_GetAttrString(_pymsg, "adjusted_yaw_setpoint");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->adjusted_yaw_setpoint = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
   {  // pid_yaw_rate_integral
@@ -184,6 +220,17 @@ PyObject * px4_msgs__msg__rover_mecanum_status__convert_to_py(void * raw_ros_mes
       }
     }
   }
+  {  // adjusted_forward_speed_setpoint
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->adjusted_forward_speed_setpoint);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "adjusted_forward_speed_setpoint", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
   {  // measured_lateral_speed
     PyObject * field = NULL;
     field = PyFloat_FromDouble(ros_message->measured_lateral_speed);
@@ -195,11 +242,11 @@ PyObject * px4_msgs__msg__rover_mecanum_status__convert_to_py(void * raw_ros_mes
       }
     }
   }
-  {  // adjusted_yaw_rate_setpoint
+  {  // adjusted_lateral_speed_setpoint
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->adjusted_yaw_rate_setpoint);
+    field = PyFloat_FromDouble(ros_message->adjusted_lateral_speed_setpoint);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "adjusted_yaw_rate_setpoint", field);
+      int rc = PyObject_SetAttrString(_pymessage, "adjusted_lateral_speed_setpoint", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
@@ -217,11 +264,44 @@ PyObject * px4_msgs__msg__rover_mecanum_status__convert_to_py(void * raw_ros_mes
       }
     }
   }
+  {  // clyaw_yaw_rate_setpoint
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->clyaw_yaw_rate_setpoint);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "clyaw_yaw_rate_setpoint", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // adjusted_yaw_rate_setpoint
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->adjusted_yaw_rate_setpoint);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "adjusted_yaw_rate_setpoint", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
   {  // measured_yaw
     PyObject * field = NULL;
     field = PyFloat_FromDouble(ros_message->measured_yaw);
     {
       int rc = PyObject_SetAttrString(_pymessage, "measured_yaw", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // adjusted_yaw_setpoint
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->adjusted_yaw_setpoint);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "adjusted_yaw_setpoint", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

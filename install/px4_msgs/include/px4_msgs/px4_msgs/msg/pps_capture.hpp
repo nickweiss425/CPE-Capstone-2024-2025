@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/pps_capture__struct.hpp"
 #include "px4_msgs/msg/detail/pps_capture__builder.hpp"
 #include "px4_msgs/msg/detail/pps_capture__traits.hpp"
+#include "px4_msgs/msg/detail/pps_capture__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__PPS_CAPTURE_HPP_

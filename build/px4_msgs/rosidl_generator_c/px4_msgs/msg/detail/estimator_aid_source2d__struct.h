@@ -27,7 +27,7 @@ typedef struct px4_msgs__msg__EstimatorAidSource2d
   uint8_t estimator_instance;
   uint32_t device_id;
   uint64_t time_last_fuse;
-  float observation[2];
+  double observation[2];
   float observation_variance[2];
   float innovation[2];
   float innovation_filtered[2];

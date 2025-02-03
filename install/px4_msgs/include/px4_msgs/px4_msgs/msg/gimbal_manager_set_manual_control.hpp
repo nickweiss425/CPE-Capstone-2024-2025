@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/gimbal_manager_set_manual_control__struct.hpp"
 #include "px4_msgs/msg/detail/gimbal_manager_set_manual_control__builder.hpp"
 #include "px4_msgs/msg/detail/gimbal_manager_set_manual_control__traits.hpp"
+#include "px4_msgs/msg/detail/gimbal_manager_set_manual_control__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__GIMBAL_MANAGER_SET_MANUAL_CONTROL_HPP_

@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/register_ext_component_reply__struct.hpp"
 #include "px4_msgs/msg/detail/register_ext_component_reply__builder.hpp"
 #include "px4_msgs/msg/detail/register_ext_component_reply__traits.hpp"
+#include "px4_msgs/msg/detail/register_ext_component_reply__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__REGISTER_EXT_COMPONENT_REPLY_HPP_

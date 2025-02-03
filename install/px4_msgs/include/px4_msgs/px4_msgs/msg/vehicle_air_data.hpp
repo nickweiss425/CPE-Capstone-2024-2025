@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/vehicle_air_data__struct.hpp"
 #include "px4_msgs/msg/detail/vehicle_air_data__builder.hpp"
 #include "px4_msgs/msg/detail/vehicle_air_data__traits.hpp"
+#include "px4_msgs/msg/detail/vehicle_air_data__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__VEHICLE_AIR_DATA_HPP_

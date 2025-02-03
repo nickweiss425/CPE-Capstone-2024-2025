@@ -19,10 +19,14 @@ px4_msgs__msg__RoverMecanumStatus__init(px4_msgs__msg__RoverMecanumStatus * msg)
   }
   // timestamp
   // measured_forward_speed
+  // adjusted_forward_speed_setpoint
   // measured_lateral_speed
-  // adjusted_yaw_rate_setpoint
+  // adjusted_lateral_speed_setpoint
   // measured_yaw_rate
+  // clyaw_yaw_rate_setpoint
+  // adjusted_yaw_rate_setpoint
   // measured_yaw
+  // adjusted_yaw_setpoint
   // pid_yaw_rate_integral
   // pid_yaw_integral
   // pid_forward_throttle_integral
@@ -38,10 +42,14 @@ px4_msgs__msg__RoverMecanumStatus__fini(px4_msgs__msg__RoverMecanumStatus * msg)
   }
   // timestamp
   // measured_forward_speed
+  // adjusted_forward_speed_setpoint
   // measured_lateral_speed
-  // adjusted_yaw_rate_setpoint
+  // adjusted_lateral_speed_setpoint
   // measured_yaw_rate
+  // clyaw_yaw_rate_setpoint
+  // adjusted_yaw_rate_setpoint
   // measured_yaw
+  // adjusted_yaw_setpoint
   // pid_yaw_rate_integral
   // pid_yaw_integral
   // pid_forward_throttle_integral
@@ -62,20 +70,36 @@ px4_msgs__msg__RoverMecanumStatus__are_equal(const px4_msgs__msg__RoverMecanumSt
   if (lhs->measured_forward_speed != rhs->measured_forward_speed) {
     return false;
   }
+  // adjusted_forward_speed_setpoint
+  if (lhs->adjusted_forward_speed_setpoint != rhs->adjusted_forward_speed_setpoint) {
+    return false;
+  }
   // measured_lateral_speed
   if (lhs->measured_lateral_speed != rhs->measured_lateral_speed) {
     return false;
   }
-  // adjusted_yaw_rate_setpoint
-  if (lhs->adjusted_yaw_rate_setpoint != rhs->adjusted_yaw_rate_setpoint) {
+  // adjusted_lateral_speed_setpoint
+  if (lhs->adjusted_lateral_speed_setpoint != rhs->adjusted_lateral_speed_setpoint) {
     return false;
   }
   // measured_yaw_rate
   if (lhs->measured_yaw_rate != rhs->measured_yaw_rate) {
     return false;
   }
+  // clyaw_yaw_rate_setpoint
+  if (lhs->clyaw_yaw_rate_setpoint != rhs->clyaw_yaw_rate_setpoint) {
+    return false;
+  }
+  // adjusted_yaw_rate_setpoint
+  if (lhs->adjusted_yaw_rate_setpoint != rhs->adjusted_yaw_rate_setpoint) {
+    return false;
+  }
   // measured_yaw
   if (lhs->measured_yaw != rhs->measured_yaw) {
+    return false;
+  }
+  // adjusted_yaw_setpoint
+  if (lhs->adjusted_yaw_setpoint != rhs->adjusted_yaw_setpoint) {
     return false;
   }
   // pid_yaw_rate_integral
@@ -109,14 +133,22 @@ px4_msgs__msg__RoverMecanumStatus__copy(
   output->timestamp = input->timestamp;
   // measured_forward_speed
   output->measured_forward_speed = input->measured_forward_speed;
+  // adjusted_forward_speed_setpoint
+  output->adjusted_forward_speed_setpoint = input->adjusted_forward_speed_setpoint;
   // measured_lateral_speed
   output->measured_lateral_speed = input->measured_lateral_speed;
-  // adjusted_yaw_rate_setpoint
-  output->adjusted_yaw_rate_setpoint = input->adjusted_yaw_rate_setpoint;
+  // adjusted_lateral_speed_setpoint
+  output->adjusted_lateral_speed_setpoint = input->adjusted_lateral_speed_setpoint;
   // measured_yaw_rate
   output->measured_yaw_rate = input->measured_yaw_rate;
+  // clyaw_yaw_rate_setpoint
+  output->clyaw_yaw_rate_setpoint = input->clyaw_yaw_rate_setpoint;
+  // adjusted_yaw_rate_setpoint
+  output->adjusted_yaw_rate_setpoint = input->adjusted_yaw_rate_setpoint;
   // measured_yaw
   output->measured_yaw = input->measured_yaw;
+  // adjusted_yaw_setpoint
+  output->adjusted_yaw_setpoint = input->adjusted_yaw_setpoint;
   // pid_yaw_rate_integral
   output->pid_yaw_rate_integral = input->pid_yaw_rate_integral;
   // pid_yaw_integral

@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/button_event__struct.hpp"
 #include "px4_msgs/msg/detail/button_event__builder.hpp"
 #include "px4_msgs/msg/detail/button_event__traits.hpp"
+#include "px4_msgs/msg/detail/button_event__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__BUTTON_EVENT_HPP_

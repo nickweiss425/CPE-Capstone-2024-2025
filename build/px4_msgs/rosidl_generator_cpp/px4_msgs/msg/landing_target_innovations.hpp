@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/landing_target_innovations__struct.hpp"
 #include "px4_msgs/msg/detail/landing_target_innovations__builder.hpp"
 #include "px4_msgs/msg/detail/landing_target_innovations__traits.hpp"
+#include "px4_msgs/msg/detail/landing_target_innovations__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__LANDING_TARGET_INNOVATIONS_HPP_

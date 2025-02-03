@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/led_control__struct.hpp"
 #include "px4_msgs/msg/detail/led_control__builder.hpp"
 #include "px4_msgs/msg/detail/led_control__traits.hpp"
+#include "px4_msgs/msg/detail/led_control__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__LED_CONTROL_HPP_

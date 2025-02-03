@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/task_stack_info__struct.hpp"
 #include "px4_msgs/msg/detail/task_stack_info__builder.hpp"
 #include "px4_msgs/msg/detail/task_stack_info__traits.hpp"
+#include "px4_msgs/msg/detail/task_stack_info__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__TASK_STACK_INFO_HPP_

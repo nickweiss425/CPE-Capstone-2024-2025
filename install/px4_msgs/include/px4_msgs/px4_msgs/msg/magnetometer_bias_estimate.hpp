@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/magnetometer_bias_estimate__struct.hpp"
 #include "px4_msgs/msg/detail/magnetometer_bias_estimate__builder.hpp"
 #include "px4_msgs/msg/detail/magnetometer_bias_estimate__traits.hpp"
+#include "px4_msgs/msg/detail/magnetometer_bias_estimate__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__MAGNETOMETER_BIAS_ESTIMATE_HPP_

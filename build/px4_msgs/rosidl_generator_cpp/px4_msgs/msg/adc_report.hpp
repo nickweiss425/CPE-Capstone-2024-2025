@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/adc_report__struct.hpp"
 #include "px4_msgs/msg/detail/adc_report__builder.hpp"
 #include "px4_msgs/msg/detail/adc_report__traits.hpp"
+#include "px4_msgs/msg/detail/adc_report__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__ADC_REPORT_HPP_

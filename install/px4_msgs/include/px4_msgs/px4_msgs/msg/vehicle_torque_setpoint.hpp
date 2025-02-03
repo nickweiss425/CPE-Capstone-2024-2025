@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/vehicle_torque_setpoint__struct.hpp"
 #include "px4_msgs/msg/detail/vehicle_torque_setpoint__builder.hpp"
 #include "px4_msgs/msg/detail/vehicle_torque_setpoint__traits.hpp"
+#include "px4_msgs/msg/detail/vehicle_torque_setpoint__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__VEHICLE_TORQUE_SETPOINT_HPP_

@@ -59,10 +59,14 @@ class RoverMecanumStatus(metaclass=Metaclass_RoverMecanumStatus):
     __slots__ = [
         '_timestamp',
         '_measured_forward_speed',
+        '_adjusted_forward_speed_setpoint',
         '_measured_lateral_speed',
-        '_adjusted_yaw_rate_setpoint',
+        '_adjusted_lateral_speed_setpoint',
         '_measured_yaw_rate',
+        '_clyaw_yaw_rate_setpoint',
+        '_adjusted_yaw_rate_setpoint',
         '_measured_yaw',
+        '_adjusted_yaw_setpoint',
         '_pid_yaw_rate_integral',
         '_pid_yaw_integral',
         '_pid_forward_throttle_integral',
@@ -72,10 +76,14 @@ class RoverMecanumStatus(metaclass=Metaclass_RoverMecanumStatus):
     _fields_and_field_types = {
         'timestamp': 'uint64',
         'measured_forward_speed': 'float',
+        'adjusted_forward_speed_setpoint': 'float',
         'measured_lateral_speed': 'float',
-        'adjusted_yaw_rate_setpoint': 'float',
+        'adjusted_lateral_speed_setpoint': 'float',
         'measured_yaw_rate': 'float',
+        'clyaw_yaw_rate_setpoint': 'float',
+        'adjusted_yaw_rate_setpoint': 'float',
         'measured_yaw': 'float',
+        'adjusted_yaw_setpoint': 'float',
         'pid_yaw_rate_integral': 'float',
         'pid_yaw_integral': 'float',
         'pid_forward_throttle_integral': 'float',
@@ -93,6 +101,10 @@ class RoverMecanumStatus(metaclass=Metaclass_RoverMecanumStatus):
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -101,10 +113,14 @@ class RoverMecanumStatus(metaclass=Metaclass_RoverMecanumStatus):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.timestamp = kwargs.get('timestamp', int())
         self.measured_forward_speed = kwargs.get('measured_forward_speed', float())
+        self.adjusted_forward_speed_setpoint = kwargs.get('adjusted_forward_speed_setpoint', float())
         self.measured_lateral_speed = kwargs.get('measured_lateral_speed', float())
-        self.adjusted_yaw_rate_setpoint = kwargs.get('adjusted_yaw_rate_setpoint', float())
+        self.adjusted_lateral_speed_setpoint = kwargs.get('adjusted_lateral_speed_setpoint', float())
         self.measured_yaw_rate = kwargs.get('measured_yaw_rate', float())
+        self.clyaw_yaw_rate_setpoint = kwargs.get('clyaw_yaw_rate_setpoint', float())
+        self.adjusted_yaw_rate_setpoint = kwargs.get('adjusted_yaw_rate_setpoint', float())
         self.measured_yaw = kwargs.get('measured_yaw', float())
+        self.adjusted_yaw_setpoint = kwargs.get('adjusted_yaw_setpoint', float())
         self.pid_yaw_rate_integral = kwargs.get('pid_yaw_rate_integral', float())
         self.pid_yaw_integral = kwargs.get('pid_yaw_integral', float())
         self.pid_forward_throttle_integral = kwargs.get('pid_forward_throttle_integral', float())
@@ -143,13 +159,21 @@ class RoverMecanumStatus(metaclass=Metaclass_RoverMecanumStatus):
             return False
         if self.measured_forward_speed != other.measured_forward_speed:
             return False
+        if self.adjusted_forward_speed_setpoint != other.adjusted_forward_speed_setpoint:
+            return False
         if self.measured_lateral_speed != other.measured_lateral_speed:
             return False
-        if self.adjusted_yaw_rate_setpoint != other.adjusted_yaw_rate_setpoint:
+        if self.adjusted_lateral_speed_setpoint != other.adjusted_lateral_speed_setpoint:
             return False
         if self.measured_yaw_rate != other.measured_yaw_rate:
             return False
+        if self.clyaw_yaw_rate_setpoint != other.clyaw_yaw_rate_setpoint:
+            return False
+        if self.adjusted_yaw_rate_setpoint != other.adjusted_yaw_rate_setpoint:
+            return False
         if self.measured_yaw != other.measured_yaw:
+            return False
+        if self.adjusted_yaw_setpoint != other.adjusted_yaw_setpoint:
             return False
         if self.pid_yaw_rate_integral != other.pid_yaw_rate_integral:
             return False
@@ -197,6 +221,21 @@ class RoverMecanumStatus(metaclass=Metaclass_RoverMecanumStatus):
         self._measured_forward_speed = value
 
     @builtins.property
+    def adjusted_forward_speed_setpoint(self):
+        """Message field 'adjusted_forward_speed_setpoint'."""
+        return self._adjusted_forward_speed_setpoint
+
+    @adjusted_forward_speed_setpoint.setter
+    def adjusted_forward_speed_setpoint(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'adjusted_forward_speed_setpoint' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'adjusted_forward_speed_setpoint' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._adjusted_forward_speed_setpoint = value
+
+    @builtins.property
     def measured_lateral_speed(self):
         """Message field 'measured_lateral_speed'."""
         return self._measured_lateral_speed
@@ -212,19 +251,19 @@ class RoverMecanumStatus(metaclass=Metaclass_RoverMecanumStatus):
         self._measured_lateral_speed = value
 
     @builtins.property
-    def adjusted_yaw_rate_setpoint(self):
-        """Message field 'adjusted_yaw_rate_setpoint'."""
-        return self._adjusted_yaw_rate_setpoint
+    def adjusted_lateral_speed_setpoint(self):
+        """Message field 'adjusted_lateral_speed_setpoint'."""
+        return self._adjusted_lateral_speed_setpoint
 
-    @adjusted_yaw_rate_setpoint.setter
-    def adjusted_yaw_rate_setpoint(self, value):
+    @adjusted_lateral_speed_setpoint.setter
+    def adjusted_lateral_speed_setpoint(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'adjusted_yaw_rate_setpoint' field must be of type 'float'"
+                "The 'adjusted_lateral_speed_setpoint' field must be of type 'float'"
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'adjusted_yaw_rate_setpoint' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._adjusted_yaw_rate_setpoint = value
+                "The 'adjusted_lateral_speed_setpoint' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._adjusted_lateral_speed_setpoint = value
 
     @builtins.property
     def measured_yaw_rate(self):
@@ -242,6 +281,36 @@ class RoverMecanumStatus(metaclass=Metaclass_RoverMecanumStatus):
         self._measured_yaw_rate = value
 
     @builtins.property
+    def clyaw_yaw_rate_setpoint(self):
+        """Message field 'clyaw_yaw_rate_setpoint'."""
+        return self._clyaw_yaw_rate_setpoint
+
+    @clyaw_yaw_rate_setpoint.setter
+    def clyaw_yaw_rate_setpoint(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'clyaw_yaw_rate_setpoint' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'clyaw_yaw_rate_setpoint' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._clyaw_yaw_rate_setpoint = value
+
+    @builtins.property
+    def adjusted_yaw_rate_setpoint(self):
+        """Message field 'adjusted_yaw_rate_setpoint'."""
+        return self._adjusted_yaw_rate_setpoint
+
+    @adjusted_yaw_rate_setpoint.setter
+    def adjusted_yaw_rate_setpoint(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'adjusted_yaw_rate_setpoint' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'adjusted_yaw_rate_setpoint' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._adjusted_yaw_rate_setpoint = value
+
+    @builtins.property
     def measured_yaw(self):
         """Message field 'measured_yaw'."""
         return self._measured_yaw
@@ -255,6 +324,21 @@ class RoverMecanumStatus(metaclass=Metaclass_RoverMecanumStatus):
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
                 "The 'measured_yaw' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._measured_yaw = value
+
+    @builtins.property
+    def adjusted_yaw_setpoint(self):
+        """Message field 'adjusted_yaw_setpoint'."""
+        return self._adjusted_yaw_setpoint
+
+    @adjusted_yaw_setpoint.setter
+    def adjusted_yaw_setpoint(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'adjusted_yaw_setpoint' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'adjusted_yaw_setpoint' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._adjusted_yaw_setpoint = value
 
     @builtins.property
     def pid_yaw_rate_integral(self):

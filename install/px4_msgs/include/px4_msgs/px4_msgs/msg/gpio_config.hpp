@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/gpio_config__struct.hpp"
 #include "px4_msgs/msg/detail/gpio_config__builder.hpp"
 #include "px4_msgs/msg/detail/gpio_config__traits.hpp"
+#include "px4_msgs/msg/detail/gpio_config__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__GPIO_CONFIG_HPP_

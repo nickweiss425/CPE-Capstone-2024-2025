@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/sensors_status_imu__struct.hpp"
 #include "px4_msgs/msg/detail/sensors_status_imu__builder.hpp"
 #include "px4_msgs/msg/detail/sensors_status_imu__traits.hpp"
+#include "px4_msgs/msg/detail/sensors_status_imu__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__SENSORS_STATUS_IMU_HPP_

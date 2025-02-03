@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/sensor_baro__struct.hpp"
 #include "px4_msgs/msg/detail/sensor_baro__builder.hpp"
 #include "px4_msgs/msg/detail/sensor_baro__traits.hpp"
+#include "px4_msgs/msg/detail/sensor_baro__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__SENSOR_BARO_HPP_

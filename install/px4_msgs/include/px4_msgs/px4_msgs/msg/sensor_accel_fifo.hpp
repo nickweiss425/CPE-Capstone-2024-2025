@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/sensor_accel_fifo__struct.hpp"
 #include "px4_msgs/msg/detail/sensor_accel_fifo__builder.hpp"
 #include "px4_msgs/msg/detail/sensor_accel_fifo__traits.hpp"
+#include "px4_msgs/msg/detail/sensor_accel_fifo__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__SENSOR_ACCEL_FIFO_HPP_

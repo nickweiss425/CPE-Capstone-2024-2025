@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/sensor_gnss_relative__struct.hpp"
 #include "px4_msgs/msg/detail/sensor_gnss_relative__builder.hpp"
 #include "px4_msgs/msg/detail/sensor_gnss_relative__traits.hpp"
+#include "px4_msgs/msg/detail/sensor_gnss_relative__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__SENSOR_GNSS_RELATIVE_HPP_

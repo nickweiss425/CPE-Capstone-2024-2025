@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/sensor_accel__struct.hpp"
 #include "px4_msgs/msg/detail/sensor_accel__builder.hpp"
 #include "px4_msgs/msg/detail/sensor_accel__traits.hpp"
+#include "px4_msgs/msg/detail/sensor_accel__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__SENSOR_ACCEL_HPP_

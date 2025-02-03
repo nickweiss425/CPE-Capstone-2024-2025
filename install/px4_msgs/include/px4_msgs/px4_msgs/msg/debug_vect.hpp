@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/debug_vect__struct.hpp"
 #include "px4_msgs/msg/detail/debug_vect__builder.hpp"
 #include "px4_msgs/msg/detail/debug_vect__traits.hpp"
+#include "px4_msgs/msg/detail/debug_vect__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__DEBUG_VECT_HPP_

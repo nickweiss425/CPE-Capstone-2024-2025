@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/unregister_ext_component__struct.hpp"
 #include "px4_msgs/msg/detail/unregister_ext_component__builder.hpp"
 #include "px4_msgs/msg/detail/unregister_ext_component__traits.hpp"
+#include "px4_msgs/msg/detail/unregister_ext_component__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__UNREGISTER_EXT_COMPONENT_HPP_

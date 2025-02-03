@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/sensor_uwb__struct.hpp"
 #include "px4_msgs/msg/detail/sensor_uwb__builder.hpp"
 #include "px4_msgs/msg/detail/sensor_uwb__traits.hpp"
+#include "px4_msgs/msg/detail/sensor_uwb__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__SENSOR_UWB_HPP_

@@ -1,8 +1,0 @@
-[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
-[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:186:73:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
-  186 |         rclcpp::spin[34m[K([m[Kstd::make_shared<OffboardControl>(initial_altitude)[01;31m[K;[m[K
-      |                     [34m[K~[m[K                                                   [01;31m[K^[m[K
-      |                                                                         [32m[K)[m[K
-gmake[2]: *** [CMakeFiles/offboard_launch.dir/build.make:76: CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:310: CMakeFiles/offboard_launch.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

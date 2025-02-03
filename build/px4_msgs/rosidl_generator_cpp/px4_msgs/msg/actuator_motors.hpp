@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/actuator_motors__struct.hpp"
 #include "px4_msgs/msg/detail/actuator_motors__builder.hpp"
 #include "px4_msgs/msg/detail/actuator_motors__traits.hpp"
+#include "px4_msgs/msg/detail/actuator_motors__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__ACTUATOR_MOTORS_HPP_

@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/airspeed_wind__struct.hpp"
 #include "px4_msgs/msg/detail/airspeed_wind__builder.hpp"
 #include "px4_msgs/msg/detail/airspeed_wind__traits.hpp"
+#include "px4_msgs/msg/detail/airspeed_wind__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__AIRSPEED_WIND_HPP_

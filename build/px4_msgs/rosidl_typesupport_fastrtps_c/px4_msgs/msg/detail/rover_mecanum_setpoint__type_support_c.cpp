@@ -79,9 +79,9 @@ static bool _RoverMecanumSetpoint__cdr_serialize(
     cdr << ros_message->yaw_rate_setpoint;
   }
 
-  // Field name: yaw_rate_setpoint_normalized
+  // Field name: speed_diff_setpoint_normalized
   {
-    cdr << ros_message->yaw_rate_setpoint_normalized;
+    cdr << ros_message->speed_diff_setpoint_normalized;
   }
 
   // Field name: yaw_setpoint
@@ -131,9 +131,9 @@ static bool _RoverMecanumSetpoint__cdr_deserialize(
     cdr >> ros_message->yaw_rate_setpoint;
   }
 
-  // Field name: yaw_rate_setpoint_normalized
+  // Field name: speed_diff_setpoint_normalized
   {
-    cdr >> ros_message->yaw_rate_setpoint_normalized;
+    cdr >> ros_message->speed_diff_setpoint_normalized;
   }
 
   // Field name: yaw_setpoint
@@ -194,9 +194,9 @@ size_t get_serialized_size_px4_msgs__msg__RoverMecanumSetpoint(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name yaw_rate_setpoint_normalized
+  // field.name speed_diff_setpoint_normalized
   {
-    size_t item_size = sizeof(ros_message->yaw_rate_setpoint_normalized);
+    size_t item_size = sizeof(ros_message->speed_diff_setpoint_normalized);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -283,7 +283,7 @@ size_t max_serialized_size_px4_msgs__msg__RoverMecanumSetpoint(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: yaw_rate_setpoint_normalized
+  // member: speed_diff_setpoint_normalized
   {
     size_t array_size = 1;
 

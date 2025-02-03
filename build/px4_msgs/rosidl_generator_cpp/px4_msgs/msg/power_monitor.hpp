@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/power_monitor__struct.hpp"
 #include "px4_msgs/msg/detail/power_monitor__builder.hpp"
 #include "px4_msgs/msg/detail/power_monitor__traits.hpp"
+#include "px4_msgs/msg/detail/power_monitor__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__POWER_MONITOR_HPP_

@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/debug_array__struct.hpp"
 #include "px4_msgs/msg/detail/debug_array__builder.hpp"
 #include "px4_msgs/msg/detail/debug_array__traits.hpp"
+#include "px4_msgs/msg/detail/debug_array__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__DEBUG_ARRAY_HPP_

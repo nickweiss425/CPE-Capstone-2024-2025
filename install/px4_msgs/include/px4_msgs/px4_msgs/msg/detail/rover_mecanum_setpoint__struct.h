@@ -32,8 +32,8 @@ typedef struct px4_msgs__msg__RoverMecanumSetpoint
   float lateral_speed_setpoint_normalized;
   /// Desired yaw rate
   float yaw_rate_setpoint;
-  /// [-1, 1] Desired normalized yaw rate
-  float yaw_rate_setpoint_normalized;
+  /// [-1, 1] Normalized speed difference between the left and right wheels
+  float speed_diff_setpoint_normalized;
   /// Desired yaw (heading)
   float yaw_setpoint;
 } px4_msgs__msg__RoverMecanumSetpoint;

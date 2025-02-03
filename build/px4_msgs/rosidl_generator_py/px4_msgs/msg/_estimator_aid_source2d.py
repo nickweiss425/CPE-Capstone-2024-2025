@@ -88,7 +88,7 @@ class EstimatorAidSource2d(metaclass=Metaclass_EstimatorAidSource2d):
         'estimator_instance': 'uint8',
         'device_id': 'uint32',
         'time_last_fuse': 'uint64',
-        'observation': 'float[2]',
+        'observation': 'double[2]',
         'observation_variance': 'float[2]',
         'innovation': 'float[2]',
         'innovation_filtered': 'float[2]',
@@ -105,7 +105,7 @@ class EstimatorAidSource2d(metaclass=Metaclass_EstimatorAidSource2d):
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint64'),  # noqa: E501
-        rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('float'), 2),  # noqa: E501
+        rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('double'), 2),  # noqa: E501
         rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('float'), 2),  # noqa: E501
         rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('float'), 2),  # noqa: E501
         rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('float'), 2),  # noqa: E501
@@ -126,9 +126,9 @@ class EstimatorAidSource2d(metaclass=Metaclass_EstimatorAidSource2d):
         self.device_id = kwargs.get('device_id', int())
         self.time_last_fuse = kwargs.get('time_last_fuse', int())
         if 'observation' not in kwargs:
-            self.observation = numpy.zeros(2, dtype=numpy.float32)
+            self.observation = numpy.zeros(2, dtype=numpy.float64)
         else:
-            self.observation = numpy.array(kwargs.get('observation'), dtype=numpy.float32)
+            self.observation = numpy.array(kwargs.get('observation'), dtype=numpy.float64)
             assert self.observation.shape == (2, )
         if 'observation_variance' not in kwargs:
             self.observation_variance = numpy.zeros(2, dtype=numpy.float32)
@@ -310,8 +310,8 @@ class EstimatorAidSource2d(metaclass=Metaclass_EstimatorAidSource2d):
     @observation.setter
     def observation(self, value):
         if isinstance(value, numpy.ndarray):
-            assert value.dtype == numpy.float32, \
-                "The 'observation' numpy.ndarray() must have the dtype of 'numpy.float32'"
+            assert value.dtype == numpy.float64, \
+                "The 'observation' numpy.ndarray() must have the dtype of 'numpy.float64'"
             assert value.size == 2, \
                 "The 'observation' numpy.ndarray() must have a size of 2"
             self._observation = value
@@ -329,9 +329,9 @@ class EstimatorAidSource2d(metaclass=Metaclass_EstimatorAidSource2d):
                  not isinstance(value, UserString) and
                  len(value) == 2 and
                  all(isinstance(v, float) for v in value) and
-                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
-                "The 'observation' field must be a set or sequence with length 2 and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
-        self._observation = numpy.array(value, dtype=numpy.float32)
+                 all(not (val < -1.7976931348623157e+308 or val > 1.7976931348623157e+308) or math.isinf(val) for val in value)), \
+                "The 'observation' field must be a set or sequence with length 2 and each value of type 'float' and each double in [-179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000, 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000]"
+        self._observation = numpy.array(value, dtype=numpy.float64)
 
     @builtins.property
     def observation_variance(self):

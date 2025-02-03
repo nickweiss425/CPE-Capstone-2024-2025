@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/ekf2_timestamps__struct.hpp"
 #include "px4_msgs/msg/detail/ekf2_timestamps__builder.hpp"
 #include "px4_msgs/msg/detail/ekf2_timestamps__traits.hpp"
+#include "px4_msgs/msg/detail/ekf2_timestamps__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__EKF2_TIMESTAMPS_HPP_

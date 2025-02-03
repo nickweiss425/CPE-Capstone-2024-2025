@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/follow_target__struct.hpp"
 #include "px4_msgs/msg/detail/follow_target__builder.hpp"
 #include "px4_msgs/msg/detail/follow_target__traits.hpp"
+#include "px4_msgs/msg/detail/follow_target__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__FOLLOW_TARGET_HPP_

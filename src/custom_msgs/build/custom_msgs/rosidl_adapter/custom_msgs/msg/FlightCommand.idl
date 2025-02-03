@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_msgs/msg/FlightCommand.msg
+// generated code does not contain a copyright notice
+
+
+module custom_msgs {
+  module msg {
+    struct FlightCommand {
+      @verbatim (language="comment", text=
+        "local x")
+      float x;
+
+      @verbatim (language="comment", text=
+        "local y")
+      float y;
+
+      @verbatim (language="comment", text=
+        "altitude for drone")
+      float altitude;
+
+      @verbatim (language="comment", text=
+        "radius if circle path")
+      float radius;
+
+      @verbatim (language="comment", text=
+        "length for square path")
+      float length;
+    };
+  };
+};

@@ -1,0 +1,146 @@
+[0.000000] (-) TimerEvent: {}
+[0.000404] (custom_msgs) JobQueued: {'identifier': 'custom_msgs', 'dependencies': OrderedDict()}
+[0.000456] (px4_msgs) JobQueued: {'identifier': 'px4_msgs', 'dependencies': OrderedDict()}
+[0.000493] (px4_ros2_cpp) JobQueued: {'identifier': 'px4_ros2_cpp', 'dependencies': OrderedDict([('px4_msgs', '/home/niweiss/ws_sensor_combined/install/px4_msgs')])}
+[0.000540] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/home/niweiss/ws_sensor_combined/install/px4_msgs')])}
+[0.000587] (example_global_navigation_cpp) JobQueued: {'identifier': 'example_global_navigation_cpp', 'dependencies': OrderedDict([('px4_msgs', '/home/niweiss/ws_sensor_combined/install/px4_msgs'), ('px4_ros2_cpp', '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp')])}
+[0.000610] (example_local_navigation_cpp) JobQueued: {'identifier': 'example_local_navigation_cpp', 'dependencies': OrderedDict([('px4_msgs', '/home/niweiss/ws_sensor_combined/install/px4_msgs'), ('px4_ros2_cpp', '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp')])}
+[0.000648] (example_mode_fw_attitude_cpp) JobQueued: {'identifier': 'example_mode_fw_attitude_cpp', 'dependencies': OrderedDict([('px4_msgs', '/home/niweiss/ws_sensor_combined/install/px4_msgs'), ('px4_ros2_cpp', '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp')])}
+[0.000686] (example_mode_goto_cpp) JobQueued: {'identifier': 'example_mode_goto_cpp', 'dependencies': OrderedDict([('px4_msgs', '/home/niweiss/ws_sensor_combined/install/px4_msgs'), ('px4_ros2_cpp', '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp')])}
+[0.000706] (example_mode_goto_global_cpp) JobQueued: {'identifier': 'example_mode_goto_global_cpp', 'dependencies': OrderedDict([('px4_msgs', '/home/niweiss/ws_sensor_combined/install/px4_msgs'), ('px4_ros2_cpp', '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp')])}
+[0.000744] (example_mode_manual_cpp) JobQueued: {'identifier': 'example_mode_manual_cpp', 'dependencies': OrderedDict([('px4_msgs', '/home/niweiss/ws_sensor_combined/install/px4_msgs'), ('px4_ros2_cpp', '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp')])}
+[0.000782] (example_mode_rtl_replacement_cpp) JobQueued: {'identifier': 'example_mode_rtl_replacement_cpp', 'dependencies': OrderedDict([('px4_msgs', '/home/niweiss/ws_sensor_combined/install/px4_msgs'), ('px4_ros2_cpp', '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp')])}
+[0.000949] (example_mode_with_executor_cpp) JobQueued: {'identifier': 'example_mode_with_executor_cpp', 'dependencies': OrderedDict([('px4_msgs', '/home/niweiss/ws_sensor_combined/install/px4_msgs'), ('px4_ros2_cpp', '/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp')])}
+[0.000975] (px4_msgs) JobStarted: {'identifier': 'px4_msgs'}
+[0.063058] (custom_msgs) JobStarted: {'identifier': 'custom_msgs'}
+[0.073216] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'cmake'}
+[0.076624] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/niweiss/ws_sensor_combined/src/px4_msgs', '-DCMAKE_INSTALL_PREFIX=/home/niweiss/ws_sensor_combined/install/px4_msgs'], 'cwd': '/home/niweiss/ws_sensor_combined/build/px4_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'niweiss'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/niweiss'), ('OLDPWD', '/home/niweiss/ws_sensor_combined/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'niweiss'), ('NAME', 'Nick'), ('WSL_INTEROP', '/run/WSL/47178_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/niweiss/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/HP/OMEN-Broadcast/Common:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/nicho/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/nicho/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/niweiss/ws_sensor_combined/build/px4_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.083103] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'cmake'}
+[0.084649] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/niweiss/ws_sensor_combined/src/custom_msgs', '-DCMAKE_INSTALL_PREFIX=/home/niweiss/ws_sensor_combined/install/custom_msgs'], 'cwd': '/home/niweiss/ws_sensor_combined/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'niweiss'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/niweiss'), ('OLDPWD', '/home/niweiss/ws_sensor_combined/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'niweiss'), ('NAME', 'Nick'), ('WSL_INTEROP', '/run/WSL/47178_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/niweiss/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/HP/OMEN-Broadcast/Common:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/nicho/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/nicho/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/niweiss/ws_sensor_combined/build/custom_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098726] (-) TimerEvent: {}
+[0.199053] (-) TimerEvent: {}
+[0.258674] (px4_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.259008] (custom_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.299464] (-) TimerEvent: {}
+[0.399778] (-) TimerEvent: {}
+[0.500060] (-) TimerEvent: {}
+[0.542723] (custom_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.542865] (px4_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.600162] (-) TimerEvent: {}
+[0.676966] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.677150] (px4_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.700261] (-) TimerEvent: {}
+[0.766125] (px4_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.766412] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.774423] (px4_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.774740] (custom_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.775102] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.775221] (px4_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.775605] (px4_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.775829] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.779920] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.780079] (px4_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.800410] (-) TimerEvent: {}
+[0.876588] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.877133] (px4_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.884893] (custom_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.885257] (px4_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.885324] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.885363] (px4_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.885749] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.885836] (px4_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.893632] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.894032] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.900444] (-) TimerEvent: {}
+[1.000711] (-) TimerEvent: {}
+[1.101037] (-) TimerEvent: {}
+[1.201342] (-) TimerEvent: {}
+[1.208295] (px4_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.209623] (custom_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.301412] (-) TimerEvent: {}
+[1.316220] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.317093] (px4_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[1.321382] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.330972] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.401496] (-) TimerEvent: {}
+[1.439174] (px4_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.443977] (px4_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.453439] (px4_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.456415] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.472727] (px4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.486754] (px4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.501576] (-) TimerEvent: {}
+[1.505846] (px4_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.601695] (-) TimerEvent: {}
+[1.666228] (custom_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:229 (message):\n'}
+[1.666457] (custom_msgs) StderrLine: {'line': b'  Packages installing interfaces must include\n'}
+[1.666513] (custom_msgs) StderrLine: {'line': b"  '<member_of_group>rosidl_interface_packages</member_of_group>' in their\n"}
+[1.666550] (custom_msgs) StderrLine: {'line': b'  package.xml\n'}
+[1.666585] (custom_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.666617] (custom_msgs) StderrLine: {'line': b'  CMakeLists.txt:15 (rosidl_generate_interfaces)\n'}
+[1.666650] (custom_msgs) StderrLine: {'line': b'\n'}
+[1.666687] (custom_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[1.666728] (custom_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.666769] (custom_msgs) StdoutLine: {'line': b'See also "/home/niweiss/ws_sensor_combined/build/custom_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[1.671975] (custom_msgs) CommandEnded: {'returncode': 1}
+[1.693973] (custom_msgs) JobEnded: {'identifier': 'custom_msgs', 'rc': 1}
+[1.701818] (-) TimerEvent: {}
+[1.802126] (-) TimerEvent: {}
+[1.902375] (-) TimerEvent: {}
+[2.002644] (-) TimerEvent: {}
+[2.103009] (-) TimerEvent: {}
+[2.203330] (-) TimerEvent: {}
+[2.303565] (-) TimerEvent: {}
+[2.403870] (-) TimerEvent: {}
+[2.504118] (-) TimerEvent: {}
+[2.604397] (-) TimerEvent: {}
+[2.704639] (-) TimerEvent: {}
+[2.804883] (-) TimerEvent: {}
+[2.905163] (-) TimerEvent: {}
+[3.005585] (-) TimerEvent: {}
+[3.106075] (-) TimerEvent: {}
+[3.114566] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.12.11 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)\n'}
+[3.117866] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.12.11 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)\n'}
+[3.121152] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.12.11 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)\n'}
+[3.125227] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.206316] (-) TimerEvent: {}
+[3.306783] (-) TimerEvent: {}
+[3.407093] (-) TimerEvent: {}
+[3.507401] (-) TimerEvent: {}
+[3.525352] (px4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.609143] (-) TimerEvent: {}
+[3.680107] (px4_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.709261] (-) TimerEvent: {}
+[3.761391] (px4_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[3.764549] (px4_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.809396] (-) TimerEvent: {}
+[3.909764] (-) TimerEvent: {}
+[3.979033] (px4_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[3.979221] (px4_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.979273] (px4_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.979318] (px4_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[3.998101] (px4_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[4.009877] (-) TimerEvent: {}
+[4.096828] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.12.11 (/opt/ros/humble/share/ament_cmake_flake8/cmake)\n'}
+[4.099320] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.12.11 (/opt/ros/humble/share/ament_cmake_pep257/cmake)\n'}
+[4.110004] (-) TimerEvent: {}
+[4.125446] (px4_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.210194] (-) TimerEvent: {}
+[4.310518] (-) TimerEvent: {}
+[4.411041] (-) TimerEvent: {}
+[4.511442] (-) TimerEvent: {}
+[4.551352] (px4_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[4.591027] (px4_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/niweiss/ws_sensor_combined/build/px4_msgs\n'}
+[4.605628] (px4_msgs) JobEnded: {'identifier': 'px4_msgs', 'rc': 'SIGINT'}
+[4.611480] (-) TimerEvent: {}
+[4.616476] (px4_ros2_cpp) JobSkipped: {'identifier': 'px4_ros2_cpp'}
+[4.616584] (px4_ros_com) JobSkipped: {'identifier': 'px4_ros_com'}
+[4.616622] (example_global_navigation_cpp) JobSkipped: {'identifier': 'example_global_navigation_cpp'}
+[4.616657] (example_local_navigation_cpp) JobSkipped: {'identifier': 'example_local_navigation_cpp'}
+[4.616691] (example_mode_fw_attitude_cpp) JobSkipped: {'identifier': 'example_mode_fw_attitude_cpp'}
+[4.616769] (example_mode_goto_cpp) JobSkipped: {'identifier': 'example_mode_goto_cpp'}
+[4.616795] (example_mode_goto_global_cpp) JobSkipped: {'identifier': 'example_mode_goto_global_cpp'}
+[4.616811] (example_mode_manual_cpp) JobSkipped: {'identifier': 'example_mode_manual_cpp'}
+[4.616822] (example_mode_rtl_replacement_cpp) JobSkipped: {'identifier': 'example_mode_rtl_replacement_cpp'}
+[4.616832] (example_mode_with_executor_cpp) JobSkipped: {'identifier': 'example_mode_with_executor_cpp'}
+[4.616843] (-) EventReactorShutdown: {}

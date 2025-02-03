@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/parameter_update__struct.hpp"
 #include "px4_msgs/msg/detail/parameter_update__builder.hpp"
 #include "px4_msgs/msg/detail/parameter_update__traits.hpp"
+#include "px4_msgs/msg/detail/parameter_update__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__PARAMETER_UPDATE_HPP_

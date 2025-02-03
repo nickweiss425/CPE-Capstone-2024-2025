@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/config_overrides__struct.hpp"
 #include "px4_msgs/msg/detail/config_overrides__builder.hpp"
 #include "px4_msgs/msg/detail/config_overrides__traits.hpp"
+#include "px4_msgs/msg/detail/config_overrides__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__CONFIG_OVERRIDES_HPP_

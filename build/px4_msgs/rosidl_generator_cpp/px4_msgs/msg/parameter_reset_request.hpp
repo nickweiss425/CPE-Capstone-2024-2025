@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/parameter_reset_request__struct.hpp"
 #include "px4_msgs/msg/detail/parameter_reset_request__builder.hpp"
 #include "px4_msgs/msg/detail/parameter_reset_request__traits.hpp"
+#include "px4_msgs/msg/detail/parameter_reset_request__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__PARAMETER_RESET_REQUEST_HPP_

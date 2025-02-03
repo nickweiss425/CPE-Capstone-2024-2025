@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/input_rc__struct.hpp"
 #include "px4_msgs/msg/detail/input_rc__builder.hpp"
 #include "px4_msgs/msg/detail/input_rc__traits.hpp"
+#include "px4_msgs/msg/detail/input_rc__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__INPUT_RC_HPP_

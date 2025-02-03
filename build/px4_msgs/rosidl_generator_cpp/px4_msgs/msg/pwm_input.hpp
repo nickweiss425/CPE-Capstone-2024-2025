@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/pwm_input__struct.hpp"
 #include "px4_msgs/msg/detail/pwm_input__builder.hpp"
 #include "px4_msgs/msg/detail/pwm_input__traits.hpp"
+#include "px4_msgs/msg/detail/pwm_input__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__PWM_INPUT_HPP_

@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/actuator_outputs__struct.hpp"
 #include "px4_msgs/msg/detail/actuator_outputs__builder.hpp"
 #include "px4_msgs/msg/detail/actuator_outputs__traits.hpp"
+#include "px4_msgs/msg/detail/actuator_outputs__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__ACTUATOR_OUTPUTS_HPP_

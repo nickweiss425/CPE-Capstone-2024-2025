@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/estimator_aid_source3d__struct.hpp"
 #include "px4_msgs/msg/detail/estimator_aid_source3d__builder.hpp"
 #include "px4_msgs/msg/detail/estimator_aid_source3d__traits.hpp"
+#include "px4_msgs/msg/detail/estimator_aid_source3d__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__ESTIMATOR_AID_SOURCE3D_HPP_

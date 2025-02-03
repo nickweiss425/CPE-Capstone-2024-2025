@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/onboard_computer_status__struct.hpp"
 #include "px4_msgs/msg/detail/onboard_computer_status__builder.hpp"
 #include "px4_msgs/msg/detail/onboard_computer_status__traits.hpp"
+#include "px4_msgs/msg/detail/onboard_computer_status__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__ONBOARD_COMPUTER_STATUS_HPP_

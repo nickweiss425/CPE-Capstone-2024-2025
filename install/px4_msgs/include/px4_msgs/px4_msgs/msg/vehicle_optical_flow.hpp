@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/vehicle_optical_flow__struct.hpp"
 #include "px4_msgs/msg/detail/vehicle_optical_flow__builder.hpp"
 #include "px4_msgs/msg/detail/vehicle_optical_flow__traits.hpp"
+#include "px4_msgs/msg/detail/vehicle_optical_flow__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__VEHICLE_OPTICAL_FLOW_HPP_

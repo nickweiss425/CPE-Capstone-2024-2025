@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/gpio_request__struct.hpp"
 #include "px4_msgs/msg/detail/gpio_request__builder.hpp"
 #include "px4_msgs/msg/detail/gpio_request__traits.hpp"
+#include "px4_msgs/msg/detail/gpio_request__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__GPIO_REQUEST_HPP_

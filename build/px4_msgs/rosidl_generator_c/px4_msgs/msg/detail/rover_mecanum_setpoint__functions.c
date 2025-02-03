@@ -23,7 +23,7 @@ px4_msgs__msg__RoverMecanumSetpoint__init(px4_msgs__msg__RoverMecanumSetpoint * 
   // lateral_speed_setpoint
   // lateral_speed_setpoint_normalized
   // yaw_rate_setpoint
-  // yaw_rate_setpoint_normalized
+  // speed_diff_setpoint_normalized
   // yaw_setpoint
   return true;
 }
@@ -40,7 +40,7 @@ px4_msgs__msg__RoverMecanumSetpoint__fini(px4_msgs__msg__RoverMecanumSetpoint * 
   // lateral_speed_setpoint
   // lateral_speed_setpoint_normalized
   // yaw_rate_setpoint
-  // yaw_rate_setpoint_normalized
+  // speed_diff_setpoint_normalized
   // yaw_setpoint
 }
 
@@ -74,8 +74,8 @@ px4_msgs__msg__RoverMecanumSetpoint__are_equal(const px4_msgs__msg__RoverMecanum
   if (lhs->yaw_rate_setpoint != rhs->yaw_rate_setpoint) {
     return false;
   }
-  // yaw_rate_setpoint_normalized
-  if (lhs->yaw_rate_setpoint_normalized != rhs->yaw_rate_setpoint_normalized) {
+  // speed_diff_setpoint_normalized
+  if (lhs->speed_diff_setpoint_normalized != rhs->speed_diff_setpoint_normalized) {
     return false;
   }
   // yaw_setpoint
@@ -105,8 +105,8 @@ px4_msgs__msg__RoverMecanumSetpoint__copy(
   output->lateral_speed_setpoint_normalized = input->lateral_speed_setpoint_normalized;
   // yaw_rate_setpoint
   output->yaw_rate_setpoint = input->yaw_rate_setpoint;
-  // yaw_rate_setpoint_normalized
-  output->yaw_rate_setpoint_normalized = input->yaw_rate_setpoint_normalized;
+  // speed_diff_setpoint_normalized
+  output->speed_diff_setpoint_normalized = input->speed_diff_setpoint_normalized;
   // yaw_setpoint
   output->yaw_setpoint = input->yaw_setpoint;
   return true;

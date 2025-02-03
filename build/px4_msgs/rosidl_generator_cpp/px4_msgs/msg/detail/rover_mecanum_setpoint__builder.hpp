@@ -37,15 +37,15 @@ private:
   ::px4_msgs::msg::RoverMecanumSetpoint msg_;
 };
 
-class Init_RoverMecanumSetpoint_yaw_rate_setpoint_normalized
+class Init_RoverMecanumSetpoint_speed_diff_setpoint_normalized
 {
 public:
-  explicit Init_RoverMecanumSetpoint_yaw_rate_setpoint_normalized(::px4_msgs::msg::RoverMecanumSetpoint & msg)
+  explicit Init_RoverMecanumSetpoint_speed_diff_setpoint_normalized(::px4_msgs::msg::RoverMecanumSetpoint & msg)
   : msg_(msg)
   {}
-  Init_RoverMecanumSetpoint_yaw_setpoint yaw_rate_setpoint_normalized(::px4_msgs::msg::RoverMecanumSetpoint::_yaw_rate_setpoint_normalized_type arg)
+  Init_RoverMecanumSetpoint_yaw_setpoint speed_diff_setpoint_normalized(::px4_msgs::msg::RoverMecanumSetpoint::_speed_diff_setpoint_normalized_type arg)
   {
-    msg_.yaw_rate_setpoint_normalized = std::move(arg);
+    msg_.speed_diff_setpoint_normalized = std::move(arg);
     return Init_RoverMecanumSetpoint_yaw_setpoint(msg_);
   }
 
@@ -59,10 +59,10 @@ public:
   explicit Init_RoverMecanumSetpoint_yaw_rate_setpoint(::px4_msgs::msg::RoverMecanumSetpoint & msg)
   : msg_(msg)
   {}
-  Init_RoverMecanumSetpoint_yaw_rate_setpoint_normalized yaw_rate_setpoint(::px4_msgs::msg::RoverMecanumSetpoint::_yaw_rate_setpoint_type arg)
+  Init_RoverMecanumSetpoint_speed_diff_setpoint_normalized yaw_rate_setpoint(::px4_msgs::msg::RoverMecanumSetpoint::_yaw_rate_setpoint_type arg)
   {
     msg_.yaw_rate_setpoint = std::move(arg);
-    return Init_RoverMecanumSetpoint_yaw_rate_setpoint_normalized(msg_);
+    return Init_RoverMecanumSetpoint_speed_diff_setpoint_normalized(msg_);
   }
 
 private:

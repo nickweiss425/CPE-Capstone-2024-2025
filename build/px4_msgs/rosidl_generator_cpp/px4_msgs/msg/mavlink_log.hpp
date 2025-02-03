@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/mavlink_log__struct.hpp"
 #include "px4_msgs/msg/detail/mavlink_log__builder.hpp"
 #include "px4_msgs/msg/detail/mavlink_log__traits.hpp"
+#include "px4_msgs/msg/detail/mavlink_log__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__MAVLINK_LOG_HPP_

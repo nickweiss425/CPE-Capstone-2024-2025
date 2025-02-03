@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/system_power__struct.hpp"
 #include "px4_msgs/msg/detail/system_power__builder.hpp"
 #include "px4_msgs/msg/detail/system_power__traits.hpp"
+#include "px4_msgs/msg/detail/system_power__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__SYSTEM_POWER_HPP_

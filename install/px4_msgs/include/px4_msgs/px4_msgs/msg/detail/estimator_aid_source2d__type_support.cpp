@@ -46,32 +46,32 @@ size_t size_function__EstimatorAidSource2d__observation(const void * untyped_mem
 const void * get_const_function__EstimatorAidSource2d__observation(const void * untyped_member, size_t index)
 {
   const auto & member =
-    *reinterpret_cast<const std::array<float, 2> *>(untyped_member);
+    *reinterpret_cast<const std::array<double, 2> *>(untyped_member);
   return &member[index];
 }
 
 void * get_function__EstimatorAidSource2d__observation(void * untyped_member, size_t index)
 {
   auto & member =
-    *reinterpret_cast<std::array<float, 2> *>(untyped_member);
+    *reinterpret_cast<std::array<double, 2> *>(untyped_member);
   return &member[index];
 }
 
 void fetch_function__EstimatorAidSource2d__observation(
   const void * untyped_member, size_t index, void * untyped_value)
 {
-  const auto & item = *reinterpret_cast<const float *>(
+  const auto & item = *reinterpret_cast<const double *>(
     get_const_function__EstimatorAidSource2d__observation(untyped_member, index));
-  auto & value = *reinterpret_cast<float *>(untyped_value);
+  auto & value = *reinterpret_cast<double *>(untyped_value);
   value = item;
 }
 
 void assign_function__EstimatorAidSource2d__observation(
   void * untyped_member, size_t index, const void * untyped_value)
 {
-  auto & item = *reinterpret_cast<float *>(
+  auto & item = *reinterpret_cast<double *>(
     get_function__EstimatorAidSource2d__observation(untyped_member, index));
-  const auto & value = *reinterpret_cast<const float *>(untyped_value);
+  const auto & value = *reinterpret_cast<const double *>(untyped_value);
   item = value;
 }
 
@@ -391,7 +391,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember EstimatorAidS
   },
   {
     "observation",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     true,  // is array

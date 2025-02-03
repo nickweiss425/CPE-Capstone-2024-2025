@@ -36,14 +36,22 @@ cdr_serialize(
   cdr << ros_message.timestamp;
   // Member: measured_forward_speed
   cdr << ros_message.measured_forward_speed;
+  // Member: adjusted_forward_speed_setpoint
+  cdr << ros_message.adjusted_forward_speed_setpoint;
   // Member: measured_lateral_speed
   cdr << ros_message.measured_lateral_speed;
-  // Member: adjusted_yaw_rate_setpoint
-  cdr << ros_message.adjusted_yaw_rate_setpoint;
+  // Member: adjusted_lateral_speed_setpoint
+  cdr << ros_message.adjusted_lateral_speed_setpoint;
   // Member: measured_yaw_rate
   cdr << ros_message.measured_yaw_rate;
+  // Member: clyaw_yaw_rate_setpoint
+  cdr << ros_message.clyaw_yaw_rate_setpoint;
+  // Member: adjusted_yaw_rate_setpoint
+  cdr << ros_message.adjusted_yaw_rate_setpoint;
   // Member: measured_yaw
   cdr << ros_message.measured_yaw;
+  // Member: adjusted_yaw_setpoint
+  cdr << ros_message.adjusted_yaw_setpoint;
   // Member: pid_yaw_rate_integral
   cdr << ros_message.pid_yaw_rate_integral;
   // Member: pid_yaw_integral
@@ -67,17 +75,29 @@ cdr_deserialize(
   // Member: measured_forward_speed
   cdr >> ros_message.measured_forward_speed;
 
+  // Member: adjusted_forward_speed_setpoint
+  cdr >> ros_message.adjusted_forward_speed_setpoint;
+
   // Member: measured_lateral_speed
   cdr >> ros_message.measured_lateral_speed;
 
-  // Member: adjusted_yaw_rate_setpoint
-  cdr >> ros_message.adjusted_yaw_rate_setpoint;
+  // Member: adjusted_lateral_speed_setpoint
+  cdr >> ros_message.adjusted_lateral_speed_setpoint;
 
   // Member: measured_yaw_rate
   cdr >> ros_message.measured_yaw_rate;
 
+  // Member: clyaw_yaw_rate_setpoint
+  cdr >> ros_message.clyaw_yaw_rate_setpoint;
+
+  // Member: adjusted_yaw_rate_setpoint
+  cdr >> ros_message.adjusted_yaw_rate_setpoint;
+
   // Member: measured_yaw
   cdr >> ros_message.measured_yaw;
+
+  // Member: adjusted_yaw_setpoint
+  cdr >> ros_message.adjusted_yaw_setpoint;
 
   // Member: pid_yaw_rate_integral
   cdr >> ros_message.pid_yaw_rate_integral;
@@ -119,15 +139,21 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // Member: adjusted_forward_speed_setpoint
+  {
+    size_t item_size = sizeof(ros_message.adjusted_forward_speed_setpoint);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // Member: measured_lateral_speed
   {
     size_t item_size = sizeof(ros_message.measured_lateral_speed);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: adjusted_yaw_rate_setpoint
+  // Member: adjusted_lateral_speed_setpoint
   {
-    size_t item_size = sizeof(ros_message.adjusted_yaw_rate_setpoint);
+    size_t item_size = sizeof(ros_message.adjusted_lateral_speed_setpoint);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -137,9 +163,27 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // Member: clyaw_yaw_rate_setpoint
+  {
+    size_t item_size = sizeof(ros_message.clyaw_yaw_rate_setpoint);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: adjusted_yaw_rate_setpoint
+  {
+    size_t item_size = sizeof(ros_message.adjusted_yaw_rate_setpoint);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // Member: measured_yaw
   {
     size_t item_size = sizeof(ros_message.measured_yaw);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: adjusted_yaw_setpoint
+  {
+    size_t item_size = sizeof(ros_message.adjusted_yaw_setpoint);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -209,6 +253,15 @@ max_serialized_size_RoverMecanumStatus(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Member: adjusted_forward_speed_setpoint
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   // Member: measured_lateral_speed
   {
     size_t array_size = 1;
@@ -218,7 +271,7 @@ max_serialized_size_RoverMecanumStatus(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Member: adjusted_yaw_rate_setpoint
+  // Member: adjusted_lateral_speed_setpoint
   {
     size_t array_size = 1;
 
@@ -236,7 +289,34 @@ max_serialized_size_RoverMecanumStatus(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Member: clyaw_yaw_rate_setpoint
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: adjusted_yaw_rate_setpoint
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   // Member: measured_yaw
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: adjusted_yaw_setpoint
   {
     size_t array_size = 1;
 

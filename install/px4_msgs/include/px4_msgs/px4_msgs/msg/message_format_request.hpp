@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/message_format_request__struct.hpp"
 #include "px4_msgs/msg/detail/message_format_request__builder.hpp"
 #include "px4_msgs/msg/detail/message_format_request__traits.hpp"
+#include "px4_msgs/msg/detail/message_format_request__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__MESSAGE_FORMAT_REQUEST_HPP_

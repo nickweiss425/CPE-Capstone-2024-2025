@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/distance_sensor_mode_change_request__struct.hpp"
 #include "px4_msgs/msg/detail/distance_sensor_mode_change_request__builder.hpp"
 #include "px4_msgs/msg/detail/distance_sensor_mode_change_request__traits.hpp"
+#include "px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__DISTANCE_SENSOR_MODE_CHANGE_REQUEST_HPP_

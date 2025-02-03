@@ -5,6 +5,7 @@
 
 module px4_msgs {
   module msg {
+    typedef double double__2[2];
     typedef float float__2[2];
     struct EstimatorAidSource2d {
       @verbatim (language="comment", text=
@@ -21,7 +22,7 @@ module px4_msgs {
 
       uint64 time_last_fuse;
 
-      float__2 observation;
+      double__2 observation;
 
       float__2 observation_variance;
 

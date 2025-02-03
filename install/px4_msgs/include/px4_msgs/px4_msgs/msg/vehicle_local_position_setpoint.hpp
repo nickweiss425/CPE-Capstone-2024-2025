@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/vehicle_local_position_setpoint__struct.hpp"
 #include "px4_msgs/msg/detail/vehicle_local_position_setpoint__builder.hpp"
 #include "px4_msgs/msg/detail/vehicle_local_position_setpoint__traits.hpp"
+#include "px4_msgs/msg/detail/vehicle_local_position_setpoint__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__VEHICLE_LOCAL_POSITION_SETPOINT_HPP_

@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/mission_result__struct.hpp"
 #include "px4_msgs/msg/detail/mission_result__builder.hpp"
 #include "px4_msgs/msg/detail/mission_result__traits.hpp"
+#include "px4_msgs/msg/detail/mission_result__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__MISSION_RESULT_HPP_

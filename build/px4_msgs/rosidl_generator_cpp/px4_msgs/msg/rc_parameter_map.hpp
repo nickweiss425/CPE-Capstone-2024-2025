@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/rc_parameter_map__struct.hpp"
 #include "px4_msgs/msg/detail/rc_parameter_map__builder.hpp"
 #include "px4_msgs/msg/detail/rc_parameter_map__traits.hpp"
+#include "px4_msgs/msg/detail/rc_parameter_map__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__RC_PARAMETER_MAP_HPP_

@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/vehicle_roi__struct.hpp"
 #include "px4_msgs/msg/detail/vehicle_roi__builder.hpp"
 #include "px4_msgs/msg/detail/vehicle_roi__traits.hpp"
+#include "px4_msgs/msg/detail/vehicle_roi__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__VEHICLE_ROI_HPP_

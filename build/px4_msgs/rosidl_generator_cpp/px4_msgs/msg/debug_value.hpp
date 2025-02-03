@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/debug_value__struct.hpp"
 #include "px4_msgs/msg/detail/debug_value__builder.hpp"
 #include "px4_msgs/msg/detail/debug_value__traits.hpp"
+#include "px4_msgs/msg/detail/debug_value__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__DEBUG_VALUE_HPP_

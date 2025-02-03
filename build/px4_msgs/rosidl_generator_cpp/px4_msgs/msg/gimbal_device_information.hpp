@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/gimbal_device_information__struct.hpp"
 #include "px4_msgs/msg/detail/gimbal_device_information__builder.hpp"
 #include "px4_msgs/msg/detail/gimbal_device_information__traits.hpp"
+#include "px4_msgs/msg/detail/gimbal_device_information__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__GIMBAL_DEVICE_INFORMATION_HPP_

@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/landing_gear_wheel__struct.hpp"
 #include "px4_msgs/msg/detail/landing_gear_wheel__builder.hpp"
 #include "px4_msgs/msg/detail/landing_gear_wheel__traits.hpp"
+#include "px4_msgs/msg/detail/landing_gear_wheel__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__LANDING_GEAR_WHEEL_HPP_

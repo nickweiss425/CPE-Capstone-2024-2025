@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/register_ext_component_request__struct.hpp"
 #include "px4_msgs/msg/detail/register_ext_component_request__builder.hpp"
 #include "px4_msgs/msg/detail/register_ext_component_request__traits.hpp"
+#include "px4_msgs/msg/detail/register_ext_component_request__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__REGISTER_EXT_COMPONENT_REQUEST_HPP_

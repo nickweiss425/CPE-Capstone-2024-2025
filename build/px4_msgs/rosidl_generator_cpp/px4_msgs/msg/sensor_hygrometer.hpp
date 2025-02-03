@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/sensor_hygrometer__struct.hpp"
 #include "px4_msgs/msg/detail/sensor_hygrometer__builder.hpp"
 #include "px4_msgs/msg/detail/sensor_hygrometer__traits.hpp"
+#include "px4_msgs/msg/detail/sensor_hygrometer__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__SENSOR_HYGROMETER_HPP_

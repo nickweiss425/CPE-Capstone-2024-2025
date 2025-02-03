@@ -31,7 +31,7 @@ void px4_msgs__msg__RoverMecanumStatus__rosidl_typesupport_introspection_c__Rove
   px4_msgs__msg__RoverMecanumStatus__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__RoverMecanumStatus__rosidl_typesupport_introspection_c__RoverMecanumStatus_message_member_array[10] = {
+static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__RoverMecanumStatus__rosidl_typesupport_introspection_c__RoverMecanumStatus_message_member_array[14] = {
   {
     "timestamp",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT64,  // type
@@ -67,6 +67,23 @@ static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__RoverMec
     NULL  // resize(index) function pointer
   },
   {
+    "adjusted_forward_speed_setpoint",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(px4_msgs__msg__RoverMecanumStatus, adjusted_forward_speed_setpoint),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
     "measured_lateral_speed",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
@@ -84,14 +101,14 @@ static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__RoverMec
     NULL  // resize(index) function pointer
   },
   {
-    "adjusted_yaw_rate_setpoint",  // name
+    "adjusted_lateral_speed_setpoint",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(px4_msgs__msg__RoverMecanumStatus, adjusted_yaw_rate_setpoint),  // bytes offset in struct
+    offsetof(px4_msgs__msg__RoverMecanumStatus, adjusted_lateral_speed_setpoint),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -118,6 +135,40 @@ static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__RoverMec
     NULL  // resize(index) function pointer
   },
   {
+    "clyaw_yaw_rate_setpoint",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(px4_msgs__msg__RoverMecanumStatus, clyaw_yaw_rate_setpoint),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "adjusted_yaw_rate_setpoint",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(px4_msgs__msg__RoverMecanumStatus, adjusted_yaw_rate_setpoint),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
     "measured_yaw",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
@@ -126,6 +177,23 @@ static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__RoverMec
     0,  // array size
     false,  // is upper bound
     offsetof(px4_msgs__msg__RoverMecanumStatus, measured_yaw),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "adjusted_yaw_setpoint",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(px4_msgs__msg__RoverMecanumStatus, adjusted_yaw_setpoint),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -207,7 +275,7 @@ static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__RoverMec
 static const rosidl_typesupport_introspection_c__MessageMembers px4_msgs__msg__RoverMecanumStatus__rosidl_typesupport_introspection_c__RoverMecanumStatus_message_members = {
   "px4_msgs__msg",  // message namespace
   "RoverMecanumStatus",  // message name
-  10,  // number of fields
+  14,  // number of fields
   sizeof(px4_msgs__msg__RoverMecanumStatus),
   px4_msgs__msg__RoverMecanumStatus__rosidl_typesupport_introspection_c__RoverMecanumStatus_message_member_array,  // message members
   px4_msgs__msg__RoverMecanumStatus__rosidl_typesupport_introspection_c__RoverMecanumStatus_init_function,  // function to initialize message memory (memory has to be allocated)

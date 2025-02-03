@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/airspeed__struct.hpp"
 #include "px4_msgs/msg/detail/airspeed__builder.hpp"
 #include "px4_msgs/msg/detail/airspeed__traits.hpp"
+#include "px4_msgs/msg/detail/airspeed__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__AIRSPEED_HPP_

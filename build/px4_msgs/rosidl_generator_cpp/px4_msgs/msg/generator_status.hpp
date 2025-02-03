@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/generator_status__struct.hpp"
 #include "px4_msgs/msg/detail/generator_status__builder.hpp"
 #include "px4_msgs/msg/detail/generator_status__traits.hpp"
+#include "px4_msgs/msg/detail/generator_status__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__GENERATOR_STATUS_HPP_

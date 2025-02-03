@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/sensor_gyro_fft__struct.hpp"
 #include "px4_msgs/msg/detail/sensor_gyro_fft__builder.hpp"
 #include "px4_msgs/msg/detail/sensor_gyro_fft__traits.hpp"
+#include "px4_msgs/msg/detail/sensor_gyro_fft__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__SENSOR_GYRO_FFT_HPP_

@@ -1,0 +1,116 @@
+[0.326s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'custom_msgs']
+[0.326s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['custom_msgs'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f87640daa10>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f876424bbb0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f876424bbb0>>, mixin_verb=('build',))
+[0.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.396s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.396s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.396s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.396s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/niweiss/ws_sensor_combined/src/custom_msgs'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.422s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'custom_msgs'
+[0.422s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.422s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.422s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.422s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.422s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.451s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.451s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.455s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/niweiss/ws_sensor_combined/install
+[0.456s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/humble
+[0.457s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_args' from command line to 'None'
+[0.489s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target' from command line to 'None'
+[0.489s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.489s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.489s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.489s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.489s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.489s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.489s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.489s] DEBUG:colcon.colcon_core.verb:Building package 'custom_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/niweiss/ws_sensor_combined/src/custom_msgs/build/custom_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs', 'merge_install': False, 'path': '/home/niweiss/ws_sensor_combined/src/custom_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.489s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.490s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.490s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/niweiss/ws_sensor_combined/src/custom_msgs' with build type 'ament_cmake'
+[0.490s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/niweiss/ws_sensor_combined/src/custom_msgs'
+[0.497s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.497s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.497s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.506s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/src/custom_msgs/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/niweiss/ws_sensor_combined/src/custom_msgs -DCMAKE_INSTALL_PREFIX=/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs
+[3.284s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/src/custom_msgs/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/niweiss/ws_sensor_combined/src/custom_msgs -DCMAKE_INSTALL_PREFIX=/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs
+[3.286s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/src/custom_msgs/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/src/custom_msgs/build/custom_msgs -- -j16 -l16
+[5.322s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/src/custom_msgs/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/src/custom_msgs/build/custom_msgs -- -j16 -l16
+[5.330s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/ws_sensor_combined/src/custom_msgs/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/src/custom_msgs/build/custom_msgs
+[5.384s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[5.385s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/ws_sensor_combined/src/custom_msgs/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/src/custom_msgs/build/custom_msgs
+[5.390s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs' for CMake module files
+[5.391s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs' for CMake config files
+[5.391s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[5.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[5.392s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[5.393s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[5.393s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/lib'
+[5.393s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[5.394s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[5.394s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[5.394s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[5.395s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/bin'
+[5.395s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[5.395s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/lib/python3.10/site-packages'
+[5.395s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/bin'
+[5.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/custom_msgs/package.ps1'
+[5.396s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/custom_msgs/package.dsv'
+[5.396s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/custom_msgs/package.sh'
+[5.397s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/custom_msgs/package.bash'
+[5.398s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/custom_msgs/package.zsh'
+[5.398s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[5.399s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[5.399s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs' for CMake module files
+[5.400s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs' for CMake config files
+[5.401s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[5.401s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[5.401s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[5.402s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[5.402s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/lib'
+[5.402s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[5.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[5.403s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[5.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[5.403s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/bin'
+[5.403s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[5.404s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/lib/python3.10/site-packages'
+[5.404s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/bin'
+[5.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/custom_msgs/package.ps1'
+[5.405s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/custom_msgs/package.dsv'
+[5.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/custom_msgs/package.sh'
+[5.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/custom_msgs/package.bash'
+[5.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/custom_msgs/package.zsh'
+[5.407s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/ws_sensor_combined/src/custom_msgs/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[5.408s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.408s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.408s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.409s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.435s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[5.435s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.435s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.435s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.435s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[5.435s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.435s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/local_setup.ps1'
+[5.437s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/_local_setup_util_ps1.py'
+[5.438s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/setup.ps1'
+[5.440s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/local_setup.sh'
+[5.440s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/_local_setup_util_sh.py'
+[5.441s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/setup.sh'
+[5.442s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/local_setup.bash'
+[5.443s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/setup.bash'
+[5.444s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/local_setup.zsh'
+[5.444s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/niweiss/ws_sensor_combined/src/custom_msgs/install/setup.zsh'

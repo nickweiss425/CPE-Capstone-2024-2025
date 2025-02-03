@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/qshell_retval__struct.hpp"
 #include "px4_msgs/msg/detail/qshell_retval__builder.hpp"
 #include "px4_msgs/msg/detail/qshell_retval__traits.hpp"
+#include "px4_msgs/msg/detail/qshell_retval__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__QSHELL_RETVAL_HPP_

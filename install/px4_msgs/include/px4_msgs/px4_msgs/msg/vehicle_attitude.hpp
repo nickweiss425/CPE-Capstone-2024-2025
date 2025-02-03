@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/vehicle_attitude__struct.hpp"
 #include "px4_msgs/msg/detail/vehicle_attitude__builder.hpp"
 #include "px4_msgs/msg/detail/vehicle_attitude__traits.hpp"
+#include "px4_msgs/msg/detail/vehicle_attitude__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__VEHICLE_ATTITUDE_HPP_

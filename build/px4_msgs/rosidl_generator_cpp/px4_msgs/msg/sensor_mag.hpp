@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/sensor_mag__struct.hpp"
 #include "px4_msgs/msg/detail/sensor_mag__builder.hpp"
 #include "px4_msgs/msg/detail/sensor_mag__traits.hpp"
+#include "px4_msgs/msg/detail/sensor_mag__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__SENSOR_MAG_HPP_

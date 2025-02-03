@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/wheel_encoders__struct.hpp"
 #include "px4_msgs/msg/detail/wheel_encoders__builder.hpp"
 #include "px4_msgs/msg/detail/wheel_encoders__traits.hpp"
+#include "px4_msgs/msg/detail/wheel_encoders__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__WHEEL_ENCODERS_HPP_

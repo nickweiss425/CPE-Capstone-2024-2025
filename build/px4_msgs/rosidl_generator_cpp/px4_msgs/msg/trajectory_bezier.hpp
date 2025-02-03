@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/trajectory_bezier__struct.hpp"
 #include "px4_msgs/msg/detail/trajectory_bezier__builder.hpp"
 #include "px4_msgs/msg/detail/trajectory_bezier__traits.hpp"
+#include "px4_msgs/msg/detail/trajectory_bezier__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__TRAJECTORY_BEZIER_HPP_

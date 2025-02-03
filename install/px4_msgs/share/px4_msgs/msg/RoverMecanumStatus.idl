@@ -16,14 +16,19 @@ module px4_msgs {
       float measured_forward_speed;
 
       @verbatim (language="comment", text=
+        "Speed setpoint after applying slew rate")
+      @unit (value="m/s")
+      float adjusted_forward_speed_setpoint;
+
+      @verbatim (language="comment", text=
         "Measured speed in body y direction. Positiv: right, Negativ: left")
       @unit (value="m/s")
       float measured_lateral_speed;
 
       @verbatim (language="comment", text=
-        "Yaw rate setpoint output of the closed loop yaw controller")
-      @unit (value="rad/s")
-      float adjusted_yaw_rate_setpoint;
+        "Speed setpoint after applying slew rate")
+      @unit (value="m/s")
+      float adjusted_lateral_speed_setpoint;
 
       @verbatim (language="comment", text=
         "Measured yaw rate")
@@ -31,9 +36,24 @@ module px4_msgs {
       float measured_yaw_rate;
 
       @verbatim (language="comment", text=
+        "Yaw rate setpoint output by the closed loop yaw controller")
+      @unit (value="rad/s")
+      float clyaw_yaw_rate_setpoint;
+
+      @verbatim (language="comment", text=
+        "Yaw rate setpoint from the closed loop yaw controller")
+      @unit (value="rad/s")
+      float adjusted_yaw_rate_setpoint;
+
+      @verbatim (language="comment", text=
         "Measured yaw")
       @unit (value="rad")
       float measured_yaw;
+
+      @verbatim (language="comment", text=
+        "Yaw setpoint after applying slew rate")
+      @unit (value="rad")
+      float adjusted_yaw_setpoint;
 
       @verbatim (language="comment", text=
         "Integral of the PID for the closed loop yaw rate controller")

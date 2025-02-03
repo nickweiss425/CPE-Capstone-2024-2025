@@ -7,5 +7,6 @@
 #include "px4_msgs/msg/detail/navigator_status__struct.hpp"
 #include "px4_msgs/msg/detail/navigator_status__builder.hpp"
 #include "px4_msgs/msg/detail/navigator_status__traits.hpp"
+#include "px4_msgs/msg/detail/navigator_status__type_support.hpp"
 
 #endif  // PX4_MSGS__MSG__NAVIGATOR_STATUS_HPP_
