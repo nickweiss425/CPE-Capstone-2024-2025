@@ -50,8 +50,23 @@ void LoraPublisher::timer_callback()
     /* read message */
     uint8_t *msg = new uint8_t[MAX_SIZE];
     size_t bytes_read = 0;
+    char preamble_buf;
+    static char preamble[3] = ":)"; 
 
     /* get one byte for topic */
+    int first_preamble_read = 0;
+    while (serial_.IsDataAvailable())
+    {
+	serial_ >> preamble_buf;
+	if (preamble_buf == preamble[0] && !first_preamble_read) {
+		first_preamble_read = 1;
+		continue;
+	}
+	if (preamble_buf == preamble[1] && first_preamble_read) {
+		first_preamble_read = 0;
+		break;
+	}
+    }
     if (serial_.IsDataAvailable())
     {
         serial_ >> msg[bytes_read++];
