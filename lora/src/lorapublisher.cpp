@@ -107,7 +107,7 @@ void LoraPublisher::timer_callback()
         serial_ >> msg[bytes_read++];
     }
 
-    RCLCPP_INFO(this->get_logger(), "Bytes read: %d, Total bytes: %d", bytes_read, total_bytes);
+    RCLCPP_INFO(this->get_logger(), "Bytes read: %ld, Total bytes: %ld", bytes_read, total_bytes);
 
     if (bytes_read >= total_bytes)
     {
