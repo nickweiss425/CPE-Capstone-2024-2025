@@ -1,6 +1,8 @@
 #include "lorasubscriber.hpp"
 #include "serialstructs.hpp"
 
+#define PREAMBLESIZE 2
+
 int main(int argc, char * argv[])
 {
     rclcpp::init(argc, argv);
@@ -45,14 +47,14 @@ void LoraSubscriber::gps_topic_callback(const sensor_msgs::msg::NavSatFix &msg)
     gps.latitude = msg.latitude;
     gps.longitude = msg.longitude;
     gps.altitude = msg.altitude;
-    static char preamble[3] = ":)";
+    static char preamble[PREAMBLESIZE + 1] = ":)";
 
     /* create byte array to hold data */
-    uint8_t buffer[sizeof(gps_serialized_t) + 2];
-    std::memcpy(buffer, preamble, 2);
-    std::memcpy(buffer + 2, &gps, sizeof(gps_serialized_t));
+    uint8_t buffer[sizeof(gps_serialized_t) + PREAMBLESIZE];
+    std::memcpy(buffer, preamble, PREAMBLESIZE);
+    std::memcpy(buffer + PREAMBLESIZE, &gps, sizeof(gps_serialized_t));
     /* write to serial port byte by byte*/
-    for (int i = 0; i < (int)sizeof(gps_serialized_t) + 2; i++)
+    for (size_t i = 0; i < sizeof(gps_serialized_t) + PREAMBLESIZE; i++)
     {
         serial_ << buffer[i];
     }
@@ -65,15 +67,15 @@ void LoraSubscriber::imu_topic_callback(const sensor_msgs::msg::Imu &msg)
     imu.orientation = msg.orientation;
     imu.angular_velocity = msg.angular_velocity;
     imu.linear_acceleration = msg.linear_acceleration;
-    static char preamble[3] = ":)";
+    static char preamble[PREAMBLESIZE + 1] = ":)";
 
     /* create byte array to hold data */
-    uint8_t buffer[sizeof(imu_serialized_t) + 2];
-    std::memcpy(buffer, preamble, 2);
-    std::memcpy(buffer + 2, &imu, sizeof(imu_serialized_t));
+    uint8_t buffer[sizeof(imu_serialized_t) + PREAMBLESIZE];
+    std::memcpy(buffer, preamble, PREAMBLESIZE);
+    std::memcpy(buffer + PREAMBLESIZE, &imu, sizeof(imu_serialized_t));
 
     /* write to serial port byte by byte*/
-    for (int i = 0; i < (int)sizeof(imu_serialized_t) + 2; i++)
+    for (size_t i = 0; i < sizeof(imu_serialized_t) + PREAMBLESIZE; i++)
     {
         serial_ << buffer[i];
     }
@@ -84,15 +86,15 @@ void LoraSubscriber::flight_state_topic_callback(const std_msgs::msg::Int32 &msg
     RCLCPP_INFO(this->get_logger(), "LORA subscriber handling flight state"); 
     flight_state_serialized_t fs; 
     fs.state = msg.data;
-    static char preamble[3] = ":)";
+    static char preamble[PREAMBLESIZE + 1] = ":)";
 
     /* create byte array to hold data */
-    uint8_t buffer[sizeof(flight_state_serialized_t) + 2];
-    std::memcpy(buffer, preamble, 2);
-    std::memcpy(buffer + 2, &fs, sizeof(flight_state_serialized_t));
+    uint8_t buffer[sizeof(flight_state_serialized_t) + PREAMBLESIZE];
+    std::memcpy(buffer, preamble, PREAMBLESIZE);
+    std::memcpy(buffer + PREAMBLESIZE, &fs, sizeof(flight_state_serialized_t));
 
     /* write to serial port byte by byte*/
-    for (int i = 0; i < (int)sizeof(flight_state_serialized_t) + 2; i++)
+    for (size_t i = 0; i < sizeof(flight_state_serialized_t) + PREAMBLESIZE; i++)
     {
         serial_ << buffer[i];
     }
