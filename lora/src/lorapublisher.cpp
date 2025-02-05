@@ -28,7 +28,7 @@ LoraPublisher::LoraPublisher(): Node("lora_publisher") {
         serial_.Open(path);
         serial_.SetBaudRate(LibSerial::BaudRate::BAUD_115200);
         timer_ = this->create_wall_timer(
-            500ms, std::bind(&LoraPublisher::timer_callback, this));
+            1000ms, std::bind(&LoraPublisher::timer_callback, this));
     }
     catch (const LibSerial::OpenFailed& e) {
         RCLCPP_ERROR(this->get_logger(), "Failed to open serial port: %s", e.what()); 
@@ -55,17 +55,16 @@ void LoraPublisher::timer_callback()
 
     /* get one byte for topic */
     int first_preamble_read = 0;
-    while (serial_.IsDataAvailable())
-    {
-	serial_ >> preamble_buf;
-	if (preamble_buf == preamble[0] && !first_preamble_read) {
-		first_preamble_read = 1;
-		continue;
-	}
-	if (preamble_buf == preamble[1] && first_preamble_read) {
-		first_preamble_read = 0;
-		break;
-	}
+    while (serial_.IsDataAvailable()) {
+        serial_ >> preamble_buf;
+        if (preamble_buf == preamble[0] && !first_preamble_read) {
+            first_preamble_read = 1;
+            continue;
+        }
+        if (preamble_buf == preamble[1] && first_preamble_read) {
+            first_preamble_read = 0;
+            break;
+        }
     }
     if (serial_.IsDataAvailable())
     {
@@ -95,15 +94,16 @@ void LoraPublisher::timer_callback()
 	    total_bytes = sizeof(flight_state_serialized_t);
 	    RCLCPP_INFO(this->get_logger(), "Received STATE message");
             break;
-        default:
+    default:
 	    RCLCPP_INFO(this->get_logger(), "Received unknown message");
 	    delete[] msg;
 	    return;
     }
     
     /* read the rest */
-    while (serial_.IsDataAvailable() && bytes_read < MAX_SIZE && bytes_read < total_bytes)
+    while (bytes_read < MAX_SIZE && bytes_read < total_bytes)
     {
+        while (!serial_.IsDataAvailable());
         serial_ >> msg[bytes_read++];
     }
 

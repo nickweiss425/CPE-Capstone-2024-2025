@@ -4,7 +4,7 @@
 #include "geometry_msgs/msg/quaternion.hpp"
 #include "geometry_msgs/msg/vector3.hpp"
 
-#define MAX_SIZE 64
+#define MAX_SIZE 128
 
 enum class topic_st : uint8_t {
     GPS = 0,
