@@ -39,9 +39,10 @@ public slots:
     void onWaypointSelected(int index);
     void onWaypointRemoved(int index);
     void updateWaypointAttributes(double radius, double altitude, double duration, int type);
+    void getDronePosition(double latitude, double longitude);
 signals:
     void getWaypointAttributes(double radius, double altitude, double duration, int type);
-    void updateDronePosition(const QGeoCoordinate &coordinate);
+    void updateDronePosition(double latitude, double longitude);
 
 private:
     int m_selectedIndex = -1;
