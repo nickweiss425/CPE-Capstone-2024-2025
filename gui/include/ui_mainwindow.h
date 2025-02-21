@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtQuickWidgets/QQuickWidget>
+#include <QQuickItem>
 #include <QQmlContext>
 #include <QQmlError>
 #include <QtWidgets/QApplication>
@@ -23,7 +24,8 @@
 #include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
-#include "videowidget.hpp"
+#include <QButtonGroup>
+#include "waypointmanager.hpp"
 
 QT_BEGIN_NAMESPACE
 
@@ -39,8 +41,10 @@ public:
     QLineEdit *latitudeBox;
     QLineEdit *longitudeBox;
     QHBoxLayout *altitudeLayout;
+    QLineEdit *radiusBox;
     QLineEdit *altitudeBox;
     QLineEdit *durationBox;
+    QButtonGroup *hoverGroup;
     QPushButton *hoverControlButton1;
     QPushButton *hoverControlButton2;
     QPushButton *hoverControlButton3;
@@ -55,6 +59,7 @@ public:
     QWidget *tabVideo;
     QVBoxLayout *verticalLayoutVideo;
     VideoStreamWidget *videoWidget;
+    WaypointManager *waypointManager;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -84,7 +89,6 @@ public:
         longitudeBox = new QLineEdit(tabMap);
         longitudeBox->setObjectName(QString::fromUtf8("longitudeBox"));
         longitudeBox->setReadOnly(true);
-        longitudeBox->setInputMask(QString::fromUtf8("99.999"));
 
         coordinateLayout->addWidget(longitudeBox);
 
@@ -93,6 +97,12 @@ public:
 
         altitudeLayout = new QHBoxLayout();
         altitudeLayout->setObjectName(QString::fromUtf8("altitudeLayout"));
+
+        radiusBox = new QLineEdit(tabMap);
+        radiusBox->setObjectName(QString::fromUtf8("radiusBox"));
+
+        altitudeLayout->addWidget(radiusBox);
+
         altitudeBox = new QLineEdit(tabMap);
         altitudeBox->setObjectName(QString::fromUtf8("altitudeBox"));
 
@@ -102,6 +112,10 @@ public:
         durationBox->setObjectName(QString::fromUtf8("durationBox"));
 
         altitudeLayout->addWidget(durationBox);
+
+        hoverGroup = new QButtonGroup(tabMap);
+        hoverGroup->setObjectName(QString::fromUtf8("hoverGroup"));
+        hoverGroup->setExclusive(true);
 
         hoverControlButton1 = new QPushButton(tabMap);
         hoverControlButton1->setObjectName(QString::fromUtf8("hoverControlButton1"));
@@ -121,6 +135,11 @@ public:
         hoverControlButton4 = new QPushButton(tabMap);
         hoverControlButton4->setObjectName(QString::fromUtf8("hoverControlButton4"));
 
+        hoverGroup->addButton(hoverControlButton1, 1);
+        hoverGroup->addButton(hoverControlButton2, 2);
+        hoverGroup->addButton(hoverControlButton3, 3);
+        hoverGroup->addButton(hoverControlButton4, 4);
+
         altitudeLayout->addWidget(hoverControlButton4);
 
         confirmHoverButton = new QPushButton(tabMap);
@@ -128,6 +147,8 @@ public:
 
         altitudeLayout->addWidget(confirmHoverButton);
 
+        waypointManager = new WaypointManager(tabMap);
+        waypointManager->setObjectName(QString::fromUtf8("waypointManager"));
 
         gridLayoutMap->addLayout(altitudeLayout, 2, 0, 1, 1);
 
@@ -159,6 +180,7 @@ public:
         mapView = new QQuickWidget(tabMap);
         mapView->setObjectName(QString::fromUtf8("mapView"));
         mapView->setResizeMode(QQuickWidget::SizeRootObjectToView);
+        mapView->rootContext()->setContextProperty("mapView", mapView);
         mapView->setSource(QUrl("qrc:/map.qml"));
 
         gridLayoutMap->addWidget(mapView, 0, 0, 2, 1);
@@ -192,12 +214,13 @@ public:
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "NGCP Flight Control", nullptr));
         latitudeBox->setPlaceholderText(QCoreApplication::translate("MainWindow", "Latitude", nullptr));
         longitudeBox->setPlaceholderText(QCoreApplication::translate("MainWindow", "Longitude", nullptr));
+        radiusBox->setPlaceholderText(QCoreApplication::translate("MainWindow", "Radius", nullptr));
         altitudeBox->setPlaceholderText(QCoreApplication::translate("MainWindow", "Altitude", nullptr));
         durationBox->setPlaceholderText(QCoreApplication::translate("MainWindow", "Duration", nullptr));
-        hoverControlButton1->setText(QCoreApplication::translate("MainWindow", "L", nullptr));
-        hoverControlButton2->setText(QCoreApplication::translate("MainWindow", "C", nullptr));
-        hoverControlButton3->setText(QCoreApplication::translate("MainWindow", "F8", nullptr));
-        hoverControlButton4->setText(QCoreApplication::translate("MainWindow", "S", nullptr));
+        hoverControlButton1->setText(QCoreApplication::translate("MainWindow", "Loiter", nullptr));
+        hoverControlButton2->setText(QCoreApplication::translate("MainWindow", "Circle", nullptr));
+        hoverControlButton3->setText(QCoreApplication::translate("MainWindow", "Figure-8", nullptr));
+        hoverControlButton4->setText(QCoreApplication::translate("MainWindow", "Square", nullptr));
         confirmHoverButton->setText(QCoreApplication::translate("MainWindow", "\342\234\224", nullptr));
         startFlightButton->setText(QCoreApplication::translate("MainWindow", "Start Flight", nullptr));
         toggleRecordingButton->setText(QCoreApplication::translate("MainWindow", "\342\217\272", nullptr));

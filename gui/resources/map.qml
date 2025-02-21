@@ -9,14 +9,34 @@ Rectangle {
     width: 800
     height: 600
 
-    property var currentLocation: QtPositioning.coordinate(35.29115049008509, -120.67617270722539)
+    signal waypointAdded(double latitude, double longitude)
+    signal waypointSelected(int index)
+    signal waypointRemoved(int index)
 
-    // Store markers and path
+    property var currentLocation: QtPositioning.coordinate(0, 0)
+    property var dronePosition: QtPositioning.coordinate(0, 0)
+    property var hoveredMarker: null
     property var markers: []
     property var pathCoordinates: []
-    
-    // Track the currently hovered marker
-    property var hoveredMarker: null
+
+    function updateDronePosition(latitude, longitude) {
+        console.log("Updating drone position:", latitude, longitude)
+        dronePosition = QtPositioning.coordinate(latitude, longitude)
+        updatePath()
+        updateDroneRotation()
+    }
+
+    function updateDroneRotation() {
+        if (markers.length > 0) {
+            var target = markers[0].coordinate
+            var dx = target.longitude - dronePosition.longitude
+            var dy = target.latitude - dronePosition.latitude
+            // Convert to degrees, add 90 to account for image orientation, and negate to match map orientation
+            var angle = -(Math.atan2(dy, dx) * 180 / Math.PI) + 90
+            console.log("Updating drone rotation to:", angle)
+            droneIcon.rotation = angle
+        }
+    }
 
     // Component for the marker
     Component {
@@ -25,26 +45,66 @@ Rectangle {
             id: markerRect
             width: 20
             height: 20
-            radius: 10
+            radius: width / 2
             color: "red"
             border.color: "black"
             border.width: 1
             scale: 1.0
+            property int waypointIndex: -1
+            property bool selected: false
+            transformOrigin: Item.Center  // Ensure scaling is centered
 
-            // Smooth animations for hover effects
+            // Smooth animations for all transitions
             Behavior on scale { NumberAnimation { duration: 150 } }
             Behavior on border.width { NumberAnimation { duration: 150 } }
+            Behavior on border.color { ColorAnimation { duration: 150 } }
 
-            // States for hover effect
-            states: State {
-                name: "hovered"
-                when: root.hoveredMarker === parent
-                PropertyChanges {
-                    target: markerRect
-                    scale: 1.2
-                    border.width: 3
+            states: [
+                State {
+                    name: "hovered"
+                    when: root.hoveredMarker === parent && !selected
+                    PropertyChanges {
+                        target: markerRect
+                        scale: 1.2
+                        border.width: 3
+                    }
+                },
+                State {
+                    name: "selected"
+                    when: selected
+                    PropertyChanges {
+                        target: markerRect
+                        scale: 1.6
+                        border.width: 2.4
+                        border.color: "black"
+                    }
+                },
+                State {
+                    name: ""
+                    when: !selected && root.hoveredMarker !== parent
+                    PropertyChanges {
+                        target: markerRect
+                        scale: 1.0
+                        border.width: 1
+                        border.color: "black"
+                    }
                 }
-            }
+            ]
+
+            transitions: [
+                Transition {
+                    from: "selected"
+                    to: ""
+                    NumberAnimation { 
+                        properties: "scale,border.width" 
+                        duration: 150 
+                    }
+                    ColorAnimation { 
+                        properties: "border.color" 
+                        duration: 150 
+                    }
+                }
+            ]
         }
     }
 
@@ -67,6 +127,14 @@ Rectangle {
                 name: "mapbox.access_token"
                 value: "" 
             }
+            PluginParameter {
+                name: "mapboxgl.mapping.cache.directory"
+                value: "/tmp/mapbox/cache"
+            }
+            PluginParameter {
+                name: "mapboxgl.mapping.cache.memory"
+                value: true
+            }
         }
         center: currentLocation
         zoomLevel: 12
@@ -84,28 +152,51 @@ Rectangle {
                     removeMarkerAtScreenPosition(Qt.point(mouse.x, mouse.y))
                 }
             }
-            
+
             onReleased: {
                 if (mouse.button === Qt.RightButton) {
-                    var coordinate = map.toCoordinate(Qt.point(mouse.x, mouse.y))
-                    focusOnMarker(coordinate)
+                    selectMarkerAtScreenPosition(Qt.point(mouse.x, mouse.y))
                 }
             }
 
             onPositionChanged: {
-                // Update hover state when mouse moves
-                var mousePoint = Qt.point(mouse.x, mouse.y)
-                updateHoveredMarker(mousePoint)
+                updateHoveredMarker(Qt.point(mouse.x, mouse.y))
             }
 
             onExited: {
-                // Clear hover state when mouse leaves the map
                 root.hoveredMarker = null
             }
         }
     }
 
-    // Create and maintain the path line
+    // Drone marker
+    MapQuickItem {
+        id: droneMarker
+        coordinate: dronePosition
+        anchorPoint.x: 16
+        anchorPoint.y: 16
+        visible: true
+        sourceItem: Item {
+            width: 32
+            height: 32
+            Image {
+                id: droneIcon
+                source: "qrc:/drone-icon.png"
+                width: parent.width
+                height: parent.height
+                smooth: true
+                anchors.centerIn: parent
+                rotation: 0  // We'll update this programmatically
+            }
+        }
+    }
+
+    Component.onCompleted: {
+        map.addMapItem(droneMarker)
+        map.addMapItem(droneToFirstPoint)
+    }
+
+    // Create and maintain the path lines
     Loader {
         id: pathLoader
         sourceComponent: pathComponent
@@ -113,6 +204,23 @@ Rectangle {
             if (item) {
                 map.addMapItem(item)
             }
+        }
+    }
+
+    // Drone to first waypoint path
+    MapPolyline {
+        id: droneToFirstPoint
+        line.width: 3
+        line.color: "blue"
+        path: []
+    }
+
+    function updatePath() {
+        if (markers.length > 0) {
+            droneToFirstPoint.path = [dronePosition, markers[0].coordinate]
+            map.addMapItem(droneToFirstPoint)  // Ensure the line is added to the map
+        } else {
+            droneToFirstPoint.path = []
         }
     }
 
@@ -124,16 +232,24 @@ Rectangle {
         )
         
         var markerItem = markerComponent.createObject(null)
+        markerItem.waypointIndex = markers.length
         
         marker.coordinate = coordinate
-        marker.anchorPoint = Qt.point(markerItem.width/2, markerItem.height/2)
         marker.sourceItem = markerItem
+
+        markerItem.scaleChanged.connect(function() {
+            marker.anchorPoint = Qt.point(markerItem.width * markerItem.scale * 0.5, 
+                                        markerItem.height * markerItem.scale * 0.5)
+        })
         
+        marker.anchorPoint = Qt.point(markerItem.width * 0.5, markerItem.height * 0.5)
+
         map.addMapItem(marker)
         markers.push({item: marker, coordinate: coordinate})
         
         pathCoordinates.push(coordinate)
         pathLoader.item.path = pathCoordinates
+        waypointAdded(coordinate.latitude, coordinate.longitude)
     }
 
     // Function to update hovered marker
@@ -170,55 +286,48 @@ Rectangle {
                 pathCoordinates.splice(i, 1)
                 pathLoader.item.path = pathCoordinates
                 root.hoveredMarker = null  // Clear hover state
+
+                waypointRemoved(i)
                 break
             }
         }
     }
 
-    function focusOnMarker(coordinate) {
+    function selectMarkerAtScreenPosition(mousePoint) {
+        var found = false
+        var selectedIndex = -1
+
+        // First pass - check if we clicked on a marker
         for (var i = 0; i < markers.length; i++) {
-            var markerPoint = map.fromCoordinate(markers[i].coordinate)
-            var mousePoint = map.fromCoordinate(coordinate)
-            
-            var markerWidth = markers[i].item.sourceItem.width
-            var markerHeight = markers[i].item.sourceItem.height
+            var marker = markers[i].item
+            var markerPoint = map.fromCoordinate(marker.coordinate)
+            var markerWidth = marker.sourceItem.width
+            var markerHeight = marker.sourceItem.height
             
             if (Math.abs(mousePoint.x - markerPoint.x) <= markerWidth/2 &&
                 Math.abs(mousePoint.y - markerPoint.y) <= markerHeight/2) {
-                modifyPanel.visible = true
-                modifyPanel.coordinate = markers[i].coordinate
+                selectedIndex = i
+                found = true
                 break
             }
         }
-    }
 
-    function clearMap() {
-        for (var i = 0; i < markers.length; i++) {
-            map.removeMapItem(markers[i].item)
+        // Second pass - update all markers
+        for (var j = 0; j < markers.length; j++) {
+            markers[j].item.sourceItem.selected = (j === selectedIndex)
         }
-        markers = []
-        pathCoordinates = []
-        pathLoader.item.path = []
-        root.hoveredMarker = null  // Clear hover state
+
+        waypointSelected(selectedIndex)
     }
 
-    Rectangle {
-        id: modifyPanel
-        width: 200
-        height: 100
-        color: "lightgrey"
-        border.color: "black"
-        visible: false
-
-        property var coordinate: null
-
-        Column {
-            anchors.centerIn: parent
-            spacing: 10
-
-            Button {
-                text: "Close"
-                onClicked: modifyPanel.visible = false
+    function updateWaypointPosition(index, coordinate) {
+        for (var i = 0; i < markers.length; i++) {
+            if (markers[i].item.sourceItem.waypointIndex === index) {
+                markers[i].item.coordinate = coordinate
+                markers[i].coordinate = coordinate
+                pathCoordinates[i] = coordinate
+                pathLoader.item.path = pathCoordinates
+                break
             }
         }
     }
