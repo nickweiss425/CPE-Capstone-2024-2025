@@ -14,9 +14,29 @@ Rectangle {
     signal waypointRemoved(int index)
 
     property var currentLocation: QtPositioning.coordinate(0, 0)
+    property var dronePosition: QtPositioning.coordinate(0, 0)
     property var hoveredMarker: null
     property var markers: []
     property var pathCoordinates: []
+
+    function updateDronePosition(latitude, longitude) {
+        console.log("Updating drone position:", latitude, longitude)
+        dronePosition = QtPositioning.coordinate(latitude, longitude)
+        updatePath()
+        updateDroneRotation()
+    }
+
+    function updateDroneRotation() {
+        if (markers.length > 0) {
+            var target = markers[0].coordinate
+            var dx = target.longitude - dronePosition.longitude
+            var dy = target.latitude - dronePosition.latitude
+            // Convert to degrees, add 90 to account for image orientation, and negate to match map orientation
+            var angle = -(Math.atan2(dy, dx) * 180 / Math.PI) + 90
+            console.log("Updating drone rotation to:", angle)
+            droneIcon.rotation = angle
+        }
+    }
 
     // Component for the marker
     Component {
@@ -141,7 +161,34 @@ Rectangle {
         }
     }
 
-    // Create and maintain the path line
+    // Drone marker
+    MapQuickItem {
+        id: droneMarker
+        coordinate: dronePosition
+        anchorPoint.x: 16
+        anchorPoint.y: 16
+        visible: true
+        sourceItem: Item {
+            width: 32
+            height: 32
+            Image {
+                id: droneIcon
+                source: "qrc:/drone-icon.png"
+                width: parent.width
+                height: parent.height
+                smooth: true
+                anchors.centerIn: parent
+                rotation: 0  // We'll update this programmatically
+            }
+        }
+    }
+
+    Component.onCompleted: {
+        map.addMapItem(droneMarker)
+        map.addMapItem(droneToFirstPoint)
+    }
+
+    // Create and maintain the path lines
     Loader {
         id: pathLoader
         sourceComponent: pathComponent
@@ -149,6 +196,23 @@ Rectangle {
             if (item) {
                 map.addMapItem(item)
             }
+        }
+    }
+
+    // Drone to first waypoint path
+    MapPolyline {
+        id: droneToFirstPoint
+        line.width: 3
+        line.color: "blue"
+        path: []
+    }
+
+    function updatePath() {
+        if (markers.length > 0) {
+            droneToFirstPoint.path = [dronePosition, markers[0].coordinate]
+            map.addMapItem(droneToFirstPoint)  // Ensure the line is added to the map
+        } else {
+            droneToFirstPoint.path = []
         }
     }
 
@@ -222,13 +286,10 @@ Rectangle {
     }
 
     function selectMarkerAtScreenPosition(mousePoint) {
-
-        for (var j = 0; j < markers.length; j++) {
-            markers[j].item.sourceItem.selected = false
-        }
-
         var found = false
+        var selectedIndex = -1
 
+        // First pass - check if we clicked on a marker
         for (var i = 0; i < markers.length; i++) {
             var marker = markers[i].item
             var markerPoint = map.fromCoordinate(marker.coordinate)
@@ -237,16 +298,18 @@ Rectangle {
             
             if (Math.abs(mousePoint.x - markerPoint.x) <= markerWidth/2 &&
                 Math.abs(mousePoint.y - markerPoint.y) <= markerHeight/2) {
-                marker.sourceItem.selected = true
-                waypointSelected(i)
+                selectedIndex = i
                 found = true
                 break
             }
         }
 
-        if (!found) {
-            waypointSelected(-1)
+        // Second pass - update all markers
+        for (var j = 0; j < markers.length; j++) {
+            markers[j].item.sourceItem.selected = (j === selectedIndex)
         }
+
+        waypointSelected(selectedIndex)
     }
 
     function updateWaypointPosition(index, coordinate) {

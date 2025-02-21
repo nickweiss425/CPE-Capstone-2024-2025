@@ -49,8 +49,6 @@ set(HEADERS
 # Run moc on the header file
 qt5_wrap_cpp(MOC_SOURCES ${HEADERS})
 
-add_compile_options(-g)
-
 # Create executables
 add_executable(${PROJECT_NAME} ${SOURCES} ${MOC_SOURCES} resources.qrc)
 ament_target_dependencies(${PROJECT_NAME} rclcpp Qt5 sensor_msgs geometry_msgs)

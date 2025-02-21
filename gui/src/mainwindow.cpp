@@ -11,7 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
     // Set up the GPS coordinates display
-    gpsWidget = new GPSWidget(ui->longitudeBox, ui->latitudeBox, ui->altitudeBox);
+    gpsWidget = new GPSWidget(ui->longitudeBox, ui->latitudeBox);
 
     // Set up the IMU data stream
     imuWidget = new IMUWidget(ui->sensorData);
@@ -32,9 +32,9 @@ MainWindow::MainWindow(QWidget *parent)
 }
 
 MainWindow::~MainWindow() {
-    delete ui;
     stopFlight();
     DataLogger::shutdown();
+    delete ui;
     rclcpp::shutdown();
 }
 
@@ -46,10 +46,18 @@ void MainWindow::setupConnections() {
     connect(ui->waypointManager, &WaypointManager::getWaypointAttributes, this, &MainWindow::updateWaypointAttributes);
     connect(this, &MainWindow::setWaypointAttributes, ui->waypointManager, &WaypointManager::updateWaypointAttributes);
 
-    QQuickItem *map = ui->mapView->rootObject();
-    connect(map, SIGNAL(waypointAdded(double, double)), ui->waypointManager, SLOT(onWaypointAdded(double, double)));
-    connect(map, SIGNAL(waypointSelected(int)), ui->waypointManager, SLOT(onWaypointSelected(int)));
-    connect(map, SIGNAL(waypointRemoved(int)), ui->waypointManager, SLOT(onWaypointRemoved(int)));
+    QObject *map = ui->mapView->rootObject();
+    if (map) {
+        connect(map, SIGNAL(waypointAdded(double, double)), ui->waypointManager, SLOT(onWaypointAdded(double, double)));
+        connect(map, SIGNAL(waypointSelected(int)), ui->waypointManager, SLOT(onWaypointSelected(int)));
+        connect(map, SIGNAL(waypointRemoved(int)), ui->waypointManager, SLOT(onWaypointRemoved(int)));
+        connect(gpsWidget, &GPSWidget::coordinatesUpdated, ui->waypointManager, &WaypointManager::getDronePosition);
+        connect(ui->waypointManager, &WaypointManager::updateDronePosition, this, [this](double lat, double lon) {
+            QMetaObject::invokeMethod(ui->mapView->rootObject(), "updateDronePosition",
+                                    Q_ARG(QVariant, lat),
+                                    Q_ARG(QVariant, lon));
+        });
+    }
     initializeButtons();
 }
 
@@ -106,42 +114,63 @@ void MainWindow::stopFlight() {
 }
 
 void MainWindow::updateWaypointAttributes(double radius, double altitude, double duration, int type) {
-    if (type == 5) {
-        resetWaypointAttributes();
-        return;
-    }
-
-    ui->radiusBox->setText(QString::number(radius));
-    ui->altitudeBox->setText(QString::number(altitude));
-    ui->durationBox->setText(QString::number(duration));
-
+    // First reset all buttons to initial state
     ui->hoverControlButton1->setChecked(false);
     ui->hoverControlButton2->setChecked(false);
     ui->hoverControlButton3->setChecked(false);
     ui->hoverControlButton4->setChecked(false);
 
+    // Clear text fields first
+    ui->radiusBox->clear();
+    ui->altitudeBox->clear();
+    ui->durationBox->clear();
+
+    // If no waypoint is selected (type == 5 or -1)
+    if (type == 5 || type == -1) {
+        ui->hoverControlButton1->setCheckable(false);
+        ui->hoverControlButton2->setCheckable(false);
+        ui->hoverControlButton3->setCheckable(false);
+        ui->hoverControlButton4->setCheckable(false);
+        ui->confirmHoverButton->setCheckable(false);
+        resetWaypointAttributes();
+        return;
+    }
+
+    // Enable all buttons for a valid selection
     ui->hoverControlButton1->setCheckable(true);
     ui->hoverControlButton2->setCheckable(true);
     ui->hoverControlButton3->setCheckable(true);
     ui->hoverControlButton4->setCheckable(true);
     ui->confirmHoverButton->setCheckable(true);
 
-    switch (type) {
-        case 1:
-            ui->hoverControlButton1->setChecked(true);
-            break;
-        case 2:
-            ui->hoverControlButton2->setChecked(true);
-            break;
-        case 3:
-            ui->hoverControlButton3->setChecked(true);
-            break;
-        case 4:
-            ui->hoverControlButton4->setChecked(true);
-            break;
-        default:
-            break;
+    // Set the text values if they exist
+    if (radius > 0) ui->radiusBox->setText(QString::number(radius));
+    if (altitude > 0) ui->altitudeBox->setText(QString::number(altitude));
+    if (duration > 0) ui->durationBox->setText(QString::number(duration));
+
+    // Set the appropriate button state
+    if (type > 0 && type <= 4) {
+        switch (type) {
+            case 1:
+                ui->hoverControlButton1->setChecked(true);
+                break;
+            case 2:
+                ui->hoverControlButton2->setChecked(true);
+                break;
+            case 3:
+                ui->hoverControlButton3->setChecked(true);
+                break;
+            case 4:
+                ui->hoverControlButton4->setChecked(true);
+                break;
+        }
     }
+
+    ui->hoverControlButton1->update();
+    ui->hoverControlButton2->update();
+    ui->hoverControlButton3->update();
+    ui->hoverControlButton4->update();
+    
 }
 
 void MainWindow::handleWaypointUpdate() {
@@ -169,9 +198,6 @@ void MainWindow::handleWaypointUpdate() {
 }
 
 void MainWindow::resetWaypointAttributes() {
-    ui->radiusBox->setText("");
-    ui->altitudeBox->setText("");
-    ui->durationBox->setText("");
     ui->hoverControlButton1->setCheckable(false);
     ui->hoverControlButton2->setCheckable(false);
     ui->hoverControlButton3->setCheckable(false);

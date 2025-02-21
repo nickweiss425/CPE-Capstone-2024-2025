@@ -3,8 +3,8 @@
 
 using std::placeholders::_1;
 
-GPSWidget::GPSWidget(QLineEdit *longitude, QLineEdit *latitude, QLineEdit *altitude)
-    : longitudeBox_(longitude), latitudeBox_(latitude), altitudeBox_(altitude), gpsSubscriber_(nullptr) {
+GPSWidget::GPSWidget(QLineEdit *longitude, QLineEdit *latitude)
+    : longitudeBox_(longitude), latitudeBox_(latitude), gpsSubscriber_(nullptr) {
     gpsSubscriber_ = std::make_shared<GPSSubscriber>();
 
     if (!gpsSubscriber_) {
@@ -31,11 +31,12 @@ GPSWidget::~GPSWidget() {
 void GPSWidget::updateLocation(const double &longitude, const double &latitude, const double &altitude) {
     longitudeBox_->setText(QString::number(longitude));
     latitudeBox_->setText(QString::number(latitude));
-    altitudeBox_->setText(QString::number(altitude));
 
     QString longitudeText = QString("Longitude: %1\n") .arg(longitude);
     QString latitudeText = QString("Latitude: %1\n") .arg(latitude);
     QString altitudeText = QString("Altitude: %1\n") .arg(altitude);
+
+    emit coordinatesUpdated(longitude, latitude);
 
     auto dataLogger_ = DataLogger::getInstance();
     if (dataLogger_->getRecording()) {

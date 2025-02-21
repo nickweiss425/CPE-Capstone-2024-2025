@@ -53,3 +53,7 @@ void WaypointManager::updateWaypointAttributes(double radius, double altitude, d
     m_waypoints[m_selectedIndex].duration = duration;
     m_waypoints[m_selectedIndex].type = static_cast<WaypointType>(type);
 }
+
+void WaypointManager::getDronePosition(double latitude, double longitude) {
+    emit updateDronePosition(latitude, longitude);
+}
