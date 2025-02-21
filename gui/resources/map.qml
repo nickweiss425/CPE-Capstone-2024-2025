@@ -9,14 +9,14 @@ Rectangle {
     width: 800
     height: 600
 
-    property var currentLocation: QtPositioning.coordinate(35.29115049008509, -120.67617270722539)
+    signal waypointAdded(double latitude, double longitude)
+    signal waypointSelected(int index)
+    signal waypointRemoved(int index)
 
-    // Store markers and path
+    property var currentLocation: QtPositioning.coordinate(0, 0)
+    property var hoveredMarker: null
     property var markers: []
     property var pathCoordinates: []
-    
-    // Track the currently hovered marker
-    property var hoveredMarker: null
 
     // Component for the marker
     Component {
@@ -25,26 +25,66 @@ Rectangle {
             id: markerRect
             width: 20
             height: 20
-            radius: 10
+            radius: width / 2
             color: "red"
             border.color: "black"
             border.width: 1
             scale: 1.0
+            property int waypointIndex: -1
+            property bool selected: false
+            transformOrigin: Item.Center  // Ensure scaling is centered
 
-            // Smooth animations for hover effects
+            // Smooth animations for all transitions
             Behavior on scale { NumberAnimation { duration: 150 } }
             Behavior on border.width { NumberAnimation { duration: 150 } }
+            Behavior on border.color { ColorAnimation { duration: 150 } }
 
-            // States for hover effect
-            states: State {
-                name: "hovered"
-                when: root.hoveredMarker === parent
-                PropertyChanges {
-                    target: markerRect
-                    scale: 1.2
-                    border.width: 3
+            states: [
+                State {
+                    name: "hovered"
+                    when: root.hoveredMarker === parent && !selected
+                    PropertyChanges {
+                        target: markerRect
+                        scale: 1.2
+                        border.width: 3
+                    }
+                },
+                State {
+                    name: "selected"
+                    when: selected
+                    PropertyChanges {
+                        target: markerRect
+                        scale: 1.6
+                        border.width: 2.4
+                        border.color: "black"
+                    }
+                },
+                State {
+                    name: ""
+                    when: !selected && root.hoveredMarker !== parent
+                    PropertyChanges {
+                        target: markerRect
+                        scale: 1.0
+                        border.width: 1
+                        border.color: "black"
+                    }
                 }
-            }
+            ]
+
+            transitions: [
+                Transition {
+                    from: "selected"
+                    to: ""
+                    NumberAnimation { 
+                        properties: "scale,border.width" 
+                        duration: 150 
+                    }
+                    ColorAnimation { 
+                        properties: "border.color" 
+                        duration: 150 
+                    }
+                }
+            ]
         }
     }
 
@@ -84,22 +124,18 @@ Rectangle {
                     removeMarkerAtScreenPosition(Qt.point(mouse.x, mouse.y))
                 }
             }
-            
+
             onReleased: {
                 if (mouse.button === Qt.RightButton) {
-                    var coordinate = map.toCoordinate(Qt.point(mouse.x, mouse.y))
-                    focusOnMarker(coordinate)
+                    selectMarkerAtScreenPosition(Qt.point(mouse.x, mouse.y))
                 }
             }
 
             onPositionChanged: {
-                // Update hover state when mouse moves
-                var mousePoint = Qt.point(mouse.x, mouse.y)
-                updateHoveredMarker(mousePoint)
+                updateHoveredMarker(Qt.point(mouse.x, mouse.y))
             }
 
             onExited: {
-                // Clear hover state when mouse leaves the map
                 root.hoveredMarker = null
             }
         }
@@ -124,16 +160,24 @@ Rectangle {
         )
         
         var markerItem = markerComponent.createObject(null)
+        markerItem.waypointIndex = markers.length
         
         marker.coordinate = coordinate
-        marker.anchorPoint = Qt.point(markerItem.width/2, markerItem.height/2)
         marker.sourceItem = markerItem
+
+        markerItem.scaleChanged.connect(function() {
+            marker.anchorPoint = Qt.point(markerItem.width * markerItem.scale * 0.5, 
+                                        markerItem.height * markerItem.scale * 0.5)
+        })
         
+        marker.anchorPoint = Qt.point(markerItem.width * 0.5, markerItem.height * 0.5)
+
         map.addMapItem(marker)
         markers.push({item: marker, coordinate: coordinate})
         
         pathCoordinates.push(coordinate)
         pathLoader.item.path = pathCoordinates
+        waypointAdded(coordinate.latitude, coordinate.longitude)
     }
 
     // Function to update hovered marker
@@ -170,55 +214,49 @@ Rectangle {
                 pathCoordinates.splice(i, 1)
                 pathLoader.item.path = pathCoordinates
                 root.hoveredMarker = null  // Clear hover state
+
+                waypointRemoved(i)
                 break
             }
         }
     }
 
-    function focusOnMarker(coordinate) {
+    function selectMarkerAtScreenPosition(mousePoint) {
+
+        for (var j = 0; j < markers.length; j++) {
+            markers[j].item.sourceItem.selected = false
+        }
+
+        var found = false
+
         for (var i = 0; i < markers.length; i++) {
-            var markerPoint = map.fromCoordinate(markers[i].coordinate)
-            var mousePoint = map.fromCoordinate(coordinate)
-            
-            var markerWidth = markers[i].item.sourceItem.width
-            var markerHeight = markers[i].item.sourceItem.height
+            var marker = markers[i].item
+            var markerPoint = map.fromCoordinate(marker.coordinate)
+            var markerWidth = marker.sourceItem.width
+            var markerHeight = marker.sourceItem.height
             
             if (Math.abs(mousePoint.x - markerPoint.x) <= markerWidth/2 &&
                 Math.abs(mousePoint.y - markerPoint.y) <= markerHeight/2) {
-                modifyPanel.visible = true
-                modifyPanel.coordinate = markers[i].coordinate
+                marker.sourceItem.selected = true
+                waypointSelected(i)
+                found = true
                 break
             }
         }
-    }
 
-    function clearMap() {
-        for (var i = 0; i < markers.length; i++) {
-            map.removeMapItem(markers[i].item)
+        if (!found) {
+            waypointSelected(-1)
         }
-        markers = []
-        pathCoordinates = []
-        pathLoader.item.path = []
-        root.hoveredMarker = null  // Clear hover state
     }
 
-    Rectangle {
-        id: modifyPanel
-        width: 200
-        height: 100
-        color: "lightgrey"
-        border.color: "black"
-        visible: false
-
-        property var coordinate: null
-
-        Column {
-            anchors.centerIn: parent
-            spacing: 10
-
-            Button {
-                text: "Close"
-                onClicked: modifyPanel.visible = false
+    function updateWaypointPosition(index, coordinate) {
+        for (var i = 0; i < markers.length; i++) {
+            if (markers[i].item.sourceItem.waypointIndex === index) {
+                markers[i].item.coordinate = coordinate
+                markers[i].coordinate = coordinate
+                pathCoordinates[i] = coordinate
+                pathLoader.item.path = pathCoordinates
+                break
             }
         }
     }

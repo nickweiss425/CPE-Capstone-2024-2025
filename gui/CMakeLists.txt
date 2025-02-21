@@ -28,6 +28,7 @@ set(SOURCES
     src/imusubscriber.cpp
     src/flightstatepublisher.cpp
     src/datalogger.cpp
+    src/waypointmanager.cpp
 )
 
 # Add the main.h file for moc
@@ -42,10 +43,13 @@ set(HEADERS
     include/imusubscriber.hpp
     include/flightstatepublisher.hpp
     include/datalogger.hpp
+    include/waypointmanager.hpp
 )
 
 # Run moc on the header file
 qt5_wrap_cpp(MOC_SOURCES ${HEADERS})
+
+add_compile_options(-g)
 
 # Create executables
 add_executable(${PROJECT_NAME} ${SOURCES} ${MOC_SOURCES} resources.qrc)
