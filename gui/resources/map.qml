@@ -127,6 +127,14 @@ Rectangle {
                 name: "mapbox.access_token"
                 value: "" 
             }
+            PluginParameter {
+                name: "mapboxgl.mapping.cache.directory"
+                value: "/tmp/mapbox/cache"
+            }
+            PluginParameter {
+                name: "mapboxgl.mapping.cache.memory"
+                value: true
+            }
         }
         center: currentLocation
         zoomLevel: 12
