@@ -88,20 +88,15 @@ void MainWindow::startFlight() {
 
 void MainWindow::toggleRecording() {
     auto dataLogger_ = DataLogger::getInstance();
-    switch (dataLogger_->getRecording()) {
-        case false:
-            ui->toggleRecordingButton->setText(QCoreApplication::translate("MainWindow", "\342\217\271", nullptr));
-            break;
-        case true:
-            ui->toggleRecordingButton->setText(QCoreApplication::translate("MainWindow", "\342\217\272", nullptr));
-    }
+    dataLogger_->switchRecording();
 
-    if (dataLogger_->getRecording()) {
+    if (!dataLogger_->getRecording()) {
         dataLogger_->close_file();
+        ui->toggleRecordingButton->setText(QCoreApplication::translate("MainWindow", "\342\217\272", nullptr));
     } else {
         dataLogger_->create_file();
+        ui->toggleRecordingButton->setText(QCoreApplication::translate("MainWindow", "\342\217\271", nullptr));
     }
-    dataLogger_->switchRecording();
 }
 
 void MainWindow::stopFlight() {
