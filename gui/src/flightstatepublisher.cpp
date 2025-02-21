@@ -1,4 +1,5 @@
 #include "flightstatepublisher.hpp"
+#include "datalogger.hpp"
 
 using namespace std::chrono_literals;
 
@@ -18,4 +19,10 @@ void StatePublisher::publish_state(const FlightState &state)
     
     // Publish the message
     publisher_->publish(msg);
+
+    auto dataLogger_ = DataLogger::getInstance();
+    if (dataLogger_->getRecording()) {
+        QString flightStateText = QString("Flight State: %1\n") .arg(msg.data);
+        dataLogger_->log_data(flightStateText.toStdString());
+    }
 }

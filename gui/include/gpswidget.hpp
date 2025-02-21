@@ -9,8 +9,11 @@ class GPSWidget : public QWidget {
     Q_OBJECT
 
 public:
-    explicit GPSWidget(QLineEdit *longitude = nullptr, QLineEdit *latitude = nullptr, QLineEdit *altitude = nullptr);
+    explicit GPSWidget(QLineEdit *longitude = nullptr, QLineEdit *latitude = nullptr);
     ~GPSWidget() override;
+
+signals:
+    void coordinatesUpdated(const double &longitude, const double &latitude);
 
 public slots:
     void updateLocation(const double &longitude, const double &latitude, const double &altitude);
@@ -18,7 +21,6 @@ public slots:
 private:
     QLineEdit *longitudeBox_;
     QLineEdit *latitudeBox_;
-    QLineEdit *altitudeBox_;
     ROSThread *gps_thread;
     std::shared_ptr<GPSSubscriber> gpsSubscriber_;
     std::unique_ptr<ROSThread> rosThread_;

@@ -1,5 +1,6 @@
 <RCC>
     <qresource>
         <file alias="map.qml">resources/map.qml</file>
+        <file alias="drone-icon.png">resources/drone-icon.png</file>
     </qresource>
 </RCC>

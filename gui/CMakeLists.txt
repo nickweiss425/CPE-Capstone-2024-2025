@@ -24,6 +24,8 @@ set(SOURCES
     src/gpswidget.cpp
     src/gpssubscriber.cpp
     src/flightstatepublisher.cpp
+    src/datalogger.cpp
+    src/waypointmanager.cpp
 )
 
 # Add the main.h file for moc
@@ -35,6 +37,8 @@ set(HEADERS
     include/gpswidget.hpp
     include/gpssubscriber.hpp
     include/flightstatepublisher.hpp
+    include/datalogger.hpp
+    include/waypointmanager.hpp
 )
 
 # Run moc on the header file
