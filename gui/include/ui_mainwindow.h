@@ -180,6 +180,7 @@ public:
         mapView = new QQuickWidget(tabMap);
         mapView->setObjectName(QString::fromUtf8("mapView"));
         mapView->setResizeMode(QQuickWidget::SizeRootObjectToView);
+        mapView->rootContext()->setContextProperty("mapView", mapView);
         mapView->setSource(QUrl("qrc:/map.qml"));
 
         gridLayoutMap->addWidget(mapView, 0, 0, 2, 1);
