@@ -13,6 +13,7 @@ find_package(ament_cmake REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(cv_bridge REQUIRED)
+find_package(OpenCV REQUIRED)
 find_package(Qt5 REQUIRED COMPONENTS Core Quick QuickControls2 Widgets QuickWidgets Location Positioning QmlImportScanner Multimedia MultimediaWidgets)
 
 # Add the main.cpp file
@@ -66,6 +67,7 @@ target_link_libraries(${PROJECT_NAME}
     Qt5::Multimedia
     Qt5::MultimediaWidgets
     cv_bridge::cv_bridge
+    ${OpenCV_LIBS}
 )
 
 install(TARGETS
