@@ -1,0 +1,58 @@
+[0.307s] Invoking command in '/home/niweiss/ws_sensor_combined/build/px4_ros_com': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/custom_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/ws_sensor_combined/install/custom_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/px4_ros_com -- -j16 -l16
+[0.371s] [35m[1mConsolidate compiler generated dependencies of target offboard_launch[0m
+[0.371s] [ 11%] Built target sensor_combined_listener
+[0.378s] [ 22%] Built target offboard_control
+[0.379s] [ 33%] Built target offboard_paths
+[0.381s] [ 44%] Built target debug_vect_advertiser
+[0.382s] [ 55%] Built target vehicle_gps_position_listener
+[0.384s] [ 66%] Built target offboard_control_srv
+[0.385s] [ 66%] Built target ament_cmake_python_copy_px4_ros_com
+[0.391s] [ 77%] Built target flight_state_pub
+[0.393s] [ 88%] Built target frame_transforms
+[0.395s] [ 94%] [32mBuilding CXX object CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o[0m
+[0.682s] running egg_info
+[0.722s] writing px4_ros_com.egg-info/PKG-INFO
+[0.723s] writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+[0.723s] writing top-level names to px4_ros_com.egg-info/top_level.txt
+[0.750s] reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.752s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.793s] [ 94%] Built target ament_cmake_python_build_px4_ros_com_egg
+[5.226s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In lambda function:
+[5.227s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:130:40:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KWAYPOINT_HOLD[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[5.227s]   130 |                                 switch [01;35m[K([m[Kcurrent_state_) {
+[5.227s]       |                                        [01;35m[K^[m[K
+[5.227s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:130:40:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KHOLD[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[5.242s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::handleTakeoffState(float)[m[K’:
+[5.242s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:262:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinitial_altitude[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.242s]   262 |         void handleTakeoffState([01;35m[Kfloat initial_altitude[m[K)
+[5.242s]       |                                 [01;35m[K~~~~~~^~~~~~~~~~~~~~~~[m[K
+[5.242s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::handleLandingState(float)[m[K’:
+[5.242s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:271:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinitial_altitude[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.242s]   271 |         void handleLandingState([01;35m[Kfloat initial_altitude[m[K)
+[5.242s]       |                                 [01;35m[K~~~~~~^~~~~~~~~~~~~~~~[m[K
+[5.249s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::handleSquareWaypointState(float, float, float, float)[m[K’:
+[5.249s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:304:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoitn_y[m[K’ was not declared in this scope; did you mean ‘[01m[Kwaypoint_y[m[K’?
+[5.249s]   304 |                 float edge_y = [01;31m[Kwaypoitn_y[m[K - (0.5 * square_length);
+[5.249s]       |                                [01;31m[K^~~~~~~~~~[m[K
+[5.249s]       |                                [32m[Kwaypoint_y[m[K
+[5.249s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::handleSquarePathState(float, float, float, float)[m[K’:
+[5.249s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:330:50:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[5.249s]   330 |                                 [01;35m[Ksquare_cur_edge_ == 2[m[K;
+[5.249s]       |                                 [01;35m[K~~~~~~~~~~~~~~~~~^~~~[m[K
+[5.260s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:333:26:[m[K [01;31m[Kerror: [m[K‘[01m[Ksquare_cur_edge[m[K’ was not declared in this scope; did you mean ‘[01m[Ksquare_cur_edge_[m[K’?
+[5.261s]   333 |                 else if ([01;31m[Ksquare_cur_edge[m[K == 2){
+[5.261s]       |                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[5.261s]       |                          [32m[Ksquare_cur_edge_[m[K
+[5.261s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:337:50:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[5.261s]   337 |                                 [01;35m[Ksquare_cur_edge_ == 3[m[K;
+[5.261s]       |                                 [01;35m[K~~~~~~~~~~~~~~~~~^~~~[m[K
+[5.262s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:344:50:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[5.262s]   344 |                                 [01;35m[Ksquare_cur_edge_ == 4[m[K;
+[5.263s]       |                                 [01;35m[K~~~~~~~~~~~~~~~~~^~~~[m[K
+[5.263s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:351:50:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[5.263s]   351 |                                 [01;35m[Ksquare_cur_edge_ == 1[m[K;
+[5.263s]       |                                 [01;35m[K~~~~~~~~~~~~~~~~~^~~~[m[K
+[17.709s] gmake[2]: *** [CMakeFiles/offboard_launch.dir/build.make:76: CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o] Error 1
+[17.710s] gmake[1]: *** [CMakeFiles/Makefile2:312: CMakeFiles/offboard_launch.dir/all] Error 2
+[17.710s] gmake: *** [Makefile:146: all] Error 2
+[17.713s] Invoked command in '/home/niweiss/ws_sensor_combined/build/px4_ros_com' returned '2': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/custom_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/ws_sensor_combined/install/custom_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/px4_ros_com -- -j16 -l16

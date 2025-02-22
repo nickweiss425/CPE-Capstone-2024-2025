@@ -1,0 +1,87 @@
+[2.904s] Invoking command in '/home/niweiss/ws_sensor_combined/build/px4_ros2_cpp': CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp:/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp:/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/custom_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/ws_sensor_combined/install/px4_ros_com/lib:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/px4_ros2_cpp -- -j16 -l16
+[2.965s] [  4%] Built target gtest_main
+[2.966s] [ 12%] Built target gtest
+[2.966s] [ 12%] Built target unit_utils
+[2.969s] [ 17%] Built target integration_utils
+[3.007s] [ 65%] Built target px4_ros2_cpp
+[3.047s] [ 95%] Built target integration_tests
+[3.047s] [100%] Built target px4_ros2_cpp_unit_tests
+[3.060s] Invoked command in '/home/niweiss/ws_sensor_combined/build/px4_ros2_cpp' returned '0': CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp:/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp:/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/custom_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/ws_sensor_combined/install/px4_ros_com/lib:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/px4_ros2_cpp -- -j16 -l16
+[3.063s] Invoking command in '/home/niweiss/ws_sensor_combined/build/px4_ros2_cpp': CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp:/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp:/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/custom_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/ws_sensor_combined/install/px4_ros_com/lib:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/px4_ros2_cpp
+[3.070s] -- Install configuration: ""
+[3.071s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/environment/library_path.sh
+[3.071s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/environment/library_path.dsv
+[3.072s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2
+[3.072s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/navigation
+[3.072s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/navigation/groups.dox
+[3.072s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/navigation/experimental
+[3.072s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/navigation/experimental/local_position_measurement_interface.hpp
+[3.073s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/navigation/experimental/navigation_interface_base.hpp
+[3.073s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/navigation/experimental/global_position_measurement_interface.hpp
+[3.073s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/vehicle_state
+[3.074s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/vehicle_state/home_position.hpp
+[3.074s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/vehicle_state/groups.dox
+[3.074s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/vehicle_state/vtol_status.hpp
+[3.074s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/vehicle_state/vehicle_status.hpp
+[3.074s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/vehicle_state/land_detected.hpp
+[3.074s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/vehicle_state/battery.hpp
+[3.074s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/common
+[3.075s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/common/requirement_flags.hpp
+[3.075s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/common/context.hpp
+[3.075s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/common/frame.hpp
+[3.075s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/common/setpoint_base.hpp
+[3.075s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/utils
+[3.075s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/utils/groups.dox
+[3.075s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/utils/subscription.hpp
+[3.075s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/utils/geometry.hpp
+[3.075s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/utils/frame_conversion.hpp
+[3.075s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/utils/geodesic.hpp
+[3.075s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/odometry
+[3.075s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/odometry/groups.dox
+[3.075s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/odometry/angular_velocity.hpp
+[3.075s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/odometry/attitude.hpp
+[3.075s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/odometry/local_position.hpp
+[3.075s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/odometry/global_position.hpp
+[3.075s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/components
+[3.076s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/components/mode_executor.hpp
+[3.076s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/components/message_compatibility_check.hpp
+[3.076s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/components/groups.dox
+[3.076s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/components/health_and_arming_checks.hpp
+[3.076s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/components/node_with_mode.hpp
+[3.076s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/components/events.hpp
+[3.076s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/components/overrides.hpp
+[3.076s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/components/mode.hpp
+[3.076s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/components/manual_control_input.hpp
+[3.076s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/components/wait_for_fmu.hpp
+[3.076s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/control
+[3.076s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/control/groups.dox
+[3.076s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/control/peripheral_actuators.hpp
+[3.077s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/control/setpoint_types
+[3.077s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/control/setpoint_types/groups.dox
+[3.077s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/control/setpoint_types/experimental
+[3.077s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/control/setpoint_types/experimental/rates.hpp
+[3.077s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/control/setpoint_types/experimental/attitude.hpp
+[3.077s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/control/setpoint_types/experimental/trajectory.hpp
+[3.078s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/control/setpoint_types/goto.hpp
+[3.078s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/include/px4_ros2/control/setpoint_types/direct_actuators.hpp
+[3.078s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib/libpx4_ros2_cpp.so
+[3.078s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/ament_index/resource_index/package_run_dependencies/px4_ros2_cpp
+[3.078s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/ament_index/resource_index/parent_prefix_path/px4_ros2_cpp
+[3.079s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/environment/ament_prefix_path.sh
+[3.079s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/environment/ament_prefix_path.dsv
+[3.080s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/environment/path.sh
+[3.080s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/environment/path.dsv
+[3.080s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/local_setup.bash
+[3.080s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/local_setup.sh
+[3.080s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/local_setup.zsh
+[3.081s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/local_setup.dsv
+[3.082s] -- Installing: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/package.dsv
+[3.082s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/ament_index/resource_index/packages/px4_ros2_cpp
+[3.082s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/cmake/px4_ros2_cppExport.cmake
+[3.083s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/cmake/px4_ros2_cppExport-noconfig.cmake
+[3.083s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/cmake/ament_cmake_export_targets-extras.cmake
+[3.083s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.083s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/cmake/px4_ros2_cppConfig.cmake
+[3.083s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/cmake/px4_ros2_cppConfig-version.cmake
+[3.084s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/share/px4_ros2_cpp/package.xml
+[3.084s] Invoked command in '/home/niweiss/ws_sensor_combined/build/px4_ros2_cpp' returned '0': CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp:/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp:/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/custom_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/ws_sensor_combined/install/px4_ros_com/lib:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/px4_ros2_cpp

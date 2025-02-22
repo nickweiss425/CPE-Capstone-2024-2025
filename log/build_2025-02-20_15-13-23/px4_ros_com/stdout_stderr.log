@@ -1,0 +1,46 @@
+[35m[1mConsolidate compiler generated dependencies of target offboard_launch[0m
+[ 11%] Built target offboard_control_srv
+[ 22%] Built target vehicle_gps_position_listener
+[ 33%] Built target flight_state_pub
+[ 44%] Built target frame_transforms
+[ 66%] Built target offboard_control
+[ 66%] Built target debug_vect_advertiser
+[ 77%] Built target sensor_combined_listener
+[ 77%] Built target ament_cmake_python_copy_px4_ros_com
+[ 88%] Built target offboard_paths
+[ 94%] [32mBuilding CXX object CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o[0m
+running egg_info
+writing px4_ros_com.egg-info/PKG-INFO
+writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+writing top-level names to px4_ros_com.egg-info/top_level.txt
+reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[ 94%] Built target ament_cmake_python_build_px4_ros_com_egg
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In lambda function:
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:161:70:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOffboardControl::handleSquarePathState(int, int, int, int)[m[K’
+  161 |                                                 [01;31m[KhandleSquarePathState(0, 0, -10, 10)[m[K;
+      |                                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:343:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid OffboardControl::handleSquarePathState()[m[K’
+  343 |         void [01;36m[KhandleSquarePathState[m[K(void){
+      |              [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:343:14:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 4 provided
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::handleSquarePathState()[m[K’:
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:348:83:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoint_z[m[K’ was not declared in this scope
+  348 |                         publish_trajectory_setpoint(cur_square_x_, cur_square_y_, [01;31m[Kwaypoint_z[m[K);
+      |                                                                                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:358:83:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoint_z[m[K’ was not declared in this scope
+  358 |                         publish_trajectory_setpoint(cur_square_x_, cur_square_y_, [01;31m[Kwaypoint_z[m[K);
+      |                                                                                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:368:83:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoint_z[m[K’ was not declared in this scope
+  368 |                         publish_trajectory_setpoint(cur_square_x_, cur_square_y_, [01;31m[Kwaypoint_z[m[K);
+      |                                                                                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:378:83:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoint_z[m[K’ was not declared in this scope
+  378 |                         publish_trajectory_setpoint(cur_square_x_, cur_square_y_, [01;31m[Kwaypoint_z[m[K);
+      |                                                                                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In member function ‘[01m[Kstd::string OffboardControl::flightStateToString(int)[m[K’:
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:507:43:[m[K [01;31m[Kerror: [m[K‘[01m[KHOLD[m[K’ is not a member of ‘[01m[KOffboardControl::FlightState[m[K’
+  507 |                         case FlightState::[01;31m[KHOLD[m[K:
+      |                                           [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/offboard_launch.dir/build.make:76: CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:312: CMakeFiles/offboard_launch.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

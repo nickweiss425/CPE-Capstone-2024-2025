@@ -1,0 +1,46 @@
+[0.113s] Invoking command in '/home/niweiss/ws_sensor_combined/build/px4_ros_com': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/custom_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/ws_sensor_combined/install/custom_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/px4_ros_com -- -j16 -l16
+[0.169s] [35m[1mConsolidate compiler generated dependencies of target offboard_launch[0m
+[0.190s] [  0%] Built target ament_cmake_python_copy_px4_ros_com
+[0.190s] [ 11%] Built target vehicle_gps_position_listener
+[0.191s] [ 22%] Built target frame_transforms
+[0.192s] [ 33%] Built target sensor_combined_listener
+[0.196s] [ 44%] Built target offboard_control_srv
+[0.198s] [ 55%] Built target offboard_control
+[0.198s] [ 61%] [32mBuilding CXX object CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o[0m
+[0.199s] [ 72%] Built target flight_state_pub
+[0.204s] [ 83%] Built target offboard_paths
+[0.204s] [ 94%] Built target debug_vect_advertiser
+[0.419s] running egg_info
+[0.435s] writing px4_ros_com.egg-info/PKG-INFO
+[0.437s] writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+[0.442s] writing top-level names to px4_ros_com.egg-info/top_level.txt
+[0.493s] reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.494s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.548s] [ 94%] Built target ament_cmake_python_build_px4_ros_com_egg
+[2.473s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In lambda function:
+[2.473s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:132:40:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KWAYPOINT_HOLD[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[2.473s]   132 |                                 switch [01;35m[K([m[Kcurrent_state_) {
+[2.473s]       |                                        [01;35m[K^[m[K
+[2.473s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:132:40:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KHOLD[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[2.479s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::handleTakeoffState(float)[m[K’:
+[2.479s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:278:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinitial_altitude[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.479s]   278 |         void handleTakeoffState([01;35m[Kfloat initial_altitude[m[K)
+[2.479s]       |                                 [01;35m[K~~~~~~^~~~~~~~~~~~~~~~[m[K
+[2.479s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::handleSquarePathState(float, float, float, float)[m[K’:
+[2.479s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:341:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kwaypoint_x[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.479s]   341 |         void handleSquarePathState([01;35m[Kfloat waypoint_x[m[K, float waypoint_y, float waypoint_z, float square_length){
+[2.480s]       |                                    [01;35m[K~~~~~~^~~~~~~~~~[m[K
+[2.480s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:341:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kwaypoint_y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.480s]   341 |         void handleSquarePathState(float waypoint_x, [01;35m[Kfloat waypoint_y[m[K, float waypoint_z, float square_length){
+[2.480s]       |                                                      [01;35m[K~~~~~~^~~~~~~~~~[m[K
+[2.480s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:341:96:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksquare_length[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.480s]   341 |         void handleSquarePathState(float waypoint_x, float waypoint_y, float waypoint_z, [01;35m[Kfloat square_length[m[K){
+[2.480s]       |                                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~~[m[K
+[2.483s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In member function ‘[01m[Kstd::string OffboardControl::flightStateToString(int)[m[K’:
+[2.483s] [01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:511:43:[m[K [01;31m[Kerror: [m[K‘[01m[KEND_FLIGHT[m[K’ is not a member of ‘[01m[KOffboardControl::FlightState[m[K’
+[2.483s]   511 |                         case FlightState::[01;31m[KEND_FLIGHT[m[K:
+[2.483s]       |                                           [01;31m[K^~~~~~~~~~[m[K
+[6.830s] gmake[2]: *** [CMakeFiles/offboard_launch.dir/build.make:76: CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o] Error 1
+[6.831s] gmake[1]: *** [CMakeFiles/Makefile2:312: CMakeFiles/offboard_launch.dir/all] Error 2
+[6.831s] gmake: *** [Makefile:146: all] Error 2
+[6.832s] Invoked command in '/home/niweiss/ws_sensor_combined/build/px4_ros_com' returned '2': AMENT_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/custom_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/ws_sensor_combined/install/custom_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/px4_ros_com -- -j16 -l16

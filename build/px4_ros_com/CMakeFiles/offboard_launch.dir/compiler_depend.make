@@ -759,8 +759,18 @@ CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o: /hom
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__type_support.hpp
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__type_support.hpp \
+  /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/flight_command.hpp \
+  /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__struct.hpp \
+  /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__builder.hpp \
+  /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__traits.hpp \
+  /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__type_support.hpp \
+  /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
+
+/home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__struct.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__type_support.hpp:
 
@@ -801,6 +811,8 @@ CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o: /hom
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp:
+
+/home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__traits.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp:
 
@@ -1083,6 +1095,8 @@ CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o: /hom
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
 
 /usr/include/c++/11/ios:
+
+/home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__type_support.hpp:
 
 /usr/include/c++/11/utility:
 
@@ -1754,6 +1768,8 @@ CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o: /hom
 
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gps__struct.hpp:
 
+/home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/flight_command.hpp:
+
 /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gps__builder.hpp:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/incompatible_qos.h:
@@ -1923,6 +1939,8 @@ CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o: /hom
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface_traits.hpp:
 
 /opt/ros/humble/include/rcl/rcl/guard_condition.h:
+
+/home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__builder.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
 

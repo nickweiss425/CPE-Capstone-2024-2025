@@ -1,0 +1,144 @@
+[0.020s] Invoking command in '/home/niweiss/ws_sensor_combined/build/custom_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/custom_msgs -- -j16 -l16
+[0.091s] [  3%] Built target custom_msgs__cpp
+[0.093s] [ 12%] Built target custom_msgs__rosidl_generator_c
+[0.105s] [ 12%] Built target ament_cmake_python_copy_custom_msgs
+[0.140s] [ 22%] Built target custom_msgs__rosidl_typesupport_cpp
+[0.141s] [ 32%] Built target custom_msgs__rosidl_typesupport_introspection_cpp
+[0.141s] [ 51%] Built target custom_msgs__rosidl_typesupport_fastrtps_c
+[0.141s] [ 51%] Built target custom_msgs__rosidl_typesupport_c
+[0.141s] [ 70%] Built target custom_msgs__rosidl_typesupport_introspection_c
+[0.141s] [ 70%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp
+[0.165s] [ 70%] Built target custom_msgs
+[0.199s] [ 74%] Built target custom_msgs__py
+[0.229s] [ 80%] Built target custom_msgs__rosidl_generator_py
+[0.261s] [ 87%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.261s] [100%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext
+[0.262s] [100%] Built target custom_msgs__rosidl_typesupport_c__pyext
+[0.573s] running egg_info
+[0.598s] writing custom_msgs.egg-info/PKG-INFO
+[0.600s] writing dependency_links to custom_msgs.egg-info/dependency_links.txt
+[0.601s] writing top-level names to custom_msgs.egg-info/top_level.txt
+[0.679s] reading manifest file 'custom_msgs.egg-info/SOURCES.txt'
+[0.680s] writing manifest file 'custom_msgs.egg-info/SOURCES.txt'
+[0.733s] [100%] Built target ament_cmake_python_build_custom_msgs_egg
+[0.757s] Invoked command in '/home/niweiss/ws_sensor_combined/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/niweiss/ws_sensor_combined/build/custom_msgs -- -j16 -l16
+[0.768s] Invoking command in '/home/niweiss/ws_sensor_combined/build/custom_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/custom_msgs
+[0.794s] -- Install configuration: ""
+[0.795s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs
+[0.796s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs
+[0.796s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[0.797s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.797s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/flight_command.h
+[0.797s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[0.797s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__functions.h
+[0.798s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__type_support.h
+[0.798s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__functions.c
+[0.798s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__struct.h
+[0.798s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/library_path.sh
+[0.798s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/library_path.dsv
+[0.799s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so
+[0.799s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs
+[0.803s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[0.803s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.804s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[0.805s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__rosidl_typesupport_fastrtps_c.h
+[0.805s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so
+[0.805s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs
+[0.806s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[0.806s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[0.806s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__rosidl_typesupport_introspection_c.h
+[0.806s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__type_support.c
+[0.807s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.807s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so
+[0.807s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so
+[0.807s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs
+[0.808s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[0.808s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.808s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/flight_command.hpp
+[0.808s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[0.809s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__traits.hpp
+[0.809s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__struct.hpp
+[0.809s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__builder.hpp
+[0.809s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__type_support.hpp
+[0.810s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs
+[0.810s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[0.810s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.810s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[0.811s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__rosidl_typesupport_fastrtps_cpp.hpp
+[0.811s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/dds_fastrtps
+[0.811s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.811s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs
+[0.811s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[0.811s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[0.811s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__rosidl_typesupport_introspection_cpp.hpp
+[0.811s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__type_support.cpp
+[0.811s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so
+[0.811s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so
+[0.811s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh
+[0.811s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv
+[0.811s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info
+[0.811s] -- Installing: /home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[0.811s] -- Installing: /home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[0.812s] -- Installing: /home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.812s] -- Installing: /home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.812s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs
+[0.812s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.812s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg
+[0.812s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_flight_command.py
+[0.812s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py
+[0.812s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_flight_command_s.c
+[0.812s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[0.812s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.812s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py
+[0.812s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c
+[0.812s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.813s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.813s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/libcustom_msgs__rosidl_generator_py.so
+[0.881s] Listing '/home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs'...
+[0.882s] Listing '/home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg'...
+[0.892s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.893s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.893s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.894s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so
+[0.895s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/msg/FlightCommand.idl
+[0.895s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/msg/FlightCommand.msg
+[0.896s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs
+[0.896s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs
+[0.897s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh
+[0.898s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv
+[0.900s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/path.sh
+[0.902s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/path.dsv
+[0.902s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/local_setup.bash
+[0.903s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/local_setup.sh
+[0.903s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/local_setup.zsh
+[0.903s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/local_setup.dsv
+[0.903s] -- Installing: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/package.dsv
+[0.903s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs
+[0.903s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake
+[0.904s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-noconfig.cmake
+[0.905s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[0.906s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.907s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.907s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.908s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake
+[0.909s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[0.909s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake
+[0.911s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.912s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.914s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.919s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.919s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake
+[0.920s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.920s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport.cmake
+[0.921s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport-noconfig.cmake
+[0.921s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake
+[0.921s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.922s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.922s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.922s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.923s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.923s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.925s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake
+[0.926s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake
+[0.926s] -- Up-to-date: /home/niweiss/ws_sensor_combined/install/custom_msgs/share/custom_msgs/package.xml
+[0.926s] Invoked command in '/home/niweiss/ws_sensor_combined/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/niweiss/ws_sensor_combined/build/custom_msgs

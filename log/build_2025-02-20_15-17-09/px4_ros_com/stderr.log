@@ -1,0 +1,13 @@
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::handleSquarePathState()[m[K’:
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:370:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Ksteps_taken_[m[K’
+  370 |                         [01;31m[Ksteps_taken_[m[K++;
+      |                         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:389:99:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+  389 |                         publish_trajectory_setpoint(cur_square_x_, cur_square_y_, target_altitude_[01;31m[K;[m[K
+      |                                                                                                   [01;31m[K^[m[K
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:389:52:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  389 |                         publish_trajectory_setpoint[01;36m[K([m[Kcur_square_x_, cur_square_y_, target_altitude_;
+      |                                                    [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/offboard_launch.dir/build.make:76: CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:312: CMakeFiles/offboard_launch.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

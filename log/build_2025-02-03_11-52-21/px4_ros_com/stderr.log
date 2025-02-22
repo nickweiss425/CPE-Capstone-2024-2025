@@ -1,0 +1,23 @@
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In constructor ‘[01m[KOffboardControl::OffboardControl(float)[m[K’:
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:106:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kflight_command_subscriber_[m[K’ was not declared in this scope; did you mean ‘[01m[Kflight_command_subscriber[m[K’?
+  106 |                 [01;31m[Kflight_command_subscriber_[m[K = this->create_subscription<FlightCommand>(
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                 [32m[Kflight_command_subscriber[m[K
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In lambda function:
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:130:40:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KWAYPOINT_HOLD[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+  130 |                                 switch [01;35m[K([m[Kcurrent_state_) {
+      |                                        [01;35m[K^[m[K
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:130:40:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KHOLD[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:130:40:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KSQUARE_WAYPOINT[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:130:40:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KSQUARE_PATH[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::handleTakeoffState(float)[m[K’:
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:251:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinitial_altitude[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  251 |         void handleTakeoffState([01;35m[Kfloat initial_altitude[m[K)
+      |                                 [01;35m[K~~~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::handleLandingState(float)[m[K’:
+[01m[K/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:260:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinitial_altitude[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  260 |         void handleLandingState([01;35m[Kfloat initial_altitude[m[K)
+      |                                 [01;35m[K~~~~~~^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/offboard_launch.dir/build.make:76: CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:312: CMakeFiles/offboard_launch.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
