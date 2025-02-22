@@ -222,8 +222,10 @@ public:
         hoverControlButton3->setText(QCoreApplication::translate("MainWindow", "Figure-8", nullptr));
         hoverControlButton4->setText(QCoreApplication::translate("MainWindow", "Square", nullptr));
         confirmHoverButton->setText(QCoreApplication::translate("MainWindow", "\342\234\224", nullptr));
+        confirmHoverButton->setStyleSheet(QString::fromUtf8("background-color: rgb(36, 182, 36);"));
         startFlightButton->setText(QCoreApplication::translate("MainWindow", "Start Flight", nullptr));
         toggleRecordingButton->setText(QCoreApplication::translate("MainWindow", "\342\217\272", nullptr));
+        toggleRecordingButton->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 0, 0);"));
         stopFlightButton->setText(QCoreApplication::translate("MainWindow", "Stop Flight", nullptr));
         toggleRecordingButton->setMaximumHeight(startFlightButton->sizeHint().height());
         sensorData->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
