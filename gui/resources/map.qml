@@ -1,5 +1,6 @@
 import QtQuick 2.2
 import QtQuick.Controls 2.2
+import QtQuick.Window 2.2
 import QtLocation 5.15
 import QtPositioning 5.15
 
@@ -8,6 +9,7 @@ Rectangle {
     visible: true
     width: 800
     height: 600
+    focus: true
 
     signal waypointAdded(double latitude, double longitude)
     signal waypointSelected(int index)
@@ -17,6 +19,7 @@ Rectangle {
     property var dronePosition: QtPositioning.coordinate(0, 0)
     property var hoveredMarker: null
     property var markers: []
+    property var numMarkers: 0
     property var pathCoordinates: []
 
     function updateDronePosition(latitude, longitude) {
@@ -108,6 +111,34 @@ Rectangle {
         }
     }
 
+    // deletes the last marker when backspace is pressed
+    Keys.onPressed: {
+        if (event.key === Qt.Key_Backspace) {
+            if (numMarkers > 0) {
+                var lastIndex = markers.length - 1
+                map.removeMapItem(markers[lastIndex].item)
+                markers.pop()
+                pathCoordinates.pop()
+                pathLoader.item.path = pathCoordinates
+                numMarkers--
+                waypointRemoved(lastIndex)
+            }
+        }
+    }
+
+    // clears all markers when delete is pressed
+    Keys.onDeletePressed: {
+        while (markers.length > 0) {
+            map.removeMapItem(markers[0].item)
+            waypointRemoved(0)
+            markers.shift()
+            pathCoordinates.shift()
+        }
+        pathLoader.item.path = pathCoordinates
+        numMarkers = 0
+        root.hoveredMarker = null
+    }
+
     // Component for the path
     Component {
         id: pathComponent
@@ -137,7 +168,7 @@ Rectangle {
             }
         }
         center: currentLocation
-        zoomLevel: 12
+        zoomLevel: 1
 
         MouseArea {
             anchors.fill: parent
@@ -225,6 +256,12 @@ Rectangle {
     }
 
     function addMarker(coordinate) {
+
+        if (markers.length >= 20) {
+            console.log("Maximum number of waypoints reached, 20 allowed")
+            return
+        }
+
         var marker = Qt.createQmlObject(
             'import QtLocation 5.15; MapQuickItem { }',
             map,
@@ -249,6 +286,7 @@ Rectangle {
         
         pathCoordinates.push(coordinate)
         pathLoader.item.path = pathCoordinates
+        numMarkers++
         waypointAdded(coordinate.latitude, coordinate.longitude)
     }
 
@@ -286,7 +324,7 @@ Rectangle {
                 pathCoordinates.splice(i, 1)
                 pathLoader.item.path = pathCoordinates
                 root.hoveredMarker = null  // Clear hover state
-
+                numMarkers--
                 waypointRemoved(i)
                 break
             }
