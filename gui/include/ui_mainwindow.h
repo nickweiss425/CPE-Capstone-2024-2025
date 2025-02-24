@@ -60,12 +60,15 @@ public:
     QVBoxLayout *verticalLayoutVideo;
     VideoStreamWidget *videoWidget;
     WaypointManager *waypointManager;
+    QLabel *radiusLabel;
+    QLabel *altitudeLabel;
+    QLabel *durationLabel;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(932, 600);
+        MainWindow->resize(1150, 600);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         verticalLayout = new QVBoxLayout(centralwidget);
@@ -92,7 +95,6 @@ public:
 
         coordinateLayout->addWidget(longitudeBox);
 
-
         gridLayoutMap->addLayout(coordinateLayout, 0, 1, 1, 1);
 
         altitudeLayout = new QHBoxLayout();
@@ -101,15 +103,24 @@ public:
         radiusBox = new QLineEdit(tabMap);
         radiusBox->setObjectName(QString::fromUtf8("radiusBox"));
 
+        radiusLabel = new QLabel("Radius:", tabMap);
+        altitudeLayout->addWidget(radiusLabel);
+
         altitudeLayout->addWidget(radiusBox);
 
         altitudeBox = new QLineEdit(tabMap);
         altitudeBox->setObjectName(QString::fromUtf8("altitudeBox"));
 
+        altitudeLabel = new QLabel("Altitude:", tabMap);
+        altitudeLayout->addWidget(altitudeLabel);
+
         altitudeLayout->addWidget(altitudeBox);
 
         durationBox = new QLineEdit(tabMap);
         durationBox->setObjectName(QString::fromUtf8("durationBox"));
+
+        durationLabel = new QLabel("Duration:", tabMap);
+        altitudeLayout->addWidget(durationLabel);
 
         altitudeLayout->addWidget(durationBox);
 
@@ -205,7 +216,6 @@ public:
 
         tabWidget->setCurrentIndex(0);
 
-
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
 
@@ -214,9 +224,9 @@ public:
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "NGCP Flight Control", nullptr));
         latitudeBox->setPlaceholderText(QCoreApplication::translate("MainWindow", "Latitude", nullptr));
         longitudeBox->setPlaceholderText(QCoreApplication::translate("MainWindow", "Longitude", nullptr));
-        radiusBox->setPlaceholderText(QCoreApplication::translate("MainWindow", "Radius", nullptr));
-        altitudeBox->setPlaceholderText(QCoreApplication::translate("MainWindow", "Altitude", nullptr));
-        durationBox->setPlaceholderText(QCoreApplication::translate("MainWindow", "Duration", nullptr));
+        radiusBox->setPlaceholderText(QCoreApplication::translate("MainWindow", "meters", nullptr));
+        altitudeBox->setPlaceholderText(QCoreApplication::translate("MainWindow", "meters", nullptr));
+        durationBox->setPlaceholderText(QCoreApplication::translate("MainWindow", "seconds", nullptr));
         hoverControlButton1->setText(QCoreApplication::translate("MainWindow", "Loiter", nullptr));
         hoverControlButton2->setText(QCoreApplication::translate("MainWindow", "Circle", nullptr));
         hoverControlButton3->setText(QCoreApplication::translate("MainWindow", "Figure-8", nullptr));
