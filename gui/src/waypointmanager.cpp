@@ -106,6 +106,7 @@ void WaypointManager::updateWaypointAttributes(double radius, double altitude, d
     m_waypoints[m_selectedIndex].altitude = altitude;
     m_waypoints[m_selectedIndex].duration = duration;
     m_waypoints[m_selectedIndex].type = static_cast<WaypointType>(type);
+    emit updateWaypointVisual(m_selectedIndex, type);
 }
 
 /**

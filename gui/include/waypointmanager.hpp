@@ -46,7 +46,7 @@ public slots:
 signals:
     void getWaypointAttributes(double radius, double altitude, double duration, int type); // Send the current attributes of a waypoint to the dialog
     void updateDronePosition(double latitude, double longitude); // Update the drone's position on the map
-
+    void updateWaypointVisual(int index, int type); // Update the visual representation of a waypoint on the map
 private:
     int m_selectedIndex = -1;
     QVector<Waypoint> m_waypoints;

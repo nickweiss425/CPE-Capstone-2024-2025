@@ -11,6 +11,7 @@ Rectangle {
     height: 600
     focus: true
 
+    // Signals to handle map -> waypointManager functions
     signal waypointAdded(double latitude, double longitude)
     signal waypointSelected(int index)
     signal waypointRemoved(int index)
@@ -22,13 +23,14 @@ Rectangle {
     property var numMarkers: 0
     property var pathCoordinates: []
 
+    // Based on incoming coordinates, change the location of the drone and adjust the pathline and rotation
     function updateDronePosition(latitude, longitude) {
-        console.log("Updating drone position:", latitude, longitude)
         dronePosition = QtPositioning.coordinate(latitude, longitude)
         updatePath()
         updateDroneRotation()
     }
 
+    // Make the drone icon point towards the first coordinate
     function updateDroneRotation() {
         if (markers.length > 0) {
             var target = markers[0].coordinate
@@ -36,7 +38,6 @@ Rectangle {
             var dy = target.latitude - dronePosition.latitude
             // Convert to degrees, add 90 to account for image orientation, and negate to match map orientation
             var angle = -(Math.atan2(dy, dx) * 180 / Math.PI) + 90
-            console.log("Updating drone rotation to:", angle)
             droneIcon.rotation = angle
         }
     }
@@ -44,62 +45,189 @@ Rectangle {
     // Component for the marker
     Component {
         id: markerComponent
-        Rectangle {
-            id: markerRect
+        Item {
+            id: markerWrapper
             width: 20
             height: 20
-            radius: width / 2
-            color: "red"
-            border.color: "black"
-            border.width: 1
-            scale: 1.0
             property int waypointIndex: -1
             property bool selected: false
+            property int markerType: 1 // 1: small circle, 2: big circle, 3: figure eight, 4: square
+            property bool set: false // true: green, false: red
+            
+            // Small Circle
+            Rectangle {
+                id: smallCircle
+                anchors.fill: parent
+                radius: width / 2
+                color: markerWrapper.set ? "green" : "red" // changes color based on "set" state
+                border.color: "black"
+                border.width: 1
+                visible: markerWrapper.markerType === 1
+                scale: markerWrapper.scale
+            }
+            
+            // Big Circle
+            Rectangle {
+                id: bigCircle
+                width: 30
+                height: 30
+                anchors.centerIn: parent
+                radius: width / 2
+                color: markerWrapper.set ? "green" : "red"
+                border.color: "black"
+                border.width: 1
+                visible: markerWrapper.markerType === 2
+                scale: markerWrapper.scale
+            }
+            
+            // Figure Eight
+            Canvas {
+                id: figureEight
+                width: 26
+                height: 26
+                anchors.centerIn: parent
+                visible: markerWrapper.markerType === 3
+                scale: markerWrapper.scale
+                
+                // Force redraw when set property changes
+                onVisibleChanged: requestPaint()
+                Component.onCompleted: requestPaint()
+                
+                // Force redraw when 'set' changes
+                Connections {
+                    target: markerWrapper
+                    function onSetChanged() {
+                        figureEight.requestPaint()
+                    }
+                }
+                
+                onPaint: {
+                    var ctx = getContext("2d");
+                    ctx.reset();
+                    
+                    // Fill color based on set property
+                    ctx.fillStyle = markerWrapper.set ? "green" : "red";
+                    ctx.strokeStyle = "black";
+                    ctx.lineWidth = 1;
+                    
+                    // Draw figure eight with more padding to avoid clipping
+                    var padding = 4;
+                    ctx.beginPath();
+                    ctx.arc(width/2, (height-padding)/3 + padding/2, (width-padding)/3, 0, Math.PI * 2, false);
+                    ctx.arc(width/2, (height-padding)*2/3 + padding/2, (width-padding)/3, 0, Math.PI * 2, false);
+                    ctx.fill();
+                    ctx.stroke();
+                }
+            }
+            
+            // Square
+            Rectangle {
+                id: square
+                width: 20
+                height: 20
+                anchors.centerIn: parent
+                color: markerWrapper.set ? "green" : "red"
+                border.color: "black"
+                border.width: 1
+                visible: markerWrapper.markerType === 4
+                scale: markerWrapper.scale
+            }
+            
+            scale: 1.0
             transformOrigin: Item.Center  // Ensure scaling is centered
-
+            
             // Smooth animations for all transitions
             Behavior on scale { NumberAnimation { duration: 150 } }
-            Behavior on border.width { NumberAnimation { duration: 150 } }
-            Behavior on border.color { ColorAnimation { duration: 150 } }
-
+            
             states: [
                 State {
                     name: "hovered"
-                    when: root.hoveredMarker === parent && !selected
+                    when: root.hoveredMarker === parent && !markerWrapper.selected
                     PropertyChanges {
-                        target: markerRect
-                        scale: 1.2
-                        border.width: 3
+                        target: markerWrapper
+                        scale: 1.1
+                    }
+                    PropertyChanges {
+                        target: smallCircle
+                        border.width: 2
+                    }
+                    PropertyChanges {
+                        target: bigCircle
+                        border.width: 2
+                    }
+                    PropertyChanges {
+                        target: square
+                        border.width: 2
                     }
                 },
                 State {
                     name: "selected"
-                    when: selected
+                    when: markerWrapper.selected
                     PropertyChanges {
-                        target: markerRect
-                        scale: 1.6
-                        border.width: 2.4
+                        target: markerWrapper
+                        scale: 1.2
+                    }
+                    PropertyChanges {
+                        target: smallCircle
+                        border.width: 2
+                        border.color: "black"
+                    }
+                    PropertyChanges {
+                        target: bigCircle
+                        border.width: 2
+                        border.color: "black"
+                    }
+                    PropertyChanges {
+                        target: square
+                        border.width: 2
                         border.color: "black"
                     }
                 },
                 State {
                     name: ""
-                    when: !selected && root.hoveredMarker !== parent
+                    when: !markerWrapper.selected && root.hoveredMarker !== parent
                     PropertyChanges {
-                        target: markerRect
+                        target: markerWrapper
                         scale: 1.0
+                    }
+                    PropertyChanges {
+                        target: smallCircle
+                        border.width: 1
+                        border.color: "black"
+                    }
+                    PropertyChanges {
+                        target: bigCircle
+                        border.width: 1
+                        border.color: "black"
+                    }
+                    PropertyChanges {
+                        target: square
                         border.width: 1
                         border.color: "black"
                     }
                 }
             ]
-
             transitions: [
                 Transition {
                     from: "selected"
                     to: ""
                     NumberAnimation { 
-                        properties: "scale,border.width" 
+                        properties: "scale" 
+                        duration: 150 
+                    }
+                    NumberAnimation { 
+                        target: smallCircle
+                        properties: "border.width" 
+                        duration: 150 
+                    }
+                    NumberAnimation { 
+                        target: bigCircle
+                        properties: "border.width" 
+                        duration: 150 
+                    }
+                    NumberAnimation { 
+                        target: square
+                        properties: "border.width" 
                         duration: 150 
                     }
                     ColorAnimation { 
@@ -217,7 +345,7 @@ Rectangle {
                 height: parent.height
                 smooth: true
                 anchors.centerIn: parent
-                rotation: 0  // We'll update this programmatically
+                rotation: 0
             }
         }
     }
@@ -246,15 +374,17 @@ Rectangle {
         path: []
     }
 
+    // Update the path from drone icon to first waypoint
     function updatePath() {
         if (markers.length > 0) {
             droneToFirstPoint.path = [dronePosition, markers[0].coordinate]
-            map.addMapItem(droneToFirstPoint)  // Ensure the line is added to the map
+            map.addMapItem(droneToFirstPoint)
         } else {
             droneToFirstPoint.path = []
         }
     }
 
+    // Create new marker at given coordinate
     function addMarker(coordinate) {
 
         if (markers.length >= 20) {
@@ -290,7 +420,6 @@ Rectangle {
         waypointAdded(coordinate.latitude, coordinate.longitude)
     }
 
-    // Function to update hovered marker
     function updateHoveredMarker(mousePoint) {
         var foundHoveredMarker = null
         
@@ -310,6 +439,7 @@ Rectangle {
         root.hoveredMarker = foundHoveredMarker
     }
 
+    // Function to remove marker at given mouse location, if one exists there
     function removeMarkerAtScreenPosition(mousePoint) {
         for (var i = 0; i < markers.length; i++) {
             var marker = markers[i].item
@@ -331,6 +461,7 @@ Rectangle {
         }
     }
 
+    // Function to select hovered marker based on right click location
     function selectMarkerAtScreenPosition(mousePoint) {
         var found = false
         var selectedIndex = -1
@@ -367,6 +498,15 @@ Rectangle {
                 pathLoader.item.path = pathCoordinates
                 break
             }
+        }
+    }
+
+    // Set incoming, new waypoint attributes to their shape and color them green
+    function setWaypointData(index, shapeType) {
+        if (index >= 0 && index < markers.length) {
+            var markerItem = markers[index].item.sourceItem
+            markerItem.set = true
+            markerItem.markerType = shapeType
         }
     }
 }

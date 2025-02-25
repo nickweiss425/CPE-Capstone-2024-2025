@@ -80,6 +80,9 @@ void MainWindow::setupConnections() {
         connect(ui->waypointManager, &WaypointManager::updateDronePosition, this, [this](double lat, double lon) {
             QMetaObject::invokeMethod(ui->mapView->rootObject(), "updateDronePosition", Q_ARG(QVariant, lat), Q_ARG(QVariant, lon));
         });
+        connect(ui->waypointManager, &WaypointManager::updateWaypointVisual, this, [this](int index, int type) {
+            QMetaObject::invokeMethod(ui->mapView->rootObject(), "setWaypointData", Q_ARG(QVariant, index), Q_ARG(QVariant, type));
+        });
     }
 
     initializeButtons();
