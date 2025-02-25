@@ -6,7 +6,7 @@ void setup_dark_mode(QApplication &app);
 // Program entry point
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
-    app.setWindowIcon(QIcon("qrc:/images/icon.png"));
+    app.setWindowIcon(QIcon(":/icon.ico"));
 
     // Check if the user wants to use light mode
     QString lightMode = "--light-mode";
