@@ -214,6 +214,10 @@ public:
 
         gridLayoutMap->addWidget(mapView, 0, 0, 2, 1);
 
+        // Change fullscreen scaling to maintain reasonable widget sizes (75% map, 25% sensor data)
+        gridLayoutMap->setColumnStretch(0, 3);
+        gridLayoutMap->setColumnStretch(1, 1);
+
         // Add the tabs to the tab widget
         tabWidget->addTab(tabMap, QString());
         tabVideo = new QWidget();
