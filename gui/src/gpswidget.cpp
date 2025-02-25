@@ -29,12 +29,19 @@ GPSWidget::~GPSWidget() {
 }
 
 void GPSWidget::updateLocation(const double &longitude, const double &latitude, const double &altitude) {
-    longitudeBox_->setText(QString::number(longitude));
-    latitudeBox_->setText(QString::number(latitude));
 
-    QString longitudeText = QString("Longitude: %1\n") .arg(longitude);
-    QString latitudeText = QString("Latitude: %1\n") .arg(latitude);
-    QString altitudeText = QString("Altitude: %1\n") .arg(altitude);
+    QString longitudeText = QString("%1%2\n")
+        .arg(qAbs(longitude))
+        .arg(longitude >= 0 ? "° E" : "° W");
+
+    QString latitudeText = QString("%1%2\n")
+        .arg(qAbs(latitude))
+        .arg(latitude >= 0 ? "° N" : "° S");
+
+    longitudeBox_->setText(longitudeText);
+    latitudeBox_->setText(latitudeText);
+
+    QString altitudeText = QString("Altitude: %1\n").arg(altitude);
 
     emit coordinatesUpdated(longitude, latitude);
 
