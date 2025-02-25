@@ -1,5 +1,6 @@
 #include "mainwindow.hpp"
 #include "ui_mainwindow.h"
+#include "flightstates.hpp"
 
 #include <QMessageBox>
 #include <QQuickWidget>
@@ -16,8 +17,9 @@ MainWindow::MainWindow(QWidget *parent)
     // Set up the IMU data stream
     imuWidget = new IMUWidget(ui->sensorData);
 
-    // Set up the flight state publisher
+    // Set up the flight state publisher/subscriber
     statePublisher = new StatePublisher();
+    stateSubscriber = new StateSubscriber();
 
     // Set up the video widget in the videoView
     ui->videoWidget->setObjectName("videoWidget");
@@ -45,6 +47,7 @@ void MainWindow::setupConnections() {
     connect(ui->confirmHoverButton, &QPushButton::clicked, this, &MainWindow::handleWaypointUpdate);
     connect(ui->waypointManager, &WaypointManager::getWaypointAttributes, this, &MainWindow::updateWaypointAttributes);
     connect(this, &MainWindow::setWaypointAttributes, ui->waypointManager, &WaypointManager::updateWaypointAttributes);
+    connect(stateSubscriber, &StateSubscriber::stateReceived, ui->waypointManager, &WaypointManager::handleDroneStateReceive);
 
     QObject *map = ui->mapView->rootObject();
     if (map) {
@@ -82,7 +85,7 @@ void MainWindow::unlockButtons() {
 }
 
 void MainWindow::startFlight() {
-    statePublisher->publish_state(TAKEOFF);
+    statePublisher->publish_state(flight_states::FlightState::TAKEOFF);
     unlockButtons();
 }
 
@@ -100,7 +103,7 @@ void MainWindow::toggleRecording() {
 }
 
 void MainWindow::stopFlight() {
-    statePublisher->publish_state(LANDING);
+    statePublisher->publish_state(flight_states::FlightState::LANDED);
     ui->toggleRecordingButton->setText(QCoreApplication::translate("MainWindow", "\342\217\272", nullptr));
     auto dataLogger_ = DataLogger::getInstance();
     if (dataLogger_->getRecording()) {

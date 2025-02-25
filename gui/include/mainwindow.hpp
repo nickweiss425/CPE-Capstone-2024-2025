@@ -5,6 +5,7 @@
 #include "gpswidget.hpp"
 #include "imuwidget.hpp"
 #include "flightstatepublisher.hpp"
+#include "flightstatesubscriber.hpp"
 #include "datalogger.hpp"
 #include "videowidget.hpp"
 #include "ROSThread.h"
@@ -25,6 +26,7 @@ public:
 private:
     Ui::MainWindow *ui;
     StatePublisher *statePublisher; // Publisher for flight state
+    StateSubscriber *stateSubscriber; // Subscriber for flight state
     GPSWidget *gpsWidget;       // GPS widget for displaying coordinates
     IMUWidget *imuWidget;       // IMU widget for displaying imu data
 

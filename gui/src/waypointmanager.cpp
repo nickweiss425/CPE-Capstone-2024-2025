@@ -57,3 +57,11 @@ void WaypointManager::updateWaypointAttributes(double radius, double altitude, d
 void WaypointManager::getDronePosition(double latitude, double longitude) {
     emit updateDronePosition(latitude, longitude);
 }
+
+void WaypointManager::handleDroneStateReceive(const std_msgs::msg::Int32 &msg) {
+    const FlightState state = static_cast<FlightState>(msg.data);
+    switch (state) {
+        default:
+            break;
+    }
+}

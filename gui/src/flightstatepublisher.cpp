@@ -12,7 +12,7 @@ StatePublisher::StatePublisher() : Node("state_publisher")
 void StatePublisher::publish_state(const FlightState &state)
 {
     std_msgs::msg::Int32 msg;
-    msg.data = state; // Set the state value
+    msg.data = to_underlying(state); // Set the state value
     
     // Log the message to see what is being sent
     RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", msg.data);

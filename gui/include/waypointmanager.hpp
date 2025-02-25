@@ -4,6 +4,8 @@
 #include <QGeoCoordinate>
 #include <QVariant>
 #include <QVector>
+#include <std_msgs/msg/int32.hpp>
+#include "flightstates.hpp"
 
 enum WaypointType : int {
     UNINITIALIZED,
@@ -22,7 +24,7 @@ struct Waypoint {
     WaypointType type;
 };
 
-class WaypointManager : public QObject
+class WaypointManager : public QObject, flight_states
 {
     Q_OBJECT
 
@@ -40,6 +42,7 @@ public slots:
     void onWaypointRemoved(int index);
     void updateWaypointAttributes(double radius, double altitude, double duration, int type);
     void getDronePosition(double latitude, double longitude);
+    void handleDroneStateReceive(const std_msgs::msg::Int32 &msg);
 signals:
     void getWaypointAttributes(double radius, double altitude, double duration, int type);
     void updateDronePosition(double latitude, double longitude);
