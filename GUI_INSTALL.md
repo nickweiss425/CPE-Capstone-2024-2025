@@ -12,6 +12,7 @@ sudo apt install qtlocation5-dev\
 sudo apt install qtpositioning5-dev\
 sudo apt install qtmultimedia5-dev\
 sudo apt install x11-xserver-utils\
+sudo apt insall qml-module-qtquick-window2\
 \
 Windows:\
 choco install vcxsrv (elevated command prompt)\

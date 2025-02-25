@@ -12,6 +12,7 @@ find_package(rclcpp REQUIRED)
 find_package(ament_cmake REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(cv_bridge REQUIRED)
+find_package(OpenCV REQUIRED)
 find_package(Qt5 REQUIRED COMPONENTS Core Quick QuickControls2 Widgets QuickWidgets Location Positioning QmlImportScanner Multimedia MultimediaWidgets)
 
 # Add the main.cpp file
@@ -23,6 +24,9 @@ set(SOURCES
     src/ROSThread.cpp
     src/gpswidget.cpp
     src/gpssubscriber.cpp
+    src/imuwidget.cpp
+    src/imusubscriber.cpp
+    src/flightstatesubscriber.cpp
     src/flightstatepublisher.cpp
     src/datalogger.cpp
     src/waypointmanager.cpp
@@ -36,6 +40,10 @@ set(HEADERS
     include/ROSThread.h
     include/gpswidget.hpp
     include/gpssubscriber.hpp
+    include/imuwidget.hpp
+    include/imusubscriber.hpp
+    include/flightstates.hpp
+    include/flightstatesubscriber.hpp
     include/flightstatepublisher.hpp
     include/datalogger.hpp
     include/waypointmanager.hpp
@@ -61,6 +69,7 @@ target_link_libraries(${PROJECT_NAME}
     Qt5::Multimedia
     Qt5::MultimediaWidgets
     cv_bridge::cv_bridge
+    ${OpenCV_LIBS}
 )
 
 install(TARGETS

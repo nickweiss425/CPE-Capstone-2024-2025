@@ -3,6 +3,16 @@
 
 using std::placeholders::_1;
 
+/**
+ * @brief Constructs a GPSWidget object.
+ * 
+ * This constructor initializes a GPSWidget object with the provided QLineEdit pointers for longitude and latitude.
+ * It creates a GPSSubscriber object and connects its coordinatesUpdated signal to the updateLocation slot of the GPSWidget.
+ * It also creates a ROSThread object and starts it with the GPSSubscriber.
+ * 
+ * @param longitude A pointer to the QLineEdit object representing the longitude.
+ * @param latitude A pointer to the QLineEdit object representing the latitude.
+ */
 GPSWidget::GPSWidget(QLineEdit *longitude, QLineEdit *latitude)
     : longitudeBox_(longitude), latitudeBox_(latitude), gpsSubscriber_(nullptr) {
     gpsSubscriber_ = std::make_shared<GPSSubscriber>();
@@ -16,10 +26,18 @@ GPSWidget::GPSWidget(QLineEdit *longitude, QLineEdit *latitude)
         std::cerr << "Error: Failed to connect GPSSubscriber signal!" << std::endl;
     }
 
+    // Convert the GPSSubscriber to a ROS thread and start it
     rosThread_ = std::make_unique<ROSThread>(gpsSubscriber_);
     rosThread_->start();
 }
 
+/**
+ * @brief Destructor for the GPSWidget class.
+ * 
+ * This destructor is responsible for cleaning up any resources used by the GPSWidget object.
+ * It checks if the ROS thread is running and if so, it quits the thread and waits for it to finish.
+ * Finally, it shuts down the ROS node.
+ */
 GPSWidget::~GPSWidget() {
     if (rosThread_ && rosThread_->isRunning()) {
         rosThread_->quit();
@@ -28,16 +46,37 @@ GPSWidget::~GPSWidget() {
     rclcpp::shutdown();
 }
 
+/**
+ * @brief Slot to update the location information.
+ * 
+ * This slot is called when the GPSSubscriber emits the coordinatesUpdated signal.
+ * It updates the longitude and latitude text boxes with the new values.
+ * It also emits the coordinatesUpdated signal with the new longitude and latitude values.
+ * 
+ * @param longitude The new longitude value.
+ * @param latitude The new latitude value.
+ */
 void GPSWidget::updateLocation(const double &longitude, const double &latitude, const double &altitude) {
-    longitudeBox_->setText(QString::number(longitude));
-    latitudeBox_->setText(QString::number(latitude));
 
-    QString longitudeText = QString("Longitude: %1\n") .arg(longitude);
-    QString latitudeText = QString("Latitude: %1\n") .arg(latitude);
-    QString altitudeText = QString("Altitude: %1\n") .arg(altitude);
+    // Create nicely formatted strings for the longitude and latitude
+    QString longitudeText = QString("%1%2\n")
+        .arg(qAbs(longitude))
+        .arg(longitude >= 0 ? "° E" : "° W");
 
+    QString latitudeText = QString("%1%2\n")
+        .arg(qAbs(latitude))
+        .arg(latitude >= 0 ? "° N" : "° S");
+
+    longitudeBox_->setText(longitudeText);
+    latitudeBox_->setText(latitudeText);
+
+    // Receive the altitude along with the coordinate if needed for data logging
+    QString altitudeText = QString("Altitude: %1\n").arg(altitude);
+
+    // Send the updated coordinates to the main window
     emit coordinatesUpdated(longitude, latitude);
 
+    // Log the data if recording is enabled
     auto dataLogger_ = DataLogger::getInstance();
     if (dataLogger_->getRecording()) {
         dataLogger_->log_data(longitudeText.toStdString());
