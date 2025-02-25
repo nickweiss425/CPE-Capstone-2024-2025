@@ -2,6 +2,7 @@
 
 class flight_states {
 public:
+    // Enum class for the different flight states
     enum class FlightState {
         LANDED = 0,
         TAKEOFF = 1,
@@ -15,6 +16,8 @@ public:
         FIGURE8_WAYPOINT = 10,
         FIGURE8_PATH = 11
     };
+
+    // Function to convert the strongly typed enum class to its underlying type
     constexpr auto to_underlying(FlightState e) noexcept {
         return static_cast<std::underlying_type_t<FlightState>>(e);
     }

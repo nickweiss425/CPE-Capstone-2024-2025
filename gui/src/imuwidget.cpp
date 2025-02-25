@@ -6,7 +6,14 @@
 
 using std::placeholders::_1;
 
-
+/**
+ * @brief Constructs an IMUWidget object.
+ * 
+ * This constructor initializes an IMUWidget object with the given QTextBrowser pointer.
+ * It creates an IMUSubscriber, registers signal types, connects signals, and starts a ROS thread.
+ * 
+ * @param data A pointer to the QTextBrowser object used to display IMU data.
+ */
 IMUWidget::IMUWidget(QTextBrowser *data)
     : imu_textbox_(data), imuSubscriber_(nullptr) {
     /* create subscriber*/
@@ -30,6 +37,11 @@ IMUWidget::IMUWidget(QTextBrowser *data)
     rosThread_->start();
 }
 
+/**
+ * @brief Destroys an IMUWidget object.
+ * 
+ * This destructor stops the ROS thread and shuts down the ROS node.
+ */
 IMUWidget::~IMUWidget() {
     if (rosThread_ && rosThread_->isRunning()) {
         rosThread_->quit();
@@ -38,6 +50,16 @@ IMUWidget::~IMUWidget() {
     rclcpp::shutdown();
 }
 
+/**
+ * @brief Updates the IMU data displayed in the QTextBrowser.
+ * 
+ * This function updates the IMU data displayed in the QTextBrowser with the given orientation, angular velocity, and linear acceleration.
+ * It also logs the data if the DataLogger is recording.
+ * 
+ * @param orientation The orientation data to display.
+ * @param angular_velocity The angular velocity data to display.
+ * @param linear_acceleration The linear acceleration data to display.
+ */
 void IMUWidget::updateText(
     const geometry_msgs::msg::Quaternion orientation,
     const geometry_msgs::msg::Vector3 angular_velocity,

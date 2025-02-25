@@ -7,6 +7,15 @@
 #include <QMediaPlayer>
 #include <QVideoWidget>
 
+/**
+ * @brief Constructor for the MainWindow class.
+ * 
+ * This constructor initializes the MainWindow object and sets up the user interface.
+ * It also sets up the GPS coordinates display, IMU data stream, flight state publisher/subscriber,
+ * and the video widget. Additionally, it creates an exit handler and connects buttons to their slots.
+ * 
+ * @param parent The parent widget.
+ */
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
@@ -33,6 +42,11 @@ MainWindow::MainWindow(QWidget *parent)
     setupConnections();
 }
 
+/**
+ * @brief Destructor for the MainWindow class.
+ * 
+ * This destructor stops the flight, shuts down the data logger, and deletes the user interface.
+ */
 MainWindow::~MainWindow() {
     stopFlight();
     DataLogger::shutdown();
@@ -40,30 +54,44 @@ MainWindow::~MainWindow() {
     rclcpp::shutdown();
 }
 
+/**
+ * @brief Sets up the connections between the buttons and their respective slots.
+ */
 void MainWindow::setupConnections() {
+    // Connect flight state and recording buttons to their respective slots
     connect(ui->startFlightButton, &QPushButton::clicked, this, &MainWindow::startFlight);
     connect(ui->toggleRecordingButton, &QPushButton::clicked, this, &MainWindow::toggleRecording);
     connect(ui->stopFlightButton, &QPushButton::clicked, this, &MainWindow::stopFlight);
+
+    // Connect the waypoint control buttons to their respective slots
     connect(ui->confirmHoverButton, &QPushButton::clicked, this, &MainWindow::handleWaypointUpdate);
     connect(ui->waypointManager, &WaypointManager::getWaypointAttributes, this, &MainWindow::updateWaypointAttributes);
     connect(this, &MainWindow::setWaypointAttributes, ui->waypointManager, &WaypointManager::updateWaypointAttributes);
     connect(stateSubscriber, &StateSubscriber::stateReceived, ui->waypointManager, &WaypointManager::handleDroneStateReceive);
 
+    // Wait for the map to load before connecting signals
     QObject *map = ui->mapView->rootObject();
     if (map) {
+        // Connect the waypoint manager backend to the map
         connect(map, SIGNAL(waypointAdded(double, double)), ui->waypointManager, SLOT(onWaypointAdded(double, double)));
         connect(map, SIGNAL(waypointSelected(int)), ui->waypointManager, SLOT(onWaypointSelected(int)));
         connect(map, SIGNAL(waypointRemoved(int)), ui->waypointManager, SLOT(onWaypointRemoved(int)));
         connect(gpsWidget, &GPSWidget::coordinatesUpdated, ui->waypointManager, &WaypointManager::getDronePosition);
         connect(ui->waypointManager, &WaypointManager::updateDronePosition, this, [this](double lat, double lon) {
-            QMetaObject::invokeMethod(ui->mapView->rootObject(), "updateDronePosition",
-                                    Q_ARG(QVariant, lat),
-                                    Q_ARG(QVariant, lon));
+            QMetaObject::invokeMethod(ui->mapView->rootObject(), "updateDronePosition", Q_ARG(QVariant, lat), Q_ARG(QVariant, lon));
         });
     }
+
     initializeButtons();
 }
 
+/**
+ * @brief Initializes the buttons in the main window.
+ * 
+ * This function sets the buttons to their initial states, enabling or disabling them as necessary.
+ * The start flight button is enabled, while the toggle recording button and stop flight button are disabled.
+ * The hover control buttons and confirm hover button are enabled.
+ */
 void MainWindow::initializeButtons() {
     // Set buttons to their initial states (control buttons and start flight are allowed)
     ui->startFlightButton->setEnabled(true);
@@ -77,6 +105,11 @@ void MainWindow::initializeButtons() {
     ui->confirmHoverButton->setEnabled(true);
 }
 
+/**
+ * @brief Unlocks the buttons after the flight has started.
+ * 
+ * This function disables the start flight button and enables the toggle recording and stop flight buttons.
+ */
 void MainWindow::unlockButtons() {
     // Enable buttons after start flight
     ui->startFlightButton->setEnabled(false);
@@ -84,11 +117,23 @@ void MainWindow::unlockButtons() {
     ui->stopFlightButton->setEnabled(true);
 }
 
+/**
+ * @brief Starts the flight.
+ * 
+ * This function publishes the takeoff state to the flight state publisher.
+ */
 void MainWindow::startFlight() {
     statePublisher->publish_state(flight_states::FlightState::TAKEOFF);
     unlockButtons();
 }
 
+/**
+ * @brief Toggles the recording of data.
+ * 
+ * This function toggles the recording of data by the data logger.
+ * If the data logger is recording, it stops the recording and closes the file.
+ * If the data logger is not recording, it starts the recording and creates a new file.
+ */
 void MainWindow::toggleRecording() {
     auto dataLogger_ = DataLogger::getInstance();
     dataLogger_->switchRecording();
@@ -102,6 +147,12 @@ void MainWindow::toggleRecording() {
     }
 }
 
+/**
+ * @brief Stops the flight.
+ * 
+ * This function publishes the landed state to the flight state publisher.
+ * It also changes the text of the toggle recording button to the record icon.
+ */
 void MainWindow::stopFlight() {
     statePublisher->publish_state(flight_states::FlightState::LANDED);
     ui->toggleRecordingButton->setText(QCoreApplication::translate("MainWindow", "\342\217\272", nullptr));
@@ -111,6 +162,14 @@ void MainWindow::stopFlight() {
     }
 }
 
+/**
+ * @brief Updates the GPS coordinates display.
+ * 
+ * This function updates the GPS coordinates display with the given latitude and longitude.
+ * 
+ * @param lat The latitude to display.
+ * @param lon The longitude to display.
+ */
 void MainWindow::updateWaypointAttributes(double radius, double altitude, double duration, int type) {
     // First reset all buttons to initial state
     ui->hoverControlButton1->setChecked(false);
@@ -164,6 +223,7 @@ void MainWindow::updateWaypointAttributes(double radius, double altitude, double
         }
     }
 
+    // Update the button state so they display correctly
     ui->hoverControlButton1->update();
     ui->hoverControlButton2->update();
     ui->hoverControlButton3->update();
@@ -171,6 +231,14 @@ void MainWindow::updateWaypointAttributes(double radius, double altitude, double
     
 }
 
+/**
+ * @brief Handles the update of the waypoint attributes.
+ * 
+ * This function retrieves the selected waypoint type from the UI and emits a signal to set the waypoint attributes.
+ * It also resets the waypoint attributes and updates the UI accordingly.
+ * 
+ * @return void
+ */
 void MainWindow::handleWaypointUpdate() {
     int waypointType = ui->hoverGroup->checkedId();
     emit setWaypointAttributes(ui->radiusBox->text().toDouble(), ui->altitudeBox->text().toDouble(), ui->durationBox->text().toDouble(), waypointType);
@@ -195,6 +263,14 @@ void MainWindow::handleWaypointUpdate() {
     }
 }
 
+/**
+ * @brief Resets the attributes of the waypoint controls in the main window.
+ * 
+ * This function sets the checkable property of the hover control buttons to false,
+ * and sets the checked property of the hover control buttons to false. It also updates
+ * the hover control buttons to reflect the changes. Finally, it sets the checked property
+ * of the confirm hover button to false.
+ */
 void MainWindow::resetWaypointAttributes() {
     ui->hoverControlButton1->setCheckable(false);
     ui->hoverControlButton2->setCheckable(false);
@@ -214,6 +290,13 @@ void MainWindow::resetWaypointAttributes() {
     ui->confirmHoverButton->setChecked(false);
 }
 
+/**
+ * @brief Signal handler for the main window.
+ * 
+ * This function shuts down the ROS2 node and exits the program when the SIGINT signal is received.
+ * 
+ * @param sig The signal number.
+ */
 void MainWindow::signalHandler(int) {
     rclcpp::shutdown();
     exit(0);

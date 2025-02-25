@@ -37,19 +37,17 @@ public:
     QVariantList waypoints() const;
 
 public slots:
-    void onWaypointAdded(double latitude, double longitude);
-    void onWaypointSelected(int index);
-    void onWaypointRemoved(int index);
-    void updateWaypointAttributes(double radius, double altitude, double duration, int type);
-    void getDronePosition(double latitude, double longitude);
-    void handleDroneStateReceive(const std_msgs::msg::Int32 &msg);
+    void onWaypointAdded(double latitude, double longitude); // Add a waypoint to the list from map signal
+    void onWaypointSelected(int index); // Select a waypoint from the list from map signal
+    void onWaypointRemoved(int index); // Remove a waypoint from the list from map signal
+    void updateWaypointAttributes(double radius, double altitude, double duration, int type); // Update the attributes of a waypoint from the dialog
+    void getDronePosition(double latitude, double longitude); // Get the drone's position from the GPSWidget
+    void handleDroneStateReceive(const std_msgs::msg::Int32 &msg); // Handle the drone's state from incoming status messages
 signals:
-    void getWaypointAttributes(double radius, double altitude, double duration, int type);
-    void updateDronePosition(double latitude, double longitude);
+    void getWaypointAttributes(double radius, double altitude, double duration, int type); // Send the current attributes of a waypoint to the dialog
+    void updateDronePosition(double latitude, double longitude); // Update the drone's position on the map
 
 private:
     int m_selectedIndex = -1;
     QVector<Waypoint> m_waypoints;
-
-    void onWaypointSelected(int index, const QGeoCoordinate &coordinate);
 };

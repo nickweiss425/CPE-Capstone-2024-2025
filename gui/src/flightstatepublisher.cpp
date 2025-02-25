@@ -3,12 +3,26 @@
 
 using namespace std::chrono_literals;
 
+/**
+ * @brief Constructor for the StatePublisher class.
+ * 
+ * Initializes a StatePublisher object and sets the node name to "state_publisher".
+ * Creates a publisher that publishes to the "desired_state" topic.
+ */
 StatePublisher::StatePublisher() : Node("state_publisher")
 {
     // Create a publisher that publishes to the "desired_state" topic
     publisher_ = this->create_publisher<std_msgs::msg::Int32>("desired_state", 10);
 }
 
+/**
+ * @brief Publishes the flight state.
+ * 
+ * This function publishes the given flight state by converting it to an Int32 message
+ * and publishing it using the publisher. It also logs the message if data logging is enabled.
+ * 
+ * @param state The flight state to be published.
+ */
 void StatePublisher::publish_state(const FlightState &state)
 {
     std_msgs::msg::Int32 msg;
