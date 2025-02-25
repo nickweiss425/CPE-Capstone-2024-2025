@@ -3,14 +3,9 @@
 #include <chrono>
 #include <QObject>
 #include "std_msgs/msg/int32.hpp"
+#include "flightstates.hpp"
 
-typedef enum {
-    LANDED = 0,
-    TAKEOFF = 1,
-    LANDING = 2
-} FlightState;
-
-class StatePublisher : public rclcpp::Node
+class StatePublisher : public rclcpp::Node, public flight_states
 {
 public:
     StatePublisher();
