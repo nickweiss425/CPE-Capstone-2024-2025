@@ -1,4 +1,4 @@
-/* The publisher reads message from LORA and re-publishes to ROS2 topics */
+/* The publisher reads messages from LORA and re-publishes to ROS2 topics */
 #pragma once
 
 #include <memory>

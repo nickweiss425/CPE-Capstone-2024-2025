@@ -3,6 +3,7 @@
 
 using namespace std::chrono_literals;
 
+
 int main(int argc, char * argv[])
 {
     rclcpp::init(argc, argv);
@@ -12,6 +13,7 @@ int main(int argc, char * argv[])
 }
 
 
+/* Lora publisher constructor that initializes the node publishers and serial port */
 LoraPublisher::LoraPublisher(): Node("lora_publisher") {
     /* get path argument */
     this->declare_parameter("path", "/dev/null");
@@ -36,8 +38,8 @@ LoraPublisher::LoraPublisher(): Node("lora_publisher") {
 }
 
 
+/* close the serial connection */
 LoraPublisher::~LoraPublisher() {
-    /* close the serial connection */
     serial_.Close();
 }
 
@@ -136,6 +138,7 @@ void LoraPublisher::timer_callback()
 }
 
 
+/* Publish received GPS data to ROS node */
 void LoraPublisher::publish_gps(uint8_t *raw_msg)
 {
     RCLCPP_INFO(this->get_logger(), "LORA received /gps/fix"); 
@@ -149,6 +152,8 @@ void LoraPublisher::publish_gps(uint8_t *raw_msg)
     gps_publisher_->publish(msg);
 }
 
+
+/* Publish received IMU data to ROS node */
 void LoraPublisher::publish_imu(uint8_t *raw_msg)
 {
     RCLCPP_INFO(this->get_logger(), "LORA received /imu"); 
@@ -162,6 +167,8 @@ void LoraPublisher::publish_imu(uint8_t *raw_msg)
     imu_publisher_->publish(msg);
 }
 
+
+/* Publish received STATE data to ROS node */
 void LoraPublisher::publish_state(uint8_t *raw_msg)
 {
     RCLCPP_INFO(this->get_logger(), "LORA received /desired_state"); 
