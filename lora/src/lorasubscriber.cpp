@@ -3,6 +3,8 @@
 
 #define PREAMBLESIZE 2
 
+
+/* Node entry point */
 int main(int argc, char * argv[])
 {
     rclcpp::init(argc, argv);
@@ -11,6 +13,8 @@ int main(int argc, char * argv[])
     return 0;
 }
 
+
+/* Lora subscriber constructor that initializes the node subscribers and serial port */
 LoraSubscriber::LoraSubscriber(): Node("lora_subscriber") {
     /* get path argument */
     this->declare_parameter("path", "/dev/null");
@@ -35,11 +39,14 @@ LoraSubscriber::LoraSubscriber(): Node("lora_subscriber") {
     }
 }
 
+
+/* Close the serial connection */
 LoraSubscriber::~LoraSubscriber() {
-    /* close the serial connection */
     serial_.Close();
 }
 
+
+/* Receive ROS GPS data and publish to serial */
 void LoraSubscriber::gps_topic_callback(const sensor_msgs::msg::NavSatFix &msg)
 {
     RCLCPP_INFO(this->get_logger(), "LORA subscriber handling gps"); 
@@ -60,6 +67,8 @@ void LoraSubscriber::gps_topic_callback(const sensor_msgs::msg::NavSatFix &msg)
     }
 }
 
+
+/* Receive ROS IMU data and publish to serial */
 void LoraSubscriber::imu_topic_callback(const sensor_msgs::msg::Imu &msg)
 {
     RCLCPP_INFO(this->get_logger(), "LORA subscriber handling imu"); 
@@ -81,6 +90,8 @@ void LoraSubscriber::imu_topic_callback(const sensor_msgs::msg::Imu &msg)
     }
 }
 
+
+/* Receive ROS STATE  data and publish to serial */
 void LoraSubscriber::flight_state_topic_callback(const std_msgs::msg::Int32 &msg)
 {
     RCLCPP_INFO(this->get_logger(), "LORA subscriber handling flight state"); 
