@@ -2,17 +2,20 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>lora</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="ianrfeldman@gmail.com">ian</maintainer>
-  <license>TODO: License declaration</license>
+  <version>0.1.0</version>
+  <description>Publisher and subscriber nodes that communicate relevent nodes (GPS, IMU, Flight State) over Waveshare USB to LoRa Data Transfer Module. The publisher receives data over LoRa and publishes to ROS topics /gps/fix, /imu, and /desired_state. The subscriber listens to the same topics and when it receives data, strips the ROS header off and broadcasts the data over LoRa.</description>
+  <maintainer email="ianrfeldman@gmail.com">Ian Feldman</maintainer>
+  <license>none</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 
+  <exec_depend>libserial-dev</exec_depend>
+
   <export>
     <build_type>ament_cmake</build_type>
   </export>
 </package>
+
