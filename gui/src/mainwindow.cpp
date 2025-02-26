@@ -68,6 +68,7 @@ void MainWindow::setupConnections() {
     connect(ui->waypointManager, &WaypointManager::getWaypointAttributes, this, &MainWindow::updateWaypointAttributes);
     connect(this, &MainWindow::setWaypointAttributes, ui->waypointManager, &WaypointManager::updateWaypointAttributes);
     connect(stateSubscriber, &StateSubscriber::stateReceived, ui->waypointManager, &WaypointManager::handleDroneStateReceive);
+    connect(ui->waypointManager, &WaypointManager::resetWaypointButtons, this, &MainWindow::resetWaypointAttributes);
 
     // Wait for the map to load before connecting signals
     QObject *map = ui->mapView->rootObject();
@@ -163,6 +164,8 @@ void MainWindow::stopFlight() {
     if (dataLogger_->getRecording()) {
         dataLogger_->switchRecording();
     }
+    ui->startFlightButton->setEnabled(true);
+    ui->stopFlightButton->setEnabled(false);
 }
 
 /**
@@ -175,10 +178,12 @@ void MainWindow::stopFlight() {
  */
 void MainWindow::updateWaypointAttributes(double radius, double altitude, double duration, int type) {
     // First reset all buttons to initial state
+    ui->hoverGroup->setExclusive(false);
     ui->hoverControlButton1->setChecked(false);
     ui->hoverControlButton2->setChecked(false);
     ui->hoverControlButton3->setChecked(false);
     ui->hoverControlButton4->setChecked(false);
+    ui->hoverGroup->setExclusive(true);
 
     // Clear text fields first
     ui->radiusBox->clear();
@@ -187,11 +192,11 @@ void MainWindow::updateWaypointAttributes(double radius, double altitude, double
 
     // If no waypoint is selected (type == 5 or -1)
     if (type == 5 || type == -1) {
-        ui->hoverControlButton1->setCheckable(false);
+        /*ui->hoverControlButton1->setCheckable(false);
         ui->hoverControlButton2->setCheckable(false);
         ui->hoverControlButton3->setCheckable(false);
         ui->hoverControlButton4->setCheckable(false);
-        ui->confirmHoverButton->setCheckable(false);
+        ui->confirmHoverButton->setCheckable(false);*/
         resetWaypointAttributes();
         return;
     }
@@ -248,7 +253,7 @@ void MainWindow::handleWaypointUpdate() {
     
     resetWaypointAttributes();
 
-    switch (waypointType) {
+    /*switch (waypointType) {
         case 1:
             ui->hoverControlButton1->setChecked(false);
             break;
@@ -263,7 +268,7 @@ void MainWindow::handleWaypointUpdate() {
             break;
         default:
             break;
-    }
+    }*/
 }
 
 /**
@@ -275,22 +280,33 @@ void MainWindow::handleWaypointUpdate() {
  * of the confirm hover button to false.
  */
 void MainWindow::resetWaypointAttributes() {
+    auto dataLogger_ = DataLogger::getInstance();
+    if (dataLogger_->getRecording()) {
+        dataLogger_->log_data("resetWaypointAttributes");
+    }
+
+    ui->radiusBox->clear();
+    ui->altitudeBox->clear();
+    ui->durationBox->clear();
+
+    ui->hoverGroup->setExclusive(false);
+    ui->hoverControlButton1->setChecked(false);
+    ui->hoverControlButton2->setChecked(false);
+    ui->hoverControlButton3->setChecked(false);
+    ui->hoverControlButton4->setChecked(false);
+    ui->hoverGroup->setExclusive(true);
+
     ui->hoverControlButton1->setCheckable(false);
     ui->hoverControlButton2->setCheckable(false);
     ui->hoverControlButton3->setCheckable(false);
     ui->hoverControlButton4->setCheckable(false);
 
-    ui->hoverControlButton2->setChecked(false);
-    ui->hoverControlButton1->setChecked(false);
-    ui->hoverControlButton3->setChecked(false);
-    ui->hoverControlButton4->setChecked(false);
+    ui->confirmHoverButton->setChecked(false);
 
     ui->hoverControlButton1->update();
     ui->hoverControlButton2->update();
     ui->hoverControlButton3->update();
     ui->hoverControlButton4->update();
-
-    ui->confirmHoverButton->setChecked(false);
 }
 
 /**

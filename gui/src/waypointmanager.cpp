@@ -51,6 +51,7 @@ void WaypointManager::onWaypointAdded(double latitude, double longitude) {
     waypoint.duration = 0;
     waypoint.type = UNINITIALIZED;
     m_waypoints.append(waypoint);
+    emit resetWaypointButtons();
 }
 
 /**
