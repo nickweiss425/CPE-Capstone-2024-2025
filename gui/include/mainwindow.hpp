@@ -24,6 +24,9 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+public slots:
+    void resetWaypointAttributes(); // Function to reset waypoint attributes on empty right click
+
 private:
     Ui::MainWindow *ui;
     StatePublisher *statePublisher; // Publisher for flight state
@@ -36,7 +39,6 @@ private:
     void initializeButtons(); // Function to initialize button states
     void unlockButtons(); // Function to enable buttons after start flight
     void handleWaypointUpdate(); // Function to handle waypoint updates from waypointManager
-    void resetWaypointAttributes(); // Function to reset waypoint attributes on empty right click
     static void signalHandler(int); // Signal handler for SIGINT
 
 signals:
