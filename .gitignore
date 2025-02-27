@@ -1,5 +1,9 @@
 gui/build
 gui/.vscode
+lora/build
+lora/install
+lora/log
 build/
 install/
 log/
+
