@@ -1,7 +1,7 @@
 CMakeFiles/frame_transforms.dir/src/lib/frame_transforms.cpp.o: \
- /home/niweiss/ws_sensor_combined/src/px4_ros_com/src/lib/frame_transforms.cpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/lib/frame_transforms.cpp \
  /usr/include/stdc-predef.h \
- /home/niweiss/ws_sensor_combined/src/px4_ros_com/include/px4_ros_com/frame_transforms.h \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/include/px4_ros_com/frame_transforms.h \
  /usr/include/eigen3/Eigen/Eigen /usr/include/eigen3/Eigen/Dense \
  /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \

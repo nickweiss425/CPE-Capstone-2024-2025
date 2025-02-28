@@ -38,11 +38,13 @@ struct FlightCommand_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->x = 0.0f;
-      this->y = 0.0f;
+      this->latitude_deg = 0.0f;
+      this->longitude_deg = 0.0f;
       this->altitude = 0.0f;
       this->radius = 0.0f;
       this->length = 0.0f;
+      this->duration = 0.0f;
+      this->waypoint_type = 0;
     }
   }
 
@@ -52,21 +54,23 @@ struct FlightCommand_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->x = 0.0f;
-      this->y = 0.0f;
+      this->latitude_deg = 0.0f;
+      this->longitude_deg = 0.0f;
       this->altitude = 0.0f;
       this->radius = 0.0f;
       this->length = 0.0f;
+      this->duration = 0.0f;
+      this->waypoint_type = 0;
     }
   }
 
   // field types and members
-  using _x_type =
+  using _latitude_deg_type =
     float;
-  _x_type x;
-  using _y_type =
+  _latitude_deg_type latitude_deg;
+  using _longitude_deg_type =
     float;
-  _y_type y;
+  _longitude_deg_type longitude_deg;
   using _altitude_type =
     float;
   _altitude_type altitude;
@@ -76,18 +80,24 @@ struct FlightCommand_
   using _length_type =
     float;
   _length_type length;
+  using _duration_type =
+    float;
+  _duration_type duration;
+  using _waypoint_type_type =
+    int8_t;
+  _waypoint_type_type waypoint_type;
 
   // setters for named parameter idiom
-  Type & set__x(
+  Type & set__latitude_deg(
     const float & _arg)
   {
-    this->x = _arg;
+    this->latitude_deg = _arg;
     return *this;
   }
-  Type & set__y(
+  Type & set__longitude_deg(
     const float & _arg)
   {
-    this->y = _arg;
+    this->longitude_deg = _arg;
     return *this;
   }
   Type & set__altitude(
@@ -106,6 +116,18 @@ struct FlightCommand_
     const float & _arg)
   {
     this->length = _arg;
+    return *this;
+  }
+  Type & set__duration(
+    const float & _arg)
+  {
+    this->duration = _arg;
+    return *this;
+  }
+  Type & set__waypoint_type(
+    const int8_t & _arg)
+  {
+    this->waypoint_type = _arg;
     return *this;
   }
 
@@ -151,10 +173,10 @@ struct FlightCommand_
   // comparison operators
   bool operator==(const FlightCommand_ & other) const
   {
-    if (this->x != other.x) {
+    if (this->latitude_deg != other.latitude_deg) {
       return false;
     }
-    if (this->y != other.y) {
+    if (this->longitude_deg != other.longitude_deg) {
       return false;
     }
     if (this->altitude != other.altitude) {
@@ -164,6 +186,12 @@ struct FlightCommand_
       return false;
     }
     if (this->length != other.length) {
+      return false;
+    }
+    if (this->duration != other.duration) {
+      return false;
+    }
+    if (this->waypoint_type != other.waypoint_type) {
       return false;
     }
     return true;

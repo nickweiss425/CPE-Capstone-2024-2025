@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "px4_msgs__py",
+		"source" : "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/px4_msgs__py"
+	}
+}

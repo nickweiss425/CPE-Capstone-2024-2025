@@ -31,16 +31,16 @@ void custom_msgs__msg__FlightCommand__rosidl_typesupport_introspection_c__Flight
   custom_msgs__msg__FlightCommand__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember custom_msgs__msg__FlightCommand__rosidl_typesupport_introspection_c__FlightCommand_message_member_array[5] = {
+static rosidl_typesupport_introspection_c__MessageMember custom_msgs__msg__FlightCommand__rosidl_typesupport_introspection_c__FlightCommand_message_member_array[7] = {
   {
-    "x",  // name
+    "latitude_deg",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(custom_msgs__msg__FlightCommand, x),  // bytes offset in struct
+    offsetof(custom_msgs__msg__FlightCommand, latitude_deg),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -50,14 +50,14 @@ static rosidl_typesupport_introspection_c__MessageMember custom_msgs__msg__Fligh
     NULL  // resize(index) function pointer
   },
   {
-    "y",  // name
+    "longitude_deg",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(custom_msgs__msg__FlightCommand, y),  // bytes offset in struct
+    offsetof(custom_msgs__msg__FlightCommand, longitude_deg),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -116,13 +116,47 @@ static rosidl_typesupport_introspection_c__MessageMember custom_msgs__msg__Fligh
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "duration",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs__msg__FlightCommand, duration),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "waypoint_type",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT8,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs__msg__FlightCommand, waypoint_type),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers custom_msgs__msg__FlightCommand__rosidl_typesupport_introspection_c__FlightCommand_message_members = {
   "custom_msgs__msg",  // message namespace
   "FlightCommand",  // message name
-  5,  // number of fields
+  7,  // number of fields
   sizeof(custom_msgs__msg__FlightCommand),
   custom_msgs__msg__FlightCommand__rosidl_typesupport_introspection_c__FlightCommand_message_member_array,  // message members
   custom_msgs__msg__FlightCommand__rosidl_typesupport_introspection_c__FlightCommand_init_function,  // function to initialize message memory (memory has to be allocated)

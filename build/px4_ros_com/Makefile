@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niweiss/ws_sensor_combined/src/px4_ros_com
+CMAKE_SOURCE_DIR = /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niweiss/ws_sensor_combined/build/px4_ros_com
+CMAKE_BINARY_DIR = /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/niweiss/ws_sensor_combined/build/px4_ros_com/CMakeFiles /home/niweiss/ws_sensor_combined/build/px4_ros_com//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com/CMakeFiles /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/niweiss/ws_sensor_combined/build/px4_ros_com/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -302,6 +302,19 @@ flight_state_pub/fast:
 .PHONY : flight_state_pub/fast
 
 #=============================================================================
+# Target rules for targets named gui_command_pub
+
+# Build rule for target.
+gui_command_pub: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gui_command_pub
+.PHONY : gui_command_pub
+
+# fast build rule for target.
+gui_command_pub/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui_command_pub.dir/build.make CMakeFiles/gui_command_pub.dir/build
+.PHONY : gui_command_pub/fast
+
+#=============================================================================
 # Target rules for targets named offboard_paths
 
 # Build rule for target.
@@ -435,6 +448,30 @@ src/examples/offboard/flight_state_pub.s: src/examples/offboard/flight_state_pub
 src/examples/offboard/flight_state_pub.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/flight_state_pub.dir/build.make CMakeFiles/flight_state_pub.dir/src/examples/offboard/flight_state_pub.cpp.s
 .PHONY : src/examples/offboard/flight_state_pub.cpp.s
+
+src/examples/offboard/gui_command_pub.o: src/examples/offboard/gui_command_pub.cpp.o
+.PHONY : src/examples/offboard/gui_command_pub.o
+
+# target to build an object file
+src/examples/offboard/gui_command_pub.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui_command_pub.dir/build.make CMakeFiles/gui_command_pub.dir/src/examples/offboard/gui_command_pub.cpp.o
+.PHONY : src/examples/offboard/gui_command_pub.cpp.o
+
+src/examples/offboard/gui_command_pub.i: src/examples/offboard/gui_command_pub.cpp.i
+.PHONY : src/examples/offboard/gui_command_pub.i
+
+# target to preprocess a source file
+src/examples/offboard/gui_command_pub.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui_command_pub.dir/build.make CMakeFiles/gui_command_pub.dir/src/examples/offboard/gui_command_pub.cpp.i
+.PHONY : src/examples/offboard/gui_command_pub.cpp.i
+
+src/examples/offboard/gui_command_pub.s: src/examples/offboard/gui_command_pub.cpp.s
+.PHONY : src/examples/offboard/gui_command_pub.s
+
+# target to generate assembly for a file
+src/examples/offboard/gui_command_pub.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui_command_pub.dir/build.make CMakeFiles/gui_command_pub.dir/src/examples/offboard/gui_command_pub.cpp.s
+.PHONY : src/examples/offboard/gui_command_pub.cpp.s
 
 src/examples/offboard/offboard_control.o: src/examples/offboard/offboard_control.cpp.o
 .PHONY : src/examples/offboard/offboard_control.o
@@ -576,6 +613,7 @@ help:
 	@echo "... debug_vect_advertiser"
 	@echo "... flight_state_pub"
 	@echo "... frame_transforms"
+	@echo "... gui_command_pub"
 	@echo "... offboard_control"
 	@echo "... offboard_control_srv"
 	@echo "... offboard_launch"
@@ -594,6 +632,9 @@ help:
 	@echo "... src/examples/offboard/flight_state_pub.o"
 	@echo "... src/examples/offboard/flight_state_pub.i"
 	@echo "... src/examples/offboard/flight_state_pub.s"
+	@echo "... src/examples/offboard/gui_command_pub.o"
+	@echo "... src/examples/offboard/gui_command_pub.i"
+	@echo "... src/examples/offboard/gui_command_pub.s"
 	@echo "... src/examples/offboard/offboard_control.o"
 	@echo "... src/examples/offboard/offboard_control.i"
 	@echo "... src/examples/offboard/offboard_control.s"

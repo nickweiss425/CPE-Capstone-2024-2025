@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niweiss/ws_sensor_combined/src/custom_msgs
+CMAKE_SOURCE_DIR = /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/custom_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niweiss/ws_sensor_combined/build/custom_msgs
+CMAKE_BINARY_DIR = /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs
 
 # Utility rule file for custom_msgs_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/custom_msgs_uninstall.dir/compiler_depend.make
 include CMakeFiles/custom_msgs_uninstall.dir/progress.make
 
 CMakeFiles/custom_msgs_uninstall:
-	/usr/bin/cmake -P /home/niweiss/ws_sensor_combined/build/custom_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 custom_msgs_uninstall: CMakeFiles/custom_msgs_uninstall
 custom_msgs_uninstall: CMakeFiles/custom_msgs_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/custom_msgs_uninstall.dir/clean:
 .PHONY : CMakeFiles/custom_msgs_uninstall.dir/clean
 
 CMakeFiles/custom_msgs_uninstall.dir/depend:
-	cd /home/niweiss/ws_sensor_combined/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niweiss/ws_sensor_combined/src/custom_msgs /home/niweiss/ws_sensor_combined/src/custom_msgs /home/niweiss/ws_sensor_combined/build/custom_msgs /home/niweiss/ws_sensor_combined/build/custom_msgs /home/niweiss/ws_sensor_combined/build/custom_msgs/CMakeFiles/custom_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/custom_msgs /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/custom_msgs /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs/CMakeFiles/custom_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/custom_msgs_uninstall.dir/depend
 

@@ -1,8 +1,8 @@
 CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o: \
- /home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp \
  /usr/include/stdc-predef.h \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/offboard_control_mode.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__struct.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/offboard_control_mode.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__struct.hpp \
  /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -169,8 +169,8 @@ CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o: \
  /usr/include/c++/11/stdexcept \
  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__builder.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__traits.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__builder.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__traits.hpp \
  /usr/include/c++/11/sstream /usr/include/c++/11/istream \
  /usr/include/c++/11/ios /usr/include/c++/11/bits/ios_base.h \
  /usr/include/c++/11/bits/locale_classes.h \
@@ -198,57 +198,62 @@ CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o: \
  /usr/include/libintl.h /usr/include/c++/11/bits/locale_facets_nonio.tcc \
  /usr/include/c++/11/bits/locale_conv.h \
  /usr/include/c++/11/bits/quoted_string.h \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__type_support.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__type_support.hpp \
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/trajectory_setpoint.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__struct.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__builder.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__traits.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__type_support.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/position_setpoint.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_setpoint__struct.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_setpoint__builder.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_setpoint__traits.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_setpoint__type_support.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/position_setpoint_triplet.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_setpoint_triplet__struct.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_setpoint_triplet__builder.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_setpoint_triplet__traits.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_setpoint_triplet__type_support.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/sensor_gps.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gps__struct.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gps__builder.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gps__traits.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gps__type_support.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_command.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__struct.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__builder.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__traits.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__type_support.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/sensor_combined.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_combined__struct.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_combined__builder.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_combined__traits.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_combined__type_support.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_control_mode.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__struct.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__builder.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__traits.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__type_support.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_local_position.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__struct.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__builder.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__traits.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__type_support.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_odometry.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__struct.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__builder.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__traits.hpp \
- /home/niweiss/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__type_support.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/trajectory_setpoint.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__struct.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__builder.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__traits.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__type_support.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/position_setpoint.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_setpoint__struct.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_setpoint__builder.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_setpoint__traits.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_setpoint__type_support.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/position_setpoint_triplet.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_setpoint_triplet__struct.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_setpoint_triplet__builder.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_setpoint_triplet__traits.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_setpoint_triplet__type_support.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/sensor_gps.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gps__struct.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gps__builder.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gps__traits.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gps__type_support.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_command.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__struct.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__builder.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__traits.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__type_support.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/sensor_combined.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_combined__struct.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_combined__builder.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_combined__traits.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_combined__type_support.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_control_mode.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__struct.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__builder.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__traits.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__type_support.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_local_position.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__struct.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__builder.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__traits.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__type_support.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_odometry.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__struct.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__builder.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__traits.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__type_support.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/home_position.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/home_position__struct.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/home_position__builder.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/home_position__traits.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/home_position__type_support.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
@@ -693,9 +698,9 @@ CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o: \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__type_support.hpp \
- /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/flight_command.hpp \
- /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__struct.hpp \
- /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__builder.hpp \
- /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__traits.hpp \
- /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__type_support.hpp \
- /home/niweiss/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/flight_command.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__struct.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__builder.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__traits.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__type_support.hpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp

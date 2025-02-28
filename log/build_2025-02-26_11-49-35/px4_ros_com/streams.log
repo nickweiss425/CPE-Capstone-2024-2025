@@ -1,0 +1,81 @@
+[0.216s] Invoking command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com -- -j16 -l16
+[0.309s] [35m[1mConsolidate compiler generated dependencies of target offboard_launch[0m
+[0.325s] [  0%] Built target ament_cmake_python_copy_px4_ros_com
+[0.347s] [ 11%] Built target frame_transforms
+[0.380s] [ 22%] Built target offboard_control
+[0.380s] [ 33%] Built target vehicle_gps_position_listener
+[0.385s] [ 44%] Built target flight_state_pub
+[0.386s] [ 55%] Built target offboard_control_srv
+[0.387s] [ 66%] Built target offboard_paths
+[0.387s] [ 77%] Built target debug_vect_advertiser
+[0.387s] [ 88%] Built target sensor_combined_listener
+[0.390s] [ 94%] [32mBuilding CXX object CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o[0m
+[0.653s] running egg_info
+[0.673s] writing px4_ros_com.egg-info/PKG-INFO
+[0.674s] writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+[0.674s] writing top-level names to px4_ros_com.egg-info/top_level.txt
+[0.732s] reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.734s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.770s] [ 94%] Built target ament_cmake_python_build_px4_ros_com_egg
+[35.466s] [100%] [32m[1mLinking CXX executable offboard_launch[0m
+[37.518s] [100%] Built target offboard_launch
+[37.536s] Invoked command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com -- -j16 -l16
+[37.540s] Invoking command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com
+[37.549s] -- Install configuration: ""
+[37.550s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/sensor_combined_listener
+[37.550s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/vehicle_gps_position_listener
+[37.550s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/debug_vect_advertiser
+[37.551s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_control
+[37.551s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_control_srv
+[37.552s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_launch
+[37.566s] -- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_launch" to ""
+[37.567s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/flight_state_pub
+[37.567s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_paths
+[37.567s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/library_path.sh
+[37.567s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/library_path.dsv
+[37.567s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/include/px4_ros_com
+[37.568s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/include/px4_ros_com/frame_transforms.h
+[37.568s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/libframe_transforms.so
+[37.568s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch
+[37.568s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch/offboard_control_launch.yaml
+[37.568s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch/vehicle_gps_position_listener.launch.py
+[37.569s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch/sensor_combined_listener.launch.py
+[37.569s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test
+[37.569s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/test_input.py
+[37.569s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/test_output.py
+[37.569s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/__init__.py
+[37.569s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/pipeline_io_test.py
+[37.569s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/pythonpath.sh
+[37.569s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/pythonpath.dsv
+[37.570s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info
+[37.570s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/top_level.txt
+[37.570s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/PKG-INFO
+[37.570s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/dependency_links.txt
+[37.570s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/SOURCES.txt
+[37.571s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com
+[37.571s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/module_to_import.py
+[37.571s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/__init__.py
+[37.621s] Listing '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com'...
+[37.628s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_control.py
+[37.628s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/ament_index/resource_index/package_run_dependencies/px4_ros_com
+[37.628s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/ament_index/resource_index/parent_prefix_path/px4_ros_com
+[37.629s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.sh
+[37.629s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.dsv
+[37.629s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/path.sh
+[37.629s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/path.dsv
+[37.629s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.bash
+[37.629s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.sh
+[37.630s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.zsh
+[37.630s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.dsv
+[37.630s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.dsv
+[37.630s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/ament_index/resource_index/packages/px4_ros_com
+[37.630s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport.cmake
+[37.630s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport-noconfig.cmake
+[37.630s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_dependencies-extras.cmake
+[37.630s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_targets-extras.cmake
+[37.631s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_include_directories-extras.cmake
+[37.631s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_libraries-extras.cmake
+[37.631s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig.cmake
+[37.631s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig-version.cmake
+[37.631s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.xml
+[37.633s] Invoked command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niweiss/ws_sensor_combined/src/px4_ros_com
+CMAKE_SOURCE_DIR = /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niweiss/ws_sensor_combined/build/px4_ros_com
+CMAKE_BINARY_DIR = /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com
 
 # Include any dependencies generated for this target.
 include CMakeFiles/offboard_paths.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/offboard_paths.dir/progress.make
 include CMakeFiles/offboard_paths.dir/flags.make
 
 CMakeFiles/offboard_paths.dir/src/examples/offboard/offboard_paths.cpp.o: CMakeFiles/offboard_paths.dir/flags.make
-CMakeFiles/offboard_paths.dir/src/examples/offboard/offboard_paths.cpp.o: /home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_paths.cpp
+CMakeFiles/offboard_paths.dir/src/examples/offboard/offboard_paths.cpp.o: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_paths.cpp
 CMakeFiles/offboard_paths.dir/src/examples/offboard/offboard_paths.cpp.o: CMakeFiles/offboard_paths.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/ws_sensor_combined/build/px4_ros_com/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/offboard_paths.dir/src/examples/offboard/offboard_paths.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/offboard_paths.dir/src/examples/offboard/offboard_paths.cpp.o -MF CMakeFiles/offboard_paths.dir/src/examples/offboard/offboard_paths.cpp.o.d -o CMakeFiles/offboard_paths.dir/src/examples/offboard/offboard_paths.cpp.o -c /home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_paths.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/offboard_paths.dir/src/examples/offboard/offboard_paths.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/offboard_paths.dir/src/examples/offboard/offboard_paths.cpp.o -MF CMakeFiles/offboard_paths.dir/src/examples/offboard/offboard_paths.cpp.o.d -o CMakeFiles/offboard_paths.dir/src/examples/offboard/offboard_paths.cpp.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_paths.cpp
 
 CMakeFiles/offboard_paths.dir/src/examples/offboard/offboard_paths.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/offboard_paths.dir/src/examples/offboard/offboard_paths.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_paths.cpp > CMakeFiles/offboard_paths.dir/src/examples/offboard/offboard_paths.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_paths.cpp > CMakeFiles/offboard_paths.dir/src/examples/offboard/offboard_paths.cpp.i
 
 CMakeFiles/offboard_paths.dir/src/examples/offboard/offboard_paths.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/offboard_paths.dir/src/examples/offboard/offboard_paths.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_paths.cpp -o CMakeFiles/offboard_paths.dir/src/examples/offboard/offboard_paths.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_paths.cpp -o CMakeFiles/offboard_paths.dir/src/examples/offboard/offboard_paths.cpp.s
 
 # Object files for target offboard_paths
 offboard_paths_OBJECTS = \
@@ -93,12 +93,12 @@ offboard_paths_EXTERNAL_OBJECTS =
 offboard_paths: CMakeFiles/offboard_paths.dir/src/examples/offboard/offboard_paths.cpp.o
 offboard_paths: CMakeFiles/offboard_paths.dir/build.make
 offboard_paths: /opt/ros/humble/lib/librclcpp.so
-offboard_paths: /home/niweiss/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_fastrtps_c.so
-offboard_paths: /home/niweiss/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_fastrtps_cpp.so
-offboard_paths: /home/niweiss/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_introspection_c.so
-offboard_paths: /home/niweiss/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_introspection_cpp.so
-offboard_paths: /home/niweiss/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_cpp.so
-offboard_paths: /home/niweiss/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_generator_py.so
+offboard_paths: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_fastrtps_c.so
+offboard_paths: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_fastrtps_cpp.so
+offboard_paths: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_introspection_c.so
+offboard_paths: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_introspection_cpp.so
+offboard_paths: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_cpp.so
+offboard_paths: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_generator_py.so
 offboard_paths: /opt/ros/humble/lib/liblibstatistics_collector.so
 offboard_paths: /opt/ros/humble/lib/librcl.so
 offboard_paths: /opt/ros/humble/lib/librmw_implementation.so
@@ -144,8 +144,8 @@ offboard_paths: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 offboard_paths: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
 offboard_paths: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 offboard_paths: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
-offboard_paths: /home/niweiss/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_c.so
-offboard_paths: /home/niweiss/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_generator_c.so
+offboard_paths: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_c.so
+offboard_paths: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_generator_c.so
 offboard_paths: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
 offboard_paths: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 offboard_paths: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
@@ -155,7 +155,7 @@ offboard_paths: /opt/ros/humble/lib/librosidl_runtime_c.so
 offboard_paths: /opt/ros/humble/lib/librcutils.so
 offboard_paths: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 offboard_paths: CMakeFiles/offboard_paths.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/niweiss/ws_sensor_combined/build/px4_ros_com/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable offboard_paths"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable offboard_paths"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/offboard_paths.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -167,6 +167,6 @@ CMakeFiles/offboard_paths.dir/clean:
 .PHONY : CMakeFiles/offboard_paths.dir/clean
 
 CMakeFiles/offboard_paths.dir/depend:
-	cd /home/niweiss/ws_sensor_combined/build/px4_ros_com && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niweiss/ws_sensor_combined/src/px4_ros_com /home/niweiss/ws_sensor_combined/src/px4_ros_com /home/niweiss/ws_sensor_combined/build/px4_ros_com /home/niweiss/ws_sensor_combined/build/px4_ros_com /home/niweiss/ws_sensor_combined/build/px4_ros_com/CMakeFiles/offboard_paths.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com/CMakeFiles/offboard_paths.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/offboard_paths.dir/depend
 

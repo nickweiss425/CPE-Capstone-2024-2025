@@ -25,17 +25,17 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: x
+  // member: latitude_deg
   {
-    out << "x: ";
-    rosidl_generator_traits::value_to_yaml(msg.x, out);
+    out << "latitude_deg: ";
+    rosidl_generator_traits::value_to_yaml(msg.latitude_deg, out);
     out << ", ";
   }
 
-  // member: y
+  // member: longitude_deg
   {
-    out << "y: ";
-    rosidl_generator_traits::value_to_yaml(msg.y, out);
+    out << "longitude_deg: ";
+    rosidl_generator_traits::value_to_yaml(msg.longitude_deg, out);
     out << ", ";
   }
 
@@ -57,6 +57,20 @@ inline void to_flow_style_yaml(
   {
     out << "length: ";
     rosidl_generator_traits::value_to_yaml(msg.length, out);
+    out << ", ";
+  }
+
+  // member: duration
+  {
+    out << "duration: ";
+    rosidl_generator_traits::value_to_yaml(msg.duration, out);
+    out << ", ";
+  }
+
+  // member: waypoint_type
+  {
+    out << "waypoint_type: ";
+    rosidl_generator_traits::value_to_yaml(msg.waypoint_type, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -65,23 +79,23 @@ inline void to_block_style_yaml(
   const FlightCommand & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: x
+  // member: latitude_deg
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "x: ";
-    rosidl_generator_traits::value_to_yaml(msg.x, out);
+    out << "latitude_deg: ";
+    rosidl_generator_traits::value_to_yaml(msg.latitude_deg, out);
     out << "\n";
   }
 
-  // member: y
+  // member: longitude_deg
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "y: ";
-    rosidl_generator_traits::value_to_yaml(msg.y, out);
+    out << "longitude_deg: ";
+    rosidl_generator_traits::value_to_yaml(msg.longitude_deg, out);
     out << "\n";
   }
 
@@ -112,6 +126,26 @@ inline void to_block_style_yaml(
     }
     out << "length: ";
     rosidl_generator_traits::value_to_yaml(msg.length, out);
+    out << "\n";
+  }
+
+  // member: duration
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "duration: ";
+    rosidl_generator_traits::value_to_yaml(msg.duration, out);
+    out << "\n";
+  }
+
+  // member: waypoint_type
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "waypoint_type: ";
+    rosidl_generator_traits::value_to_yaml(msg.waypoint_type, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

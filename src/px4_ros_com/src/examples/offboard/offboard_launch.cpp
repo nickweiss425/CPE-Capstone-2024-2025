@@ -1,41 +1,9 @@
-/****************************************************************************
- *
- * Copyright 2020 PX4 Development Team. All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are met:
- *
- * 1. Redistributions of source code must retain the above copyright notice, this
- * list of conditions and the following disclaimer.
- *
- * 2. Redistributions in binary form must reproduce the above copyright notice,
- * this list of conditions and the following disclaimer in the documentation
- * and/or other materials provided with the distribution.
- *
- * 3. Neither the name of the copyright holder nor the names of its contributors
- * may be used to endorse or promote products derived from this software without
- * specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- * POSSIBILITY OF SUCH DAMAGE.
- *
- ****************************************************************************/
+
 
 /**
  * @brief Offboard control example
  * @file offboard_control.cpp
  * @addtogroup examples
- * @author Mickey Cowden <info@cowden.tech>
- * @author Nuno Marques <nuno.marques@dronesolutions.io>
  */
 
 #include <px4_msgs/msg/offboard_control_mode.hpp>
@@ -48,6 +16,7 @@
 #include <px4_msgs/msg/vehicle_control_mode.hpp>
 #include <px4_msgs/msg/vehicle_local_position.hpp>
 #include <px4_msgs/msg/vehicle_odometry.hpp>
+#include <px4_msgs/msg/home_position.hpp>
 #include <rclcpp/rclcpp.hpp>
 #include "std_msgs/msg/int32.hpp"
 #include <stdint.h>
@@ -59,6 +28,8 @@
 #include <chrono>
 #include <iostream>
 #include <cmath> 
+
+#define EARTH_RADIUS 6378137.0 // Earth's radius in meters
 
 using namespace std::chrono;
 using namespace std::chrono_literals;
@@ -73,7 +44,7 @@ class OffboardControl : public rclcpp::Node // new class that inherits from ROS 
 public:
 
 
-	OffboardControl(float initial_altitude) : Node("drone_launch"), current_state_(FlightState::LANDED) // initialize node (base class constructor)
+	OffboardControl() : Node("drone_launch"), current_state_(FlightState::LANDED) // initialize node (base class constructor)
 	{
 		rmw_qos_profile_t qos_profile = rmw_qos_profile_sensor_data;
 		auto qos = rclcpp::QoS(rclcpp::QoSInitialization(qos_profile.history, 5), qos_profile);
@@ -88,8 +59,8 @@ public:
 		command_ack_publisher_ = this->create_publisher<std_msgs::msg::Int32>("/waypoint_ack", 10);
 
 		// subscriber to read desired state messages from gui
-		gui_command_subscriber_ = this->create_subscription<std_msgs::msg::Int32>(
-            "desired_state", 10, std::bind(&OffboardControl::stateCallback, this, std::placeholders::_1));
+		// gui_command_subscriber_ = this->create_subscription<std_msgs::msg::Int32>(
+        //     "desired_state", 10, std::bind(&OffboardControl::stateCallback, this, std::placeholders::_1));
 
 		// subscriber to monitor local location of the drone
 		odometry_subscriber_ = this->create_subscription<VehicleOdometry>(
@@ -107,14 +78,13 @@ public:
 		flight_command_subscriber_ = this->create_subscription<FlightCommand>(
             "flight_command", 10, std::bind(&OffboardControl::flightCommandCallback, this, std::placeholders::_1));
 
-		
 
 
 		offboard_setpoint_counter_ = 0;
 		gui_data_delay_ = 0;
 
-
-		auto timer_callback = [this, initial_altitude]() -> void {
+		// timer to ensure this block of code runs every 100ms
+		auto timer_callback = [this]() -> void {
 			
 			if (offboard_setpoint_counter_ == 10) {
 				// Change to Offboard mode after 10 setpoints
@@ -129,33 +99,33 @@ public:
 				}
 
 				// check current command state from GUI
-				RCLCPP_INFO(this->get_logger(), "CURRENT STATE: %s", flightStateToString(static_cast<int>(current_state_)).c_str());
+				//RCLCPP_INFO(this->get_logger(), "CURRENT STATE: %s", flightStateToString(static_cast<int>(current_state_)).c_str());
 				switch (current_state_) {
 					// landed state, no work to do
 					case FlightState::LANDED:
 						break;
 					// fly straight up from home to given altitude
 					case FlightState::TAKEOFF:
-						handleTakeoffState(initial_altitude);
+						handleTakeoffState(-10);
 						break;
 					// land at set home position: local position of 0,0,0
 					case FlightState::HOME_LAND:
 						publish_trajectory_setpoint(0.0, 0.0, 0.0);						
 						break;
 					case FlightState::WAYPOINT_HOLD:
-						publish_trajectory_setpoint(-10.0, -10.0, -10.0);
+						publish_trajectory_setpoint(target_x_, target_y_, target_altitude_);
 						break;
 					// fly to edge of circle, centered around given waypoint
 					case FlightState::CIRCLE_WAYPOINT:
-						handleCircleWaypointState(0, 0, -10, 20);
+						handleCircleWaypointState(target_x_, target_y_, target_altitude_, circle_radius_);
 						break;
 					// fly in a circle path around center point with given radius
 					case FlightState::CIRCLE_PATH:
-						handleCirclePathState(0, 0, -10, 20);
+						handleCirclePathState(target_x_, target_y_, target_altitude_, circle_radius_);
 						break;
 					// fly to edge of square, centered around given waypoint
 					case FlightState::SQUARE_WAYPOINT:
-						handleSquareWaypointState(0, 0, -10, 10);
+						handleSquareWaypointState(target_x_, target_y_, target_altitude_, circle_radius_);
 						break;
 					// fly in a square path around center point with given length
 					case FlightState::SQUARE_PATH:
@@ -163,11 +133,11 @@ public:
 						break;
 					// fly to center of figure 8
 					case FlightState::FIGURE8_WAYPOINT:
-						handleFigure8WaypointState(0, 0, -10, 10);
+						handleFigure8WaypointState(target_x_, target_y_	, target_altitude_, circle_radius_);
 						break;
 					// fly in a figure 8 pattern centered around waypoint with given radius
 					case FlightState::FIGURE8_PATH:
-						handleFigure8PathState(0, 0, -10, 10);
+						handleFigure8PathState(target_x_, target_y_	, target_altitude_, circle_radius_);
 						break;
 					// land directly below where drone currently is
 					case FlightState::LAND_IN_PLACE:
@@ -192,6 +162,7 @@ public:
 	void disarm();
 
 private:
+	// enum to hold flight states for state machine
 	enum class FlightState {
     	LANDED = 0,
     	TAKEOFF = 1,
@@ -218,7 +189,7 @@ private:
 	rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr command_ack_publisher_;
 
 
-	rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr gui_command_subscriber_;
+	//rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr gui_command_subscriber_;
 	rclcpp::Subscription<SensorGps>::SharedPtr gps_px4_subscriber_;
 	rclcpp::Subscription<VehicleOdometry>::SharedPtr odometry_subscriber_;
 	rclcpp::Subscription<SensorCombined>::SharedPtr sensor_px4_subscriber_;
@@ -229,7 +200,12 @@ private:
 
 	uint64_t offboard_setpoint_counter_;   //!< counter for the number of setpoints sent
 
+	// counter to ensure a 1 second interval between data passed to the gui
 	uint64_t gui_data_delay_;
+
+	bool armed = false;
+	float home_lat_;
+	float home_lon_;
 
 	// in class variables to hold local position of drone 
 	float cur_x_;
@@ -252,6 +228,11 @@ private:
 	float target_z_;
 	float target_altitude_ = -10;
 
+	// in class variables to hold current target gps positions
+	float target_lat_;
+	float target_lon_;
+
+	// parameters to help with square path
 	float square_length_;
 	uint8_t square_cur_edge_;
 	float cur_square_x_;
@@ -260,17 +241,17 @@ private:
 	float steps_per_edge_ = 250;
 	int steps_taken_;
 
+	// parameters to help with circle and figure 8 path
 	float circle_radius_;
 	float angle_;
 	float angular_step_ = 0.01;
+	float figure8_y;
 
 	// in class variables to hold current global position
 	float cur_lat_;
 	float cur_lon_;
 	float cur_altitude_;
 
-
-	float figure8_y;
 
 
 
@@ -318,6 +299,7 @@ private:
 
 	// start square path by going to the center waypoint
 	void handleFigure8WaypointState(float waypoint_x, float waypoint_y, float waypoint_z, float radius){
+		// go to center of figure 8 with a tolerance of 0.2 meters
 		if (!check_at_setpoint(waypoint_x, waypoint_y, waypoint_z, 0.2)){
 			publish_trajectory_setpoint(waypoint_x, waypoint_y, waypoint_z);
 		}
@@ -449,41 +431,52 @@ private:
 	// creates square path for drone to fly in
 	void handleSquarePathState(void){
 		this->arm();
-		
+		// left edge of square
 		if (square_cur_edge_ == 1){
+			// increment y coords by step
 			cur_square_y_ += square_step_;
 			publish_trajectory_setpoint(cur_square_x_, cur_square_y_, target_altitude_);
 			steps_taken_++;
+			// change to top edge once number of steps reached
 			if (steps_taken_ == steps_per_edge_){
 				steps_taken_ = 0;
 				square_cur_edge_ = 2;
 			}
 
 		}
+		// top edge of square
 		else if (square_cur_edge_ == 2){
+			// decrement x coords by step 
 			cur_square_x_ -= square_step_;
 			publish_trajectory_setpoint(cur_square_x_, cur_square_y_, target_altitude_);
 			steps_taken_++;
+			// change to right edge once number of steps reached
 			if (steps_taken_ == steps_per_edge_){
 				steps_taken_ = 0;
 				square_cur_edge_ = 3;
 			}
 
 		}
+		// right edge of square
 		else if (square_cur_edge_ == 3){
+			// decrement y coords by step
 			cur_square_y_ -= square_step_;
 			publish_trajectory_setpoint(cur_square_x_, cur_square_y_, target_altitude_);
 			steps_taken_++;
+			// change to bottom edge once number of steps reached
 			if (steps_taken_ == steps_per_edge_){
 				steps_taken_ = 0;
 				square_cur_edge_ = 4;
 			}
 
 		}
+		// bottom edge of square
 		else if (square_cur_edge_ == 4){
+			// increment x coords by step
 			cur_square_x_ += square_step_;
 			publish_trajectory_setpoint(cur_square_x_, cur_square_y_, target_altitude_);
 			steps_taken_++;
+			// change to left edge once number of steps reached
 			if (steps_taken_ == steps_per_edge_){
 				steps_taken_ = 0;
 				square_cur_edge_ = 1;
@@ -495,16 +488,16 @@ private:
 	
 
 	// function that gets called when a new state from topic is received 
-	void stateCallback(const std_msgs::msg::Int32::SharedPtr msg) {
-        int state_int = msg->data;
-		// make sure valid state is received
-        if (state_int >= 0 && state_int <= 15) {
-            current_state_ = static_cast<FlightState>(state_int);
-            RCLCPP_INFO(this->get_logger(), "Received new state: %s", flightStateToString(state_int).c_str());
-        } else {
-            RCLCPP_WARN(this->get_logger(), "Invalid state received: %s", flightStateToString(state_int).c_str());
-        }
-    }
+	// void stateCallback(const std_msgs::msg::Int32::SharedPtr msg) {
+    //     int state_int = msg->data;
+	// 	// make sure valid state is received
+    //     if (state_int >= 0 && state_int <= 11) {
+    //         current_state_ = static_cast<FlightState>(state_int);
+    //         RCLCPP_INFO(this->get_logger(), "Received new state: %s", flightStateToString(state_int).c_str());
+    //     } else {
+    //         RCLCPP_WARN(this->get_logger(), "Invalid state received: %s", flightStateToString(state_int).c_str());
+    //     }
+    // }
 
 	// callback function for when drone receives odometry messages from uorb topic
 	void odometryCallback(const VehicleOdometry msg) {
@@ -514,22 +507,42 @@ private:
 	}
 
 
-	// callback to set global parameters for waypoint/loiter command from gui
+	// callback to set global parameters for requested waypoint from GUI
 	void flightCommandCallback(const FlightCommand msg){
-		target_x_ = msg.x;
-		target_y_ = msg.y;
+		target_lon_ = msg.longitude_deg;
+		target_lat_ = msg.latitude_deg;
 		target_altitude_ = msg.altitude;
 		circle_radius_ = msg.radius;
 		square_length_ = msg.length;
+		current_state_ = static_cast<FlightState>(msg.waypoint_type);
+		updateLocalTargets();
+		std::cout << "Received Flight Command:\n" << "Latitude: " << target_lat_ << "\nLongitude: " << target_lon_ << "\nAltitude: " << target_altitude_ << "\nRadius: " << circle_radius_ <<  "\nLength: " << square_length_ << std::endl;
+		
 	}
+
+	// Convert degrees to radians
+	float deg2Rad(float degrees) {
+		return degrees * (M_PI / 180.0f);
+	}
+
+	void updateLocalTargets(void) {
+		float dLon = deg2Rad(target_lon_ - home_lon_);
+		float dLat = deg2Rad(target_lat_ - home_lat_);
+
+		target_x_ = dLat * static_cast<float>(EARTH_RADIUS);
+		target_y_ = dLon * static_cast<float>(EARTH_RADIUS) * std::cos(deg2Rad(home_lat_));
+	}
+
 
 
 	// callback function for when drone receives gps messages
 	void gpsCallback(const SensorGps msg) {
+		
 		// update in class variables
         cur_lat_ = msg.latitude_deg;
 		cur_lon_ = msg.longitude_deg;
 		cur_altitude_ = msg.altitude_msl_m;
+		RCLCPP_INFO(this->get_logger(), "(%f, %f)\n", cur_lat_, cur_lon_);
     }
 
 	// publish drone's current gps coords to gui
@@ -620,16 +633,20 @@ private:
 
 
 
-
-
 /**
  * @brief Send a command to Arm the vehicle
  */
 void OffboardControl::arm()
 {
+	if (armed == false){
+		home_lat_ = cur_lat_;
+		home_lon_ = cur_lon_;
+		armed = true;
+		RCLCPP_INFO(this->get_logger(), "Home Latitude: %f\nHome Longitude: %f\n", home_lat_, home_lon_);
+	}
 	publish_vehicle_command(VehicleCommand::VEHICLE_CMD_COMPONENT_ARM_DISARM, 1.0);
 
-	RCLCPP_INFO(this->get_logger(), "Arm command send");
+	//RCLCPP_INFO(this->get_logger(), "Arm command send");
 }
 
 /**
@@ -639,7 +656,7 @@ void OffboardControl::disarm()
 {
 	publish_vehicle_command(VehicleCommand::VEHICLE_CMD_COMPONENT_ARM_DISARM, 0.0);
 
-	RCLCPP_INFO(this->get_logger(), "Disarm command send");
+	//RCLCPP_INFO(this->get_logger(), "Disarm command send");
 }
 
 /**
@@ -701,8 +718,7 @@ int main(int argc, char *argv[])
 	std::cout << "Starting offboard control node..." << std::endl;
 	setvbuf(stdout, NULL, _IONBF, BUFSIZ);
 	rclcpp::init(argc, argv);
-	float initial_altitude = std::stof(argv[1]);  // Convert the first argument to float
-	rclcpp::spin(std::make_shared<OffboardControl>(initial_altitude));
+	rclcpp::spin(std::make_shared<OffboardControl>());
 
 	rclcpp::shutdown();
 	return 0;

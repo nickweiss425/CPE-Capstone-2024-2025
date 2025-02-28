@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp" "CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o" "gcc" "CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o.d"
+  "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp" "CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o" "gcc" "CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o.d"
   )
 
 # Targets to which this target links.

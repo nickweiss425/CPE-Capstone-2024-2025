@@ -1,5 +1,5 @@
 CMakeFiles/flight_state_pub.dir/src/examples/offboard/flight_state_pub.cpp.o: \
- /home/niweiss/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/flight_state_pub.cpp \
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/flight_state_pub.cpp \
  /usr/include/stdc-predef.h \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal \

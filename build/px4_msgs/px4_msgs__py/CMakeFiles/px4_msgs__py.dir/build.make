@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niweiss/ws_sensor_combined/src/px4_msgs
+CMAKE_SOURCE_DIR = /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niweiss/ws_sensor_combined/build/px4_msgs
+CMAKE_BINARY_DIR = /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs
 
 # Utility rule file for px4_msgs__py.
 
@@ -771,8 +771,8 @@ rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: ros
 rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/px4_msgs/srv/VehicleCommand.idl
 rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/niweiss/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/niweiss/ws_sensor_combined/build/px4_msgs/px4_msgs__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/niweiss/ws_sensor_combined/build/px4_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/px4_msgs__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_introspection_c.c
@@ -2624,10 +2624,10 @@ px4_msgs__py/CMakeFiles/px4_msgs__py.dir/build: px4_msgs__py
 .PHONY : px4_msgs__py/CMakeFiles/px4_msgs__py.dir/build
 
 px4_msgs__py/CMakeFiles/px4_msgs__py.dir/clean:
-	cd /home/niweiss/ws_sensor_combined/build/px4_msgs/px4_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/px4_msgs__py.dir/cmake_clean.cmake
+	cd /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/px4_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/px4_msgs__py.dir/cmake_clean.cmake
 .PHONY : px4_msgs__py/CMakeFiles/px4_msgs__py.dir/clean
 
 px4_msgs__py/CMakeFiles/px4_msgs__py.dir/depend:
-	cd /home/niweiss/ws_sensor_combined/build/px4_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niweiss/ws_sensor_combined/src/px4_msgs /home/niweiss/ws_sensor_combined/build/px4_msgs/px4_msgs__py /home/niweiss/ws_sensor_combined/build/px4_msgs /home/niweiss/ws_sensor_combined/build/px4_msgs/px4_msgs__py /home/niweiss/ws_sensor_combined/build/px4_msgs/px4_msgs__py/CMakeFiles/px4_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/px4_msgs__py /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/px4_msgs__py /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/px4_msgs__py/CMakeFiles/px4_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : px4_msgs__py/CMakeFiles/px4_msgs__py.dir/depend
 

@@ -7,24 +7,32 @@ module custom_msgs {
   module msg {
     struct FlightCommand {
       @verbatim (language="comment", text=
-        "local x")
-      float x;
+        "Latitude in degrees")
+      float latitude_deg;
 
       @verbatim (language="comment", text=
-        "local y")
-      float y;
+        "Longitude in degrees")
+      float longitude_deg;
 
       @verbatim (language="comment", text=
         "altitude for drone")
       float altitude;
 
       @verbatim (language="comment", text=
-        "radius if circle path")
+        "radius if circle/figure8 path")
       float radius;
 
       @verbatim (language="comment", text=
         "length for square path")
       float length;
+
+      @verbatim (language="comment", text=
+        "duration to remain at waypoint")
+      float duration;
+
+      @verbatim (language="comment", text=
+        "type of waypoint")
+      int8 waypoint_type;
     };
   };
 };

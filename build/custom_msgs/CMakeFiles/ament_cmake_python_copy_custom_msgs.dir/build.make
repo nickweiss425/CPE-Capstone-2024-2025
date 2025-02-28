@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niweiss/ws_sensor_combined/src/custom_msgs
+CMAKE_SOURCE_DIR = /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/custom_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niweiss/ws_sensor_combined/build/custom_msgs
+CMAKE_BINARY_DIR = /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs
 
 # Utility rule file for ament_cmake_python_copy_custom_msgs.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_custom_msgs.dir/compiler_depend.make
 include CMakeFiles/ament_cmake_python_copy_custom_msgs.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_custom_msgs:
-	/usr/bin/cmake -E copy_directory /home/niweiss/ws_sensor_combined/build/custom_msgs/rosidl_generator_py/custom_msgs /home/niweiss/ws_sensor_combined/build/custom_msgs/ament_cmake_python/custom_msgs/custom_msgs
+	/usr/bin/cmake -E copy_directory /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs/rosidl_generator_py/custom_msgs /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs/ament_cmake_python/custom_msgs/custom_msgs
 
 ament_cmake_python_copy_custom_msgs: CMakeFiles/ament_cmake_python_copy_custom_msgs
 ament_cmake_python_copy_custom_msgs: CMakeFiles/ament_cmake_python_copy_custom_msgs.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_copy_custom_msgs.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_custom_msgs.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_custom_msgs.dir/depend:
-	cd /home/niweiss/ws_sensor_combined/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niweiss/ws_sensor_combined/src/custom_msgs /home/niweiss/ws_sensor_combined/src/custom_msgs /home/niweiss/ws_sensor_combined/build/custom_msgs /home/niweiss/ws_sensor_combined/build/custom_msgs /home/niweiss/ws_sensor_combined/build/custom_msgs/CMakeFiles/ament_cmake_python_copy_custom_msgs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/custom_msgs /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/custom_msgs /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs/CMakeFiles/ament_cmake_python_copy_custom_msgs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_copy_custom_msgs.dir/depend
 

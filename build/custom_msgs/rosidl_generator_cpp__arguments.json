@@ -1,9 +1,9 @@
 {
   "package_name": "custom_msgs",
-  "output_dir": "/home/niweiss/ws_sensor_combined/build/custom_msgs/rosidl_generator_cpp/custom_msgs",
+  "output_dir": "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs/rosidl_generator_cpp/custom_msgs",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
-    "/home/niweiss/ws_sensor_combined/build/custom_msgs/rosidl_adapter/custom_msgs:msg/FlightCommand.idl"
+    "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs/rosidl_adapter/custom_msgs:msg/FlightCommand.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp",
@@ -21,6 +21,6 @@
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__builder.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
-    "/home/niweiss/ws_sensor_combined/build/custom_msgs/rosidl_adapter/custom_msgs/msg/FlightCommand.idl"
+    "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs/rosidl_adapter/custom_msgs/msg/FlightCommand.idl"
   ]
 }

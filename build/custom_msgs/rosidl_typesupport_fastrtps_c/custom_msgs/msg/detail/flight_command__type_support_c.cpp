@@ -49,14 +49,14 @@ static bool _FlightCommand__cdr_serialize(
     return false;
   }
   const _FlightCommand__ros_msg_type * ros_message = static_cast<const _FlightCommand__ros_msg_type *>(untyped_ros_message);
-  // Field name: x
+  // Field name: latitude_deg
   {
-    cdr << ros_message->x;
+    cdr << ros_message->latitude_deg;
   }
 
-  // Field name: y
+  // Field name: longitude_deg
   {
-    cdr << ros_message->y;
+    cdr << ros_message->longitude_deg;
   }
 
   // Field name: altitude
@@ -74,6 +74,16 @@ static bool _FlightCommand__cdr_serialize(
     cdr << ros_message->length;
   }
 
+  // Field name: duration
+  {
+    cdr << ros_message->duration;
+  }
+
+  // Field name: waypoint_type
+  {
+    cdr << ros_message->waypoint_type;
+  }
+
   return true;
 }
 
@@ -86,14 +96,14 @@ static bool _FlightCommand__cdr_deserialize(
     return false;
   }
   _FlightCommand__ros_msg_type * ros_message = static_cast<_FlightCommand__ros_msg_type *>(untyped_ros_message);
-  // Field name: x
+  // Field name: latitude_deg
   {
-    cdr >> ros_message->x;
+    cdr >> ros_message->latitude_deg;
   }
 
-  // Field name: y
+  // Field name: longitude_deg
   {
-    cdr >> ros_message->y;
+    cdr >> ros_message->longitude_deg;
   }
 
   // Field name: altitude
@@ -109,6 +119,16 @@ static bool _FlightCommand__cdr_deserialize(
   // Field name: length
   {
     cdr >> ros_message->length;
+  }
+
+  // Field name: duration
+  {
+    cdr >> ros_message->duration;
+  }
+
+  // Field name: waypoint_type
+  {
+    cdr >> ros_message->waypoint_type;
   }
 
   return true;
@@ -128,15 +148,15 @@ size_t get_serialized_size_custom_msgs__msg__FlightCommand(
   (void)padding;
   (void)wchar_size;
 
-  // field.name x
+  // field.name latitude_deg
   {
-    size_t item_size = sizeof(ros_message->x);
+    size_t item_size = sizeof(ros_message->latitude_deg);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name y
+  // field.name longitude_deg
   {
-    size_t item_size = sizeof(ros_message->y);
+    size_t item_size = sizeof(ros_message->longitude_deg);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -155,6 +175,18 @@ size_t get_serialized_size_custom_msgs__msg__FlightCommand(
   // field.name length
   {
     size_t item_size = sizeof(ros_message->length);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name duration
+  {
+    size_t item_size = sizeof(ros_message->duration);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name waypoint_type
+  {
+    size_t item_size = sizeof(ros_message->waypoint_type);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -187,7 +219,7 @@ size_t max_serialized_size_custom_msgs__msg__FlightCommand(
   full_bounded = true;
   is_plain = true;
 
-  // member: x
+  // member: latitude_deg
   {
     size_t array_size = 1;
 
@@ -195,7 +227,7 @@ size_t max_serialized_size_custom_msgs__msg__FlightCommand(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: y
+  // member: longitude_deg
   {
     size_t array_size = 1;
 
@@ -227,6 +259,21 @@ size_t max_serialized_size_custom_msgs__msg__FlightCommand(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // member: duration
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: waypoint_type
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -236,7 +283,7 @@ size_t max_serialized_size_custom_msgs__msg__FlightCommand(
     using DataType = custom_msgs__msg__FlightCommand;
     is_plain =
       (
-      offsetof(DataType, length) +
+      offsetof(DataType, waypoint_type) +
       last_member_size
       ) == ret_val;
   }

@@ -17,11 +17,13 @@ custom_msgs__msg__FlightCommand__init(custom_msgs__msg__FlightCommand * msg)
   if (!msg) {
     return false;
   }
-  // x
-  // y
+  // latitude_deg
+  // longitude_deg
   // altitude
   // radius
   // length
+  // duration
+  // waypoint_type
   return true;
 }
 
@@ -31,11 +33,13 @@ custom_msgs__msg__FlightCommand__fini(custom_msgs__msg__FlightCommand * msg)
   if (!msg) {
     return;
   }
-  // x
-  // y
+  // latitude_deg
+  // longitude_deg
   // altitude
   // radius
   // length
+  // duration
+  // waypoint_type
 }
 
 bool
@@ -44,12 +48,12 @@ custom_msgs__msg__FlightCommand__are_equal(const custom_msgs__msg__FlightCommand
   if (!lhs || !rhs) {
     return false;
   }
-  // x
-  if (lhs->x != rhs->x) {
+  // latitude_deg
+  if (lhs->latitude_deg != rhs->latitude_deg) {
     return false;
   }
-  // y
-  if (lhs->y != rhs->y) {
+  // longitude_deg
+  if (lhs->longitude_deg != rhs->longitude_deg) {
     return false;
   }
   // altitude
@@ -64,6 +68,14 @@ custom_msgs__msg__FlightCommand__are_equal(const custom_msgs__msg__FlightCommand
   if (lhs->length != rhs->length) {
     return false;
   }
+  // duration
+  if (lhs->duration != rhs->duration) {
+    return false;
+  }
+  // waypoint_type
+  if (lhs->waypoint_type != rhs->waypoint_type) {
+    return false;
+  }
   return true;
 }
 
@@ -75,16 +87,20 @@ custom_msgs__msg__FlightCommand__copy(
   if (!input || !output) {
     return false;
   }
-  // x
-  output->x = input->x;
-  // y
-  output->y = input->y;
+  // latitude_deg
+  output->latitude_deg = input->latitude_deg;
+  // longitude_deg
+  output->longitude_deg = input->longitude_deg;
   // altitude
   output->altitude = input->altitude;
   // radius
   output->radius = input->radius;
   // length
   output->length = input->length;
+  // duration
+  output->duration = input->duration;
+  // waypoint_type
+  output->waypoint_type = input->waypoint_type;
   return true;
 }
 

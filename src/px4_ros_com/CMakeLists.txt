@@ -80,6 +80,11 @@ ament_target_dependencies(flight_state_pub rclcpp std_msgs)
 install(TARGETS flight_state_pub DESTINATION lib/${PROJECT_NAME})
 
 
+# examples/offboard/gui_command_pub
+add_executable(gui_command_pub src/examples/offboard/gui_command_pub.cpp)
+ament_target_dependencies(gui_command_pub rclcpp std_msgs custom_msgs)
+install(TARGETS gui_command_pub DESTINATION lib/${PROJECT_NAME})
+
 # examples/offboard/offboard_paths
 add_executable(offboard_paths src/examples/offboard/offboard_paths.cpp)
 ament_target_dependencies(offboard_paths rclcpp px4_msgs)

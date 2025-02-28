@@ -21,16 +21,48 @@ namespace msg
 namespace builder
 {
 
+class Init_FlightCommand_waypoint_type
+{
+public:
+  explicit Init_FlightCommand_waypoint_type(::custom_msgs::msg::FlightCommand & msg)
+  : msg_(msg)
+  {}
+  ::custom_msgs::msg::FlightCommand waypoint_type(::custom_msgs::msg::FlightCommand::_waypoint_type_type arg)
+  {
+    msg_.waypoint_type = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::custom_msgs::msg::FlightCommand msg_;
+};
+
+class Init_FlightCommand_duration
+{
+public:
+  explicit Init_FlightCommand_duration(::custom_msgs::msg::FlightCommand & msg)
+  : msg_(msg)
+  {}
+  Init_FlightCommand_waypoint_type duration(::custom_msgs::msg::FlightCommand::_duration_type arg)
+  {
+    msg_.duration = std::move(arg);
+    return Init_FlightCommand_waypoint_type(msg_);
+  }
+
+private:
+  ::custom_msgs::msg::FlightCommand msg_;
+};
+
 class Init_FlightCommand_length
 {
 public:
   explicit Init_FlightCommand_length(::custom_msgs::msg::FlightCommand & msg)
   : msg_(msg)
   {}
-  ::custom_msgs::msg::FlightCommand length(::custom_msgs::msg::FlightCommand::_length_type arg)
+  Init_FlightCommand_duration length(::custom_msgs::msg::FlightCommand::_length_type arg)
   {
     msg_.length = std::move(arg);
-    return std::move(msg_);
+    return Init_FlightCommand_duration(msg_);
   }
 
 private:
@@ -69,15 +101,15 @@ private:
   ::custom_msgs::msg::FlightCommand msg_;
 };
 
-class Init_FlightCommand_y
+class Init_FlightCommand_longitude_deg
 {
 public:
-  explicit Init_FlightCommand_y(::custom_msgs::msg::FlightCommand & msg)
+  explicit Init_FlightCommand_longitude_deg(::custom_msgs::msg::FlightCommand & msg)
   : msg_(msg)
   {}
-  Init_FlightCommand_altitude y(::custom_msgs::msg::FlightCommand::_y_type arg)
+  Init_FlightCommand_altitude longitude_deg(::custom_msgs::msg::FlightCommand::_longitude_deg_type arg)
   {
-    msg_.y = std::move(arg);
+    msg_.longitude_deg = std::move(arg);
     return Init_FlightCommand_altitude(msg_);
   }
 
@@ -85,16 +117,16 @@ private:
   ::custom_msgs::msg::FlightCommand msg_;
 };
 
-class Init_FlightCommand_x
+class Init_FlightCommand_latitude_deg
 {
 public:
-  Init_FlightCommand_x()
+  Init_FlightCommand_latitude_deg()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_FlightCommand_y x(::custom_msgs::msg::FlightCommand::_x_type arg)
+  Init_FlightCommand_longitude_deg latitude_deg(::custom_msgs::msg::FlightCommand::_latitude_deg_type arg)
   {
-    msg_.x = std::move(arg);
-    return Init_FlightCommand_y(msg_);
+    msg_.latitude_deg = std::move(arg);
+    return Init_FlightCommand_longitude_deg(msg_);
   }
 
 private:
@@ -112,7 +144,7 @@ template<>
 inline
 auto build<::custom_msgs::msg::FlightCommand>()
 {
-  return custom_msgs::msg::builder::Init_FlightCommand_x();
+  return custom_msgs::msg::builder::Init_FlightCommand_latitude_deg();
 }
 
 }  // namespace custom_msgs

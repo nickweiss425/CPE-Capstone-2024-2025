@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niweiss/ws_sensor_combined/src/custom_msgs
+CMAKE_SOURCE_DIR = /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/custom_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niweiss/ws_sensor_combined/build/custom_msgs
+CMAKE_BINARY_DIR = /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs
 
 # Utility rule file for custom_msgs__cpp.
 
@@ -89,8 +89,8 @@ rosidl_generator_cpp/custom_msgs/msg/flight_command.hpp: /opt/ros/humble/share/r
 rosidl_generator_cpp/custom_msgs/msg/flight_command.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/custom_msgs/msg/flight_command.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/custom_msgs/msg/flight_command.hpp: rosidl_adapter/custom_msgs/msg/FlightCommand.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/niweiss/ws_sensor_combined/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/niweiss/ws_sensor_combined/build/custom_msgs/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/custom_msgs/msg/detail/flight_command__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/flight_command.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/flight_command__builder.hpp
@@ -122,6 +122,6 @@ CMakeFiles/custom_msgs__cpp.dir/clean:
 .PHONY : CMakeFiles/custom_msgs__cpp.dir/clean
 
 CMakeFiles/custom_msgs__cpp.dir/depend:
-	cd /home/niweiss/ws_sensor_combined/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niweiss/ws_sensor_combined/src/custom_msgs /home/niweiss/ws_sensor_combined/src/custom_msgs /home/niweiss/ws_sensor_combined/build/custom_msgs /home/niweiss/ws_sensor_combined/build/custom_msgs /home/niweiss/ws_sensor_combined/build/custom_msgs/CMakeFiles/custom_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/custom_msgs /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/custom_msgs /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs/CMakeFiles/custom_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/custom_msgs__cpp.dir/depend
 

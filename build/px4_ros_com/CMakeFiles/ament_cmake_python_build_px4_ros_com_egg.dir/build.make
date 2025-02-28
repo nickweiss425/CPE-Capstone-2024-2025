@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niweiss/ws_sensor_combined/src/px4_ros_com
+CMAKE_SOURCE_DIR = /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niweiss/ws_sensor_combined/build/px4_ros_com
+CMAKE_BINARY_DIR = /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com
 
 # Utility rule file for ament_cmake_python_build_px4_ros_com_egg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_px4_ros_com_egg.dir/compiler_depend.
 include CMakeFiles/ament_cmake_python_build_px4_ros_com_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_px4_ros_com_egg:
-	cd /home/niweiss/ws_sensor_combined/build/px4_ros_com/ament_cmake_python/px4_ros_com && /usr/bin/python3 setup.py egg_info
+	cd /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com/ament_cmake_python/px4_ros_com && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_px4_ros_com_egg: CMakeFiles/ament_cmake_python_build_px4_ros_com_egg
 ament_cmake_python_build_px4_ros_com_egg: CMakeFiles/ament_cmake_python_build_px4_ros_com_egg.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_build_px4_ros_com_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_px4_ros_com_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_px4_ros_com_egg.dir/depend:
-	cd /home/niweiss/ws_sensor_combined/build/px4_ros_com && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niweiss/ws_sensor_combined/src/px4_ros_com /home/niweiss/ws_sensor_combined/src/px4_ros_com /home/niweiss/ws_sensor_combined/build/px4_ros_com /home/niweiss/ws_sensor_combined/build/px4_ros_com /home/niweiss/ws_sensor_combined/build/px4_ros_com/CMakeFiles/ament_cmake_python_build_px4_ros_com_egg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com/CMakeFiles/ament_cmake_python_build_px4_ros_com_egg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_build_px4_ros_com_egg.dir/depend
 

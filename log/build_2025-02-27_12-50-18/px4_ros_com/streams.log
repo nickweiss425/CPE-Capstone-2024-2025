@@ -1,0 +1,40 @@
+[0.348s] Invoking command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com:/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp:/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp:/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/custom_msgs:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib:/home/niweiss/ws_sensor_combined/install/px4_ros_com/lib:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/ws_sensor_combined/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com -- -j16 -l16
+[0.413s] [35m[1mConsolidate compiler generated dependencies of target gui_command_pub[0m
+[0.427s] [ 10%] Built target frame_transforms
+[0.430s] [ 20%] Built target vehicle_gps_position_listener
+[0.430s] [ 30%] Built target flight_state_pub
+[0.430s] [ 40%] Built target offboard_control
+[0.434s] [ 55%] Built target debug_vect_advertiser
+[0.435s] [ 60%] Built target sensor_combined_listener
+[0.436s] [ 70%] Built target offboard_control_srv
+[0.436s] [ 75%] [32mBuilding CXX object CMakeFiles/gui_command_pub.dir/src/examples/offboard/gui_command_pub.cpp.o[0m
+[0.436s] [ 85%] Built target offboard_launch
+[0.440s] [ 95%] Built target offboard_paths
+[0.445s] [ 95%] Built target ament_cmake_python_copy_px4_ros_com
+[0.729s] running egg_info
+[0.748s] writing px4_ros_com.egg-info/PKG-INFO
+[0.748s] writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+[0.749s] writing top-level names to px4_ros_com.egg-info/top_level.txt
+[0.810s] reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.812s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.849s] [ 95%] Built target ament_cmake_python_build_px4_ros_com_egg
+[4.543s] [01m[K/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/gui_command_pub.cpp:28:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.543s]    28 |     rclcpp::Publisher<custom_msgs:msg::FlightCommand[01;31m[K>[m[K::SharedPtr publisher_;
+[4.544s]       |                                                     [01;31m[K^[m[K
+[4.544s] [01m[K/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/gui_command_pub.cpp:28:56:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[4.544s]    28 |     rclcpp::Publisher<custom_msgs:msg::FlightCommand>::[01;31m[KSharedPtr[m[K publisher_;
+[4.544s]       |                                                        [01;31m[K^~~~~~~~~[m[K
+[4.544s]       |                                                                 [32m[K;[m[K
+[4.547s] [01m[K/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/gui_command_pub.cpp:28:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[4.548s]    28 |     rclcpp::Publisher<custom_msgs:msg::FlightCommand>::SharedPtr [01;31m[Kpublisher_[m[K;
+[4.548s]       |                                                                  [01;31m[K^~~~~~~~~~[m[K
+[4.548s]       |                                                                  [32m[Krmw_publisher_t[m[K
+[4.558s] [01m[K/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/gui_command_pub.cpp:[m[K In constructor ‘[01m[KCommandPublisher::CommandPublisher(int)[m[K’:
+[4.558s] [01m[K/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/gui_command_pub.cpp:11:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[4.558s]    11 |         [01;31m[Kpublisher_[m[K = this->create_publisher<custom_msgs::msg::FlightCommand>("flight_command", 10);
+[4.558s]       |         [01;31m[K^~~~~~~~~~[m[K
+[4.558s]       |         [32m[Krmw_publisher_t[m[K
+[5.819s] gmake[2]: *** [CMakeFiles/gui_command_pub.dir/build.make:76: CMakeFiles/gui_command_pub.dir/src/examples/offboard/gui_command_pub.cpp.o] Error 1
+[5.820s] gmake[1]: *** [CMakeFiles/Makefile2:366: CMakeFiles/gui_command_pub.dir/all] Error 2
+[5.820s] gmake: *** [Makefile:146: all] Error 2
+[5.826s] Invoked command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com' returned '2': CMAKE_PREFIX_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com:/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp:/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp:/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/custom_msgs:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib:/home/niweiss/ws_sensor_combined/install/px4_ros_com/lib:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/ws_sensor_combined/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com -- -j16 -l16

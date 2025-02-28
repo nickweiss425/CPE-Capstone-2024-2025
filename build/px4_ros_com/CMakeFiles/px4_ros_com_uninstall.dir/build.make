@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niweiss/ws_sensor_combined/src/px4_ros_com
+CMAKE_SOURCE_DIR = /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niweiss/ws_sensor_combined/build/px4_ros_com
+CMAKE_BINARY_DIR = /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com
 
 # Utility rule file for px4_ros_com_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/px4_ros_com_uninstall.dir/compiler_depend.make
 include CMakeFiles/px4_ros_com_uninstall.dir/progress.make
 
 CMakeFiles/px4_ros_com_uninstall:
-	/usr/bin/cmake -P /home/niweiss/ws_sensor_combined/build/px4_ros_com/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 px4_ros_com_uninstall: CMakeFiles/px4_ros_com_uninstall
 px4_ros_com_uninstall: CMakeFiles/px4_ros_com_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/px4_ros_com_uninstall.dir/clean:
 .PHONY : CMakeFiles/px4_ros_com_uninstall.dir/clean
 
 CMakeFiles/px4_ros_com_uninstall.dir/depend:
-	cd /home/niweiss/ws_sensor_combined/build/px4_ros_com && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niweiss/ws_sensor_combined/src/px4_ros_com /home/niweiss/ws_sensor_combined/src/px4_ros_com /home/niweiss/ws_sensor_combined/build/px4_ros_com /home/niweiss/ws_sensor_combined/build/px4_ros_com /home/niweiss/ws_sensor_combined/build/px4_ros_com/CMakeFiles/px4_ros_com_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com/CMakeFiles/px4_ros_com_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/px4_ros_com_uninstall.dir/depend
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/niweiss/ws_sensor_combined/build/px4_msgs/px4_msgs__py
+# Install script for directory: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/px4_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/niweiss/ws_sensor_combined/install/px4_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

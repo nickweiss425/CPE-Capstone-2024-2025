@@ -1,0 +1,8 @@
+[01m[K/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::updateLocalTargets()[m[K’:
+[01m[K/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:535:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kcosf[m[K’ is not a member of ‘[01m[Kstd[m[K’; did you mean ‘[01m[Kcosh[m[K’?
+  535 |                 target_y_ = dLon * EARTH_RADIUS * std::[01;31m[Kcosf[m[K(deg2Rad(home_lat_));
+      |                                                        [01;31m[K^~~~[m[K
+      |                                                        [32m[Kcosh[m[K
+gmake[2]: *** [CMakeFiles/offboard_launch.dir/build.make:76: CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:314: CMakeFiles/offboard_launch.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,38 @@
+[35m[1mConsolidate compiler generated dependencies of target gui_command_pub[0m
+[ 10%] Built target frame_transforms
+[ 10%] Built target ament_cmake_python_copy_px4_ros_com
+[ 20%] Built target offboard_control
+[ 40%] Built target sensor_combined_listener
+[ 35%] Built target offboard_launch
+[ 50%] Built target flight_state_pub
+[ 60%] Built target debug_vect_advertiser
+[ 70%] Built target offboard_control_srv
+[ 80%] Built target offboard_paths
+[ 90%] Built target vehicle_gps_position_listener
+[ 95%] [32mBuilding CXX object CMakeFiles/gui_command_pub.dir/src/examples/offboard/gui_command_pub.cpp.o[0m
+running egg_info
+writing px4_ros_com.egg-info/PKG-INFO
+writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+writing top-level names to px4_ros_com.egg-info/top_level.txt
+reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[ 95%] Built target ament_cmake_python_build_px4_ros_com_egg
+[01m[K/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/gui_command_pub.cpp:28:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   28 |     rclcpp::Publisher<custom_msgs:msg::FlightCommand[01;31m[K>[m[K::SharedPtr publisher_;
+      |                                                     [01;31m[K^[m[K
+[01m[K/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/gui_command_pub.cpp:28:56:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   28 |     rclcpp::Publisher<custom_msgs:msg::FlightCommand>::[01;31m[KSharedPtr[m[K publisher_;
+      |                                                        [01;31m[K^~~~~~~~~[m[K
+      |                                                                 [32m[K;[m[K
+[01m[K/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/gui_command_pub.cpp:28:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   28 |     rclcpp::Publisher<custom_msgs:msg::FlightCommand>::SharedPtr [01;31m[Kpublisher_[m[K;
+      |                                                                  [01;31m[K^~~~~~~~~~[m[K
+      |                                                                  [32m[Krmw_publisher_t[m[K
+[01m[K/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/gui_command_pub.cpp:[m[K In constructor ‘[01m[KCommandPublisher::CommandPublisher(int)[m[K’:
+[01m[K/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/gui_command_pub.cpp:11:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   11 |         [01;31m[Kpublisher_[m[K = this->create_publisher<custom_msgs::msg::FlightCommand>("flight_command", 10);
+      |         [01;31m[K^~~~~~~~~~[m[K
+      |         [32m[Krmw_publisher_t[m[K
+gmake[2]: *** [CMakeFiles/gui_command_pub.dir/build.make:76: CMakeFiles/gui_command_pub.dir/src/examples/offboard/gui_command_pub.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:366: CMakeFiles/gui_command_pub.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
