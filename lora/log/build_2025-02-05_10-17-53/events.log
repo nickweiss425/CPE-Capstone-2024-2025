@@ -1,0 +1,323 @@
+[0.000000] (-) TimerEvent: {}
+[0.000746] (lora) JobQueued: {'identifier': 'lora', 'dependencies': OrderedDict()}
+[0.000819] (lora) JobStarted: {'identifier': 'lora'}
+[0.015444] (lora) JobProgress: {'identifier': 'lora', 'progress': 'cmake'}
+[0.017734] (lora) JobProgress: {'identifier': 'lora', 'progress': 'build'}
+[0.018015] (lora) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/niweiss/CPE-Capstone-2024-2025/lora/build/lora', '--', '-j16', '-l16'], 'cwd': '/home/niweiss/CPE-Capstone-2024-2025/lora/build/lora', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'niweiss'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/niweiss'), ('OLDPWD', '/home/niweiss/CPE-Capstone-2024-2025'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/niweiss/CPE-Capstone-2024-2025/lora/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'niweiss'), ('NAME', 'Nick'), ('WSL_INTEROP', '/run/WSL/120443_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/niweiss/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/HP/OMEN-Broadcast/Common:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/nicho/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/nicho/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/niweiss/CPE-Capstone-2024-2025/lora/install/lora:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/niweiss/CPE-Capstone-2024-2025/lora/build/lora'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/niweiss/CPE-Capstone-2024-2025/lora/install/lora:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.099533] (-) TimerEvent: {}
+[0.120449] (lora) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199649] (-) TimerEvent: {}
+[0.300093] (-) TimerEvent: {}
+[0.338888] (lora) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.400288] (-) TimerEvent: {}
+[0.500677] (-) TimerEvent: {}
+[0.536542] (lora) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.542077] (lora) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.556622] (lora) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.579335] (lora) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.600857] (-) TimerEvent: {}
+[0.605075] (lora) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.678789] (lora) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.682683] (lora) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.701044] (-) TimerEvent: {}
+[0.801418] (-) TimerEvent: {}
+[0.901816] (-) TimerEvent: {}
+[1.002414] (-) TimerEvent: {}
+[1.102793] (-) TimerEvent: {}
+[1.203213] (-) TimerEvent: {}
+[1.303836] (-) TimerEvent: {}
+[1.404354] (-) TimerEvent: {}
+[1.505129] (-) TimerEvent: {}
+[1.605526] (-) TimerEvent: {}
+[1.705905] (-) TimerEvent: {}
+[1.806272] (-) TimerEvent: {}
+[1.906704] (-) TimerEvent: {}
+[2.007073] (-) TimerEvent: {}
+[2.107533] (-) TimerEvent: {}
+[2.208001] (-) TimerEvent: {}
+[2.308431] (-) TimerEvent: {}
+[2.408807] (-) TimerEvent: {}
+[2.509222] (-) TimerEvent: {}
+[2.609755] (-) TimerEvent: {}
+[2.710231] (-) TimerEvent: {}
+[2.811130] (-) TimerEvent: {}
+[2.911799] (-) TimerEvent: {}
+[3.012487] (-) TimerEvent: {}
+[3.113300] (-) TimerEvent: {}
+[3.214501] (-) TimerEvent: {}
+[3.315198] (-) TimerEvent: {}
+[3.415887] (-) TimerEvent: {}
+[3.516516] (-) TimerEvent: {}
+[3.617268] (-) TimerEvent: {}
+[3.717980] (-) TimerEvent: {}
+[3.818426] (-) TimerEvent: {}
+[3.918950] (-) TimerEvent: {}
+[4.019558] (-) TimerEvent: {}
+[4.120339] (-) TimerEvent: {}
+[4.220989] (-) TimerEvent: {}
+[4.321498] (-) TimerEvent: {}
+[4.422081] (-) TimerEvent: {}
+[4.522991] (-) TimerEvent: {}
+[4.623594] (-) TimerEvent: {}
+[4.724272] (-) TimerEvent: {}
+[4.825349] (-) TimerEvent: {}
+[4.926261] (-) TimerEvent: {}
+[5.027106] (-) TimerEvent: {}
+[5.127977] (-) TimerEvent: {}
+[5.228671] (-) TimerEvent: {}
+[5.329441] (-) TimerEvent: {}
+[5.429870] (-) TimerEvent: {}
+[5.530222] (-) TimerEvent: {}
+[5.630635] (-) TimerEvent: {}
+[5.731023] (-) TimerEvent: {}
+[5.831440] (-) TimerEvent: {}
+[5.931884] (-) TimerEvent: {}
+[6.032312] (-) TimerEvent: {}
+[6.068525] (lora) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.132469] (-) TimerEvent: {}
+[6.179041] (lora) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[6.232591] (-) TimerEvent: {}
+[6.333027] (-) TimerEvent: {}
+[6.340944] (lora) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.368068] (lora) StdoutLine: {'line': b'-- Generating done\n'}
+[6.376559] (lora) StdoutLine: {'line': b'-- Build files have been written to: /home/niweiss/CPE-Capstone-2024-2025/lora/build/lora\n'}
+[6.407523] (lora) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target subscriber\x1b[0m\n'}
+[6.407721] (lora) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target publisher\x1b[0m\n'}
+[6.433215] (-) TimerEvent: {}
+[6.468620] (lora) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/subscriber.dir/src/lorasubscriber.cpp.o\x1b[0m\n'}
+[6.469287] (lora) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/publisher.dir/src/lorapublisher.cpp.o\x1b[0m\n'}
+[6.533378] (-) TimerEvent: {}
+[6.633703] (-) TimerEvent: {}
+[6.734115] (-) TimerEvent: {}
+[6.834730] (-) TimerEvent: {}
+[6.935178] (-) TimerEvent: {}
+[7.035583] (-) TimerEvent: {}
+[7.136017] (-) TimerEvent: {}
+[7.236380] (-) TimerEvent: {}
+[7.336931] (-) TimerEvent: {}
+[7.437456] (-) TimerEvent: {}
+[7.537920] (-) TimerEvent: {}
+[7.638341] (-) TimerEvent: {}
+[7.738804] (-) TimerEvent: {}
+[7.839254] (-) TimerEvent: {}
+[7.939879] (-) TimerEvent: {}
+[8.040352] (-) TimerEvent: {}
+[8.140746] (-) TimerEvent: {}
+[8.241150] (-) TimerEvent: {}
+[8.341580] (-) TimerEvent: {}
+[8.442010] (-) TimerEvent: {}
+[8.542376] (-) TimerEvent: {}
+[8.642770] (-) TimerEvent: {}
+[8.744342] (-) TimerEvent: {}
+[8.844815] (-) TimerEvent: {}
+[8.945129] (-) TimerEvent: {}
+[9.045468] (-) TimerEvent: {}
+[9.145936] (-) TimerEvent: {}
+[9.246416] (-) TimerEvent: {}
+[9.346881] (-) TimerEvent: {}
+[9.447347] (-) TimerEvent: {}
+[9.547815] (-) TimerEvent: {}
+[9.648281] (-) TimerEvent: {}
+[9.748711] (-) TimerEvent: {}
+[9.849262] (-) TimerEvent: {}
+[9.949730] (-) TimerEvent: {}
+[10.050169] (-) TimerEvent: {}
+[10.150482] (-) TimerEvent: {}
+[10.250888] (-) TimerEvent: {}
+[10.351308] (-) TimerEvent: {}
+[10.451668] (-) TimerEvent: {}
+[10.552099] (-) TimerEvent: {}
+[10.652509] (-) TimerEvent: {}
+[10.752897] (-) TimerEvent: {}
+[10.853253] (-) TimerEvent: {}
+[10.953665] (-) TimerEvent: {}
+[11.054109] (-) TimerEvent: {}
+[11.154579] (-) TimerEvent: {}
+[11.254993] (-) TimerEvent: {}
+[11.355377] (-) TimerEvent: {}
+[11.455853] (-) TimerEvent: {}
+[11.556669] (-) TimerEvent: {}
+[11.657338] (-) TimerEvent: {}
+[11.757824] (-) TimerEvent: {}
+[11.858669] (-) TimerEvent: {}
+[11.959321] (-) TimerEvent: {}
+[12.059909] (-) TimerEvent: {}
+[12.160249] (-) TimerEvent: {}
+[12.260695] (-) TimerEvent: {}
+[12.361311] (-) TimerEvent: {}
+[12.461937] (-) TimerEvent: {}
+[12.562408] (-) TimerEvent: {}
+[12.662899] (-) TimerEvent: {}
+[12.763551] (-) TimerEvent: {}
+[12.863970] (-) TimerEvent: {}
+[12.964317] (-) TimerEvent: {}
+[13.064824] (-) TimerEvent: {}
+[13.165431] (-) TimerEvent: {}
+[13.265891] (-) TimerEvent: {}
+[13.366374] (-) TimerEvent: {}
+[13.467271] (-) TimerEvent: {}
+[13.567741] (-) TimerEvent: {}
+[13.668173] (-) TimerEvent: {}
+[13.768732] (-) TimerEvent: {}
+[13.869193] (-) TimerEvent: {}
+[13.969610] (-) TimerEvent: {}
+[14.070197] (-) TimerEvent: {}
+[14.170904] (-) TimerEvent: {}
+[14.271379] (-) TimerEvent: {}
+[14.371769] (-) TimerEvent: {}
+[14.472216] (-) TimerEvent: {}
+[14.572732] (-) TimerEvent: {}
+[14.673239] (-) TimerEvent: {}
+[14.773759] (-) TimerEvent: {}
+[14.874363] (-) TimerEvent: {}
+[14.957798] (lora) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable publisher\x1b[0m\n'}
+[14.974576] (-) TimerEvent: {}
+[15.075149] (-) TimerEvent: {}
+[15.175637] (-) TimerEvent: {}
+[15.276099] (-) TimerEvent: {}
+[15.376732] (-) TimerEvent: {}
+[15.477170] (-) TimerEvent: {}
+[15.477574] (lora) StdoutLine: {'line': b'[ 75%] Built target publisher\n'}
+[15.577408] (-) TimerEvent: {}
+[15.677945] (-) TimerEvent: {}
+[15.778916] (-) TimerEvent: {}
+[15.879606] (-) TimerEvent: {}
+[15.980120] (-) TimerEvent: {}
+[16.080599] (-) TimerEvent: {}
+[16.181167] (-) TimerEvent: {}
+[16.281532] (-) TimerEvent: {}
+[16.381949] (-) TimerEvent: {}
+[16.482383] (-) TimerEvent: {}
+[16.582841] (-) TimerEvent: {}
+[16.683427] (-) TimerEvent: {}
+[16.783862] (-) TimerEvent: {}
+[16.884248] (-) TimerEvent: {}
+[16.984697] (-) TimerEvent: {}
+[17.085084] (-) TimerEvent: {}
+[17.185503] (-) TimerEvent: {}
+[17.286062] (-) TimerEvent: {}
+[17.386464] (-) TimerEvent: {}
+[17.486856] (-) TimerEvent: {}
+[17.587280] (-) TimerEvent: {}
+[17.687670] (-) TimerEvent: {}
+[17.788058] (-) TimerEvent: {}
+[17.888733] (-) TimerEvent: {}
+[17.989236] (-) TimerEvent: {}
+[18.089652] (-) TimerEvent: {}
+[18.190577] (-) TimerEvent: {}
+[18.290973] (-) TimerEvent: {}
+[18.391423] (-) TimerEvent: {}
+[18.491813] (-) TimerEvent: {}
+[18.592309] (-) TimerEvent: {}
+[18.692871] (-) TimerEvent: {}
+[18.793558] (-) TimerEvent: {}
+[18.894142] (-) TimerEvent: {}
+[18.994982] (-) TimerEvent: {}
+[19.095527] (-) TimerEvent: {}
+[19.196609] (-) TimerEvent: {}
+[19.297576] (-) TimerEvent: {}
+[19.398621] (-) TimerEvent: {}
+[19.499151] (-) TimerEvent: {}
+[19.599856] (-) TimerEvent: {}
+[19.700421] (-) TimerEvent: {}
+[19.800992] (-) TimerEvent: {}
+[19.901507] (-) TimerEvent: {}
+[20.002028] (-) TimerEvent: {}
+[20.102467] (-) TimerEvent: {}
+[20.203101] (-) TimerEvent: {}
+[20.303931] (-) TimerEvent: {}
+[20.404608] (-) TimerEvent: {}
+[20.505059] (-) TimerEvent: {}
+[20.605862] (-) TimerEvent: {}
+[20.706548] (-) TimerEvent: {}
+[20.807140] (-) TimerEvent: {}
+[20.907788] (-) TimerEvent: {}
+[21.008650] (-) TimerEvent: {}
+[21.109140] (-) TimerEvent: {}
+[21.209567] (-) TimerEvent: {}
+[21.310008] (-) TimerEvent: {}
+[21.410571] (-) TimerEvent: {}
+[21.511288] (-) TimerEvent: {}
+[21.611950] (-) TimerEvent: {}
+[21.712723] (-) TimerEvent: {}
+[21.813331] (-) TimerEvent: {}
+[21.914229] (-) TimerEvent: {}
+[22.015272] (-) TimerEvent: {}
+[22.116320] (-) TimerEvent: {}
+[22.217384] (-) TimerEvent: {}
+[22.318169] (-) TimerEvent: {}
+[22.418562] (-) TimerEvent: {}
+[22.519147] (-) TimerEvent: {}
+[22.619598] (-) TimerEvent: {}
+[22.720118] (-) TimerEvent: {}
+[22.820515] (-) TimerEvent: {}
+[22.920925] (-) TimerEvent: {}
+[23.021694] (-) TimerEvent: {}
+[23.122158] (-) TimerEvent: {}
+[23.222726] (-) TimerEvent: {}
+[23.323443] (-) TimerEvent: {}
+[23.423847] (-) TimerEvent: {}
+[23.524505] (-) TimerEvent: {}
+[23.625462] (-) TimerEvent: {}
+[23.726369] (-) TimerEvent: {}
+[23.827619] (-) TimerEvent: {}
+[23.928560] (-) TimerEvent: {}
+[24.028946] (-) TimerEvent: {}
+[24.129462] (-) TimerEvent: {}
+[24.230021] (-) TimerEvent: {}
+[24.330689] (-) TimerEvent: {}
+[24.431293] (-) TimerEvent: {}
+[24.531950] (-) TimerEvent: {}
+[24.632699] (-) TimerEvent: {}
+[24.733089] (-) TimerEvent: {}
+[24.833474] (-) TimerEvent: {}
+[24.933903] (-) TimerEvent: {}
+[25.034313] (-) TimerEvent: {}
+[25.134735] (-) TimerEvent: {}
+[25.235192] (-) TimerEvent: {}
+[25.335617] (-) TimerEvent: {}
+[25.435947] (-) TimerEvent: {}
+[25.536314] (-) TimerEvent: {}
+[25.636692] (-) TimerEvent: {}
+[25.737126] (-) TimerEvent: {}
+[25.838189] (-) TimerEvent: {}
+[25.938764] (-) TimerEvent: {}
+[25.980497] (lora) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable subscriber\x1b[0m\n'}
+[26.038994] (-) TimerEvent: {}
+[26.139452] (-) TimerEvent: {}
+[26.240228] (-) TimerEvent: {}
+[26.341358] (-) TimerEvent: {}
+[26.441795] (-) TimerEvent: {}
+[26.542602] (-) TimerEvent: {}
+[26.643180] (-) TimerEvent: {}
+[26.743768] (-) TimerEvent: {}
+[26.844421] (-) TimerEvent: {}
+[26.945177] (-) TimerEvent: {}
+[27.040784] (lora) StdoutLine: {'line': b'[100%] Built target subscriber\n'}
+[27.045515] (-) TimerEvent: {}
+[27.055241] (lora) CommandEnded: {'returncode': 0}
+[27.057804] (lora) JobProgress: {'identifier': 'lora', 'progress': 'install'}
+[27.074682] (lora) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/niweiss/CPE-Capstone-2024-2025/lora/build/lora'], 'cwd': '/home/niweiss/CPE-Capstone-2024-2025/lora/build/lora', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'niweiss'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/niweiss'), ('OLDPWD', '/home/niweiss/CPE-Capstone-2024-2025'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/niweiss/CPE-Capstone-2024-2025/lora/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'niweiss'), ('NAME', 'Nick'), ('WSL_INTEROP', '/run/WSL/120443_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/niweiss/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/HP/OMEN-Broadcast/Common:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/nicho/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/nicho/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/niweiss/CPE-Capstone-2024-2025/lora/install/lora:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/niweiss/CPE-Capstone-2024-2025/lora/build/lora'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/niweiss/CPE-Capstone-2024-2025/lora/install/lora:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[27.091303] (lora) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[27.092683] (lora) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/lib/lora/subscriber\n'}
+[27.108037] (lora) StdoutLine: {'line': b'-- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/lib/lora/subscriber" to ""\n'}
+[27.109335] (lora) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/lib/lora/publisher\n'}
+[27.111064] (lora) StdoutLine: {'line': b'-- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/lib/lora/publisher" to ""\n'}
+[27.111272] (lora) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/ament_index/resource_index/package_run_dependencies/lora\n'}
+[27.111544] (lora) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/ament_index/resource_index/parent_prefix_path/lora\n'}
+[27.111715] (lora) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/environment/ament_prefix_path.sh\n'}
+[27.111920] (lora) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/environment/ament_prefix_path.dsv\n'}
+[27.112204] (lora) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/environment/path.sh\n'}
+[27.112373] (lora) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/environment/path.dsv\n'}
+[27.112516] (lora) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/local_setup.bash\n'}
+[27.112868] (lora) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/local_setup.sh\n'}
+[27.112968] (lora) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/local_setup.zsh\n'}
+[27.113038] (lora) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/local_setup.dsv\n'}
+[27.113193] (lora) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/package.dsv\n'}
+[27.113459] (lora) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/ament_index/resource_index/packages/lora\n'}
+[27.113576] (lora) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/cmake/loraConfig.cmake\n'}
+[27.113630] (lora) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/cmake/loraConfig-version.cmake\n'}
+[27.113691] (lora) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/package.xml\n'}
+[27.115316] (lora) CommandEnded: {'returncode': 0}
+[27.143225] (lora) JobEnded: {'identifier': 'lora', 'rc': 0}
+[27.144344] (-) EventReactorShutdown: {}

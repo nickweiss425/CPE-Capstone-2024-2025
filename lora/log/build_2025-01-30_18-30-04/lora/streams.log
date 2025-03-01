@@ -1,0 +1,115 @@
+[0.016s] Invoking command in '/home/niweiss/CPE-Capstone-2024-2025/lora/build/lora': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/niweiss/CPE-Capstone-2024-2025/lora -DCMAKE_INSTALL_PREFIX=/home/niweiss/CPE-Capstone-2024-2025/lora/install/lora
+[0.192s] -- The C compiler identification is GNU 11.4.0
+[0.483s] -- The CXX compiler identification is GNU 11.4.0
+[0.654s] -- Detecting C compiler ABI info
+[0.777s] -- Detecting C compiler ABI info - done
+[0.783s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.785s] -- Detecting C compile features
+[0.786s] -- Detecting C compile features - done
+[0.790s] -- Detecting CXX compiler ABI info
+[0.894s] -- Detecting CXX compiler ABI info - done
+[0.901s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.901s] -- Detecting CXX compile features
+[0.902s] -- Detecting CXX compile features - done
+[0.907s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.205s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.322s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[1.680s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.688s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.704s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.728s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.756s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.837s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.844s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.781s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.735s] -- Found FastRTPS: /opt/ros/humble/include  
+[5.438s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.447s] -- Looking for pthread.h
+[5.538s] -- Looking for pthread.h - found
+[5.538s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.623s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.624s] -- Found Threads: TRUE  
+[5.710s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[5.868s] -- Configuring done
+[5.878s] -- Generating done
+[5.883s] -- Build files have been written to: /home/niweiss/CPE-Capstone-2024-2025/lora/build/lora
+[5.889s] Invoked command in '/home/niweiss/CPE-Capstone-2024-2025/lora/build/lora' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/niweiss/CPE-Capstone-2024-2025/lora -DCMAKE_INSTALL_PREFIX=/home/niweiss/CPE-Capstone-2024-2025/lora/install/lora
+[5.891s] Invoking command in '/home/niweiss/CPE-Capstone-2024-2025/lora/build/lora': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/niweiss/CPE-Capstone-2024-2025/lora/build/lora -- -j16 -l16
+[5.924s] [ 25%] [32mBuilding CXX object CMakeFiles/subscriber.dir/src/lorasubscriber.cpp.o[0m
+[5.926s] [ 50%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/lorapublisher.cpp.o[0m
+[8.401s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.401s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.401s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.401s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.401s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.401s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.401s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.401s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.401s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.401s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.401s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.401s]                  from [01m[K/home/niweiss/CPE-Capstone-2024-2025/lora/include/lorapublisher.hpp:6[m[K,
+[8.401s]                  from [01m[K/home/niweiss/CPE-Capstone-2024-2025/lora/src/lorapublisher.cpp:1[m[K:
+[8.401s] [01m[K/home/niweiss/CPE-Capstone-2024-2025/lora/src/lorapublisher.cpp:[m[K In member function ‘[01m[Kvoid LoraPublisher::timer_callback()[m[K’:
+[8.401s] [01m[K/home/niweiss/CPE-Capstone-2024-2025/lora/src/lorapublisher.cpp:95:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[8.401s]    95 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"Bytes read: %d, Total bytes: %d"[m[K, [32m[Kbytes_read[m[K, total_bytes);
+[8.401s]       |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~[m[K
+[8.401s]       |                                                                        [32m[K|[m[K
+[8.401s]       |                                                                        [32m[Ksize_t {aka long unsigned int}[m[K
+[8.401s] [01m[K/home/niweiss/CPE-Capstone-2024-2025/lora/src/lorapublisher.cpp:95:51:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[8.401s]    95 |     RCLCPP_INFO(this->get_logger(), "Bytes read: [01;36m[K%d[m[K, Total bytes: %d", bytes_read, total_bytes);
+[8.401s]       |                                                  [01;36m[K~^[m[K
+[8.402s]       |                                                   [01;36m[K|[m[K
+[8.402s]       |                                                   [01;36m[Kint[m[K
+[8.402s]       |                                                  [32m[K%ld[m[K
+[8.402s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.402s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.402s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.402s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.402s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.402s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.402s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.402s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.402s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.402s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.402s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.402s]                  from [01m[K/home/niweiss/CPE-Capstone-2024-2025/lora/include/lorapublisher.hpp:6[m[K,
+[8.402s]                  from [01m[K/home/niweiss/CPE-Capstone-2024-2025/lora/src/lorapublisher.cpp:1[m[K:
+[8.402s] [01m[K/home/niweiss/CPE-Capstone-2024-2025/lora/src/lorapublisher.cpp:95:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[8.402s]    95 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"Bytes read: %d, Total bytes: %d"[m[K, bytes_read, [32m[Ktotal_bytes[m[K);
+[8.402s]       |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K              [32m[K~~~~~~~~~~~[m[K
+[8.402s]       |                                                                                    [32m[K|[m[K
+[8.402s]       |                                                                                    [32m[Ksize_t {aka long unsigned int}[m[K
+[8.402s] [01m[K/home/niweiss/CPE-Capstone-2024-2025/lora/src/lorapublisher.cpp:95:68:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[8.402s]    95 |     RCLCPP_INFO(this->get_logger(), "Bytes read: %d, Total bytes: [01;36m[K%d[m[K", bytes_read, total_bytes);
+[8.402s]       |                                                                   [01;36m[K~^[m[K
+[8.402s]       |                                                                    [01;36m[K|[m[K
+[8.402s]       |                                                                    [01;36m[Kint[m[K
+[8.402s]       |                                                                   [32m[K%ld[m[K
+[11.004s] [ 75%] [32m[1mLinking CXX executable publisher[0m
+[11.287s] [ 75%] Built target publisher
+[17.704s] [100%] [32m[1mLinking CXX executable subscriber[0m
+[18.248s] [100%] Built target subscriber
+[18.261s] Invoked command in '/home/niweiss/CPE-Capstone-2024-2025/lora/build/lora' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/niweiss/CPE-Capstone-2024-2025/lora/build/lora -- -j16 -l16
+[18.267s] Invoking command in '/home/niweiss/CPE-Capstone-2024-2025/lora/build/lora': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/niweiss/CPE-Capstone-2024-2025/lora/build/lora
+[18.272s] -- Install configuration: ""
+[18.272s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/lib/lora/subscriber
+[18.276s] -- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/lib/lora/subscriber" to ""
+[18.277s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/lib/lora/publisher
+[18.277s] -- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/lib/lora/publisher" to ""
+[18.278s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/ament_index/resource_index/package_run_dependencies/lora
+[18.278s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/ament_index/resource_index/parent_prefix_path/lora
+[18.278s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/environment/ament_prefix_path.sh
+[18.278s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/environment/ament_prefix_path.dsv
+[18.279s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/environment/path.sh
+[18.279s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/environment/path.dsv
+[18.279s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/local_setup.bash
+[18.279s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/local_setup.sh
+[18.279s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/local_setup.zsh
+[18.279s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/local_setup.dsv
+[18.279s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/package.dsv
+[18.280s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/ament_index/resource_index/packages/lora
+[18.280s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/cmake/loraConfig.cmake
+[18.280s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/cmake/loraConfig-version.cmake
+[18.280s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/lora/install/lora/share/lora/package.xml
+[18.281s] Invoked command in '/home/niweiss/CPE-Capstone-2024-2025/lora/build/lora' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/niweiss/CPE-Capstone-2024-2025/lora/build/lora

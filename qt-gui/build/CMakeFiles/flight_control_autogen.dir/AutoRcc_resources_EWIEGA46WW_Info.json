@@ -1,0 +1,19 @@
+{
+	"BUILD_DIR" : "/home/niweiss/CPE-Capstone-2024-2025/qt-gui/build/flight_control_autogen",
+	"CMAKE_BINARY_DIR" : "/home/niweiss/CPE-Capstone-2024-2025/qt-gui/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/niweiss/CPE-Capstone-2024-2025/qt-gui/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/niweiss/CPE-Capstone-2024-2025/qt-gui",
+	"CMAKE_SOURCE_DIR" : "/home/niweiss/CPE-Capstone-2024-2025/qt-gui",
+	"INCLUDE_DIR" : "/home/niweiss/CPE-Capstone-2024-2025/qt-gui/build/flight_control_autogen/include",
+	"INPUTS" : [ "/home/niweiss/CPE-Capstone-2024-2025/qt-gui/resources/map.qml" ],
+	"LOCK_FILE" : "/home/niweiss/CPE-Capstone-2024-2025/qt-gui/build/CMakeFiles/flight_control_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt5/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/niweiss/CPE-Capstone-2024-2025/qt-gui/build/CMakeFiles/flight_control_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/niweiss/CPE-Capstone-2024-2025/qt-gui/resources.qrc",
+	"VERBOSITY" : 0
+}

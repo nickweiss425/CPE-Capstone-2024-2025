@@ -1,0 +1,8 @@
+source;share/lora/hook/cmake_prefix_path.ps1
+source;share/lora/hook/cmake_prefix_path.dsv
+source;share/lora/hook/cmake_prefix_path.sh
+source;share/lora/local_setup.bash
+source;share/lora/local_setup.dsv
+source;share/lora/local_setup.ps1
+source;share/lora/local_setup.sh
+source;share/lora/local_setup.zsh

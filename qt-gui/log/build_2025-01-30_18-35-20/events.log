@@ -1,0 +1,5 @@
+[0.000000] (-) TimerEvent: {}
+[0.000563] (flight_control) JobQueued: {'identifier': 'flight_control', 'dependencies': OrderedDict()}
+[0.000596] (flight_control) JobStarted: {'identifier': 'flight_control'}
+[0.035049] (flight_control) JobEnded: {'identifier': 'flight_control', 'rc': 1}
+[0.045453] (-) EventReactorShutdown: {}

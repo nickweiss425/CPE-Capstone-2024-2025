@@ -1,0 +1,4 @@
+source;share/flight_control/local_setup.bash
+source;share/flight_control/local_setup.dsv
+source;share/flight_control/local_setup.sh
+source;share/flight_control/local_setup.zsh
