@@ -103,6 +103,17 @@ void WaypointManager::updateWaypointAttributes(double radius, double altitude, d
     if (m_selectedIndex < 0 || m_selectedIndex >= m_waypoints.size()) {
         return;
     }
+
+    // Invalid type
+    if (type == 5 || type == -1) {
+        return;
+    }
+
+    // Invalid data
+    if (radius <= 0 || altitude <= 0 || duration <= 0) {
+        return;
+    }
+
     m_waypoints[m_selectedIndex].radius = radius;
     m_waypoints[m_selectedIndex].altitude = altitude;
     m_waypoints[m_selectedIndex].duration = duration;

@@ -195,11 +195,6 @@ void MainWindow::updateWaypointAttributes(double radius, double altitude, double
 
     // If no waypoint is selected (type == 5 or -1)
     if (type == 5 || type == -1) {
-        /*ui->hoverControlButton1->setCheckable(false);
-        ui->hoverControlButton2->setCheckable(false);
-        ui->hoverControlButton3->setCheckable(false);
-        ui->hoverControlButton4->setCheckable(false);
-        ui->confirmHoverButton->setCheckable(false);*/
         resetWaypointAttributes();
         return;
     }
@@ -209,7 +204,7 @@ void MainWindow::updateWaypointAttributes(double radius, double altitude, double
     ui->hoverControlButton2->setCheckable(true);
     ui->hoverControlButton3->setCheckable(true);
     ui->hoverControlButton4->setCheckable(true);
-    ui->confirmHoverButton->setCheckable(true);
+    ui->confirmHoverButton->setEnabled(true);
 
     // Set the text values if they exist
     if (radius > 0) ui->radiusBox->setText(QString::number(radius));
@@ -239,7 +234,6 @@ void MainWindow::updateWaypointAttributes(double radius, double altitude, double
     ui->hoverControlButton2->update();
     ui->hoverControlButton3->update();
     ui->hoverControlButton4->update();
-    
 }
 
 /**
@@ -255,23 +249,6 @@ void MainWindow::handleWaypointUpdate() {
     emit setWaypointAttributes(ui->radiusBox->text().toDouble(), ui->altitudeBox->text().toDouble(), ui->durationBox->text().toDouble(), waypointType);
     
     resetWaypointAttributes();
-
-    /*switch (waypointType) {
-        case 1:
-            ui->hoverControlButton1->setChecked(false);
-            break;
-        case 2:
-            ui->hoverControlButton2->setChecked(false);
-            break;
-        case 3:
-            ui->hoverControlButton3->setChecked(false);
-            break;
-        case 4:
-            ui->hoverControlButton4->setChecked(false);
-            break;
-        default:
-            break;
-    }*/
 }
 
 /**
@@ -303,8 +280,7 @@ void MainWindow::resetWaypointAttributes() {
     ui->hoverControlButton2->setCheckable(false);
     ui->hoverControlButton3->setCheckable(false);
     ui->hoverControlButton4->setCheckable(false);
-
-    ui->confirmHoverButton->setChecked(false);
+    ui->confirmHoverButton->setEnabled(false);
 
     ui->hoverControlButton1->update();
     ui->hoverControlButton2->update();
