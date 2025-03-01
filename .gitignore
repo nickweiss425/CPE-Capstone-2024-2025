@@ -1,0 +1,5 @@
+gui/build
+gui/.vscode
+build/
+install/
+log/
