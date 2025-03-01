@@ -1,3 +1,6 @@
 [submodule "src/px4_msgs"]
 	path = src/px4_msgs
 	url = https://github.com/PX4/px4_msgs
+[submodule "ws_sensor_combined/src/ws_sensor_combined/src/px4_msgs"]
+	path = ws_sensor_combined/src/ws_sensor_combined/src/px4_msgs
+	url = https://github.com/PX4/px4_msgs.git
