@@ -1,0 +1,6 @@
+{
+  "package_name": "custom_msgs",
+  "non_idl_tuples": [
+    "/home/niweiss/ws_sensor_combined/src/custom_msgs:msg/FlightCommand.msg"
+  ]
+}

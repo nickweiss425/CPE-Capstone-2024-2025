@@ -1,0 +1,305 @@
+[0.228s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.229s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fe30677afe0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fe3068b8190>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fe3068b8190>>, mixin_verb=('build',))
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.281s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.281s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore_ament_install'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_pkg']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_pkg'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_meta']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_meta'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ros']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ros'
+[0.313s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_msgs' with type 'ros.ament_cmake' and name 'custom_msgs'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore_ament_install'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_pkg']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_pkg'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_meta']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_meta'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ros']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ros'
+[0.314s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_msgs' with type 'ros.ament_cmake' and name 'px4_msgs'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ignore', 'ignore_ament_install']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore_ament_install'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_pkg']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_pkg'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_meta']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_meta'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ros']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ros'
+[0.318s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_ros_com' with type 'ros.ament_cmake' and name 'px4_ros_com'
+[0.318s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.318s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.318s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.319s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.319s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.352s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install
+[0.353s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/niweiss/ws_sensor_combined/install
+[0.355s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/humble
+[0.356s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.393s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'px4_msgs' is in: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs, /home/niweiss/ws_sensor_combined/install/px4_msgs
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding px4_msgs
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_args' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.394s] DEBUG:colcon.colcon_core.verb:Building package 'custom_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs', 'merge_install': False, 'path': '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/custom_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.395s] DEBUG:colcon.colcon_core.verb:Building package 'px4_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs', 'merge_install': False, 'path': '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_cache' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_first' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_force_configure' from command line to 'False'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'ament_cmake_args' from command line to 'None'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_cmake_args' from command line to 'None'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.396s] DEBUG:colcon.colcon_core.verb:Building package 'px4_ros_com' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com', 'merge_install': False, 'path': '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com', 'symlink_install': False, 'test_result_base': None}
+[0.396s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.397s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.398s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/custom_msgs' with build type 'ament_cmake'
+[0.398s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/custom_msgs'
+[0.404s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.405s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.405s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.409s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs' with build type 'ament_cmake'
+[0.409s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs'
+[0.410s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.410s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.426s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble /usr/bin/cmake --build /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs -- -j16 -l16
+[0.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble /usr/bin/cmake --build /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs -- -j16 -l16
+[0.963s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble /usr/bin/cmake --build /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs -- -j16 -l16
+[0.979s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble /usr/bin/cmake --install /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs
+[1.055s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[1.059s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble /usr/bin/cmake --install /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs
+[1.061s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs' for CMake module files
+[1.062s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs' for CMake config files
+[1.062s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[1.063s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[1.064s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[1.064s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[1.065s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib'
+[1.065s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[1.066s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[1.066s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[1.066s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[1.068s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/bin'
+[1.068s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[1.069s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/python3.10/site-packages'
+[1.069s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/bin'
+[1.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/package.ps1'
+[1.070s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/package.dsv'
+[1.071s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/package.sh'
+[1.072s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/package.bash'
+[1.074s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/package.zsh'
+[1.076s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[1.077s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[1.077s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs' for CMake module files
+[1.078s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs' for CMake config files
+[1.079s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[1.079s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[1.080s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[1.080s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[1.081s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib'
+[1.081s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[1.081s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[1.082s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[1.082s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[1.083s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/bin'
+[1.083s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[1.083s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/python3.10/site-packages'
+[1.083s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/bin'
+[1.084s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/package.ps1'
+[1.085s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/package.dsv'
+[1.086s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/package.sh'
+[1.086s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/package.bash'
+[1.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/package.zsh'
+[1.088s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[1.748s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble /usr/bin/cmake --build /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs -- -j16 -l16
+[1.750s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble /usr/bin/cmake --install /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs
+[2.259s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[2.260s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs' for CMake module files
+[2.269s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs' for CMake config files
+[2.352s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[2.352s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[2.356s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[2.359s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[2.364s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib'
+[2.367s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[2.367s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[2.368s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[2.369s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble /usr/bin/cmake --install /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs
+[2.369s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[2.370s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/bin'
+[2.370s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[2.370s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib/python3.10/site-packages'
+[2.370s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/bin'
+[2.370s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.ps1'
+[2.371s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.dsv'
+[2.371s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.sh'
+[2.372s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.bash'
+[2.372s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.zsh'
+[2.372s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[2.373s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[2.373s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs' for CMake module files
+[2.374s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs' for CMake config files
+[2.377s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[2.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[2.378s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[2.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[2.379s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib'
+[2.379s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[2.379s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[2.380s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[2.380s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[2.381s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/bin'
+[2.381s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[2.381s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib/python3.10/site-packages'
+[2.381s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/bin'
+[2.382s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.ps1'
+[2.382s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.dsv'
+[2.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.sh'
+[2.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.bash'
+[2.384s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.zsh'
+[2.384s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[2.385s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com' with build type 'ament_cmake'
+[2.385s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com'
+[2.385s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.385s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.882s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs:/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/custom_msgs:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com:/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp:/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp:/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib:/home/niweiss/ws_sensor_combined/install/px4_ros_com/lib:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/ws_sensor_combined/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com -- -j16 -l16
+[37.743s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs:/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/custom_msgs:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com:/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp:/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp:/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib:/home/niweiss/ws_sensor_combined/install/px4_ros_com/lib:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/ws_sensor_combined/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com -- -j16 -l16
+[37.747s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs:/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/custom_msgs:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com:/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp:/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp:/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib:/home/niweiss/ws_sensor_combined/install/px4_ros_com/lib:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/ws_sensor_combined/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com
+[37.847s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[37.848s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com' for CMake module files
+[37.848s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs:/home/niweiss/ws_sensor_combined/install/px4_msgs:/home/niweiss/ws_sensor_combined/install/custom_msgs:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com:/home/niweiss/ws_sensor_combined/install/example_mode_with_executor_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_rtl_replacement_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_manual_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_global_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_goto_cpp:/home/niweiss/ws_sensor_combined/install/example_mode_fw_attitude_cpp:/home/niweiss/ws_sensor_combined/install/example_local_navigation_cpp:/home/niweiss/ws_sensor_combined/install/example_global_navigation_cpp:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib:/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib:/home/niweiss/ws_sensor_combined/install/px4_ros_com/lib:/home/niweiss/ws_sensor_combined/install/px4_ros2_cpp/lib:/home/niweiss/ws_sensor_combined/install/px4_msgs/lib:/home/niweiss/ws_sensor_combined/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com
+[37.849s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com' for CMake config files
+[37.850s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[37.850s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[37.851s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[37.851s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[37.852s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib'
+[37.852s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'ld_library_path_lib')
+[37.852s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.ps1'
+[37.853s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.dsv'
+[37.853s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.sh'
+[37.854s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/bin'
+[37.854s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[37.854s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/python3.10/site-packages'
+[37.854s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/bin'
+[37.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[37.855s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[37.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.sh'
+[37.856s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.bash'
+[37.857s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[37.857s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[37.858s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[37.859s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com' for CMake module files
+[37.859s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com' for CMake config files
+[37.860s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[37.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[37.861s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[37.861s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[37.862s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib'
+[37.862s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'ld_library_path_lib')
+[37.862s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.ps1'
+[37.862s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.dsv'
+[37.863s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.sh'
+[37.863s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/bin'
+[37.863s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[37.864s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/python3.10/site-packages'
+[37.864s] Level 1:colcon.colcon_core.environment:checking '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/bin'
+[37.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[37.865s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[37.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.sh'
+[37.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.bash'
+[37.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[37.868s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[37.868s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[37.869s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[37.869s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[37.870s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[37.916s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[37.916s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[37.916s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[37.916s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[37.916s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[37.916s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[37.917s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/local_setup.ps1'
+[37.918s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/_local_setup_util_ps1.py'
+[37.919s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/setup.ps1'
+[37.921s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/local_setup.sh'
+[37.922s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/_local_setup_util_sh.py'
+[37.923s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/setup.sh'
+[37.925s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/local_setup.bash'
+[37.926s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/setup.bash'
+[37.928s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/local_setup.zsh'
+[37.929s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/setup.zsh'

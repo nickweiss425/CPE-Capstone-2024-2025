@@ -1,0 +1,565 @@
+[0.000000] (-) TimerEvent: {}
+[0.000808] (custom_msgs) JobQueued: {'identifier': 'custom_msgs', 'dependencies': OrderedDict()}
+[0.001031] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('custom_msgs', '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs')])}
+[0.001522] (custom_msgs) JobStarted: {'identifier': 'custom_msgs'}
+[0.007177] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'cmake'}
+[0.007791] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'build'}
+[0.008530] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs', '--', '-j16', '-l16'], 'cwd': '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'niweiss'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/niweiss'), ('OLDPWD', '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'niweiss'), ('NAME', 'Nick'), ('WSL_INTEROP', '/run/WSL/11833_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/niweiss/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/HP/OMEN-Broadcast/Common:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/nicho/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/nicho/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.031721] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099799] (-) TimerEvent: {}
+[0.145344] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.146604] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.148805] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.199914] (-) TimerEvent: {}
+[0.300432] (-) TimerEvent: {}
+[0.401059] (-) TimerEvent: {}
+[0.421918] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.501196] (-) TimerEvent: {}
+[0.601582] (-) TimerEvent: {}
+[0.695846] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.701701] (-) TimerEvent: {}
+[0.801977] (-) TimerEvent: {}
+[0.852096] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.902120] (-) TimerEvent: {}
+[1.002475] (-) TimerEvent: {}
+[1.072312] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.091122] (custom_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.102700] (-) TimerEvent: {}
+[1.111433] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.111606] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.111678] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.119046] (custom_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.143235] (custom_msgs) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.143657] (custom_msgs) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.143782] (custom_msgs) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.145704] (custom_msgs) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.149228] (custom_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.151191] (custom_msgs) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.167008] (custom_msgs) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.167147] (custom_msgs) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.169176] (custom_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.170868] (custom_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.196564] (custom_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.202819] (-) TimerEvent: {}
+[1.208044] (custom_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs\n'}
+[1.227122] (custom_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.234446] (custom_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.246276] (custom_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_custom_msgs\n'}
+[1.303058] (-) TimerEvent: {}
+[1.403465] (-) TimerEvent: {}
+[1.475832] (custom_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.491923] (custom_msgs) StdoutLine: {'line': b'writing custom_msgs.egg-info/PKG-INFO\n'}
+[1.494062] (custom_msgs) StdoutLine: {'line': b'writing dependency_links to custom_msgs.egg-info/dependency_links.txt\n'}
+[1.494944] (custom_msgs) StdoutLine: {'line': b'writing top-level names to custom_msgs.egg-info/top_level.txt\n'}
+[1.503577] (-) TimerEvent: {}
+[1.534750] (custom_msgs) StdoutLine: {'line': b"reading manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[1.536541] (custom_msgs) StdoutLine: {'line': b"writing manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[1.561883] (custom_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_custom_msgs_egg\n'}
+[1.579111] (custom_msgs) StdoutLine: {'line': b'[  6%] Built target custom_msgs__cpp\n'}
+[1.581986] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_generator_c\x1b[0m\n'}
+[1.587630] (custom_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.587823] (custom_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.588113] (custom_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.592958] (custom_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/flight_command__functions.c.o\x1b[0m\n'}
+[1.603709] (-) TimerEvent: {}
+[1.647860] (custom_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[1.703843] (-) TimerEvent: {}
+[1.737876] (custom_msgs) StdoutLine: {'line': b'[ 22%] Built target custom_msgs__rosidl_generator_c\n'}
+[1.748043] (custom_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.748322] (custom_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.748614] (custom_msgs) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.803986] (-) TimerEvent: {}
+[1.904378] (-) TimerEvent: {}
+[1.955848] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.959350] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.967809] (custom_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/flight_command__type_support.cpp.o\x1b[0m\n'}
+[1.970864] (custom_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/flight_command__type_support.cpp.o\x1b[0m\n'}
+[1.972946] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.984150] (custom_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/flight_command__type_support.cpp.o\x1b[0m\n'}
+[2.004521] (-) TimerEvent: {}
+[2.091709] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[2.101791] (custom_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/flight_command__type_support.cpp.o\x1b[0m\n'}
+[2.104645] (-) TimerEvent: {}
+[2.135613] (custom_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.143915] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[2.146583] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[2.155577] (custom_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/flight_command__type_support.c.o\x1b[0m\n'}
+[2.159509] (custom_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/flight_command__type_support_c.cpp.o\x1b[0m\n'}
+[2.187943] (custom_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.204842] (-) TimerEvent: {}
+[2.238946] (custom_msgs) StdoutLine: {'line': b'[ 58%] Built target custom_msgs__rosidl_typesupport_c\n'}
+[2.274788] (custom_msgs) StdoutLine: {'line': b'[ 58%] Built target custom_msgs__rosidl_typesupport_introspection_c\n'}
+[2.278015] (custom_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.304999] (-) TimerEvent: {}
+[2.362416] (custom_msgs) StdoutLine: {'line': b'[ 61%] Built target custom_msgs__rosidl_typesupport_cpp\n'}
+[2.405124] (-) TimerEvent: {}
+[2.408923] (custom_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.417679] (custom_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.490014] (custom_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.494736] (custom_msgs) StdoutLine: {'line': b'[ 70%] Built target custom_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.505322] (-) TimerEvent: {}
+[2.525719] (custom_msgs) StdoutLine: {'line': b'[ 70%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.585474] (custom_msgs) StdoutLine: {'line': b'[ 70%] Built target custom_msgs__rosidl_typesupport_fastrtps_c\n'}
+[2.598335] (custom_msgs) StdoutLine: {'line': b'[ 70%] Built target custom_msgs\n'}
+[2.606620] (-) TimerEvent: {}
+[2.613712] (custom_msgs) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.706775] (-) TimerEvent: {}
+[2.807139] (-) TimerEvent: {}
+[2.907520] (-) TimerEvent: {}
+[2.982929] (custom_msgs) StdoutLine: {'line': b'[ 74%] Built target custom_msgs__py\n'}
+[2.991937] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_generator_py\x1b[0m\n'}
+[3.002148] (custom_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_flight_command_s.c.o\x1b[0m\n'}
+[3.007638] (-) TimerEvent: {}
+[3.088893] (custom_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/libcustom_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[3.107784] (-) TimerEvent: {}
+[3.201061] (custom_msgs) StdoutLine: {'line': b'[ 80%] Built target custom_msgs__rosidl_generator_py\n'}
+[3.208527] (-) TimerEvent: {}
+[3.226284] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[3.226489] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[3.226574] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[3.226640] (custom_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[3.226710] (custom_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[3.235133] (custom_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[3.308708] (-) TimerEvent: {}
+[3.325903] (custom_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.326630] (custom_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.330330] (custom_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.392517] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_c__pyext\n'}
+[3.392779] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[3.408852] (-) TimerEvent: {}
+[3.416306] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.426895] (custom_msgs) CommandEnded: {'returncode': 0}
+[3.428228] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'install'}
+[3.433968] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs'], 'cwd': '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'niweiss'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/niweiss'), ('OLDPWD', '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'niweiss'), ('NAME', 'Nick'), ('WSL_INTEROP', '/run/WSL/11833_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/niweiss/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/HP/OMEN-Broadcast/Common:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/nicho/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/nicho/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.440741] (custom_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.441026] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs\n'}
+[3.441167] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[3.441263] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[3.441698] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.441822] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/flight_command.h\n'}
+[3.442064] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[3.442241] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__functions.h\n'}
+[3.442358] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__type_support.h\n'}
+[3.442544] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__functions.c\n'}
+[3.442742] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__struct.h\n'}
+[3.442823] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/library_path.sh\n'}
+[3.442903] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/library_path.dsv\n'}
+[3.443045] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so\n'}
+[3.443348] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so" to ""\n'}
+[3.443461] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[3.443533] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[3.443678] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.443842] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[3.444115] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__rosidl_typesupport_fastrtps_c.h\n'}
+[3.444234] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[3.444427] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[3.444600] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[3.444770] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[3.444955] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[3.445114] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__rosidl_typesupport_introspection_c.h\n'}
+[3.445381] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__type_support.c\n'}
+[3.445791] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.445924] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so\n'}
+[3.446115] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[3.446316] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so\n'}
+[3.446489] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so" to ""\n'}
+[3.446658] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[3.446824] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[3.446991] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[3.447190] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/flight_command.hpp\n'}
+[3.447361] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[3.447521] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__traits.hpp\n'}
+[3.447682] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__struct.hpp\n'}
+[3.447848] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__builder.hpp\n'}
+[3.448358] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__type_support.hpp\n'}
+[3.448587] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[3.448845] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[3.449042] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.449287] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[3.449365] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.449435] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/dds_fastrtps\n'}
+[3.449503] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.449570] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[3.449711] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[3.449794] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[3.449916] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[3.450087] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.450255] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__type_support.cpp\n'}
+[3.450422] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[3.450589] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[3.450755] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so\n'}
+[3.450921] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[3.451154] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh\n'}
+[3.451306] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv\n'}
+[3.451474] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info\n'}
+[3.451644] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[3.451810] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[3.451976] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[3.452144] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[3.452312] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs\n'}
+[3.452483] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.452651] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg\n'}
+[3.452831] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_flight_command.py\n'}
+[3.453061] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py\n'}
+[3.453133] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_flight_command_s.c\n'}
+[3.453186] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.453251] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.453294] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py\n'}
+[3.453332] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[3.453368] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.453445] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.453490] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/libcustom_msgs__rosidl_generator_py.so\n'}
+[3.490779] (custom_msgs) StdoutLine: {'line': b"Listing '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs'...\n"}
+[3.490969] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py'...\n"}
+[3.491061] (custom_msgs) StdoutLine: {'line': b"Listing '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg'...\n"}
+[3.491133] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py'...\n"}
+[3.491212] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_flight_command.py'...\n"}
+[3.495377] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.495798] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.496116] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.496316] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.496586] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.496890] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.497132] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so\n'}
+[3.497512] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so" to ""\n'}
+[3.497657] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/msg/FlightCommand.idl\n'}
+[3.497866] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/msg/FlightCommand.msg\n'}
+[3.498088] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs\n'}
+[3.498297] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs\n'}
+[3.498442] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh\n'}
+[3.498502] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv\n'}
+[3.498775] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/path.sh\n'}
+[3.498952] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/path.dsv\n'}
+[3.499109] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/local_setup.bash\n'}
+[3.499367] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/local_setup.sh\n'}
+[3.499516] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/local_setup.zsh\n'}
+[3.499669] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/local_setup.dsv\n'}
+[3.499812] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/package.dsv\n'}
+[3.500057] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs\n'}
+[3.500138] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake\n'}
+[3.500199] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.500350] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.500647] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.500776] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.500834] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.500957] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake\n'}
+[3.501143] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.501363] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake\n'}
+[3.501497] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.501627] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.501803] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.501854] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.501895] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[3.501934] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.501977] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport.cmake\n'}
+[3.502044] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.502115] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[3.502177] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.502216] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.502253] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.502292] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.502331] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.502385] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.502443] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake\n'}
+[3.502498] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake\n'}
+[3.502551] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/package.xml\n'}
+[3.503740] (custom_msgs) CommandEnded: {'returncode': 0}
+[3.509234] (-) TimerEvent: {}
+[3.524398] (custom_msgs) JobEnded: {'identifier': 'custom_msgs', 'rc': 0}
+[3.525888] (px4_ros_com) JobStarted: {'identifier': 'px4_ros_com'}
+[3.576459] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'cmake'}
+[3.577928] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'build'}
+[3.578253] (px4_ros_com) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com', '--', '-j16', '-l16'], 'cwd': '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'niweiss'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/niweiss'), ('OLDPWD', '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'niweiss'), ('NAME', 'Nick'), ('WSL_INTEROP', '/run/WSL/11833_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/niweiss/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/HP/OMEN-Broadcast/Common:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/nicho/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/nicho/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs:/opt/ros/humble')]), 'shell': False}
+[3.615239] (-) TimerEvent: {}
+[3.637344] (px4_ros_com) StdoutLine: {'line': b'[ 11%] Built target offboard_control_srv\n'}
+[3.647164] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target offboard_launch\x1b[0m\n'}
+[3.651695] (px4_ros_com) StdoutLine: {'line': b'[ 22%] Built target offboard_control\n'}
+[3.652035] (px4_ros_com) StdoutLine: {'line': b'[ 33%] Built target debug_vect_advertiser\n'}
+[3.663337] (px4_ros_com) StdoutLine: {'line': b'[ 44%] Built target frame_transforms\n'}
+[3.663805] (px4_ros_com) StdoutLine: {'line': b'[ 44%] Built target ament_cmake_python_copy_px4_ros_com\n'}
+[3.663966] (px4_ros_com) StdoutLine: {'line': b'[ 55%] Built target sensor_combined_listener\n'}
+[3.664105] (px4_ros_com) StdoutLine: {'line': b'[ 66%] Built target flight_state_pub\n'}
+[3.665892] (px4_ros_com) StdoutLine: {'line': b'[ 77%] Built target vehicle_gps_position_listener\n'}
+[3.666143] (px4_ros_com) StdoutLine: {'line': b'[ 88%] Built target offboard_paths\n'}
+[3.669247] (px4_ros_com) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding CXX object CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o\x1b[0m\n'}
+[3.715346] (-) TimerEvent: {}
+[3.815797] (-) TimerEvent: {}
+[3.903457] (px4_ros_com) StdoutLine: {'line': b'running egg_info\n'}
+[3.915532] (px4_ros_com) StdoutLine: {'line': b'writing px4_ros_com.egg-info/PKG-INFO\n'}
+[3.915920] (-) TimerEvent: {}
+[3.916257] (px4_ros_com) StdoutLine: {'line': b'writing dependency_links to px4_ros_com.egg-info/dependency_links.txt\n'}
+[3.916535] (px4_ros_com) StdoutLine: {'line': b'writing top-level names to px4_ros_com.egg-info/top_level.txt\n'}
+[3.957094] (px4_ros_com) StdoutLine: {'line': b"reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'\n"}
+[3.958584] (px4_ros_com) StdoutLine: {'line': b"writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'\n"}
+[3.985819] (px4_ros_com) StdoutLine: {'line': b'[ 94%] Built target ament_cmake_python_build_px4_ros_com_egg\n'}
+[4.016094] (-) TimerEvent: {}
+[4.116466] (-) TimerEvent: {}
+[4.216840] (-) TimerEvent: {}
+[4.317289] (-) TimerEvent: {}
+[4.417908] (-) TimerEvent: {}
+[4.518339] (-) TimerEvent: {}
+[4.619034] (-) TimerEvent: {}
+[4.719389] (-) TimerEvent: {}
+[4.819789] (-) TimerEvent: {}
+[4.920217] (-) TimerEvent: {}
+[5.020581] (-) TimerEvent: {}
+[5.121019] (-) TimerEvent: {}
+[5.221588] (-) TimerEvent: {}
+[5.322002] (-) TimerEvent: {}
+[5.422430] (-) TimerEvent: {}
+[5.522853] (-) TimerEvent: {}
+[5.623271] (-) TimerEvent: {}
+[5.723697] (-) TimerEvent: {}
+[5.825903] (-) TimerEvent: {}
+[5.926313] (-) TimerEvent: {}
+[6.026747] (-) TimerEvent: {}
+[6.127156] (-) TimerEvent: {}
+[6.227515] (-) TimerEvent: {}
+[6.327935] (-) TimerEvent: {}
+[6.428425] (-) TimerEvent: {}
+[6.528847] (-) TimerEvent: {}
+[6.629275] (-) TimerEvent: {}
+[6.729711] (-) TimerEvent: {}
+[6.830141] (-) TimerEvent: {}
+[6.930577] (-) TimerEvent: {}
+[7.031034] (-) TimerEvent: {}
+[7.131445] (-) TimerEvent: {}
+[7.231805] (-) TimerEvent: {}
+[7.332210] (-) TimerEvent: {}
+[7.432626] (-) TimerEvent: {}
+[7.533036] (-) TimerEvent: {}
+[7.633491] (-) TimerEvent: {}
+[7.733921] (-) TimerEvent: {}
+[7.834353] (-) TimerEvent: {}
+[7.934745] (-) TimerEvent: {}
+[8.035167] (-) TimerEvent: {}
+[8.135572] (-) TimerEvent: {}
+[8.236016] (-) TimerEvent: {}
+[8.336374] (-) TimerEvent: {}
+[8.436745] (-) TimerEvent: {}
+[8.537267] (-) TimerEvent: {}
+[8.637705] (-) TimerEvent: {}
+[8.738118] (-) TimerEvent: {}
+[8.838543] (-) TimerEvent: {}
+[8.938958] (-) TimerEvent: {}
+[9.039405] (-) TimerEvent: {}
+[9.139860] (-) TimerEvent: {}
+[9.240229] (-) TimerEvent: {}
+[9.340633] (-) TimerEvent: {}
+[9.441052] (-) TimerEvent: {}
+[9.541485] (-) TimerEvent: {}
+[9.641894] (-) TimerEvent: {}
+[9.742321] (-) TimerEvent: {}
+[9.842749] (-) TimerEvent: {}
+[9.943194] (-) TimerEvent: {}
+[10.043661] (-) TimerEvent: {}
+[10.144063] (-) TimerEvent: {}
+[10.244450] (-) TimerEvent: {}
+[10.344847] (-) TimerEvent: {}
+[10.445272] (-) TimerEvent: {}
+[10.545672] (-) TimerEvent: {}
+[10.646099] (-) TimerEvent: {}
+[10.746501] (-) TimerEvent: {}
+[10.846903] (-) TimerEvent: {}
+[10.947321] (-) TimerEvent: {}
+[11.047756] (-) TimerEvent: {}
+[11.148219] (-) TimerEvent: {}
+[11.248628] (-) TimerEvent: {}
+[11.349077] (-) TimerEvent: {}
+[11.449510] (-) TimerEvent: {}
+[11.549955] (-) TimerEvent: {}
+[11.650312] (-) TimerEvent: {}
+[11.750721] (-) TimerEvent: {}
+[11.851112] (-) TimerEvent: {}
+[11.951485] (-) TimerEvent: {}
+[12.051931] (-) TimerEvent: {}
+[12.152348] (-) TimerEvent: {}
+[12.252814] (-) TimerEvent: {}
+[12.353227] (-) TimerEvent: {}
+[12.453663] (-) TimerEvent: {}
+[12.554059] (-) TimerEvent: {}
+[12.654476] (-) TimerEvent: {}
+[12.754956] (-) TimerEvent: {}
+[12.855357] (-) TimerEvent: {}
+[12.955773] (-) TimerEvent: {}
+[13.056213] (-) TimerEvent: {}
+[13.156599] (-) TimerEvent: {}
+[13.257014] (-) TimerEvent: {}
+[13.357424] (-) TimerEvent: {}
+[13.457834] (-) TimerEvent: {}
+[13.558284] (-) TimerEvent: {}
+[13.658652] (-) TimerEvent: {}
+[13.759055] (-) TimerEvent: {}
+[13.859490] (-) TimerEvent: {}
+[13.959852] (-) TimerEvent: {}
+[14.060257] (-) TimerEvent: {}
+[14.160664] (-) TimerEvent: {}
+[14.261119] (-) TimerEvent: {}
+[14.361506] (-) TimerEvent: {}
+[14.461900] (-) TimerEvent: {}
+[14.562325] (-) TimerEvent: {}
+[14.666014] (-) TimerEvent: {}
+[14.766451] (-) TimerEvent: {}
+[14.866844] (-) TimerEvent: {}
+[14.967352] (-) TimerEvent: {}
+[15.067753] (-) TimerEvent: {}
+[15.168162] (-) TimerEvent: {}
+[15.268583] (-) TimerEvent: {}
+[15.369005] (-) TimerEvent: {}
+[15.469437] (-) TimerEvent: {}
+[15.569789] (-) TimerEvent: {}
+[15.670194] (-) TimerEvent: {}
+[15.770580] (-) TimerEvent: {}
+[15.870942] (-) TimerEvent: {}
+[15.971394] (-) TimerEvent: {}
+[16.071746] (-) TimerEvent: {}
+[16.172115] (-) TimerEvent: {}
+[16.272474] (-) TimerEvent: {}
+[16.372969] (-) TimerEvent: {}
+[16.473316] (-) TimerEvent: {}
+[16.573708] (-) TimerEvent: {}
+[16.674190] (-) TimerEvent: {}
+[16.774537] (-) TimerEvent: {}
+[16.874985] (-) TimerEvent: {}
+[16.975366] (-) TimerEvent: {}
+[17.075714] (-) TimerEvent: {}
+[17.176109] (-) TimerEvent: {}
+[17.276658] (-) TimerEvent: {}
+[17.377126] (-) TimerEvent: {}
+[17.477622] (-) TimerEvent: {}
+[17.578083] (-) TimerEvent: {}
+[17.678518] (-) TimerEvent: {}
+[17.778970] (-) TimerEvent: {}
+[17.879416] (-) TimerEvent: {}
+[17.979866] (-) TimerEvent: {}
+[18.080234] (-) TimerEvent: {}
+[18.180661] (-) TimerEvent: {}
+[18.281041] (-) TimerEvent: {}
+[18.381588] (-) TimerEvent: {}
+[18.481939] (-) TimerEvent: {}
+[18.582494] (-) TimerEvent: {}
+[18.682905] (-) TimerEvent: {}
+[18.783907] (-) TimerEvent: {}
+[18.884601] (-) TimerEvent: {}
+[18.984994] (-) TimerEvent: {}
+[19.085391] (-) TimerEvent: {}
+[19.185804] (-) TimerEvent: {}
+[19.286154] (-) TimerEvent: {}
+[19.386657] (-) TimerEvent: {}
+[19.487001] (-) TimerEvent: {}
+[19.587436] (-) TimerEvent: {}
+[19.687790] (-) TimerEvent: {}
+[19.788224] (-) TimerEvent: {}
+[19.888561] (-) TimerEvent: {}
+[19.989073] (-) TimerEvent: {}
+[20.089541] (-) TimerEvent: {}
+[20.189890] (-) TimerEvent: {}
+[20.290243] (-) TimerEvent: {}
+[20.390675] (-) TimerEvent: {}
+[20.491199] (-) TimerEvent: {}
+[20.591592] (-) TimerEvent: {}
+[20.692051] (-) TimerEvent: {}
+[20.792441] (-) TimerEvent: {}
+[20.892782] (-) TimerEvent: {}
+[20.993193] (-) TimerEvent: {}
+[21.093692] (-) TimerEvent: {}
+[21.194164] (-) TimerEvent: {}
+[21.294617] (-) TimerEvent: {}
+[21.395040] (-) TimerEvent: {}
+[21.495555] (-) TimerEvent: {}
+[21.596025] (-) TimerEvent: {}
+[21.696381] (-) TimerEvent: {}
+[21.796872] (-) TimerEvent: {}
+[21.897367] (-) TimerEvent: {}
+[21.997768] (-) TimerEvent: {}
+[22.098164] (-) TimerEvent: {}
+[22.198685] (-) TimerEvent: {}
+[22.299182] (-) TimerEvent: {}
+[22.399668] (-) TimerEvent: {}
+[22.471101] (px4_ros_com) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable offboard_launch\x1b[0m\n'}
+[22.499854] (-) TimerEvent: {}
+[22.600242] (-) TimerEvent: {}
+[22.700645] (-) TimerEvent: {}
+[22.801068] (-) TimerEvent: {}
+[22.901500] (-) TimerEvent: {}
+[23.002216] (-) TimerEvent: {}
+[23.102697] (-) TimerEvent: {}
+[23.203179] (-) TimerEvent: {}
+[23.303599] (-) TimerEvent: {}
+[23.404032] (-) TimerEvent: {}
+[23.504400] (-) TimerEvent: {}
+[23.506601] (px4_ros_com) StdoutLine: {'line': b'[100%] Built target offboard_launch\n'}
+[23.522410] (px4_ros_com) CommandEnded: {'returncode': 0}
+[23.522890] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'install'}
+[23.522925] (px4_ros_com) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com'], 'cwd': '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'niweiss'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/niweiss'), ('OLDPWD', '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'niweiss'), ('NAME', 'Nick'), ('WSL_INTEROP', '/run/WSL/11833_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/niweiss/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/HP/OMEN-Broadcast/Common:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/usbipd-win/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/nicho/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/nicho/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs:/opt/ros/humble')]), 'shell': False}
+[23.528900] (px4_ros_com) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[23.530193] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/sensor_combined_listener\n'}
+[23.537003] (px4_ros_com) StdoutLine: {'line': b'-- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/sensor_combined_listener" to ""\n'}
+[23.537984] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/vehicle_gps_position_listener\n'}
+[23.544968] (px4_ros_com) StdoutLine: {'line': b'-- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/vehicle_gps_position_listener" to ""\n'}
+[23.546052] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/debug_vect_advertiser\n'}
+[23.547806] (px4_ros_com) StdoutLine: {'line': b'-- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/debug_vect_advertiser" to ""\n'}
+[23.549433] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_control\n'}
+[23.555647] (px4_ros_com) StdoutLine: {'line': b'-- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_control" to ""\n'}
+[23.560711] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_control_srv\n'}
+[23.561147] (px4_ros_com) StdoutLine: {'line': b'-- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_control_srv" to ""\n'}
+[23.562869] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_launch\n'}
+[23.571072] (px4_ros_com) StdoutLine: {'line': b'-- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_launch" to ""\n'}
+[23.572267] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/flight_state_pub\n'}
+[23.574161] (px4_ros_com) StdoutLine: {'line': b'-- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/flight_state_pub" to ""\n'}
+[23.575423] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_paths\n'}
+[23.578109] (px4_ros_com) StdoutLine: {'line': b'-- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_paths" to ""\n'}
+[23.578376] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/library_path.sh\n'}
+[23.578493] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/library_path.dsv\n'}
+[23.578690] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/include/px4_ros_com\n'}
+[23.578817] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/include/px4_ros_com/frame_transforms.h\n'}
+[23.580038] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/libframe_transforms.so\n'}
+[23.588144] (px4_ros_com) StdoutLine: {'line': b'-- Set runtime path of "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/libframe_transforms.so" to ""\n'}
+[23.588256] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch\n'}
+[23.588652] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch/offboard_control_launch.yaml\n'}
+[23.589351] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch/vehicle_gps_position_listener.launch.py\n'}
+[23.589955] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch/sensor_combined_listener.launch.py\n'}
+[23.590575] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test\n'}
+[23.590813] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/test_input.py\n'}
+[23.591628] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/test_output.py\n'}
+[23.592334] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/__init__.py\n'}
+[23.592620] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/pipeline_io_test.py\n'}
+[23.593019] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/pythonpath.sh\n'}
+[23.593154] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/pythonpath.dsv\n'}
+[23.593402] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info\n'}
+[23.593510] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/top_level.txt\n'}
+[23.593754] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/PKG-INFO\n'}
+[23.593861] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[23.593932] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[23.594178] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com\n'}
+[23.594277] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/module_to_import.py\n'}
+[23.594342] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/__init__.py\n'}
+[23.604544] (-) TimerEvent: {}
+[23.625269] (px4_ros_com) StdoutLine: {'line': b"Listing '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com'...\n"}
+[23.625510] (px4_ros_com) StdoutLine: {'line': b"Compiling '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/__init__.py'...\n"}
+[23.625605] (px4_ros_com) StdoutLine: {'line': b"Compiling '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/module_to_import.py'...\n"}
+[23.629308] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_control.py\n'}
+[23.630090] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/ament_index/resource_index/package_run_dependencies/px4_ros_com\n'}
+[23.630362] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/ament_index/resource_index/parent_prefix_path/px4_ros_com\n'}
+[23.630779] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.sh\n'}
+[23.630873] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.dsv\n'}
+[23.631029] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/path.sh\n'}
+[23.631109] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/path.dsv\n'}
+[23.631234] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.bash\n'}
+[23.631492] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.sh\n'}
+[23.631605] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.zsh\n'}
+[23.631708] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.dsv\n'}
+[23.631840] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.dsv\n'}
+[23.631900] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/ament_index/resource_index/packages/px4_ros_com\n'}
+[23.632168] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport.cmake\n'}
+[23.632525] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport-noconfig.cmake\n'}
+[23.632624] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[23.632675] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[23.632713] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[23.632753] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[23.632790] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig.cmake\n'}
+[23.632826] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig-version.cmake\n'}
+[23.632862] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.xml\n'}
+[23.635127] (px4_ros_com) CommandEnded: {'returncode': 0}
+[23.649277] (px4_ros_com) JobEnded: {'identifier': 'px4_ros_com', 'rc': 0}
+[23.649662] (-) EventReactorShutdown: {}

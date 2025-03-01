@@ -1,0 +1,6 @@
+{
+  "package_name": "custom_msgs",
+  "non_idl_tuples": [
+    "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/custom_msgs:msg/FlightCommand.msg"
+  ]
+}

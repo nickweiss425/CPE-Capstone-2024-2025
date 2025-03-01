@@ -1,0 +1,41 @@
+[0.083s] Invoking command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com': AMENT_PREFIX_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com -- -j16 -l16
+[0.122s] [35m[1mConsolidate compiler generated dependencies of target frame_transforms[0m
+[0.144s] [35m[1mConsolidate compiler generated dependencies of target offboard_control_srv[0m
+[0.144s] [35m[1mConsolidate compiler generated dependencies of target vehicle_gps_position_listener[0m
+[0.148s] [35m[1mConsolidate compiler generated dependencies of target offboard_control[0m
+[0.154s] [35m[1mConsolidate compiler generated dependencies of target flight_state_pub[0m
+[0.161s] [ 11%] Built target frame_transforms
+[0.174s] [35m[1mConsolidate compiler generated dependencies of target debug_vect_advertiser[0m
+[0.175s] [ 11%] Built target ament_cmake_python_copy_px4_ros_com
+[0.176s] [ 22%] Built target offboard_control_srv
+[0.178s] [ 33%] Built target offboard_control
+[0.187s] [35m[1mConsolidate compiler generated dependencies of target sensor_combined_listener[0m
+[0.189s] [ 44%] Built target vehicle_gps_position_listener
+[0.189s] [35m[1mConsolidate compiler generated dependencies of target offboard_paths[0m
+[0.193s] [35m[1mConsolidate compiler generated dependencies of target offboard_launch[0m
+[0.200s] [ 55%] Built target flight_state_pub
+[0.203s] [ 66%] Built target debug_vect_advertiser
+[0.210s] [ 77%] Built target sensor_combined_listener
+[0.211s] [ 88%] Built target offboard_paths
+[0.216s] [ 94%] [32mBuilding CXX object CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o[0m
+[0.380s] running egg_info
+[0.391s] writing px4_ros_com.egg-info/PKG-INFO
+[0.392s] writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+[0.393s] writing top-level names to px4_ros_com.egg-info/top_level.txt
+[0.431s] reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.434s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.466s] [ 94%] Built target ament_cmake_python_build_px4_ros_com_egg
+[2.895s] [01m[K/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::flightCommandCallback(custom_msgs::msg::FlightCommand)[m[K’:
+[2.895s] [01m[K/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:604:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst FlightCommand[m[K’ {aka ‘[01m[Kconst struct custom_msgs::msg::FlightCommand_<std::allocator<void> >[m[K’} has no member named ‘[01m[Klongitude_deg[m[K’
+[2.895s]   604 |                  target_lon_ = msg.[01;31m[Klongitude_deg[m[K;
+[2.895s]       |                                    [01;31m[K^~~~~~~~~~~~~[m[K
+[2.895s] [01m[K/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:605:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst FlightCommand[m[K’ {aka ‘[01m[Kconst struct custom_msgs::msg::FlightCommand_<std::allocator<void> >[m[K’} has no member named ‘[01m[Klatitude_deg[m[K’
+[2.895s]   605 |                  target_lat_ = msg.[01;31m[Klatitude_deg[m[K;
+[2.895s]       |                                    [01;31m[K^~~~~~~~~~~~[m[K
+[2.895s] [01m[K/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:609:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst FlightCommand[m[K’ {aka ‘[01m[Kconst struct custom_msgs::msg::FlightCommand_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kwaypoint_type[m[K’
+[2.895s]   609 |                  current_state_ = static_cast<FlightState>(msg.[01;31m[Kwaypoint_type[m[K);
+[2.895s]       |                                                                [01;31m[K^~~~~~~~~~~~~[m[K
+[9.356s] gmake[2]: *** [CMakeFiles/offboard_launch.dir/build.make:76: CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o] Error 1
+[9.356s] gmake[1]: *** [CMakeFiles/Makefile2:312: CMakeFiles/offboard_launch.dir/all] Error 2
+[9.357s] gmake: *** [Makefile:146: all] Error 2
+[9.362s] Invoked command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com' returned '2': AMENT_PREFIX_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_ros_com -- -j16 -l16

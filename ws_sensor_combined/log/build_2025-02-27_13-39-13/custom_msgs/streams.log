@@ -1,0 +1,144 @@
+[0.018s] Invoking command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble /usr/bin/cmake --build /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs -- -j16 -l16
+[0.089s] [  3%] Built target custom_msgs__cpp
+[0.092s] [ 12%] Built target custom_msgs__rosidl_generator_c
+[0.099s] [ 12%] Built target ament_cmake_python_copy_custom_msgs
+[0.114s] [ 29%] Built target custom_msgs__rosidl_typesupport_introspection_cpp
+[0.115s] [ 32%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp
+[0.115s] [ 41%] Built target custom_msgs__rosidl_typesupport_cpp
+[0.117s] [ 51%] Built target custom_msgs__rosidl_typesupport_introspection_c
+[0.118s] [ 61%] Built target custom_msgs__rosidl_typesupport_c
+[0.122s] [ 70%] Built target custom_msgs__rosidl_typesupport_fastrtps_c
+[0.145s] [ 70%] Built target custom_msgs
+[0.168s] [ 74%] Built target custom_msgs__py
+[0.191s] [ 80%] Built target custom_msgs__rosidl_generator_py
+[0.211s] [ 93%] Built target custom_msgs__rosidl_typesupport_c__pyext
+[0.211s] [100%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext
+[0.211s] [ 96%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.311s] running egg_info
+[0.322s] writing custom_msgs.egg-info/PKG-INFO
+[0.323s] writing dependency_links to custom_msgs.egg-info/dependency_links.txt
+[0.323s] writing top-level names to custom_msgs.egg-info/top_level.txt
+[0.364s] reading manifest file 'custom_msgs.egg-info/SOURCES.txt'
+[0.364s] writing manifest file 'custom_msgs.egg-info/SOURCES.txt'
+[0.394s] [100%] Built target ament_cmake_python_build_custom_msgs_egg
+[0.406s] Invoked command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble /usr/bin/cmake --build /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs -- -j16 -l16
+[0.419s] Invoking command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble /usr/bin/cmake --install /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs
+[0.426s] -- Install configuration: ""
+[0.427s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs
+[0.427s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs
+[0.427s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[0.427s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.427s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/flight_command.h
+[0.428s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[0.428s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__functions.h
+[0.428s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__type_support.h
+[0.428s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__functions.c
+[0.428s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__struct.h
+[0.428s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/library_path.sh
+[0.429s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/library_path.dsv
+[0.429s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so
+[0.429s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs
+[0.429s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[0.430s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.430s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[0.430s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__rosidl_typesupport_fastrtps_c.h
+[0.430s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so
+[0.431s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs
+[0.431s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[0.431s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[0.431s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__rosidl_typesupport_introspection_c.h
+[0.431s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__type_support.c
+[0.431s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.431s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so
+[0.431s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so
+[0.431s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs
+[0.431s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[0.431s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.431s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/flight_command.hpp
+[0.431s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[0.431s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__traits.hpp
+[0.431s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__struct.hpp
+[0.431s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__builder.hpp
+[0.432s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__type_support.hpp
+[0.432s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs
+[0.432s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[0.432s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.432s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[0.432s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__rosidl_typesupport_fastrtps_cpp.hpp
+[0.432s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/dds_fastrtps
+[0.432s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.432s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs
+[0.432s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[0.432s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[0.432s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__rosidl_typesupport_introspection_cpp.hpp
+[0.432s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__type_support.cpp
+[0.432s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so
+[0.432s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so
+[0.432s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh
+[0.432s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv
+[0.432s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info
+[0.432s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[0.433s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[0.433s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.433s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.433s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs
+[0.433s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.433s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg
+[0.433s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_flight_command.py
+[0.433s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py
+[0.433s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_flight_command_s.c
+[0.433s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[0.433s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.433s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py
+[0.433s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c
+[0.433s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.433s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.433s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/libcustom_msgs__rosidl_generator_py.so
+[0.466s] Listing '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs'...
+[0.466s] Listing '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg'...
+[0.471s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.471s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.472s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.472s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so
+[0.472s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/msg/FlightCommand.idl
+[0.473s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/msg/FlightCommand.msg
+[0.473s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs
+[0.473s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs
+[0.473s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh
+[0.474s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv
+[0.474s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/path.sh
+[0.474s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/environment/path.dsv
+[0.474s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/local_setup.bash
+[0.475s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/local_setup.sh
+[0.475s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/local_setup.zsh
+[0.475s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/local_setup.dsv
+[0.475s] -- Installing: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/package.dsv
+[0.475s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs
+[0.475s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake
+[0.475s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-noconfig.cmake
+[0.475s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[0.475s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.475s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.475s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.475s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake
+[0.475s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[0.475s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake
+[0.475s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.475s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.475s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.476s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.476s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake
+[0.476s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.476s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport.cmake
+[0.476s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport-noconfig.cmake
+[0.476s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake
+[0.476s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.476s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.476s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.476s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.476s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.476s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.476s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake
+[0.476s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake
+[0.477s] -- Up-to-date: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/share/custom_msgs/package.xml
+[0.478s] Invoked command in '/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/niweiss/ws_sensor_combined/install/px4_ros_com:/opt/ros/humble /usr/bin/cmake --install /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/custom_msgs

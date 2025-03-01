@@ -1,0 +1,13 @@
+[01m[K/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::flightCommandCallback(custom_msgs::msg::FlightCommand)[m[K’:
+[01m[K/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:604:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst FlightCommand[m[K’ {aka ‘[01m[Kconst struct custom_msgs::msg::FlightCommand_<std::allocator<void> >[m[K’} has no member named ‘[01m[Klongitude_deg[m[K’
+  604 |                  target_lon_ = msg.[01;31m[Klongitude_deg[m[K;
+      |                                    [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:605:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst FlightCommand[m[K’ {aka ‘[01m[Kconst struct custom_msgs::msg::FlightCommand_<std::allocator<void> >[m[K’} has no member named ‘[01m[Klatitude_deg[m[K’
+  605 |                  target_lat_ = msg.[01;31m[Klatitude_deg[m[K;
+      |                                    [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_ros_com/src/examples/offboard/offboard_launch.cpp:609:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst FlightCommand[m[K’ {aka ‘[01m[Kconst struct custom_msgs::msg::FlightCommand_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kwaypoint_type[m[K’
+  609 |                  current_state_ = static_cast<FlightState>(msg.[01;31m[Kwaypoint_type[m[K);
+      |                                                                [01;31m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/offboard_launch.dir/build.make:76: CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:312: CMakeFiles/offboard_launch.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

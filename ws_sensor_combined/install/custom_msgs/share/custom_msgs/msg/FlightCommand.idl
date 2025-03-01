@@ -1,0 +1,38 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_msgs/msg/FlightCommand.msg
+// generated code does not contain a copyright notice
+
+
+module custom_msgs {
+  module msg {
+    struct FlightCommand {
+      @verbatim (language="comment", text=
+        "Latitude in degrees")
+      float latitude_deg;
+
+      @verbatim (language="comment", text=
+        "Longitude in degrees")
+      float longitude_deg;
+
+      @verbatim (language="comment", text=
+        "altitude for drone")
+      float altitude;
+
+      @verbatim (language="comment", text=
+        "radius if circle/figure8 path")
+      float radius;
+
+      @verbatim (language="comment", text=
+        "length for square path")
+      float length;
+
+      @verbatim (language="comment", text=
+        "duration to remain at waypoint")
+      float duration;
+
+      @verbatim (language="comment", text=
+        "type of waypoint")
+      int8 waypoint_type;
+    };
+  };
+};
