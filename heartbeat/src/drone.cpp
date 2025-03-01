@@ -21,36 +21,43 @@ public:
         publisher_ = this->create_publisher<std_msgs::msg::Empty>("/heartbeat/ack", 10);
         /* Create publisher to land the drone */
         land_publisher_ = this->create_publisher<std_msgs::msg::Int32>("desired_state", 10);
-        /* Indicates if the drone has received the first ping yet */
-        initiated_ = false;
     }
 
 private:
     /* Callback function to receive ping */
     void ping_callback(const std_msgs::msg::Empty::SharedPtr msg)
     {
+        (void)msg;
         RCLCPP_INFO(this->get_logger(), "Ping received");
         /* Send ack */
         auto ack_msg = std_msgs::msg::Empty();
         publisher_->publish(ack_msg);
-
-        /* start measuring time between pings */
-        if (!initiated_)
-        {
-            initiated_ = true;
-            last_ping = std::chrono::steady_clock::now();
-            return;
-        }
-
-        /* measure time difference */
-        std::chrono::steady_clock::time_point now = std::chrono::steady_clock::now();
-        auto delta = std::chrono::duration_cast<std::chrono::microseconds>(now - last_ping).count();
-        RCLCPP_INFO(this->get_logger(), "%d", delta);
-        last_ping = now;
+        /* Reset timer */
+        start_timer();
     }
 
-    bool initiated_;
-    std::chrono::steady_clock::time_point last_ping;
+    /* Start/restart timer for monitoring pings */
+    void start_timer()
+    {
+        if (timer_)
+        {
+            timer_->cancel();
+        }
+        timer_ = this->create_wall_timer(
+            10000ms, std::bind(&Drone::timer_callback, this));
+    }
+
+    /* Timeout */
+    void timer_callback()
+    {
+        std_msgs::msg::Int32 msg;
+        msg.data = 9; /* land in place */
+        land_publisher_->publish(msg);
+        RCLCPP_INFO(this->get_logger(), "TIMEOUT");
+        timer_->cancel();
+    }
+
+    rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Subscription<std_msgs::msg::Empty>::SharedPtr subscription_;
     rclcpp::Publisher<std_msgs::msg::Empty>::SharedPtr publisher_;
     rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr land_publisher_;
