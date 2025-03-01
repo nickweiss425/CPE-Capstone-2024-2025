@@ -53,7 +53,7 @@ private:
         std_msgs::msg::Int32 msg;
         msg.data = 9; /* land in place */
         land_publisher_->publish(msg);
-        RCLCPP_INFO(this->get_logger(), "TIMEOUT");
+        RCLCPP_INFO(this->get_logger(), "Did not receive ping");
         timer_->cancel();
     }
 
