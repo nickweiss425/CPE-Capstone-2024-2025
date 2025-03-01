@@ -3,6 +3,7 @@
 #include <QMainWindow>
 #include <QGraphicsScene>
 #include "gpswidget.hpp"
+#include "imuwidget.hpp"
 #include "flightstatepublisher.hpp"
 #include "flightstatesubscriber.hpp"
 #include "datalogger.hpp"
