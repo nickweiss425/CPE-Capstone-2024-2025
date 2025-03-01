@@ -26,6 +26,8 @@ set(SOURCES
     src/gpssubscriber.cpp
     src/imuwidget.cpp
     src/imusubscriber.cpp
+    src/connectionstatuswidget.cpp
+    src/connectionstatussubscriber.cpp
     src/flightstatesubscriber.cpp
     src/flightstatepublisher.cpp
     src/datalogger.cpp
@@ -42,6 +44,8 @@ set(HEADERS
     include/gpssubscriber.hpp
     include/imuwidget.hpp
     include/imusubscriber.hpp
+    include/connectionstatuswidget.hpp
+    include/connectionstatussubscriber.hpp
     include/flightstates.hpp
     include/flightstatesubscriber.hpp
     include/flightstatepublisher.hpp

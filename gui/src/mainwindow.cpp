@@ -26,6 +26,9 @@ MainWindow::MainWindow(QWidget *parent)
     // Set up the IMU data stream
     imuWidget = new IMUWidget(ui->sensorData);
 
+    // Set up the Connection Status widget
+    connectionStatusWidget = new ConnectionStatusWidget(ui->connectionStatusLabel);
+
     // Set up the flight state publisher/subscriber
     statePublisher = new StatePublisher();
     stateSubscriber = new StateSubscriber();
