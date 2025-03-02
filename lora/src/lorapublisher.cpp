@@ -24,6 +24,7 @@ LoraPublisher::LoraPublisher(): Node("lora_publisher") {
     gps_publisher_ = this->create_publisher<sensor_msgs::msg::NavSatFix>("/gps/fix", 10);
     imu_publisher_ = this->create_publisher<sensor_msgs::msg::Imu>("/imu", 10);
     flight_state_publisher_ = this->create_publisher<std_msgs::msg::Int32>("/desired_state", 10);
+    heartbeat_publisher_ = this->create_publisher<std_msgs::msg::Empty>("/heartbeat", 10);
 
     /* init serial port */
     try {
@@ -85,21 +86,25 @@ void LoraPublisher::timer_callback()
     switch(topic)
     {
         case topic_st::GPS:
-	    total_bytes = sizeof(gps_serialized_t);
-	    RCLCPP_INFO(this->get_logger(), "Received GPS message");
+            total_bytes = sizeof(gps_serialized_t);
+            RCLCPP_INFO(this->get_logger(), "Received GPS message");
             break;
-	case topic_st::IMU:
-	    total_bytes = sizeof(imu_serialized_t);
-	    RCLCPP_INFO(this->get_logger(), "Received IMU message");
+        case topic_st::IMU:
+            total_bytes = sizeof(imu_serialized_t);
+            RCLCPP_INFO(this->get_logger(), "Received IMU message");
             break;
-	case topic_st::DESIRED_STATE:
-	    total_bytes = sizeof(flight_state_serialized_t);
-	    RCLCPP_INFO(this->get_logger(), "Received STATE message");
+        case topic_st::DESIRED_STATE:
+            total_bytes = sizeof(flight_state_serialized_t);
+            RCLCPP_INFO(this->get_logger(), "Received STATE message");
             break;
-    default:
-	    RCLCPP_INFO(this->get_logger(), "Received unknown message");
-	    delete[] msg;
-	    return;
+        case topic_st::HEARTBEAT:
+            total_bytes = sizeof(heartbeat_serialized_t);
+            RCLCPP_INFO(this->get_logger(), "Received HEARTBEAT message");
+            break;
+        default:
+            RCLCPP_INFO(this->get_logger(), "Received unknown message");
+            delete[] msg;
+            return;
     }
     
     /* read the rest */
@@ -114,15 +119,18 @@ void LoraPublisher::timer_callback()
     if (bytes_read >= total_bytes)
     {
         switch (topic)
-	{
-	    case topic_st::GPS:
+        {
+            case topic_st::GPS:
                 publish_gps(msg);
                 break;
-	    case topic_st::IMU:
+            case topic_st::IMU:
                 publish_imu(msg);
                 break;
-	    case topic_st::DESIRED_STATE:
+            case topic_st::DESIRED_STATE:
                 publish_state(msg);
+                break;
+            case topic_st::HEARTBEAT:
+                publish_heartbeat(msg);
                 break;
             default:
                 RCLCPP_INFO(this->get_logger(), "Received unknown message topic.");
@@ -178,5 +186,15 @@ void LoraPublisher::publish_state(uint8_t *raw_msg)
     msg.data = fs->state;
 
     flight_state_publisher_->publish(msg);
+}
+
+
+/* Publish received HEARTBEAT to ROS node */
+void LoraPublisher::publish_heartbeat(uint8_t *raw_msg)
+{
+    RCLCPP_INFO(this->get_logger(), "LORA received /heartbeat");
+
+    auto msg = std_msgs::msg::Empty();
+    heartbeat_publisher_->publish(msg);
 }
 
