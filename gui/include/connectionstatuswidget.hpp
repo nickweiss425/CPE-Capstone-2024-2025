@@ -13,7 +13,7 @@ public:
     ~ConnectionStatusWidget() override;
 
 public slots:
-    void updateLabel();
+    void updateLabel(int status);
 
 private:
     QLabel *connection_status_label_;
