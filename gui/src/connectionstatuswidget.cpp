@@ -16,7 +16,7 @@ ConnectionStatusWidget::ConnectionStatusWidget(QLabel *label)
     
     /* connect qsignal */
     if (!QObject::connect(connection_status_subscriber_.get(),
-        &ConnectionStatusSubscriber::droneDisconnected, this,
+        &ConnectionStatusSubscriber::connectionStatusUpdate, this,
         &ConnectionStatusWidget::updateLabel))
     {
         std::cerr << "Error: Failed to connect connection status signal!" << std::endl;
@@ -36,9 +36,16 @@ ConnectionStatusWidget::~ConnectionStatusWidget() {
 }
 
 
-void ConnectionStatusWidget::updateLabel()
+/* connection status label update */
+void ConnectionStatusWidget::updateLabel(int status)
 {
-    /* connection status label update */
-    connection_status_label_->setText("DISCONNECTED");
+    if (!status)
+    {
+        connection_status_label_->setText("DISCONNECTED");
+    }
+    else
+    {
+        connection_status_label_->setText("CONNECTED");
+    }
 }
 
