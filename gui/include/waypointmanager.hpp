@@ -5,7 +5,8 @@
 #include <QVariant>
 #include <QVector>
 #include <std_msgs/msg/int32.hpp>
-#include "flightstates.hpp"
+#include "rclcpp/rclcpp.hpp"
+#include "flightstatepublisher.hpp"
 
 enum WaypointType : int {
     UNINITIALIZED,
@@ -19,6 +20,7 @@ enum WaypointType : int {
 struct Waypoint {
     QGeoCoordinate coordinate;
     double radius;
+    double length;
     double altitude;
     double duration;
     WaypointType type;
@@ -42,9 +44,8 @@ public slots:
     void onWaypointRemoved(int index); // Remove a waypoint from the list from map signal
     void updateWaypointAttributes(double radius, double altitude, double duration, int type); // Update the attributes of a waypoint from the dialog
     void getDronePosition(double latitude, double longitude); // Get the drone's position from the GPSWidget
-    void handleDroneStateReceive(const std_msgs::msg::Int32 &msg); // Handle the drone's state from incoming status messages
-    const Waypoint &getNextWaypoint(); // Get a waypoint from the list
-    gui_messages::msg::FlightCommand WaypointManager::getFlightCommand(const Waypoint &waypoint); // Get the flight command from a waypoint
+    const Waypoint getNextWaypoint(); // Get a waypoint from the list
+    gui_messages::msg::FlightCommand getFlightCommand(const Waypoint &waypoint); // Get the flight command from a waypoint
 signals:
     void getWaypointAttributes(double radius, double altitude, double duration, int type); // Send the current attributes of a waypoint to the dialog
     void updateDronePosition(double latitude, double longitude); // Update the drone's position on the map
