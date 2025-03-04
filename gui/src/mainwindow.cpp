@@ -130,7 +130,7 @@ void MainWindow::unlockButtons() {
  * This function publishes the takeoff state to the flight state publisher.
  */
 void MainWindow::startFlight() {
-    statePublisher->publish_state(flight_states::FlightState::TAKEOFF);
+    statePublisher->publish_state(0, 0, 0, 0, 0, 0, flight_states::FlightState::TAKEOFF);
     unlockButtons();
 }
 
@@ -161,7 +161,7 @@ void MainWindow::toggleRecording() {
  * It also changes the text of the toggle recording button to the record icon.
  */
 void MainWindow::stopFlight() {
-    statePublisher->publish_state(flight_states::FlightState::LANDED);
+    statePublisher->publish_state(0, 0, 0, 0, 0, 0, flight_states::FlightState::LANDED);
     ui->toggleRecordingButton->setText(QCoreApplication::translate("MainWindow", "\342\217\272", nullptr));
     auto dataLogger_ = DataLogger::getInstance();
     if (dataLogger_->getRecording()) {

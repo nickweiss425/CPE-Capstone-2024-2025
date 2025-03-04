@@ -2,7 +2,6 @@
 #include <rclcpp/rclcpp.hpp>
 #include <chrono>
 #include <QObject>
-#include "std_msgs/msg/int32.hpp"
 #include "flightstates.hpp"
 
 class StatePublisher : public rclcpp::Node, public flight_states
@@ -10,9 +9,9 @@ class StatePublisher : public rclcpp::Node, public flight_states
 public:
     StatePublisher();
     
-    void publish_state(const FlightState &state);
+    void publish_state(const float &latitude, const float &longitude, const float &altitude, const float &radius, const float &length, const float &duration, const FlightState &state);
 
 private:
     
-    rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr publisher_;
+    rclcpp::Publisher<gui_messages::msg::FlightCommand>::SharedPtr publisher_;
 };

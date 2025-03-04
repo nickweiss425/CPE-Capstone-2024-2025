@@ -133,6 +133,35 @@ void WaypointManager::getDronePosition(double latitude, double longitude) {
     emit updateDronePosition(latitude, longitude);
 }
 
+const Waypoint &WaypointManager::getNextWaypoint() {
+    if (m_waypoints.empty()) {
+        throw std::runtime_error("No waypoints available");
+    }
+    return m_waypoints.front();
+}
+
+gui_messages::msg::FlightCommand WaypointManager::getFlightCommand(const Waypoint &waypoint) {
+    gui_messages::msg::FlightCommand flightCommand;
+    flightCommand.latitude_deg = waypoint.coordinate.latitude();
+    flightCommand.longitude_deg = waypoint.coordinate.longitude();
+    flightCommand.altitude = waypoint.altitude;
+    flightCommand.duration = waypoint.duration;
+    flightCommand.waypoint_type = static_cast<int>(waypoint.type);
+
+    switch (waypoint.type) {
+        case WaypointType::CIRCLE:
+        case WaypointType::FIGUREEIGHT:
+            flightCommand.radius = waypoint.radius;
+            break;
+        case WaypointType::SQUARE:
+            flightCommand.length = waypoint.radius;
+        default:
+            break;
+    }
+
+    return flightCommand;
+}
+
 /**
  * @brief Handles the reception of drone state messages.
  *
@@ -142,7 +171,7 @@ void WaypointManager::getDronePosition(double latitude, double longitude) {
  * @param msg The received drone state message.
  */
 void WaypointManager::handleDroneStateReceive(const std_msgs::msg::Int32 &msg) {
-    const FlightState state = static_cast<FlightState>(msg.data);
+    const int32_t state = static_cast<int32_t>(msg.data);
     switch (state) {
         default:
             break;

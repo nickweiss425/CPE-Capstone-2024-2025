@@ -1,4 +1,5 @@
 #pragma once
+#include "gui_messages/msg/flight_command.hpp"
 
 class flight_states {
 public:
