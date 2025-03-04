@@ -70,7 +70,7 @@ void MainWindow::setupConnections() {
     connect(ui->confirmHoverButton, &QPushButton::clicked, this, &MainWindow::handleWaypointUpdate);
     connect(ui->waypointManager, &WaypointManager::getWaypointAttributes, this, &MainWindow::updateWaypointAttributes);
     connect(this, &MainWindow::setWaypointAttributes, ui->waypointManager, &WaypointManager::updateWaypointAttributes);
-    connect(stateSubscriber, &StateSubscriber::stateReceived, ui->waypointManager, &WaypointManager::handleDroneStateReceive);
+    connect(stateSubscriber, &StateSubscriber::stateReceived, this, &MainWindow::handleDroneStateReceive);
     connect(ui->waypointManager, &WaypointManager::resetWaypointButtons, this, &MainWindow::resetWaypointAttributes);
 
     // Wait for the map to load before connecting signals
@@ -286,6 +286,55 @@ void MainWindow::resetWaypointAttributes() {
     ui->hoverControlButton2->update();
     ui->hoverControlButton3->update();
     ui->hoverControlButton4->update();
+}
+
+void MainWindow::handleDroneStateReceive(const std_msgs::msg::Int32 &msg) {
+    const flight_states::FlightState state = static_cast<flight_states::FlightState>(msg.data);
+    Waypoint nextWaypoint;
+    switch (state) {
+        case flight_states::FlightState::LAND_IN_PLACE:
+            break;
+        case flight_states::FlightState::TAKEOFF:
+        case flight_states::FlightState::WAYPOINT_HOLD:
+        case flight_states::FlightState::CIRCLE_PATH:
+        case flight_states::FlightState::SQUARE_PATH:
+        case flight_states::FlightState::FIGURE8_PATH: {
+            std::this_thread::sleep_for(std::chrono::milliseconds(m_lastDelayDuration)); // Sleep for the duration of the drone moving at waypoint
+            nextWaypoint = ui->waypointManager->getNextWaypoint(); // Get the next waypoint when drone finishes procedure
+            m_lastDelayDuration = nextWaypoint.duration * 1000; // Set the delay duration for the upcoming waypoint
+            flight_states::FlightState next_state = getFlightState(nextWaypoint); // Get the new flight state
+            statePublisher->publish_state(nextWaypoint.coordinate.latitude(), // Publish the new flight state
+                                            nextWaypoint.coordinate.longitude(),
+                                            nextWaypoint.altitude,
+                                            nextWaypoint.radius,
+                                            nextWaypoint.length,
+                                            nextWaypoint.duration,
+                                            next_state);
+            break;
+        }
+        case flight_states::FlightState::HOME_LAND:
+        case flight_states::FlightState::LANDED:
+        case flight_states::FlightState::CIRCLE_WAYPOINT:
+        case flight_states::FlightState::SQUARE_WAYPOINT:
+        case flight_states::FlightState::FIGURE8_WAYPOINT:
+        default:
+            break;
+    }
+}
+
+flight_states::FlightState MainWindow::getFlightState(const Waypoint &waypoint) {
+    switch (waypoint.type) {
+        case WaypointType::LOITER:
+            return flight_states::FlightState::WAYPOINT_HOLD;
+        case WaypointType::CIRCLE:
+            return flight_states::FlightState::CIRCLE_WAYPOINT;
+        case WaypointType::FIGUREEIGHT:
+            return flight_states::FlightState::FIGURE8_WAYPOINT;
+        case WaypointType::SQUARE:
+            return flight_states::FlightState::SQUARE_WAYPOINT;
+        default:
+            return flight_states::FlightState::TAKEOFF;
+    }
 }
 
 /**

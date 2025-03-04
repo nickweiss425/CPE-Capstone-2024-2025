@@ -47,6 +47,7 @@ void WaypointManager::onWaypointAdded(double latitude, double longitude) {
     Waypoint waypoint;
     waypoint.coordinate = QGeoCoordinate(latitude, longitude);
     waypoint.radius = 0;
+    waypoint.length = 0;
     waypoint.altitude = 0;
     waypoint.duration = 0;
     waypoint.type = UNINITIALIZED;
@@ -115,6 +116,7 @@ void WaypointManager::updateWaypointAttributes(double radius, double altitude, d
     }
 
     m_waypoints[m_selectedIndex].radius = radius;
+    m_waypoints[m_selectedIndex].length = radius;
     m_waypoints[m_selectedIndex].altitude = altitude;
     m_waypoints[m_selectedIndex].duration = duration;
     m_waypoints[m_selectedIndex].type = static_cast<WaypointType>(type);
@@ -133,13 +135,31 @@ void WaypointManager::getDronePosition(double latitude, double longitude) {
     emit updateDronePosition(latitude, longitude);
 }
 
-const Waypoint &WaypointManager::getNextWaypoint() {
+/**
+ * @brief Pops the next waypoint from the front of the list.
+ * 
+ * This function gets the next waypoint from the list of waypoints and removes it from the list.
+ * If the list is empty, a runtime_error is thrown.
+ * 
+ * @return The next waypoint.
+ */
+const Waypoint WaypointManager::getNextWaypoint() {
     if (m_waypoints.empty()) {
         throw std::runtime_error("No waypoints available");
     }
-    return m_waypoints.front();
+    const Waypoint waypoint = m_waypoints.front();
+    m_waypoints.pop_front();
+    return waypoint;
 }
 
+/**
+ * @brief Converts a Waypoint object to a ROS FlightCommand message.
+ * 
+ * This function converts a Waypoint object to a ROS FlightCommand message.
+ * 
+ * @param waypoint The waypoint to convert.
+ * @return The FlightCommand message.
+ */
 gui_messages::msg::FlightCommand WaypointManager::getFlightCommand(const Waypoint &waypoint) {
     gui_messages::msg::FlightCommand flightCommand;
     flightCommand.latitude_deg = waypoint.coordinate.latitude();
@@ -152,28 +172,15 @@ gui_messages::msg::FlightCommand WaypointManager::getFlightCommand(const Waypoin
         case WaypointType::CIRCLE:
         case WaypointType::FIGUREEIGHT:
             flightCommand.radius = waypoint.radius;
+            flightCommand.length = 0;
             break;
         case WaypointType::SQUARE:
-            flightCommand.length = waypoint.radius;
+            flightCommand.length = waypoint.length;
+            flightCommand.radius = 0;
+            break;
         default:
             break;
     }
 
     return flightCommand;
-}
-
-/**
- * @brief Handles the reception of drone state messages.
- *
- * This function is called when a drone state message is received. It converts the received
- * message data to a FlightState enum and performs actions based on the type of message.
- *
- * @param msg The received drone state message.
- */
-void WaypointManager::handleDroneStateReceive(const std_msgs::msg::Int32 &msg) {
-    const int32_t state = static_cast<int32_t>(msg.data);
-    switch (state) {
-        default:
-            break;
-    }
 }
