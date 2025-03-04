@@ -8,6 +8,7 @@
 #include "flightstatesubscriber.hpp"
 #include "datalogger.hpp"
 #include "videowidget.hpp"
+#include "waypointmanager.hpp"
 #include "ROSThread.h"
 
 QT_BEGIN_NAMESPACE
@@ -33,10 +34,14 @@ private:
     GPSWidget *gpsWidget;       // GPS widget for displaying coordinates
     IMUWidget *imuWidget;       // IMU widget for displaying imu data
 
+    int m_lastDelayDuration = 0; // Holds the necessary delay for the current waypoint's duration (ms)
+
     void setupConnections(); // Function to handle signal-slot connections
     void initializeButtons(); // Function to initialize button states
     void unlockButtons(); // Function to enable buttons after start flight
     void handleWaypointUpdate(); // Function to handle waypoint updates from waypointManager
+    void handleDroneStateReceive(const std_msgs::msg::Int32 &msg); // Function to handle drone state updates from stateSubscriber
+    flight_states::FlightState getFlightState(const Waypoint &waypoint); // Function to get the next flight state from a waypoint
     static void signalHandler(int); // Signal handler for SIGINT
 
 signals:
