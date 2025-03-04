@@ -12,7 +12,7 @@ using namespace std::chrono_literals;
 StatePublisher::StatePublisher() : Node("state_publisher")
 {
     // Create a publisher that publishes to the "desired_state" topic
-    publisher_ = this->create_publisher<std_msgs::msg::Int32>("desired_state", 10);
+    publisher_ = this->create_publisher<gui_messages::msg::FlightCommand>("flight_command", 10);
 }
 
 /**
@@ -23,20 +23,33 @@ StatePublisher::StatePublisher() : Node("state_publisher")
  * 
  * @param state The flight state to be published.
  */
-void StatePublisher::publish_state(const FlightState &state)
+void StatePublisher::publish_state(const float &latitude, const float &longitude, const float &altitude, const float &radius, const float &length, const float &duration, const FlightState &state)
 {
-    std_msgs::msg::Int32 msg;
-    msg.data = to_underlying(state); // Set the state value
+    gui_messages::msg::FlightCommand msg;
+    msg.latitude_deg = latitude;
+    msg.longitude_deg = longitude;
+    msg.altitude = altitude;
+    msg.radius = radius;
+    msg.length = length;
+    msg.duration = duration;
+    msg.waypoint_type = to_underlying(state);
     
     // Log the message to see what is being sent
-    RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", msg.data);
+    RCLCPP_INFO(this->get_logger(), "Publishing state: '%d'", msg.waypoint_type);
     
     // Publish the message
     publisher_->publish(msg);
 
     auto dataLogger_ = DataLogger::getInstance();
     if (dataLogger_->getRecording()) {
-        QString flightStateText = QString("Flight State: %1\n") .arg(msg.data);
-        dataLogger_->log_data(flightStateText.toStdString());
+        QString commandText = QString("Flight state: %1, Latitude: %2, Longitude: %3, Altitude: %4, Radius: %5, Length: %6, Duration: %7")
+            .arg(to_underlying(state))
+            .arg(latitude)
+            .arg(longitude)
+            .arg(altitude)
+            .arg(radius)
+            .arg(length)
+            .arg(duration);
+        dataLogger_->log_data(commandText.toStdString());
     }
 }
