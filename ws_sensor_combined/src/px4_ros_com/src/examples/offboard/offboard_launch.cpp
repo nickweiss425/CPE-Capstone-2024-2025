@@ -329,10 +329,18 @@
 	 // helper function to handle launching the drone to given altitude
 	 void handleTakeoffState(float initial_altitude)
 	 {
-		 // Arm the vehicle
-		 this->arm();
-		 //publish_trajectory_setpoint(0.0, 0.0, initial_altitude);
-		 publish_trajectory_setpoint(0, 0, initial_altitude);
+		// Arm the vehicle
+		this->arm();
+		if (!check_at_setpoint(0, 0, initial_altitude)){
+			publish_trajectory_setpoint(0, 0, initial_altitude);
+		}
+		// send ack once reached takeoff location
+		else{
+			auto ack_msg = std_msgs::msg::Int32();
+			ack_msg.data = static_cast<int>(FlightState::TAKEOFF);
+			command_ack_publisher_->publish(ack_msg);
+		}
+
 	 }
  
  
