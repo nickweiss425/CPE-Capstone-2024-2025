@@ -13,8 +13,8 @@ using std::placeholders::_1;
  * @param longitude A pointer to the QLineEdit object representing the longitude.
  * @param latitude A pointer to the QLineEdit object representing the latitude.
  */
-GPSWidget::GPSWidget(QLineEdit *longitude, QLineEdit *latitude)
-    : longitudeBox_(longitude), latitudeBox_(latitude), gpsSubscriber_(nullptr) {
+GPSWidget::GPSWidget(QTextBrowser *sensorDataTextBrowser, QLineEdit *longitude, QLineEdit *latitude)
+    : sensorData_textBrowser_(sensorDataTextBrowser), longitudeBox_(longitude), latitudeBox_(latitude), gpsSubscriber_(nullptr) {
     gpsSubscriber_ = std::make_shared<GPSSubscriber>();
 
     if (!gpsSubscriber_) {
@@ -75,6 +75,10 @@ void GPSWidget::updateLocation(const double &longitude, const double &latitude, 
 
     // Send the updated coordinates to the main window
     emit coordinatesUpdated(longitude, latitude);
+
+    sensorData_textBrowser_->append(longitudeText);
+    sensorData_textBrowser_->append(latitudeText);
+    sensorData_textBrowser_->append(altitudeText);
 
     // Log the data if recording is enabled
     auto dataLogger_ = DataLogger::getInstance();
