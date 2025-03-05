@@ -4,8 +4,10 @@
 
 using std::placeholders::_1;
 
-ConnectionStatusWidget::ConnectionStatusWidget(QLabel *label)
-    :connection_status_label_(label), connection_status_subscriber_(nullptr)
+ConnectionStatusWidget::ConnectionStatusWidget(QLabel *label, QPushButton *startFlightButton)
+    :connection_status_label_(label),
+     start_flight_button_(startFlightButton),
+     connection_status_subscriber_(nullptr)
 {
     /* create subscriber */
     connection_status_subscriber_ = std::make_shared<ConnectionStatusSubscriber>();
@@ -42,10 +44,12 @@ void ConnectionStatusWidget::updateLabel(int status)
     if (!status)
     {
         connection_status_label_->setText("DISCONNECTED");
+        start_flight_button_->setEnabled(false);
     }
     else
     {
         connection_status_label_->setText("CONNECTED");
+        start_flight_button_->setEnabled(true);
     }
 }
 
