@@ -28,6 +28,8 @@ LoraSubscriber::LoraSubscriber(): Node("lora_subscriber") {
           "/imu", 10, std::bind(&LoraSubscriber::imu_topic_callback, this, _1));
     flight_state_subscription_ = this->create_subscription<std_msgs::msg::Int32>(
           "desired_state", 10, std::bind(&LoraSubscriber::flight_state_topic_callback, this, _1));
+    heartbeat_subscription_ = this->create_subscription<std_msgs::msg::Empty>(
+          "/heartbeat", 10, std::bind(&LoraSubscriber::heartbeat_topic_callback, this, _1));
 
     /* init serial port */
     try {
@@ -91,7 +93,7 @@ void LoraSubscriber::imu_topic_callback(const sensor_msgs::msg::Imu &msg)
 }
 
 
-/* Receive ROS STATE  data and publish to serial */
+/* Receive ROS STATE data and publish to serial */
 void LoraSubscriber::flight_state_topic_callback(const std_msgs::msg::Int32 &msg)
 {
     RCLCPP_INFO(this->get_logger(), "LORA subscriber handling flight state"); 
@@ -106,6 +108,28 @@ void LoraSubscriber::flight_state_topic_callback(const std_msgs::msg::Int32 &msg
 
     /* write to serial port byte by byte*/
     for (size_t i = 0; i < sizeof(flight_state_serialized_t) + PREAMBLESIZE; i++)
+    {
+        serial_ << buffer[i];
+    }
+}
+
+
+/* Receive ROS HEARTBEAT message and publish to serial */
+void LoraSubscriber::heartbeat_topic_callback(const std_msgs::msg::Empty &msg)
+{
+    (void)msg;
+
+    RCLCPP_INFO(this->get_logger(), "LORA subscriber handling heartbeat");
+    heartbeat_serialized_t hs;
+    static char preamble[PREAMBLESIZE + 1] = ":)";
+
+    /* create byte array to hold data */
+    uint8_t buffer[sizeof(heartbeat_serialized_t) + PREAMBLESIZE];
+    std::memcpy(buffer, preamble, PREAMBLESIZE);
+    std::memcpy(buffer + PREAMBLESIZE, &hs, sizeof(heartbeat_serialized_t));
+
+    /* write to serial port byte by byte*/
+    for (size_t i = 0; i < sizeof(heartbeat_serialized_t) + PREAMBLESIZE; i++)
     {
         serial_ << buffer[i];
     }

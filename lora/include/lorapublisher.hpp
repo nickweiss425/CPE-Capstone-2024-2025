@@ -7,6 +7,8 @@
 #include "sensor_msgs/msg/nav_sat_fix.hpp"
 #include "sensor_msgs/msg/imu.hpp"
 #include "std_msgs/msg/int32.hpp"
+#include "std_msgs/msg/empty.hpp"
+
 using std::placeholders::_1;
 
 class LoraPublisher : public rclcpp::Node
@@ -24,6 +26,7 @@ private:
     rclcpp::Publisher<sensor_msgs::msg::NavSatFix>::SharedPtr gps_publisher_;
     rclcpp::Publisher<sensor_msgs::msg::Imu>::SharedPtr imu_publisher_;
     rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr flight_state_publisher_;
+    rclcpp::Publisher<std_msgs::msg::Empty>::SharedPtr heartbeat_publisher_;
 
     /* libserial */
     LibSerial::SerialStream serial_;
@@ -32,5 +35,6 @@ private:
     void publish_gps(uint8_t *raw_msg);
     void publish_imu(uint8_t *raw_msg);
     void publish_state(uint8_t *raw_msg);
+    void publish_heartbeat(uint8_t *raw_msg);
 };
 
