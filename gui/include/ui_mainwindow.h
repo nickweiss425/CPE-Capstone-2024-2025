@@ -57,6 +57,7 @@ public:
     QLabel *radiusLabel;
     QLabel *altitudeLabel;
     QLabel *durationLabel;
+    QLabel *connectionStatusLabel;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -90,6 +91,11 @@ public:
         // Create the layout for the long, lat coordinates
         coordinateLayout = new QVBoxLayout();
         coordinateLayout->setObjectName(QString::fromUtf8("coordinateLayout"));
+
+        connectionStatusLabel = new QLabel("CONNECTED", tabMap);
+        connectionStatusLabel->setObjectName(QString::fromUtf8("connectionStatusLabel"));
+
+        coordinateLayout->addWidget(connectionStatusLabel);
 
         // Create the text boxes for the long, lat coordinates
         latitudeBox = new QLineEdit(tabMap);

@@ -4,6 +4,7 @@
 #include <QGraphicsScene>
 #include "gpswidget.hpp"
 #include "imuwidget.hpp"
+#include "connectionstatuswidget.hpp"
 #include "flightstatepublisher.hpp"
 #include "flightstatesubscriber.hpp"
 #include "datalogger.hpp"
@@ -29,6 +30,7 @@ private:
     StateSubscriber *stateSubscriber; // Subscriber for flight state
     GPSWidget *gpsWidget;       // GPS widget for displaying coordinates
     IMUWidget *imuWidget;       // IMU widget for displaying imu data
+    ConnectionStatusWidget *connectionStatusWidget; // Widget for displaying connection to drone
 
     void setupConnections(); // Function to handle signal-slot connections
     void initializeButtons(); // Function to initialize button states

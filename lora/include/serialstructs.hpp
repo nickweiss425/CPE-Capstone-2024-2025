@@ -9,7 +9,8 @@
 enum class topic_st : uint8_t {
     GPS = 0,
     IMU = 1,
-    DESIRED_STATE = 2
+    DESIRED_STATE = 2,
+    HEARTBEAT = 3
 };
 
 struct gps_serialized_t {
@@ -30,6 +31,8 @@ struct flight_state_serialized_t {
     topic_st topic = topic_st::DESIRED_STATE;
     uint32_t state;
 };
+
+struct heartbeat_serialized_t {};
 
 #pragma pack(pop)
 
