@@ -1,16 +1,22 @@
 #pragma once
 
 #include <QMainWindow>
-#include <QGraphicsScene>
+#include <QTimer>
+#include <QButtonGroup>
+#include <QQuickWidget>
+#include <QGeoCoordinate>
+#include <csignal>
+#include <thread>
+#include <chrono>
+
+#include "rclcpp/rclcpp.hpp"
 #include "gpswidget.hpp"
 #include "imuwidget.hpp"
 #include "connectionstatuswidget.hpp"
 #include "flightstatepublisher.hpp"
 #include "flightstatesubscriber.hpp"
 #include "datalogger.hpp"
-#include "videowidget.hpp"
 #include "waypointmanager.hpp"
-#include "ROSThread.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -54,4 +60,5 @@ private slots:
     void toggleRecording(); // Slot for "Stop Recording" button
     void stopFlight(); // Slot for "Stop Flight" button
     void updateWaypointAttributes(double radius, double altitude, double duration, int type);
+    void processNextWaypoint();
 };

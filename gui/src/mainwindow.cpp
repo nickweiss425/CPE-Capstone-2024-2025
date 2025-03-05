@@ -6,6 +6,8 @@
 #include <QQuickWidget>
 #include <QMediaPlayer>
 #include <QVideoWidget>
+#include <QTimer>
+#include <QDebug>
 
 /**
  * @brief Constructor for the MainWindow class.
@@ -290,34 +292,49 @@ void MainWindow::resetWaypointAttributes() {
 
 void MainWindow::handleDroneStateReceive(const std_msgs::msg::Int32 &msg) {
     const flight_states::FlightState state = static_cast<flight_states::FlightState>(msg.data);
-    Waypoint nextWaypoint;
+    RCLCPP_INFO(rclcpp::get_logger("MainWindow"), "Processing drone state: %d", msg.data);
+
+    // Log the received state if recording is enabled
+    auto dataLogger_ = DataLogger::getInstance();
+    if (dataLogger_->getRecording()) {
+        dataLogger_->log_data("Received drone state: " + std::to_string(msg.data));
+    }
+
     switch (state) {
         case flight_states::FlightState::LAND_IN_PLACE:
+            RCLCPP_INFO(rclcpp::get_logger("MainWindow"), "Received LAND_IN_PLACE command");
             break;
+
         case flight_states::FlightState::TAKEOFF:
+            RCLCPP_INFO(rclcpp::get_logger("MainWindow"), "Received TAKEOFF acknowledgment");
+            QTimer::singleShot(m_lastDelayDuration, this, &MainWindow::processNextWaypoint);
+            break;
+
         case flight_states::FlightState::WAYPOINT_HOLD:
         case flight_states::FlightState::CIRCLE_PATH:
         case flight_states::FlightState::SQUARE_PATH:
-        case flight_states::FlightState::FIGURE8_PATH: {
-            std::this_thread::sleep_for(std::chrono::milliseconds(m_lastDelayDuration)); // Sleep for the duration of the drone moving at waypoint
-            nextWaypoint = ui->waypointManager->getNextWaypoint(); // Get the next waypoint when drone finishes procedure
-            m_lastDelayDuration = nextWaypoint.duration * 1000; // Set the delay duration for the upcoming waypoint
-            flight_states::FlightState next_state = getFlightState(nextWaypoint); // Get the new flight state
-            statePublisher->publish_state(nextWaypoint.coordinate.latitude(), // Publish the new flight state
-                                            nextWaypoint.coordinate.longitude(),
-                                            nextWaypoint.altitude,
-                                            nextWaypoint.radius,
-                                            nextWaypoint.length,
-                                            nextWaypoint.duration,
-                                            next_state);
+        case flight_states::FlightState::FIGURE8_PATH:
+            RCLCPP_INFO(rclcpp::get_logger("MainWindow"), "Received path completion acknowledgment: %d", static_cast<int>(state));
+            QTimer::singleShot(m_lastDelayDuration, this, &MainWindow::processNextWaypoint);
             break;
-        }
+
         case flight_states::FlightState::HOME_LAND:
+            RCLCPP_INFO(rclcpp::get_logger("MainWindow"), "Received HOME_LAND acknowledgment");
+            break;
+
         case flight_states::FlightState::LANDED:
+            RCLCPP_INFO(rclcpp::get_logger("MainWindow"), "Received LANDED acknowledgment");
+            break;
+
         case flight_states::FlightState::CIRCLE_WAYPOINT:
         case flight_states::FlightState::SQUARE_WAYPOINT:
         case flight_states::FlightState::FIGURE8_WAYPOINT:
+            RCLCPP_INFO(rclcpp::get_logger("MainWindow"), "Received waypoint acknowledgment: %d", static_cast<int>(state));
+            QTimer::singleShot(m_lastDelayDuration, this, &MainWindow::processNextWaypoint);
+            break;
+
         default:
+            RCLCPP_WARN(rclcpp::get_logger("MainWindow"), "Received unknown state: %d", msg.data);
             break;
     }
 }
@@ -334,6 +351,55 @@ flight_states::FlightState MainWindow::getFlightState(const Waypoint &waypoint) 
             return flight_states::FlightState::SQUARE_WAYPOINT;
         default:
             return flight_states::FlightState::TAKEOFF;
+    }
+}
+
+/**
+  * @brief Process the next waypoint in the queue
+  *
+  * This method is called by a QTimer to safely process the next waypoint
+  * without blocking the Qt event loop.
+  */
+ void MainWindow::processNextWaypoint() {
+    try {
+        RCLCPP_INFO(rclcpp::get_logger("MainWindow"), "Processing next waypoint");
+
+        // Log if recording is enabled
+        auto dataLogger_ = DataLogger::getInstance();
+        if (dataLogger_->getRecording()) {
+            dataLogger_->log_data("Processing next waypoint");
+        }
+
+        // Check if we have waypoints available
+        if (ui->waypointManager->hasWaypoints()) {
+            Waypoint nextWaypoint = ui->waypointManager->getNextWaypoint();
+            m_lastDelayDuration = nextWaypoint.duration * 1000;
+
+            flight_states::FlightState next_state = getFlightState(nextWaypoint);
+
+            RCLCPP_INFO(rclcpp::get_logger("MainWindow"),
+                       "Publishing next waypoint: lat=%f, lon=%f, alt=%f, type=%d",
+                       nextWaypoint.coordinate.latitude(),
+                       nextWaypoint.coordinate.longitude(),
+                       nextWaypoint.altitude,
+                       static_cast<int>(next_state));
+
+            statePublisher->publish_state(
+                nextWaypoint.coordinate.latitude(),
+                nextWaypoint.coordinate.longitude(),
+                nextWaypoint.altitude,
+                nextWaypoint.radius,
+                nextWaypoint.length,
+                nextWaypoint.duration,
+                next_state
+            );
+        } else {
+            RCLCPP_INFO(rclcpp::get_logger("MainWindow"), "No more waypoints available");
+            // Optionally send the drone back to land
+            statePublisher->publish_state(0, 0, 0, 0, 0, 0, flight_states::FlightState::HOME_LAND);
+        }
+    } catch (const std::exception& e) {
+        RCLCPP_ERROR(rclcpp::get_logger("MainWindow"), "Exception in processNextWaypoint: %s", e.what());
     }
 }
 
