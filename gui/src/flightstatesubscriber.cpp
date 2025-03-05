@@ -22,5 +22,13 @@ StateSubscriber::StateSubscriber()
  */
 void StateSubscriber::topic_callback(const std_msgs::msg::Int32 &state) {
     RCLCPP_INFO(this->get_logger(), "Received flight state: %d", state.data);
-    emit stateReceived(state);
+
+    // Validate the state value
+    if (state.data < 0 || state.data > 11) {
+        RCLCPP_WARN(this->get_logger(), "Received invalid flight state: %d", state.data);
+    }
+
+    emit stateReceived(state);                                                                                                                                                               
+
+    RCLCPP_DEBUG(this->get_logger(), "Signal emitted for state: %d", state.data);
 }

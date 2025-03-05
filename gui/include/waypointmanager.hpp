@@ -26,32 +26,32 @@ struct Waypoint {
     WaypointType type;
 };
 
-class WaypointManager : public QObject, flight_states
-{
+class WaypointManager : public QObject {
     Q_OBJECT
-
-    Q_PROPERTY(QVariantList waypoints READ waypoints)
+    Q_PROPERTY(QVariantList waypoints READ waypoints NOTIFY waypointsChanged)
 
 public:
     explicit WaypointManager(QObject *parent = nullptr);
-    int selectedWaypointIndex() const { return m_selectedIndex; }
-
     QVariantList waypoints() const;
+    const Waypoint getNextWaypoint();
+    bool hasWaypoints() const { return !m_waypoints.isEmpty(); }
+    gui_messages::msg::FlightCommand getFlightCommand(const Waypoint &waypoint);
+
+signals:
+    void waypointsChanged();
+    void getWaypointAttributes(double radius, double altitude, double duration, int type);
+    void updateWaypointVisual(int index, int type);
+    void updateDronePosition(double latitude, double longitude);
+    void resetWaypointButtons();
 
 public slots:
-    void onWaypointAdded(double latitude, double longitude); // Add a waypoint to the list from map signal
-    void onWaypointSelected(int index); // Select a waypoint from the list from map signal
-    void onWaypointRemoved(int index); // Remove a waypoint from the list from map signal
-    void updateWaypointAttributes(double radius, double altitude, double duration, int type); // Update the attributes of a waypoint from the dialog
-    void getDronePosition(double latitude, double longitude); // Get the drone's position from the GPSWidget
-    const Waypoint getNextWaypoint(); // Get a waypoint from the list
-    gui_messages::msg::FlightCommand getFlightCommand(const Waypoint &waypoint); // Get the flight command from a waypoint
-signals:
-    void getWaypointAttributes(double radius, double altitude, double duration, int type); // Send the current attributes of a waypoint to the dialog
-    void updateDronePosition(double latitude, double longitude); // Update the drone's position on the map
-    void updateWaypointVisual(int index, int type); // Update the visual representation of a waypoint on the map
-    void resetWaypointButtons(); // Reset waypoint buttons
+    void onWaypointAdded(double latitude, double longitude);
+    void onWaypointSelected(int index);
+    void onWaypointRemoved(int index);
+    void updateWaypointAttributes(double radius, double altitude, double duration, int type);
+    void getDronePosition(double latitude, double longitude);
+
 private:
-    int m_selectedIndex = -1;
     QVector<Waypoint> m_waypoints;
+    int m_selectedIndex = -1;
 };
