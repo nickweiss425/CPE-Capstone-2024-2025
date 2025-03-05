@@ -48,7 +48,7 @@ public:
     QPushButton *startFlightButton;
     QPushButton *toggleRecordingButton;
     QPushButton *stopFlightButton;
-    QTextBrowser *sensorData;
+    QTextBrowser *sensorDataTextBrowser;
     QQuickWidget *mapView;
     QWidget *tabVideo;
     QVBoxLayout *verticalLayoutVideo;
@@ -206,10 +206,10 @@ public:
         gridLayoutMap->addLayout(buttonLayout, 2, 1, 1, 1);
 
         // Create the sensor data text browser
-        sensorData = new QTextBrowser(tabMap);
-        sensorData->setObjectName(QString::fromUtf8("sensorData"));
+        sensorDataTextBrowser = new QTextBrowser(tabMap);
+        sensorDataTextBrowser->setObjectName(QString::fromUtf8("sensorDataTextBrowser"));
 
-        gridLayoutMap->addWidget(sensorData, 1, 1, 1, 1);
+        gridLayoutMap->addWidget(sensorDataTextBrowser, 1, 1, 1, 1);
 
         // Create the map view and load qml file
         mapView = new QQuickWidget(tabMap);
@@ -269,7 +269,7 @@ public:
         toggleRecordingButton->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 0, 0);"));
         stopFlightButton->setText(QCoreApplication::translate("MainWindow", "Stop Flight", nullptr));
         toggleRecordingButton->setMaximumHeight(startFlightButton->sizeHint().height());
-        sensorData->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        sensorDataTextBrowser->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;\">\n"

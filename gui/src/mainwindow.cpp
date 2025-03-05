@@ -21,10 +21,10 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
     // Set up the GPS coordinates display
-    gpsWidget = new GPSWidget(ui->longitudeBox, ui->latitudeBox);
+    gpsWidget = new GPSWidget(ui->sensorDataTextBrowser, ui->longitudeBox, ui->latitudeBox);
 
     // Set up the IMU data stream
-    imuWidget = new IMUWidget(ui->sensorData);
+    imuWidget = new IMUWidget(ui->sensorDataTextBrowser);
 
     // Set up the Connection Status widget
     connectionStatusWidget = new ConnectionStatusWidget(ui->connectionStatusLabel, ui->startFlightButton);
@@ -36,7 +36,7 @@ MainWindow::MainWindow(QWidget *parent)
     // Set up the video widget in the videoView
     ui->videoWidget->setObjectName("videoWidget");
 
-    ui->sensorData->setText("");
+    ui->sensorDataTextBrowser->setText("");
 
     // Create exit handler
     std::signal(SIGINT, MainWindow::signalHandler);

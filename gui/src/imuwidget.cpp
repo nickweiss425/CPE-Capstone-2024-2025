@@ -14,8 +14,8 @@ using std::placeholders::_1;
  * 
  * @param data A pointer to the QTextBrowser object used to display IMU data.
  */
-IMUWidget::IMUWidget(QTextBrowser *data)
-    : imu_textbox_(data), imuSubscriber_(nullptr) {
+IMUWidget::IMUWidget(QTextBrowser *sensorDataTextBrowser)
+    : sensorData_textBrowser_(sensorDataTextBrowser), imuSubscriber_(nullptr) {
     /* create subscriber*/
     imuSubscriber_ = std::make_shared<IMUSubscriber>();
     if (!imuSubscriber_) {
@@ -71,21 +71,21 @@ void IMUWidget::updateText(
                          .arg(orientation.y)
                          .arg(orientation.z)
                          .arg(orientation.w);
-    imu_textbox_->append(quaternionText);
+    sensorData_textBrowser_->append(quaternionText);
 
     // Print angular velocity data (x, y, z)
     QString velocityText = QString("Angular Velocity: x=%1, y=%2, z=%3")
                          .arg(angular_velocity.x)
                          .arg(angular_velocity.y)
                          .arg(angular_velocity.z);
-    imu_textbox_->append(velocityText);
+    sensorData_textBrowser_->append(velocityText);
 
     // Print linear acceleration data (x, y, z)
     QString accelerationText = QString("Linear Acceleration: x=%1, y=%2, z=%3\n")
                          .arg(linear_acceleration.x)
                          .arg(linear_acceleration.y)
                          .arg(linear_acceleration.z);
-    imu_textbox_->append(accelerationText);
+    sensorData_textBrowser_->append(accelerationText);
 
     auto dataLogger_ = DataLogger::getInstance();
     if (dataLogger_->getRecording()) {

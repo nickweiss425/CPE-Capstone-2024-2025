@@ -9,7 +9,7 @@ class IMUWidget : public QWidget {
     Q_OBJECT
 
 public:
-    explicit IMUWidget(QTextBrowser *data = nullptr);
+    explicit IMUWidget(QTextBrowser *sensorDataTextBrowser = nullptr);
     ~IMUWidget() override;
 
 public slots:
@@ -20,7 +20,7 @@ public slots:
     );
 
 private:
-    QTextBrowser *imu_textbox_;
+    QTextBrowser *sensorData_textBrowser_;
     ROSThread *imu_thread;
     std::shared_ptr<IMUSubscriber> imuSubscriber_;
     std::unique_ptr<ROSThread> rosThread_;
