@@ -193,6 +193,7 @@ void LoraPublisher::publish_state(uint8_t *raw_msg)
 void LoraPublisher::publish_heartbeat(uint8_t *raw_msg)
 {
     RCLCPP_INFO(this->get_logger(), "LORA received /heartbeat");
+    (void)raw_msg;
 
     auto msg = std_msgs::msg::Empty();
     heartbeat_publisher_->publish(msg);
