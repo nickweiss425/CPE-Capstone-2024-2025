@@ -27,7 +27,7 @@ MainWindow::MainWindow(QWidget *parent)
     imuWidget = new IMUWidget(ui->sensorData);
 
     // Set up the Connection Status widget
-    connectionStatusWidget = new ConnectionStatusWidget(ui->connectionStatusLabel);
+    connectionStatusWidget = new ConnectionStatusWidget(ui->connectionStatusLabel, ui->startFlightButton);
 
     // Set up the flight state publisher/subscriber
     statePublisher = new StatePublisher();
