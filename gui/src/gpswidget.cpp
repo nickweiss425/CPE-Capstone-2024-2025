@@ -59,11 +59,11 @@ GPSWidget::~GPSWidget() {
 void GPSWidget::updateLocation(const double &longitude, const double &latitude, const double &altitude) {
 
     // Create nicely formatted strings for the longitude and latitude
-    QString longitudeText = QString("%1%2\n")
+    QString longitudeText = QString("%1%2")
         .arg(qAbs(longitude))
         .arg(longitude >= 0 ? "° E" : "° W");
 
-    QString latitudeText = QString("%1%2\n")
+    QString latitudeText = QString("%1%2")
         .arg(qAbs(latitude))
         .arg(latitude >= 0 ? "° N" : "° S");
 
@@ -71,7 +71,7 @@ void GPSWidget::updateLocation(const double &longitude, const double &latitude, 
     latitudeBox_->setText(latitudeText);
 
     // Receive the altitude along with the coordinate if needed for data logging
-    QString altitudeText = QString("Altitude: %1\n").arg(altitude);
+    QString altitudeText = QString("Altitude: %1 m\n").arg(altitude);
 
     // Send the updated coordinates to the main window
     emit coordinatesUpdated(longitude, latitude);
