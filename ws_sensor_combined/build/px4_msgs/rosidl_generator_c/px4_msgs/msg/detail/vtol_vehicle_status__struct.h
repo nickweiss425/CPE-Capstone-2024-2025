@@ -17,6 +17,12 @@ extern "C"
 
 // Constants defined in the message
 
+/// Constant 'MESSAGE_VERSION'.
+enum
+{
+  px4_msgs__msg__VtolVehicleStatus__MESSAGE_VERSION = 0ul
+};
+
 /// Constant 'VEHICLE_VTOL_STATE_UNDEFINED'.
 enum
 {

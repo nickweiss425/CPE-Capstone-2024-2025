@@ -81,20 +81,6 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
-  // member: yaw_acceptance
-  {
-    out << "yaw_acceptance: ";
-    rosidl_generator_traits::value_to_yaml(msg.yaw_acceptance, out);
-    out << ", ";
-  }
-
-  // member: altitude_acceptance
-  {
-    out << "altitude_acceptance: ";
-    rosidl_generator_traits::value_to_yaml(msg.altitude_acceptance, out);
-    out << ", ";
-  }
-
   // member: type
   {
     out << "type: ";
@@ -184,26 +170,6 @@ inline void to_block_style_yaml(
     }
     out << "acceptance_radius: ";
     rosidl_generator_traits::value_to_yaml(msg.acceptance_radius, out);
-    out << "\n";
-  }
-
-  // member: yaw_acceptance
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "yaw_acceptance: ";
-    rosidl_generator_traits::value_to_yaml(msg.yaw_acceptance, out);
-    out << "\n";
-  }
-
-  // member: altitude_acceptance
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "altitude_acceptance: ";
-    rosidl_generator_traits::value_to_yaml(msg.altitude_acceptance, out);
     out << "\n";
   }
 

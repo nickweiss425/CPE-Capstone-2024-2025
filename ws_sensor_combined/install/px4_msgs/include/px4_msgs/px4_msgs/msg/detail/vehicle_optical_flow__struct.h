@@ -30,7 +30,7 @@ typedef struct px4_msgs__msg__VehicleOpticalFlow
   uint32_t device_id;
   /// (radians) accumulated optical flow in radians where a positive value is produced by a RH rotation about the body axis
   float pixel_flow[2];
-  /// (radians) accumulated gyro radians where a positive value is produced by a RH rotation about the body axis. (NAN if unavailable)
+  /// (radians) accumulated gyro radians where a positive value is produced by a RH rotation of the sensor about the body axis. (NAN if unavailable)
   float delta_angle[3];
   /// (meters) Distance to the center of the flow field (NAN if unavailable)
   float distance_m;

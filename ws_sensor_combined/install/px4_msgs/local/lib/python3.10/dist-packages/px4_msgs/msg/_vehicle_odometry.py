@@ -31,6 +31,7 @@ class Metaclass_VehicleOdometry(type):
     _TYPE_SUPPORT = None
 
     __constants = {
+        'MESSAGE_VERSION': 0,
         'POSE_FRAME_UNKNOWN': 0,
         'POSE_FRAME_NED': 1,
         'POSE_FRAME_FRD': 2,
@@ -66,6 +67,7 @@ class Metaclass_VehicleOdometry(type):
         # the message class under "Data and other attributes defined here:"
         # as well as populate each message instance
         return {
+            'MESSAGE_VERSION': cls.__constants['MESSAGE_VERSION'],
             'POSE_FRAME_UNKNOWN': cls.__constants['POSE_FRAME_UNKNOWN'],
             'POSE_FRAME_NED': cls.__constants['POSE_FRAME_NED'],
             'POSE_FRAME_FRD': cls.__constants['POSE_FRAME_FRD'],
@@ -74,6 +76,11 @@ class Metaclass_VehicleOdometry(type):
             'VELOCITY_FRAME_FRD': cls.__constants['VELOCITY_FRAME_FRD'],
             'VELOCITY_FRAME_BODY_FRD': cls.__constants['VELOCITY_FRAME_BODY_FRD'],
         }
+
+    @property
+    def MESSAGE_VERSION(self):
+        """Message constant 'MESSAGE_VERSION'."""
+        return Metaclass_VehicleOdometry.__constants['MESSAGE_VERSION']
 
     @property
     def POSE_FRAME_UNKNOWN(self):
@@ -116,6 +123,7 @@ class VehicleOdometry(metaclass=Metaclass_VehicleOdometry):
     Message class 'VehicleOdometry'.
 
     Constants:
+      MESSAGE_VERSION
       POSE_FRAME_UNKNOWN
       POSE_FRAME_NED
       POSE_FRAME_FRD

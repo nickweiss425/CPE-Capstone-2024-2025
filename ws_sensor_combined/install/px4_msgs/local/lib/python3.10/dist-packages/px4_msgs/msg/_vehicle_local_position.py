@@ -26,6 +26,7 @@ class Metaclass_VehicleLocalPosition(type):
     _TYPE_SUPPORT = None
 
     __constants = {
+        'MESSAGE_VERSION': 0,
         'DIST_BOTTOM_SENSOR_NONE': 0,
         'DIST_BOTTOM_SENSOR_RANGE': 1,
         'DIST_BOTTOM_SENSOR_FLOW': 2,
@@ -57,10 +58,16 @@ class Metaclass_VehicleLocalPosition(type):
         # the message class under "Data and other attributes defined here:"
         # as well as populate each message instance
         return {
+            'MESSAGE_VERSION': cls.__constants['MESSAGE_VERSION'],
             'DIST_BOTTOM_SENSOR_NONE': cls.__constants['DIST_BOTTOM_SENSOR_NONE'],
             'DIST_BOTTOM_SENSOR_RANGE': cls.__constants['DIST_BOTTOM_SENSOR_RANGE'],
             'DIST_BOTTOM_SENSOR_FLOW': cls.__constants['DIST_BOTTOM_SENSOR_FLOW'],
         }
+
+    @property
+    def MESSAGE_VERSION(self):
+        """Message constant 'MESSAGE_VERSION'."""
+        return Metaclass_VehicleLocalPosition.__constants['MESSAGE_VERSION']
 
     @property
     def DIST_BOTTOM_SENSOR_NONE(self):
@@ -83,6 +90,7 @@ class VehicleLocalPosition(metaclass=Metaclass_VehicleLocalPosition):
     Message class 'VehicleLocalPosition'.
 
     Constants:
+      MESSAGE_VERSION
       DIST_BOTTOM_SENSOR_NONE
       DIST_BOTTOM_SENSOR_RANGE
       DIST_BOTTOM_SENSOR_FLOW
@@ -140,7 +148,8 @@ class VehicleLocalPosition(metaclass=Metaclass_VehicleLocalPosition):
         '_vxy_max',
         '_vz_max',
         '_hagl_min',
-        '_hagl_max',
+        '_hagl_max_z',
+        '_hagl_max_xy',
     ]
 
     _fields_and_field_types = {
@@ -195,7 +204,8 @@ class VehicleLocalPosition(metaclass=Metaclass_VehicleLocalPosition):
         'vxy_max': 'float',
         'vz_max': 'float',
         'hagl_min': 'float',
-        'hagl_max': 'float',
+        'hagl_max_z': 'float',
+        'hagl_max_xy': 'float',
     }
 
     SLOT_TYPES = (
@@ -247,6 +257,7 @@ class VehicleLocalPosition(metaclass=Metaclass_VehicleLocalPosition):
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
@@ -316,7 +327,8 @@ class VehicleLocalPosition(metaclass=Metaclass_VehicleLocalPosition):
         self.vxy_max = kwargs.get('vxy_max', float())
         self.vz_max = kwargs.get('vz_max', float())
         self.hagl_min = kwargs.get('hagl_min', float())
-        self.hagl_max = kwargs.get('hagl_max', float())
+        self.hagl_max_z = kwargs.get('hagl_max_z', float())
+        self.hagl_max_xy = kwargs.get('hagl_max_xy', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -449,7 +461,9 @@ class VehicleLocalPosition(metaclass=Metaclass_VehicleLocalPosition):
             return False
         if self.hagl_min != other.hagl_min:
             return False
-        if self.hagl_max != other.hagl_max:
+        if self.hagl_max_z != other.hagl_max_z:
+            return False
+        if self.hagl_max_xy != other.hagl_max_xy:
             return False
         return True
 
@@ -1238,16 +1252,31 @@ class VehicleLocalPosition(metaclass=Metaclass_VehicleLocalPosition):
         self._hagl_min = value
 
     @builtins.property
-    def hagl_max(self):
-        """Message field 'hagl_max'."""
-        return self._hagl_max
+    def hagl_max_z(self):
+        """Message field 'hagl_max_z'."""
+        return self._hagl_max_z
 
-    @hagl_max.setter
-    def hagl_max(self, value):
+    @hagl_max_z.setter
+    def hagl_max_z(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'hagl_max' field must be of type 'float'"
+                "The 'hagl_max_z' field must be of type 'float'"
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'hagl_max' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._hagl_max = value
+                "The 'hagl_max_z' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._hagl_max_z = value
+
+    @builtins.property
+    def hagl_max_xy(self):
+        """Message field 'hagl_max_xy'."""
+        return self._hagl_max_xy
+
+    @hagl_max_xy.setter
+    def hagl_max_xy(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'hagl_max_xy' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'hagl_max_xy' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._hagl_max_xy = value

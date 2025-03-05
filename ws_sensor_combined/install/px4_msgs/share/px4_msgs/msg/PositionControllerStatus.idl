@@ -46,16 +46,6 @@ module px4_msgs {
       float acceptance_radius;
 
       @verbatim (language="comment", text=
-        "Yaw acceptance error")
-      @unit (value="rad")
-      float yaw_acceptance;
-
-      @verbatim (language="comment", text=
-        "Current vertical acceptance error")
-      @unit (value="m")
-      float altitude_acceptance;
-
-      @verbatim (language="comment", text=
         "Current (applied) position setpoint type (see PositionSetpoint.msg)")
       uint8 type;
     };

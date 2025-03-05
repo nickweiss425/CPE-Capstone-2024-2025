@@ -37,32 +37,16 @@ private:
   ::px4_msgs::msg::Airspeed msg_;
 };
 
-class Init_Airspeed_air_temperature_celsius
-{
-public:
-  explicit Init_Airspeed_air_temperature_celsius(::px4_msgs::msg::Airspeed & msg)
-  : msg_(msg)
-  {}
-  Init_Airspeed_confidence air_temperature_celsius(::px4_msgs::msg::Airspeed::_air_temperature_celsius_type arg)
-  {
-    msg_.air_temperature_celsius = std::move(arg);
-    return Init_Airspeed_confidence(msg_);
-  }
-
-private:
-  ::px4_msgs::msg::Airspeed msg_;
-};
-
 class Init_Airspeed_true_airspeed_m_s
 {
 public:
   explicit Init_Airspeed_true_airspeed_m_s(::px4_msgs::msg::Airspeed & msg)
   : msg_(msg)
   {}
-  Init_Airspeed_air_temperature_celsius true_airspeed_m_s(::px4_msgs::msg::Airspeed::_true_airspeed_m_s_type arg)
+  Init_Airspeed_confidence true_airspeed_m_s(::px4_msgs::msg::Airspeed::_true_airspeed_m_s_type arg)
   {
     msg_.true_airspeed_m_s = std::move(arg);
-    return Init_Airspeed_air_temperature_celsius(msg_);
+    return Init_Airspeed_confidence(msg_);
   }
 
 private:

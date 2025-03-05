@@ -186,6 +186,8 @@ struct GimbalManagerSetAttitude_
     8u;
   static constexpr uint32_t GIMBAL_MANAGER_FLAGS_YAW_LOCK =
     16u;
+  static constexpr uint8_t ORB_QUEUE_LENGTH =
+    2u;
 
   // pointer types
   using RawPtr =
@@ -297,6 +299,11 @@ constexpr uint32_t GimbalManagerSetAttitude_<ContainerAllocator>::GIMBAL_MANAGER
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
 constexpr uint32_t GimbalManagerSetAttitude_<ContainerAllocator>::GIMBAL_MANAGER_FLAGS_YAW_LOCK;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint8_t GimbalManagerSetAttitude_<ContainerAllocator>::ORB_QUEUE_LENGTH;
 #endif  // __cplusplus < 201703L
 
 }  // namespace msg

@@ -308,9 +308,14 @@ static bool _VehicleLocalPosition__cdr_serialize(
     cdr << ros_message->hagl_min;
   }
 
-  // Field name: hagl_max
+  // Field name: hagl_max_z
   {
-    cdr << ros_message->hagl_max;
+    cdr << ros_message->hagl_max_z;
+  }
+
+  // Field name: hagl_max_xy
+  {
+    cdr << ros_message->hagl_max_xy;
   }
 
   return true;
@@ -602,9 +607,14 @@ static bool _VehicleLocalPosition__cdr_deserialize(
     cdr >> ros_message->hagl_min;
   }
 
-  // Field name: hagl_max
+  // Field name: hagl_max_z
   {
-    cdr >> ros_message->hagl_max;
+    cdr >> ros_message->hagl_max_z;
+  }
+
+  // Field name: hagl_max_xy
+  {
+    cdr >> ros_message->hagl_max_xy;
   }
 
   return true;
@@ -936,9 +946,15 @@ size_t get_serialized_size_px4_msgs__msg__VehicleLocalPosition(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name hagl_max
+  // field.name hagl_max_z
   {
-    size_t item_size = sizeof(ros_message->hagl_max);
+    size_t item_size = sizeof(ros_message->hagl_max_z);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name hagl_max_xy
+  {
+    size_t item_size = sizeof(ros_message->hagl_max_xy);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -1363,7 +1379,15 @@ size_t max_serialized_size_px4_msgs__msg__VehicleLocalPosition(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: hagl_max
+  // member: hagl_max_z
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: hagl_max_xy
   {
     size_t array_size = 1;
 
@@ -1380,7 +1404,7 @@ size_t max_serialized_size_px4_msgs__msg__VehicleLocalPosition(
     using DataType = px4_msgs__msg__VehicleLocalPosition;
     is_plain =
       (
-      offsetof(DataType, hagl_max) +
+      offsetof(DataType, hagl_max_xy) +
       last_member_size
       ) == ret_val;
   }

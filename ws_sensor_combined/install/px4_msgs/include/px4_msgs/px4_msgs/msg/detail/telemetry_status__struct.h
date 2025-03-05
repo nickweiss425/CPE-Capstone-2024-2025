@@ -116,8 +116,6 @@ typedef struct px4_msgs__msg__TelemetryStatus
   bool heartbeat_component_log;
   /// MAV_COMP_ID_OSD
   bool heartbeat_component_osd;
-  /// MAV_COMP_ID_OBSTACLE_AVOIDANCE
-  bool heartbeat_component_obstacle_avoidance;
   /// MAV_COMP_ID_VISUAL_INERTIAL_ODOMETRY
   bool heartbeat_component_vio;
   /// MAV_COMP_ID_PAIRING_MANAGER
@@ -127,7 +125,6 @@ typedef struct px4_msgs__msg__TelemetryStatus
   /// MAV_COMP_ID_UART_BRIDGE
   bool heartbeat_component_uart_bridge;
   /// Misc component health
-  bool avoidance_system_healthy;
   bool open_drone_id_system_healthy;
   bool parachute_system_healthy;
 } px4_msgs__msg__TelemetryStatus;

@@ -374,24 +374,6 @@ bool px4_msgs__msg__vehicle_status__convert_from_py(PyObject * _pymsg, void * _r
     ros_message->parachute_system_healthy = (Py_True == field);
     Py_DECREF(field);
   }
-  {  // avoidance_system_required
-    PyObject * field = PyObject_GetAttrString(_pymsg, "avoidance_system_required");
-    if (!field) {
-      return false;
-    }
-    assert(PyBool_Check(field));
-    ros_message->avoidance_system_required = (Py_True == field);
-    Py_DECREF(field);
-  }
-  {  // avoidance_system_valid
-    PyObject * field = PyObject_GetAttrString(_pymsg, "avoidance_system_valid");
-    if (!field) {
-      return false;
-    }
-    assert(PyBool_Check(field));
-    ros_message->avoidance_system_valid = (Py_True == field);
-    Py_DECREF(field);
-  }
   {  // rc_calibration_in_progress
     PyObject * field = PyObject_GetAttrString(_pymsg, "rc_calibration_in_progress");
     if (!field) {
@@ -831,28 +813,6 @@ PyObject * px4_msgs__msg__vehicle_status__convert_to_py(void * raw_ros_message)
     field = PyBool_FromLong(ros_message->parachute_system_healthy ? 1 : 0);
     {
       int rc = PyObject_SetAttrString(_pymessage, "parachute_system_healthy", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // avoidance_system_required
-    PyObject * field = NULL;
-    field = PyBool_FromLong(ros_message->avoidance_system_required ? 1 : 0);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "avoidance_system_required", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // avoidance_system_valid
-    PyObject * field = NULL;
-    field = PyBool_FromLong(ros_message->avoidance_system_valid ? 1 : 0);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "avoidance_system_valid", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

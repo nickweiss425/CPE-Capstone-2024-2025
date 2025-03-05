@@ -347,6 +347,13 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
+  // member: cs_baro_fault
+  {
+    out << "cs_baro_fault: ";
+    rosidl_generator_traits::value_to_yaml(msg.cs_baro_fault, out);
+    out << ", ";
+  }
+
   // member: fault_status_changes
   {
     out << "fault_status_changes: ";
@@ -970,6 +977,16 @@ inline void to_block_style_yaml(
     }
     out << "cs_constant_pos: ";
     rosidl_generator_traits::value_to_yaml(msg.cs_constant_pos, out);
+    out << "\n";
+  }
+
+  // member: cs_baro_fault
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "cs_baro_fault: ";
+    rosidl_generator_traits::value_to_yaml(msg.cs_baro_fault, out);
     out << "\n";
   }
 

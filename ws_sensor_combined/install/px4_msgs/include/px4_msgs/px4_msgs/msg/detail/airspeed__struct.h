@@ -27,8 +27,6 @@ typedef struct px4_msgs__msg__Airspeed
   float indicated_airspeed_m_s;
   /// true filtered airspeed in m/s
   float true_airspeed_m_s;
-  /// air temperature in degrees Celsius, -1000 if unknown
-  float air_temperature_celsius;
   /// confidence value from 0 to 1 for this sensor
   float confidence;
 } px4_msgs__msg__Airspeed;

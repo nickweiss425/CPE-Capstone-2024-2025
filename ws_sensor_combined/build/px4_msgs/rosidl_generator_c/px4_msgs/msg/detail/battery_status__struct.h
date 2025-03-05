@@ -18,193 +18,199 @@ extern "C"
 
 // Constants defined in the message
 
-/// Constant 'BATTERY_SOURCE_POWER_MODULE'.
+/// Constant 'MESSAGE_VERSION'.
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_SOURCE_POWER_MODULE = 0
+  px4_msgs__msg__BatteryStatus__MESSAGE_VERSION = 0ul
 };
 
-/// Constant 'BATTERY_SOURCE_EXTERNAL'.
+/// Constant 'SOURCE_POWER_MODULE'.
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_SOURCE_EXTERNAL = 1
+  px4_msgs__msg__BatteryStatus__SOURCE_POWER_MODULE = 0
 };
 
-/// Constant 'BATTERY_SOURCE_ESCS'.
+/// Constant 'SOURCE_EXTERNAL'.
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_SOURCE_ESCS = 2
+  px4_msgs__msg__BatteryStatus__SOURCE_EXTERNAL = 1
 };
 
-/// Constant 'BATTERY_WARNING_NONE'.
+/// Constant 'SOURCE_ESCS'.
+enum
+{
+  px4_msgs__msg__BatteryStatus__SOURCE_ESCS = 2
+};
+
+/// Constant 'WARNING_NONE'.
 /**
   * no battery low voltage warning active
  */
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_WARNING_NONE = 0
+  px4_msgs__msg__BatteryStatus__WARNING_NONE = 0
 };
 
-/// Constant 'BATTERY_WARNING_LOW'.
+/// Constant 'WARNING_LOW'.
 /**
   * warning of low voltage
  */
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_WARNING_LOW = 1
+  px4_msgs__msg__BatteryStatus__WARNING_LOW = 1
 };
 
-/// Constant 'BATTERY_WARNING_CRITICAL'.
+/// Constant 'WARNING_CRITICAL'.
 /**
   * critical voltage, return / abort immediately
  */
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_WARNING_CRITICAL = 2
+  px4_msgs__msg__BatteryStatus__WARNING_CRITICAL = 2
 };
 
-/// Constant 'BATTERY_WARNING_EMERGENCY'.
+/// Constant 'WARNING_EMERGENCY'.
 /**
   * immediate landing required
  */
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_WARNING_EMERGENCY = 3
+  px4_msgs__msg__BatteryStatus__WARNING_EMERGENCY = 3
 };
 
-/// Constant 'BATTERY_WARNING_FAILED'.
+/// Constant 'WARNING_FAILED'.
 /**
   * the battery has failed completely
  */
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_WARNING_FAILED = 4
+  px4_msgs__msg__BatteryStatus__WARNING_FAILED = 4
 };
 
-/// Constant 'BATTERY_STATE_UNHEALTHY'.
+/// Constant 'STATE_UNHEALTHY'.
 /**
   * Battery is diagnosed to be defective or an error occurred, usage is discouraged / prohibited. Possible causes (faults) are listed in faults field.
  */
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_STATE_UNHEALTHY = 6
+  px4_msgs__msg__BatteryStatus__STATE_UNHEALTHY = 6
 };
 
-/// Constant 'BATTERY_STATE_CHARGING'.
+/// Constant 'STATE_CHARGING'.
 /**
   * Battery is charging
  */
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_STATE_CHARGING = 7
+  px4_msgs__msg__BatteryStatus__STATE_CHARGING = 7
 };
 
-/// Constant 'BATTERY_FAULT_DEEP_DISCHARGE'.
+/// Constant 'FAULT_DEEP_DISCHARGE'.
 /**
   * Battery has deep discharged
  */
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_FAULT_DEEP_DISCHARGE = 0
+  px4_msgs__msg__BatteryStatus__FAULT_DEEP_DISCHARGE = 0
 };
 
-/// Constant 'BATTERY_FAULT_SPIKES'.
+/// Constant 'FAULT_SPIKES'.
 /**
   * Voltage spikes
  */
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_FAULT_SPIKES = 1
+  px4_msgs__msg__BatteryStatus__FAULT_SPIKES = 1
 };
 
-/// Constant 'BATTERY_FAULT_CELL_FAIL'.
+/// Constant 'FAULT_CELL_FAIL'.
 /**
   * One or more cells have failed
  */
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_FAULT_CELL_FAIL = 2
+  px4_msgs__msg__BatteryStatus__FAULT_CELL_FAIL = 2
 };
 
-/// Constant 'BATTERY_FAULT_OVER_CURRENT'.
+/// Constant 'FAULT_OVER_CURRENT'.
 /**
   * Over-current
  */
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_FAULT_OVER_CURRENT = 3
+  px4_msgs__msg__BatteryStatus__FAULT_OVER_CURRENT = 3
 };
 
-/// Constant 'BATTERY_FAULT_OVER_TEMPERATURE'.
+/// Constant 'FAULT_OVER_TEMPERATURE'.
 /**
   * Over-temperature
  */
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_FAULT_OVER_TEMPERATURE = 4
+  px4_msgs__msg__BatteryStatus__FAULT_OVER_TEMPERATURE = 4
 };
 
-/// Constant 'BATTERY_FAULT_UNDER_TEMPERATURE'.
+/// Constant 'FAULT_UNDER_TEMPERATURE'.
 /**
   * Under-temperature fault
  */
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_FAULT_UNDER_TEMPERATURE = 5
+  px4_msgs__msg__BatteryStatus__FAULT_UNDER_TEMPERATURE = 5
 };
 
-/// Constant 'BATTERY_FAULT_INCOMPATIBLE_VOLTAGE'.
+/// Constant 'FAULT_INCOMPATIBLE_VOLTAGE'.
 /**
   * Vehicle voltage is not compatible with this battery (batteries on same power rail should have similar voltage).
  */
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_FAULT_INCOMPATIBLE_VOLTAGE = 6
+  px4_msgs__msg__BatteryStatus__FAULT_INCOMPATIBLE_VOLTAGE = 6
 };
 
-/// Constant 'BATTERY_FAULT_INCOMPATIBLE_FIRMWARE'.
+/// Constant 'FAULT_INCOMPATIBLE_FIRMWARE'.
 /**
   * Battery firmware is not compatible with current autopilot firmware
  */
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_FAULT_INCOMPATIBLE_FIRMWARE = 7
+  px4_msgs__msg__BatteryStatus__FAULT_INCOMPATIBLE_FIRMWARE = 7
 };
 
-/// Constant 'BATTERY_FAULT_INCOMPATIBLE_MODEL'.
+/// Constant 'FAULT_INCOMPATIBLE_MODEL'.
 /**
   * Battery model is not supported by the system
  */
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_FAULT_INCOMPATIBLE_MODEL = 8
+  px4_msgs__msg__BatteryStatus__FAULT_INCOMPATIBLE_MODEL = 8
 };
 
-/// Constant 'BATTERY_FAULT_HARDWARE_FAILURE'.
+/// Constant 'FAULT_HARDWARE_FAILURE'.
 /**
   * hardware problem
  */
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_FAULT_HARDWARE_FAILURE = 9
+  px4_msgs__msg__BatteryStatus__FAULT_HARDWARE_FAILURE = 9
 };
 
-/// Constant 'BATTERY_FAULT_FAILED_TO_ARM'.
+/// Constant 'FAULT_FAILED_TO_ARM'.
 /**
   * Battery had a problem while arming
  */
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_FAULT_FAILED_TO_ARM = 10
+  px4_msgs__msg__BatteryStatus__FAULT_FAILED_TO_ARM = 10
 };
 
-/// Constant 'BATTERY_FAULT_COUNT'.
+/// Constant 'FAULT_COUNT'.
 /**
   * Counter - keep it as last element!
  */
 enum
 {
-  px4_msgs__msg__BatteryStatus__BATTERY_FAULT_COUNT = 11
+  px4_msgs__msg__BatteryStatus__FAULT_COUNT = 11
 };
 
 /// Constant 'MAX_INSTANCES'.

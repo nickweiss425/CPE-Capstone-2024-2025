@@ -37,7 +37,7 @@ void EstimatorStatusFlags_fini_function(void * message_memory)
   typed_message->~EstimatorStatusFlags();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember EstimatorStatusFlags_message_member_array[69] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember EstimatorStatusFlags_message_member_array[70] = {
   {
     "timestamp",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT64,  // type
@@ -821,6 +821,23 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember EstimatorStat
     nullptr  // resize(index) function pointer
   },
   {
+    "cs_baro_fault",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(px4_msgs::msg::EstimatorStatusFlags, cs_baro_fault),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
     "fault_status_changes",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
@@ -1216,7 +1233,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember EstimatorStat
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers EstimatorStatusFlags_message_members = {
   "px4_msgs::msg",  // message namespace
   "EstimatorStatusFlags",  // message name
-  69,  // number of fields
+  70,  // number of fields
   sizeof(px4_msgs::msg::EstimatorStatusFlags),
   EstimatorStatusFlags_message_member_array,  // message members
   EstimatorStatusFlags_init_function,  // function to initialize message memory (memory has to be allocated)

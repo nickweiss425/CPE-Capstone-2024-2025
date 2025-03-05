@@ -5,6 +5,9 @@
 
 module px4_msgs {
   module msg {
+    module VehicleGlobalPosition_Constants {
+      const uint32 MESSAGE_VERSION = 0;
+    };
     @verbatim (language="comment", text=
       "Fused global position in WGS84." "\n"
       "This struct contains global position estimation. It is not the raw GPS" "\n"

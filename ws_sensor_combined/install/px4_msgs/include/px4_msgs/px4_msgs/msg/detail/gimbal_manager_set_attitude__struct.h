@@ -47,6 +47,12 @@ enum
   px4_msgs__msg__GimbalManagerSetAttitude__GIMBAL_MANAGER_FLAGS_YAW_LOCK = 16ul
 };
 
+/// Constant 'ORB_QUEUE_LENGTH'.
+enum
+{
+  px4_msgs__msg__GimbalManagerSetAttitude__ORB_QUEUE_LENGTH = 2
+};
+
 /// Struct defined in msg/GimbalManagerSetAttitude in the package px4_msgs.
 typedef struct px4_msgs__msg__GimbalManagerSetAttitude
 {

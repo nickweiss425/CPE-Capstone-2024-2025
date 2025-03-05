@@ -6,6 +6,7 @@
 module px4_msgs {
   module msg {
     module ManualControlSetpoint_Constants {
+      const uint32 MESSAGE_VERSION = 0;
       const uint8 SOURCE_UNKNOWN = 0;
       @verbatim (language="comment", text=
         "radio control (input_rc)")

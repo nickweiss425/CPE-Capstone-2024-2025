@@ -389,16 +389,32 @@ private:
   ::px4_msgs::msg::EstimatorStatusFlags msg_;
 };
 
+class Init_EstimatorStatusFlags_cs_baro_fault
+{
+public:
+  explicit Init_EstimatorStatusFlags_cs_baro_fault(::px4_msgs::msg::EstimatorStatusFlags & msg)
+  : msg_(msg)
+  {}
+  Init_EstimatorStatusFlags_fault_status_changes cs_baro_fault(::px4_msgs::msg::EstimatorStatusFlags::_cs_baro_fault_type arg)
+  {
+    msg_.cs_baro_fault = std::move(arg);
+    return Init_EstimatorStatusFlags_fault_status_changes(msg_);
+  }
+
+private:
+  ::px4_msgs::msg::EstimatorStatusFlags msg_;
+};
+
 class Init_EstimatorStatusFlags_cs_constant_pos
 {
 public:
   explicit Init_EstimatorStatusFlags_cs_constant_pos(::px4_msgs::msg::EstimatorStatusFlags & msg)
   : msg_(msg)
   {}
-  Init_EstimatorStatusFlags_fault_status_changes cs_constant_pos(::px4_msgs::msg::EstimatorStatusFlags::_cs_constant_pos_type arg)
+  Init_EstimatorStatusFlags_cs_baro_fault cs_constant_pos(::px4_msgs::msg::EstimatorStatusFlags::_cs_constant_pos_type arg)
   {
     msg_.cs_constant_pos = std::move(arg);
-    return Init_EstimatorStatusFlags_fault_status_changes(msg_);
+    return Init_EstimatorStatusFlags_cs_baro_fault(msg_);
   }
 
 private:

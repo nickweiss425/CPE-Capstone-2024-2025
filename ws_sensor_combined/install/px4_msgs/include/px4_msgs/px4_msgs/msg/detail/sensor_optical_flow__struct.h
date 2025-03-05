@@ -49,7 +49,7 @@ typedef struct px4_msgs__msg__SensorOpticalFlow
   uint64_t timestamp_sample;
   /// unique device ID for the sensor that does not change between power cycles
   uint32_t device_id;
-  /// (radians) optical flow in radians where a positive value is produced by a RH rotation about the body axis
+  /// (radians) optical flow in radians where a positive value is produced by a RH rotation of the sensor about the body axis
   float pixel_flow[2];
   /// (radians) accumulated gyro radians where a positive value is produced by a RH rotation about the body axis. Set to NaN if flow sensor does not have 3-axis gyro data.
   float delta_angle[3];

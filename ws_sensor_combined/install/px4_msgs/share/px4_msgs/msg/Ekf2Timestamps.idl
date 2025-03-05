@@ -26,6 +26,8 @@ module px4_msgs {
         "difference of +-3.2s to the sensor_combined topic.")
       int16 airspeed_timestamp_rel;
 
+      int16 airspeed_validated_timestamp_rel;
+
       int16 distance_sensor_timestamp_rel;
 
       int16 optical_flow_timestamp_rel;

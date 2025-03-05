@@ -76,7 +76,7 @@ void px4_msgs__msg__GimbalDeviceAttitudeStatus__rosidl_typesupport_introspection
   *item = *value;
 }
 
-static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__GimbalDeviceAttitudeStatus__rosidl_typesupport_introspection_c__GimbalDeviceAttitudeStatus_message_member_array[10] = {
+static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__GimbalDeviceAttitudeStatus__rosidl_typesupport_introspection_c__GimbalDeviceAttitudeStatus_message_member_array[13] = {
   {
     "timestamp",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT64,  // type
@@ -231,6 +231,57 @@ static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__GimbalDe
     NULL  // resize(index) function pointer
   },
   {
+    "delta_yaw",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(px4_msgs__msg__GimbalDeviceAttitudeStatus, delta_yaw),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "delta_yaw_velocity",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(px4_msgs__msg__GimbalDeviceAttitudeStatus, delta_yaw_velocity),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "gimbal_device_id",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(px4_msgs__msg__GimbalDeviceAttitudeStatus, gimbal_device_id),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
     "received_from_mavlink",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
@@ -252,7 +303,7 @@ static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__GimbalDe
 static const rosidl_typesupport_introspection_c__MessageMembers px4_msgs__msg__GimbalDeviceAttitudeStatus__rosidl_typesupport_introspection_c__GimbalDeviceAttitudeStatus_message_members = {
   "px4_msgs__msg",  // message namespace
   "GimbalDeviceAttitudeStatus",  // message name
-  10,  // number of fields
+  13,  // number of fields
   sizeof(px4_msgs__msg__GimbalDeviceAttitudeStatus),
   px4_msgs__msg__GimbalDeviceAttitudeStatus__rosidl_typesupport_introspection_c__GimbalDeviceAttitudeStatus_message_member_array,  // message members
   px4_msgs__msg__GimbalDeviceAttitudeStatus__rosidl_typesupport_introspection_c__GimbalDeviceAttitudeStatus_init_function,  // function to initialize message memory (memory has to be allocated)

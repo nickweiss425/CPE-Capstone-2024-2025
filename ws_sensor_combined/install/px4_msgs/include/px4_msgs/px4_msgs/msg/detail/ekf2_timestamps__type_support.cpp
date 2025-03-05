@@ -37,7 +37,7 @@ void Ekf2Timestamps_fini_function(void * message_memory)
   typed_message->~Ekf2Timestamps();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Ekf2Timestamps_message_member_array[7] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Ekf2Timestamps_message_member_array[8] = {
   {
     "timestamp",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT64,  // type
@@ -64,6 +64,23 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Ekf2Timestamp
     0,  // array size
     false,  // is upper bound
     offsetof(px4_msgs::msg::Ekf2Timestamps, airspeed_timestamp_rel),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "airspeed_validated_timestamp_rel",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT16,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(px4_msgs::msg::Ekf2Timestamps, airspeed_validated_timestamp_rel),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -162,7 +179,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Ekf2Timestamp
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Ekf2Timestamps_message_members = {
   "px4_msgs::msg",  // message namespace
   "Ekf2Timestamps",  // message name
-  7,  // number of fields
+  8,  // number of fields
   sizeof(px4_msgs::msg::Ekf2Timestamps),
   Ekf2Timestamps_message_member_array,  // message members
   Ekf2Timestamps_init_function,  // function to initialize message memory (memory has to be allocated)

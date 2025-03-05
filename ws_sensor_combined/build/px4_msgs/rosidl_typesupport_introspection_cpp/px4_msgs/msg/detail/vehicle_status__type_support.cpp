@@ -37,7 +37,7 @@ void VehicleStatus_fini_function(void * message_memory)
   typed_message->~VehicleStatus();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember VehicleStatus_message_member_array[41] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember VehicleStatus_message_member_array[39] = {
   {
     "timestamp",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT64,  // type
@@ -651,40 +651,6 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember VehicleStatus
     nullptr  // resize(index) function pointer
   },
   {
-    "avoidance_system_required",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(px4_msgs::msg::VehicleStatus, avoidance_system_required),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
-  },
-  {
-    "avoidance_system_valid",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(px4_msgs::msg::VehicleStatus, avoidance_system_valid),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
-  },
-  {
     "rc_calibration_in_progress",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
@@ -740,7 +706,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember VehicleStatus
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers VehicleStatus_message_members = {
   "px4_msgs::msg",  // message namespace
   "VehicleStatus",  // message name
-  41,  // number of fields
+  39,  // number of fields
   sizeof(px4_msgs::msg::VehicleStatus),
   VehicleStatus_message_member_array,  // message members
   VehicleStatus_init_function,  // function to initialize message memory (memory has to be allocated)

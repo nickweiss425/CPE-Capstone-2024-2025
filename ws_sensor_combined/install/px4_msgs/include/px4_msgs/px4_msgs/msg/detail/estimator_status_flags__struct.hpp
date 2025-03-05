@@ -84,6 +84,7 @@ struct EstimatorStatusFlags_
       this->cs_opt_flow_terrain = false;
       this->cs_valid_fake_pos = false;
       this->cs_constant_pos = false;
+      this->cs_baro_fault = false;
       this->fault_status_changes = 0ul;
       this->fs_bad_mag_x = false;
       this->fs_bad_mag_y = false;
@@ -162,6 +163,7 @@ struct EstimatorStatusFlags_
       this->cs_opt_flow_terrain = false;
       this->cs_valid_fake_pos = false;
       this->cs_constant_pos = false;
+      this->cs_baro_fault = false;
       this->fault_status_changes = 0ul;
       this->fs_bad_mag_x = false;
       this->fs_bad_mag_y = false;
@@ -327,6 +329,9 @@ struct EstimatorStatusFlags_
   using _cs_constant_pos_type =
     bool;
   _cs_constant_pos_type cs_constant_pos;
+  using _cs_baro_fault_type =
+    bool;
+  _cs_baro_fault_type cs_baro_fault;
   using _fault_status_changes_type =
     uint32_t;
   _fault_status_changes_type fault_status_changes;
@@ -674,6 +679,12 @@ struct EstimatorStatusFlags_
     this->cs_constant_pos = _arg;
     return *this;
   }
+  Type & set__cs_baro_fault(
+    const bool & _arg)
+  {
+    this->cs_baro_fault = _arg;
+    return *this;
+  }
   Type & set__fault_status_changes(
     const uint32_t & _arg)
   {
@@ -991,6 +1002,9 @@ struct EstimatorStatusFlags_
       return false;
     }
     if (this->cs_constant_pos != other.cs_constant_pos) {
+      return false;
+    }
+    if (this->cs_baro_fault != other.cs_baro_fault) {
       return false;
     }
     if (this->fault_status_changes != other.fault_status_changes) {

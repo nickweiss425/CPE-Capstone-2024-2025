@@ -7,6 +7,7 @@ module px4_msgs {
   module msg {
     typedef uint8 uint8__25[25];
     module RegisterExtComponentReply_Constants {
+      const uint32 MESSAGE_VERSION = 0;
       const uint8 ORB_QUEUE_LENGTH = 2;
     };
     struct RegisterExtComponentReply {

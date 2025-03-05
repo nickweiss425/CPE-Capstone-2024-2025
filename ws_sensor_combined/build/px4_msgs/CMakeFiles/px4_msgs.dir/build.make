@@ -82,7 +82,6 @@ CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/ArmingCheckRequest.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/AutotuneAttitudeControlStatus.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/BatteryStatus.msg
-CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/Buffer128.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/ButtonEvent.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/CameraCapture.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/CameraStatus.msg
@@ -151,6 +150,7 @@ CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/HomePosition.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/HoverThrustEstimate.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/InputRc.msg
+CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/InternalCombustionEngineControl.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/InternalCombustionEngineStatus.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/IridiumsbdStatus.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/IrlockReport.msg
@@ -212,15 +212,13 @@ CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RcParameterMap.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RegisterExtComponentReply.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RegisterExtComponentRequest.msg
-CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverAckermannGuidanceStatus.msg
-CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverAckermannSetpoint.msg
-CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverAckermannStatus.msg
-CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverDifferentialGuidanceStatus.msg
-CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverDifferentialSetpoint.msg
-CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverDifferentialStatus.msg
-CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverMecanumGuidanceStatus.msg
-CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverMecanumSetpoint.msg
-CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverMecanumStatus.msg
+CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverAttitudeSetpoint.msg
+CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverAttitudeStatus.msg
+CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverRateSetpoint.msg
+CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverRateStatus.msg
+CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverSteeringSetpoint.msg
+CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverThrottleSetpoint.msg
+CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverVelocityStatus.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/Rpm.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RtlStatus.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RtlTimeEstimate.msg
@@ -251,9 +249,7 @@ CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/TelemetryStatus.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/TiltrotorExtraControls.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/TimesyncStatus.msg
-CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/TrajectoryBezier.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/TrajectorySetpoint.msg
-CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/TrajectoryWaypoint.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/TransponderReport.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/TuneControl.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/UavcanParameterRequest.msg
@@ -286,8 +282,6 @@ CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/VehicleStatus.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/VehicleThrustSetpoint.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/VehicleTorqueSetpoint.msg
-CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/VehicleTrajectoryBezier.msg
-CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/VehicleTrajectoryWaypoint.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/VelocityLimits.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/VtolVehicleStatus.msg
 CMakeFiles/px4_msgs: /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/WheelEncoders.msg

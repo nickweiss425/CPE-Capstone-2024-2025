@@ -21,10 +21,10 @@ px4_msgs__msg__VehicleAirData__init(px4_msgs__msg__VehicleAirData * msg)
   // timestamp_sample
   // baro_device_id
   // baro_alt_meter
-  // baro_temp_celcius
   // baro_pressure_pa
+  // ambient_temperature
+  // temperature_source
   // rho
-  // eas2tas
   // calibration_count
   return true;
 }
@@ -39,10 +39,10 @@ px4_msgs__msg__VehicleAirData__fini(px4_msgs__msg__VehicleAirData * msg)
   // timestamp_sample
   // baro_device_id
   // baro_alt_meter
-  // baro_temp_celcius
   // baro_pressure_pa
+  // ambient_temperature
+  // temperature_source
   // rho
-  // eas2tas
   // calibration_count
 }
 
@@ -68,20 +68,20 @@ px4_msgs__msg__VehicleAirData__are_equal(const px4_msgs__msg__VehicleAirData * l
   if (lhs->baro_alt_meter != rhs->baro_alt_meter) {
     return false;
   }
-  // baro_temp_celcius
-  if (lhs->baro_temp_celcius != rhs->baro_temp_celcius) {
-    return false;
-  }
   // baro_pressure_pa
   if (lhs->baro_pressure_pa != rhs->baro_pressure_pa) {
     return false;
   }
-  // rho
-  if (lhs->rho != rhs->rho) {
+  // ambient_temperature
+  if (lhs->ambient_temperature != rhs->ambient_temperature) {
     return false;
   }
-  // eas2tas
-  if (lhs->eas2tas != rhs->eas2tas) {
+  // temperature_source
+  if (lhs->temperature_source != rhs->temperature_source) {
+    return false;
+  }
+  // rho
+  if (lhs->rho != rhs->rho) {
     return false;
   }
   // calibration_count
@@ -107,14 +107,14 @@ px4_msgs__msg__VehicleAirData__copy(
   output->baro_device_id = input->baro_device_id;
   // baro_alt_meter
   output->baro_alt_meter = input->baro_alt_meter;
-  // baro_temp_celcius
-  output->baro_temp_celcius = input->baro_temp_celcius;
   // baro_pressure_pa
   output->baro_pressure_pa = input->baro_pressure_pa;
+  // ambient_temperature
+  output->ambient_temperature = input->ambient_temperature;
+  // temperature_source
+  output->temperature_source = input->temperature_source;
   // rho
   output->rho = input->rho;
-  // eas2tas
-  output->eas2tas = input->eas2tas;
   // calibration_count
   output->calibration_count = input->calibration_count;
   return true;

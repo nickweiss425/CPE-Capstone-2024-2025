@@ -2248,145 +2248,6 @@ _register_msg_type__msg__battery_status(PyObject * pymodule)
 // #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
-#include "px4_msgs/msg/detail/buffer128__type_support.h"
-#include "px4_msgs/msg/detail/buffer128__struct.h"
-#include "px4_msgs/msg/detail/buffer128__functions.h"
-
-static void * px4_msgs__msg__buffer128__create_ros_message(void)
-{
-  return px4_msgs__msg__Buffer128__create();
-}
-
-static void px4_msgs__msg__buffer128__destroy_ros_message(void * raw_ros_message)
-{
-  px4_msgs__msg__Buffer128 * ros_message = (px4_msgs__msg__Buffer128 *)raw_ros_message;
-  px4_msgs__msg__Buffer128__destroy(ros_message);
-}
-
-ROSIDL_GENERATOR_C_IMPORT
-bool px4_msgs__msg__buffer128__convert_from_py(PyObject * _pymsg, void * ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-PyObject * px4_msgs__msg__buffer128__convert_to_py(void * raw_ros_message);
-
-
-ROSIDL_GENERATOR_C_IMPORT
-const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, Buffer128);
-
-int8_t
-_register_msg_type__msg__buffer128(PyObject * pymodule)
-{
-  int8_t err;
-
-  PyObject * pyobject_create_ros_message = NULL;
-  pyobject_create_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__buffer128__create_ros_message,
-    NULL, NULL);
-  if (!pyobject_create_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "create_ros_message_msg__msg__buffer128",
-    pyobject_create_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_create_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_destroy_ros_message = NULL;
-  pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__buffer128__destroy_ros_message,
-    NULL, NULL);
-  if (!pyobject_destroy_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "destroy_ros_message_msg__msg__buffer128",
-    pyobject_destroy_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_destroy_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_from_py = NULL;
-  pyobject_convert_from_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__buffer128__convert_from_py,
-    NULL, NULL);
-  if (!pyobject_convert_from_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_from_py_msg__msg__buffer128",
-    pyobject_convert_from_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_from_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_to_py = NULL;
-  pyobject_convert_to_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__buffer128__convert_to_py,
-    NULL, NULL);
-  if (!pyobject_convert_to_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_to_py_msg__msg__buffer128",
-    pyobject_convert_to_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_to_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_type_support = NULL;
-  pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, Buffer128),
-    NULL, NULL);
-  if (!pyobject_type_support) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "type_support_msg__msg__buffer128",
-    pyobject_type_support);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_type_support);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-  return 0;
-}
-
-// already included above
-// #include <stdbool.h>
-// already included above
-// #include <stdint.h>
-// already included above
-// #include "rosidl_runtime_c/visibility_control.h"
-// already included above
-// #include "rosidl_runtime_c/message_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/service_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/action_type_support_struct.h"
 #include "px4_msgs/msg/detail/button_event__type_support.h"
 #include "px4_msgs/msg/detail/button_event__struct.h"
 #include "px4_msgs/msg/detail/button_event__functions.h"
@@ -11839,6 +11700,145 @@ _register_msg_type__msg__input_rc(PyObject * pymodule)
 // #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
+#include "px4_msgs/msg/detail/internal_combustion_engine_control__type_support.h"
+#include "px4_msgs/msg/detail/internal_combustion_engine_control__struct.h"
+#include "px4_msgs/msg/detail/internal_combustion_engine_control__functions.h"
+
+static void * px4_msgs__msg__internal_combustion_engine_control__create_ros_message(void)
+{
+  return px4_msgs__msg__InternalCombustionEngineControl__create();
+}
+
+static void px4_msgs__msg__internal_combustion_engine_control__destroy_ros_message(void * raw_ros_message)
+{
+  px4_msgs__msg__InternalCombustionEngineControl * ros_message = (px4_msgs__msg__InternalCombustionEngineControl *)raw_ros_message;
+  px4_msgs__msg__InternalCombustionEngineControl__destroy(ros_message);
+}
+
+ROSIDL_GENERATOR_C_IMPORT
+bool px4_msgs__msg__internal_combustion_engine_control__convert_from_py(PyObject * _pymsg, void * ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * px4_msgs__msg__internal_combustion_engine_control__convert_to_py(void * raw_ros_message);
+
+
+ROSIDL_GENERATOR_C_IMPORT
+const rosidl_message_type_support_t *
+ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, InternalCombustionEngineControl);
+
+int8_t
+_register_msg_type__msg__internal_combustion_engine_control(PyObject * pymodule)
+{
+  int8_t err;
+
+  PyObject * pyobject_create_ros_message = NULL;
+  pyobject_create_ros_message = PyCapsule_New(
+    (void *)&px4_msgs__msg__internal_combustion_engine_control__create_ros_message,
+    NULL, NULL);
+  if (!pyobject_create_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "create_ros_message_msg__msg__internal_combustion_engine_control",
+    pyobject_create_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_create_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_destroy_ros_message = NULL;
+  pyobject_destroy_ros_message = PyCapsule_New(
+    (void *)&px4_msgs__msg__internal_combustion_engine_control__destroy_ros_message,
+    NULL, NULL);
+  if (!pyobject_destroy_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "destroy_ros_message_msg__msg__internal_combustion_engine_control",
+    pyobject_destroy_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_destroy_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_from_py = NULL;
+  pyobject_convert_from_py = PyCapsule_New(
+    (void *)&px4_msgs__msg__internal_combustion_engine_control__convert_from_py,
+    NULL, NULL);
+  if (!pyobject_convert_from_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_from_py_msg__msg__internal_combustion_engine_control",
+    pyobject_convert_from_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_from_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_to_py = NULL;
+  pyobject_convert_to_py = PyCapsule_New(
+    (void *)&px4_msgs__msg__internal_combustion_engine_control__convert_to_py,
+    NULL, NULL);
+  if (!pyobject_convert_to_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_to_py_msg__msg__internal_combustion_engine_control",
+    pyobject_convert_to_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_to_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_type_support = NULL;
+  pyobject_type_support = PyCapsule_New(
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, InternalCombustionEngineControl),
+    NULL, NULL);
+  if (!pyobject_type_support) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "type_support_msg__msg__internal_combustion_engine_control",
+    pyobject_type_support);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_type_support);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+  return 0;
+}
+
+// already included above
+// #include <stdbool.h>
+// already included above
+// #include <stdint.h>
+// already included above
+// #include "rosidl_runtime_c/visibility_control.h"
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/service_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/action_type_support_struct.h"
 #include "px4_msgs/msg/detail/internal_combustion_engine_status__type_support.h"
 #include "px4_msgs/msg/detail/internal_combustion_engine_status__struct.h"
 #include "px4_msgs/msg/detail/internal_combustion_engine_status__functions.h"
@@ -20318,39 +20318,39 @@ _register_msg_type__msg__register_ext_component_request(PyObject * pymodule)
 // #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
-#include "px4_msgs/msg/detail/rover_ackermann_guidance_status__type_support.h"
-#include "px4_msgs/msg/detail/rover_ackermann_guidance_status__struct.h"
-#include "px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.h"
+#include "px4_msgs/msg/detail/rover_attitude_setpoint__type_support.h"
+#include "px4_msgs/msg/detail/rover_attitude_setpoint__struct.h"
+#include "px4_msgs/msg/detail/rover_attitude_setpoint__functions.h"
 
-static void * px4_msgs__msg__rover_ackermann_guidance_status__create_ros_message(void)
+static void * px4_msgs__msg__rover_attitude_setpoint__create_ros_message(void)
 {
-  return px4_msgs__msg__RoverAckermannGuidanceStatus__create();
+  return px4_msgs__msg__RoverAttitudeSetpoint__create();
 }
 
-static void px4_msgs__msg__rover_ackermann_guidance_status__destroy_ros_message(void * raw_ros_message)
+static void px4_msgs__msg__rover_attitude_setpoint__destroy_ros_message(void * raw_ros_message)
 {
-  px4_msgs__msg__RoverAckermannGuidanceStatus * ros_message = (px4_msgs__msg__RoverAckermannGuidanceStatus *)raw_ros_message;
-  px4_msgs__msg__RoverAckermannGuidanceStatus__destroy(ros_message);
+  px4_msgs__msg__RoverAttitudeSetpoint * ros_message = (px4_msgs__msg__RoverAttitudeSetpoint *)raw_ros_message;
+  px4_msgs__msg__RoverAttitudeSetpoint__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool px4_msgs__msg__rover_ackermann_guidance_status__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool px4_msgs__msg__rover_attitude_setpoint__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * px4_msgs__msg__rover_ackermann_guidance_status__convert_to_py(void * raw_ros_message);
+PyObject * px4_msgs__msg__rover_attitude_setpoint__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverAckermannGuidanceStatus);
+ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverAttitudeSetpoint);
 
 int8_t
-_register_msg_type__msg__rover_ackermann_guidance_status(PyObject * pymodule)
+_register_msg_type__msg__rover_attitude_setpoint(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_ackermann_guidance_status__create_ros_message,
+    (void *)&px4_msgs__msg__rover_attitude_setpoint__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -20358,7 +20358,7 @@ _register_msg_type__msg__rover_ackermann_guidance_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__msg__rover_ackermann_guidance_status",
+    "create_ros_message_msg__msg__rover_attitude_setpoint",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -20369,7 +20369,7 @@ _register_msg_type__msg__rover_ackermann_guidance_status(PyObject * pymodule)
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_ackermann_guidance_status__destroy_ros_message,
+    (void *)&px4_msgs__msg__rover_attitude_setpoint__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -20377,7 +20377,7 @@ _register_msg_type__msg__rover_ackermann_guidance_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__msg__rover_ackermann_guidance_status",
+    "destroy_ros_message_msg__msg__rover_attitude_setpoint",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -20388,7 +20388,7 @@ _register_msg_type__msg__rover_ackermann_guidance_status(PyObject * pymodule)
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_ackermann_guidance_status__convert_from_py,
+    (void *)&px4_msgs__msg__rover_attitude_setpoint__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -20396,7 +20396,7 @@ _register_msg_type__msg__rover_ackermann_guidance_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__msg__rover_ackermann_guidance_status",
+    "convert_from_py_msg__msg__rover_attitude_setpoint",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -20407,7 +20407,7 @@ _register_msg_type__msg__rover_ackermann_guidance_status(PyObject * pymodule)
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_ackermann_guidance_status__convert_to_py,
+    (void *)&px4_msgs__msg__rover_attitude_setpoint__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -20415,7 +20415,7 @@ _register_msg_type__msg__rover_ackermann_guidance_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__msg__rover_ackermann_guidance_status",
+    "convert_to_py_msg__msg__rover_attitude_setpoint",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -20426,7 +20426,7 @@ _register_msg_type__msg__rover_ackermann_guidance_status(PyObject * pymodule)
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverAckermannGuidanceStatus),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverAttitudeSetpoint),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -20434,7 +20434,7 @@ _register_msg_type__msg__rover_ackermann_guidance_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__msg__rover_ackermann_guidance_status",
+    "type_support_msg__msg__rover_attitude_setpoint",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -20457,39 +20457,39 @@ _register_msg_type__msg__rover_ackermann_guidance_status(PyObject * pymodule)
 // #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
-#include "px4_msgs/msg/detail/rover_ackermann_setpoint__type_support.h"
-#include "px4_msgs/msg/detail/rover_ackermann_setpoint__struct.h"
-#include "px4_msgs/msg/detail/rover_ackermann_setpoint__functions.h"
+#include "px4_msgs/msg/detail/rover_attitude_status__type_support.h"
+#include "px4_msgs/msg/detail/rover_attitude_status__struct.h"
+#include "px4_msgs/msg/detail/rover_attitude_status__functions.h"
 
-static void * px4_msgs__msg__rover_ackermann_setpoint__create_ros_message(void)
+static void * px4_msgs__msg__rover_attitude_status__create_ros_message(void)
 {
-  return px4_msgs__msg__RoverAckermannSetpoint__create();
+  return px4_msgs__msg__RoverAttitudeStatus__create();
 }
 
-static void px4_msgs__msg__rover_ackermann_setpoint__destroy_ros_message(void * raw_ros_message)
+static void px4_msgs__msg__rover_attitude_status__destroy_ros_message(void * raw_ros_message)
 {
-  px4_msgs__msg__RoverAckermannSetpoint * ros_message = (px4_msgs__msg__RoverAckermannSetpoint *)raw_ros_message;
-  px4_msgs__msg__RoverAckermannSetpoint__destroy(ros_message);
+  px4_msgs__msg__RoverAttitudeStatus * ros_message = (px4_msgs__msg__RoverAttitudeStatus *)raw_ros_message;
+  px4_msgs__msg__RoverAttitudeStatus__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool px4_msgs__msg__rover_ackermann_setpoint__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool px4_msgs__msg__rover_attitude_status__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * px4_msgs__msg__rover_ackermann_setpoint__convert_to_py(void * raw_ros_message);
+PyObject * px4_msgs__msg__rover_attitude_status__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverAckermannSetpoint);
+ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverAttitudeStatus);
 
 int8_t
-_register_msg_type__msg__rover_ackermann_setpoint(PyObject * pymodule)
+_register_msg_type__msg__rover_attitude_status(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_ackermann_setpoint__create_ros_message,
+    (void *)&px4_msgs__msg__rover_attitude_status__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -20497,7 +20497,7 @@ _register_msg_type__msg__rover_ackermann_setpoint(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__msg__rover_ackermann_setpoint",
+    "create_ros_message_msg__msg__rover_attitude_status",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -20508,7 +20508,7 @@ _register_msg_type__msg__rover_ackermann_setpoint(PyObject * pymodule)
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_ackermann_setpoint__destroy_ros_message,
+    (void *)&px4_msgs__msg__rover_attitude_status__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -20516,7 +20516,7 @@ _register_msg_type__msg__rover_ackermann_setpoint(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__msg__rover_ackermann_setpoint",
+    "destroy_ros_message_msg__msg__rover_attitude_status",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -20527,7 +20527,7 @@ _register_msg_type__msg__rover_ackermann_setpoint(PyObject * pymodule)
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_ackermann_setpoint__convert_from_py,
+    (void *)&px4_msgs__msg__rover_attitude_status__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -20535,7 +20535,7 @@ _register_msg_type__msg__rover_ackermann_setpoint(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__msg__rover_ackermann_setpoint",
+    "convert_from_py_msg__msg__rover_attitude_status",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -20546,7 +20546,7 @@ _register_msg_type__msg__rover_ackermann_setpoint(PyObject * pymodule)
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_ackermann_setpoint__convert_to_py,
+    (void *)&px4_msgs__msg__rover_attitude_status__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -20554,7 +20554,7 @@ _register_msg_type__msg__rover_ackermann_setpoint(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__msg__rover_ackermann_setpoint",
+    "convert_to_py_msg__msg__rover_attitude_status",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -20565,7 +20565,7 @@ _register_msg_type__msg__rover_ackermann_setpoint(PyObject * pymodule)
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverAckermannSetpoint),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverAttitudeStatus),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -20573,7 +20573,7 @@ _register_msg_type__msg__rover_ackermann_setpoint(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__msg__rover_ackermann_setpoint",
+    "type_support_msg__msg__rover_attitude_status",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -20596,39 +20596,39 @@ _register_msg_type__msg__rover_ackermann_setpoint(PyObject * pymodule)
 // #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
-#include "px4_msgs/msg/detail/rover_ackermann_status__type_support.h"
-#include "px4_msgs/msg/detail/rover_ackermann_status__struct.h"
-#include "px4_msgs/msg/detail/rover_ackermann_status__functions.h"
+#include "px4_msgs/msg/detail/rover_rate_setpoint__type_support.h"
+#include "px4_msgs/msg/detail/rover_rate_setpoint__struct.h"
+#include "px4_msgs/msg/detail/rover_rate_setpoint__functions.h"
 
-static void * px4_msgs__msg__rover_ackermann_status__create_ros_message(void)
+static void * px4_msgs__msg__rover_rate_setpoint__create_ros_message(void)
 {
-  return px4_msgs__msg__RoverAckermannStatus__create();
+  return px4_msgs__msg__RoverRateSetpoint__create();
 }
 
-static void px4_msgs__msg__rover_ackermann_status__destroy_ros_message(void * raw_ros_message)
+static void px4_msgs__msg__rover_rate_setpoint__destroy_ros_message(void * raw_ros_message)
 {
-  px4_msgs__msg__RoverAckermannStatus * ros_message = (px4_msgs__msg__RoverAckermannStatus *)raw_ros_message;
-  px4_msgs__msg__RoverAckermannStatus__destroy(ros_message);
+  px4_msgs__msg__RoverRateSetpoint * ros_message = (px4_msgs__msg__RoverRateSetpoint *)raw_ros_message;
+  px4_msgs__msg__RoverRateSetpoint__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool px4_msgs__msg__rover_ackermann_status__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool px4_msgs__msg__rover_rate_setpoint__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * px4_msgs__msg__rover_ackermann_status__convert_to_py(void * raw_ros_message);
+PyObject * px4_msgs__msg__rover_rate_setpoint__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverAckermannStatus);
+ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverRateSetpoint);
 
 int8_t
-_register_msg_type__msg__rover_ackermann_status(PyObject * pymodule)
+_register_msg_type__msg__rover_rate_setpoint(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_ackermann_status__create_ros_message,
+    (void *)&px4_msgs__msg__rover_rate_setpoint__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -20636,7 +20636,7 @@ _register_msg_type__msg__rover_ackermann_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__msg__rover_ackermann_status",
+    "create_ros_message_msg__msg__rover_rate_setpoint",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -20647,7 +20647,7 @@ _register_msg_type__msg__rover_ackermann_status(PyObject * pymodule)
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_ackermann_status__destroy_ros_message,
+    (void *)&px4_msgs__msg__rover_rate_setpoint__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -20655,7 +20655,7 @@ _register_msg_type__msg__rover_ackermann_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__msg__rover_ackermann_status",
+    "destroy_ros_message_msg__msg__rover_rate_setpoint",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -20666,7 +20666,7 @@ _register_msg_type__msg__rover_ackermann_status(PyObject * pymodule)
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_ackermann_status__convert_from_py,
+    (void *)&px4_msgs__msg__rover_rate_setpoint__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -20674,7 +20674,7 @@ _register_msg_type__msg__rover_ackermann_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__msg__rover_ackermann_status",
+    "convert_from_py_msg__msg__rover_rate_setpoint",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -20685,7 +20685,7 @@ _register_msg_type__msg__rover_ackermann_status(PyObject * pymodule)
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_ackermann_status__convert_to_py,
+    (void *)&px4_msgs__msg__rover_rate_setpoint__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -20693,7 +20693,7 @@ _register_msg_type__msg__rover_ackermann_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__msg__rover_ackermann_status",
+    "convert_to_py_msg__msg__rover_rate_setpoint",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -20704,7 +20704,7 @@ _register_msg_type__msg__rover_ackermann_status(PyObject * pymodule)
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverAckermannStatus),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverRateSetpoint),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -20712,7 +20712,7 @@ _register_msg_type__msg__rover_ackermann_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__msg__rover_ackermann_status",
+    "type_support_msg__msg__rover_rate_setpoint",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -20735,39 +20735,39 @@ _register_msg_type__msg__rover_ackermann_status(PyObject * pymodule)
 // #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
-#include "px4_msgs/msg/detail/rover_differential_guidance_status__type_support.h"
-#include "px4_msgs/msg/detail/rover_differential_guidance_status__struct.h"
-#include "px4_msgs/msg/detail/rover_differential_guidance_status__functions.h"
+#include "px4_msgs/msg/detail/rover_rate_status__type_support.h"
+#include "px4_msgs/msg/detail/rover_rate_status__struct.h"
+#include "px4_msgs/msg/detail/rover_rate_status__functions.h"
 
-static void * px4_msgs__msg__rover_differential_guidance_status__create_ros_message(void)
+static void * px4_msgs__msg__rover_rate_status__create_ros_message(void)
 {
-  return px4_msgs__msg__RoverDifferentialGuidanceStatus__create();
+  return px4_msgs__msg__RoverRateStatus__create();
 }
 
-static void px4_msgs__msg__rover_differential_guidance_status__destroy_ros_message(void * raw_ros_message)
+static void px4_msgs__msg__rover_rate_status__destroy_ros_message(void * raw_ros_message)
 {
-  px4_msgs__msg__RoverDifferentialGuidanceStatus * ros_message = (px4_msgs__msg__RoverDifferentialGuidanceStatus *)raw_ros_message;
-  px4_msgs__msg__RoverDifferentialGuidanceStatus__destroy(ros_message);
+  px4_msgs__msg__RoverRateStatus * ros_message = (px4_msgs__msg__RoverRateStatus *)raw_ros_message;
+  px4_msgs__msg__RoverRateStatus__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool px4_msgs__msg__rover_differential_guidance_status__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool px4_msgs__msg__rover_rate_status__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * px4_msgs__msg__rover_differential_guidance_status__convert_to_py(void * raw_ros_message);
+PyObject * px4_msgs__msg__rover_rate_status__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverDifferentialGuidanceStatus);
+ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverRateStatus);
 
 int8_t
-_register_msg_type__msg__rover_differential_guidance_status(PyObject * pymodule)
+_register_msg_type__msg__rover_rate_status(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_differential_guidance_status__create_ros_message,
+    (void *)&px4_msgs__msg__rover_rate_status__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -20775,7 +20775,7 @@ _register_msg_type__msg__rover_differential_guidance_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__msg__rover_differential_guidance_status",
+    "create_ros_message_msg__msg__rover_rate_status",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -20786,7 +20786,7 @@ _register_msg_type__msg__rover_differential_guidance_status(PyObject * pymodule)
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_differential_guidance_status__destroy_ros_message,
+    (void *)&px4_msgs__msg__rover_rate_status__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -20794,7 +20794,7 @@ _register_msg_type__msg__rover_differential_guidance_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__msg__rover_differential_guidance_status",
+    "destroy_ros_message_msg__msg__rover_rate_status",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -20805,7 +20805,7 @@ _register_msg_type__msg__rover_differential_guidance_status(PyObject * pymodule)
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_differential_guidance_status__convert_from_py,
+    (void *)&px4_msgs__msg__rover_rate_status__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -20813,7 +20813,7 @@ _register_msg_type__msg__rover_differential_guidance_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__msg__rover_differential_guidance_status",
+    "convert_from_py_msg__msg__rover_rate_status",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -20824,7 +20824,7 @@ _register_msg_type__msg__rover_differential_guidance_status(PyObject * pymodule)
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_differential_guidance_status__convert_to_py,
+    (void *)&px4_msgs__msg__rover_rate_status__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -20832,7 +20832,7 @@ _register_msg_type__msg__rover_differential_guidance_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__msg__rover_differential_guidance_status",
+    "convert_to_py_msg__msg__rover_rate_status",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -20843,7 +20843,7 @@ _register_msg_type__msg__rover_differential_guidance_status(PyObject * pymodule)
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverDifferentialGuidanceStatus),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverRateStatus),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -20851,7 +20851,7 @@ _register_msg_type__msg__rover_differential_guidance_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__msg__rover_differential_guidance_status",
+    "type_support_msg__msg__rover_rate_status",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -20874,39 +20874,39 @@ _register_msg_type__msg__rover_differential_guidance_status(PyObject * pymodule)
 // #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
-#include "px4_msgs/msg/detail/rover_differential_setpoint__type_support.h"
-#include "px4_msgs/msg/detail/rover_differential_setpoint__struct.h"
-#include "px4_msgs/msg/detail/rover_differential_setpoint__functions.h"
+#include "px4_msgs/msg/detail/rover_steering_setpoint__type_support.h"
+#include "px4_msgs/msg/detail/rover_steering_setpoint__struct.h"
+#include "px4_msgs/msg/detail/rover_steering_setpoint__functions.h"
 
-static void * px4_msgs__msg__rover_differential_setpoint__create_ros_message(void)
+static void * px4_msgs__msg__rover_steering_setpoint__create_ros_message(void)
 {
-  return px4_msgs__msg__RoverDifferentialSetpoint__create();
+  return px4_msgs__msg__RoverSteeringSetpoint__create();
 }
 
-static void px4_msgs__msg__rover_differential_setpoint__destroy_ros_message(void * raw_ros_message)
+static void px4_msgs__msg__rover_steering_setpoint__destroy_ros_message(void * raw_ros_message)
 {
-  px4_msgs__msg__RoverDifferentialSetpoint * ros_message = (px4_msgs__msg__RoverDifferentialSetpoint *)raw_ros_message;
-  px4_msgs__msg__RoverDifferentialSetpoint__destroy(ros_message);
+  px4_msgs__msg__RoverSteeringSetpoint * ros_message = (px4_msgs__msg__RoverSteeringSetpoint *)raw_ros_message;
+  px4_msgs__msg__RoverSteeringSetpoint__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool px4_msgs__msg__rover_differential_setpoint__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool px4_msgs__msg__rover_steering_setpoint__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * px4_msgs__msg__rover_differential_setpoint__convert_to_py(void * raw_ros_message);
+PyObject * px4_msgs__msg__rover_steering_setpoint__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverDifferentialSetpoint);
+ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverSteeringSetpoint);
 
 int8_t
-_register_msg_type__msg__rover_differential_setpoint(PyObject * pymodule)
+_register_msg_type__msg__rover_steering_setpoint(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_differential_setpoint__create_ros_message,
+    (void *)&px4_msgs__msg__rover_steering_setpoint__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -20914,7 +20914,7 @@ _register_msg_type__msg__rover_differential_setpoint(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__msg__rover_differential_setpoint",
+    "create_ros_message_msg__msg__rover_steering_setpoint",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -20925,7 +20925,7 @@ _register_msg_type__msg__rover_differential_setpoint(PyObject * pymodule)
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_differential_setpoint__destroy_ros_message,
+    (void *)&px4_msgs__msg__rover_steering_setpoint__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -20933,7 +20933,7 @@ _register_msg_type__msg__rover_differential_setpoint(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__msg__rover_differential_setpoint",
+    "destroy_ros_message_msg__msg__rover_steering_setpoint",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -20944,7 +20944,7 @@ _register_msg_type__msg__rover_differential_setpoint(PyObject * pymodule)
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_differential_setpoint__convert_from_py,
+    (void *)&px4_msgs__msg__rover_steering_setpoint__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -20952,7 +20952,7 @@ _register_msg_type__msg__rover_differential_setpoint(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__msg__rover_differential_setpoint",
+    "convert_from_py_msg__msg__rover_steering_setpoint",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -20963,7 +20963,7 @@ _register_msg_type__msg__rover_differential_setpoint(PyObject * pymodule)
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_differential_setpoint__convert_to_py,
+    (void *)&px4_msgs__msg__rover_steering_setpoint__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -20971,7 +20971,7 @@ _register_msg_type__msg__rover_differential_setpoint(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__msg__rover_differential_setpoint",
+    "convert_to_py_msg__msg__rover_steering_setpoint",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -20982,7 +20982,7 @@ _register_msg_type__msg__rover_differential_setpoint(PyObject * pymodule)
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverDifferentialSetpoint),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverSteeringSetpoint),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -20990,7 +20990,7 @@ _register_msg_type__msg__rover_differential_setpoint(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__msg__rover_differential_setpoint",
+    "type_support_msg__msg__rover_steering_setpoint",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -21013,39 +21013,39 @@ _register_msg_type__msg__rover_differential_setpoint(PyObject * pymodule)
 // #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
-#include "px4_msgs/msg/detail/rover_differential_status__type_support.h"
-#include "px4_msgs/msg/detail/rover_differential_status__struct.h"
-#include "px4_msgs/msg/detail/rover_differential_status__functions.h"
+#include "px4_msgs/msg/detail/rover_throttle_setpoint__type_support.h"
+#include "px4_msgs/msg/detail/rover_throttle_setpoint__struct.h"
+#include "px4_msgs/msg/detail/rover_throttle_setpoint__functions.h"
 
-static void * px4_msgs__msg__rover_differential_status__create_ros_message(void)
+static void * px4_msgs__msg__rover_throttle_setpoint__create_ros_message(void)
 {
-  return px4_msgs__msg__RoverDifferentialStatus__create();
+  return px4_msgs__msg__RoverThrottleSetpoint__create();
 }
 
-static void px4_msgs__msg__rover_differential_status__destroy_ros_message(void * raw_ros_message)
+static void px4_msgs__msg__rover_throttle_setpoint__destroy_ros_message(void * raw_ros_message)
 {
-  px4_msgs__msg__RoverDifferentialStatus * ros_message = (px4_msgs__msg__RoverDifferentialStatus *)raw_ros_message;
-  px4_msgs__msg__RoverDifferentialStatus__destroy(ros_message);
+  px4_msgs__msg__RoverThrottleSetpoint * ros_message = (px4_msgs__msg__RoverThrottleSetpoint *)raw_ros_message;
+  px4_msgs__msg__RoverThrottleSetpoint__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool px4_msgs__msg__rover_differential_status__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool px4_msgs__msg__rover_throttle_setpoint__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * px4_msgs__msg__rover_differential_status__convert_to_py(void * raw_ros_message);
+PyObject * px4_msgs__msg__rover_throttle_setpoint__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverDifferentialStatus);
+ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverThrottleSetpoint);
 
 int8_t
-_register_msg_type__msg__rover_differential_status(PyObject * pymodule)
+_register_msg_type__msg__rover_throttle_setpoint(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_differential_status__create_ros_message,
+    (void *)&px4_msgs__msg__rover_throttle_setpoint__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -21053,7 +21053,7 @@ _register_msg_type__msg__rover_differential_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__msg__rover_differential_status",
+    "create_ros_message_msg__msg__rover_throttle_setpoint",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -21064,7 +21064,7 @@ _register_msg_type__msg__rover_differential_status(PyObject * pymodule)
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_differential_status__destroy_ros_message,
+    (void *)&px4_msgs__msg__rover_throttle_setpoint__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -21072,7 +21072,7 @@ _register_msg_type__msg__rover_differential_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__msg__rover_differential_status",
+    "destroy_ros_message_msg__msg__rover_throttle_setpoint",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -21083,7 +21083,7 @@ _register_msg_type__msg__rover_differential_status(PyObject * pymodule)
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_differential_status__convert_from_py,
+    (void *)&px4_msgs__msg__rover_throttle_setpoint__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -21091,7 +21091,7 @@ _register_msg_type__msg__rover_differential_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__msg__rover_differential_status",
+    "convert_from_py_msg__msg__rover_throttle_setpoint",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -21102,7 +21102,7 @@ _register_msg_type__msg__rover_differential_status(PyObject * pymodule)
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_differential_status__convert_to_py,
+    (void *)&px4_msgs__msg__rover_throttle_setpoint__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -21110,7 +21110,7 @@ _register_msg_type__msg__rover_differential_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__msg__rover_differential_status",
+    "convert_to_py_msg__msg__rover_throttle_setpoint",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -21121,7 +21121,7 @@ _register_msg_type__msg__rover_differential_status(PyObject * pymodule)
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverDifferentialStatus),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverThrottleSetpoint),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -21129,7 +21129,7 @@ _register_msg_type__msg__rover_differential_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__msg__rover_differential_status",
+    "type_support_msg__msg__rover_throttle_setpoint",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -21152,39 +21152,39 @@ _register_msg_type__msg__rover_differential_status(PyObject * pymodule)
 // #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
-#include "px4_msgs/msg/detail/rover_mecanum_guidance_status__type_support.h"
-#include "px4_msgs/msg/detail/rover_mecanum_guidance_status__struct.h"
-#include "px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.h"
+#include "px4_msgs/msg/detail/rover_velocity_status__type_support.h"
+#include "px4_msgs/msg/detail/rover_velocity_status__struct.h"
+#include "px4_msgs/msg/detail/rover_velocity_status__functions.h"
 
-static void * px4_msgs__msg__rover_mecanum_guidance_status__create_ros_message(void)
+static void * px4_msgs__msg__rover_velocity_status__create_ros_message(void)
 {
-  return px4_msgs__msg__RoverMecanumGuidanceStatus__create();
+  return px4_msgs__msg__RoverVelocityStatus__create();
 }
 
-static void px4_msgs__msg__rover_mecanum_guidance_status__destroy_ros_message(void * raw_ros_message)
+static void px4_msgs__msg__rover_velocity_status__destroy_ros_message(void * raw_ros_message)
 {
-  px4_msgs__msg__RoverMecanumGuidanceStatus * ros_message = (px4_msgs__msg__RoverMecanumGuidanceStatus *)raw_ros_message;
-  px4_msgs__msg__RoverMecanumGuidanceStatus__destroy(ros_message);
+  px4_msgs__msg__RoverVelocityStatus * ros_message = (px4_msgs__msg__RoverVelocityStatus *)raw_ros_message;
+  px4_msgs__msg__RoverVelocityStatus__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool px4_msgs__msg__rover_mecanum_guidance_status__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool px4_msgs__msg__rover_velocity_status__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * px4_msgs__msg__rover_mecanum_guidance_status__convert_to_py(void * raw_ros_message);
+PyObject * px4_msgs__msg__rover_velocity_status__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverMecanumGuidanceStatus);
+ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverVelocityStatus);
 
 int8_t
-_register_msg_type__msg__rover_mecanum_guidance_status(PyObject * pymodule)
+_register_msg_type__msg__rover_velocity_status(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_mecanum_guidance_status__create_ros_message,
+    (void *)&px4_msgs__msg__rover_velocity_status__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -21192,7 +21192,7 @@ _register_msg_type__msg__rover_mecanum_guidance_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__msg__rover_mecanum_guidance_status",
+    "create_ros_message_msg__msg__rover_velocity_status",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -21203,7 +21203,7 @@ _register_msg_type__msg__rover_mecanum_guidance_status(PyObject * pymodule)
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_mecanum_guidance_status__destroy_ros_message,
+    (void *)&px4_msgs__msg__rover_velocity_status__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -21211,7 +21211,7 @@ _register_msg_type__msg__rover_mecanum_guidance_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__msg__rover_mecanum_guidance_status",
+    "destroy_ros_message_msg__msg__rover_velocity_status",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -21222,7 +21222,7 @@ _register_msg_type__msg__rover_mecanum_guidance_status(PyObject * pymodule)
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_mecanum_guidance_status__convert_from_py,
+    (void *)&px4_msgs__msg__rover_velocity_status__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -21230,7 +21230,7 @@ _register_msg_type__msg__rover_mecanum_guidance_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__msg__rover_mecanum_guidance_status",
+    "convert_from_py_msg__msg__rover_velocity_status",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -21241,7 +21241,7 @@ _register_msg_type__msg__rover_mecanum_guidance_status(PyObject * pymodule)
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_mecanum_guidance_status__convert_to_py,
+    (void *)&px4_msgs__msg__rover_velocity_status__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -21249,7 +21249,7 @@ _register_msg_type__msg__rover_mecanum_guidance_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__msg__rover_mecanum_guidance_status",
+    "convert_to_py_msg__msg__rover_velocity_status",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -21260,7 +21260,7 @@ _register_msg_type__msg__rover_mecanum_guidance_status(PyObject * pymodule)
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverMecanumGuidanceStatus),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverVelocityStatus),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -21268,285 +21268,7 @@ _register_msg_type__msg__rover_mecanum_guidance_status(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__msg__rover_mecanum_guidance_status",
-    pyobject_type_support);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_type_support);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-  return 0;
-}
-
-// already included above
-// #include <stdbool.h>
-// already included above
-// #include <stdint.h>
-// already included above
-// #include "rosidl_runtime_c/visibility_control.h"
-// already included above
-// #include "rosidl_runtime_c/message_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/service_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/action_type_support_struct.h"
-#include "px4_msgs/msg/detail/rover_mecanum_setpoint__type_support.h"
-#include "px4_msgs/msg/detail/rover_mecanum_setpoint__struct.h"
-#include "px4_msgs/msg/detail/rover_mecanum_setpoint__functions.h"
-
-static void * px4_msgs__msg__rover_mecanum_setpoint__create_ros_message(void)
-{
-  return px4_msgs__msg__RoverMecanumSetpoint__create();
-}
-
-static void px4_msgs__msg__rover_mecanum_setpoint__destroy_ros_message(void * raw_ros_message)
-{
-  px4_msgs__msg__RoverMecanumSetpoint * ros_message = (px4_msgs__msg__RoverMecanumSetpoint *)raw_ros_message;
-  px4_msgs__msg__RoverMecanumSetpoint__destroy(ros_message);
-}
-
-ROSIDL_GENERATOR_C_IMPORT
-bool px4_msgs__msg__rover_mecanum_setpoint__convert_from_py(PyObject * _pymsg, void * ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-PyObject * px4_msgs__msg__rover_mecanum_setpoint__convert_to_py(void * raw_ros_message);
-
-
-ROSIDL_GENERATOR_C_IMPORT
-const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverMecanumSetpoint);
-
-int8_t
-_register_msg_type__msg__rover_mecanum_setpoint(PyObject * pymodule)
-{
-  int8_t err;
-
-  PyObject * pyobject_create_ros_message = NULL;
-  pyobject_create_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_mecanum_setpoint__create_ros_message,
-    NULL, NULL);
-  if (!pyobject_create_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "create_ros_message_msg__msg__rover_mecanum_setpoint",
-    pyobject_create_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_create_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_destroy_ros_message = NULL;
-  pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_mecanum_setpoint__destroy_ros_message,
-    NULL, NULL);
-  if (!pyobject_destroy_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "destroy_ros_message_msg__msg__rover_mecanum_setpoint",
-    pyobject_destroy_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_destroy_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_from_py = NULL;
-  pyobject_convert_from_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_mecanum_setpoint__convert_from_py,
-    NULL, NULL);
-  if (!pyobject_convert_from_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_from_py_msg__msg__rover_mecanum_setpoint",
-    pyobject_convert_from_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_from_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_to_py = NULL;
-  pyobject_convert_to_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_mecanum_setpoint__convert_to_py,
-    NULL, NULL);
-  if (!pyobject_convert_to_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_to_py_msg__msg__rover_mecanum_setpoint",
-    pyobject_convert_to_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_to_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_type_support = NULL;
-  pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverMecanumSetpoint),
-    NULL, NULL);
-  if (!pyobject_type_support) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "type_support_msg__msg__rover_mecanum_setpoint",
-    pyobject_type_support);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_type_support);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-  return 0;
-}
-
-// already included above
-// #include <stdbool.h>
-// already included above
-// #include <stdint.h>
-// already included above
-// #include "rosidl_runtime_c/visibility_control.h"
-// already included above
-// #include "rosidl_runtime_c/message_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/service_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/action_type_support_struct.h"
-#include "px4_msgs/msg/detail/rover_mecanum_status__type_support.h"
-#include "px4_msgs/msg/detail/rover_mecanum_status__struct.h"
-#include "px4_msgs/msg/detail/rover_mecanum_status__functions.h"
-
-static void * px4_msgs__msg__rover_mecanum_status__create_ros_message(void)
-{
-  return px4_msgs__msg__RoverMecanumStatus__create();
-}
-
-static void px4_msgs__msg__rover_mecanum_status__destroy_ros_message(void * raw_ros_message)
-{
-  px4_msgs__msg__RoverMecanumStatus * ros_message = (px4_msgs__msg__RoverMecanumStatus *)raw_ros_message;
-  px4_msgs__msg__RoverMecanumStatus__destroy(ros_message);
-}
-
-ROSIDL_GENERATOR_C_IMPORT
-bool px4_msgs__msg__rover_mecanum_status__convert_from_py(PyObject * _pymsg, void * ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-PyObject * px4_msgs__msg__rover_mecanum_status__convert_to_py(void * raw_ros_message);
-
-
-ROSIDL_GENERATOR_C_IMPORT
-const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverMecanumStatus);
-
-int8_t
-_register_msg_type__msg__rover_mecanum_status(PyObject * pymodule)
-{
-  int8_t err;
-
-  PyObject * pyobject_create_ros_message = NULL;
-  pyobject_create_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_mecanum_status__create_ros_message,
-    NULL, NULL);
-  if (!pyobject_create_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "create_ros_message_msg__msg__rover_mecanum_status",
-    pyobject_create_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_create_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_destroy_ros_message = NULL;
-  pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_mecanum_status__destroy_ros_message,
-    NULL, NULL);
-  if (!pyobject_destroy_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "destroy_ros_message_msg__msg__rover_mecanum_status",
-    pyobject_destroy_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_destroy_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_from_py = NULL;
-  pyobject_convert_from_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_mecanum_status__convert_from_py,
-    NULL, NULL);
-  if (!pyobject_convert_from_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_from_py_msg__msg__rover_mecanum_status",
-    pyobject_convert_from_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_from_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_to_py = NULL;
-  pyobject_convert_to_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__rover_mecanum_status__convert_to_py,
-    NULL, NULL);
-  if (!pyobject_convert_to_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_to_py_msg__msg__rover_mecanum_status",
-    pyobject_convert_to_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_to_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_type_support = NULL;
-  pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, RoverMecanumStatus),
-    NULL, NULL);
-  if (!pyobject_type_support) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "type_support_msg__msg__rover_mecanum_status",
+    "type_support_msg__msg__rover_velocity_status",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -25739,145 +25461,6 @@ _register_msg_type__msg__timesync_status(PyObject * pymodule)
 // #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
-#include "px4_msgs/msg/detail/trajectory_bezier__type_support.h"
-#include "px4_msgs/msg/detail/trajectory_bezier__struct.h"
-#include "px4_msgs/msg/detail/trajectory_bezier__functions.h"
-
-static void * px4_msgs__msg__trajectory_bezier__create_ros_message(void)
-{
-  return px4_msgs__msg__TrajectoryBezier__create();
-}
-
-static void px4_msgs__msg__trajectory_bezier__destroy_ros_message(void * raw_ros_message)
-{
-  px4_msgs__msg__TrajectoryBezier * ros_message = (px4_msgs__msg__TrajectoryBezier *)raw_ros_message;
-  px4_msgs__msg__TrajectoryBezier__destroy(ros_message);
-}
-
-ROSIDL_GENERATOR_C_IMPORT
-bool px4_msgs__msg__trajectory_bezier__convert_from_py(PyObject * _pymsg, void * ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-PyObject * px4_msgs__msg__trajectory_bezier__convert_to_py(void * raw_ros_message);
-
-
-ROSIDL_GENERATOR_C_IMPORT
-const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, TrajectoryBezier);
-
-int8_t
-_register_msg_type__msg__trajectory_bezier(PyObject * pymodule)
-{
-  int8_t err;
-
-  PyObject * pyobject_create_ros_message = NULL;
-  pyobject_create_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__trajectory_bezier__create_ros_message,
-    NULL, NULL);
-  if (!pyobject_create_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "create_ros_message_msg__msg__trajectory_bezier",
-    pyobject_create_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_create_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_destroy_ros_message = NULL;
-  pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__trajectory_bezier__destroy_ros_message,
-    NULL, NULL);
-  if (!pyobject_destroy_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "destroy_ros_message_msg__msg__trajectory_bezier",
-    pyobject_destroy_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_destroy_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_from_py = NULL;
-  pyobject_convert_from_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__trajectory_bezier__convert_from_py,
-    NULL, NULL);
-  if (!pyobject_convert_from_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_from_py_msg__msg__trajectory_bezier",
-    pyobject_convert_from_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_from_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_to_py = NULL;
-  pyobject_convert_to_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__trajectory_bezier__convert_to_py,
-    NULL, NULL);
-  if (!pyobject_convert_to_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_to_py_msg__msg__trajectory_bezier",
-    pyobject_convert_to_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_to_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_type_support = NULL;
-  pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, TrajectoryBezier),
-    NULL, NULL);
-  if (!pyobject_type_support) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "type_support_msg__msg__trajectory_bezier",
-    pyobject_type_support);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_type_support);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-  return 0;
-}
-
-// already included above
-// #include <stdbool.h>
-// already included above
-// #include <stdint.h>
-// already included above
-// #include "rosidl_runtime_c/visibility_control.h"
-// already included above
-// #include "rosidl_runtime_c/message_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/service_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/action_type_support_struct.h"
 #include "px4_msgs/msg/detail/trajectory_setpoint__type_support.h"
 #include "px4_msgs/msg/detail/trajectory_setpoint__struct.h"
 #include "px4_msgs/msg/detail/trajectory_setpoint__functions.h"
@@ -25995,145 +25578,6 @@ _register_msg_type__msg__trajectory_setpoint(PyObject * pymodule)
   err = PyModule_AddObject(
     pymodule,
     "type_support_msg__msg__trajectory_setpoint",
-    pyobject_type_support);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_type_support);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-  return 0;
-}
-
-// already included above
-// #include <stdbool.h>
-// already included above
-// #include <stdint.h>
-// already included above
-// #include "rosidl_runtime_c/visibility_control.h"
-// already included above
-// #include "rosidl_runtime_c/message_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/service_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/action_type_support_struct.h"
-#include "px4_msgs/msg/detail/trajectory_waypoint__type_support.h"
-#include "px4_msgs/msg/detail/trajectory_waypoint__struct.h"
-#include "px4_msgs/msg/detail/trajectory_waypoint__functions.h"
-
-static void * px4_msgs__msg__trajectory_waypoint__create_ros_message(void)
-{
-  return px4_msgs__msg__TrajectoryWaypoint__create();
-}
-
-static void px4_msgs__msg__trajectory_waypoint__destroy_ros_message(void * raw_ros_message)
-{
-  px4_msgs__msg__TrajectoryWaypoint * ros_message = (px4_msgs__msg__TrajectoryWaypoint *)raw_ros_message;
-  px4_msgs__msg__TrajectoryWaypoint__destroy(ros_message);
-}
-
-ROSIDL_GENERATOR_C_IMPORT
-bool px4_msgs__msg__trajectory_waypoint__convert_from_py(PyObject * _pymsg, void * ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-PyObject * px4_msgs__msg__trajectory_waypoint__convert_to_py(void * raw_ros_message);
-
-
-ROSIDL_GENERATOR_C_IMPORT
-const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, TrajectoryWaypoint);
-
-int8_t
-_register_msg_type__msg__trajectory_waypoint(PyObject * pymodule)
-{
-  int8_t err;
-
-  PyObject * pyobject_create_ros_message = NULL;
-  pyobject_create_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__trajectory_waypoint__create_ros_message,
-    NULL, NULL);
-  if (!pyobject_create_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "create_ros_message_msg__msg__trajectory_waypoint",
-    pyobject_create_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_create_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_destroy_ros_message = NULL;
-  pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__trajectory_waypoint__destroy_ros_message,
-    NULL, NULL);
-  if (!pyobject_destroy_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "destroy_ros_message_msg__msg__trajectory_waypoint",
-    pyobject_destroy_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_destroy_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_from_py = NULL;
-  pyobject_convert_from_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__trajectory_waypoint__convert_from_py,
-    NULL, NULL);
-  if (!pyobject_convert_from_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_from_py_msg__msg__trajectory_waypoint",
-    pyobject_convert_from_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_from_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_to_py = NULL;
-  pyobject_convert_to_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__trajectory_waypoint__convert_to_py,
-    NULL, NULL);
-  if (!pyobject_convert_to_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_to_py_msg__msg__trajectory_waypoint",
-    pyobject_convert_to_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_to_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_type_support = NULL;
-  pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, TrajectoryWaypoint),
-    NULL, NULL);
-  if (!pyobject_type_support) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "type_support_msg__msg__trajectory_waypoint",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -30604,284 +30048,6 @@ _register_msg_type__msg__vehicle_torque_setpoint(PyObject * pymodule)
 // #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
-#include "px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.h"
-#include "px4_msgs/msg/detail/vehicle_trajectory_bezier__struct.h"
-#include "px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.h"
-
-static void * px4_msgs__msg__vehicle_trajectory_bezier__create_ros_message(void)
-{
-  return px4_msgs__msg__VehicleTrajectoryBezier__create();
-}
-
-static void px4_msgs__msg__vehicle_trajectory_bezier__destroy_ros_message(void * raw_ros_message)
-{
-  px4_msgs__msg__VehicleTrajectoryBezier * ros_message = (px4_msgs__msg__VehicleTrajectoryBezier *)raw_ros_message;
-  px4_msgs__msg__VehicleTrajectoryBezier__destroy(ros_message);
-}
-
-ROSIDL_GENERATOR_C_IMPORT
-bool px4_msgs__msg__vehicle_trajectory_bezier__convert_from_py(PyObject * _pymsg, void * ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-PyObject * px4_msgs__msg__vehicle_trajectory_bezier__convert_to_py(void * raw_ros_message);
-
-
-ROSIDL_GENERATOR_C_IMPORT
-const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, VehicleTrajectoryBezier);
-
-int8_t
-_register_msg_type__msg__vehicle_trajectory_bezier(PyObject * pymodule)
-{
-  int8_t err;
-
-  PyObject * pyobject_create_ros_message = NULL;
-  pyobject_create_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__vehicle_trajectory_bezier__create_ros_message,
-    NULL, NULL);
-  if (!pyobject_create_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "create_ros_message_msg__msg__vehicle_trajectory_bezier",
-    pyobject_create_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_create_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_destroy_ros_message = NULL;
-  pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__vehicle_trajectory_bezier__destroy_ros_message,
-    NULL, NULL);
-  if (!pyobject_destroy_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "destroy_ros_message_msg__msg__vehicle_trajectory_bezier",
-    pyobject_destroy_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_destroy_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_from_py = NULL;
-  pyobject_convert_from_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__vehicle_trajectory_bezier__convert_from_py,
-    NULL, NULL);
-  if (!pyobject_convert_from_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_from_py_msg__msg__vehicle_trajectory_bezier",
-    pyobject_convert_from_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_from_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_to_py = NULL;
-  pyobject_convert_to_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__vehicle_trajectory_bezier__convert_to_py,
-    NULL, NULL);
-  if (!pyobject_convert_to_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_to_py_msg__msg__vehicle_trajectory_bezier",
-    pyobject_convert_to_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_to_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_type_support = NULL;
-  pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, VehicleTrajectoryBezier),
-    NULL, NULL);
-  if (!pyobject_type_support) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "type_support_msg__msg__vehicle_trajectory_bezier",
-    pyobject_type_support);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_type_support);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-  return 0;
-}
-
-// already included above
-// #include <stdbool.h>
-// already included above
-// #include <stdint.h>
-// already included above
-// #include "rosidl_runtime_c/visibility_control.h"
-// already included above
-// #include "rosidl_runtime_c/message_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/service_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/action_type_support_struct.h"
-#include "px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.h"
-#include "px4_msgs/msg/detail/vehicle_trajectory_waypoint__struct.h"
-#include "px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.h"
-
-static void * px4_msgs__msg__vehicle_trajectory_waypoint__create_ros_message(void)
-{
-  return px4_msgs__msg__VehicleTrajectoryWaypoint__create();
-}
-
-static void px4_msgs__msg__vehicle_trajectory_waypoint__destroy_ros_message(void * raw_ros_message)
-{
-  px4_msgs__msg__VehicleTrajectoryWaypoint * ros_message = (px4_msgs__msg__VehicleTrajectoryWaypoint *)raw_ros_message;
-  px4_msgs__msg__VehicleTrajectoryWaypoint__destroy(ros_message);
-}
-
-ROSIDL_GENERATOR_C_IMPORT
-bool px4_msgs__msg__vehicle_trajectory_waypoint__convert_from_py(PyObject * _pymsg, void * ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-PyObject * px4_msgs__msg__vehicle_trajectory_waypoint__convert_to_py(void * raw_ros_message);
-
-
-ROSIDL_GENERATOR_C_IMPORT
-const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, VehicleTrajectoryWaypoint);
-
-int8_t
-_register_msg_type__msg__vehicle_trajectory_waypoint(PyObject * pymodule)
-{
-  int8_t err;
-
-  PyObject * pyobject_create_ros_message = NULL;
-  pyobject_create_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__vehicle_trajectory_waypoint__create_ros_message,
-    NULL, NULL);
-  if (!pyobject_create_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "create_ros_message_msg__msg__vehicle_trajectory_waypoint",
-    pyobject_create_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_create_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_destroy_ros_message = NULL;
-  pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&px4_msgs__msg__vehicle_trajectory_waypoint__destroy_ros_message,
-    NULL, NULL);
-  if (!pyobject_destroy_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "destroy_ros_message_msg__msg__vehicle_trajectory_waypoint",
-    pyobject_destroy_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_destroy_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_from_py = NULL;
-  pyobject_convert_from_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__vehicle_trajectory_waypoint__convert_from_py,
-    NULL, NULL);
-  if (!pyobject_convert_from_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_from_py_msg__msg__vehicle_trajectory_waypoint",
-    pyobject_convert_from_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_from_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_to_py = NULL;
-  pyobject_convert_to_py = PyCapsule_New(
-    (void *)&px4_msgs__msg__vehicle_trajectory_waypoint__convert_to_py,
-    NULL, NULL);
-  if (!pyobject_convert_to_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_to_py_msg__msg__vehicle_trajectory_waypoint",
-    pyobject_convert_to_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_to_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_type_support = NULL;
-  pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(px4_msgs, msg, VehicleTrajectoryWaypoint),
-    NULL, NULL);
-  if (!pyobject_type_support) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "type_support_msg__msg__vehicle_trajectory_waypoint",
-    pyobject_type_support);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_type_support);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-  return 0;
-}
-
-// already included above
-// #include <stdbool.h>
-// already included above
-// #include <stdint.h>
-// already included above
-// #include "rosidl_runtime_c/visibility_control.h"
-// already included above
-// #include "rosidl_runtime_c/message_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/service_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/action_type_support_struct.h"
 #include "px4_msgs/msg/detail/velocity_limits__type_support.h"
 #include "px4_msgs/msg/detail/velocity_limits__struct.h"
 #include "px4_msgs/msg/detail/velocity_limits__functions.h"
@@ -31981,12 +31147,6 @@ PyInit_px4_msgs_s__rosidl_typesupport_fastrtps_c(void)
     return NULL;
   }
 
-  err = _register_msg_type__msg__buffer128(pymodule);
-  if (err) {
-    Py_XDECREF(pymodule);
-    return NULL;
-  }
-
   err = _register_msg_type__msg__button_event(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
@@ -32395,6 +31555,12 @@ PyInit_px4_msgs_s__rosidl_typesupport_fastrtps_c(void)
     return NULL;
   }
 
+  err = _register_msg_type__msg__internal_combustion_engine_control(pymodule);
+  if (err) {
+    Py_XDECREF(pymodule);
+    return NULL;
+  }
+
   err = _register_msg_type__msg__internal_combustion_engine_status(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
@@ -32761,55 +31927,43 @@ PyInit_px4_msgs_s__rosidl_typesupport_fastrtps_c(void)
     return NULL;
   }
 
-  err = _register_msg_type__msg__rover_ackermann_guidance_status(pymodule);
+  err = _register_msg_type__msg__rover_attitude_setpoint(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__msg__rover_ackermann_setpoint(pymodule);
+  err = _register_msg_type__msg__rover_attitude_status(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__msg__rover_ackermann_status(pymodule);
+  err = _register_msg_type__msg__rover_rate_setpoint(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__msg__rover_differential_guidance_status(pymodule);
+  err = _register_msg_type__msg__rover_rate_status(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__msg__rover_differential_setpoint(pymodule);
+  err = _register_msg_type__msg__rover_steering_setpoint(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__msg__rover_differential_status(pymodule);
+  err = _register_msg_type__msg__rover_throttle_setpoint(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__msg__rover_mecanum_guidance_status(pymodule);
-  if (err) {
-    Py_XDECREF(pymodule);
-    return NULL;
-  }
-
-  err = _register_msg_type__msg__rover_mecanum_setpoint(pymodule);
-  if (err) {
-    Py_XDECREF(pymodule);
-    return NULL;
-  }
-
-  err = _register_msg_type__msg__rover_mecanum_status(pymodule);
+  err = _register_msg_type__msg__rover_velocity_status(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
@@ -32995,19 +32149,7 @@ PyInit_px4_msgs_s__rosidl_typesupport_fastrtps_c(void)
     return NULL;
   }
 
-  err = _register_msg_type__msg__trajectory_bezier(pymodule);
-  if (err) {
-    Py_XDECREF(pymodule);
-    return NULL;
-  }
-
   err = _register_msg_type__msg__trajectory_setpoint(pymodule);
-  if (err) {
-    Py_XDECREF(pymodule);
-    return NULL;
-  }
-
-  err = _register_msg_type__msg__trajectory_waypoint(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
@@ -33200,18 +32342,6 @@ PyInit_px4_msgs_s__rosidl_typesupport_fastrtps_c(void)
   }
 
   err = _register_msg_type__msg__vehicle_torque_setpoint(pymodule);
-  if (err) {
-    Py_XDECREF(pymodule);
-    return NULL;
-  }
-
-  err = _register_msg_type__msg__vehicle_trajectory_bezier(pymodule);
-  if (err) {
-    Py_XDECREF(pymodule);
-    return NULL;
-  }
-
-  err = _register_msg_type__msg__vehicle_trajectory_waypoint(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;

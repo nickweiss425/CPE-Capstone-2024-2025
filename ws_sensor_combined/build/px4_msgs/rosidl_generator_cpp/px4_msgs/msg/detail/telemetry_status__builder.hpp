@@ -53,32 +53,16 @@ private:
   ::px4_msgs::msg::TelemetryStatus msg_;
 };
 
-class Init_TelemetryStatus_avoidance_system_healthy
-{
-public:
-  explicit Init_TelemetryStatus_avoidance_system_healthy(::px4_msgs::msg::TelemetryStatus & msg)
-  : msg_(msg)
-  {}
-  Init_TelemetryStatus_open_drone_id_system_healthy avoidance_system_healthy(::px4_msgs::msg::TelemetryStatus::_avoidance_system_healthy_type arg)
-  {
-    msg_.avoidance_system_healthy = std::move(arg);
-    return Init_TelemetryStatus_open_drone_id_system_healthy(msg_);
-  }
-
-private:
-  ::px4_msgs::msg::TelemetryStatus msg_;
-};
-
 class Init_TelemetryStatus_heartbeat_component_uart_bridge
 {
 public:
   explicit Init_TelemetryStatus_heartbeat_component_uart_bridge(::px4_msgs::msg::TelemetryStatus & msg)
   : msg_(msg)
   {}
-  Init_TelemetryStatus_avoidance_system_healthy heartbeat_component_uart_bridge(::px4_msgs::msg::TelemetryStatus::_heartbeat_component_uart_bridge_type arg)
+  Init_TelemetryStatus_open_drone_id_system_healthy heartbeat_component_uart_bridge(::px4_msgs::msg::TelemetryStatus::_heartbeat_component_uart_bridge_type arg)
   {
     msg_.heartbeat_component_uart_bridge = std::move(arg);
-    return Init_TelemetryStatus_avoidance_system_healthy(msg_);
+    return Init_TelemetryStatus_open_drone_id_system_healthy(msg_);
   }
 
 private:
@@ -133,32 +117,16 @@ private:
   ::px4_msgs::msg::TelemetryStatus msg_;
 };
 
-class Init_TelemetryStatus_heartbeat_component_obstacle_avoidance
-{
-public:
-  explicit Init_TelemetryStatus_heartbeat_component_obstacle_avoidance(::px4_msgs::msg::TelemetryStatus & msg)
-  : msg_(msg)
-  {}
-  Init_TelemetryStatus_heartbeat_component_vio heartbeat_component_obstacle_avoidance(::px4_msgs::msg::TelemetryStatus::_heartbeat_component_obstacle_avoidance_type arg)
-  {
-    msg_.heartbeat_component_obstacle_avoidance = std::move(arg);
-    return Init_TelemetryStatus_heartbeat_component_vio(msg_);
-  }
-
-private:
-  ::px4_msgs::msg::TelemetryStatus msg_;
-};
-
 class Init_TelemetryStatus_heartbeat_component_osd
 {
 public:
   explicit Init_TelemetryStatus_heartbeat_component_osd(::px4_msgs::msg::TelemetryStatus & msg)
   : msg_(msg)
   {}
-  Init_TelemetryStatus_heartbeat_component_obstacle_avoidance heartbeat_component_osd(::px4_msgs::msg::TelemetryStatus::_heartbeat_component_osd_type arg)
+  Init_TelemetryStatus_heartbeat_component_vio heartbeat_component_osd(::px4_msgs::msg::TelemetryStatus::_heartbeat_component_osd_type arg)
   {
     msg_.heartbeat_component_osd = std::move(arg);
-    return Init_TelemetryStatus_heartbeat_component_obstacle_avoidance(msg_);
+    return Init_TelemetryStatus_heartbeat_component_vio(msg_);
   }
 
 private:

@@ -26,7 +26,7 @@ find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(std_msgs REQUIRED)
-find_package(custom_msgs REQUIRED)
+find_package(gui_messages REQUIRED)
 
 
 #################
@@ -71,7 +71,7 @@ install(TARGETS offboard_control_srv DESTINATION lib/${PROJECT_NAME})
 
 # examples/offboard/offboard_paths
 add_executable(offboard_launch src/examples/offboard/offboard_launch.cpp)
-ament_target_dependencies(offboard_launch rclcpp px4_msgs std_msgs sensor_msgs custom_msgs)
+ament_target_dependencies(offboard_launch rclcpp px4_msgs std_msgs sensor_msgs gui_messages)
 install(TARGETS offboard_launch DESTINATION lib/${PROJECT_NAME})
 
 # examples/offboard/offboard_paths

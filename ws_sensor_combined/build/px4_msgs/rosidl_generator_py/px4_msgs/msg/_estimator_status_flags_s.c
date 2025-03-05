@@ -464,6 +464,15 @@ bool px4_msgs__msg__estimator_status_flags__convert_from_py(PyObject * _pymsg, v
     ros_message->cs_constant_pos = (Py_True == field);
     Py_DECREF(field);
   }
+  {  // cs_baro_fault
+    PyObject * field = PyObject_GetAttrString(_pymsg, "cs_baro_fault");
+    if (!field) {
+      return false;
+    }
+    assert(PyBool_Check(field));
+    ros_message->cs_baro_fault = (Py_True == field);
+    Py_DECREF(field);
+  }
   {  // fault_status_changes
     PyObject * field = PyObject_GetAttrString(_pymsg, "fault_status_changes");
     if (!field) {
@@ -1193,6 +1202,17 @@ PyObject * px4_msgs__msg__estimator_status_flags__convert_to_py(void * raw_ros_m
     field = PyBool_FromLong(ros_message->cs_constant_pos ? 1 : 0);
     {
       int rc = PyObject_SetAttrString(_pymessage, "cs_constant_pos", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // cs_baro_fault
+    PyObject * field = NULL;
+    field = PyBool_FromLong(ros_message->cs_baro_fault ? 1 : 0);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "cs_baro_fault", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

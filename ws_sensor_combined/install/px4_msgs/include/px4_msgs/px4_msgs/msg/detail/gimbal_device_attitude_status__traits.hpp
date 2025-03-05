@@ -99,6 +99,27 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
+  // member: delta_yaw
+  {
+    out << "delta_yaw: ";
+    rosidl_generator_traits::value_to_yaml(msg.delta_yaw, out);
+    out << ", ";
+  }
+
+  // member: delta_yaw_velocity
+  {
+    out << "delta_yaw_velocity: ";
+    rosidl_generator_traits::value_to_yaml(msg.delta_yaw_velocity, out);
+    out << ", ";
+  }
+
+  // member: gimbal_device_id
+  {
+    out << "gimbal_device_id: ";
+    rosidl_generator_traits::value_to_yaml(msg.gimbal_device_id, out);
+    out << ", ";
+  }
+
   // member: received_from_mavlink
   {
     out << "received_from_mavlink: ";
@@ -208,6 +229,36 @@ inline void to_block_style_yaml(
     }
     out << "failure_flags: ";
     rosidl_generator_traits::value_to_yaml(msg.failure_flags, out);
+    out << "\n";
+  }
+
+  // member: delta_yaw
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "delta_yaw: ";
+    rosidl_generator_traits::value_to_yaml(msg.delta_yaw, out);
+    out << "\n";
+  }
+
+  // member: delta_yaw_velocity
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "delta_yaw_velocity: ";
+    rosidl_generator_traits::value_to_yaml(msg.delta_yaw_velocity, out);
+    out << "\n";
+  }
+
+  // member: gimbal_device_id
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "gimbal_device_id: ";
+    rosidl_generator_traits::value_to_yaml(msg.gimbal_device_id, out);
     out << "\n";
   }
 

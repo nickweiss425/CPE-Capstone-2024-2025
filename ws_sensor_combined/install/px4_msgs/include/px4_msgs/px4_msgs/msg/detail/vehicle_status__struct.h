@@ -18,6 +18,12 @@ extern "C"
 
 // Constants defined in the message
 
+/// Constant 'MESSAGE_VERSION'.
+enum
+{
+  px4_msgs__msg__VehicleStatus__MESSAGE_VERSION = 1ul
+};
+
 /// Constant 'ARMING_STATE_DISARMED'.
 enum
 {
@@ -568,10 +574,6 @@ typedef struct px4_msgs__msg__VehicleStatus
   bool open_drone_id_system_healthy;
   bool parachute_system_present;
   bool parachute_system_healthy;
-  /// Set to true if avoidance system is enabled via COM_OBS_AVOID parameter
-  bool avoidance_system_required;
-  /// Status of the obstacle avoidance system
-  bool avoidance_system_valid;
   bool rc_calibration_in_progress;
   bool calibration_enabled;
   /// true if all checks necessary to arm pass

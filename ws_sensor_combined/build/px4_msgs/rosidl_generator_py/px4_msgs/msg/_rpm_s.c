@@ -59,22 +59,22 @@ bool px4_msgs__msg__rpm__convert_from_py(PyObject * _pymsg, void * _ros_message)
     ros_message->timestamp = PyLong_AsUnsignedLongLong(field);
     Py_DECREF(field);
   }
-  {  // indicated_frequency_rpm
-    PyObject * field = PyObject_GetAttrString(_pymsg, "indicated_frequency_rpm");
+  {  // rpm_estimate
+    PyObject * field = PyObject_GetAttrString(_pymsg, "rpm_estimate");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->indicated_frequency_rpm = (float)PyFloat_AS_DOUBLE(field);
+    ros_message->rpm_estimate = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // estimated_accurancy_rpm
-    PyObject * field = PyObject_GetAttrString(_pymsg, "estimated_accurancy_rpm");
+  {  // rpm_raw
+    PyObject * field = PyObject_GetAttrString(_pymsg, "rpm_raw");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->estimated_accurancy_rpm = (float)PyFloat_AS_DOUBLE(field);
+    ros_message->rpm_raw = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -110,22 +110,22 @@ PyObject * px4_msgs__msg__rpm__convert_to_py(void * raw_ros_message)
       }
     }
   }
-  {  // indicated_frequency_rpm
+  {  // rpm_estimate
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->indicated_frequency_rpm);
+    field = PyFloat_FromDouble(ros_message->rpm_estimate);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "indicated_frequency_rpm", field);
+      int rc = PyObject_SetAttrString(_pymessage, "rpm_estimate", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // estimated_accurancy_rpm
+  {  // rpm_raw
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->estimated_accurancy_rpm);
+    field = PyFloat_FromDouble(ros_message->rpm_raw);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "estimated_accurancy_rpm", field);
+      int rc = PyObject_SetAttrString(_pymessage, "rpm_raw", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

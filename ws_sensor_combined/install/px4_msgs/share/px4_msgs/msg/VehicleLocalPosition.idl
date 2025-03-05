@@ -7,6 +7,7 @@ module px4_msgs {
   module msg {
     typedef float float__2[2];
     module VehicleLocalPosition_Constants {
+      const uint32 MESSAGE_VERSION = 0;
       const uint8 DIST_BOTTOM_SENSOR_NONE = 0;
       @verbatim (language="comment", text=
         "(1 << 0) a range sensor is used to estimate dist_bottom field")
@@ -220,20 +221,25 @@ module px4_msgs {
 
       @verbatim (language="comment", text=
         "estimator specified vehicle limits" "\n"
-        "maximum horizontal speed - set to 0 when limiting not required (meters/sec)")
+        "set to INFINITY when limiting not required" "\n"
+        "maximum horizontal speed (meters/sec)")
       float vxy_max;
 
       @verbatim (language="comment", text=
-        "maximum vertical speed - set to 0 when limiting not required (meters/sec)")
+        "maximum vertical speed (meters/sec)")
       float vz_max;
 
       @verbatim (language="comment", text=
-        "minimum height above ground level - set to 0 when limiting not required (meters)")
+        "minimum height above ground level (meters)")
       float hagl_min;
 
       @verbatim (language="comment", text=
-        "maximum height above ground level - set to 0 when limiting not required (meters)")
-      float hagl_max;
+        "maximum height above ground level for z-control (meters)")
+      float hagl_max_z;
+
+      @verbatim (language="comment", text=
+        "maximum height above ground level for xy-control (meters)")
+      float hagl_max_xy;
     };
   };
 };

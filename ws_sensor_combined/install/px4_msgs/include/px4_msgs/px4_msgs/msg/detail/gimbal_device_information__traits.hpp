@@ -163,10 +163,10 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
-  // member: gimbal_device_compid
+  // member: gimbal_device_id
   {
-    out << "gimbal_device_compid: ";
-    rosidl_generator_traits::value_to_yaml(msg.gimbal_device_compid, out);
+    out << "gimbal_device_id: ";
+    rosidl_generator_traits::value_to_yaml(msg.gimbal_device_id, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -355,13 +355,13 @@ inline void to_block_style_yaml(
     out << "\n";
   }
 
-  // member: gimbal_device_compid
+  // member: gimbal_device_id
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "gimbal_device_compid: ";
-    rosidl_generator_traits::value_to_yaml(msg.gimbal_device_compid, out);
+    out << "gimbal_device_id: ";
+    rosidl_generator_traits::value_to_yaml(msg.gimbal_device_id, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

@@ -31,7 +31,7 @@ void px4_msgs__msg__Ekf2Timestamps__rosidl_typesupport_introspection_c__Ekf2Time
   px4_msgs__msg__Ekf2Timestamps__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__Ekf2Timestamps__rosidl_typesupport_introspection_c__Ekf2Timestamps_message_member_array[7] = {
+static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__Ekf2Timestamps__rosidl_typesupport_introspection_c__Ekf2Timestamps_message_member_array[8] = {
   {
     "timestamp",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT64,  // type
@@ -58,6 +58,23 @@ static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__Ekf2Time
     0,  // array size
     false,  // is upper bound
     offsetof(px4_msgs__msg__Ekf2Timestamps, airspeed_timestamp_rel),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "airspeed_validated_timestamp_rel",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT16,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(px4_msgs__msg__Ekf2Timestamps, airspeed_validated_timestamp_rel),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -156,7 +173,7 @@ static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__Ekf2Time
 static const rosidl_typesupport_introspection_c__MessageMembers px4_msgs__msg__Ekf2Timestamps__rosidl_typesupport_introspection_c__Ekf2Timestamps_message_members = {
   "px4_msgs__msg",  // message namespace
   "Ekf2Timestamps",  // message name
-  7,  // number of fields
+  8,  // number of fields
   sizeof(px4_msgs__msg__Ekf2Timestamps),
   px4_msgs__msg__Ekf2Timestamps__rosidl_typesupport_introspection_c__Ekf2Timestamps_message_member_array,  // message members
   px4_msgs__msg__Ekf2Timestamps__rosidl_typesupport_introspection_c__Ekf2Timestamps_init_function,  // function to initialize message memory (memory has to be allocated)

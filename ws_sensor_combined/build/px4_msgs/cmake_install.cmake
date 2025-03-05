@@ -420,10 +420,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/Buffer128.idl")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/ButtonEvent.idl")
 endif()
 
@@ -696,6 +692,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/InternalCombustionEngineControl.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/InternalCombustionEngineStatus.idl")
 endif()
 
@@ -940,39 +940,31 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/RoverAckermannGuidanceStatus.idl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/RoverAttitudeSetpoint.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/RoverAckermannSetpoint.idl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/RoverAttitudeStatus.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/RoverAckermannStatus.idl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/RoverRateSetpoint.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/RoverDifferentialGuidanceStatus.idl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/RoverRateStatus.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/RoverDifferentialSetpoint.idl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/RoverSteeringSetpoint.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/RoverDifferentialStatus.idl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/RoverThrottleSetpoint.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/RoverMecanumGuidanceStatus.idl")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/RoverMecanumSetpoint.idl")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/RoverMecanumStatus.idl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/RoverVelocityStatus.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1096,15 +1088,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/TrajectoryBezier.idl")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/TrajectorySetpoint.idl")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/TrajectoryWaypoint.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1236,14 +1220,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/VehicleTrajectoryBezier.idl")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/VehicleTrajectoryWaypoint.idl")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_adapter/px4_msgs/msg/VelocityLimits.idl")
 endif()
 
@@ -1329,10 +1305,6 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/BatteryStatus.msg")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/Buffer128.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1608,6 +1580,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/InternalCombustionEngineControl.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/InternalCombustionEngineStatus.msg")
 endif()
 
@@ -1852,39 +1828,31 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverAckermannGuidanceStatus.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverAttitudeSetpoint.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverAckermannSetpoint.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverAttitudeStatus.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverAckermannStatus.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverRateSetpoint.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverDifferentialGuidanceStatus.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverRateStatus.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverDifferentialSetpoint.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverSteeringSetpoint.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverDifferentialStatus.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverThrottleSetpoint.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverMecanumGuidanceStatus.msg")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverMecanumSetpoint.msg")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverMecanumStatus.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/RoverVelocityStatus.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -2008,15 +1976,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/TrajectoryBezier.msg")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/TrajectorySetpoint.msg")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/TrajectoryWaypoint.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -2145,14 +2105,6 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/VehicleTorqueSetpoint.msg")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/VehicleTrajectoryBezier.msg")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_msgs/msg" TYPE FILE FILES "/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/src/px4_msgs/msg/VehicleTrajectoryWaypoint.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

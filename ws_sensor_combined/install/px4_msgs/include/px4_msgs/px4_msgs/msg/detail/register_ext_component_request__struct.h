@@ -17,6 +17,12 @@ extern "C"
 
 // Constants defined in the message
 
+/// Constant 'MESSAGE_VERSION'.
+enum
+{
+  px4_msgs__msg__RegisterExtComponentRequest__MESSAGE_VERSION = 0ul
+};
+
 /// Constant 'LATEST_PX4_ROS2_API_VERSION'.
 /**
   * API version compatibility. Increase this on a breaking semantic change. Changes to any message field are detected separately and do not require an API version change.

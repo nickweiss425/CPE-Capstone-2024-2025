@@ -101,6 +101,7 @@ class EstimatorStatusFlags(metaclass=Metaclass_EstimatorStatusFlags):
         '_cs_opt_flow_terrain',
         '_cs_valid_fake_pos',
         '_cs_constant_pos',
+        '_cs_baro_fault',
         '_fault_status_changes',
         '_fs_bad_mag_x',
         '_fs_bad_mag_y',
@@ -173,6 +174,7 @@ class EstimatorStatusFlags(metaclass=Metaclass_EstimatorStatusFlags):
         'cs_opt_flow_terrain': 'boolean',
         'cs_valid_fake_pos': 'boolean',
         'cs_constant_pos': 'boolean',
+        'cs_baro_fault': 'boolean',
         'fault_status_changes': 'uint32',
         'fs_bad_mag_x': 'boolean',
         'fs_bad_mag_y': 'boolean',
@@ -202,6 +204,7 @@ class EstimatorStatusFlags(metaclass=Metaclass_EstimatorStatusFlags):
         rosidl_parser.definition.BasicType('uint64'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint64'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
@@ -320,6 +323,7 @@ class EstimatorStatusFlags(metaclass=Metaclass_EstimatorStatusFlags):
         self.cs_opt_flow_terrain = kwargs.get('cs_opt_flow_terrain', bool())
         self.cs_valid_fake_pos = kwargs.get('cs_valid_fake_pos', bool())
         self.cs_constant_pos = kwargs.get('cs_constant_pos', bool())
+        self.cs_baro_fault = kwargs.get('cs_baro_fault', bool())
         self.fault_status_changes = kwargs.get('fault_status_changes', int())
         self.fs_bad_mag_x = kwargs.get('fs_bad_mag_x', bool())
         self.fs_bad_mag_y = kwargs.get('fs_bad_mag_y', bool())
@@ -464,6 +468,8 @@ class EstimatorStatusFlags(metaclass=Metaclass_EstimatorStatusFlags):
         if self.cs_valid_fake_pos != other.cs_valid_fake_pos:
             return False
         if self.cs_constant_pos != other.cs_constant_pos:
+            return False
+        if self.cs_baro_fault != other.cs_baro_fault:
             return False
         if self.fault_status_changes != other.fault_status_changes:
             return False
@@ -1121,6 +1127,19 @@ class EstimatorStatusFlags(metaclass=Metaclass_EstimatorStatusFlags):
                 isinstance(value, bool), \
                 "The 'cs_constant_pos' field must be of type 'bool'"
         self._cs_constant_pos = value
+
+    @builtins.property
+    def cs_baro_fault(self):
+        """Message field 'cs_baro_fault'."""
+        return self._cs_baro_fault
+
+    @cs_baro_fault.setter
+    def cs_baro_fault(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, bool), \
+                "The 'cs_baro_fault' field must be of type 'bool'"
+        self._cs_baro_fault = value
 
     @builtins.property
     def fault_status_changes(self):

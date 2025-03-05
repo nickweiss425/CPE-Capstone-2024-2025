@@ -11,12 +11,11 @@ module px4_msgs {
       uint64 timestamp;
 
       @verbatim (language="comment", text=
-        "indicated rotor Frequency in Revolution per minute")
-      float indicated_frequency_rpm;
+        "rpm values of 0.0 mean within a timeout there is no movement measured" "\n"
+        "filtered revolutions per minute")
+      float rpm_estimate;
 
-      @verbatim (language="comment", text=
-        "estimated accuracy in Revolution per minute")
-      float estimated_accurancy_rpm;
+      float rpm_raw;
     };
   };
 };

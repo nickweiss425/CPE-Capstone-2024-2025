@@ -61,10 +61,10 @@ class VehicleAirData(metaclass=Metaclass_VehicleAirData):
         '_timestamp_sample',
         '_baro_device_id',
         '_baro_alt_meter',
-        '_baro_temp_celcius',
         '_baro_pressure_pa',
+        '_ambient_temperature',
+        '_temperature_source',
         '_rho',
-        '_eas2tas',
         '_calibration_count',
     ]
 
@@ -73,10 +73,10 @@ class VehicleAirData(metaclass=Metaclass_VehicleAirData):
         'timestamp_sample': 'uint64',
         'baro_device_id': 'uint32',
         'baro_alt_meter': 'float',
-        'baro_temp_celcius': 'float',
         'baro_pressure_pa': 'float',
+        'ambient_temperature': 'float',
+        'temperature_source': 'uint8',
         'rho': 'float',
-        'eas2tas': 'float',
         'calibration_count': 'uint8',
     }
 
@@ -87,7 +87,7 @@ class VehicleAirData(metaclass=Metaclass_VehicleAirData):
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
     )
@@ -100,10 +100,10 @@ class VehicleAirData(metaclass=Metaclass_VehicleAirData):
         self.timestamp_sample = kwargs.get('timestamp_sample', int())
         self.baro_device_id = kwargs.get('baro_device_id', int())
         self.baro_alt_meter = kwargs.get('baro_alt_meter', float())
-        self.baro_temp_celcius = kwargs.get('baro_temp_celcius', float())
         self.baro_pressure_pa = kwargs.get('baro_pressure_pa', float())
+        self.ambient_temperature = kwargs.get('ambient_temperature', float())
+        self.temperature_source = kwargs.get('temperature_source', int())
         self.rho = kwargs.get('rho', float())
-        self.eas2tas = kwargs.get('eas2tas', float())
         self.calibration_count = kwargs.get('calibration_count', int())
 
     def __repr__(self):
@@ -143,13 +143,13 @@ class VehicleAirData(metaclass=Metaclass_VehicleAirData):
             return False
         if self.baro_alt_meter != other.baro_alt_meter:
             return False
-        if self.baro_temp_celcius != other.baro_temp_celcius:
-            return False
         if self.baro_pressure_pa != other.baro_pressure_pa:
             return False
-        if self.rho != other.rho:
+        if self.ambient_temperature != other.ambient_temperature:
             return False
-        if self.eas2tas != other.eas2tas:
+        if self.temperature_source != other.temperature_source:
+            return False
+        if self.rho != other.rho:
             return False
         if self.calibration_count != other.calibration_count:
             return False
@@ -221,21 +221,6 @@ class VehicleAirData(metaclass=Metaclass_VehicleAirData):
         self._baro_alt_meter = value
 
     @builtins.property
-    def baro_temp_celcius(self):
-        """Message field 'baro_temp_celcius'."""
-        return self._baro_temp_celcius
-
-    @baro_temp_celcius.setter
-    def baro_temp_celcius(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'baro_temp_celcius' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'baro_temp_celcius' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._baro_temp_celcius = value
-
-    @builtins.property
     def baro_pressure_pa(self):
         """Message field 'baro_pressure_pa'."""
         return self._baro_pressure_pa
@@ -251,6 +236,36 @@ class VehicleAirData(metaclass=Metaclass_VehicleAirData):
         self._baro_pressure_pa = value
 
     @builtins.property
+    def ambient_temperature(self):
+        """Message field 'ambient_temperature'."""
+        return self._ambient_temperature
+
+    @ambient_temperature.setter
+    def ambient_temperature(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'ambient_temperature' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'ambient_temperature' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._ambient_temperature = value
+
+    @builtins.property
+    def temperature_source(self):
+        """Message field 'temperature_source'."""
+        return self._temperature_source
+
+    @temperature_source.setter
+    def temperature_source(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'temperature_source' field must be of type 'int'"
+            assert value >= 0 and value < 256, \
+                "The 'temperature_source' field must be an unsigned integer in [0, 255]"
+        self._temperature_source = value
+
+    @builtins.property
     def rho(self):
         """Message field 'rho'."""
         return self._rho
@@ -264,21 +279,6 @@ class VehicleAirData(metaclass=Metaclass_VehicleAirData):
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
                 "The 'rho' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._rho = value
-
-    @builtins.property
-    def eas2tas(self):
-        """Message field 'eas2tas'."""
-        return self._eas2tas
-
-    @eas2tas.setter
-    def eas2tas(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'eas2tas' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'eas2tas' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._eas2tas = value
 
     @builtins.property
     def calibration_count(self):

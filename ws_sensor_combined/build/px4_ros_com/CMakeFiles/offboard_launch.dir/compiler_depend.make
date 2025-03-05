@@ -765,21 +765,25 @@ CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o: /hom
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__type_support.hpp \
-  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/flight_command.hpp \
-  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__struct.hpp \
-  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__builder.hpp \
-  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__traits.hpp \
-  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__type_support.hpp \
-  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/gui_messages/include/gui_messages/gui_messages/msg/flight_command.hpp \
+  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/gui_messages/include/gui_messages/gui_messages/msg/detail/flight_command__struct.hpp \
+  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/gui_messages/include/gui_messages/gui_messages/msg/detail/flight_command__builder.hpp \
+  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/gui_messages/include/gui_messages/gui_messages/msg/detail/flight_command__traits.hpp \
+  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/gui_messages/include/gui_messages/gui_messages/msg/detail/flight_command__type_support.hpp \
+  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/gui_messages/include/gui_messages/gui_messages/msg/rosidl_generator_cpp__visibility_control.hpp
 
 
-/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__builder.hpp:
+/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/gui_messages/include/gui_messages/gui_messages/msg/rosidl_generator_cpp__visibility_control.hpp:
 
-/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__struct.hpp:
+/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/gui_messages/include/gui_messages/gui_messages/msg/detail/flight_command__type_support.hpp:
+
+/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/gui_messages/include/gui_messages/gui_messages/msg/detail/flight_command__builder.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__type_support.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp:
+
+/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/gui_messages/include/gui_messages/gui_messages/msg/detail/flight_command__traits.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp:
 
@@ -964,8 +968,6 @@ CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o: /hom
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
-
-/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
 
@@ -1359,8 +1361,6 @@ CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o: /hom
 
 /usr/include/c++/11/bits/std_thread.h:
 
-/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__type_support.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/c++/11/iterator:
@@ -1582,6 +1582,8 @@ CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o: /hom
 /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__type_support.hpp:
 
 /usr/include/c++/11/bits/basic_string.h:
+
+/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/gui_messages/include/gui_messages/gui_messages/msg/flight_command.hpp:
 
 /usr/include/c++/11/bits/exception_defines.h:
 
@@ -2169,8 +2171,6 @@ CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o: /hom
 
 /opt/ros/humble/include/rclcpp/rclcpp/visibility_control.hpp:
 
-/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/flight_command.hpp:
-
 /opt/ros/humble/include/rcl/rcl/event_callback.h:
 
 /opt/ros/humble/include/tracetools/tracetools/tracetools.h:
@@ -2255,6 +2255,8 @@ CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o: /hom
 
 /opt/ros/humble/include/rmw/rmw/network_flow_endpoint.h:
 
+/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/gui_messages/include/gui_messages/gui_messages/msg/detail/flight_command__struct.hpp:
+
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
 
 /opt/ros/humble/include/rmw/rmw/network_flow_endpoint_array.h:
@@ -2278,8 +2280,6 @@ CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o: /hom
 /opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp:
-
-/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__traits.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp:
 

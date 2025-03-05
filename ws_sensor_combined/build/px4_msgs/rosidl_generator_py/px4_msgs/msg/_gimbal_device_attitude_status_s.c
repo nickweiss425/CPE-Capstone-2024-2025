@@ -149,6 +149,33 @@ bool px4_msgs__msg__gimbal_device_attitude_status__convert_from_py(PyObject * _p
     ros_message->failure_flags = PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
+  {  // delta_yaw
+    PyObject * field = PyObject_GetAttrString(_pymsg, "delta_yaw");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->delta_yaw = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // delta_yaw_velocity
+    PyObject * field = PyObject_GetAttrString(_pymsg, "delta_yaw_velocity");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->delta_yaw_velocity = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // gimbal_device_id
+    PyObject * field = PyObject_GetAttrString(_pymsg, "gimbal_device_id");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->gimbal_device_id = (uint8_t)PyLong_AsUnsignedLong(field);
+    Py_DECREF(field);
+  }
   {  // received_from_mavlink
     PyObject * field = PyObject_GetAttrString(_pymsg, "received_from_mavlink");
     if (!field) {
@@ -280,6 +307,39 @@ PyObject * px4_msgs__msg__gimbal_device_attitude_status__convert_to_py(void * ra
     field = PyLong_FromUnsignedLong(ros_message->failure_flags);
     {
       int rc = PyObject_SetAttrString(_pymessage, "failure_flags", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // delta_yaw
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->delta_yaw);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "delta_yaw", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // delta_yaw_velocity
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->delta_yaw_velocity);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "delta_yaw_velocity", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // gimbal_device_id
+    PyObject * field = NULL;
+    field = PyLong_FromUnsignedLong(ros_message->gimbal_device_id);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "gimbal_device_id", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

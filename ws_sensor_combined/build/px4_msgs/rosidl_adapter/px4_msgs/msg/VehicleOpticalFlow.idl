@@ -25,7 +25,7 @@ module px4_msgs {
       float__2 pixel_flow;
 
       @verbatim (language="comment", text=
-        "(radians) accumulated gyro radians where a positive value is produced by a RH rotation about the body axis. (NAN if unavailable)")
+        "(radians) accumulated gyro radians where a positive value is produced by a RH rotation of the sensor about the body axis. (NAN if unavailable)")
       float__3 delta_angle;
 
       @verbatim (language="comment", text=

@@ -59,7 +59,7 @@ module px4_msgs {
       @unit (value="rad")
       float yaw_max;
 
-      uint8 gimbal_device_compid;
+      uint8 gimbal_device_id;
     };
   };
 };

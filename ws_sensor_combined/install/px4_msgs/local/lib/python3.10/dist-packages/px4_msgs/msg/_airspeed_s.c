@@ -86,15 +86,6 @@ bool px4_msgs__msg__airspeed__convert_from_py(PyObject * _pymsg, void * _ros_mes
     ros_message->true_airspeed_m_s = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // air_temperature_celsius
-    PyObject * field = PyObject_GetAttrString(_pymsg, "air_temperature_celsius");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->air_temperature_celsius = (float)PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
   {  // confidence
     PyObject * field = PyObject_GetAttrString(_pymsg, "confidence");
     if (!field) {
@@ -164,17 +155,6 @@ PyObject * px4_msgs__msg__airspeed__convert_to_py(void * raw_ros_message)
     field = PyFloat_FromDouble(ros_message->true_airspeed_m_s);
     {
       int rc = PyObject_SetAttrString(_pymessage, "true_airspeed_m_s", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // air_temperature_celsius
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->air_temperature_celsius);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "air_temperature_celsius", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

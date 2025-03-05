@@ -233,13 +233,13 @@ bool px4_msgs__msg__gimbal_device_information__convert_from_py(PyObject * _pymsg
     ros_message->yaw_max = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // gimbal_device_compid
-    PyObject * field = PyObject_GetAttrString(_pymsg, "gimbal_device_compid");
+  {  // gimbal_device_id
+    PyObject * field = PyObject_GetAttrString(_pymsg, "gimbal_device_id");
     if (!field) {
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->gimbal_device_compid = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->gimbal_device_id = (uint8_t)PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
 
@@ -450,11 +450,11 @@ PyObject * px4_msgs__msg__gimbal_device_information__convert_to_py(void * raw_ro
       }
     }
   }
-  {  // gimbal_device_compid
+  {  // gimbal_device_id
     PyObject * field = NULL;
-    field = PyLong_FromUnsignedLong(ros_message->gimbal_device_compid);
+    field = PyLong_FromUnsignedLong(ros_message->gimbal_device_id);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "gimbal_device_compid", field);
+      int rc = PyObject_SetAttrString(_pymessage, "gimbal_device_id", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

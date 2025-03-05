@@ -108,7 +108,7 @@ typedef struct px4_msgs__msg__GimbalDeviceInformation
   float pitch_max;
   float yaw_min;
   float yaw_max;
-  uint8_t gimbal_device_compid;
+  uint8_t gimbal_device_id;
 } px4_msgs__msg__GimbalDeviceInformation;
 
 // Struct for a sequence of px4_msgs__msg__GimbalDeviceInformation.

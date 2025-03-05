@@ -293,9 +293,6 @@ CMakeFiles/px4_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/px4_msg
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/battery_status__type_support.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/battery_status__struct.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/battery_status__functions.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/buffer128__type_support.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/buffer128__struct.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/button_event__type_support.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/button_event__struct.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.h
@@ -499,6 +496,9 @@ CMakeFiles/px4_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/px4_msg
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/input_rc__type_support.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/input_rc__struct.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__struct.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_status__type_support.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_status__struct.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_status__functions.h
@@ -682,33 +682,27 @@ CMakeFiles/px4_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/px4_msg
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__type_support.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__struct.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__functions.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__type_support.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__struct.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__type_support.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__struct.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__type_support.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__struct.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__type_support.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__struct.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__type_support.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__struct.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__type_support.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__struct.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__type_support.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__struct.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__type_support.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__struct.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__type_support.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__struct.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__struct.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__type_support.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__struct.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__struct.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__type_support.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__struct.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__struct.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__struct.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__type_support.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__struct.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rpm__type_support.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rpm__struct.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.h
@@ -799,15 +793,9 @@ CMakeFiles/px4_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/px4_msg
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__type_support.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__struct.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__type_support.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__struct.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__type_support.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__struct.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__struct.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/transponder_report__type_support.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/transponder_report__struct.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.h
@@ -904,12 +892,6 @@ CMakeFiles/px4_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/px4_msg
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__struct.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__struct.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__struct.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__type_support.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__struct.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.h

@@ -20,6 +20,7 @@ class Metaclass_ModeCompleted(type):
     _TYPE_SUPPORT = None
 
     __constants = {
+        'MESSAGE_VERSION': 0,
         'RESULT_SUCCESS': 0,
         'RESULT_FAILURE_OTHER': 100,
     }
@@ -50,9 +51,15 @@ class Metaclass_ModeCompleted(type):
         # the message class under "Data and other attributes defined here:"
         # as well as populate each message instance
         return {
+            'MESSAGE_VERSION': cls.__constants['MESSAGE_VERSION'],
             'RESULT_SUCCESS': cls.__constants['RESULT_SUCCESS'],
             'RESULT_FAILURE_OTHER': cls.__constants['RESULT_FAILURE_OTHER'],
         }
+
+    @property
+    def MESSAGE_VERSION(self):
+        """Message constant 'MESSAGE_VERSION'."""
+        return Metaclass_ModeCompleted.__constants['MESSAGE_VERSION']
 
     @property
     def RESULT_SUCCESS(self):
@@ -70,6 +77,7 @@ class ModeCompleted(metaclass=Metaclass_ModeCompleted):
     Message class 'ModeCompleted'.
 
     Constants:
+      MESSAGE_VERSION
       RESULT_SUCCESS
       RESULT_FAILURE_OTHER
     """

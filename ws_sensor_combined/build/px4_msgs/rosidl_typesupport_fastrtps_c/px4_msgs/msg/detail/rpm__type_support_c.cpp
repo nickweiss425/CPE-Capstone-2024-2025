@@ -54,14 +54,14 @@ static bool _Rpm__cdr_serialize(
     cdr << ros_message->timestamp;
   }
 
-  // Field name: indicated_frequency_rpm
+  // Field name: rpm_estimate
   {
-    cdr << ros_message->indicated_frequency_rpm;
+    cdr << ros_message->rpm_estimate;
   }
 
-  // Field name: estimated_accurancy_rpm
+  // Field name: rpm_raw
   {
-    cdr << ros_message->estimated_accurancy_rpm;
+    cdr << ros_message->rpm_raw;
   }
 
   return true;
@@ -81,14 +81,14 @@ static bool _Rpm__cdr_deserialize(
     cdr >> ros_message->timestamp;
   }
 
-  // Field name: indicated_frequency_rpm
+  // Field name: rpm_estimate
   {
-    cdr >> ros_message->indicated_frequency_rpm;
+    cdr >> ros_message->rpm_estimate;
   }
 
-  // Field name: estimated_accurancy_rpm
+  // Field name: rpm_raw
   {
-    cdr >> ros_message->estimated_accurancy_rpm;
+    cdr >> ros_message->rpm_raw;
   }
 
   return true;
@@ -114,15 +114,15 @@ size_t get_serialized_size_px4_msgs__msg__Rpm(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name indicated_frequency_rpm
+  // field.name rpm_estimate
   {
-    size_t item_size = sizeof(ros_message->indicated_frequency_rpm);
+    size_t item_size = sizeof(ros_message->rpm_estimate);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name estimated_accurancy_rpm
+  // field.name rpm_raw
   {
-    size_t item_size = sizeof(ros_message->estimated_accurancy_rpm);
+    size_t item_size = sizeof(ros_message->rpm_raw);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -163,7 +163,7 @@ size_t max_serialized_size_px4_msgs__msg__Rpm(
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: indicated_frequency_rpm
+  // member: rpm_estimate
   {
     size_t array_size = 1;
 
@@ -171,7 +171,7 @@ size_t max_serialized_size_px4_msgs__msg__Rpm(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: estimated_accurancy_rpm
+  // member: rpm_raw
   {
     size_t array_size = 1;
 
@@ -188,7 +188,7 @@ size_t max_serialized_size_px4_msgs__msg__Rpm(
     using DataType = px4_msgs__msg__Rpm;
     is_plain =
       (
-      offsetof(DataType, estimated_accurancy_rpm) +
+      offsetof(DataType, rpm_raw) +
       last_member_size
       ) == ret_val;
   }

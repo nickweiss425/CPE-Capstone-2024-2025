@@ -42,6 +42,7 @@ typedef struct px4_msgs__msg__Ekf2Timestamps
   /// *_timestamp_rel = absolute timestamp). For int16, this allows a maximum
   /// difference of +-3.2s to the sensor_combined topic.
   int16_t airspeed_timestamp_rel;
+  int16_t airspeed_validated_timestamp_rel;
   int16_t distance_sensor_timestamp_rel;
   int16_t optical_flow_timestamp_rel;
   int16_t vehicle_air_data_timestamp_rel;

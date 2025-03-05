@@ -96,8 +96,6 @@ cdr_serialize(
   cdr << (ros_message.heartbeat_component_log ? true : false);
   // Member: heartbeat_component_osd
   cdr << (ros_message.heartbeat_component_osd ? true : false);
-  // Member: heartbeat_component_obstacle_avoidance
-  cdr << (ros_message.heartbeat_component_obstacle_avoidance ? true : false);
   // Member: heartbeat_component_vio
   cdr << (ros_message.heartbeat_component_vio ? true : false);
   // Member: heartbeat_component_pairing_manager
@@ -106,8 +104,6 @@ cdr_serialize(
   cdr << (ros_message.heartbeat_component_udp_bridge ? true : false);
   // Member: heartbeat_component_uart_bridge
   cdr << (ros_message.heartbeat_component_uart_bridge ? true : false);
-  // Member: avoidance_system_healthy
-  cdr << (ros_message.avoidance_system_healthy ? true : false);
   // Member: open_drone_id_system_healthy
   cdr << (ros_message.open_drone_id_system_healthy ? true : false);
   // Member: parachute_system_healthy
@@ -277,13 +273,6 @@ cdr_deserialize(
     ros_message.heartbeat_component_osd = tmp ? true : false;
   }
 
-  // Member: heartbeat_component_obstacle_avoidance
-  {
-    uint8_t tmp;
-    cdr >> tmp;
-    ros_message.heartbeat_component_obstacle_avoidance = tmp ? true : false;
-  }
-
   // Member: heartbeat_component_vio
   {
     uint8_t tmp;
@@ -310,13 +299,6 @@ cdr_deserialize(
     uint8_t tmp;
     cdr >> tmp;
     ros_message.heartbeat_component_uart_bridge = tmp ? true : false;
-  }
-
-  // Member: avoidance_system_healthy
-  {
-    uint8_t tmp;
-    cdr >> tmp;
-    ros_message.avoidance_system_healthy = tmp ? true : false;
   }
 
   // Member: open_drone_id_system_healthy
@@ -541,12 +523,6 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: heartbeat_component_obstacle_avoidance
-  {
-    size_t item_size = sizeof(ros_message.heartbeat_component_obstacle_avoidance);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
   // Member: heartbeat_component_vio
   {
     size_t item_size = sizeof(ros_message.heartbeat_component_vio);
@@ -568,12 +544,6 @@ get_serialized_size(
   // Member: heartbeat_component_uart_bridge
   {
     size_t item_size = sizeof(ros_message.heartbeat_component_uart_bridge);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: avoidance_system_healthy
-  {
-    size_t item_size = sizeof(ros_message.avoidance_system_healthy);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -883,14 +853,6 @@ max_serialized_size_TelemetryStatus(
     current_alignment += array_size * sizeof(uint8_t);
   }
 
-  // Member: heartbeat_component_obstacle_avoidance
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
   // Member: heartbeat_component_vio
   {
     size_t array_size = 1;
@@ -916,14 +878,6 @@ max_serialized_size_TelemetryStatus(
   }
 
   // Member: heartbeat_component_uart_bridge
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Member: avoidance_system_healthy
   {
     size_t array_size = 1;
 

@@ -63,6 +63,7 @@ px4_msgs__msg__EstimatorStatusFlags__init(px4_msgs__msg__EstimatorStatusFlags * 
   // cs_opt_flow_terrain
   // cs_valid_fake_pos
   // cs_constant_pos
+  // cs_baro_fault
   // fault_status_changes
   // fs_bad_mag_x
   // fs_bad_mag_y
@@ -141,6 +142,7 @@ px4_msgs__msg__EstimatorStatusFlags__fini(px4_msgs__msg__EstimatorStatusFlags * 
   // cs_opt_flow_terrain
   // cs_valid_fake_pos
   // cs_constant_pos
+  // cs_baro_fault
   // fault_status_changes
   // fs_bad_mag_x
   // fs_bad_mag_y
@@ -356,6 +358,10 @@ px4_msgs__msg__EstimatorStatusFlags__are_equal(const px4_msgs__msg__EstimatorSta
   if (lhs->cs_constant_pos != rhs->cs_constant_pos) {
     return false;
   }
+  // cs_baro_fault
+  if (lhs->cs_baro_fault != rhs->cs_baro_fault) {
+    return false;
+  }
   // fault_status_changes
   if (lhs->fault_status_changes != rhs->fault_status_changes) {
     return false;
@@ -551,6 +557,8 @@ px4_msgs__msg__EstimatorStatusFlags__copy(
   output->cs_valid_fake_pos = input->cs_valid_fake_pos;
   // cs_constant_pos
   output->cs_constant_pos = input->cs_constant_pos;
+  // cs_baro_fault
+  output->cs_baro_fault = input->cs_baro_fault;
   // fault_status_changes
   output->fault_status_changes = input->fault_status_changes;
   // fs_bad_mag_x

@@ -12,6 +12,7 @@ module px4_msgs {
       const uint32 GIMBAL_MANAGER_FLAGS_ROLL_LOCK = 4;
       const uint32 GIMBAL_MANAGER_FLAGS_PITCH_LOCK = 8;
       const uint32 GIMBAL_MANAGER_FLAGS_YAW_LOCK = 16;
+      const uint8 ORB_QUEUE_LENGTH = 2;
     };
     struct GimbalManagerSetAttitude {
       @verbatim (language="comment", text=

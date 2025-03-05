@@ -23,20 +23,20 @@ module px4_msgs {
       float baro_alt_meter;
 
       @verbatim (language="comment", text=
-        "Temperature in degrees Celsius")
-      float baro_temp_celcius;
-
-      @verbatim (language="comment", text=
         "Absolute pressure in Pascals")
       float baro_pressure_pa;
 
       @verbatim (language="comment", text=
-        "air density")
-      float rho;
+        "Abient temperature in degrees Celsius")
+      float ambient_temperature;
 
       @verbatim (language="comment", text=
-        "equivalent airspeed to true airspeed conversion factor")
-      float eas2tas;
+        "Source of temperature data: 0: Default Temperature (15°C), 1: External Baro, 2: Airspeed")
+      uint8 temperature_source;
+
+      @verbatim (language="comment", text=
+        "air density")
+      float rho;
 
       @verbatim (language="comment", text=
         "Calibration changed counter. Monotonically increases whenever calibration changes.")

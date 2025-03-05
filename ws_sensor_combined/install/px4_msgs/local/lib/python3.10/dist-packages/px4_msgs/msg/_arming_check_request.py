@@ -20,6 +20,7 @@ class Metaclass_ArmingCheckRequest(type):
     _TYPE_SUPPORT = None
 
     __constants = {
+        'MESSAGE_VERSION': 0,
     }
 
     @classmethod
@@ -48,11 +49,22 @@ class Metaclass_ArmingCheckRequest(type):
         # the message class under "Data and other attributes defined here:"
         # as well as populate each message instance
         return {
+            'MESSAGE_VERSION': cls.__constants['MESSAGE_VERSION'],
         }
+
+    @property
+    def MESSAGE_VERSION(self):
+        """Message constant 'MESSAGE_VERSION'."""
+        return Metaclass_ArmingCheckRequest.__constants['MESSAGE_VERSION']
 
 
 class ArmingCheckRequest(metaclass=Metaclass_ArmingCheckRequest):
-    """Message class 'ArmingCheckRequest'."""
+    """
+    Message class 'ArmingCheckRequest'.
+
+    Constants:
+      MESSAGE_VERSION
+    """
 
     __slots__ = [
         '_timestamp',

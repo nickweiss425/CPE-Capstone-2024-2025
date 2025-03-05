@@ -129,10 +129,6 @@ module px4_msgs {
       boolean heartbeat_component_osd;
 
       @verbatim (language="comment", text=
-        "MAV_COMP_ID_OBSTACLE_AVOIDANCE")
-      boolean heartbeat_component_obstacle_avoidance;
-
-      @verbatim (language="comment", text=
         "MAV_COMP_ID_VISUAL_INERTIAL_ODOMETRY")
       boolean heartbeat_component_vio;
 
@@ -150,8 +146,6 @@ module px4_msgs {
 
       @verbatim (language="comment", text=
         "Misc component health")
-      boolean avoidance_system_healthy;
-
       boolean open_drone_id_system_healthy;
 
       boolean parachute_system_healthy;

@@ -110,8 +110,8 @@ class VehicleImu(metaclass=Metaclass_VehicleImu):
         'gyro_device_id': 'uint32',
         'delta_angle': 'float[3]',
         'delta_velocity': 'float[3]',
-        'delta_angle_dt': 'uint16',
-        'delta_velocity_dt': 'uint16',
+        'delta_angle_dt': 'uint32',
+        'delta_velocity_dt': 'uint32',
         'delta_angle_clipping': 'uint8',
         'delta_velocity_clipping': 'uint8',
         'accel_calibration_count': 'uint8',
@@ -125,8 +125,8 @@ class VehicleImu(metaclass=Metaclass_VehicleImu):
         rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
         rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('float'), 3),  # noqa: E501
         rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('float'), 3),  # noqa: E501
-        rosidl_parser.definition.BasicType('uint16'),  # noqa: E501
-        rosidl_parser.definition.BasicType('uint16'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
@@ -351,8 +351,8 @@ class VehicleImu(metaclass=Metaclass_VehicleImu):
             assert \
                 isinstance(value, int), \
                 "The 'delta_angle_dt' field must be of type 'int'"
-            assert value >= 0 and value < 65536, \
-                "The 'delta_angle_dt' field must be an unsigned integer in [0, 65535]"
+            assert value >= 0 and value < 4294967296, \
+                "The 'delta_angle_dt' field must be an unsigned integer in [0, 4294967295]"
         self._delta_angle_dt = value
 
     @builtins.property
@@ -366,8 +366,8 @@ class VehicleImu(metaclass=Metaclass_VehicleImu):
             assert \
                 isinstance(value, int), \
                 "The 'delta_velocity_dt' field must be of type 'int'"
-            assert value >= 0 and value < 65536, \
-                "The 'delta_velocity_dt' field must be an unsigned integer in [0, 65535]"
+            assert value >= 0 and value < 4294967296, \
+                "The 'delta_velocity_dt' field must be an unsigned integer in [0, 4294967295]"
         self._delta_velocity_dt = value
 
     @builtins.property

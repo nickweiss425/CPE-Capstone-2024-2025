@@ -766,10 +766,10 @@ CMakeFiles/offboard_launch.dir/src/examples/offboard/offboard_launch.cpp.o
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__type_support.hpp
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/flight_command.hpp
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__struct.hpp
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__builder.hpp
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__traits.hpp
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/flight_command__type_support.hpp
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/gui_messages/include/gui_messages/gui_messages/msg/flight_command.hpp
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/gui_messages/include/gui_messages/gui_messages/msg/detail/flight_command__struct.hpp
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/gui_messages/include/gui_messages/gui_messages/msg/detail/flight_command__builder.hpp
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/gui_messages/include/gui_messages/gui_messages/msg/detail/flight_command__traits.hpp
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/gui_messages/include/gui_messages/gui_messages/msg/detail/flight_command__type_support.hpp
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/install/gui_messages/include/gui_messages/gui_messages/msg/rosidl_generator_cpp__visibility_control.hpp
 

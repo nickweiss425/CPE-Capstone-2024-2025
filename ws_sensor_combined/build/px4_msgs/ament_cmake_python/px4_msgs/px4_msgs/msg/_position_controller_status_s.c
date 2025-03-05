@@ -122,24 +122,6 @@ bool px4_msgs__msg__position_controller_status__convert_from_py(PyObject * _pyms
     ros_message->acceptance_radius = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // yaw_acceptance
-    PyObject * field = PyObject_GetAttrString(_pymsg, "yaw_acceptance");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->yaw_acceptance = (float)PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // altitude_acceptance
-    PyObject * field = PyObject_GetAttrString(_pymsg, "altitude_acceptance");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->altitude_acceptance = (float)PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
   {  // type
     PyObject * field = PyObject_GetAttrString(_pymsg, "type");
     if (!field) {
@@ -253,28 +235,6 @@ PyObject * px4_msgs__msg__position_controller_status__convert_to_py(void * raw_r
     field = PyFloat_FromDouble(ros_message->acceptance_radius);
     {
       int rc = PyObject_SetAttrString(_pymessage, "acceptance_radius", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // yaw_acceptance
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->yaw_acceptance);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "yaw_acceptance", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // altitude_acceptance
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->altitude_acceptance);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "altitude_acceptance", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

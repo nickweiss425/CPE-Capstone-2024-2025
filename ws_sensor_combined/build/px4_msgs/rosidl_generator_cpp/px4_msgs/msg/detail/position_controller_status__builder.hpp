@@ -37,48 +37,16 @@ private:
   ::px4_msgs::msg::PositionControllerStatus msg_;
 };
 
-class Init_PositionControllerStatus_altitude_acceptance
-{
-public:
-  explicit Init_PositionControllerStatus_altitude_acceptance(::px4_msgs::msg::PositionControllerStatus & msg)
-  : msg_(msg)
-  {}
-  Init_PositionControllerStatus_type altitude_acceptance(::px4_msgs::msg::PositionControllerStatus::_altitude_acceptance_type arg)
-  {
-    msg_.altitude_acceptance = std::move(arg);
-    return Init_PositionControllerStatus_type(msg_);
-  }
-
-private:
-  ::px4_msgs::msg::PositionControllerStatus msg_;
-};
-
-class Init_PositionControllerStatus_yaw_acceptance
-{
-public:
-  explicit Init_PositionControllerStatus_yaw_acceptance(::px4_msgs::msg::PositionControllerStatus & msg)
-  : msg_(msg)
-  {}
-  Init_PositionControllerStatus_altitude_acceptance yaw_acceptance(::px4_msgs::msg::PositionControllerStatus::_yaw_acceptance_type arg)
-  {
-    msg_.yaw_acceptance = std::move(arg);
-    return Init_PositionControllerStatus_altitude_acceptance(msg_);
-  }
-
-private:
-  ::px4_msgs::msg::PositionControllerStatus msg_;
-};
-
 class Init_PositionControllerStatus_acceptance_radius
 {
 public:
   explicit Init_PositionControllerStatus_acceptance_radius(::px4_msgs::msg::PositionControllerStatus & msg)
   : msg_(msg)
   {}
-  Init_PositionControllerStatus_yaw_acceptance acceptance_radius(::px4_msgs::msg::PositionControllerStatus::_acceptance_radius_type arg)
+  Init_PositionControllerStatus_type acceptance_radius(::px4_msgs::msg::PositionControllerStatus::_acceptance_radius_type arg)
   {
     msg_.acceptance_radius = std::move(arg);
-    return Init_PositionControllerStatus_yaw_acceptance(msg_);
+    return Init_PositionControllerStatus_type(msg_);
   }
 
 private:

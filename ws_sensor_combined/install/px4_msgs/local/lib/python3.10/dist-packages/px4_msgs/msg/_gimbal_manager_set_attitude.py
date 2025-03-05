@@ -30,6 +30,7 @@ class Metaclass_GimbalManagerSetAttitude(type):
         'GIMBAL_MANAGER_FLAGS_ROLL_LOCK': 4,
         'GIMBAL_MANAGER_FLAGS_PITCH_LOCK': 8,
         'GIMBAL_MANAGER_FLAGS_YAW_LOCK': 16,
+        'ORB_QUEUE_LENGTH': 2,
     }
 
     @classmethod
@@ -63,6 +64,7 @@ class Metaclass_GimbalManagerSetAttitude(type):
             'GIMBAL_MANAGER_FLAGS_ROLL_LOCK': cls.__constants['GIMBAL_MANAGER_FLAGS_ROLL_LOCK'],
             'GIMBAL_MANAGER_FLAGS_PITCH_LOCK': cls.__constants['GIMBAL_MANAGER_FLAGS_PITCH_LOCK'],
             'GIMBAL_MANAGER_FLAGS_YAW_LOCK': cls.__constants['GIMBAL_MANAGER_FLAGS_YAW_LOCK'],
+            'ORB_QUEUE_LENGTH': cls.__constants['ORB_QUEUE_LENGTH'],
         }
 
     @property
@@ -90,6 +92,11 @@ class Metaclass_GimbalManagerSetAttitude(type):
         """Message constant 'GIMBAL_MANAGER_FLAGS_YAW_LOCK'."""
         return Metaclass_GimbalManagerSetAttitude.__constants['GIMBAL_MANAGER_FLAGS_YAW_LOCK']
 
+    @property
+    def ORB_QUEUE_LENGTH(self):
+        """Message constant 'ORB_QUEUE_LENGTH'."""
+        return Metaclass_GimbalManagerSetAttitude.__constants['ORB_QUEUE_LENGTH']
+
 
 class GimbalManagerSetAttitude(metaclass=Metaclass_GimbalManagerSetAttitude):
     """
@@ -101,6 +108,7 @@ class GimbalManagerSetAttitude(metaclass=Metaclass_GimbalManagerSetAttitude):
       GIMBAL_MANAGER_FLAGS_ROLL_LOCK
       GIMBAL_MANAGER_FLAGS_PITCH_LOCK
       GIMBAL_MANAGER_FLAGS_YAW_LOCK
+      ORB_QUEUE_LENGTH
     """
 
     __slots__ = [

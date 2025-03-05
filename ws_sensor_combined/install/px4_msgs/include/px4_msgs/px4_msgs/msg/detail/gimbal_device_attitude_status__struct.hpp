@@ -47,6 +47,9 @@ struct GimbalDeviceAttitudeStatus_
       this->angular_velocity_y = 0.0f;
       this->angular_velocity_z = 0.0f;
       this->failure_flags = 0ul;
+      this->delta_yaw = 0.0f;
+      this->delta_yaw_velocity = 0.0f;
+      this->gimbal_device_id = 0;
       this->received_from_mavlink = false;
     }
   }
@@ -66,6 +69,9 @@ struct GimbalDeviceAttitudeStatus_
       this->angular_velocity_y = 0.0f;
       this->angular_velocity_z = 0.0f;
       this->failure_flags = 0ul;
+      this->delta_yaw = 0.0f;
+      this->delta_yaw_velocity = 0.0f;
+      this->gimbal_device_id = 0;
       this->received_from_mavlink = false;
     }
   }
@@ -98,6 +104,15 @@ struct GimbalDeviceAttitudeStatus_
   using _failure_flags_type =
     uint32_t;
   _failure_flags_type failure_flags;
+  using _delta_yaw_type =
+    float;
+  _delta_yaw_type delta_yaw;
+  using _delta_yaw_velocity_type =
+    float;
+  _delta_yaw_velocity_type delta_yaw_velocity;
+  using _gimbal_device_id_type =
+    uint8_t;
+  _gimbal_device_id_type gimbal_device_id;
   using _received_from_mavlink_type =
     bool;
   _received_from_mavlink_type received_from_mavlink;
@@ -155,6 +170,24 @@ struct GimbalDeviceAttitudeStatus_
     const uint32_t & _arg)
   {
     this->failure_flags = _arg;
+    return *this;
+  }
+  Type & set__delta_yaw(
+    const float & _arg)
+  {
+    this->delta_yaw = _arg;
+    return *this;
+  }
+  Type & set__delta_yaw_velocity(
+    const float & _arg)
+  {
+    this->delta_yaw_velocity = _arg;
+    return *this;
+  }
+  Type & set__gimbal_device_id(
+    const uint8_t & _arg)
+  {
+    this->gimbal_device_id = _arg;
     return *this;
   }
   Type & set__received_from_mavlink(
@@ -241,6 +274,15 @@ struct GimbalDeviceAttitudeStatus_
       return false;
     }
     if (this->failure_flags != other.failure_flags) {
+      return false;
+    }
+    if (this->delta_yaw != other.delta_yaw) {
+      return false;
+    }
+    if (this->delta_yaw_velocity != other.delta_yaw_velocity) {
+      return false;
+    }
+    if (this->gimbal_device_id != other.gimbal_device_id) {
       return false;
     }
     if (this->received_from_mavlink != other.received_from_mavlink) {

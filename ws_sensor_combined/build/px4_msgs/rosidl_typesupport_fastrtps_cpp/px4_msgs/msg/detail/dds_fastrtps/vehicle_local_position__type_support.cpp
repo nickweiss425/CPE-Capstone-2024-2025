@@ -138,8 +138,10 @@ cdr_serialize(
   cdr << ros_message.vz_max;
   // Member: hagl_min
   cdr << ros_message.hagl_min;
-  // Member: hagl_max
-  cdr << ros_message.hagl_max;
+  // Member: hagl_max_z
+  cdr << ros_message.hagl_max_z;
+  // Member: hagl_max_xy
+  cdr << ros_message.hagl_max_xy;
   return true;
 }
 
@@ -342,8 +344,11 @@ cdr_deserialize(
   // Member: hagl_min
   cdr >> ros_message.hagl_min;
 
-  // Member: hagl_max
-  cdr >> ros_message.hagl_max;
+  // Member: hagl_max_z
+  cdr >> ros_message.hagl_max_z;
+
+  // Member: hagl_max_xy
+  cdr >> ros_message.hagl_max_xy;
 
   return true;
 }
@@ -669,9 +674,15 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: hagl_max
+  // Member: hagl_max_z
   {
-    size_t item_size = sizeof(ros_message.hagl_max);
+    size_t item_size = sizeof(ros_message.hagl_max_z);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: hagl_max_xy
+  {
+    size_t item_size = sizeof(ros_message.hagl_max_xy);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -1142,7 +1153,16 @@ max_serialized_size_VehicleLocalPosition(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Member: hagl_max
+  // Member: hagl_max_z
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: hagl_max_xy
   {
     size_t array_size = 1;
 
@@ -1159,7 +1179,7 @@ max_serialized_size_VehicleLocalPosition(
     using DataType = px4_msgs::msg::VehicleLocalPosition;
     is_plain =
       (
-      offsetof(DataType, hagl_max) +
+      offsetof(DataType, hagl_max_xy) +
       last_member_size
       ) == ret_val;
   }

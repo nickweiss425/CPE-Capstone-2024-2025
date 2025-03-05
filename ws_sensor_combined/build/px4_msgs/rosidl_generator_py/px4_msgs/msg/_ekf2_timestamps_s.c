@@ -68,6 +68,15 @@ bool px4_msgs__msg__ekf2_timestamps__convert_from_py(PyObject * _pymsg, void * _
     ros_message->airspeed_timestamp_rel = (int16_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
+  {  // airspeed_validated_timestamp_rel
+    PyObject * field = PyObject_GetAttrString(_pymsg, "airspeed_validated_timestamp_rel");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->airspeed_validated_timestamp_rel = (int16_t)PyLong_AsLong(field);
+    Py_DECREF(field);
+  }
   {  // distance_sensor_timestamp_rel
     PyObject * field = PyObject_GetAttrString(_pymsg, "distance_sensor_timestamp_rel");
     if (!field) {
@@ -151,6 +160,17 @@ PyObject * px4_msgs__msg__ekf2_timestamps__convert_to_py(void * raw_ros_message)
     field = PyLong_FromLong(ros_message->airspeed_timestamp_rel);
     {
       int rc = PyObject_SetAttrString(_pymessage, "airspeed_timestamp_rel", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // airspeed_validated_timestamp_rel
+    PyObject * field = NULL;
+    field = PyLong_FromLong(ros_message->airspeed_validated_timestamp_rel);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "airspeed_validated_timestamp_rel", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

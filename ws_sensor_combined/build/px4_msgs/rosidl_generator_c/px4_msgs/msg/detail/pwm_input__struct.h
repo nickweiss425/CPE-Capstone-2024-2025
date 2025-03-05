@@ -24,9 +24,9 @@ typedef struct px4_msgs__msg__PwmInput
   uint64_t timestamp;
   /// Timer overcapture error flag (AUX5 or MAIN5)
   uint64_t error_count;
-  /// Pulse width, timer counts
+  /// Pulse width, timer counts (microseconds)
   uint32_t pulse_width;
-  /// Period, timer counts
+  /// Period, timer counts (microseconds)
   uint32_t period;
 } px4_msgs__msg__PwmInput;
 

@@ -17,6 +17,12 @@ extern "C"
 
 // Constants defined in the message
 
+/// Constant 'MESSAGE_VERSION'.
+enum
+{
+  px4_msgs__msg__VehicleLandDetected__MESSAGE_VERSION = 0ul
+};
+
 /// Struct defined in msg/VehicleLandDetected in the package px4_msgs.
 typedef struct px4_msgs__msg__VehicleLandDetected
 {

@@ -56,15 +56,15 @@ module px4_msgs {
       boolean cs_wind;
 
       @verbatim (language="comment", text=
-        "9 - true when baro height is being fused as a primary height reference")
+        "9 - true when baro data is being fused")
       boolean cs_baro_hgt;
 
       @verbatim (language="comment", text=
-        "10 - true when range finder height is being fused as a primary height reference")
+        "10 - true when range finder data is being fused for height aiding")
       boolean cs_rng_hgt;
 
       @verbatim (language="comment", text=
-        "11 - true when GPS height is being fused as a primary height reference")
+        "11 - true when GPS altitude is being fused")
       boolean cs_gps_hgt;
 
       @verbatim (language="comment", text=
@@ -190,6 +190,10 @@ module px4_msgs {
       @verbatim (language="comment", text=
         "42 - true if the vehicle is at a constant position")
       boolean cs_constant_pos;
+
+      @verbatim (language="comment", text=
+        "43 - true when the current baro has been declared faulty and is no longer being used")
+      boolean cs_baro_fault;
 
       @verbatim (language="comment", text=
         "fault status" "\n"

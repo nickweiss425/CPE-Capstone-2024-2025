@@ -23,6 +23,7 @@ class Metaclass_RegisterExtComponentReply(type):
     _TYPE_SUPPORT = None
 
     __constants = {
+        'MESSAGE_VERSION': 0,
         'ORB_QUEUE_LENGTH': 2,
     }
 
@@ -52,8 +53,14 @@ class Metaclass_RegisterExtComponentReply(type):
         # the message class under "Data and other attributes defined here:"
         # as well as populate each message instance
         return {
+            'MESSAGE_VERSION': cls.__constants['MESSAGE_VERSION'],
             'ORB_QUEUE_LENGTH': cls.__constants['ORB_QUEUE_LENGTH'],
         }
+
+    @property
+    def MESSAGE_VERSION(self):
+        """Message constant 'MESSAGE_VERSION'."""
+        return Metaclass_RegisterExtComponentReply.__constants['MESSAGE_VERSION']
 
     @property
     def ORB_QUEUE_LENGTH(self):
@@ -66,6 +73,7 @@ class RegisterExtComponentReply(metaclass=Metaclass_RegisterExtComponentReply):
     Message class 'RegisterExtComponentReply'.
 
     Constants:
+      MESSAGE_VERSION
       ORB_QUEUE_LENGTH
     """
 

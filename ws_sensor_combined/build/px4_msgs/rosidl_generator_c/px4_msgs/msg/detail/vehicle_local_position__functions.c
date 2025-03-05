@@ -68,7 +68,8 @@ px4_msgs__msg__VehicleLocalPosition__init(px4_msgs__msg__VehicleLocalPosition * 
   // vxy_max
   // vz_max
   // hagl_min
-  // hagl_max
+  // hagl_max_z
+  // hagl_max_xy
   return true;
 }
 
@@ -129,7 +130,8 @@ px4_msgs__msg__VehicleLocalPosition__fini(px4_msgs__msg__VehicleLocalPosition * 
   // vxy_max
   // vz_max
   // hagl_min
-  // hagl_max
+  // hagl_max_z
+  // hagl_max_xy
 }
 
 bool
@@ -346,8 +348,12 @@ px4_msgs__msg__VehicleLocalPosition__are_equal(const px4_msgs__msg__VehicleLocal
   if (lhs->hagl_min != rhs->hagl_min) {
     return false;
   }
-  // hagl_max
-  if (lhs->hagl_max != rhs->hagl_max) {
+  // hagl_max_z
+  if (lhs->hagl_max_z != rhs->hagl_max_z) {
+    return false;
+  }
+  // hagl_max_xy
+  if (lhs->hagl_max_xy != rhs->hagl_max_xy) {
     return false;
   }
   return true;
@@ -467,8 +473,10 @@ px4_msgs__msg__VehicleLocalPosition__copy(
   output->vz_max = input->vz_max;
   // hagl_min
   output->hagl_min = input->hagl_min;
-  // hagl_max
-  output->hagl_max = input->hagl_max;
+  // hagl_max_z
+  output->hagl_max_z = input->hagl_max_z;
+  // hagl_max_xy
+  output->hagl_max_xy = input->hagl_max_xy;
   return true;
 }
 

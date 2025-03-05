@@ -22,10 +22,10 @@ typedef struct px4_msgs__msg__Rpm
 {
   /// time since system start (microseconds)
   uint64_t timestamp;
-  /// indicated rotor Frequency in Revolution per minute
-  float indicated_frequency_rpm;
-  /// estimated accuracy in Revolution per minute
-  float estimated_accurancy_rpm;
+  /// rpm values of 0.0 mean within a timeout there is no movement measured
+  /// filtered revolutions per minute
+  float rpm_estimate;
+  float rpm_raw;
 } px4_msgs__msg__Rpm;
 
 // Struct for a sequence of px4_msgs__msg__Rpm.

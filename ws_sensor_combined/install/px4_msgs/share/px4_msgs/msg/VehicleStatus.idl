@@ -6,6 +6,7 @@
 module px4_msgs {
   module msg {
     module VehicleStatus_Constants {
+      const uint32 MESSAGE_VERSION = 1;
       const uint8 ARMING_STATE_DISARMED = 1;
       const uint8 ARMING_STATE_ARMED = 2;
       const uint8 ARM_DISARM_REASON_TRANSITION_TO_STANDBY = 0;
@@ -257,14 +258,6 @@ module px4_msgs {
       boolean parachute_system_present;
 
       boolean parachute_system_healthy;
-
-      @verbatim (language="comment", text=
-        "Set to true if avoidance system is enabled via COM_OBS_AVOID parameter")
-      boolean avoidance_system_required;
-
-      @verbatim (language="comment", text=
-        "Status of the obstacle avoidance system")
-      boolean avoidance_system_valid;
 
       boolean rc_calibration_in_progress;
 

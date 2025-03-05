@@ -6,6 +6,9 @@
 module px4_msgs {
   module msg {
     typedef float float__4[4];
+    module VehicleAttitude_Constants {
+      const uint32 MESSAGE_VERSION = 0;
+    };
     @verbatim (language="comment", text=
       "This is similar to the mavlink message ATTITUDE_QUATERNION, but for onboard use" "\n"
       "The quaternion uses the Hamilton convention, and the order is q(w, x, y, z)")

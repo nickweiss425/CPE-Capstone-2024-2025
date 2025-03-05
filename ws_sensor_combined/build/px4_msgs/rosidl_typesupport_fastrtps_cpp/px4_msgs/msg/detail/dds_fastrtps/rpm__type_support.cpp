@@ -34,10 +34,10 @@ cdr_serialize(
 {
   // Member: timestamp
   cdr << ros_message.timestamp;
-  // Member: indicated_frequency_rpm
-  cdr << ros_message.indicated_frequency_rpm;
-  // Member: estimated_accurancy_rpm
-  cdr << ros_message.estimated_accurancy_rpm;
+  // Member: rpm_estimate
+  cdr << ros_message.rpm_estimate;
+  // Member: rpm_raw
+  cdr << ros_message.rpm_raw;
   return true;
 }
 
@@ -50,11 +50,11 @@ cdr_deserialize(
   // Member: timestamp
   cdr >> ros_message.timestamp;
 
-  // Member: indicated_frequency_rpm
-  cdr >> ros_message.indicated_frequency_rpm;
+  // Member: rpm_estimate
+  cdr >> ros_message.rpm_estimate;
 
-  // Member: estimated_accurancy_rpm
-  cdr >> ros_message.estimated_accurancy_rpm;
+  // Member: rpm_raw
+  cdr >> ros_message.rpm_raw;
 
   return true;
 }
@@ -78,15 +78,15 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: indicated_frequency_rpm
+  // Member: rpm_estimate
   {
-    size_t item_size = sizeof(ros_message.indicated_frequency_rpm);
+    size_t item_size = sizeof(ros_message.rpm_estimate);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: estimated_accurancy_rpm
+  // Member: rpm_raw
   {
-    size_t item_size = sizeof(ros_message.estimated_accurancy_rpm);
+    size_t item_size = sizeof(ros_message.rpm_raw);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -123,7 +123,7 @@ max_serialized_size_Rpm(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
-  // Member: indicated_frequency_rpm
+  // Member: rpm_estimate
   {
     size_t array_size = 1;
 
@@ -132,7 +132,7 @@ max_serialized_size_Rpm(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Member: estimated_accurancy_rpm
+  // Member: rpm_raw
   {
     size_t array_size = 1;
 
@@ -149,7 +149,7 @@ max_serialized_size_Rpm(
     using DataType = px4_msgs::msg::Rpm;
     is_plain =
       (
-      offsetof(DataType, estimated_accurancy_rpm) +
+      offsetof(DataType, rpm_raw) +
       last_member_size
       ) == ret_val;
   }

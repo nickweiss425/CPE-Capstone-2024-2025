@@ -42,10 +42,10 @@ struct VehicleAirData_
       this->timestamp_sample = 0ull;
       this->baro_device_id = 0ul;
       this->baro_alt_meter = 0.0f;
-      this->baro_temp_celcius = 0.0f;
       this->baro_pressure_pa = 0.0f;
+      this->ambient_temperature = 0.0f;
+      this->temperature_source = 0;
       this->rho = 0.0f;
-      this->eas2tas = 0.0f;
       this->calibration_count = 0;
     }
   }
@@ -60,10 +60,10 @@ struct VehicleAirData_
       this->timestamp_sample = 0ull;
       this->baro_device_id = 0ul;
       this->baro_alt_meter = 0.0f;
-      this->baro_temp_celcius = 0.0f;
       this->baro_pressure_pa = 0.0f;
+      this->ambient_temperature = 0.0f;
+      this->temperature_source = 0;
       this->rho = 0.0f;
-      this->eas2tas = 0.0f;
       this->calibration_count = 0;
     }
   }
@@ -81,18 +81,18 @@ struct VehicleAirData_
   using _baro_alt_meter_type =
     float;
   _baro_alt_meter_type baro_alt_meter;
-  using _baro_temp_celcius_type =
-    float;
-  _baro_temp_celcius_type baro_temp_celcius;
   using _baro_pressure_pa_type =
     float;
   _baro_pressure_pa_type baro_pressure_pa;
+  using _ambient_temperature_type =
+    float;
+  _ambient_temperature_type ambient_temperature;
+  using _temperature_source_type =
+    uint8_t;
+  _temperature_source_type temperature_source;
   using _rho_type =
     float;
   _rho_type rho;
-  using _eas2tas_type =
-    float;
-  _eas2tas_type eas2tas;
   using _calibration_count_type =
     uint8_t;
   _calibration_count_type calibration_count;
@@ -122,28 +122,28 @@ struct VehicleAirData_
     this->baro_alt_meter = _arg;
     return *this;
   }
-  Type & set__baro_temp_celcius(
-    const float & _arg)
-  {
-    this->baro_temp_celcius = _arg;
-    return *this;
-  }
   Type & set__baro_pressure_pa(
     const float & _arg)
   {
     this->baro_pressure_pa = _arg;
     return *this;
   }
+  Type & set__ambient_temperature(
+    const float & _arg)
+  {
+    this->ambient_temperature = _arg;
+    return *this;
+  }
+  Type & set__temperature_source(
+    const uint8_t & _arg)
+  {
+    this->temperature_source = _arg;
+    return *this;
+  }
   Type & set__rho(
     const float & _arg)
   {
     this->rho = _arg;
-    return *this;
-  }
-  Type & set__eas2tas(
-    const float & _arg)
-  {
-    this->eas2tas = _arg;
     return *this;
   }
   Type & set__calibration_count(
@@ -207,16 +207,16 @@ struct VehicleAirData_
     if (this->baro_alt_meter != other.baro_alt_meter) {
       return false;
     }
-    if (this->baro_temp_celcius != other.baro_temp_celcius) {
-      return false;
-    }
     if (this->baro_pressure_pa != other.baro_pressure_pa) {
       return false;
     }
-    if (this->rho != other.rho) {
+    if (this->ambient_temperature != other.ambient_temperature) {
       return false;
     }
-    if (this->eas2tas != other.eas2tas) {
+    if (this->temperature_source != other.temperature_source) {
+      return false;
+    }
+    if (this->rho != other.rho) {
       return false;
     }
     if (this->calibration_count != other.calibration_count) {

@@ -26,6 +26,9 @@ px4_msgs__msg__GimbalDeviceAttitudeStatus__init(px4_msgs__msg__GimbalDeviceAttit
   // angular_velocity_y
   // angular_velocity_z
   // failure_flags
+  // delta_yaw
+  // delta_yaw_velocity
+  // gimbal_device_id
   // received_from_mavlink
   return true;
 }
@@ -45,6 +48,9 @@ px4_msgs__msg__GimbalDeviceAttitudeStatus__fini(px4_msgs__msg__GimbalDeviceAttit
   // angular_velocity_y
   // angular_velocity_z
   // failure_flags
+  // delta_yaw
+  // delta_yaw_velocity
+  // gimbal_device_id
   // received_from_mavlink
 }
 
@@ -92,6 +98,18 @@ px4_msgs__msg__GimbalDeviceAttitudeStatus__are_equal(const px4_msgs__msg__Gimbal
   if (lhs->failure_flags != rhs->failure_flags) {
     return false;
   }
+  // delta_yaw
+  if (lhs->delta_yaw != rhs->delta_yaw) {
+    return false;
+  }
+  // delta_yaw_velocity
+  if (lhs->delta_yaw_velocity != rhs->delta_yaw_velocity) {
+    return false;
+  }
+  // gimbal_device_id
+  if (lhs->gimbal_device_id != rhs->gimbal_device_id) {
+    return false;
+  }
   // received_from_mavlink
   if (lhs->received_from_mavlink != rhs->received_from_mavlink) {
     return false;
@@ -127,6 +145,12 @@ px4_msgs__msg__GimbalDeviceAttitudeStatus__copy(
   output->angular_velocity_z = input->angular_velocity_z;
   // failure_flags
   output->failure_flags = input->failure_flags;
+  // delta_yaw
+  output->delta_yaw = input->delta_yaw;
+  // delta_yaw_velocity
+  output->delta_yaw_velocity = input->delta_yaw_velocity;
+  // gimbal_device_id
+  output->gimbal_device_id = input->gimbal_device_id;
   // received_from_mavlink
   output->received_from_mavlink = input->received_from_mavlink;
   return true;

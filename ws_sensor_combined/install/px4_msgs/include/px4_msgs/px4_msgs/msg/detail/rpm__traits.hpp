@@ -32,17 +32,17 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
-  // member: indicated_frequency_rpm
+  // member: rpm_estimate
   {
-    out << "indicated_frequency_rpm: ";
-    rosidl_generator_traits::value_to_yaml(msg.indicated_frequency_rpm, out);
+    out << "rpm_estimate: ";
+    rosidl_generator_traits::value_to_yaml(msg.rpm_estimate, out);
     out << ", ";
   }
 
-  // member: estimated_accurancy_rpm
+  // member: rpm_raw
   {
-    out << "estimated_accurancy_rpm: ";
-    rosidl_generator_traits::value_to_yaml(msg.estimated_accurancy_rpm, out);
+    out << "rpm_raw: ";
+    rosidl_generator_traits::value_to_yaml(msg.rpm_raw, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -61,23 +61,23 @@ inline void to_block_style_yaml(
     out << "\n";
   }
 
-  // member: indicated_frequency_rpm
+  // member: rpm_estimate
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "indicated_frequency_rpm: ";
-    rosidl_generator_traits::value_to_yaml(msg.indicated_frequency_rpm, out);
+    out << "rpm_estimate: ";
+    rosidl_generator_traits::value_to_yaml(msg.rpm_estimate, out);
     out << "\n";
   }
 
-  // member: estimated_accurancy_rpm
+  // member: rpm_raw
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "estimated_accurancy_rpm: ";
-    rosidl_generator_traits::value_to_yaml(msg.estimated_accurancy_rpm, out);
+    out << "rpm_raw: ";
+    rosidl_generator_traits::value_to_yaml(msg.rpm_raw, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

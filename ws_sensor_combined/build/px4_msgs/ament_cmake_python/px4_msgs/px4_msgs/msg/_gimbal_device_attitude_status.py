@@ -113,6 +113,9 @@ class GimbalDeviceAttitudeStatus(metaclass=Metaclass_GimbalDeviceAttitudeStatus)
         '_angular_velocity_y',
         '_angular_velocity_z',
         '_failure_flags',
+        '_delta_yaw',
+        '_delta_yaw_velocity',
+        '_gimbal_device_id',
         '_received_from_mavlink',
     ]
 
@@ -126,6 +129,9 @@ class GimbalDeviceAttitudeStatus(metaclass=Metaclass_GimbalDeviceAttitudeStatus)
         'angular_velocity_y': 'float',
         'angular_velocity_z': 'float',
         'failure_flags': 'uint32',
+        'delta_yaw': 'float',
+        'delta_yaw_velocity': 'float',
+        'gimbal_device_id': 'uint8',
         'received_from_mavlink': 'boolean',
     }
 
@@ -139,6 +145,9 @@ class GimbalDeviceAttitudeStatus(metaclass=Metaclass_GimbalDeviceAttitudeStatus)
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
     )
 
@@ -159,6 +168,9 @@ class GimbalDeviceAttitudeStatus(metaclass=Metaclass_GimbalDeviceAttitudeStatus)
         self.angular_velocity_y = kwargs.get('angular_velocity_y', float())
         self.angular_velocity_z = kwargs.get('angular_velocity_z', float())
         self.failure_flags = kwargs.get('failure_flags', int())
+        self.delta_yaw = kwargs.get('delta_yaw', float())
+        self.delta_yaw_velocity = kwargs.get('delta_yaw_velocity', float())
+        self.gimbal_device_id = kwargs.get('gimbal_device_id', int())
         self.received_from_mavlink = kwargs.get('received_from_mavlink', bool())
 
     def __repr__(self):
@@ -207,6 +219,12 @@ class GimbalDeviceAttitudeStatus(metaclass=Metaclass_GimbalDeviceAttitudeStatus)
         if self.angular_velocity_z != other.angular_velocity_z:
             return False
         if self.failure_flags != other.failure_flags:
+            return False
+        if self.delta_yaw != other.delta_yaw:
+            return False
+        if self.delta_yaw_velocity != other.delta_yaw_velocity:
+            return False
+        if self.gimbal_device_id != other.gimbal_device_id:
             return False
         if self.received_from_mavlink != other.received_from_mavlink:
             return False
@@ -367,6 +385,51 @@ class GimbalDeviceAttitudeStatus(metaclass=Metaclass_GimbalDeviceAttitudeStatus)
             assert value >= 0 and value < 4294967296, \
                 "The 'failure_flags' field must be an unsigned integer in [0, 4294967295]"
         self._failure_flags = value
+
+    @builtins.property
+    def delta_yaw(self):
+        """Message field 'delta_yaw'."""
+        return self._delta_yaw
+
+    @delta_yaw.setter
+    def delta_yaw(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'delta_yaw' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'delta_yaw' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._delta_yaw = value
+
+    @builtins.property
+    def delta_yaw_velocity(self):
+        """Message field 'delta_yaw_velocity'."""
+        return self._delta_yaw_velocity
+
+    @delta_yaw_velocity.setter
+    def delta_yaw_velocity(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'delta_yaw_velocity' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'delta_yaw_velocity' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._delta_yaw_velocity = value
+
+    @builtins.property
+    def gimbal_device_id(self):
+        """Message field 'gimbal_device_id'."""
+        return self._gimbal_device_id
+
+    @gimbal_device_id.setter
+    def gimbal_device_id(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'gimbal_device_id' field must be of type 'int'"
+            assert value >= 0 and value < 256, \
+                "The 'gimbal_device_id' field must be an unsigned integer in [0, 255]"
+        self._gimbal_device_id = value
 
     @builtins.property
     def received_from_mavlink(self):

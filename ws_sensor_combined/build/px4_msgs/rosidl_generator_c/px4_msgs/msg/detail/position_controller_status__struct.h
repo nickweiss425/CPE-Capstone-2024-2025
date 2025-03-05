@@ -36,10 +36,6 @@ typedef struct px4_msgs__msg__PositionControllerStatus
   float wp_dist;
   /// Current horizontal acceptance radius
   float acceptance_radius;
-  /// Yaw acceptance error
-  float yaw_acceptance;
-  /// Current vertical acceptance error
-  float altitude_acceptance;
   /// Current (applied) position setpoint type (see PositionSetpoint.msg)
   uint8_t type;
 } px4_msgs__msg__PositionControllerStatus;

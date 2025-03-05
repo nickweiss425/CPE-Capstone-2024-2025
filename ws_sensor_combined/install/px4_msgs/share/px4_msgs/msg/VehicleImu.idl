@@ -38,11 +38,11 @@ module px4_msgs {
 
       @verbatim (language="comment", text=
         "integration period in microseconds")
-      uint16 delta_angle_dt;
+      uint32 delta_angle_dt;
 
       @verbatim (language="comment", text=
         "integration period in microseconds")
-      uint16 delta_velocity_dt;
+      uint32 delta_velocity_dt;
 
       @verbatim (language="comment", text=
         "bitfield indicating if there was any gyro clipping (per axis) during the integration time frame")

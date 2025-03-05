@@ -20,6 +20,7 @@ class Metaclass_VtolVehicleStatus(type):
     _TYPE_SUPPORT = None
 
     __constants = {
+        'MESSAGE_VERSION': 0,
         'VEHICLE_VTOL_STATE_UNDEFINED': 0,
         'VEHICLE_VTOL_STATE_TRANSITION_TO_FW': 1,
         'VEHICLE_VTOL_STATE_TRANSITION_TO_MC': 2,
@@ -53,12 +54,18 @@ class Metaclass_VtolVehicleStatus(type):
         # the message class under "Data and other attributes defined here:"
         # as well as populate each message instance
         return {
+            'MESSAGE_VERSION': cls.__constants['MESSAGE_VERSION'],
             'VEHICLE_VTOL_STATE_UNDEFINED': cls.__constants['VEHICLE_VTOL_STATE_UNDEFINED'],
             'VEHICLE_VTOL_STATE_TRANSITION_TO_FW': cls.__constants['VEHICLE_VTOL_STATE_TRANSITION_TO_FW'],
             'VEHICLE_VTOL_STATE_TRANSITION_TO_MC': cls.__constants['VEHICLE_VTOL_STATE_TRANSITION_TO_MC'],
             'VEHICLE_VTOL_STATE_MC': cls.__constants['VEHICLE_VTOL_STATE_MC'],
             'VEHICLE_VTOL_STATE_FW': cls.__constants['VEHICLE_VTOL_STATE_FW'],
         }
+
+    @property
+    def MESSAGE_VERSION(self):
+        """Message constant 'MESSAGE_VERSION'."""
+        return Metaclass_VtolVehicleStatus.__constants['MESSAGE_VERSION']
 
     @property
     def VEHICLE_VTOL_STATE_UNDEFINED(self):
@@ -91,6 +98,7 @@ class VtolVehicleStatus(metaclass=Metaclass_VtolVehicleStatus):
     Message class 'VtolVehicleStatus'.
 
     Constants:
+      MESSAGE_VERSION
       VEHICLE_VTOL_STATE_UNDEFINED
       VEHICLE_VTOL_STATE_TRANSITION_TO_FW
       VEHICLE_VTOL_STATE_TRANSITION_TO_MC

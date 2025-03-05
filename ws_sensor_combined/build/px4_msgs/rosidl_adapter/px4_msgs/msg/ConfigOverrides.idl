@@ -6,6 +6,7 @@
 module px4_msgs {
   module msg {
     module ConfigOverrides_Constants {
+      const uint32 MESSAGE_VERSION = 0;
       const int8 SOURCE_TYPE_MODE = 0;
       const int8 SOURCE_TYPE_MODE_EXECUTOR = 1;
       const uint8 ORB_QUEUE_LENGTH = 4;

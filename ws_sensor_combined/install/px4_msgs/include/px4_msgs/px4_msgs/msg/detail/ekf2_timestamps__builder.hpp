@@ -101,16 +101,32 @@ private:
   ::px4_msgs::msg::Ekf2Timestamps msg_;
 };
 
+class Init_Ekf2Timestamps_airspeed_validated_timestamp_rel
+{
+public:
+  explicit Init_Ekf2Timestamps_airspeed_validated_timestamp_rel(::px4_msgs::msg::Ekf2Timestamps & msg)
+  : msg_(msg)
+  {}
+  Init_Ekf2Timestamps_distance_sensor_timestamp_rel airspeed_validated_timestamp_rel(::px4_msgs::msg::Ekf2Timestamps::_airspeed_validated_timestamp_rel_type arg)
+  {
+    msg_.airspeed_validated_timestamp_rel = std::move(arg);
+    return Init_Ekf2Timestamps_distance_sensor_timestamp_rel(msg_);
+  }
+
+private:
+  ::px4_msgs::msg::Ekf2Timestamps msg_;
+};
+
 class Init_Ekf2Timestamps_airspeed_timestamp_rel
 {
 public:
   explicit Init_Ekf2Timestamps_airspeed_timestamp_rel(::px4_msgs::msg::Ekf2Timestamps & msg)
   : msg_(msg)
   {}
-  Init_Ekf2Timestamps_distance_sensor_timestamp_rel airspeed_timestamp_rel(::px4_msgs::msg::Ekf2Timestamps::_airspeed_timestamp_rel_type arg)
+  Init_Ekf2Timestamps_airspeed_validated_timestamp_rel airspeed_timestamp_rel(::px4_msgs::msg::Ekf2Timestamps::_airspeed_timestamp_rel_type arg)
   {
     msg_.airspeed_timestamp_rel = std::move(arg);
-    return Init_Ekf2Timestamps_distance_sensor_timestamp_rel(msg_);
+    return Init_Ekf2Timestamps_airspeed_validated_timestamp_rel(msg_);
   }
 
 private:

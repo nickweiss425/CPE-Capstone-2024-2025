@@ -18,8 +18,8 @@ px4_msgs__msg__Rpm__init(px4_msgs__msg__Rpm * msg)
     return false;
   }
   // timestamp
-  // indicated_frequency_rpm
-  // estimated_accurancy_rpm
+  // rpm_estimate
+  // rpm_raw
   return true;
 }
 
@@ -30,8 +30,8 @@ px4_msgs__msg__Rpm__fini(px4_msgs__msg__Rpm * msg)
     return;
   }
   // timestamp
-  // indicated_frequency_rpm
-  // estimated_accurancy_rpm
+  // rpm_estimate
+  // rpm_raw
 }
 
 bool
@@ -44,12 +44,12 @@ px4_msgs__msg__Rpm__are_equal(const px4_msgs__msg__Rpm * lhs, const px4_msgs__ms
   if (lhs->timestamp != rhs->timestamp) {
     return false;
   }
-  // indicated_frequency_rpm
-  if (lhs->indicated_frequency_rpm != rhs->indicated_frequency_rpm) {
+  // rpm_estimate
+  if (lhs->rpm_estimate != rhs->rpm_estimate) {
     return false;
   }
-  // estimated_accurancy_rpm
-  if (lhs->estimated_accurancy_rpm != rhs->estimated_accurancy_rpm) {
+  // rpm_raw
+  if (lhs->rpm_raw != rhs->rpm_raw) {
     return false;
   }
   return true;
@@ -65,10 +65,10 @@ px4_msgs__msg__Rpm__copy(
   }
   // timestamp
   output->timestamp = input->timestamp;
-  // indicated_frequency_rpm
-  output->indicated_frequency_rpm = input->indicated_frequency_rpm;
-  // estimated_accurancy_rpm
-  output->estimated_accurancy_rpm = input->estimated_accurancy_rpm;
+  // rpm_estimate
+  output->rpm_estimate = input->rpm_estimate;
+  // rpm_raw
+  output->rpm_raw = input->rpm_raw;
   return true;
 }
 

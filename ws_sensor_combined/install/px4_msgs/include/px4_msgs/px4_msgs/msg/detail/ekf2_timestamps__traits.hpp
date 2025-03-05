@@ -39,6 +39,13 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
+  // member: airspeed_validated_timestamp_rel
+  {
+    out << "airspeed_validated_timestamp_rel: ";
+    rosidl_generator_traits::value_to_yaml(msg.airspeed_validated_timestamp_rel, out);
+    out << ", ";
+  }
+
   // member: distance_sensor_timestamp_rel
   {
     out << "distance_sensor_timestamp_rel: ";
@@ -96,6 +103,16 @@ inline void to_block_style_yaml(
     }
     out << "airspeed_timestamp_rel: ";
     rosidl_generator_traits::value_to_yaml(msg.airspeed_timestamp_rel, out);
+    out << "\n";
+  }
+
+  // member: airspeed_validated_timestamp_rel
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "airspeed_validated_timestamp_rel: ";
+    rosidl_generator_traits::value_to_yaml(msg.airspeed_validated_timestamp_rel, out);
     out << "\n";
   }
 

@@ -226,7 +226,7 @@ static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__VehicleI
   },
   {
     "delta_angle_dt",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT16,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -243,7 +243,7 @@ static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__VehicleI
   },
   {
     "delta_velocity_dt",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT16,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array

@@ -31,7 +31,7 @@ void px4_msgs__msg__VehicleStatus__rosidl_typesupport_introspection_c__VehicleSt
   px4_msgs__msg__VehicleStatus__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__VehicleStatus__rosidl_typesupport_introspection_c__VehicleStatus_message_member_array[41] = {
+static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__VehicleStatus__rosidl_typesupport_introspection_c__VehicleStatus_message_member_array[39] = {
   {
     "timestamp",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT64,  // type
@@ -645,40 +645,6 @@ static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__VehicleS
     NULL  // resize(index) function pointer
   },
   {
-    "avoidance_system_required",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(px4_msgs__msg__VehicleStatus, avoidance_system_required),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "avoidance_system_valid",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(px4_msgs__msg__VehicleStatus, avoidance_system_valid),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
     "rc_calibration_in_progress",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
@@ -734,7 +700,7 @@ static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__VehicleS
 static const rosidl_typesupport_introspection_c__MessageMembers px4_msgs__msg__VehicleStatus__rosidl_typesupport_introspection_c__VehicleStatus_message_members = {
   "px4_msgs__msg",  // message namespace
   "VehicleStatus",  // message name
-  41,  // number of fields
+  39,  // number of fields
   sizeof(px4_msgs__msg__VehicleStatus),
   px4_msgs__msg__VehicleStatus__rosidl_typesupport_introspection_c__VehicleStatus_message_member_array,  // message members
   px4_msgs__msg__VehicleStatus__rosidl_typesupport_introspection_c__VehicleStatus_init_function,  // function to initialize message memory (memory has to be allocated)

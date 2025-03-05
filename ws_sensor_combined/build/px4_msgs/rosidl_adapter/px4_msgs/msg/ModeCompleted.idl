@@ -6,6 +6,7 @@
 module px4_msgs {
   module msg {
     module ModeCompleted_Constants {
+      const uint32 MESSAGE_VERSION = 0;
       const uint8 RESULT_SUCCESS = 0;
       @verbatim (language="comment", text=
         ": reserved" "\n"        " Mode failed (generic error)")

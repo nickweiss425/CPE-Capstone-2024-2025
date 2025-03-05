@@ -20,6 +20,7 @@ class Metaclass_ConfigOverrides(type):
     _TYPE_SUPPORT = None
 
     __constants = {
+        'MESSAGE_VERSION': 0,
         'SOURCE_TYPE_MODE': 0,
         'SOURCE_TYPE_MODE_EXECUTOR': 1,
         'ORB_QUEUE_LENGTH': 4,
@@ -51,10 +52,16 @@ class Metaclass_ConfigOverrides(type):
         # the message class under "Data and other attributes defined here:"
         # as well as populate each message instance
         return {
+            'MESSAGE_VERSION': cls.__constants['MESSAGE_VERSION'],
             'SOURCE_TYPE_MODE': cls.__constants['SOURCE_TYPE_MODE'],
             'SOURCE_TYPE_MODE_EXECUTOR': cls.__constants['SOURCE_TYPE_MODE_EXECUTOR'],
             'ORB_QUEUE_LENGTH': cls.__constants['ORB_QUEUE_LENGTH'],
         }
+
+    @property
+    def MESSAGE_VERSION(self):
+        """Message constant 'MESSAGE_VERSION'."""
+        return Metaclass_ConfigOverrides.__constants['MESSAGE_VERSION']
 
     @property
     def SOURCE_TYPE_MODE(self):
@@ -77,6 +84,7 @@ class ConfigOverrides(metaclass=Metaclass_ConfigOverrides):
     Message class 'ConfigOverrides'.
 
     Constants:
+      MESSAGE_VERSION
       SOURCE_TYPE_MODE
       SOURCE_TYPE_MODE_EXECUTOR
       ORB_QUEUE_LENGTH

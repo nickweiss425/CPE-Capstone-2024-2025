@@ -1030,70 +1030,6 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
   rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/px4_msgs/msg/detail/battery_status__struct.h
 
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.c \
-  /usr/include/stdc-predef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__rosidl_typesupport_introspection_c.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/features.h \
-  /usr/include/features-time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
-  rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.h \
-  /usr/include/stdlib.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/buffer128__struct.h
-
 CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/button_event__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/button_event__type_support.c \
   /usr/include/stdc-predef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
@@ -5451,6 +5387,70 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
   rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/px4_msgs/msg/detail/input_rc__struct.h
 
+CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.c \
+  /usr/include/stdc-predef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__rosidl_typesupport_introspection_c.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  rosidl_typesupport_introspection_c/px4_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
+  rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
+  rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__struct.h
+
 CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_status__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_status__type_support.c \
   /usr/include/stdc-predef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
@@ -9360,10 +9360,10 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
   rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__struct.h
 
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__type_support.c \
+CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.c \
   /usr/include/stdc-predef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__rosidl_typesupport_introspection_c.h \
+  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__rosidl_typesupport_introspection_c.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
@@ -9391,7 +9391,7 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
   /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.h \
+  rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.h \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -9422,12 +9422,12 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__struct.h
+  rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__struct.h
 
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_setpoint__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_setpoint__type_support.c \
+CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.c \
   /usr/include/stdc-predef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_setpoint__rosidl_typesupport_introspection_c.h \
+  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__rosidl_typesupport_introspection_c.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
@@ -9455,7 +9455,7 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
   /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.h \
+  rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.h \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -9486,12 +9486,12 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__struct.h
+  rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__struct.h
 
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_status__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_status__type_support.c \
+CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.c \
   /usr/include/stdc-predef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_status__rosidl_typesupport_introspection_c.h \
+  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__rosidl_typesupport_introspection_c.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
@@ -9519,7 +9519,7 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
   /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.h \
+  rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.h \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -9550,12 +9550,12 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__struct.h
+  rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__struct.h
 
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_guidance_status__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_guidance_status__type_support.c \
+CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.c \
   /usr/include/stdc-predef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_guidance_status__rosidl_typesupport_introspection_c.h \
+  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__rosidl_typesupport_introspection_c.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
@@ -9583,7 +9583,7 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
   /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.h \
+  rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.h \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -9614,12 +9614,12 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__struct.h
+  rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__struct.h
 
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_setpoint__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_setpoint__type_support.c \
+CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.c \
   /usr/include/stdc-predef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_setpoint__rosidl_typesupport_introspection_c.h \
+  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__rosidl_typesupport_introspection_c.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
@@ -9647,7 +9647,7 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
   /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.h \
+  rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.h \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -9678,12 +9678,12 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__struct.h
+  rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__struct.h
 
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_status__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_status__type_support.c \
+CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.c \
   /usr/include/stdc-predef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_status__rosidl_typesupport_introspection_c.h \
+  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__rosidl_typesupport_introspection_c.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
@@ -9711,7 +9711,7 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
   /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.h \
+  rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.h \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -9742,12 +9742,12 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__struct.h
+  rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__struct.h
 
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__type_support.c \
+CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.c \
   /usr/include/stdc-predef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__rosidl_typesupport_introspection_c.h \
+  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__rosidl_typesupport_introspection_c.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
@@ -9775,7 +9775,7 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
   /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.h \
+  rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.h \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -9806,135 +9806,7 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__struct.h
-
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_setpoint__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_setpoint__type_support.c \
-  /usr/include/stdc-predef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_setpoint__rosidl_typesupport_introspection_c.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/features.h \
-  /usr/include/features-time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.h \
-  /usr/include/stdlib.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__struct.h
-
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_status__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_status__type_support.c \
-  /usr/include/stdc-predef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_status__rosidl_typesupport_introspection_c.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/features.h \
-  /usr/include/features-time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.h \
-  /usr/include/stdlib.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__struct.h
+  rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__struct.h
 
 CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rpm__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rpm__type_support.c \
   /usr/include/stdc-predef.h \
@@ -11856,70 +11728,6 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
   rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/px4_msgs/msg/detail/timesync_status__struct.h
 
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.c \
-  /usr/include/stdc-predef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__rosidl_typesupport_introspection_c.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/features.h \
-  /usr/include/features-time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
-  rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.h \
-  /usr/include/stdlib.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__struct.h
-
 CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_setpoint__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_setpoint__type_support.c \
   /usr/include/stdc-predef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
@@ -11983,70 +11791,6 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__struct.h
-
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.c \
-  /usr/include/stdc-predef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__rosidl_typesupport_introspection_c.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/features.h \
-  /usr/include/features-time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
-  rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.h \
-  /usr/include/stdlib.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__struct.h
 
 CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/transponder_report__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/transponder_report__type_support.c \
   /usr/include/stdc-predef.h \
@@ -14096,144 +13840,6 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
   rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__struct.h
 
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.c \
-  /usr/include/stdc-predef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__rosidl_typesupport_introspection_c.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/features.h \
-  /usr/include/features-time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
-  rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.h \
-  /usr/include/stdlib.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__struct.h \
-  rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__struct.h \
-  rosidl_generator_c/px4_msgs/msg/trajectory_bezier.h \
-  rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.h \
-  rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__type_support.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__rosidl_typesupport_introspection_c.h
-
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.c \
-  /usr/include/stdc-predef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__rosidl_typesupport_introspection_c.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/features.h \
-  /usr/include/features-time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h \
-  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
-  rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.h \
-  /usr/include/stdlib.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__struct.h \
-  rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__struct.h \
-  rosidl_generator_c/px4_msgs/msg/trajectory_waypoint.h \
-  rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.h \
-  rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.h \
-  rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__rosidl_typesupport_introspection_c.h
-
 CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/velocity_limits__type_support.c.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/velocity_limits__type_support.c \
   /usr/include/stdc-predef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
@@ -14639,6 +14245,8 @@ rosidl_generator_c/px4_msgs/srv/detail/vehicle_command__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/yaw_estimator_status__struct.h:
 
+rosidl_generator_c/px4_msgs/msg/detail/yaw_estimator_status__functions.h:
+
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/yaw_estimator_status__rosidl_typesupport_introspection_c.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/yaw_estimator_status__type_support.c:
@@ -14659,8 +14267,6 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vtol_vehicle_status__type
 
 rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__struct.h:
 
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.c:
-
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_thrust_setpoint__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_status__struct.h:
@@ -14675,15 +14281,11 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_rates_setpoint__t
 
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow_vel__struct.h:
 
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_optical_flow_vel__rosidl_typesupport_introspection_c.h:
-
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_optical_flow_vel__type_support.c:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_odometry__rosidl_typesupport_introspection_c.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_odometry__type_support.c:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__rosidl_typesupport_introspection_c.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_magnetometer__functions.h:
 
@@ -14771,7 +14373,13 @@ rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_value__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_request__struct.h:
 
+rosidl_generator_c/px4_msgs/msg/detail/vehicle_command_ack__functions.h:
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/uavcan_parameter_request__rosidl_typesupport_introspection_c.h:
+
 rosidl_generator_c/px4_msgs/msg/detail/tune_control__functions.h:
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tune_control__rosidl_typesupport_introspection_c.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.h:
 
@@ -14779,19 +14387,11 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/transponder_report__rosid
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/transponder_report__type_support.c:
 
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__rosidl_typesupport_introspection_c.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.c:
-
 rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_control_mode__struct.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_setpoint__rosidl_typesupport_introspection_c.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__rosidl_typesupport_introspection_c.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/timesync_status__struct.h:
 
@@ -14831,8 +14431,6 @@ rosidl_generator_c/px4_msgs/msg/detail/system_power__functions.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/system_power__rosidl_typesupport_introspection_c.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__struct.h:
-
 rosidl_generator_c/px4_msgs/msg/detail/sensors_status_imu__functions.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/sensors_status_imu__rosidl_typesupport_introspection_c.h:
@@ -14863,6 +14461,10 @@ rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fft__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fft__functions.h:
 
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro__struct.h:
+
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/sensor_gyro__rosidl_typesupport_introspection_c.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/wheel_encoders__rosidl_typesupport_introspection_c.h:
@@ -14886,6 +14488,8 @@ rosidl_generator_c/px4_msgs/msg/detail/sensor_combined__struct.h:
 rosidl_generator_c/px4_msgs/msg/detail/sensor_combined__functions.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/sensor_combined__type_support.c:
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/sensor_baro__type_support.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/sensor_airflow__struct.h:
 
@@ -14935,65 +14539,43 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_attitude_setpoint
 
 rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.h:
 
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
+rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__struct.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro__struct.h:
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__rosidl_typesupport_introspection_c.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.h:
+rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.h:
 
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_status__rosidl_typesupport_introspection_c.h:
+rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__struct.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.h:
+rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.h:
 
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_setpoint__rosidl_typesupport_introspection_c.h:
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__rosidl_typesupport_introspection_c.h:
 
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_setpoint__type_support.c:
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.c:
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__struct.h:
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_optical_flow_vel__rosidl_typesupport_introspection_c.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/yaw_estimator_status__functions.h:
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__struct.h:
 
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__rosidl_typesupport_introspection_c.h:
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.h:
 
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__type_support.c:
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__rosidl_typesupport_introspection_c.h:
 
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/sensor_baro__type_support.c:
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__struct.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.h:
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.h:
 
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_status__type_support.c:
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.c:
 
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_command_ack__functions.h:
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__rosidl_typesupport_introspection_c.h:
 
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/uavcan_parameter_request__rosidl_typesupport_introspection_c.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_setpoint__rosidl_typesupport_introspection_c.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_setpoint__type_support.c:
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__struct.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_guidance_status__type_support.c:
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_setpoint__type_support.c:
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__struct.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/tune_control__rosidl_typesupport_introspection_c.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__type_support.c:
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__struct.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/register_ext_component_request__rosidl_typesupport_introspection_c.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_reply__struct.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rc_channels__rosidl_typesupport_introspection_c.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_angular_velocity__type_support.c:
 
@@ -15037,8 +14619,6 @@ rosidl_generator_c/px4_msgs/msg/detail/px4io_status__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/px4io_status__functions.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.h:
-
 rosidl_generator_c/px4_msgs/msg/detail/sensor_mag__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/pwm_input__struct.h:
@@ -15050,8 +14630,6 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pwm_input__type_support.c
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pps_capture__rosidl_typesupport_introspection_c.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/sensor_accel_fifo__struct.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/power_monitor__struct.h:
 
@@ -15163,13 +14741,33 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/orb_test_large__rosidl_ty
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/orb_test_large__type_support.c:
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.h:
-
 rosidl_generator_c/px4_msgs/msg/detail/orb_test__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/orb_test__functions.h:
 
+rosidl_generator_c/px4_msgs/msg/detail/estimator_selector_status__struct.h:
+
 rosidl_generator_c/px4_msgs/msg/detail/estimator_selector_status__functions.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/estimator_innovations__functions.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/pps_capture__struct.h:
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/estimator_sensor_bias__rosidl_typesupport_introspection_c.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/rtl_status__struct.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/event__type_support.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/vehicle_air_data__functions.h:
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/satellite_info__rosidl_typesupport_introspection_c.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/figure_eight_status__struct.h:
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__rosidl_typesupport_introspection_c.h:
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_mission_item__type_support.c:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/estimator_innovations__rosidl_typesupport_introspection_c.h:
 
@@ -15191,8 +14789,6 @@ rosidl_generator_c/px4_msgs/msg/detail/estimator_bias__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/estimator_innovations__struct.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__struct.h:
-
 rosidl_generator_c/px4_msgs/msg/detail/mavlink_tunnel__struct.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/estimator_bias__type_support.c:
@@ -15207,6 +14803,8 @@ rosidl_generator_c/px4_msgs/msg/detail/estimator_bias3d__struct.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/camera_capture__rosidl_typesupport_introspection_c.h:
 
+rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.h:
+
 rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source3d__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source1d__struct.h:
@@ -15218,8 +14816,6 @@ rosidl_generator_c/px4_msgs/msg/detail/esc_report__type_support.h:
 rosidl_generator_c/px4_msgs/msg/detail/rc_channels__struct.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/esc_status__rosidl_typesupport_introspection_c.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
@@ -15307,13 +14903,7 @@ rosidl_generator_c/px4_msgs/msg/detail/follow_target__functions.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/estimator_bias3d__rosidl_typesupport_introspection_c.h:
 
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_status__type_support.c:
-
 rosidl_generator_c/px4_msgs/msg/detail/debug_array__functions.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_status__rosidl_typesupport_introspection_c.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_setpoint__rosidl_typesupport_introspection_c.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/dataman_request__struct.h:
 
@@ -15383,6 +14973,14 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/gimbal_device_attitude_st
 
 rosidl_generator_c/px4_msgs/msg/detail/gpio_in__functions.h:
 
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/manual_control_switches__rosidl_typesupport_introspection_c.h:
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_pressure__type_support.c:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/can_interface_status__struct.h:
+
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/sensor_gyro__type_support.c:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pps_capture__type_support.c:
@@ -15423,21 +15021,11 @@ rosidl_generator_c/px4_msgs/msg/detail/hover_thrust_estimate__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/button_event__struct.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/estimator_innovations__functions.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/manual_control_switches__rosidl_typesupport_introspection_c.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_pressure__type_support.c:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/can_interface_status__struct.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.c:
-
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/dataman_request__type_support.c:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/unregister_ext_component__type_support.c:
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_status__rosidl_typesupport_introspection_c.h:
 
@@ -15470,6 +15058,8 @@ rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_set_attitude__struct.h:
 rosidl_generator_c/px4_msgs/msg/detail/airspeed_wind__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/estimator_sensor_bias__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
@@ -15561,8 +15151,6 @@ rosidl_generator_c/px4_msgs/msg/detail/camera_trigger__struct.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/offboard_control_mode__rosidl_typesupport_introspection_c.h:
 
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.c:
-
 rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/heater_status__type_support.c:
@@ -15586,8 +15174,6 @@ rosidl_generator_c/px4_msgs/msg/detail/ping__functions.h:
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/actuator_test__type_support.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/action_request__struct.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.h:
 
 /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h:
 
@@ -15617,9 +15203,17 @@ rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source2d__struct.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
 
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.c:
+
 /usr/include/stdlib.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/actuator_servos__struct.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/parameter_set_value_request__functions.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/parameter_reset_request__functions.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/landing_target_innovations__struct.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/actuator_test__rosidl_typesupport_introspection_c.h:
 
@@ -15629,15 +15223,11 @@ rosidl_generator_c/px4_msgs/msg/detail/position_setpoint__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/landing_gear_wheel__functions.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__struct.h:
-
 rosidl_generator_c/px4_msgs/msg/detail/airspeed__functions.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/adc_report__rosidl_typesupport_introspection_c.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/estimator_event_flags__rosidl_typesupport_introspection_c.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/uavcan_parameter_value__rosidl_typesupport_introspection_c.h:
 
@@ -15669,32 +15259,6 @@ rosidl_generator_c/px4_msgs/msg/detail/camera_trigger__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/rtl_status__struct.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__rosidl_typesupport_introspection_c.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/event__type_support.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/pps_capture__struct.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/estimator_sensor_bias__rosidl_typesupport_introspection_c.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_air_data__functions.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/satellite_info__rosidl_typesupport_introspection_c.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/figure_eight_status__struct.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_mission_item__type_support.c:
-
-rosidl_generator_c/px4_msgs/msg/detail/parameter_set_value_request__functions.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/parameter_reset_request__functions.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/landing_target_innovations__struct.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__rosidl_typesupport_introspection_c.h:
-
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/action_request__type_support.c:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/estimator_bias__rosidl_typesupport_introspection_c.h:
@@ -15704,8 +15268,6 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/message_format_response__
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/sensor_airflow__rosidl_typesupport_introspection_c.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__struct.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/actuator_outputs__functions.h:
 
@@ -15717,7 +15279,11 @@ rosidl_generator_c/px4_msgs/msg/detail/orb_test_large__struct.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/airspeed_validated__rosidl_typesupport_introspection_c.h:
 
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.h:
+
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/estimator_gps_status__type_support.c:
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/message_format_request__struct.h:
 
@@ -15729,11 +15295,13 @@ rosidl_generator_c/px4_msgs/msg/detail/autotune_attitude_control_status__functio
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.c:
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.c:
+
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/sensor_airflow__functions.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__struct.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/obstacle_distance__type_support.c:
 
@@ -15783,6 +15351,8 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/goto_setpoint__type_suppo
 
 rosidl_generator_c/px4_msgs/msg/detail/actuator_controls_status__functions.h:
 
+rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_rates_setpoint__functions.h:
@@ -15797,6 +15367,8 @@ rosidl_generator_c/px4_msgs/msg/detail/sensor_accel__functions.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/gpio_out__type_support.c:
 
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/estimator_sensor_bias__type_support.c:
+
 rosidl_generator_c/px4_msgs/msg/detail/actuator_armed__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/actuator_controls_status__struct.h:
@@ -15804,6 +15376,8 @@ rosidl_generator_c/px4_msgs/msg/detail/actuator_controls_status__struct.h:
 rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/hover_thrust_estimate__type_support.c:
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.c:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/actuator_servos__type_support.c:
 
@@ -15865,8 +15439,6 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rc_parameter_map__type_su
 
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow_vel__functions.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__struct.h:
-
 rosidl_generator_c/px4_msgs/msg/detail/airspeed__struct.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/can_interface_status__type_support.c:
@@ -15887,8 +15459,6 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/battery_status__rosidl_ty
 
 rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_attitude_status__functions.h:
 
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_status__type_support.c:
-
 rosidl_generator_c/px4_msgs/msg/detail/camera_capture__functions.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/srv/detail/vehicle_command__rosidl_typesupport_introspection_c.h:
@@ -15905,6 +15475,8 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/register_ext_component_re
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_torque_setpoint__rosidl_typesupport_introspection_c.h:
 
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__struct.h:
+
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/gpio_out__rosidl_typesupport_introspection_c.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/arming_check_request__type_support.c:
@@ -15912,12 +15484,6 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/arming_check_request__typ
 rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro__functions.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/irlock_report__rosidl_typesupport_introspection_c.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/buffer128__struct.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_imu_status__rosidl_typesupport_introspection_c.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/hover_thrust_estimate__functions.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/sensor_gyro_fifo__rosidl_typesupport_introspection_c.h:
 
@@ -15975,8 +15541,6 @@ rosidl_generator_c/px4_msgs/msg/detail/gpio_out__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__struct.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__type_support.h:
-
 rosidl_generator_c/px4_msgs/msg/detail/mode_completed__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.h:
@@ -15986,16 +15550,6 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/battery_status__type_supp
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_constraints__rosidl_typesupport_introspection_c.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/battery_status__functions.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.c:
-
-rosidl_generator_c/px4_msgs/msg/detail/estimator_selector_status__struct.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/estimator_sensor_bias__type_support.c:
-
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__struct.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/estimator_sensor_bias__functions.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/estimator_states__type_support.c:
 
@@ -16017,8 +15571,6 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_arm_status_
 
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_land_detected__struct.h:
 
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_status__rosidl_typesupport_introspection_c.h:
-
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/estimator_status_flags__rosidl_typesupport_introspection_c.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/estimator_status_flags__struct.h:
@@ -16026,8 +15578,6 @@ rosidl_generator_c/px4_msgs/msg/detail/estimator_status_flags__struct.h:
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/event__type_support.c:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/sensors_status_imu__type_support.c:
-
-rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/failsafe_flags__type_support.c:
 
@@ -16040,8 +15590,6 @@ rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__struct.h:
 rosidl_generator_c/px4_msgs/msg/detail/failsafe_flags__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/launch_detection_status__functions.h:
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__rosidl_typesupport_introspection_c.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/failure_detector_status__type_support.c:
 
@@ -16101,13 +15649,9 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/can_interface_status__ros
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/npfg_status__rosidl_typesupport_introspection_c.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__struct.h:
-
 rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_reply__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/follow_target_estimator__struct.h:
-
-rosidl_generator_c/px4_msgs/msg/trajectory_bezier.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/health_report__functions.h:
 
@@ -16119,8 +15663,6 @@ rosidl_typesupport_introspection_c/px4_msgs/srv/detail/vehicle_command__type_sup
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/iridiumsbd_status__rosidl_typesupport_introspection_c.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__struct.h:
-
 rosidl_generator_c/px4_msgs/msg/detail/navigator_mission_item__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__functions.h:
@@ -16130,8 +15672,6 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/register_ext_component_re
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/button_event__type_support.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__struct.h:
-
-rosidl_generator_c/px4_msgs/msg/trajectory_waypoint.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow__struct.h:
 
@@ -16144,6 +15684,8 @@ rosidl_generator_c/px4_msgs/msg/detail/power_button_state__functions.h:
 rosidl_generator_c/px4_msgs/msg/detail/arming_check_reply__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__struct.h:
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__rosidl_typesupport_introspection_c.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/generator_status__type_support.c:
 
@@ -16192,8 +15734,6 @@ rosidl_generator_c/px4_msgs/msg/detail/led_control__struct.h:
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/gimbal_device_set_attitude__type_support.c:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/gimbal_manager_set_manual_control__rosidl_typesupport_introspection_c.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/gimbal_device_set_attitude__rosidl_typesupport_introspection_c.h:
 
@@ -16289,8 +15829,6 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/gps_inject_data__rosidl_t
 
 rosidl_generator_c/px4_msgs/msg/detail/gps_inject_data__functions.h:
 
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_guidance_status__rosidl_typesupport_introspection_c.h:
-
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/estimator_aid_source3d__rosidl_typesupport_introspection_c.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/gps_inject_data__struct.h:
@@ -16304,8 +15842,6 @@ rosidl_generator_c/px4_msgs/msg/detail/unregister_ext_component__functions.h:
 rosidl_generator_c/px4_msgs/msg/detail/tecs_status__struct.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/log_message__type_support.c:
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/gripper__rosidl_typesupport_introspection_c.h:
 
@@ -16351,6 +15887,10 @@ rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/home_position__struct.h:
 
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_imu_status__rosidl_typesupport_introspection_c.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/hover_thrust_estimate__functions.h:
+
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/input_rc__rosidl_typesupport_introspection_c.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/led_control__type_support.c:
@@ -16358,6 +15898,12 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/led_control__type_support
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/sensor_gps__rosidl_typesupport_introspection_c.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/input_rc__struct.h:
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.c:
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rc_channels__rosidl_typesupport_introspection_c.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__struct.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_status__rosidl_typesupport_introspection_c.h:
 
@@ -16509,8 +16055,6 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/message_format_request__t
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/message_format_request__rosidl_typesupport_introspection_c.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__struct.h:
-
 rosidl_generator_c/px4_msgs/msg/detail/message_format_request__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/message_format_response__functions.h:
@@ -16522,6 +16066,8 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/cellular_status__rosidl_t
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.c:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/mission__rosidl_typesupport_introspection_c.h:
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__rosidl_typesupport_introspection_c.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/mission_result__struct.h:
 
@@ -16538,6 +16084,8 @@ rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_acceleration_setpoint__fu
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/actuator_controls_status__type_support.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__struct.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/mission_result__rosidl_typesupport_introspection_c.h:
 
@@ -16570,6 +16118,8 @@ rosidl_generator_c/px4_msgs/msg/detail/npfg_status__functions.h:
 rosidl_generator_c/px4_msgs/msg/detail/obstacle_distance__functions.h:
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/sensor_uwb__type_support.c:
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__rosidl_typesupport_introspection_c.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/obstacle_distance__struct.h:
 

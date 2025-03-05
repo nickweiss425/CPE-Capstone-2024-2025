@@ -220,6 +220,8 @@ struct VehicleCommand_
   }
 
   // constant declarations
+  static constexpr uint32_t MESSAGE_VERSION =
+    0u;
   static constexpr uint16_t VEHICLE_CMD_CUSTOM_0 =
     0u;
   static constexpr uint16_t VEHICLE_CMD_CUSTOM_1 =
@@ -631,6 +633,11 @@ using VehicleCommand =
   px4_msgs::msg::VehicleCommand_<std::allocator<void>>;
 
 // constant definitions
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint32_t VehicleCommand_<ContainerAllocator>::MESSAGE_VERSION;
+#endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>

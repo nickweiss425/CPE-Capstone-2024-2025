@@ -6,6 +6,7 @@
 module px4_msgs {
   module msg {
     module VtolVehicleStatus_Constants {
+      const uint32 MESSAGE_VERSION = 0;
       const uint8 VEHICLE_VTOL_STATE_UNDEFINED = 0;
       const uint8 VEHICLE_VTOL_STATE_TRANSITION_TO_FW = 1;
       const uint8 VEHICLE_VTOL_STATE_TRANSITION_TO_MC = 2;

@@ -17,6 +17,12 @@ extern "C"
 
 // Constants defined in the message
 
+/// Constant 'MESSAGE_VERSION'.
+enum
+{
+  px4_msgs__msg__RegisterExtComponentReply__MESSAGE_VERSION = 0ul
+};
+
 /// Constant 'ORB_QUEUE_LENGTH'.
 enum
 {

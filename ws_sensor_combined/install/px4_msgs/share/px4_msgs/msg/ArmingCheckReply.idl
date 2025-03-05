@@ -9,8 +9,8 @@ module px4_msgs {
     typedef px4_msgs::msg::Event px4_msgs__msg__Event;
     typedef px4_msgs__msg__Event px4_msgs__msg__Event__5[5];
     module ArmingCheckReply_Constants {
+      const uint32 MESSAGE_VERSION = 0;
       const uint8 HEALTH_COMPONENT_INDEX_NONE = 0;
-      const uint8 HEALTH_COMPONENT_INDEX_AVOIDANCE = 19;
       const uint8 ORB_QUEUE_LENGTH = 4;
     };
     struct ArmingCheckReply {

@@ -17,6 +17,12 @@ extern "C"
 
 // Constants defined in the message
 
+/// Constant 'MESSAGE_VERSION'.
+enum
+{
+  px4_msgs__msg__VehicleCommand__MESSAGE_VERSION = 0ul
+};
+
 /// Constant 'VEHICLE_CMD_CUSTOM_0'.
 /**
   * test command

@@ -24,7 +24,7 @@
   <depend>geometry_msgs</depend>
   <depend>sensor_msgs</depend>
   <depend>std_msgs</depend>
-  <depend>custom_msgs</depend>
+  <depend>gui_messages</depend>
 
   <depend>launch</depend>
   <depend>launch_testing</depend>

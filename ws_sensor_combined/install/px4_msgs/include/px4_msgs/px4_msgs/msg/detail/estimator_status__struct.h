@@ -200,7 +200,7 @@ enum
 
 /// Constant 'CS_BARO_HGT'.
 /**
-  * 9 - true when baro height is being fused as a primary height reference
+  * 9 - true when baro data is being fused
  */
 enum
 {
@@ -209,7 +209,7 @@ enum
 
 /// Constant 'CS_RNG_HGT'.
 /**
-  * 10 - true when range finder height is being fused as a primary height reference
+  * 10 - true when range finder data is being fused for height aiding
  */
 enum
 {
@@ -218,7 +218,7 @@ enum
 
 /// Constant 'CS_GPS_HGT'.
 /**
-  * 11 - true when GPS height is being fused as a primary height reference
+  * 11 - true when GPS altitude is being fused
  */
 enum
 {

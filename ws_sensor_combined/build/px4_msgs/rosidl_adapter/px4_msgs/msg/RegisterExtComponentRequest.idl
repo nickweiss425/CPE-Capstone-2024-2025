@@ -7,6 +7,7 @@ module px4_msgs {
   module msg {
     typedef uint8 uint8__25[25];
     module RegisterExtComponentRequest_Constants {
+      const uint32 MESSAGE_VERSION = 0;
       @verbatim (language="comment", text=
         "API version compatibility. Increase this on a breaking semantic change. Changes to any message field are detected separately and do not require an API version change.")
       const uint16 LATEST_PX4_ROS2_API_VERSION = 1;

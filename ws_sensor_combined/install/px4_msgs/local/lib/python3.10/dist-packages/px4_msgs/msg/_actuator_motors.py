@@ -25,6 +25,7 @@ class Metaclass_ActuatorMotors(type):
     _TYPE_SUPPORT = None
 
     __constants = {
+        'MESSAGE_VERSION': 0,
         'ACTUATOR_FUNCTION_MOTOR1': 101,
         'NUM_CONTROLS': 12,
     }
@@ -55,9 +56,15 @@ class Metaclass_ActuatorMotors(type):
         # the message class under "Data and other attributes defined here:"
         # as well as populate each message instance
         return {
+            'MESSAGE_VERSION': cls.__constants['MESSAGE_VERSION'],
             'ACTUATOR_FUNCTION_MOTOR1': cls.__constants['ACTUATOR_FUNCTION_MOTOR1'],
             'NUM_CONTROLS': cls.__constants['NUM_CONTROLS'],
         }
+
+    @property
+    def MESSAGE_VERSION(self):
+        """Message constant 'MESSAGE_VERSION'."""
+        return Metaclass_ActuatorMotors.__constants['MESSAGE_VERSION']
 
     @property
     def ACTUATOR_FUNCTION_MOTOR1(self):
@@ -75,6 +82,7 @@ class ActuatorMotors(metaclass=Metaclass_ActuatorMotors):
     Message class 'ActuatorMotors'.
 
     Constants:
+      MESSAGE_VERSION
       ACTUATOR_FUNCTION_MOTOR1
       NUM_CONTROLS
     """

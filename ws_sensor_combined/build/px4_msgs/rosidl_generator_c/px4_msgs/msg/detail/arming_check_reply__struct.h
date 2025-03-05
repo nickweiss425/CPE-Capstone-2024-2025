@@ -17,16 +17,16 @@ extern "C"
 
 // Constants defined in the message
 
+/// Constant 'MESSAGE_VERSION'.
+enum
+{
+  px4_msgs__msg__ArmingCheckReply__MESSAGE_VERSION = 0ul
+};
+
 /// Constant 'HEALTH_COMPONENT_INDEX_NONE'.
 enum
 {
   px4_msgs__msg__ArmingCheckReply__HEALTH_COMPONENT_INDEX_NONE = 0
-};
-
-/// Constant 'HEALTH_COMPONENT_INDEX_AVOIDANCE'.
-enum
-{
-  px4_msgs__msg__ArmingCheckReply__HEALTH_COMPONENT_INDEX_AVOIDANCE = 19
 };
 
 /// Constant 'ORB_QUEUE_LENGTH'.

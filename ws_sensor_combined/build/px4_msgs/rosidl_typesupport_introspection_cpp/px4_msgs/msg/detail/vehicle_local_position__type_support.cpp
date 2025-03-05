@@ -113,7 +113,7 @@ void assign_function__VehicleLocalPosition__delta_vxy(
   item = value;
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember VehicleLocalPosition_message_member_array[52] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember VehicleLocalPosition_message_member_array[53] = {
   {
     "timestamp",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT64,  // type
@@ -982,14 +982,31 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember VehicleLocalP
     nullptr  // resize(index) function pointer
   },
   {
-    "hagl_max",  // name
+    "hagl_max_z",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(px4_msgs::msg::VehicleLocalPosition, hagl_max),  // bytes offset in struct
+    offsetof(px4_msgs::msg::VehicleLocalPosition, hagl_max_z),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "hagl_max_xy",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(px4_msgs::msg::VehicleLocalPosition, hagl_max_xy),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -1003,7 +1020,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember VehicleLocalP
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers VehicleLocalPosition_message_members = {
   "px4_msgs::msg",  // message namespace
   "VehicleLocalPosition",  // message name
-  52,  // number of fields
+  53,  // number of fields
   sizeof(px4_msgs::msg::VehicleLocalPosition),
   VehicleLocalPosition_message_member_array,  // message members
   VehicleLocalPosition_init_function,  // function to initialize message memory (memory has to be allocated)

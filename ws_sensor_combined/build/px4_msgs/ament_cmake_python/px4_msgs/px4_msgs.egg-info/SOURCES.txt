@@ -90,6 +90,7 @@ px4_msgs/msg/_heater_status.py
 px4_msgs/msg/_home_position.py
 px4_msgs/msg/_hover_thrust_estimate.py
 px4_msgs/msg/_input_rc.py
+px4_msgs/msg/_internal_combustion_engine_control.py
 px4_msgs/msg/_internal_combustion_engine_status.py
 px4_msgs/msg/_iridiumsbd_status.py
 px4_msgs/msg/_irlock_report.py
@@ -154,12 +155,19 @@ px4_msgs/msg/_register_ext_component_request.py
 px4_msgs/msg/_rover_ackermann_guidance_status.py
 px4_msgs/msg/_rover_ackermann_setpoint.py
 px4_msgs/msg/_rover_ackermann_status.py
+px4_msgs/msg/_rover_attitude_setpoint.py
+px4_msgs/msg/_rover_attitude_status.py
 px4_msgs/msg/_rover_differential_guidance_status.py
 px4_msgs/msg/_rover_differential_setpoint.py
 px4_msgs/msg/_rover_differential_status.py
 px4_msgs/msg/_rover_mecanum_guidance_status.py
 px4_msgs/msg/_rover_mecanum_setpoint.py
 px4_msgs/msg/_rover_mecanum_status.py
+px4_msgs/msg/_rover_rate_setpoint.py
+px4_msgs/msg/_rover_rate_status.py
+px4_msgs/msg/_rover_steering_setpoint.py
+px4_msgs/msg/_rover_throttle_setpoint.py
+px4_msgs/msg/_rover_velocity_status.py
 px4_msgs/msg/_rpm.py
 px4_msgs/msg/_rtl_status.py
 px4_msgs/msg/_rtl_time_estimate.py

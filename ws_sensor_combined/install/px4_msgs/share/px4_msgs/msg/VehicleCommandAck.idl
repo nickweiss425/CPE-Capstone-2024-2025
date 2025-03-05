@@ -6,6 +6,7 @@
 module px4_msgs {
   module msg {
     module VehicleCommandAck_Constants {
+      const uint32 MESSAGE_VERSION = 0;
       @verbatim (language="comment", text=
         "Result cases. This follows the MAVLink MAV_RESULT enum definition" "\n"        "Command ACCEPTED and EXECUTED |")
       const uint8 VEHICLE_CMD_RESULT_ACCEPTED = 0;

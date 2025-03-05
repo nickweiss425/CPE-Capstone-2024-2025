@@ -22,7 +22,7 @@
  #include <stdint.h>
  #include <sensor_msgs/msg/nav_sat_fix.hpp>
  #include <sensor_msgs/msg/imu.hpp>
- #include <custom_msgs/msg/flight_command.hpp>
+ #include <gui_messages/msg/flight_command.hpp>
  
  
  
@@ -38,7 +38,8 @@
  using namespace std::chrono;
  using namespace std::chrono_literals;
  using namespace px4_msgs::msg;
- using namespace custom_msgs::msg;
+ using namespace gui_messages::msg;
+ 
  
  
  
@@ -331,11 +332,12 @@
 	 {
 		// Arm the vehicle
 		this->arm();
-		if (!check_at_setpoint(0, 0, initial_altitude)){
+		if (!check_at_setpoint(0, 0, initial_altitude, 0.2)){
 			publish_trajectory_setpoint(0, 0, initial_altitude);
 		}
 		// send ack once reached takeoff location
 		else{
+			RCLCPP_INFO(this->get_logger(), "PUBLISHING TAKEOFF ACK\n");
 			auto ack_msg = std_msgs::msg::Int32();
 			ack_msg.data = static_cast<int>(FlightState::TAKEOFF);
 			command_ack_publisher_->publish(ack_msg);
@@ -378,6 +380,7 @@
  
  
 			 // send ACK to gui
+			 RCLCPP_INFO(this->get_logger(), "PUBLISHING FIGURE8 ACK\n");
 			 auto ack_msg = std_msgs::msg::Int32();
 			 ack_msg.data = static_cast<int>(FlightState::FIGURE8_PATH);
 			 command_ack_publisher_->publish(ack_msg);
@@ -445,6 +448,7 @@
  
  
 			 // send ACK to gui
+			 RCLCPP_INFO(this->get_logger(), "PUBLISHING CIRCLE ACK\n");
 			 auto ack_msg = std_msgs::msg::Int32();
 			 ack_msg.data = static_cast<int>(FlightState::CIRCLE_PATH);
 			 command_ack_publisher_->publish(ack_msg);
@@ -508,6 +512,7 @@
  
  
 			 // send ACK to gui
+			 RCLCPP_INFO(this->get_logger(), "PUBLISHING SQUARE ACK\n");
 			 auto ack_msg = std_msgs::msg::Int32();
 			 ack_msg.data = static_cast<int>(FlightState::SQUARE_PATH);
 			 command_ack_publisher_->publish(ack_msg);
@@ -611,7 +616,7 @@
 	 void flightCommandCallback(const FlightCommand msg){
 		 target_lon_ = msg.longitude_deg;
 		 target_lat_ = msg.latitude_deg;
-		 target_altitude_ = msg.altitude;
+		 target_altitude_ = -1 * msg.altitude;
 		 circle_radius_ = msg.radius;
 		 square_length_ = msg.length;
 		 current_state_ = static_cast<FlightState>(msg.waypoint_type);

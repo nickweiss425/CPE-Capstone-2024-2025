@@ -69,6 +69,7 @@ class Ekf2Timestamps(metaclass=Metaclass_Ekf2Timestamps):
     __slots__ = [
         '_timestamp',
         '_airspeed_timestamp_rel',
+        '_airspeed_validated_timestamp_rel',
         '_distance_sensor_timestamp_rel',
         '_optical_flow_timestamp_rel',
         '_vehicle_air_data_timestamp_rel',
@@ -79,6 +80,7 @@ class Ekf2Timestamps(metaclass=Metaclass_Ekf2Timestamps):
     _fields_and_field_types = {
         'timestamp': 'uint64',
         'airspeed_timestamp_rel': 'int16',
+        'airspeed_validated_timestamp_rel': 'int16',
         'distance_sensor_timestamp_rel': 'int16',
         'optical_flow_timestamp_rel': 'int16',
         'vehicle_air_data_timestamp_rel': 'int16',
@@ -94,6 +96,7 @@ class Ekf2Timestamps(metaclass=Metaclass_Ekf2Timestamps):
         rosidl_parser.definition.BasicType('int16'),  # noqa: E501
         rosidl_parser.definition.BasicType('int16'),  # noqa: E501
         rosidl_parser.definition.BasicType('int16'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int16'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -102,6 +105,7 @@ class Ekf2Timestamps(metaclass=Metaclass_Ekf2Timestamps):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.timestamp = kwargs.get('timestamp', int())
         self.airspeed_timestamp_rel = kwargs.get('airspeed_timestamp_rel', int())
+        self.airspeed_validated_timestamp_rel = kwargs.get('airspeed_validated_timestamp_rel', int())
         self.distance_sensor_timestamp_rel = kwargs.get('distance_sensor_timestamp_rel', int())
         self.optical_flow_timestamp_rel = kwargs.get('optical_flow_timestamp_rel', int())
         self.vehicle_air_data_timestamp_rel = kwargs.get('vehicle_air_data_timestamp_rel', int())
@@ -140,6 +144,8 @@ class Ekf2Timestamps(metaclass=Metaclass_Ekf2Timestamps):
         if self.timestamp != other.timestamp:
             return False
         if self.airspeed_timestamp_rel != other.airspeed_timestamp_rel:
+            return False
+        if self.airspeed_validated_timestamp_rel != other.airspeed_validated_timestamp_rel:
             return False
         if self.distance_sensor_timestamp_rel != other.distance_sensor_timestamp_rel:
             return False
@@ -187,6 +193,21 @@ class Ekf2Timestamps(metaclass=Metaclass_Ekf2Timestamps):
             assert value >= -32768 and value < 32768, \
                 "The 'airspeed_timestamp_rel' field must be an integer in [-32768, 32767]"
         self._airspeed_timestamp_rel = value
+
+    @builtins.property
+    def airspeed_validated_timestamp_rel(self):
+        """Message field 'airspeed_validated_timestamp_rel'."""
+        return self._airspeed_validated_timestamp_rel
+
+    @airspeed_validated_timestamp_rel.setter
+    def airspeed_validated_timestamp_rel(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'airspeed_validated_timestamp_rel' field must be of type 'int'"
+            assert value >= -32768 and value < 32768, \
+                "The 'airspeed_validated_timestamp_rel' field must be an integer in [-32768, 32767]"
+        self._airspeed_validated_timestamp_rel = value
 
     @builtins.property
     def distance_sensor_timestamp_rel(self):

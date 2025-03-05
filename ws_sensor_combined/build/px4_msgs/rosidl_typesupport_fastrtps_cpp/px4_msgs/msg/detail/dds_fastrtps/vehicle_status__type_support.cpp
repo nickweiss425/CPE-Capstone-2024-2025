@@ -104,10 +104,6 @@ cdr_serialize(
   cdr << (ros_message.parachute_system_present ? true : false);
   // Member: parachute_system_healthy
   cdr << (ros_message.parachute_system_healthy ? true : false);
-  // Member: avoidance_system_required
-  cdr << (ros_message.avoidance_system_required ? true : false);
-  // Member: avoidance_system_valid
-  cdr << (ros_message.avoidance_system_valid ? true : false);
   // Member: rc_calibration_in_progress
   cdr << (ros_message.rc_calibration_in_progress ? true : false);
   // Member: calibration_enabled
@@ -293,20 +289,6 @@ cdr_deserialize(
     uint8_t tmp;
     cdr >> tmp;
     ros_message.parachute_system_healthy = tmp ? true : false;
-  }
-
-  // Member: avoidance_system_required
-  {
-    uint8_t tmp;
-    cdr >> tmp;
-    ros_message.avoidance_system_required = tmp ? true : false;
-  }
-
-  // Member: avoidance_system_valid
-  {
-    uint8_t tmp;
-    cdr >> tmp;
-    ros_message.avoidance_system_valid = tmp ? true : false;
   }
 
   // Member: rc_calibration_in_progress
@@ -559,18 +541,6 @@ get_serialized_size(
   // Member: parachute_system_healthy
   {
     size_t item_size = sizeof(ros_message.parachute_system_healthy);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: avoidance_system_required
-  {
-    size_t item_size = sizeof(ros_message.avoidance_system_required);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: avoidance_system_valid
-  {
-    size_t item_size = sizeof(ros_message.avoidance_system_valid);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -904,22 +874,6 @@ max_serialized_size_VehicleStatus(
   }
 
   // Member: parachute_system_healthy
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Member: avoidance_system_required
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Member: avoidance_system_valid
   {
     size_t array_size = 1;
 

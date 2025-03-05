@@ -74,8 +74,6 @@ struct VehicleStatus_
       this->open_drone_id_system_healthy = false;
       this->parachute_system_present = false;
       this->parachute_system_healthy = false;
-      this->avoidance_system_required = false;
-      this->avoidance_system_valid = false;
       this->rc_calibration_in_progress = false;
       this->calibration_enabled = false;
       this->pre_flight_checks_pass = false;
@@ -124,8 +122,6 @@ struct VehicleStatus_
       this->open_drone_id_system_healthy = false;
       this->parachute_system_present = false;
       this->parachute_system_healthy = false;
-      this->avoidance_system_required = false;
-      this->avoidance_system_valid = false;
       this->rc_calibration_in_progress = false;
       this->calibration_enabled = false;
       this->pre_flight_checks_pass = false;
@@ -241,12 +237,6 @@ struct VehicleStatus_
   using _parachute_system_healthy_type =
     bool;
   _parachute_system_healthy_type parachute_system_healthy;
-  using _avoidance_system_required_type =
-    bool;
-  _avoidance_system_required_type avoidance_system_required;
-  using _avoidance_system_valid_type =
-    bool;
-  _avoidance_system_valid_type avoidance_system_valid;
   using _rc_calibration_in_progress_type =
     bool;
   _rc_calibration_in_progress_type rc_calibration_in_progress;
@@ -474,18 +464,6 @@ struct VehicleStatus_
     this->parachute_system_healthy = _arg;
     return *this;
   }
-  Type & set__avoidance_system_required(
-    const bool & _arg)
-  {
-    this->avoidance_system_required = _arg;
-    return *this;
-  }
-  Type & set__avoidance_system_valid(
-    const bool & _arg)
-  {
-    this->avoidance_system_valid = _arg;
-    return *this;
-  }
   Type & set__rc_calibration_in_progress(
     const bool & _arg)
   {
@@ -506,6 +484,8 @@ struct VehicleStatus_
   }
 
   // constant declarations
+  static constexpr uint32_t MESSAGE_VERSION =
+    1u;
   static constexpr uint8_t ARMING_STATE_DISARMED =
     1u;
   static constexpr uint8_t ARMING_STATE_ARMED =
@@ -789,12 +769,6 @@ struct VehicleStatus_
     if (this->parachute_system_healthy != other.parachute_system_healthy) {
       return false;
     }
-    if (this->avoidance_system_required != other.avoidance_system_required) {
-      return false;
-    }
-    if (this->avoidance_system_valid != other.avoidance_system_valid) {
-      return false;
-    }
     if (this->rc_calibration_in_progress != other.rc_calibration_in_progress) {
       return false;
     }
@@ -817,6 +791,11 @@ using VehicleStatus =
   px4_msgs::msg::VehicleStatus_<std::allocator<void>>;
 
 // constant definitions
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint32_t VehicleStatus_<ContainerAllocator>::MESSAGE_VERSION;
+#endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>

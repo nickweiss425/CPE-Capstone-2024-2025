@@ -17,6 +17,12 @@ extern "C"
 
 // Constants defined in the message
 
+/// Constant 'MESSAGE_VERSION'.
+enum
+{
+  px4_msgs__msg__VehicleLocalPosition__MESSAGE_VERSION = 0ul
+};
+
 /// Constant 'DIST_BOTTOM_SENSOR_NONE'.
 enum
 {
@@ -149,14 +155,17 @@ typedef struct px4_msgs__msg__VehicleLocalPosition
   /// True if this position is estimated through dead-reckoning
   bool dead_reckoning;
   /// estimator specified vehicle limits
-  /// maximum horizontal speed - set to 0 when limiting not required (meters/sec)
+  /// set to INFINITY when limiting not required
+  /// maximum horizontal speed (meters/sec)
   float vxy_max;
-  /// maximum vertical speed - set to 0 when limiting not required (meters/sec)
+  /// maximum vertical speed (meters/sec)
   float vz_max;
-  /// minimum height above ground level - set to 0 when limiting not required (meters)
+  /// minimum height above ground level (meters)
   float hagl_min;
-  /// maximum height above ground level - set to 0 when limiting not required (meters)
-  float hagl_max;
+  /// maximum height above ground level for z-control (meters)
+  float hagl_max_z;
+  /// maximum height above ground level for xy-control (meters)
+  float hagl_max_xy;
 } px4_msgs__msg__VehicleLocalPosition;
 
 // Struct for a sequence of px4_msgs__msg__VehicleLocalPosition.

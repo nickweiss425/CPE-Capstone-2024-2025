@@ -6,6 +6,9 @@
 module px4_msgs {
   module msg {
     typedef uint8 uint8__25[25];
+    module UnregisterExtComponent_Constants {
+      const uint32 MESSAGE_VERSION = 0;
+    };
     struct UnregisterExtComponent {
       @verbatim (language="comment", text=
         "time since system start (microseconds)")

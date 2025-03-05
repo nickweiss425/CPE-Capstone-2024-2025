@@ -20,8 +20,8 @@ class Metaclass_ArmingCheckReply(type):
     _TYPE_SUPPORT = None
 
     __constants = {
+        'MESSAGE_VERSION': 0,
         'HEALTH_COMPONENT_INDEX_NONE': 0,
-        'HEALTH_COMPONENT_INDEX_AVOIDANCE': 19,
         'ORB_QUEUE_LENGTH': 4,
     }
 
@@ -55,20 +55,20 @@ class Metaclass_ArmingCheckReply(type):
         # the message class under "Data and other attributes defined here:"
         # as well as populate each message instance
         return {
+            'MESSAGE_VERSION': cls.__constants['MESSAGE_VERSION'],
             'HEALTH_COMPONENT_INDEX_NONE': cls.__constants['HEALTH_COMPONENT_INDEX_NONE'],
-            'HEALTH_COMPONENT_INDEX_AVOIDANCE': cls.__constants['HEALTH_COMPONENT_INDEX_AVOIDANCE'],
             'ORB_QUEUE_LENGTH': cls.__constants['ORB_QUEUE_LENGTH'],
         }
+
+    @property
+    def MESSAGE_VERSION(self):
+        """Message constant 'MESSAGE_VERSION'."""
+        return Metaclass_ArmingCheckReply.__constants['MESSAGE_VERSION']
 
     @property
     def HEALTH_COMPONENT_INDEX_NONE(self):
         """Message constant 'HEALTH_COMPONENT_INDEX_NONE'."""
         return Metaclass_ArmingCheckReply.__constants['HEALTH_COMPONENT_INDEX_NONE']
-
-    @property
-    def HEALTH_COMPONENT_INDEX_AVOIDANCE(self):
-        """Message constant 'HEALTH_COMPONENT_INDEX_AVOIDANCE'."""
-        return Metaclass_ArmingCheckReply.__constants['HEALTH_COMPONENT_INDEX_AVOIDANCE']
 
     @property
     def ORB_QUEUE_LENGTH(self):
@@ -81,8 +81,8 @@ class ArmingCheckReply(metaclass=Metaclass_ArmingCheckReply):
     Message class 'ArmingCheckReply'.
 
     Constants:
+      MESSAGE_VERSION
       HEALTH_COMPONENT_INDEX_NONE
-      HEALTH_COMPONENT_INDEX_AVOIDANCE
       ORB_QUEUE_LENGTH
     """
 

@@ -20,6 +20,7 @@ class Metaclass_VehicleCommandAck(type):
     _TYPE_SUPPORT = None
 
     __constants = {
+        'MESSAGE_VERSION': 0,
         'VEHICLE_CMD_RESULT_ACCEPTED': 0,
         'VEHICLE_CMD_RESULT_TEMPORARILY_REJECTED': 1,
         'VEHICLE_CMD_RESULT_DENIED': 2,
@@ -62,6 +63,7 @@ class Metaclass_VehicleCommandAck(type):
         # the message class under "Data and other attributes defined here:"
         # as well as populate each message instance
         return {
+            'MESSAGE_VERSION': cls.__constants['MESSAGE_VERSION'],
             'VEHICLE_CMD_RESULT_ACCEPTED': cls.__constants['VEHICLE_CMD_RESULT_ACCEPTED'],
             'VEHICLE_CMD_RESULT_TEMPORARILY_REJECTED': cls.__constants['VEHICLE_CMD_RESULT_TEMPORARILY_REJECTED'],
             'VEHICLE_CMD_RESULT_DENIED': cls.__constants['VEHICLE_CMD_RESULT_DENIED'],
@@ -77,6 +79,11 @@ class Metaclass_VehicleCommandAck(type):
             'ARM_AUTH_DENIED_REASON_BAD_WEATHER': cls.__constants['ARM_AUTH_DENIED_REASON_BAD_WEATHER'],
             'ORB_QUEUE_LENGTH': cls.__constants['ORB_QUEUE_LENGTH'],
         }
+
+    @property
+    def MESSAGE_VERSION(self):
+        """Message constant 'MESSAGE_VERSION'."""
+        return Metaclass_VehicleCommandAck.__constants['MESSAGE_VERSION']
 
     @property
     def VEHICLE_CMD_RESULT_ACCEPTED(self):
@@ -154,6 +161,7 @@ class VehicleCommandAck(metaclass=Metaclass_VehicleCommandAck):
     Message class 'VehicleCommandAck'.
 
     Constants:
+      MESSAGE_VERSION
       VEHICLE_CMD_RESULT_ACCEPTED
       VEHICLE_CMD_RESULT_TEMPORARILY_REJECTED
       VEHICLE_CMD_RESULT_DENIED

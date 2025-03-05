@@ -141,12 +141,10 @@ class TelemetryStatus(metaclass=Metaclass_TelemetryStatus):
         '_heartbeat_component_telemetry_radio',
         '_heartbeat_component_log',
         '_heartbeat_component_osd',
-        '_heartbeat_component_obstacle_avoidance',
         '_heartbeat_component_vio',
         '_heartbeat_component_pairing_manager',
         '_heartbeat_component_udp_bridge',
         '_heartbeat_component_uart_bridge',
-        '_avoidance_system_healthy',
         '_open_drone_id_system_healthy',
         '_parachute_system_healthy',
     ]
@@ -184,12 +182,10 @@ class TelemetryStatus(metaclass=Metaclass_TelemetryStatus):
         'heartbeat_component_telemetry_radio': 'boolean',
         'heartbeat_component_log': 'boolean',
         'heartbeat_component_osd': 'boolean',
-        'heartbeat_component_obstacle_avoidance': 'boolean',
         'heartbeat_component_vio': 'boolean',
         'heartbeat_component_pairing_manager': 'boolean',
         'heartbeat_component_udp_bridge': 'boolean',
         'heartbeat_component_uart_bridge': 'boolean',
-        'avoidance_system_healthy': 'boolean',
         'open_drone_id_system_healthy': 'boolean',
         'parachute_system_healthy': 'boolean',
     }
@@ -216,8 +212,6 @@ class TelemetryStatus(metaclass=Metaclass_TelemetryStatus):
         rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
-        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
@@ -273,12 +267,10 @@ class TelemetryStatus(metaclass=Metaclass_TelemetryStatus):
         self.heartbeat_component_telemetry_radio = kwargs.get('heartbeat_component_telemetry_radio', bool())
         self.heartbeat_component_log = kwargs.get('heartbeat_component_log', bool())
         self.heartbeat_component_osd = kwargs.get('heartbeat_component_osd', bool())
-        self.heartbeat_component_obstacle_avoidance = kwargs.get('heartbeat_component_obstacle_avoidance', bool())
         self.heartbeat_component_vio = kwargs.get('heartbeat_component_vio', bool())
         self.heartbeat_component_pairing_manager = kwargs.get('heartbeat_component_pairing_manager', bool())
         self.heartbeat_component_udp_bridge = kwargs.get('heartbeat_component_udp_bridge', bool())
         self.heartbeat_component_uart_bridge = kwargs.get('heartbeat_component_uart_bridge', bool())
-        self.avoidance_system_healthy = kwargs.get('avoidance_system_healthy', bool())
         self.open_drone_id_system_healthy = kwargs.get('open_drone_id_system_healthy', bool())
         self.parachute_system_healthy = kwargs.get('parachute_system_healthy', bool())
 
@@ -375,8 +367,6 @@ class TelemetryStatus(metaclass=Metaclass_TelemetryStatus):
             return False
         if self.heartbeat_component_osd != other.heartbeat_component_osd:
             return False
-        if self.heartbeat_component_obstacle_avoidance != other.heartbeat_component_obstacle_avoidance:
-            return False
         if self.heartbeat_component_vio != other.heartbeat_component_vio:
             return False
         if self.heartbeat_component_pairing_manager != other.heartbeat_component_pairing_manager:
@@ -384,8 +374,6 @@ class TelemetryStatus(metaclass=Metaclass_TelemetryStatus):
         if self.heartbeat_component_udp_bridge != other.heartbeat_component_udp_bridge:
             return False
         if self.heartbeat_component_uart_bridge != other.heartbeat_component_uart_bridge:
-            return False
-        if self.avoidance_system_healthy != other.avoidance_system_healthy:
             return False
         if self.open_drone_id_system_healthy != other.open_drone_id_system_healthy:
             return False
@@ -849,19 +837,6 @@ class TelemetryStatus(metaclass=Metaclass_TelemetryStatus):
         self._heartbeat_component_osd = value
 
     @builtins.property
-    def heartbeat_component_obstacle_avoidance(self):
-        """Message field 'heartbeat_component_obstacle_avoidance'."""
-        return self._heartbeat_component_obstacle_avoidance
-
-    @heartbeat_component_obstacle_avoidance.setter
-    def heartbeat_component_obstacle_avoidance(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, bool), \
-                "The 'heartbeat_component_obstacle_avoidance' field must be of type 'bool'"
-        self._heartbeat_component_obstacle_avoidance = value
-
-    @builtins.property
     def heartbeat_component_vio(self):
         """Message field 'heartbeat_component_vio'."""
         return self._heartbeat_component_vio
@@ -912,19 +887,6 @@ class TelemetryStatus(metaclass=Metaclass_TelemetryStatus):
                 isinstance(value, bool), \
                 "The 'heartbeat_component_uart_bridge' field must be of type 'bool'"
         self._heartbeat_component_uart_bridge = value
-
-    @builtins.property
-    def avoidance_system_healthy(self):
-        """Message field 'avoidance_system_healthy'."""
-        return self._avoidance_system_healthy
-
-    @avoidance_system_healthy.setter
-    def avoidance_system_healthy(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, bool), \
-                "The 'avoidance_system_healthy' field must be of type 'bool'"
-        self._avoidance_system_healthy = value
 
     @builtins.property
     def open_drone_id_system_healthy(self):

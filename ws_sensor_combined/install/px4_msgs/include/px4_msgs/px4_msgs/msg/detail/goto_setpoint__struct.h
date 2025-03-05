@@ -17,6 +17,12 @@ extern "C"
 
 // Constants defined in the message
 
+/// Constant 'MESSAGE_VERSION'.
+enum
+{
+  px4_msgs__msg__GotoSetpoint__MESSAGE_VERSION = 0ul
+};
+
 /// Struct defined in msg/GotoSetpoint in the package px4_msgs.
 /**
   * Position and (optional) heading setpoints with corresponding speed constraints

@@ -53,9 +53,9 @@ typedef struct px4_msgs__msg__VehicleImu
   /// delta velocity in the FRD body frame XYZ-axis in m/s over the integration time frame (delta_velocity_dt)
   float delta_velocity[3];
   /// integration period in microseconds
-  uint16_t delta_angle_dt;
+  uint32_t delta_angle_dt;
   /// integration period in microseconds
-  uint16_t delta_velocity_dt;
+  uint32_t delta_velocity_dt;
   /// bitfield indicating if there was any gyro clipping (per axis) during the integration time frame
   uint8_t delta_angle_clipping;
   /// bitfield indicating if there was any accelerometer clipping (per axis) during the integration time frame

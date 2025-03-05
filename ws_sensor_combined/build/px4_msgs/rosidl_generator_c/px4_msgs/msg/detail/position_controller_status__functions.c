@@ -25,8 +25,6 @@ px4_msgs__msg__PositionControllerStatus__init(px4_msgs__msg__PositionControllerS
   // xtrack_error
   // wp_dist
   // acceptance_radius
-  // yaw_acceptance
-  // altitude_acceptance
   // type
   return true;
 }
@@ -45,8 +43,6 @@ px4_msgs__msg__PositionControllerStatus__fini(px4_msgs__msg__PositionControllerS
   // xtrack_error
   // wp_dist
   // acceptance_radius
-  // yaw_acceptance
-  // altitude_acceptance
   // type
 }
 
@@ -88,14 +84,6 @@ px4_msgs__msg__PositionControllerStatus__are_equal(const px4_msgs__msg__Position
   if (lhs->acceptance_radius != rhs->acceptance_radius) {
     return false;
   }
-  // yaw_acceptance
-  if (lhs->yaw_acceptance != rhs->yaw_acceptance) {
-    return false;
-  }
-  // altitude_acceptance
-  if (lhs->altitude_acceptance != rhs->altitude_acceptance) {
-    return false;
-  }
   // type
   if (lhs->type != rhs->type) {
     return false;
@@ -127,10 +115,6 @@ px4_msgs__msg__PositionControllerStatus__copy(
   output->wp_dist = input->wp_dist;
   // acceptance_radius
   output->acceptance_radius = input->acceptance_radius;
-  // yaw_acceptance
-  output->yaw_acceptance = input->yaw_acceptance;
-  // altitude_acceptance
-  output->altitude_acceptance = input->altitude_acceptance;
   // type
   output->type = input->type;
   return true;

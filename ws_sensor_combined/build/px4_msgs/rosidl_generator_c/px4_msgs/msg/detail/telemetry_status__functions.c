@@ -49,12 +49,10 @@ px4_msgs__msg__TelemetryStatus__init(px4_msgs__msg__TelemetryStatus * msg)
   // heartbeat_component_telemetry_radio
   // heartbeat_component_log
   // heartbeat_component_osd
-  // heartbeat_component_obstacle_avoidance
   // heartbeat_component_vio
   // heartbeat_component_pairing_manager
   // heartbeat_component_udp_bridge
   // heartbeat_component_uart_bridge
-  // avoidance_system_healthy
   // open_drone_id_system_healthy
   // parachute_system_healthy
   return true;
@@ -98,12 +96,10 @@ px4_msgs__msg__TelemetryStatus__fini(px4_msgs__msg__TelemetryStatus * msg)
   // heartbeat_component_telemetry_radio
   // heartbeat_component_log
   // heartbeat_component_osd
-  // heartbeat_component_obstacle_avoidance
   // heartbeat_component_vio
   // heartbeat_component_pairing_manager
   // heartbeat_component_udp_bridge
   // heartbeat_component_uart_bridge
-  // avoidance_system_healthy
   // open_drone_id_system_healthy
   // parachute_system_healthy
 }
@@ -242,10 +238,6 @@ px4_msgs__msg__TelemetryStatus__are_equal(const px4_msgs__msg__TelemetryStatus *
   if (lhs->heartbeat_component_osd != rhs->heartbeat_component_osd) {
     return false;
   }
-  // heartbeat_component_obstacle_avoidance
-  if (lhs->heartbeat_component_obstacle_avoidance != rhs->heartbeat_component_obstacle_avoidance) {
-    return false;
-  }
   // heartbeat_component_vio
   if (lhs->heartbeat_component_vio != rhs->heartbeat_component_vio) {
     return false;
@@ -260,10 +252,6 @@ px4_msgs__msg__TelemetryStatus__are_equal(const px4_msgs__msg__TelemetryStatus *
   }
   // heartbeat_component_uart_bridge
   if (lhs->heartbeat_component_uart_bridge != rhs->heartbeat_component_uart_bridge) {
-    return false;
-  }
-  // avoidance_system_healthy
-  if (lhs->avoidance_system_healthy != rhs->avoidance_system_healthy) {
     return false;
   }
   // open_drone_id_system_healthy
@@ -349,8 +337,6 @@ px4_msgs__msg__TelemetryStatus__copy(
   output->heartbeat_component_log = input->heartbeat_component_log;
   // heartbeat_component_osd
   output->heartbeat_component_osd = input->heartbeat_component_osd;
-  // heartbeat_component_obstacle_avoidance
-  output->heartbeat_component_obstacle_avoidance = input->heartbeat_component_obstacle_avoidance;
   // heartbeat_component_vio
   output->heartbeat_component_vio = input->heartbeat_component_vio;
   // heartbeat_component_pairing_manager
@@ -359,8 +345,6 @@ px4_msgs__msg__TelemetryStatus__copy(
   output->heartbeat_component_udp_bridge = input->heartbeat_component_udp_bridge;
   // heartbeat_component_uart_bridge
   output->heartbeat_component_uart_bridge = input->heartbeat_component_uart_bridge;
-  // avoidance_system_healthy
-  output->avoidance_system_healthy = input->avoidance_system_healthy;
   // open_drone_id_system_healthy
   output->open_drone_id_system_healthy = input->open_drone_id_system_healthy;
   // parachute_system_healthy

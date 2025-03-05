@@ -277,20 +277,6 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
-  // member: avoidance_system_required
-  {
-    out << "avoidance_system_required: ";
-    rosidl_generator_traits::value_to_yaml(msg.avoidance_system_required, out);
-    out << ", ";
-  }
-
-  // member: avoidance_system_valid
-  {
-    out << "avoidance_system_valid: ";
-    rosidl_generator_traits::value_to_yaml(msg.avoidance_system_valid, out);
-    out << ", ";
-  }
-
   // member: rc_calibration_in_progress
   {
     out << "rc_calibration_in_progress: ";
@@ -674,26 +660,6 @@ inline void to_block_style_yaml(
     }
     out << "parachute_system_healthy: ";
     rosidl_generator_traits::value_to_yaml(msg.parachute_system_healthy, out);
-    out << "\n";
-  }
-
-  // member: avoidance_system_required
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "avoidance_system_required: ";
-    rosidl_generator_traits::value_to_yaml(msg.avoidance_system_required, out);
-    out << "\n";
-  }
-
-  // member: avoidance_system_valid
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "avoidance_system_valid: ";
-    rosidl_generator_traits::value_to_yaml(msg.avoidance_system_valid, out);
     out << "\n";
   }
 

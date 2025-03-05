@@ -542,13 +542,22 @@ bool px4_msgs__msg__vehicle_local_position__convert_from_py(PyObject * _pymsg, v
     ros_message->hagl_min = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // hagl_max
-    PyObject * field = PyObject_GetAttrString(_pymsg, "hagl_max");
+  {  // hagl_max_z
+    PyObject * field = PyObject_GetAttrString(_pymsg, "hagl_max_z");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->hagl_max = (float)PyFloat_AS_DOUBLE(field);
+    ros_message->hagl_max_z = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // hagl_max_xy
+    PyObject * field = PyObject_GetAttrString(_pymsg, "hagl_max_xy");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->hagl_max_xy = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -1148,11 +1157,22 @@ PyObject * px4_msgs__msg__vehicle_local_position__convert_to_py(void * raw_ros_m
       }
     }
   }
-  {  // hagl_max
+  {  // hagl_max_z
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->hagl_max);
+    field = PyFloat_FromDouble(ros_message->hagl_max_z);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "hagl_max", field);
+      int rc = PyObject_SetAttrString(_pymessage, "hagl_max_z", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // hagl_max_xy
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->hagl_max_xy);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "hagl_max_xy", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

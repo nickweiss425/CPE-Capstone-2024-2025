@@ -17,6 +17,12 @@ extern "C"
 
 // Constants defined in the message
 
+/// Constant 'MESSAGE_VERSION'.
+enum
+{
+  px4_msgs__msg__ActuatorMotors__MESSAGE_VERSION = 0ul
+};
+
 /// Constant 'ACTUATOR_FUNCTION_MOTOR1'.
 enum
 {

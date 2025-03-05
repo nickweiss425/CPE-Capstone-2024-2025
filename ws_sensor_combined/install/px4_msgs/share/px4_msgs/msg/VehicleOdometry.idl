@@ -8,6 +8,7 @@ module px4_msgs {
     typedef float float__3[3];
     typedef float float__4[4];
     module VehicleOdometry_Constants {
+      const uint32 MESSAGE_VERSION = 0;
       const uint8 POSE_FRAME_UNKNOWN = 0;
       @verbatim (language="comment", text=
         "NED earth-fixed frame")

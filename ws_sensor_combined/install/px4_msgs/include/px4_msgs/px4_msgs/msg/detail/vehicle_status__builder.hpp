@@ -69,48 +69,16 @@ private:
   ::px4_msgs::msg::VehicleStatus msg_;
 };
 
-class Init_VehicleStatus_avoidance_system_valid
-{
-public:
-  explicit Init_VehicleStatus_avoidance_system_valid(::px4_msgs::msg::VehicleStatus & msg)
-  : msg_(msg)
-  {}
-  Init_VehicleStatus_rc_calibration_in_progress avoidance_system_valid(::px4_msgs::msg::VehicleStatus::_avoidance_system_valid_type arg)
-  {
-    msg_.avoidance_system_valid = std::move(arg);
-    return Init_VehicleStatus_rc_calibration_in_progress(msg_);
-  }
-
-private:
-  ::px4_msgs::msg::VehicleStatus msg_;
-};
-
-class Init_VehicleStatus_avoidance_system_required
-{
-public:
-  explicit Init_VehicleStatus_avoidance_system_required(::px4_msgs::msg::VehicleStatus & msg)
-  : msg_(msg)
-  {}
-  Init_VehicleStatus_avoidance_system_valid avoidance_system_required(::px4_msgs::msg::VehicleStatus::_avoidance_system_required_type arg)
-  {
-    msg_.avoidance_system_required = std::move(arg);
-    return Init_VehicleStatus_avoidance_system_valid(msg_);
-  }
-
-private:
-  ::px4_msgs::msg::VehicleStatus msg_;
-};
-
 class Init_VehicleStatus_parachute_system_healthy
 {
 public:
   explicit Init_VehicleStatus_parachute_system_healthy(::px4_msgs::msg::VehicleStatus & msg)
   : msg_(msg)
   {}
-  Init_VehicleStatus_avoidance_system_required parachute_system_healthy(::px4_msgs::msg::VehicleStatus::_parachute_system_healthy_type arg)
+  Init_VehicleStatus_rc_calibration_in_progress parachute_system_healthy(::px4_msgs::msg::VehicleStatus::_parachute_system_healthy_type arg)
   {
     msg_.parachute_system_healthy = std::move(arg);
-    return Init_VehicleStatus_avoidance_system_required(msg_);
+    return Init_VehicleStatus_rc_calibration_in_progress(msg_);
   }
 
 private:

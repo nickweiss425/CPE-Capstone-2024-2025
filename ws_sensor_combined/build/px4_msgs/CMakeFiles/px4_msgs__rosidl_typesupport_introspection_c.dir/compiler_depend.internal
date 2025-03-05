@@ -1046,71 +1046,6 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/battery_status__struct.h
 
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.c.o
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.c
- /usr/include/stdc-predef.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__rosidl_typesupport_introspection_c.h
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
- /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
- /usr/include/stdint.h
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
- /usr/include/features.h
- /usr/include/features-time64.h
- /usr/include/x86_64-linux-gnu/bits/wordsize.h
- /usr/include/x86_64-linux-gnu/bits/timesize.h
- /usr/include/x86_64-linux-gnu/sys/cdefs.h
- /usr/include/x86_64-linux-gnu/bits/long-double.h
- /usr/include/x86_64-linux-gnu/gnu/stubs.h
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
- /usr/include/x86_64-linux-gnu/bits/types.h
- /usr/include/x86_64-linux-gnu/bits/typesizes.h
- /usr/include/x86_64-linux-gnu/bits/time64.h
- /usr/include/x86_64-linux-gnu/bits/wchar.h
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.h
- /usr/include/stdlib.h
- /usr/include/x86_64-linux-gnu/bits/waitflags.h
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h
- /usr/include/x86_64-linux-gnu/bits/floatn.h
- /usr/include/x86_64-linux-gnu/bits/floatn-common.h
- /usr/include/x86_64-linux-gnu/sys/types.h
- /usr/include/x86_64-linux-gnu/bits/types/clock_t.h
- /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h
- /usr/include/x86_64-linux-gnu/bits/types/time_t.h
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h
- /usr/include/endian.h
- /usr/include/x86_64-linux-gnu/bits/endian.h
- /usr/include/x86_64-linux-gnu/bits/endianness.h
- /usr/include/x86_64-linux-gnu/bits/byteswap.h
- /usr/include/x86_64-linux-gnu/bits/uintn-identity.h
- /usr/include/x86_64-linux-gnu/sys/select.h
- /usr/include/x86_64-linux-gnu/bits/select.h
- /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h
- /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
- /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
- /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h
- /usr/include/x86_64-linux-gnu/bits/struct_mutex.h
- /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
- /usr/include/alloca.h
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/buffer128__struct.h
-
 CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/button_event__type_support.c.o
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/button_event__type_support.c
  /usr/include/stdc-predef.h
@@ -5536,6 +5471,71 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/input_rc__struct.h
 
+CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.c.o
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.c
+ /usr/include/stdc-predef.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__rosidl_typesupport_introspection_c.h
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
+ /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+ /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
+ /usr/include/stdint.h
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+ /usr/include/features.h
+ /usr/include/features-time64.h
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h
+ /usr/include/x86_64-linux-gnu/bits/timesize.h
+ /usr/include/x86_64-linux-gnu/sys/cdefs.h
+ /usr/include/x86_64-linux-gnu/bits/long-double.h
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
+ /usr/include/x86_64-linux-gnu/bits/types.h
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h
+ /usr/include/x86_64-linux-gnu/bits/time64.h
+ /usr/include/x86_64-linux-gnu/bits/wchar.h
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
+ /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h
+ /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h
+ /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.h
+ /usr/include/stdlib.h
+ /usr/include/x86_64-linux-gnu/bits/waitflags.h
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h
+ /usr/include/x86_64-linux-gnu/bits/floatn.h
+ /usr/include/x86_64-linux-gnu/bits/floatn-common.h
+ /usr/include/x86_64-linux-gnu/sys/types.h
+ /usr/include/x86_64-linux-gnu/bits/types/clock_t.h
+ /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h
+ /usr/include/x86_64-linux-gnu/bits/types/time_t.h
+ /usr/include/x86_64-linux-gnu/bits/types/timer_t.h
+ /usr/include/endian.h
+ /usr/include/x86_64-linux-gnu/bits/endian.h
+ /usr/include/x86_64-linux-gnu/bits/endianness.h
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h
+ /usr/include/x86_64-linux-gnu/bits/uintn-identity.h
+ /usr/include/x86_64-linux-gnu/sys/select.h
+ /usr/include/x86_64-linux-gnu/bits/select.h
+ /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h
+ /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+ /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
+ /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h
+ /usr/include/x86_64-linux-gnu/bits/struct_mutex.h
+ /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
+ /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__struct.h
+
 CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_status__type_support.c.o
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_status__type_support.c
  /usr/include/stdc-predef.h
@@ -9506,11 +9506,11 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__struct.h
 
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__type_support.c.o
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__type_support.c
+CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.c.o
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.c
  /usr/include/stdc-predef.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__rosidl_typesupport_introspection_c.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__rosidl_typesupport_introspection_c.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h
@@ -9538,7 +9538,7 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.h
  /usr/include/stdlib.h
  /usr/include/x86_64-linux-gnu/bits/waitflags.h
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h
@@ -9569,13 +9569,13 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
  /usr/include/alloca.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__struct.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__struct.h
 
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_setpoint__type_support.c.o
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_setpoint__type_support.c
+CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.c.o
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.c
  /usr/include/stdc-predef.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_setpoint__rosidl_typesupport_introspection_c.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__rosidl_typesupport_introspection_c.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h
@@ -9603,7 +9603,7 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.h
  /usr/include/stdlib.h
  /usr/include/x86_64-linux-gnu/bits/waitflags.h
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h
@@ -9634,13 +9634,13 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
  /usr/include/alloca.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__struct.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__struct.h
 
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_status__type_support.c.o
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_status__type_support.c
+CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.c.o
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.c
  /usr/include/stdc-predef.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_ackermann_status__rosidl_typesupport_introspection_c.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__rosidl_typesupport_introspection_c.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h
@@ -9668,7 +9668,7 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.h
  /usr/include/stdlib.h
  /usr/include/x86_64-linux-gnu/bits/waitflags.h
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h
@@ -9699,13 +9699,13 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
  /usr/include/alloca.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__struct.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__struct.h
 
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_guidance_status__type_support.c.o
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_guidance_status__type_support.c
+CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.c.o
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.c
  /usr/include/stdc-predef.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_guidance_status__rosidl_typesupport_introspection_c.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__rosidl_typesupport_introspection_c.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h
@@ -9733,7 +9733,7 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.h
  /usr/include/stdlib.h
  /usr/include/x86_64-linux-gnu/bits/waitflags.h
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h
@@ -9764,13 +9764,13 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
  /usr/include/alloca.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__struct.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__struct.h
 
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_setpoint__type_support.c.o
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_setpoint__type_support.c
+CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.c.o
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.c
  /usr/include/stdc-predef.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_setpoint__rosidl_typesupport_introspection_c.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__rosidl_typesupport_introspection_c.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h
@@ -9798,7 +9798,7 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.h
  /usr/include/stdlib.h
  /usr/include/x86_64-linux-gnu/bits/waitflags.h
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h
@@ -9829,13 +9829,13 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
  /usr/include/alloca.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__struct.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__struct.h
 
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_status__type_support.c.o
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_status__type_support.c
+CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.c.o
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.c
  /usr/include/stdc-predef.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_differential_status__rosidl_typesupport_introspection_c.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__rosidl_typesupport_introspection_c.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h
@@ -9863,7 +9863,7 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.h
  /usr/include/stdlib.h
  /usr/include/x86_64-linux-gnu/bits/waitflags.h
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h
@@ -9894,13 +9894,13 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
  /usr/include/alloca.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__struct.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__struct.h
 
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__type_support.c.o
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__type_support.c
+CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.c.o
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.c
  /usr/include/stdc-predef.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__rosidl_typesupport_introspection_c.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__rosidl_typesupport_introspection_c.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h
@@ -9928,7 +9928,7 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.h
  /usr/include/stdlib.h
  /usr/include/x86_64-linux-gnu/bits/waitflags.h
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h
@@ -9959,137 +9959,7 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
  /usr/include/alloca.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__struct.h
-
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_setpoint__type_support.c.o
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_setpoint__type_support.c
- /usr/include/stdc-predef.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_setpoint__rosidl_typesupport_introspection_c.h
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
- /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
- /usr/include/stdint.h
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
- /usr/include/features.h
- /usr/include/features-time64.h
- /usr/include/x86_64-linux-gnu/bits/wordsize.h
- /usr/include/x86_64-linux-gnu/bits/timesize.h
- /usr/include/x86_64-linux-gnu/sys/cdefs.h
- /usr/include/x86_64-linux-gnu/bits/long-double.h
- /usr/include/x86_64-linux-gnu/gnu/stubs.h
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
- /usr/include/x86_64-linux-gnu/bits/types.h
- /usr/include/x86_64-linux-gnu/bits/typesizes.h
- /usr/include/x86_64-linux-gnu/bits/time64.h
- /usr/include/x86_64-linux-gnu/bits/wchar.h
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.h
- /usr/include/stdlib.h
- /usr/include/x86_64-linux-gnu/bits/waitflags.h
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h
- /usr/include/x86_64-linux-gnu/bits/floatn.h
- /usr/include/x86_64-linux-gnu/bits/floatn-common.h
- /usr/include/x86_64-linux-gnu/sys/types.h
- /usr/include/x86_64-linux-gnu/bits/types/clock_t.h
- /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h
- /usr/include/x86_64-linux-gnu/bits/types/time_t.h
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h
- /usr/include/endian.h
- /usr/include/x86_64-linux-gnu/bits/endian.h
- /usr/include/x86_64-linux-gnu/bits/endianness.h
- /usr/include/x86_64-linux-gnu/bits/byteswap.h
- /usr/include/x86_64-linux-gnu/bits/uintn-identity.h
- /usr/include/x86_64-linux-gnu/sys/select.h
- /usr/include/x86_64-linux-gnu/bits/select.h
- /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h
- /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
- /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
- /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h
- /usr/include/x86_64-linux-gnu/bits/struct_mutex.h
- /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
- /usr/include/alloca.h
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__struct.h
-
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_status__type_support.c.o
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_status__type_support.c
- /usr/include/stdc-predef.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_mecanum_status__rosidl_typesupport_introspection_c.h
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
- /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
- /usr/include/stdint.h
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
- /usr/include/features.h
- /usr/include/features-time64.h
- /usr/include/x86_64-linux-gnu/bits/wordsize.h
- /usr/include/x86_64-linux-gnu/bits/timesize.h
- /usr/include/x86_64-linux-gnu/sys/cdefs.h
- /usr/include/x86_64-linux-gnu/bits/long-double.h
- /usr/include/x86_64-linux-gnu/gnu/stubs.h
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
- /usr/include/x86_64-linux-gnu/bits/types.h
- /usr/include/x86_64-linux-gnu/bits/typesizes.h
- /usr/include/x86_64-linux-gnu/bits/time64.h
- /usr/include/x86_64-linux-gnu/bits/wchar.h
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.h
- /usr/include/stdlib.h
- /usr/include/x86_64-linux-gnu/bits/waitflags.h
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h
- /usr/include/x86_64-linux-gnu/bits/floatn.h
- /usr/include/x86_64-linux-gnu/bits/floatn-common.h
- /usr/include/x86_64-linux-gnu/sys/types.h
- /usr/include/x86_64-linux-gnu/bits/types/clock_t.h
- /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h
- /usr/include/x86_64-linux-gnu/bits/types/time_t.h
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h
- /usr/include/endian.h
- /usr/include/x86_64-linux-gnu/bits/endian.h
- /usr/include/x86_64-linux-gnu/bits/endianness.h
- /usr/include/x86_64-linux-gnu/bits/byteswap.h
- /usr/include/x86_64-linux-gnu/bits/uintn-identity.h
- /usr/include/x86_64-linux-gnu/sys/select.h
- /usr/include/x86_64-linux-gnu/bits/select.h
- /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h
- /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
- /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
- /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h
- /usr/include/x86_64-linux-gnu/bits/struct_mutex.h
- /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
- /usr/include/alloca.h
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__struct.h
+ /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__struct.h
 
 CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rpm__type_support.c.o
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rpm__type_support.c
@@ -12041,71 +11911,6 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__struct.h
 
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.c.o
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.c
- /usr/include/stdc-predef.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__rosidl_typesupport_introspection_c.h
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
- /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
- /usr/include/stdint.h
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
- /usr/include/features.h
- /usr/include/features-time64.h
- /usr/include/x86_64-linux-gnu/bits/wordsize.h
- /usr/include/x86_64-linux-gnu/bits/timesize.h
- /usr/include/x86_64-linux-gnu/sys/cdefs.h
- /usr/include/x86_64-linux-gnu/bits/long-double.h
- /usr/include/x86_64-linux-gnu/gnu/stubs.h
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
- /usr/include/x86_64-linux-gnu/bits/types.h
- /usr/include/x86_64-linux-gnu/bits/typesizes.h
- /usr/include/x86_64-linux-gnu/bits/time64.h
- /usr/include/x86_64-linux-gnu/bits/wchar.h
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.h
- /usr/include/stdlib.h
- /usr/include/x86_64-linux-gnu/bits/waitflags.h
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h
- /usr/include/x86_64-linux-gnu/bits/floatn.h
- /usr/include/x86_64-linux-gnu/bits/floatn-common.h
- /usr/include/x86_64-linux-gnu/sys/types.h
- /usr/include/x86_64-linux-gnu/bits/types/clock_t.h
- /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h
- /usr/include/x86_64-linux-gnu/bits/types/time_t.h
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h
- /usr/include/endian.h
- /usr/include/x86_64-linux-gnu/bits/endian.h
- /usr/include/x86_64-linux-gnu/bits/endianness.h
- /usr/include/x86_64-linux-gnu/bits/byteswap.h
- /usr/include/x86_64-linux-gnu/bits/uintn-identity.h
- /usr/include/x86_64-linux-gnu/sys/select.h
- /usr/include/x86_64-linux-gnu/bits/select.h
- /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h
- /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
- /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
- /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h
- /usr/include/x86_64-linux-gnu/bits/struct_mutex.h
- /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
- /usr/include/alloca.h
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__struct.h
-
 CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_setpoint__type_support.c.o
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_setpoint__type_support.c
  /usr/include/stdc-predef.h
@@ -12170,71 +11975,6 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__struct.h
-
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.c.o
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.c
- /usr/include/stdc-predef.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__rosidl_typesupport_introspection_c.h
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
- /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
- /usr/include/stdint.h
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
- /usr/include/features.h
- /usr/include/features-time64.h
- /usr/include/x86_64-linux-gnu/bits/wordsize.h
- /usr/include/x86_64-linux-gnu/bits/timesize.h
- /usr/include/x86_64-linux-gnu/sys/cdefs.h
- /usr/include/x86_64-linux-gnu/bits/long-double.h
- /usr/include/x86_64-linux-gnu/gnu/stubs.h
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
- /usr/include/x86_64-linux-gnu/bits/types.h
- /usr/include/x86_64-linux-gnu/bits/typesizes.h
- /usr/include/x86_64-linux-gnu/bits/time64.h
- /usr/include/x86_64-linux-gnu/bits/wchar.h
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.h
- /usr/include/stdlib.h
- /usr/include/x86_64-linux-gnu/bits/waitflags.h
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h
- /usr/include/x86_64-linux-gnu/bits/floatn.h
- /usr/include/x86_64-linux-gnu/bits/floatn-common.h
- /usr/include/x86_64-linux-gnu/sys/types.h
- /usr/include/x86_64-linux-gnu/bits/types/clock_t.h
- /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h
- /usr/include/x86_64-linux-gnu/bits/types/time_t.h
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h
- /usr/include/endian.h
- /usr/include/x86_64-linux-gnu/bits/endian.h
- /usr/include/x86_64-linux-gnu/bits/endianness.h
- /usr/include/x86_64-linux-gnu/bits/byteswap.h
- /usr/include/x86_64-linux-gnu/bits/uintn-identity.h
- /usr/include/x86_64-linux-gnu/sys/select.h
- /usr/include/x86_64-linux-gnu/bits/select.h
- /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h
- /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
- /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
- /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h
- /usr/include/x86_64-linux-gnu/bits/struct_mutex.h
- /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
- /usr/include/alloca.h
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__struct.h
 
 CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/transponder_report__type_support.c.o
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/transponder_report__type_support.c
@@ -14315,146 +14055,6 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__struct.h
-
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.c.o
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.c
- /usr/include/stdc-predef.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__rosidl_typesupport_introspection_c.h
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
- /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
- /usr/include/stdint.h
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
- /usr/include/features.h
- /usr/include/features-time64.h
- /usr/include/x86_64-linux-gnu/bits/wordsize.h
- /usr/include/x86_64-linux-gnu/bits/timesize.h
- /usr/include/x86_64-linux-gnu/sys/cdefs.h
- /usr/include/x86_64-linux-gnu/bits/long-double.h
- /usr/include/x86_64-linux-gnu/gnu/stubs.h
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
- /usr/include/x86_64-linux-gnu/bits/types.h
- /usr/include/x86_64-linux-gnu/bits/typesizes.h
- /usr/include/x86_64-linux-gnu/bits/time64.h
- /usr/include/x86_64-linux-gnu/bits/wchar.h
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.h
- /usr/include/stdlib.h
- /usr/include/x86_64-linux-gnu/bits/waitflags.h
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h
- /usr/include/x86_64-linux-gnu/bits/floatn.h
- /usr/include/x86_64-linux-gnu/bits/floatn-common.h
- /usr/include/x86_64-linux-gnu/sys/types.h
- /usr/include/x86_64-linux-gnu/bits/types/clock_t.h
- /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h
- /usr/include/x86_64-linux-gnu/bits/types/time_t.h
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h
- /usr/include/endian.h
- /usr/include/x86_64-linux-gnu/bits/endian.h
- /usr/include/x86_64-linux-gnu/bits/endianness.h
- /usr/include/x86_64-linux-gnu/bits/byteswap.h
- /usr/include/x86_64-linux-gnu/bits/uintn-identity.h
- /usr/include/x86_64-linux-gnu/sys/select.h
- /usr/include/x86_64-linux-gnu/bits/select.h
- /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h
- /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
- /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
- /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h
- /usr/include/x86_64-linux-gnu/bits/struct_mutex.h
- /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
- /usr/include/alloca.h
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__struct.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__struct.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/trajectory_bezier.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__type_support.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__rosidl_typesupport_introspection_c.h
-
-CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.c.o
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.c
- /usr/include/stdc-predef.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__rosidl_typesupport_introspection_c.h
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
- /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
- /usr/include/stdint.h
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
- /usr/include/features.h
- /usr/include/features-time64.h
- /usr/include/x86_64-linux-gnu/bits/wordsize.h
- /usr/include/x86_64-linux-gnu/bits/timesize.h
- /usr/include/x86_64-linux-gnu/sys/cdefs.h
- /usr/include/x86_64-linux-gnu/bits/long-double.h
- /usr/include/x86_64-linux-gnu/gnu/stubs.h
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
- /usr/include/x86_64-linux-gnu/bits/types.h
- /usr/include/x86_64-linux-gnu/bits/typesizes.h
- /usr/include/x86_64-linux-gnu/bits/time64.h
- /usr/include/x86_64-linux-gnu/bits/wchar.h
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h
- /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.h
- /usr/include/stdlib.h
- /usr/include/x86_64-linux-gnu/bits/waitflags.h
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h
- /usr/include/x86_64-linux-gnu/bits/floatn.h
- /usr/include/x86_64-linux-gnu/bits/floatn-common.h
- /usr/include/x86_64-linux-gnu/sys/types.h
- /usr/include/x86_64-linux-gnu/bits/types/clock_t.h
- /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h
- /usr/include/x86_64-linux-gnu/bits/types/time_t.h
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h
- /usr/include/endian.h
- /usr/include/x86_64-linux-gnu/bits/endian.h
- /usr/include/x86_64-linux-gnu/bits/endianness.h
- /usr/include/x86_64-linux-gnu/bits/byteswap.h
- /usr/include/x86_64-linux-gnu/bits/uintn-identity.h
- /usr/include/x86_64-linux-gnu/sys/select.h
- /usr/include/x86_64-linux-gnu/bits/select.h
- /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h
- /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
- /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
- /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h
- /usr/include/x86_64-linux-gnu/bits/struct_mutex.h
- /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
- /usr/include/alloca.h
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__struct.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__struct.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/trajectory_waypoint.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.h
- /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__rosidl_typesupport_introspection_c.h
 
 CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/velocity_limits__type_support.c.o
  /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/velocity_limits__type_support.c

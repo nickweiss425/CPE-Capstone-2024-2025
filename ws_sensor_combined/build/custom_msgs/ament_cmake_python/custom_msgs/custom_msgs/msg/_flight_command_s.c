@@ -50,22 +50,22 @@ bool custom_msgs__msg__flight_command__convert_from_py(PyObject * _pymsg, void *
     assert(strncmp("custom_msgs.msg._flight_command.FlightCommand", full_classname_dest, 45) == 0);
   }
   custom_msgs__msg__FlightCommand * ros_message = _ros_message;
-  {  // x
-    PyObject * field = PyObject_GetAttrString(_pymsg, "x");
+  {  // latitude_deg
+    PyObject * field = PyObject_GetAttrString(_pymsg, "latitude_deg");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->x = (float)PyFloat_AS_DOUBLE(field);
+    ros_message->latitude_deg = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // y
-    PyObject * field = PyObject_GetAttrString(_pymsg, "y");
+  {  // longitude_deg
+    PyObject * field = PyObject_GetAttrString(_pymsg, "longitude_deg");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->y = (float)PyFloat_AS_DOUBLE(field);
+    ros_message->longitude_deg = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
   {  // altitude
@@ -95,6 +95,24 @@ bool custom_msgs__msg__flight_command__convert_from_py(PyObject * _pymsg, void *
     ros_message->length = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
+  {  // duration
+    PyObject * field = PyObject_GetAttrString(_pymsg, "duration");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->duration = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // waypoint_type
+    PyObject * field = PyObject_GetAttrString(_pymsg, "waypoint_type");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->waypoint_type = (int8_t)PyLong_AsLong(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -117,22 +135,22 @@ PyObject * custom_msgs__msg__flight_command__convert_to_py(void * raw_ros_messag
     }
   }
   custom_msgs__msg__FlightCommand * ros_message = (custom_msgs__msg__FlightCommand *)raw_ros_message;
-  {  // x
+  {  // latitude_deg
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->x);
+    field = PyFloat_FromDouble(ros_message->latitude_deg);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "x", field);
+      int rc = PyObject_SetAttrString(_pymessage, "latitude_deg", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // y
+  {  // longitude_deg
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->y);
+    field = PyFloat_FromDouble(ros_message->longitude_deg);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "y", field);
+      int rc = PyObject_SetAttrString(_pymessage, "longitude_deg", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
@@ -166,6 +184,28 @@ PyObject * custom_msgs__msg__flight_command__convert_to_py(void * raw_ros_messag
     field = PyFloat_FromDouble(ros_message->length);
     {
       int rc = PyObject_SetAttrString(_pymessage, "length", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // duration
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->duration);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "duration", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // waypoint_type
+    PyObject * field = NULL;
+    field = PyLong_FromLong(ros_message->waypoint_type);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "waypoint_type", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

@@ -50,14 +50,14 @@ static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__Rpm__ros
     NULL  // resize(index) function pointer
   },
   {
-    "indicated_frequency_rpm",  // name
+    "rpm_estimate",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(px4_msgs__msg__Rpm, indicated_frequency_rpm),  // bytes offset in struct
+    offsetof(px4_msgs__msg__Rpm, rpm_estimate),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -67,14 +67,14 @@ static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__Rpm__ros
     NULL  // resize(index) function pointer
   },
   {
-    "estimated_accurancy_rpm",  // name
+    "rpm_raw",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(px4_msgs__msg__Rpm, estimated_accurancy_rpm),  // bytes offset in struct
+    offsetof(px4_msgs__msg__Rpm, rpm_raw),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

@@ -21,7 +21,6 @@ px4_msgs__msg__Airspeed__init(px4_msgs__msg__Airspeed * msg)
   // timestamp_sample
   // indicated_airspeed_m_s
   // true_airspeed_m_s
-  // air_temperature_celsius
   // confidence
   return true;
 }
@@ -36,7 +35,6 @@ px4_msgs__msg__Airspeed__fini(px4_msgs__msg__Airspeed * msg)
   // timestamp_sample
   // indicated_airspeed_m_s
   // true_airspeed_m_s
-  // air_temperature_celsius
   // confidence
 }
 
@@ -62,10 +60,6 @@ px4_msgs__msg__Airspeed__are_equal(const px4_msgs__msg__Airspeed * lhs, const px
   if (lhs->true_airspeed_m_s != rhs->true_airspeed_m_s) {
     return false;
   }
-  // air_temperature_celsius
-  if (lhs->air_temperature_celsius != rhs->air_temperature_celsius) {
-    return false;
-  }
   // confidence
   if (lhs->confidence != rhs->confidence) {
     return false;
@@ -89,8 +83,6 @@ px4_msgs__msg__Airspeed__copy(
   output->indicated_airspeed_m_s = input->indicated_airspeed_m_s;
   // true_airspeed_m_s
   output->true_airspeed_m_s = input->true_airspeed_m_s;
-  // air_temperature_celsius
-  output->air_temperature_celsius = input->air_temperature_celsius;
   // confidence
   output->confidence = input->confidence;
   return true;

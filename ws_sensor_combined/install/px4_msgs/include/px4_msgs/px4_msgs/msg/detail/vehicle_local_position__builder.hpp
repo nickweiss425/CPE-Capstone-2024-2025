@@ -21,16 +21,32 @@ namespace msg
 namespace builder
 {
 
-class Init_VehicleLocalPosition_hagl_max
+class Init_VehicleLocalPosition_hagl_max_xy
 {
 public:
-  explicit Init_VehicleLocalPosition_hagl_max(::px4_msgs::msg::VehicleLocalPosition & msg)
+  explicit Init_VehicleLocalPosition_hagl_max_xy(::px4_msgs::msg::VehicleLocalPosition & msg)
   : msg_(msg)
   {}
-  ::px4_msgs::msg::VehicleLocalPosition hagl_max(::px4_msgs::msg::VehicleLocalPosition::_hagl_max_type arg)
+  ::px4_msgs::msg::VehicleLocalPosition hagl_max_xy(::px4_msgs::msg::VehicleLocalPosition::_hagl_max_xy_type arg)
   {
-    msg_.hagl_max = std::move(arg);
+    msg_.hagl_max_xy = std::move(arg);
     return std::move(msg_);
+  }
+
+private:
+  ::px4_msgs::msg::VehicleLocalPosition msg_;
+};
+
+class Init_VehicleLocalPosition_hagl_max_z
+{
+public:
+  explicit Init_VehicleLocalPosition_hagl_max_z(::px4_msgs::msg::VehicleLocalPosition & msg)
+  : msg_(msg)
+  {}
+  Init_VehicleLocalPosition_hagl_max_xy hagl_max_z(::px4_msgs::msg::VehicleLocalPosition::_hagl_max_z_type arg)
+  {
+    msg_.hagl_max_z = std::move(arg);
+    return Init_VehicleLocalPosition_hagl_max_xy(msg_);
   }
 
 private:
@@ -43,10 +59,10 @@ public:
   explicit Init_VehicleLocalPosition_hagl_min(::px4_msgs::msg::VehicleLocalPosition & msg)
   : msg_(msg)
   {}
-  Init_VehicleLocalPosition_hagl_max hagl_min(::px4_msgs::msg::VehicleLocalPosition::_hagl_min_type arg)
+  Init_VehicleLocalPosition_hagl_max_z hagl_min(::px4_msgs::msg::VehicleLocalPosition::_hagl_min_type arg)
   {
     msg_.hagl_min = std::move(arg);
-    return Init_VehicleLocalPosition_hagl_max(msg_);
+    return Init_VehicleLocalPosition_hagl_max_z(msg_);
   }
 
 private:

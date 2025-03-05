@@ -37,16 +37,64 @@ private:
   ::px4_msgs::msg::GimbalDeviceAttitudeStatus msg_;
 };
 
+class Init_GimbalDeviceAttitudeStatus_gimbal_device_id
+{
+public:
+  explicit Init_GimbalDeviceAttitudeStatus_gimbal_device_id(::px4_msgs::msg::GimbalDeviceAttitudeStatus & msg)
+  : msg_(msg)
+  {}
+  Init_GimbalDeviceAttitudeStatus_received_from_mavlink gimbal_device_id(::px4_msgs::msg::GimbalDeviceAttitudeStatus::_gimbal_device_id_type arg)
+  {
+    msg_.gimbal_device_id = std::move(arg);
+    return Init_GimbalDeviceAttitudeStatus_received_from_mavlink(msg_);
+  }
+
+private:
+  ::px4_msgs::msg::GimbalDeviceAttitudeStatus msg_;
+};
+
+class Init_GimbalDeviceAttitudeStatus_delta_yaw_velocity
+{
+public:
+  explicit Init_GimbalDeviceAttitudeStatus_delta_yaw_velocity(::px4_msgs::msg::GimbalDeviceAttitudeStatus & msg)
+  : msg_(msg)
+  {}
+  Init_GimbalDeviceAttitudeStatus_gimbal_device_id delta_yaw_velocity(::px4_msgs::msg::GimbalDeviceAttitudeStatus::_delta_yaw_velocity_type arg)
+  {
+    msg_.delta_yaw_velocity = std::move(arg);
+    return Init_GimbalDeviceAttitudeStatus_gimbal_device_id(msg_);
+  }
+
+private:
+  ::px4_msgs::msg::GimbalDeviceAttitudeStatus msg_;
+};
+
+class Init_GimbalDeviceAttitudeStatus_delta_yaw
+{
+public:
+  explicit Init_GimbalDeviceAttitudeStatus_delta_yaw(::px4_msgs::msg::GimbalDeviceAttitudeStatus & msg)
+  : msg_(msg)
+  {}
+  Init_GimbalDeviceAttitudeStatus_delta_yaw_velocity delta_yaw(::px4_msgs::msg::GimbalDeviceAttitudeStatus::_delta_yaw_type arg)
+  {
+    msg_.delta_yaw = std::move(arg);
+    return Init_GimbalDeviceAttitudeStatus_delta_yaw_velocity(msg_);
+  }
+
+private:
+  ::px4_msgs::msg::GimbalDeviceAttitudeStatus msg_;
+};
+
 class Init_GimbalDeviceAttitudeStatus_failure_flags
 {
 public:
   explicit Init_GimbalDeviceAttitudeStatus_failure_flags(::px4_msgs::msg::GimbalDeviceAttitudeStatus & msg)
   : msg_(msg)
   {}
-  Init_GimbalDeviceAttitudeStatus_received_from_mavlink failure_flags(::px4_msgs::msg::GimbalDeviceAttitudeStatus::_failure_flags_type arg)
+  Init_GimbalDeviceAttitudeStatus_delta_yaw failure_flags(::px4_msgs::msg::GimbalDeviceAttitudeStatus::_failure_flags_type arg)
   {
     msg_.failure_flags = std::move(arg);
-    return Init_GimbalDeviceAttitudeStatus_received_from_mavlink(msg_);
+    return Init_GimbalDeviceAttitudeStatus_delta_yaw(msg_);
   }
 
 private:

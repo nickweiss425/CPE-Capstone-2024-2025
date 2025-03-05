@@ -65,8 +65,6 @@ class PositionControllerStatus(metaclass=Metaclass_PositionControllerStatus):
         '_xtrack_error',
         '_wp_dist',
         '_acceptance_radius',
-        '_yaw_acceptance',
-        '_altitude_acceptance',
         '_type',
     ]
 
@@ -79,15 +77,11 @@ class PositionControllerStatus(metaclass=Metaclass_PositionControllerStatus):
         'xtrack_error': 'float',
         'wp_dist': 'float',
         'acceptance_radius': 'float',
-        'yaw_acceptance': 'float',
-        'altitude_acceptance': 'float',
         'type': 'uint8',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('uint64'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
@@ -110,8 +104,6 @@ class PositionControllerStatus(metaclass=Metaclass_PositionControllerStatus):
         self.xtrack_error = kwargs.get('xtrack_error', float())
         self.wp_dist = kwargs.get('wp_dist', float())
         self.acceptance_radius = kwargs.get('acceptance_radius', float())
-        self.yaw_acceptance = kwargs.get('yaw_acceptance', float())
-        self.altitude_acceptance = kwargs.get('altitude_acceptance', float())
         self.type = kwargs.get('type', int())
 
     def __repr__(self):
@@ -158,10 +150,6 @@ class PositionControllerStatus(metaclass=Metaclass_PositionControllerStatus):
         if self.wp_dist != other.wp_dist:
             return False
         if self.acceptance_radius != other.acceptance_radius:
-            return False
-        if self.yaw_acceptance != other.yaw_acceptance:
-            return False
-        if self.altitude_acceptance != other.altitude_acceptance:
             return False
         if self.type != other.type:
             return False
@@ -291,36 +279,6 @@ class PositionControllerStatus(metaclass=Metaclass_PositionControllerStatus):
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
                 "The 'acceptance_radius' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._acceptance_radius = value
-
-    @builtins.property
-    def yaw_acceptance(self):
-        """Message field 'yaw_acceptance'."""
-        return self._yaw_acceptance
-
-    @yaw_acceptance.setter
-    def yaw_acceptance(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'yaw_acceptance' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'yaw_acceptance' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._yaw_acceptance = value
-
-    @builtins.property
-    def altitude_acceptance(self):
-        """Message field 'altitude_acceptance'."""
-        return self._altitude_acceptance
-
-    @altitude_acceptance.setter
-    def altitude_acceptance(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'altitude_acceptance' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'altitude_acceptance' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._altitude_acceptance = value
 
     @builtins.property  # noqa: A003
     def type(self):  # noqa: A003

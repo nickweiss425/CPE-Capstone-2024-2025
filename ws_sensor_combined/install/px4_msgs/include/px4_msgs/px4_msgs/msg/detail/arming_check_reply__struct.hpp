@@ -279,10 +279,10 @@ struct ArmingCheckReply_
   }
 
   // constant declarations
+  static constexpr uint32_t MESSAGE_VERSION =
+    0u;
   static constexpr uint8_t HEALTH_COMPONENT_INDEX_NONE =
     0u;
-  static constexpr uint8_t HEALTH_COMPONENT_INDEX_AVOIDANCE =
-    19u;
   static constexpr uint8_t ORB_QUEUE_LENGTH =
     4u;
 
@@ -402,12 +402,12 @@ using ArmingCheckReply =
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t ArmingCheckReply_<ContainerAllocator>::HEALTH_COMPONENT_INDEX_NONE;
+constexpr uint32_t ArmingCheckReply_<ContainerAllocator>::MESSAGE_VERSION;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t ArmingCheckReply_<ContainerAllocator>::HEALTH_COMPONENT_INDEX_AVOIDANCE;
+constexpr uint8_t ArmingCheckReply_<ContainerAllocator>::HEALTH_COMPONENT_INDEX_NONE;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17

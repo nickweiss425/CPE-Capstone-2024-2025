@@ -121,6 +121,8 @@ struct VehicleRatesSetpoint_
   }
 
   // constant declarations
+  static constexpr uint32_t MESSAGE_VERSION =
+    0u;
 
   // pointer types
   using RawPtr =
@@ -193,6 +195,11 @@ using VehicleRatesSetpoint =
   px4_msgs::msg::VehicleRatesSetpoint_<std::allocator<void>>;
 
 // constant definitions
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint32_t VehicleRatesSetpoint_<ContainerAllocator>::MESSAGE_VERSION;
+#endif  // __cplusplus < 201703L
 
 }  // namespace msg
 

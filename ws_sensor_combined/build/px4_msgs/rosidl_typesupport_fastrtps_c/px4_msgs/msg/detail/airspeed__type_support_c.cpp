@@ -69,11 +69,6 @@ static bool _Airspeed__cdr_serialize(
     cdr << ros_message->true_airspeed_m_s;
   }
 
-  // Field name: air_temperature_celsius
-  {
-    cdr << ros_message->air_temperature_celsius;
-  }
-
   // Field name: confidence
   {
     cdr << ros_message->confidence;
@@ -109,11 +104,6 @@ static bool _Airspeed__cdr_deserialize(
   // Field name: true_airspeed_m_s
   {
     cdr >> ros_message->true_airspeed_m_s;
-  }
-
-  // Field name: air_temperature_celsius
-  {
-    cdr >> ros_message->air_temperature_celsius;
   }
 
   // Field name: confidence
@@ -159,12 +149,6 @@ size_t get_serialized_size_px4_msgs__msg__Airspeed(
   // field.name true_airspeed_m_s
   {
     size_t item_size = sizeof(ros_message->true_airspeed_m_s);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name air_temperature_celsius
-  {
-    size_t item_size = sizeof(ros_message->air_temperature_celsius);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -228,14 +212,6 @@ size_t max_serialized_size_px4_msgs__msg__Airspeed(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
   // member: true_airspeed_m_s
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: air_temperature_celsius
   {
     size_t array_size = 1;
 

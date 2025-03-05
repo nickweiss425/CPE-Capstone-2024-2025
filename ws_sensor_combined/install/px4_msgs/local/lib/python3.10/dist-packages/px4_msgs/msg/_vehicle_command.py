@@ -22,6 +22,7 @@ class Metaclass_VehicleCommand(type):
     _TYPE_SUPPORT = None
 
     __constants = {
+        'MESSAGE_VERSION': 0,
         'VEHICLE_CMD_CUSTOM_0': 0,
         'VEHICLE_CMD_CUSTOM_1': 1,
         'VEHICLE_CMD_CUSTOM_2': 2,
@@ -206,6 +207,7 @@ class Metaclass_VehicleCommand(type):
         # the message class under "Data and other attributes defined here:"
         # as well as populate each message instance
         return {
+            'MESSAGE_VERSION': cls.__constants['MESSAGE_VERSION'],
             'VEHICLE_CMD_CUSTOM_0': cls.__constants['VEHICLE_CMD_CUSTOM_0'],
             'VEHICLE_CMD_CUSTOM_1': cls.__constants['VEHICLE_CMD_CUSTOM_1'],
             'VEHICLE_CMD_CUSTOM_2': cls.__constants['VEHICLE_CMD_CUSTOM_2'],
@@ -363,6 +365,11 @@ class Metaclass_VehicleCommand(type):
             'ORB_QUEUE_LENGTH': cls.__constants['ORB_QUEUE_LENGTH'],
             'COMPONENT_MODE_EXECUTOR_START': cls.__constants['COMPONENT_MODE_EXECUTOR_START'],
         }
+
+    @property
+    def MESSAGE_VERSION(self):
+        """Message constant 'MESSAGE_VERSION'."""
+        return Metaclass_VehicleCommand.__constants['MESSAGE_VERSION']
 
     @property
     def VEHICLE_CMD_CUSTOM_0(self):
@@ -1150,6 +1157,7 @@ class VehicleCommand(metaclass=Metaclass_VehicleCommand):
     Message class 'VehicleCommand'.
 
     Constants:
+      MESSAGE_VERSION
       VEHICLE_CMD_CUSTOM_0
       VEHICLE_CMD_CUSTOM_1
       VEHICLE_CMD_CUSTOM_2

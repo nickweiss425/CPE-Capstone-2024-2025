@@ -6,6 +6,9 @@
 module px4_msgs {
   module msg {
     typedef float float__3[3];
+    module TrajectorySetpoint_Constants {
+      const uint32 MESSAGE_VERSION = 0;
+    };
     @verbatim (language="comment", text=
       "Trajectory setpoint in NED frame" "\n"
       "Input to PID position controller." "\n"

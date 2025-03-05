@@ -21,15 +21,15 @@ namespace msg
 namespace builder
 {
 
-class Init_Rpm_estimated_accurancy_rpm
+class Init_Rpm_rpm_raw
 {
 public:
-  explicit Init_Rpm_estimated_accurancy_rpm(::px4_msgs::msg::Rpm & msg)
+  explicit Init_Rpm_rpm_raw(::px4_msgs::msg::Rpm & msg)
   : msg_(msg)
   {}
-  ::px4_msgs::msg::Rpm estimated_accurancy_rpm(::px4_msgs::msg::Rpm::_estimated_accurancy_rpm_type arg)
+  ::px4_msgs::msg::Rpm rpm_raw(::px4_msgs::msg::Rpm::_rpm_raw_type arg)
   {
-    msg_.estimated_accurancy_rpm = std::move(arg);
+    msg_.rpm_raw = std::move(arg);
     return std::move(msg_);
   }
 
@@ -37,16 +37,16 @@ private:
   ::px4_msgs::msg::Rpm msg_;
 };
 
-class Init_Rpm_indicated_frequency_rpm
+class Init_Rpm_rpm_estimate
 {
 public:
-  explicit Init_Rpm_indicated_frequency_rpm(::px4_msgs::msg::Rpm & msg)
+  explicit Init_Rpm_rpm_estimate(::px4_msgs::msg::Rpm & msg)
   : msg_(msg)
   {}
-  Init_Rpm_estimated_accurancy_rpm indicated_frequency_rpm(::px4_msgs::msg::Rpm::_indicated_frequency_rpm_type arg)
+  Init_Rpm_rpm_raw rpm_estimate(::px4_msgs::msg::Rpm::_rpm_estimate_type arg)
   {
-    msg_.indicated_frequency_rpm = std::move(arg);
-    return Init_Rpm_estimated_accurancy_rpm(msg_);
+    msg_.rpm_estimate = std::move(arg);
+    return Init_Rpm_rpm_raw(msg_);
   }
 
 private:
@@ -59,10 +59,10 @@ public:
   Init_Rpm_timestamp()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_Rpm_indicated_frequency_rpm timestamp(::px4_msgs::msg::Rpm::_timestamp_type arg)
+  Init_Rpm_rpm_estimate timestamp(::px4_msgs::msg::Rpm::_timestamp_type arg)
   {
     msg_.timestamp = std::move(arg);
-    return Init_Rpm_indicated_frequency_rpm(msg_);
+    return Init_Rpm_rpm_estimate(msg_);
   }
 
 private:

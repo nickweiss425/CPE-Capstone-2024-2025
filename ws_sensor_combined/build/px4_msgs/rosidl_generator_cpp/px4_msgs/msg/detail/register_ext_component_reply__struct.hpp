@@ -143,6 +143,8 @@ struct RegisterExtComponentReply_
   }
 
   // constant declarations
+  static constexpr uint32_t MESSAGE_VERSION =
+    0u;
   static constexpr uint8_t ORB_QUEUE_LENGTH =
     2u;
 
@@ -223,6 +225,11 @@ using RegisterExtComponentReply =
   px4_msgs::msg::RegisterExtComponentReply_<std::allocator<void>>;
 
 // constant definitions
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint32_t RegisterExtComponentReply_<ContainerAllocator>::MESSAGE_VERSION;
+#endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>

@@ -25,7 +25,7 @@ module px4_msgs {
       uint32 device_id;
 
       @verbatim (language="comment", text=
-        "(radians) optical flow in radians where a positive value is produced by a RH rotation about the body axis")
+        "(radians) optical flow in radians where a positive value is produced by a RH rotation of the sensor about the body axis")
       float__2 pixel_flow;
 
       @verbatim (language="comment", text=

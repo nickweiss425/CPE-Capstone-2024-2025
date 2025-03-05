@@ -7,6 +7,7 @@ module px4_msgs {
   module msg {
     typedef float float__12[12];
     module ActuatorMotors_Constants {
+      const uint32 MESSAGE_VERSION = 0;
       const uint8 ACTUATOR_FUNCTION_MOTOR1 = 101;
       const uint8 NUM_CONTROLS = 12;
     };

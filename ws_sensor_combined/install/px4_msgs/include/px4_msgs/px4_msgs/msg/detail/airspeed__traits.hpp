@@ -53,13 +53,6 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
-  // member: air_temperature_celsius
-  {
-    out << "air_temperature_celsius: ";
-    rosidl_generator_traits::value_to_yaml(msg.air_temperature_celsius, out);
-    out << ", ";
-  }
-
   // member: confidence
   {
     out << "confidence: ";
@@ -109,16 +102,6 @@ inline void to_block_style_yaml(
     }
     out << "true_airspeed_m_s: ";
     rosidl_generator_traits::value_to_yaml(msg.true_airspeed_m_s, out);
-    out << "\n";
-  }
-
-  // member: air_temperature_celsius
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "air_temperature_celsius: ";
-    rosidl_generator_traits::value_to_yaml(msg.air_temperature_celsius, out);
     out << "\n";
   }
 

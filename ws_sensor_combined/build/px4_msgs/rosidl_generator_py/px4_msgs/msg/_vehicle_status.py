@@ -20,6 +20,7 @@ class Metaclass_VehicleStatus(type):
     _TYPE_SUPPORT = None
 
     __constants = {
+        'MESSAGE_VERSION': 1,
         'ARMING_STATE_DISARMED': 1,
         'ARMING_STATE_ARMED': 2,
         'ARM_DISARM_REASON_TRANSITION_TO_STANDBY': 0,
@@ -115,6 +116,7 @@ class Metaclass_VehicleStatus(type):
         # the message class under "Data and other attributes defined here:"
         # as well as populate each message instance
         return {
+            'MESSAGE_VERSION': cls.__constants['MESSAGE_VERSION'],
             'ARMING_STATE_DISARMED': cls.__constants['ARMING_STATE_DISARMED'],
             'ARMING_STATE_ARMED': cls.__constants['ARMING_STATE_ARMED'],
             'ARM_DISARM_REASON_TRANSITION_TO_STANDBY': cls.__constants['ARM_DISARM_REASON_TRANSITION_TO_STANDBY'],
@@ -183,6 +185,11 @@ class Metaclass_VehicleStatus(type):
             'FAILSAFE_DEFER_STATE_ENABLED': cls.__constants['FAILSAFE_DEFER_STATE_ENABLED'],
             'FAILSAFE_DEFER_STATE_WOULD_FAILSAFE': cls.__constants['FAILSAFE_DEFER_STATE_WOULD_FAILSAFE'],
         }
+
+    @property
+    def MESSAGE_VERSION(self):
+        """Message constant 'MESSAGE_VERSION'."""
+        return Metaclass_VehicleStatus.__constants['MESSAGE_VERSION']
 
     @property
     def ARMING_STATE_DISARMED(self):
@@ -525,6 +532,7 @@ class VehicleStatus(metaclass=Metaclass_VehicleStatus):
     Message class 'VehicleStatus'.
 
     Constants:
+      MESSAGE_VERSION
       ARMING_STATE_DISARMED
       ARMING_STATE_ARMED
       ARM_DISARM_REASON_TRANSITION_TO_STANDBY
@@ -631,8 +639,6 @@ class VehicleStatus(metaclass=Metaclass_VehicleStatus):
         '_open_drone_id_system_healthy',
         '_parachute_system_present',
         '_parachute_system_healthy',
-        '_avoidance_system_required',
-        '_avoidance_system_valid',
         '_rc_calibration_in_progress',
         '_calibration_enabled',
         '_pre_flight_checks_pass',
@@ -675,8 +681,6 @@ class VehicleStatus(metaclass=Metaclass_VehicleStatus):
         'open_drone_id_system_healthy': 'boolean',
         'parachute_system_present': 'boolean',
         'parachute_system_healthy': 'boolean',
-        'avoidance_system_required': 'boolean',
-        'avoidance_system_valid': 'boolean',
         'rc_calibration_in_progress': 'boolean',
         'calibration_enabled': 'boolean',
         'pre_flight_checks_pass': 'boolean',
@@ -711,8 +715,6 @@ class VehicleStatus(metaclass=Metaclass_VehicleStatus):
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
-        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
-        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
@@ -766,8 +768,6 @@ class VehicleStatus(metaclass=Metaclass_VehicleStatus):
         self.open_drone_id_system_healthy = kwargs.get('open_drone_id_system_healthy', bool())
         self.parachute_system_present = kwargs.get('parachute_system_present', bool())
         self.parachute_system_healthy = kwargs.get('parachute_system_healthy', bool())
-        self.avoidance_system_required = kwargs.get('avoidance_system_required', bool())
-        self.avoidance_system_valid = kwargs.get('avoidance_system_valid', bool())
         self.rc_calibration_in_progress = kwargs.get('rc_calibration_in_progress', bool())
         self.calibration_enabled = kwargs.get('calibration_enabled', bool())
         self.pre_flight_checks_pass = kwargs.get('pre_flight_checks_pass', bool())
@@ -872,10 +872,6 @@ class VehicleStatus(metaclass=Metaclass_VehicleStatus):
         if self.parachute_system_present != other.parachute_system_present:
             return False
         if self.parachute_system_healthy != other.parachute_system_healthy:
-            return False
-        if self.avoidance_system_required != other.avoidance_system_required:
-            return False
-        if self.avoidance_system_valid != other.avoidance_system_valid:
             return False
         if self.rc_calibration_in_progress != other.rc_calibration_in_progress:
             return False
@@ -1397,32 +1393,6 @@ class VehicleStatus(metaclass=Metaclass_VehicleStatus):
                 isinstance(value, bool), \
                 "The 'parachute_system_healthy' field must be of type 'bool'"
         self._parachute_system_healthy = value
-
-    @builtins.property
-    def avoidance_system_required(self):
-        """Message field 'avoidance_system_required'."""
-        return self._avoidance_system_required
-
-    @avoidance_system_required.setter
-    def avoidance_system_required(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, bool), \
-                "The 'avoidance_system_required' field must be of type 'bool'"
-        self._avoidance_system_required = value
-
-    @builtins.property
-    def avoidance_system_valid(self):
-        """Message field 'avoidance_system_valid'."""
-        return self._avoidance_system_valid
-
-    @avoidance_system_valid.setter
-    def avoidance_system_valid(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, bool), \
-                "The 'avoidance_system_valid' field must be of type 'bool'"
-        self._avoidance_system_valid = value
 
     @builtins.property
     def rc_calibration_in_progress(self):

@@ -53,13 +53,6 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
-  // member: baro_temp_celcius
-  {
-    out << "baro_temp_celcius: ";
-    rosidl_generator_traits::value_to_yaml(msg.baro_temp_celcius, out);
-    out << ", ";
-  }
-
   // member: baro_pressure_pa
   {
     out << "baro_pressure_pa: ";
@@ -67,17 +60,24 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
+  // member: ambient_temperature
+  {
+    out << "ambient_temperature: ";
+    rosidl_generator_traits::value_to_yaml(msg.ambient_temperature, out);
+    out << ", ";
+  }
+
+  // member: temperature_source
+  {
+    out << "temperature_source: ";
+    rosidl_generator_traits::value_to_yaml(msg.temperature_source, out);
+    out << ", ";
+  }
+
   // member: rho
   {
     out << "rho: ";
     rosidl_generator_traits::value_to_yaml(msg.rho, out);
-    out << ", ";
-  }
-
-  // member: eas2tas
-  {
-    out << "eas2tas: ";
-    rosidl_generator_traits::value_to_yaml(msg.eas2tas, out);
     out << ", ";
   }
 
@@ -133,16 +133,6 @@ inline void to_block_style_yaml(
     out << "\n";
   }
 
-  // member: baro_temp_celcius
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "baro_temp_celcius: ";
-    rosidl_generator_traits::value_to_yaml(msg.baro_temp_celcius, out);
-    out << "\n";
-  }
-
   // member: baro_pressure_pa
   {
     if (indentation > 0) {
@@ -153,6 +143,26 @@ inline void to_block_style_yaml(
     out << "\n";
   }
 
+  // member: ambient_temperature
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "ambient_temperature: ";
+    rosidl_generator_traits::value_to_yaml(msg.ambient_temperature, out);
+    out << "\n";
+  }
+
+  // member: temperature_source
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "temperature_source: ";
+    rosidl_generator_traits::value_to_yaml(msg.temperature_source, out);
+    out << "\n";
+  }
+
   // member: rho
   {
     if (indentation > 0) {
@@ -160,16 +170,6 @@ inline void to_block_style_yaml(
     }
     out << "rho: ";
     rosidl_generator_traits::value_to_yaml(msg.rho, out);
-    out << "\n";
-  }
-
-  // member: eas2tas
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "eas2tas: ";
-    rosidl_generator_traits::value_to_yaml(msg.eas2tas, out);
     out << "\n";
   }
 

@@ -57,19 +57,23 @@ class FlightCommand(metaclass=Metaclass_FlightCommand):
     """Message class 'FlightCommand'."""
 
     __slots__ = [
-        '_x',
-        '_y',
+        '_latitude_deg',
+        '_longitude_deg',
         '_altitude',
         '_radius',
         '_length',
+        '_duration',
+        '_waypoint_type',
     ]
 
     _fields_and_field_types = {
-        'x': 'float',
-        'y': 'float',
+        'latitude_deg': 'float',
+        'longitude_deg': 'float',
         'altitude': 'float',
         'radius': 'float',
         'length': 'float',
+        'duration': 'float',
+        'waypoint_type': 'int8',
     }
 
     SLOT_TYPES = (
@@ -78,17 +82,21 @@ class FlightCommand(metaclass=Metaclass_FlightCommand):
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int8'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.x = kwargs.get('x', float())
-        self.y = kwargs.get('y', float())
+        self.latitude_deg = kwargs.get('latitude_deg', float())
+        self.longitude_deg = kwargs.get('longitude_deg', float())
         self.altitude = kwargs.get('altitude', float())
         self.radius = kwargs.get('radius', float())
         self.length = kwargs.get('length', float())
+        self.duration = kwargs.get('duration', float())
+        self.waypoint_type = kwargs.get('waypoint_type', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -119,15 +127,19 @@ class FlightCommand(metaclass=Metaclass_FlightCommand):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.x != other.x:
+        if self.latitude_deg != other.latitude_deg:
             return False
-        if self.y != other.y:
+        if self.longitude_deg != other.longitude_deg:
             return False
         if self.altitude != other.altitude:
             return False
         if self.radius != other.radius:
             return False
         if self.length != other.length:
+            return False
+        if self.duration != other.duration:
+            return False
+        if self.waypoint_type != other.waypoint_type:
             return False
         return True
 
@@ -137,34 +149,34 @@ class FlightCommand(metaclass=Metaclass_FlightCommand):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def x(self):
-        """Message field 'x'."""
-        return self._x
+    def latitude_deg(self):
+        """Message field 'latitude_deg'."""
+        return self._latitude_deg
 
-    @x.setter
-    def x(self, value):
+    @latitude_deg.setter
+    def latitude_deg(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'x' field must be of type 'float'"
+                "The 'latitude_deg' field must be of type 'float'"
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'x' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._x = value
+                "The 'latitude_deg' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._latitude_deg = value
 
     @builtins.property
-    def y(self):
-        """Message field 'y'."""
-        return self._y
+    def longitude_deg(self):
+        """Message field 'longitude_deg'."""
+        return self._longitude_deg
 
-    @y.setter
-    def y(self, value):
+    @longitude_deg.setter
+    def longitude_deg(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'y' field must be of type 'float'"
+                "The 'longitude_deg' field must be of type 'float'"
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'y' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._y = value
+                "The 'longitude_deg' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._longitude_deg = value
 
     @builtins.property
     def altitude(self):
@@ -210,3 +222,33 @@ class FlightCommand(metaclass=Metaclass_FlightCommand):
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
                 "The 'length' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._length = value
+
+    @builtins.property
+    def duration(self):
+        """Message field 'duration'."""
+        return self._duration
+
+    @duration.setter
+    def duration(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'duration' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'duration' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._duration = value
+
+    @builtins.property
+    def waypoint_type(self):
+        """Message field 'waypoint_type'."""
+        return self._waypoint_type
+
+    @waypoint_type.setter
+    def waypoint_type(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'waypoint_type' field must be of type 'int'"
+            assert value >= -128 and value < 128, \
+                "The 'waypoint_type' field must be an integer in [-128, 127]"
+        self._waypoint_type = value

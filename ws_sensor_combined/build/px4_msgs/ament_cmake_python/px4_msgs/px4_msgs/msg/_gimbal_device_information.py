@@ -177,7 +177,7 @@ class GimbalDeviceInformation(metaclass=Metaclass_GimbalDeviceInformation):
         '_pitch_max',
         '_yaw_min',
         '_yaw_max',
-        '_gimbal_device_compid',
+        '_gimbal_device_id',
     ]
 
     _fields_and_field_types = {
@@ -196,7 +196,7 @@ class GimbalDeviceInformation(metaclass=Metaclass_GimbalDeviceInformation):
         'pitch_max': 'float',
         'yaw_min': 'float',
         'yaw_max': 'float',
-        'gimbal_device_compid': 'uint8',
+        'gimbal_device_id': 'uint8',
     }
 
     SLOT_TYPES = (
@@ -249,7 +249,7 @@ class GimbalDeviceInformation(metaclass=Metaclass_GimbalDeviceInformation):
         self.pitch_max = kwargs.get('pitch_max', float())
         self.yaw_min = kwargs.get('yaw_min', float())
         self.yaw_max = kwargs.get('yaw_max', float())
-        self.gimbal_device_compid = kwargs.get('gimbal_device_compid', int())
+        self.gimbal_device_id = kwargs.get('gimbal_device_id', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -310,7 +310,7 @@ class GimbalDeviceInformation(metaclass=Metaclass_GimbalDeviceInformation):
             return False
         if self.yaw_max != other.yaw_max:
             return False
-        if self.gimbal_device_compid != other.gimbal_device_compid:
+        if self.gimbal_device_id != other.gimbal_device_id:
             return False
         return True
 
@@ -593,16 +593,16 @@ class GimbalDeviceInformation(metaclass=Metaclass_GimbalDeviceInformation):
         self._yaw_max = value
 
     @builtins.property
-    def gimbal_device_compid(self):
-        """Message field 'gimbal_device_compid'."""
-        return self._gimbal_device_compid
+    def gimbal_device_id(self):
+        """Message field 'gimbal_device_id'."""
+        return self._gimbal_device_id
 
-    @gimbal_device_compid.setter
-    def gimbal_device_compid(self, value):
+    @gimbal_device_id.setter
+    def gimbal_device_id(self, value):
         if __debug__:
             assert \
                 isinstance(value, int), \
-                "The 'gimbal_device_compid' field must be of type 'int'"
+                "The 'gimbal_device_id' field must be of type 'int'"
             assert value >= 0 and value < 256, \
-                "The 'gimbal_device_compid' field must be an unsigned integer in [0, 255]"
-        self._gimbal_device_compid = value
+                "The 'gimbal_device_id' field must be an unsigned integer in [0, 255]"
+        self._gimbal_device_id = value

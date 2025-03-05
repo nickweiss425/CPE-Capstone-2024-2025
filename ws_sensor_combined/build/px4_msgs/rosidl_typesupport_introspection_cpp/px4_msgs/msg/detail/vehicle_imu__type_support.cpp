@@ -218,7 +218,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember VehicleImu_me
   },
   {
     "delta_angle_dt",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT16,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
@@ -235,7 +235,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember VehicleImu_me
   },
   {
     "delta_velocity_dt",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT16,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array

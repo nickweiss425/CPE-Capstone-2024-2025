@@ -31,7 +31,7 @@ void px4_msgs__msg__EstimatorStatusFlags__rosidl_typesupport_introspection_c__Es
   px4_msgs__msg__EstimatorStatusFlags__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__EstimatorStatusFlags__rosidl_typesupport_introspection_c__EstimatorStatusFlags_message_member_array[69] = {
+static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__EstimatorStatusFlags__rosidl_typesupport_introspection_c__EstimatorStatusFlags_message_member_array[70] = {
   {
     "timestamp",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT64,  // type
@@ -815,6 +815,23 @@ static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__Estimato
     NULL  // resize(index) function pointer
   },
   {
+    "cs_baro_fault",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(px4_msgs__msg__EstimatorStatusFlags, cs_baro_fault),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
     "fault_status_changes",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
@@ -1210,7 +1227,7 @@ static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__Estimato
 static const rosidl_typesupport_introspection_c__MessageMembers px4_msgs__msg__EstimatorStatusFlags__rosidl_typesupport_introspection_c__EstimatorStatusFlags_message_members = {
   "px4_msgs__msg",  // message namespace
   "EstimatorStatusFlags",  // message name
-  69,  // number of fields
+  70,  // number of fields
   sizeof(px4_msgs__msg__EstimatorStatusFlags),
   px4_msgs__msg__EstimatorStatusFlags__rosidl_typesupport_introspection_c__EstimatorStatusFlags_message_member_array,  // message members
   px4_msgs__msg__EstimatorStatusFlags__rosidl_typesupport_introspection_c__EstimatorStatusFlags_init_function,  // function to initialize message memory (memory has to be allocated)

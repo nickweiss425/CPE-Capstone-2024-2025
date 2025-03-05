@@ -45,11 +45,11 @@ typedef struct px4_msgs__msg__EstimatorStatusFlags
   bool cs_in_air;
   /// 8 - true when wind velocity is being estimated
   bool cs_wind;
-  /// 9 - true when baro height is being fused as a primary height reference
+  /// 9 - true when baro data is being fused
   bool cs_baro_hgt;
-  /// 10 - true when range finder height is being fused as a primary height reference
+  /// 10 - true when range finder data is being fused for height aiding
   bool cs_rng_hgt;
-  /// 11 - true when GPS height is being fused as a primary height reference
+  /// 11 - true when GPS altitude is being fused
   bool cs_gps_hgt;
   /// 12 - true when local position data fusion from external vision is intended
   bool cs_ev_pos;
@@ -113,6 +113,8 @@ typedef struct px4_msgs__msg__EstimatorStatusFlags
   bool cs_valid_fake_pos;
   /// 42 - true if the vehicle is at a constant position
   bool cs_constant_pos;
+  /// 43 - true when the current baro has been declared faulty and is no longer being used
+  bool cs_baro_fault;
   /// fault status
   /// number of filter fault status (fs) changes
   uint32_t fault_status_changes;

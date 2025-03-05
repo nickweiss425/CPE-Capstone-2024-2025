@@ -53,7 +53,7 @@ struct GimbalDeviceInformation_
       this->pitch_max = 0.0f;
       this->yaw_min = 0.0f;
       this->yaw_max = 0.0f;
-      this->gimbal_device_compid = 0;
+      this->gimbal_device_id = 0;
     }
   }
 
@@ -80,7 +80,7 @@ struct GimbalDeviceInformation_
       this->pitch_max = 0.0f;
       this->yaw_min = 0.0f;
       this->yaw_max = 0.0f;
-      this->gimbal_device_compid = 0;
+      this->gimbal_device_id = 0;
     }
   }
 
@@ -130,9 +130,9 @@ struct GimbalDeviceInformation_
   using _yaw_max_type =
     float;
   _yaw_max_type yaw_max;
-  using _gimbal_device_compid_type =
+  using _gimbal_device_id_type =
     uint8_t;
-  _gimbal_device_compid_type gimbal_device_compid;
+  _gimbal_device_id_type gimbal_device_id;
 
   // setters for named parameter idiom
   Type & set__timestamp(
@@ -225,10 +225,10 @@ struct GimbalDeviceInformation_
     this->yaw_max = _arg;
     return *this;
   }
-  Type & set__gimbal_device_compid(
+  Type & set__gimbal_device_id(
     const uint8_t & _arg)
   {
-    this->gimbal_device_compid = _arg;
+    this->gimbal_device_id = _arg;
     return *this;
   }
 
@@ -343,7 +343,7 @@ struct GimbalDeviceInformation_
     if (this->yaw_max != other.yaw_max) {
       return false;
     }
-    if (this->gimbal_device_compid != other.gimbal_device_compid) {
+    if (this->gimbal_device_id != other.gimbal_device_id) {
       return false;
     }
     return true;

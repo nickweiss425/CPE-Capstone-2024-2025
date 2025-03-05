@@ -484,49 +484,51 @@ struct BatteryStatus_
   }
 
   // constant declarations
-  static constexpr uint8_t BATTERY_SOURCE_POWER_MODULE =
+  static constexpr uint32_t MESSAGE_VERSION =
     0u;
-  static constexpr uint8_t BATTERY_SOURCE_EXTERNAL =
-    1u;
-  static constexpr uint8_t BATTERY_SOURCE_ESCS =
-    2u;
-  static constexpr uint8_t BATTERY_WARNING_NONE =
+  static constexpr uint8_t SOURCE_POWER_MODULE =
     0u;
-  static constexpr uint8_t BATTERY_WARNING_LOW =
+  static constexpr uint8_t SOURCE_EXTERNAL =
     1u;
-  static constexpr uint8_t BATTERY_WARNING_CRITICAL =
+  static constexpr uint8_t SOURCE_ESCS =
     2u;
-  static constexpr uint8_t BATTERY_WARNING_EMERGENCY =
+  static constexpr uint8_t WARNING_NONE =
+    0u;
+  static constexpr uint8_t WARNING_LOW =
+    1u;
+  static constexpr uint8_t WARNING_CRITICAL =
+    2u;
+  static constexpr uint8_t WARNING_EMERGENCY =
     3u;
-  static constexpr uint8_t BATTERY_WARNING_FAILED =
+  static constexpr uint8_t WARNING_FAILED =
     4u;
-  static constexpr uint8_t BATTERY_STATE_UNHEALTHY =
+  static constexpr uint8_t STATE_UNHEALTHY =
     6u;
-  static constexpr uint8_t BATTERY_STATE_CHARGING =
+  static constexpr uint8_t STATE_CHARGING =
     7u;
-  static constexpr uint8_t BATTERY_FAULT_DEEP_DISCHARGE =
+  static constexpr uint8_t FAULT_DEEP_DISCHARGE =
     0u;
-  static constexpr uint8_t BATTERY_FAULT_SPIKES =
+  static constexpr uint8_t FAULT_SPIKES =
     1u;
-  static constexpr uint8_t BATTERY_FAULT_CELL_FAIL =
+  static constexpr uint8_t FAULT_CELL_FAIL =
     2u;
-  static constexpr uint8_t BATTERY_FAULT_OVER_CURRENT =
+  static constexpr uint8_t FAULT_OVER_CURRENT =
     3u;
-  static constexpr uint8_t BATTERY_FAULT_OVER_TEMPERATURE =
+  static constexpr uint8_t FAULT_OVER_TEMPERATURE =
     4u;
-  static constexpr uint8_t BATTERY_FAULT_UNDER_TEMPERATURE =
+  static constexpr uint8_t FAULT_UNDER_TEMPERATURE =
     5u;
-  static constexpr uint8_t BATTERY_FAULT_INCOMPATIBLE_VOLTAGE =
+  static constexpr uint8_t FAULT_INCOMPATIBLE_VOLTAGE =
     6u;
-  static constexpr uint8_t BATTERY_FAULT_INCOMPATIBLE_FIRMWARE =
+  static constexpr uint8_t FAULT_INCOMPATIBLE_FIRMWARE =
     7u;
-  static constexpr uint8_t BATTERY_FAULT_INCOMPATIBLE_MODEL =
+  static constexpr uint8_t FAULT_INCOMPATIBLE_MODEL =
     8u;
-  static constexpr uint8_t BATTERY_FAULT_HARDWARE_FAILURE =
+  static constexpr uint8_t FAULT_HARDWARE_FAILURE =
     9u;
-  static constexpr uint8_t BATTERY_FAULT_FAILED_TO_ARM =
+  static constexpr uint8_t FAULT_FAILED_TO_ARM =
     10u;
-  static constexpr uint8_t BATTERY_FAULT_COUNT =
+  static constexpr uint8_t FAULT_COUNT =
     11u;
   static constexpr uint8_t MAX_INSTANCES =
     4u;
@@ -704,112 +706,117 @@ using BatteryStatus =
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t BatteryStatus_<ContainerAllocator>::BATTERY_SOURCE_POWER_MODULE;
+constexpr uint32_t BatteryStatus_<ContainerAllocator>::MESSAGE_VERSION;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t BatteryStatus_<ContainerAllocator>::BATTERY_SOURCE_EXTERNAL;
+constexpr uint8_t BatteryStatus_<ContainerAllocator>::SOURCE_POWER_MODULE;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t BatteryStatus_<ContainerAllocator>::BATTERY_SOURCE_ESCS;
+constexpr uint8_t BatteryStatus_<ContainerAllocator>::SOURCE_EXTERNAL;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t BatteryStatus_<ContainerAllocator>::BATTERY_WARNING_NONE;
+constexpr uint8_t BatteryStatus_<ContainerAllocator>::SOURCE_ESCS;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t BatteryStatus_<ContainerAllocator>::BATTERY_WARNING_LOW;
+constexpr uint8_t BatteryStatus_<ContainerAllocator>::WARNING_NONE;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t BatteryStatus_<ContainerAllocator>::BATTERY_WARNING_CRITICAL;
+constexpr uint8_t BatteryStatus_<ContainerAllocator>::WARNING_LOW;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t BatteryStatus_<ContainerAllocator>::BATTERY_WARNING_EMERGENCY;
+constexpr uint8_t BatteryStatus_<ContainerAllocator>::WARNING_CRITICAL;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t BatteryStatus_<ContainerAllocator>::BATTERY_WARNING_FAILED;
+constexpr uint8_t BatteryStatus_<ContainerAllocator>::WARNING_EMERGENCY;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t BatteryStatus_<ContainerAllocator>::BATTERY_STATE_UNHEALTHY;
+constexpr uint8_t BatteryStatus_<ContainerAllocator>::WARNING_FAILED;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t BatteryStatus_<ContainerAllocator>::BATTERY_STATE_CHARGING;
+constexpr uint8_t BatteryStatus_<ContainerAllocator>::STATE_UNHEALTHY;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t BatteryStatus_<ContainerAllocator>::BATTERY_FAULT_DEEP_DISCHARGE;
+constexpr uint8_t BatteryStatus_<ContainerAllocator>::STATE_CHARGING;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t BatteryStatus_<ContainerAllocator>::BATTERY_FAULT_SPIKES;
+constexpr uint8_t BatteryStatus_<ContainerAllocator>::FAULT_DEEP_DISCHARGE;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t BatteryStatus_<ContainerAllocator>::BATTERY_FAULT_CELL_FAIL;
+constexpr uint8_t BatteryStatus_<ContainerAllocator>::FAULT_SPIKES;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t BatteryStatus_<ContainerAllocator>::BATTERY_FAULT_OVER_CURRENT;
+constexpr uint8_t BatteryStatus_<ContainerAllocator>::FAULT_CELL_FAIL;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t BatteryStatus_<ContainerAllocator>::BATTERY_FAULT_OVER_TEMPERATURE;
+constexpr uint8_t BatteryStatus_<ContainerAllocator>::FAULT_OVER_CURRENT;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t BatteryStatus_<ContainerAllocator>::BATTERY_FAULT_UNDER_TEMPERATURE;
+constexpr uint8_t BatteryStatus_<ContainerAllocator>::FAULT_OVER_TEMPERATURE;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t BatteryStatus_<ContainerAllocator>::BATTERY_FAULT_INCOMPATIBLE_VOLTAGE;
+constexpr uint8_t BatteryStatus_<ContainerAllocator>::FAULT_UNDER_TEMPERATURE;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t BatteryStatus_<ContainerAllocator>::BATTERY_FAULT_INCOMPATIBLE_FIRMWARE;
+constexpr uint8_t BatteryStatus_<ContainerAllocator>::FAULT_INCOMPATIBLE_VOLTAGE;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t BatteryStatus_<ContainerAllocator>::BATTERY_FAULT_INCOMPATIBLE_MODEL;
+constexpr uint8_t BatteryStatus_<ContainerAllocator>::FAULT_INCOMPATIBLE_FIRMWARE;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t BatteryStatus_<ContainerAllocator>::BATTERY_FAULT_HARDWARE_FAILURE;
+constexpr uint8_t BatteryStatus_<ContainerAllocator>::FAULT_INCOMPATIBLE_MODEL;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t BatteryStatus_<ContainerAllocator>::BATTERY_FAULT_FAILED_TO_ARM;
+constexpr uint8_t BatteryStatus_<ContainerAllocator>::FAULT_HARDWARE_FAILURE;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t BatteryStatus_<ContainerAllocator>::BATTERY_FAULT_COUNT;
+constexpr uint8_t BatteryStatus_<ContainerAllocator>::FAULT_FAILED_TO_ARM;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint8_t BatteryStatus_<ContainerAllocator>::FAULT_COUNT;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17

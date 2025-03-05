@@ -143,7 +143,7 @@ bool px4_msgs__msg__vehicle_imu__convert_from_py(PyObject * _pymsg, void * _ros_
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->delta_angle_dt = (uint16_t)PyLong_AsUnsignedLong(field);
+    ros_message->delta_angle_dt = PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
   {  // delta_velocity_dt
@@ -152,7 +152,7 @@ bool px4_msgs__msg__vehicle_imu__convert_from_py(PyObject * _pymsg, void * _ros_
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->delta_velocity_dt = (uint16_t)PyLong_AsUnsignedLong(field);
+    ros_message->delta_velocity_dt = PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
   {  // delta_angle_clipping

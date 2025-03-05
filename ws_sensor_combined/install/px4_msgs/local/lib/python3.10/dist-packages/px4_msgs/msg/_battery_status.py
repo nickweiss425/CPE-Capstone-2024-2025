@@ -25,28 +25,29 @@ class Metaclass_BatteryStatus(type):
     _TYPE_SUPPORT = None
 
     __constants = {
-        'BATTERY_SOURCE_POWER_MODULE': 0,
-        'BATTERY_SOURCE_EXTERNAL': 1,
-        'BATTERY_SOURCE_ESCS': 2,
-        'BATTERY_WARNING_NONE': 0,
-        'BATTERY_WARNING_LOW': 1,
-        'BATTERY_WARNING_CRITICAL': 2,
-        'BATTERY_WARNING_EMERGENCY': 3,
-        'BATTERY_WARNING_FAILED': 4,
-        'BATTERY_STATE_UNHEALTHY': 6,
-        'BATTERY_STATE_CHARGING': 7,
-        'BATTERY_FAULT_DEEP_DISCHARGE': 0,
-        'BATTERY_FAULT_SPIKES': 1,
-        'BATTERY_FAULT_CELL_FAIL': 2,
-        'BATTERY_FAULT_OVER_CURRENT': 3,
-        'BATTERY_FAULT_OVER_TEMPERATURE': 4,
-        'BATTERY_FAULT_UNDER_TEMPERATURE': 5,
-        'BATTERY_FAULT_INCOMPATIBLE_VOLTAGE': 6,
-        'BATTERY_FAULT_INCOMPATIBLE_FIRMWARE': 7,
-        'BATTERY_FAULT_INCOMPATIBLE_MODEL': 8,
-        'BATTERY_FAULT_HARDWARE_FAILURE': 9,
-        'BATTERY_FAULT_FAILED_TO_ARM': 10,
-        'BATTERY_FAULT_COUNT': 11,
+        'MESSAGE_VERSION': 0,
+        'SOURCE_POWER_MODULE': 0,
+        'SOURCE_EXTERNAL': 1,
+        'SOURCE_ESCS': 2,
+        'WARNING_NONE': 0,
+        'WARNING_LOW': 1,
+        'WARNING_CRITICAL': 2,
+        'WARNING_EMERGENCY': 3,
+        'WARNING_FAILED': 4,
+        'STATE_UNHEALTHY': 6,
+        'STATE_CHARGING': 7,
+        'FAULT_DEEP_DISCHARGE': 0,
+        'FAULT_SPIKES': 1,
+        'FAULT_CELL_FAIL': 2,
+        'FAULT_OVER_CURRENT': 3,
+        'FAULT_OVER_TEMPERATURE': 4,
+        'FAULT_UNDER_TEMPERATURE': 5,
+        'FAULT_INCOMPATIBLE_VOLTAGE': 6,
+        'FAULT_INCOMPATIBLE_FIRMWARE': 7,
+        'FAULT_INCOMPATIBLE_MODEL': 8,
+        'FAULT_HARDWARE_FAILURE': 9,
+        'FAULT_FAILED_TO_ARM': 10,
+        'FAULT_COUNT': 11,
         'MAX_INSTANCES': 4,
     }
 
@@ -76,140 +77,146 @@ class Metaclass_BatteryStatus(type):
         # the message class under "Data and other attributes defined here:"
         # as well as populate each message instance
         return {
-            'BATTERY_SOURCE_POWER_MODULE': cls.__constants['BATTERY_SOURCE_POWER_MODULE'],
-            'BATTERY_SOURCE_EXTERNAL': cls.__constants['BATTERY_SOURCE_EXTERNAL'],
-            'BATTERY_SOURCE_ESCS': cls.__constants['BATTERY_SOURCE_ESCS'],
-            'BATTERY_WARNING_NONE': cls.__constants['BATTERY_WARNING_NONE'],
-            'BATTERY_WARNING_LOW': cls.__constants['BATTERY_WARNING_LOW'],
-            'BATTERY_WARNING_CRITICAL': cls.__constants['BATTERY_WARNING_CRITICAL'],
-            'BATTERY_WARNING_EMERGENCY': cls.__constants['BATTERY_WARNING_EMERGENCY'],
-            'BATTERY_WARNING_FAILED': cls.__constants['BATTERY_WARNING_FAILED'],
-            'BATTERY_STATE_UNHEALTHY': cls.__constants['BATTERY_STATE_UNHEALTHY'],
-            'BATTERY_STATE_CHARGING': cls.__constants['BATTERY_STATE_CHARGING'],
-            'BATTERY_FAULT_DEEP_DISCHARGE': cls.__constants['BATTERY_FAULT_DEEP_DISCHARGE'],
-            'BATTERY_FAULT_SPIKES': cls.__constants['BATTERY_FAULT_SPIKES'],
-            'BATTERY_FAULT_CELL_FAIL': cls.__constants['BATTERY_FAULT_CELL_FAIL'],
-            'BATTERY_FAULT_OVER_CURRENT': cls.__constants['BATTERY_FAULT_OVER_CURRENT'],
-            'BATTERY_FAULT_OVER_TEMPERATURE': cls.__constants['BATTERY_FAULT_OVER_TEMPERATURE'],
-            'BATTERY_FAULT_UNDER_TEMPERATURE': cls.__constants['BATTERY_FAULT_UNDER_TEMPERATURE'],
-            'BATTERY_FAULT_INCOMPATIBLE_VOLTAGE': cls.__constants['BATTERY_FAULT_INCOMPATIBLE_VOLTAGE'],
-            'BATTERY_FAULT_INCOMPATIBLE_FIRMWARE': cls.__constants['BATTERY_FAULT_INCOMPATIBLE_FIRMWARE'],
-            'BATTERY_FAULT_INCOMPATIBLE_MODEL': cls.__constants['BATTERY_FAULT_INCOMPATIBLE_MODEL'],
-            'BATTERY_FAULT_HARDWARE_FAILURE': cls.__constants['BATTERY_FAULT_HARDWARE_FAILURE'],
-            'BATTERY_FAULT_FAILED_TO_ARM': cls.__constants['BATTERY_FAULT_FAILED_TO_ARM'],
-            'BATTERY_FAULT_COUNT': cls.__constants['BATTERY_FAULT_COUNT'],
+            'MESSAGE_VERSION': cls.__constants['MESSAGE_VERSION'],
+            'SOURCE_POWER_MODULE': cls.__constants['SOURCE_POWER_MODULE'],
+            'SOURCE_EXTERNAL': cls.__constants['SOURCE_EXTERNAL'],
+            'SOURCE_ESCS': cls.__constants['SOURCE_ESCS'],
+            'WARNING_NONE': cls.__constants['WARNING_NONE'],
+            'WARNING_LOW': cls.__constants['WARNING_LOW'],
+            'WARNING_CRITICAL': cls.__constants['WARNING_CRITICAL'],
+            'WARNING_EMERGENCY': cls.__constants['WARNING_EMERGENCY'],
+            'WARNING_FAILED': cls.__constants['WARNING_FAILED'],
+            'STATE_UNHEALTHY': cls.__constants['STATE_UNHEALTHY'],
+            'STATE_CHARGING': cls.__constants['STATE_CHARGING'],
+            'FAULT_DEEP_DISCHARGE': cls.__constants['FAULT_DEEP_DISCHARGE'],
+            'FAULT_SPIKES': cls.__constants['FAULT_SPIKES'],
+            'FAULT_CELL_FAIL': cls.__constants['FAULT_CELL_FAIL'],
+            'FAULT_OVER_CURRENT': cls.__constants['FAULT_OVER_CURRENT'],
+            'FAULT_OVER_TEMPERATURE': cls.__constants['FAULT_OVER_TEMPERATURE'],
+            'FAULT_UNDER_TEMPERATURE': cls.__constants['FAULT_UNDER_TEMPERATURE'],
+            'FAULT_INCOMPATIBLE_VOLTAGE': cls.__constants['FAULT_INCOMPATIBLE_VOLTAGE'],
+            'FAULT_INCOMPATIBLE_FIRMWARE': cls.__constants['FAULT_INCOMPATIBLE_FIRMWARE'],
+            'FAULT_INCOMPATIBLE_MODEL': cls.__constants['FAULT_INCOMPATIBLE_MODEL'],
+            'FAULT_HARDWARE_FAILURE': cls.__constants['FAULT_HARDWARE_FAILURE'],
+            'FAULT_FAILED_TO_ARM': cls.__constants['FAULT_FAILED_TO_ARM'],
+            'FAULT_COUNT': cls.__constants['FAULT_COUNT'],
             'MAX_INSTANCES': cls.__constants['MAX_INSTANCES'],
         }
 
     @property
-    def BATTERY_SOURCE_POWER_MODULE(self):
-        """Message constant 'BATTERY_SOURCE_POWER_MODULE'."""
-        return Metaclass_BatteryStatus.__constants['BATTERY_SOURCE_POWER_MODULE']
+    def MESSAGE_VERSION(self):
+        """Message constant 'MESSAGE_VERSION'."""
+        return Metaclass_BatteryStatus.__constants['MESSAGE_VERSION']
 
     @property
-    def BATTERY_SOURCE_EXTERNAL(self):
-        """Message constant 'BATTERY_SOURCE_EXTERNAL'."""
-        return Metaclass_BatteryStatus.__constants['BATTERY_SOURCE_EXTERNAL']
+    def SOURCE_POWER_MODULE(self):
+        """Message constant 'SOURCE_POWER_MODULE'."""
+        return Metaclass_BatteryStatus.__constants['SOURCE_POWER_MODULE']
 
     @property
-    def BATTERY_SOURCE_ESCS(self):
-        """Message constant 'BATTERY_SOURCE_ESCS'."""
-        return Metaclass_BatteryStatus.__constants['BATTERY_SOURCE_ESCS']
+    def SOURCE_EXTERNAL(self):
+        """Message constant 'SOURCE_EXTERNAL'."""
+        return Metaclass_BatteryStatus.__constants['SOURCE_EXTERNAL']
 
     @property
-    def BATTERY_WARNING_NONE(self):
-        """Message constant 'BATTERY_WARNING_NONE'."""
-        return Metaclass_BatteryStatus.__constants['BATTERY_WARNING_NONE']
+    def SOURCE_ESCS(self):
+        """Message constant 'SOURCE_ESCS'."""
+        return Metaclass_BatteryStatus.__constants['SOURCE_ESCS']
 
     @property
-    def BATTERY_WARNING_LOW(self):
-        """Message constant 'BATTERY_WARNING_LOW'."""
-        return Metaclass_BatteryStatus.__constants['BATTERY_WARNING_LOW']
+    def WARNING_NONE(self):
+        """Message constant 'WARNING_NONE'."""
+        return Metaclass_BatteryStatus.__constants['WARNING_NONE']
 
     @property
-    def BATTERY_WARNING_CRITICAL(self):
-        """Message constant 'BATTERY_WARNING_CRITICAL'."""
-        return Metaclass_BatteryStatus.__constants['BATTERY_WARNING_CRITICAL']
+    def WARNING_LOW(self):
+        """Message constant 'WARNING_LOW'."""
+        return Metaclass_BatteryStatus.__constants['WARNING_LOW']
 
     @property
-    def BATTERY_WARNING_EMERGENCY(self):
-        """Message constant 'BATTERY_WARNING_EMERGENCY'."""
-        return Metaclass_BatteryStatus.__constants['BATTERY_WARNING_EMERGENCY']
+    def WARNING_CRITICAL(self):
+        """Message constant 'WARNING_CRITICAL'."""
+        return Metaclass_BatteryStatus.__constants['WARNING_CRITICAL']
 
     @property
-    def BATTERY_WARNING_FAILED(self):
-        """Message constant 'BATTERY_WARNING_FAILED'."""
-        return Metaclass_BatteryStatus.__constants['BATTERY_WARNING_FAILED']
+    def WARNING_EMERGENCY(self):
+        """Message constant 'WARNING_EMERGENCY'."""
+        return Metaclass_BatteryStatus.__constants['WARNING_EMERGENCY']
 
     @property
-    def BATTERY_STATE_UNHEALTHY(self):
-        """Message constant 'BATTERY_STATE_UNHEALTHY'."""
-        return Metaclass_BatteryStatus.__constants['BATTERY_STATE_UNHEALTHY']
+    def WARNING_FAILED(self):
+        """Message constant 'WARNING_FAILED'."""
+        return Metaclass_BatteryStatus.__constants['WARNING_FAILED']
 
     @property
-    def BATTERY_STATE_CHARGING(self):
-        """Message constant 'BATTERY_STATE_CHARGING'."""
-        return Metaclass_BatteryStatus.__constants['BATTERY_STATE_CHARGING']
+    def STATE_UNHEALTHY(self):
+        """Message constant 'STATE_UNHEALTHY'."""
+        return Metaclass_BatteryStatus.__constants['STATE_UNHEALTHY']
 
     @property
-    def BATTERY_FAULT_DEEP_DISCHARGE(self):
-        """Message constant 'BATTERY_FAULT_DEEP_DISCHARGE'."""
-        return Metaclass_BatteryStatus.__constants['BATTERY_FAULT_DEEP_DISCHARGE']
+    def STATE_CHARGING(self):
+        """Message constant 'STATE_CHARGING'."""
+        return Metaclass_BatteryStatus.__constants['STATE_CHARGING']
 
     @property
-    def BATTERY_FAULT_SPIKES(self):
-        """Message constant 'BATTERY_FAULT_SPIKES'."""
-        return Metaclass_BatteryStatus.__constants['BATTERY_FAULT_SPIKES']
+    def FAULT_DEEP_DISCHARGE(self):
+        """Message constant 'FAULT_DEEP_DISCHARGE'."""
+        return Metaclass_BatteryStatus.__constants['FAULT_DEEP_DISCHARGE']
 
     @property
-    def BATTERY_FAULT_CELL_FAIL(self):
-        """Message constant 'BATTERY_FAULT_CELL_FAIL'."""
-        return Metaclass_BatteryStatus.__constants['BATTERY_FAULT_CELL_FAIL']
+    def FAULT_SPIKES(self):
+        """Message constant 'FAULT_SPIKES'."""
+        return Metaclass_BatteryStatus.__constants['FAULT_SPIKES']
 
     @property
-    def BATTERY_FAULT_OVER_CURRENT(self):
-        """Message constant 'BATTERY_FAULT_OVER_CURRENT'."""
-        return Metaclass_BatteryStatus.__constants['BATTERY_FAULT_OVER_CURRENT']
+    def FAULT_CELL_FAIL(self):
+        """Message constant 'FAULT_CELL_FAIL'."""
+        return Metaclass_BatteryStatus.__constants['FAULT_CELL_FAIL']
 
     @property
-    def BATTERY_FAULT_OVER_TEMPERATURE(self):
-        """Message constant 'BATTERY_FAULT_OVER_TEMPERATURE'."""
-        return Metaclass_BatteryStatus.__constants['BATTERY_FAULT_OVER_TEMPERATURE']
+    def FAULT_OVER_CURRENT(self):
+        """Message constant 'FAULT_OVER_CURRENT'."""
+        return Metaclass_BatteryStatus.__constants['FAULT_OVER_CURRENT']
 
     @property
-    def BATTERY_FAULT_UNDER_TEMPERATURE(self):
-        """Message constant 'BATTERY_FAULT_UNDER_TEMPERATURE'."""
-        return Metaclass_BatteryStatus.__constants['BATTERY_FAULT_UNDER_TEMPERATURE']
+    def FAULT_OVER_TEMPERATURE(self):
+        """Message constant 'FAULT_OVER_TEMPERATURE'."""
+        return Metaclass_BatteryStatus.__constants['FAULT_OVER_TEMPERATURE']
 
     @property
-    def BATTERY_FAULT_INCOMPATIBLE_VOLTAGE(self):
-        """Message constant 'BATTERY_FAULT_INCOMPATIBLE_VOLTAGE'."""
-        return Metaclass_BatteryStatus.__constants['BATTERY_FAULT_INCOMPATIBLE_VOLTAGE']
+    def FAULT_UNDER_TEMPERATURE(self):
+        """Message constant 'FAULT_UNDER_TEMPERATURE'."""
+        return Metaclass_BatteryStatus.__constants['FAULT_UNDER_TEMPERATURE']
 
     @property
-    def BATTERY_FAULT_INCOMPATIBLE_FIRMWARE(self):
-        """Message constant 'BATTERY_FAULT_INCOMPATIBLE_FIRMWARE'."""
-        return Metaclass_BatteryStatus.__constants['BATTERY_FAULT_INCOMPATIBLE_FIRMWARE']
+    def FAULT_INCOMPATIBLE_VOLTAGE(self):
+        """Message constant 'FAULT_INCOMPATIBLE_VOLTAGE'."""
+        return Metaclass_BatteryStatus.__constants['FAULT_INCOMPATIBLE_VOLTAGE']
 
     @property
-    def BATTERY_FAULT_INCOMPATIBLE_MODEL(self):
-        """Message constant 'BATTERY_FAULT_INCOMPATIBLE_MODEL'."""
-        return Metaclass_BatteryStatus.__constants['BATTERY_FAULT_INCOMPATIBLE_MODEL']
+    def FAULT_INCOMPATIBLE_FIRMWARE(self):
+        """Message constant 'FAULT_INCOMPATIBLE_FIRMWARE'."""
+        return Metaclass_BatteryStatus.__constants['FAULT_INCOMPATIBLE_FIRMWARE']
 
     @property
-    def BATTERY_FAULT_HARDWARE_FAILURE(self):
-        """Message constant 'BATTERY_FAULT_HARDWARE_FAILURE'."""
-        return Metaclass_BatteryStatus.__constants['BATTERY_FAULT_HARDWARE_FAILURE']
+    def FAULT_INCOMPATIBLE_MODEL(self):
+        """Message constant 'FAULT_INCOMPATIBLE_MODEL'."""
+        return Metaclass_BatteryStatus.__constants['FAULT_INCOMPATIBLE_MODEL']
 
     @property
-    def BATTERY_FAULT_FAILED_TO_ARM(self):
-        """Message constant 'BATTERY_FAULT_FAILED_TO_ARM'."""
-        return Metaclass_BatteryStatus.__constants['BATTERY_FAULT_FAILED_TO_ARM']
+    def FAULT_HARDWARE_FAILURE(self):
+        """Message constant 'FAULT_HARDWARE_FAILURE'."""
+        return Metaclass_BatteryStatus.__constants['FAULT_HARDWARE_FAILURE']
 
     @property
-    def BATTERY_FAULT_COUNT(self):
-        """Message constant 'BATTERY_FAULT_COUNT'."""
-        return Metaclass_BatteryStatus.__constants['BATTERY_FAULT_COUNT']
+    def FAULT_FAILED_TO_ARM(self):
+        """Message constant 'FAULT_FAILED_TO_ARM'."""
+        return Metaclass_BatteryStatus.__constants['FAULT_FAILED_TO_ARM']
+
+    @property
+    def FAULT_COUNT(self):
+        """Message constant 'FAULT_COUNT'."""
+        return Metaclass_BatteryStatus.__constants['FAULT_COUNT']
 
     @property
     def MAX_INSTANCES(self):
@@ -222,28 +229,29 @@ class BatteryStatus(metaclass=Metaclass_BatteryStatus):
     Message class 'BatteryStatus'.
 
     Constants:
-      BATTERY_SOURCE_POWER_MODULE
-      BATTERY_SOURCE_EXTERNAL
-      BATTERY_SOURCE_ESCS
-      BATTERY_WARNING_NONE
-      BATTERY_WARNING_LOW
-      BATTERY_WARNING_CRITICAL
-      BATTERY_WARNING_EMERGENCY
-      BATTERY_WARNING_FAILED
-      BATTERY_STATE_UNHEALTHY
-      BATTERY_STATE_CHARGING
-      BATTERY_FAULT_DEEP_DISCHARGE
-      BATTERY_FAULT_SPIKES
-      BATTERY_FAULT_CELL_FAIL
-      BATTERY_FAULT_OVER_CURRENT
-      BATTERY_FAULT_OVER_TEMPERATURE
-      BATTERY_FAULT_UNDER_TEMPERATURE
-      BATTERY_FAULT_INCOMPATIBLE_VOLTAGE
-      BATTERY_FAULT_INCOMPATIBLE_FIRMWARE
-      BATTERY_FAULT_INCOMPATIBLE_MODEL
-      BATTERY_FAULT_HARDWARE_FAILURE
-      BATTERY_FAULT_FAILED_TO_ARM
-      BATTERY_FAULT_COUNT
+      MESSAGE_VERSION
+      SOURCE_POWER_MODULE
+      SOURCE_EXTERNAL
+      SOURCE_ESCS
+      WARNING_NONE
+      WARNING_LOW
+      WARNING_CRITICAL
+      WARNING_EMERGENCY
+      WARNING_FAILED
+      STATE_UNHEALTHY
+      STATE_CHARGING
+      FAULT_DEEP_DISCHARGE
+      FAULT_SPIKES
+      FAULT_CELL_FAIL
+      FAULT_OVER_CURRENT
+      FAULT_OVER_TEMPERATURE
+      FAULT_UNDER_TEMPERATURE
+      FAULT_INCOMPATIBLE_VOLTAGE
+      FAULT_INCOMPATIBLE_FIRMWARE
+      FAULT_INCOMPATIBLE_MODEL
+      FAULT_HARDWARE_FAILURE
+      FAULT_FAILED_TO_ARM
+      FAULT_COUNT
       MAX_INSTANCES
     """
 

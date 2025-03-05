@@ -5,6 +5,9 @@
 
 module px4_msgs {
   module msg {
+    module VehicleLandDetected_Constants {
+      const uint32 MESSAGE_VERSION = 0;
+    };
     struct VehicleLandDetected {
       @verbatim (language="comment", text=
         "time since system start (microseconds)")

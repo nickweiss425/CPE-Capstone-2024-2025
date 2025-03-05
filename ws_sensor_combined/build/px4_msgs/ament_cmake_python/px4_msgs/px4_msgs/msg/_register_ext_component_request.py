@@ -23,6 +23,7 @@ class Metaclass_RegisterExtComponentRequest(type):
     _TYPE_SUPPORT = None
 
     __constants = {
+        'MESSAGE_VERSION': 0,
         'LATEST_PX4_ROS2_API_VERSION': 1,
         'ORB_QUEUE_LENGTH': 2,
     }
@@ -53,9 +54,15 @@ class Metaclass_RegisterExtComponentRequest(type):
         # the message class under "Data and other attributes defined here:"
         # as well as populate each message instance
         return {
+            'MESSAGE_VERSION': cls.__constants['MESSAGE_VERSION'],
             'LATEST_PX4_ROS2_API_VERSION': cls.__constants['LATEST_PX4_ROS2_API_VERSION'],
             'ORB_QUEUE_LENGTH': cls.__constants['ORB_QUEUE_LENGTH'],
         }
+
+    @property
+    def MESSAGE_VERSION(self):
+        """Message constant 'MESSAGE_VERSION'."""
+        return Metaclass_RegisterExtComponentRequest.__constants['MESSAGE_VERSION']
 
     @property
     def LATEST_PX4_ROS2_API_VERSION(self):
@@ -73,6 +80,7 @@ class RegisterExtComponentRequest(metaclass=Metaclass_RegisterExtComponentReques
     Message class 'RegisterExtComponentRequest'.
 
     Constants:
+      MESSAGE_VERSION
       LATEST_PX4_ROS2_API_VERSION
       ORB_QUEUE_LENGTH
     """

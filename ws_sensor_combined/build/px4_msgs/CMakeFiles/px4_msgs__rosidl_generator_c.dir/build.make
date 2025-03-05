@@ -98,7 +98,6 @@ rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/Ar
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/ArmingCheckRequest.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/AutotuneAttitudeControlStatus.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/BatteryStatus.idl
-rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/Buffer128.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/ButtonEvent.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/CameraCapture.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/CameraStatus.idl
@@ -167,6 +166,7 @@ rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/He
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/HomePosition.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/HoverThrustEstimate.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/InputRc.idl
+rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/InternalCombustionEngineControl.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/InternalCombustionEngineStatus.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/IridiumsbdStatus.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/IrlockReport.idl
@@ -228,15 +228,13 @@ rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/Rc
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/RcParameterMap.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/RegisterExtComponentReply.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/RegisterExtComponentRequest.idl
-rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/RoverAckermannGuidanceStatus.idl
-rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/RoverAckermannSetpoint.idl
-rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/RoverAckermannStatus.idl
-rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/RoverDifferentialGuidanceStatus.idl
-rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/RoverDifferentialSetpoint.idl
-rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/RoverDifferentialStatus.idl
-rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/RoverMecanumGuidanceStatus.idl
-rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/RoverMecanumSetpoint.idl
-rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/RoverMecanumStatus.idl
+rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/RoverAttitudeSetpoint.idl
+rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/RoverAttitudeStatus.idl
+rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/RoverRateSetpoint.idl
+rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/RoverRateStatus.idl
+rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/RoverSteeringSetpoint.idl
+rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/RoverThrottleSetpoint.idl
+rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/RoverVelocityStatus.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/Rpm.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/RtlStatus.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/RtlTimeEstimate.idl
@@ -267,9 +265,7 @@ rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/Te
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/TelemetryStatus.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/TiltrotorExtraControls.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/TimesyncStatus.idl
-rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/TrajectoryBezier.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/TrajectorySetpoint.idl
-rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/TrajectoryWaypoint.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/TransponderReport.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/TuneControl.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/UavcanParameterRequest.idl
@@ -302,8 +298,6 @@ rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/Ve
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/VehicleStatus.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/VehicleThrustSetpoint.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/VehicleTorqueSetpoint.idl
-rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/VehicleTrajectoryBezier.idl
-rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/VehicleTrajectoryWaypoint.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/VelocityLimits.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/VtolVehicleStatus.idl
 rosidl_generator_c/px4_msgs/msg/action_request.h: rosidl_adapter/px4_msgs/msg/WheelEncoders.idl
@@ -503,18 +497,6 @@ rosidl_generator_c/px4_msgs/msg/detail/battery_status__struct.h: rosidl_generato
 
 rosidl_generator_c/px4_msgs/msg/detail/battery_status__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/battery_status__type_support.h
-
-rosidl_generator_c/px4_msgs/msg/buffer128.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/buffer128.h
-
-rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.h
-
-rosidl_generator_c/px4_msgs/msg/detail/buffer128__struct.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/buffer128__struct.h
-
-rosidl_generator_c/px4_msgs/msg/detail/buffer128__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/buffer128__type_support.h
 
 rosidl_generator_c/px4_msgs/msg/button_event.h: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/button_event.h
@@ -1332,6 +1314,18 @@ rosidl_generator_c/px4_msgs/msg/detail/input_rc__struct.h: rosidl_generator_c/px
 rosidl_generator_c/px4_msgs/msg/detail/input_rc__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/input_rc__type_support.h
 
+rosidl_generator_c/px4_msgs/msg/internal_combustion_engine_control.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/internal_combustion_engine_control.h
+
+rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.h
+
+rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__struct.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__struct.h
+
+rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.h
+
 rosidl_generator_c/px4_msgs/msg/internal_combustion_engine_status.h: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/internal_combustion_engine_status.h
 
@@ -2064,113 +2058,89 @@ rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__struct.h:
 rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__type_support.h
 
-rosidl_generator_c/px4_msgs/msg/rover_ackermann_guidance_status.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/rover_ackermann_guidance_status.h
+rosidl_generator_c/px4_msgs/msg/rover_attitude_setpoint.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/rover_attitude_setpoint.h
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.h
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.h
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__struct.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__struct.h
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__struct.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__struct.h
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__type_support.h
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.h
 
-rosidl_generator_c/px4_msgs/msg/rover_ackermann_setpoint.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/rover_ackermann_setpoint.h
+rosidl_generator_c/px4_msgs/msg/rover_attitude_status.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/rover_attitude_status.h
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.h
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.h
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__struct.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__struct.h
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__struct.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__struct.h
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__type_support.h
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__type_support.h
 
-rosidl_generator_c/px4_msgs/msg/rover_ackermann_status.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/rover_ackermann_status.h
+rosidl_generator_c/px4_msgs/msg/rover_rate_setpoint.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/rover_rate_setpoint.h
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.h
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.h
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__struct.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__struct.h
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__struct.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__struct.h
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__type_support.h
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.h
 
-rosidl_generator_c/px4_msgs/msg/rover_differential_guidance_status.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/rover_differential_guidance_status.h
+rosidl_generator_c/px4_msgs/msg/rover_rate_status.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/rover_rate_status.h
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.h
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.h
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__struct.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__struct.h
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__struct.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__struct.h
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__type_support.h
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__type_support.h
 
-rosidl_generator_c/px4_msgs/msg/rover_differential_setpoint.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/rover_differential_setpoint.h
+rosidl_generator_c/px4_msgs/msg/rover_steering_setpoint.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/rover_steering_setpoint.h
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.h
+rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.h
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__struct.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__struct.h
+rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__struct.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__struct.h
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__type_support.h
+rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.h
 
-rosidl_generator_c/px4_msgs/msg/rover_differential_status.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/rover_differential_status.h
+rosidl_generator_c/px4_msgs/msg/rover_throttle_setpoint.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/rover_throttle_setpoint.h
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.h
+rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.h
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__struct.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__struct.h
+rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__struct.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__struct.h
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__type_support.h
+rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.h
 
-rosidl_generator_c/px4_msgs/msg/rover_mecanum_guidance_status.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/rover_mecanum_guidance_status.h
+rosidl_generator_c/px4_msgs/msg/rover_velocity_status.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/rover_velocity_status.h
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.h
+rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.h
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__struct.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__struct.h
+rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__struct.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__struct.h
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__type_support.h
-
-rosidl_generator_c/px4_msgs/msg/rover_mecanum_setpoint.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/rover_mecanum_setpoint.h
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.h
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__struct.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__struct.h
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__type_support.h
-
-rosidl_generator_c/px4_msgs/msg/rover_mecanum_status.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/rover_mecanum_status.h
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.h
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__struct.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__struct.h
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__type_support.h
+rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__type_support.h
 
 rosidl_generator_c/px4_msgs/msg/rpm.h: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/rpm.h
@@ -2532,18 +2502,6 @@ rosidl_generator_c/px4_msgs/msg/detail/timesync_status__struct.h: rosidl_generat
 rosidl_generator_c/px4_msgs/msg/detail/timesync_status__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/timesync_status__type_support.h
 
-rosidl_generator_c/px4_msgs/msg/trajectory_bezier.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/trajectory_bezier.h
-
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.h
-
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__struct.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__struct.h
-
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__type_support.h
-
 rosidl_generator_c/px4_msgs/msg/trajectory_setpoint.h: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/trajectory_setpoint.h
 
@@ -2555,18 +2513,6 @@ rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__struct.h: rosidl_gen
 
 rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__type_support.h
-
-rosidl_generator_c/px4_msgs/msg/trajectory_waypoint.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/trajectory_waypoint.h
-
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.h
-
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__struct.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__struct.h
-
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.h
 
 rosidl_generator_c/px4_msgs/msg/transponder_report.h: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/transponder_report.h
@@ -2952,30 +2898,6 @@ rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__struct.h: rosidl
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support.h
 
-rosidl_generator_c/px4_msgs/msg/vehicle_trajectory_bezier.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/vehicle_trajectory_bezier.h
-
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.h
-
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__struct.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__struct.h
-
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.h
-
-rosidl_generator_c/px4_msgs/msg/vehicle_trajectory_waypoint.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/vehicle_trajectory_waypoint.h
-
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.h
-
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__struct.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__struct.h
-
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.h: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.h
-
 rosidl_generator_c/px4_msgs/msg/velocity_limits.h: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/velocity_limits.h
 
@@ -3095,9 +3017,6 @@ rosidl_generator_c/px4_msgs/msg/detail/autotune_attitude_control_status__functio
 
 rosidl_generator_c/px4_msgs/msg/detail/battery_status__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/battery_status__functions.c
-
-rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c
 
 rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.c
@@ -3303,6 +3222,9 @@ rosidl_generator_c/px4_msgs/msg/detail/hover_thrust_estimate__functions.c: rosid
 rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c
 
+rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c
+
 rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_status__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_status__functions.c
 
@@ -3486,32 +3408,26 @@ rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_reply__functions.c
 rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__functions.c
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.c
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.c
+rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.c
+rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.c
+rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c
 
 rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.c
@@ -3603,14 +3519,8 @@ rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.c: ro
 rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c
 
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c
-
 rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c
-
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c
 
 rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.c
@@ -3707,12 +3617,6 @@ rosidl_generator_c/px4_msgs/msg/detail/vehicle_thrust_setpoint__functions.c: ros
 
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c
-
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c
-
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c
 
 rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.c: rosidl_generator_c/px4_msgs/msg/action_request.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.c
@@ -3956,24 +3860,10 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/battery_status__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/battery_status__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/battery_status__functions.c.s
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c
-
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c > CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.i
-
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.s
-
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.c.i: cmake_force
@@ -3987,7 +3877,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_capture__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_capture__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/camera_capture__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_capture__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_capture__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_capture__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_capture__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_capture__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_capture__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/camera_capture__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_capture__functions.c.i: cmake_force
@@ -4001,7 +3891,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/camera_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/camera_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_status__functions.c.i: cmake_force
@@ -4015,7 +3905,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_trigger__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_trigger__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/camera_trigger__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_trigger__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_trigger__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_trigger__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_trigger__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_trigger__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_trigger__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/camera_trigger__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_trigger__functions.c.i: cmake_force
@@ -4029,7 +3919,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/can_interface_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/can_interface_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/can_interface_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/can_interface_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/can_interface_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/can_interface_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/can_interface_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/can_interface_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/can_interface_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/can_interface_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/can_interface_status__functions.c.i: cmake_force
@@ -4043,7 +3933,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cellular_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cellular_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/cellular_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cellular_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cellular_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cellular_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cellular_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cellular_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cellular_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/cellular_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cellular_status__functions.c.i: cmake_force
@@ -4057,7 +3947,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/collision_constraints__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/collision_constraints__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/collision_constraints__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/collision_constraints__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/collision_constraints__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/collision_constraints__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/collision_constraints__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/collision_constraints__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/collision_constraints__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/collision_constraints__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/collision_constraints__functions.c.i: cmake_force
@@ -4071,7 +3961,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/config_overrides__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/config_overrides__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/config_overrides__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/config_overrides__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/config_overrides__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/config_overrides__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/config_overrides__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/config_overrides__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/config_overrides__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/config_overrides__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/config_overrides__functions.c.i: cmake_force
@@ -4085,7 +3975,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/control_allocator_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/control_allocator_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/control_allocator_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/control_allocator_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/control_allocator_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/control_allocator_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/control_allocator_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/control_allocator_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/control_allocator_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/control_allocator_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/control_allocator_status__functions.c.i: cmake_force
@@ -4099,7 +3989,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cpuload__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cpuload__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/cpuload__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cpuload__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cpuload__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cpuload__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cpuload__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cpuload__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cpuload__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/cpuload__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cpuload__functions.c.i: cmake_force
@@ -4113,7 +4003,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_request__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_request__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/dataman_request__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_request__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_request__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_request__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_request__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_request__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_request__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/dataman_request__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_request__functions.c.i: cmake_force
@@ -4127,7 +4017,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_response__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_response__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/dataman_response__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_response__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_response__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_response__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_response__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_response__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_response__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/dataman_response__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_response__functions.c.i: cmake_force
@@ -4141,7 +4031,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_array__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_array__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/debug_array__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_array__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_array__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_array__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_array__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_array__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_array__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/debug_array__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_array__functions.c.i: cmake_force
@@ -4155,7 +4045,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_key_value__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_key_value__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/debug_key_value__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_key_value__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_key_value__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_key_value__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_key_value__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_key_value__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_key_value__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/debug_key_value__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_key_value__functions.c.i: cmake_force
@@ -4169,7 +4059,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_value__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_value__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/debug_value__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_value__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_value__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_value__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_value__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_value__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_value__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/debug_value__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_value__functions.c.i: cmake_force
@@ -4183,7 +4073,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.c.i: cmake_force
@@ -4197,7 +4087,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/differential_pressure__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/differential_pressure__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/differential_pressure__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/differential_pressure__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/differential_pressure__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/differential_pressure__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/differential_pressure__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/differential_pressure__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/differential_pressure__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/differential_pressure__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/differential_pressure__functions.c.i: cmake_force
@@ -4211,7 +4101,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__functions.c.i: cmake_force
@@ -4225,7 +4115,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c.i: cmake_force
@@ -4239,7 +4129,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.c.i: cmake_force
@@ -4253,7 +4143,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_report__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_report__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/esc_report__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_report__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_report__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_report__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_report__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_report__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_report__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/esc_report__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_report__functions.c.i: cmake_force
@@ -4267,7 +4157,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/esc_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/esc_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_status__functions.c.i: cmake_force
@@ -4281,7 +4171,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source1d__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source1d__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source1d__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source1d__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source1d__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source1d__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source1d__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source1d__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source1d__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source1d__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source1d__functions.c.i: cmake_force
@@ -4295,7 +4185,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source2d__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source2d__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source2d__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source2d__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source2d__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source2d__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source2d__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source2d__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source2d__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source2d__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source2d__functions.c.i: cmake_force
@@ -4309,7 +4199,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source3d__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source3d__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source3d__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source3d__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source3d__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source3d__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source3d__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source3d__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source3d__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source3d__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source3d__functions.c.i: cmake_force
@@ -4323,7 +4213,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/estimator_bias__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias__functions.c.i: cmake_force
@@ -4337,7 +4227,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias3d__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias3d__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/estimator_bias3d__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias3d__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias3d__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias3d__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias3d__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias3d__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias3d__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias3d__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias3d__functions.c.i: cmake_force
@@ -4351,7 +4241,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_event_flags__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_event_flags__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/estimator_event_flags__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_event_flags__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_event_flags__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_event_flags__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_event_flags__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_event_flags__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_event_flags__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/estimator_event_flags__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_event_flags__functions.c.i: cmake_force
@@ -4365,7 +4255,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_gps_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_gps_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/estimator_gps_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_gps_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_gps_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_gps_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_gps_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_gps_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_gps_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/estimator_gps_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_gps_status__functions.c.i: cmake_force
@@ -4379,7 +4269,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_innovations__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_innovations__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/estimator_innovations__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_innovations__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_innovations__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_innovations__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_innovations__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_innovations__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_innovations__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/estimator_innovations__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_innovations__functions.c.i: cmake_force
@@ -4393,7 +4283,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_selector_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_selector_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/estimator_selector_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_selector_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_selector_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_selector_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_selector_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_selector_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_selector_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/estimator_selector_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_selector_status__functions.c.i: cmake_force
@@ -4407,7 +4297,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_sensor_bias__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_sensor_bias__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/estimator_sensor_bias__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_sensor_bias__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_sensor_bias__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_sensor_bias__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_sensor_bias__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_sensor_bias__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_sensor_bias__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/estimator_sensor_bias__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_sensor_bias__functions.c.i: cmake_force
@@ -4421,7 +4311,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_states__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_states__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/estimator_states__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_states__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_states__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_states__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_states__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_states__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_states__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/estimator_states__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_states__functions.c.i: cmake_force
@@ -4435,7 +4325,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/estimator_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/estimator_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status__functions.c.i: cmake_force
@@ -4449,7 +4339,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status_flags__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status_flags__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/estimator_status_flags__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status_flags__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status_flags__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status_flags__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status_flags__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status_flags__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status_flags__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/estimator_status_flags__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status_flags__functions.c.i: cmake_force
@@ -4463,7 +4353,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/event__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/event__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/event__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/event__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/event__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/event__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/event__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/event__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/event__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/event__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/event__functions.c.i: cmake_force
@@ -4477,7 +4367,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failsafe_flags__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failsafe_flags__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/failsafe_flags__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failsafe_flags__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failsafe_flags__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failsafe_flags__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failsafe_flags__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failsafe_flags__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failsafe_flags__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/failsafe_flags__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failsafe_flags__functions.c.i: cmake_force
@@ -4491,7 +4381,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failure_detector_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failure_detector_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/failure_detector_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failure_detector_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failure_detector_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failure_detector_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failure_detector_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failure_detector_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failure_detector_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/failure_detector_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failure_detector_status__functions.c.i: cmake_force
@@ -4505,7 +4395,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/figure_eight_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/figure_eight_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/figure_eight_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/figure_eight_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/figure_eight_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/figure_eight_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/figure_eight_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/figure_eight_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/figure_eight_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/figure_eight_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/figure_eight_status__functions.c.i: cmake_force
@@ -4519,7 +4409,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/flight_phase_estimation__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/flight_phase_estimation__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/flight_phase_estimation__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/flight_phase_estimation__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/flight_phase_estimation__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/flight_phase_estimation__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/flight_phase_estimation__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/flight_phase_estimation__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/flight_phase_estimation__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/flight_phase_estimation__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/flight_phase_estimation__functions.c.i: cmake_force
@@ -4533,7 +4423,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/follow_target__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/follow_target__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target__functions.c.i: cmake_force
@@ -4547,7 +4437,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_estimator__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_estimator__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/follow_target_estimator__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_estimator__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_estimator__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_estimator__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_estimator__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_estimator__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_estimator__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/follow_target_estimator__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_estimator__functions.c.i: cmake_force
@@ -4561,7 +4451,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__functions.c.i: cmake_force
@@ -4575,7 +4465,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c.i: cmake_force
@@ -4589,7 +4479,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/generator_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/generator_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/generator_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/generator_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/generator_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/generator_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/generator_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/generator_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/generator_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/generator_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/generator_status__functions.c.i: cmake_force
@@ -4603,7 +4493,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_result__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_result__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/geofence_result__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_result__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_result__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_result__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_result__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_result__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_result__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/geofence_result__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_result__functions.c.i: cmake_force
@@ -4617,7 +4507,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/geofence_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/geofence_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_status__functions.c.i: cmake_force
@@ -4631,7 +4521,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_controls__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_controls__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/gimbal_controls__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_controls__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_controls__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_controls__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_controls__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_controls__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_controls__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/gimbal_controls__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_controls__functions.c.i: cmake_force
@@ -4645,7 +4535,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_attitude_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_attitude_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_attitude_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_attitude_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_attitude_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_attitude_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_attitude_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_attitude_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_attitude_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_attitude_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_attitude_status__functions.c.i: cmake_force
@@ -4659,7 +4549,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_information__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_information__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_information__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_information__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_information__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_information__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_information__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_information__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_information__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_information__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_information__functions.c.i: cmake_force
@@ -4673,7 +4563,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_set_attitude__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_set_attitude__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_set_attitude__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_set_attitude__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_set_attitude__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_set_attitude__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_set_attitude__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_set_attitude__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_set_attitude__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_set_attitude__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_set_attitude__functions.c.i: cmake_force
@@ -4687,7 +4577,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_information__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_information__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_information__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_information__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_information__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_information__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_information__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_information__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_information__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_information__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_information__functions.c.i: cmake_force
@@ -4701,7 +4591,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_attitude__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_attitude__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_attitude__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_attitude__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_attitude__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_attitude__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_attitude__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_attitude__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_attitude__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_attitude__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_attitude__functions.c.i: cmake_force
@@ -4715,7 +4605,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_manual_control__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_manual_control__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_manual_control__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_manual_control__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_manual_control__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_manual_control__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_manual_control__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_manual_control__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_manual_control__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_manual_control__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_manual_control__functions.c.i: cmake_force
@@ -4729,7 +4619,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_status__functions.c.i: cmake_force
@@ -4743,7 +4633,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/goto_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/goto_setpoint__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/goto_setpoint__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/goto_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/goto_setpoint__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/goto_setpoint__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/goto_setpoint__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/goto_setpoint__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/goto_setpoint__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/goto_setpoint__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/goto_setpoint__functions.c.i: cmake_force
@@ -4757,7 +4647,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_config__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_config__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/gpio_config__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_config__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_config__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_config__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_config__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_config__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_config__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/gpio_config__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_config__functions.c.i: cmake_force
@@ -4771,7 +4661,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_in__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_in__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/gpio_in__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_in__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_in__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_in__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_in__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_in__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_in__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/gpio_in__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_in__functions.c.i: cmake_force
@@ -4785,7 +4675,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_out__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_out__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/gpio_out__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_out__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_out__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_out__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_out__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_out__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_out__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/gpio_out__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_out__functions.c.i: cmake_force
@@ -4799,7 +4689,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_request__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_request__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/gpio_request__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_request__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_request__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_request__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_request__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_request__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_request__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/gpio_request__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_request__functions.c.i: cmake_force
@@ -4813,7 +4703,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_dump__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_dump__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/gps_dump__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_dump__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_dump__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_dump__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_dump__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_dump__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_dump__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/gps_dump__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_dump__functions.c.i: cmake_force
@@ -4827,7 +4717,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_inject_data__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_inject_data__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/gps_inject_data__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_inject_data__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_inject_data__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_inject_data__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_inject_data__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_inject_data__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_inject_data__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/gps_inject_data__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_inject_data__functions.c.i: cmake_force
@@ -4841,7 +4731,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gripper__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gripper__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/gripper__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gripper__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gripper__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gripper__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gripper__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gripper__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gripper__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/gripper__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gripper__functions.c.i: cmake_force
@@ -4855,7 +4745,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/health_report__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/health_report__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/health_report__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/health_report__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/health_report__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/health_report__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/health_report__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/health_report__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/health_report__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/health_report__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/health_report__functions.c.i: cmake_force
@@ -4869,7 +4759,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/heater_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/heater_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/heater_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/heater_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/heater_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/heater_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/heater_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/heater_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/heater_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/heater_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/heater_status__functions.c.i: cmake_force
@@ -4883,7 +4773,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/home_position__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/home_position__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/home_position__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/home_position__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/home_position__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/home_position__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/home_position__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/home_position__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/home_position__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/home_position__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/home_position__functions.c.i: cmake_force
@@ -4897,7 +4787,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/hover_thrust_estimate__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/hover_thrust_estimate__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/hover_thrust_estimate__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/hover_thrust_estimate__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/hover_thrust_estimate__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/hover_thrust_estimate__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/hover_thrust_estimate__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/hover_thrust_estimate__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/hover_thrust_estimate__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/hover_thrust_estimate__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/hover_thrust_estimate__functions.c.i: cmake_force
@@ -4911,7 +4801,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c.i: cmake_force
@@ -4921,6 +4811,20 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c.s
+
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c
+
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c > CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.i
+
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.s
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_status__functions.c
@@ -5776,136 +5680,108 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__functions.c.s
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c > CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c.i
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c > CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.i
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c.s
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.s
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c > CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c.i
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c > CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.i
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c.s
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.s
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.c > CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.c.i
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c > CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.i
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.c.s
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.s
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c > CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c.i
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c > CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.i
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c.s
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.s
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.c > CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.c.i
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c > CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.i
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.c.s
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.s
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.c > CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.c.i
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c > CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.i
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.c.s
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.s
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c > CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c.i
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c > CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.i
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c.s
-
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c
-
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c > CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c.i
-
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c.s
-
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.c
-
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.c > CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.c.i
-
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.c.s
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.s
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.c.i: cmake_force
@@ -5919,7 +5795,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/rtl_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rtl_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_status__functions.c.i: cmake_force
@@ -5933,7 +5809,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_time_estimate__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_time_estimate__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/rtl_time_estimate__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_time_estimate__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_time_estimate__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_time_estimate__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_time_estimate__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_time_estimate__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_time_estimate__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/rtl_time_estimate__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_time_estimate__functions.c.i: cmake_force
@@ -5947,7 +5823,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/satellite_info__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/satellite_info__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/satellite_info__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/satellite_info__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/satellite_info__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/satellite_info__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/satellite_info__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/satellite_info__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/satellite_info__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/satellite_info__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/satellite_info__functions.c.i: cmake_force
@@ -5961,7 +5837,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/sensor_accel__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel__functions.c.i: cmake_force
@@ -5975,7 +5851,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel_fifo__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel_fifo__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/sensor_accel_fifo__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel_fifo__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel_fifo__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel_fifo__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel_fifo__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel_fifo__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel_fifo__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel_fifo__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel_fifo__functions.c.i: cmake_force
@@ -5989,7 +5865,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_airflow__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_airflow__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/sensor_airflow__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_airflow__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_airflow__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_airflow__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_airflow__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_airflow__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_airflow__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/sensor_airflow__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_airflow__functions.c.i: cmake_force
@@ -6003,7 +5879,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_baro__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_baro__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/sensor_baro__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_baro__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_baro__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_baro__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_baro__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_baro__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_baro__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/sensor_baro__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_baro__functions.c.i: cmake_force
@@ -6017,7 +5893,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_combined__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_combined__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/sensor_combined__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_combined__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_165) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_combined__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_combined__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_combined__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_combined__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_combined__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/sensor_combined__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_combined__functions.c.i: cmake_force
@@ -6031,7 +5907,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_correction__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_correction__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/sensor_correction__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_correction__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_166) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_correction__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_correction__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_correction__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_correction__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_correction__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/sensor_correction__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_correction__functions.c.i: cmake_force
@@ -6045,7 +5921,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gnss_relative__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gnss_relative__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/sensor_gnss_relative__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gnss_relative__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_167) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gnss_relative__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_165) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gnss_relative__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gnss_relative__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gnss_relative__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gnss_relative__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/sensor_gnss_relative__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gnss_relative__functions.c.i: cmake_force
@@ -6059,7 +5935,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gps__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gps__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/sensor_gps__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gps__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_168) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gps__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_166) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gps__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gps__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gps__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gps__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/sensor_gps__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gps__functions.c.i: cmake_force
@@ -6073,7 +5949,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_169) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_167) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro__functions.c.i: cmake_force
@@ -6087,7 +5963,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fft__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fft__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fft__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fft__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_170) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fft__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_168) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fft__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fft__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fft__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fft__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fft__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fft__functions.c.i: cmake_force
@@ -6101,7 +5977,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fifo__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fifo__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fifo__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fifo__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_171) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fifo__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_169) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fifo__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fifo__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fifo__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fifo__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fifo__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fifo__functions.c.i: cmake_force
@@ -6115,7 +5991,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_hygrometer__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_hygrometer__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/sensor_hygrometer__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_hygrometer__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_172) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_hygrometer__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_170) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_hygrometer__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_hygrometer__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_hygrometer__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_hygrometer__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/sensor_hygrometer__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_hygrometer__functions.c.i: cmake_force
@@ -6129,7 +6005,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_mag__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_mag__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/sensor_mag__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_mag__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_173) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_mag__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_171) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_mag__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_mag__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_mag__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_mag__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/sensor_mag__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_mag__functions.c.i: cmake_force
@@ -6143,7 +6019,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_optical_flow__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_optical_flow__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/sensor_optical_flow__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_optical_flow__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_174) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_optical_flow__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_172) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_optical_flow__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_optical_flow__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_optical_flow__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_optical_flow__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/sensor_optical_flow__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_optical_flow__functions.c.i: cmake_force
@@ -6157,7 +6033,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_preflight_mag__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_preflight_mag__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/sensor_preflight_mag__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_preflight_mag__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_175) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_preflight_mag__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_173) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_preflight_mag__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_preflight_mag__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_preflight_mag__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_preflight_mag__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/sensor_preflight_mag__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_preflight_mag__functions.c.i: cmake_force
@@ -6171,7 +6047,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_selection__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_selection__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/sensor_selection__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_selection__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_176) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_selection__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_174) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_selection__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_selection__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_selection__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_selection__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/sensor_selection__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_selection__functions.c.i: cmake_force
@@ -6185,7 +6061,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_uwb__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_uwb__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/sensor_uwb__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_uwb__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_177) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_uwb__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_175) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_uwb__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_uwb__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_uwb__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_uwb__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/sensor_uwb__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_uwb__functions.c.i: cmake_force
@@ -6199,7 +6075,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/sensors_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_178) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_176) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/sensors_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status__functions.c.i: cmake_force
@@ -6213,7 +6089,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status_imu__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status_imu__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/sensors_status_imu__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status_imu__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_179) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status_imu__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_177) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status_imu__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status_imu__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status_imu__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status_imu__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/sensors_status_imu__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status_imu__functions.c.i: cmake_force
@@ -6227,7 +6103,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/system_power__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/system_power__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/system_power__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/system_power__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_180) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/system_power__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_178) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/system_power__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/system_power__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/system_power__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/system_power__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/system_power__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/system_power__functions.c.i: cmake_force
@@ -6241,7 +6117,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/takeoff_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/takeoff_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/takeoff_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/takeoff_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_181) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/takeoff_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_179) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/takeoff_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/takeoff_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/takeoff_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/takeoff_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/takeoff_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/takeoff_status__functions.c.i: cmake_force
@@ -6255,7 +6131,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/task_stack_info__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/task_stack_info__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/task_stack_info__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/task_stack_info__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_182) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/task_stack_info__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_180) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/task_stack_info__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/task_stack_info__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/task_stack_info__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/task_stack_info__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/task_stack_info__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/task_stack_info__functions.c.i: cmake_force
@@ -6269,7 +6145,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tecs_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tecs_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/tecs_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tecs_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_183) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tecs_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_181) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tecs_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tecs_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tecs_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tecs_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/tecs_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tecs_status__functions.c.i: cmake_force
@@ -6283,7 +6159,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_184) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_182) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.c.i: cmake_force
@@ -6297,7 +6173,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_185) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_183) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.c.i: cmake_force
@@ -6311,7 +6187,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_186) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_184) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c.i: cmake_force
@@ -6322,24 +6198,10 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c.s
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_187) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c
-
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c > CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.i
-
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.s
-
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_188) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_185) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c.i: cmake_force
@@ -6350,24 +6212,10 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c.s
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_189) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c
-
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c > CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.i
-
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.s
-
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_190) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_186) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.c.i: cmake_force
@@ -6381,7 +6229,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tune_control__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tune_control__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/tune_control__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tune_control__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_191) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tune_control__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_187) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tune_control__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tune_control__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tune_control__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tune_control__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/tune_control__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tune_control__functions.c.i: cmake_force
@@ -6395,7 +6243,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_request__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_request__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_request__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_request__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_192) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_request__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_188) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_request__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_request__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_request__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_request__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_request__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_request__functions.c.i: cmake_force
@@ -6409,7 +6257,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_value__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_value__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_value__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_value__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_193) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_value__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_189) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_value__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_value__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_value__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_value__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_value__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_value__functions.c.i: cmake_force
@@ -6423,7 +6271,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/ulog_stream__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_194) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_190) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream__functions.c.i: cmake_force
@@ -6437,7 +6285,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream_ack__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream_ack__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/ulog_stream_ack__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream_ack__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_195) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream_ack__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_191) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream_ack__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream_ack__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream_ack__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream_ack__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream_ack__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream_ack__functions.c.i: cmake_force
@@ -6451,7 +6299,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/unregister_ext_component__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/unregister_ext_component__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/unregister_ext_component__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/unregister_ext_component__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_196) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/unregister_ext_component__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_192) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/unregister_ext_component__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/unregister_ext_component__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/unregister_ext_component__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/unregister_ext_component__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/unregister_ext_component__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/unregister_ext_component__functions.c.i: cmake_force
@@ -6465,7 +6313,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_acceleration__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_acceleration__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_acceleration__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_acceleration__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_197) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_acceleration__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_193) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_acceleration__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_acceleration__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_acceleration__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_acceleration__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_acceleration__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_acceleration__functions.c.i: cmake_force
@@ -6479,7 +6327,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_air_data__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_air_data__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_air_data__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_air_data__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_198) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_air_data__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_194) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_air_data__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_air_data__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_air_data__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_air_data__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_air_data__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_air_data__functions.c.i: cmake_force
@@ -6493,7 +6341,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_acceleration_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_acceleration_setpoint__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_acceleration_setpoint__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_acceleration_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_199) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_acceleration_setpoint__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_195) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_acceleration_setpoint__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_acceleration_setpoint__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_acceleration_setpoint__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_acceleration_setpoint__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_acceleration_setpoint__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_acceleration_setpoint__functions.c.i: cmake_force
@@ -6507,7 +6355,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_velocity__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_velocity__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_velocity__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_velocity__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_200) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_velocity__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_196) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_velocity__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_velocity__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_velocity__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_velocity__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_velocity__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_velocity__functions.c.i: cmake_force
@@ -6521,7 +6369,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_201) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_197) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude__functions.c.i: cmake_force
@@ -6535,7 +6383,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude_setpoint__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude_setpoint__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_202) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude_setpoint__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_198) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude_setpoint__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude_setpoint__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude_setpoint__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude_setpoint__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude_setpoint__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude_setpoint__functions.c.i: cmake_force
@@ -6549,7 +6397,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_command__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_203) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_199) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command__functions.c.i: cmake_force
@@ -6563,7 +6411,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command_ack__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command_ack__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_command_ack__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command_ack__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_204) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command_ack__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_200) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command_ack__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command_ack__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command_ack__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command_ack__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command_ack__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command_ack__functions.c.i: cmake_force
@@ -6577,7 +6425,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_constraints__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_constraints__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_constraints__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_constraints__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_205) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_constraints__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_201) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_constraints__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_constraints__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_constraints__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_constraints__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_constraints__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_constraints__functions.c.i: cmake_force
@@ -6591,7 +6439,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_control_mode__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_control_mode__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_control_mode__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_control_mode__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_206) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_control_mode__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_202) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_control_mode__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_control_mode__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_control_mode__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_control_mode__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_control_mode__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_control_mode__functions.c.i: cmake_force
@@ -6605,7 +6453,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_global_position__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_global_position__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_global_position__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_global_position__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_207) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_global_position__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_203) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_global_position__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_global_position__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_global_position__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_global_position__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_global_position__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_global_position__functions.c.i: cmake_force
@@ -6619,7 +6467,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_208) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_204) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu__functions.c.i: cmake_force
@@ -6633,7 +6481,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_209) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_205) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu_status__functions.c.i: cmake_force
@@ -6647,7 +6495,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_land_detected__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_land_detected__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_land_detected__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_land_detected__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_210) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_land_detected__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_206) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_land_detected__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_land_detected__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_land_detected__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_land_detected__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_land_detected__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_land_detected__functions.c.i: cmake_force
@@ -6661,7 +6509,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_211) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_207) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position__functions.c.i: cmake_force
@@ -6675,7 +6523,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position_setpoint__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position_setpoint__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_212) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position_setpoint__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_208) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position_setpoint__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position_setpoint__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position_setpoint__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position_setpoint__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position_setpoint__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position_setpoint__functions.c.i: cmake_force
@@ -6689,7 +6537,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_magnetometer__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_magnetometer__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_magnetometer__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_magnetometer__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_213) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_magnetometer__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_209) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_magnetometer__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_magnetometer__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_magnetometer__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_magnetometer__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_magnetometer__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_magnetometer__functions.c.i: cmake_force
@@ -6703,7 +6551,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_odometry__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_odometry__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_odometry__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_odometry__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_214) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_odometry__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_210) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_odometry__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_odometry__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_odometry__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_odometry__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_odometry__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_odometry__functions.c.i: cmake_force
@@ -6717,7 +6565,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_215) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_211) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow__functions.c.i: cmake_force
@@ -6731,7 +6579,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow_vel__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow_vel__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow_vel__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow_vel__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_216) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow_vel__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_212) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow_vel__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow_vel__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow_vel__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow_vel__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow_vel__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow_vel__functions.c.i: cmake_force
@@ -6745,7 +6593,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_rates_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_rates_setpoint__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_rates_setpoint__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_rates_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_217) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_rates_setpoint__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_213) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_rates_setpoint__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_rates_setpoint__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_rates_setpoint__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_rates_setpoint__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_rates_setpoint__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_rates_setpoint__functions.c.i: cmake_force
@@ -6759,7 +6607,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_roi__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_roi__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_roi__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_roi__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_218) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_roi__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_214) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_roi__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_roi__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_roi__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_roi__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_roi__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_roi__functions.c.i: cmake_force
@@ -6773,7 +6621,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_219) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_215) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_status__functions.c.i: cmake_force
@@ -6787,7 +6635,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_thrust_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_thrust_setpoint__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_thrust_setpoint__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_thrust_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_220) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_thrust_setpoint__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_216) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_thrust_setpoint__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_thrust_setpoint__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_thrust_setpoint__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_thrust_setpoint__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_thrust_setpoint__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_thrust_setpoint__functions.c.i: cmake_force
@@ -6801,7 +6649,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_221) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_217) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c.i: cmake_force
@@ -6812,38 +6660,10 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c.s
 
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_222) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c
-
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c > CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.i
-
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.s
-
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_223) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c
-
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c > CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.i
-
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.s
-
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_224) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_218) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.c.i: cmake_force
@@ -6857,7 +6677,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vtol_vehicle_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vtol_vehicle_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/vtol_vehicle_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vtol_vehicle_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_225) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vtol_vehicle_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_219) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vtol_vehicle_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vtol_vehicle_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vtol_vehicle_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vtol_vehicle_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/vtol_vehicle_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vtol_vehicle_status__functions.c.i: cmake_force
@@ -6871,7 +6691,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wheel_encoders__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wheel_encoders__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/wheel_encoders__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wheel_encoders__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_226) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wheel_encoders__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_220) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wheel_encoders__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wheel_encoders__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wheel_encoders__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wheel_encoders__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/wheel_encoders__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wheel_encoders__functions.c.i: cmake_force
@@ -6885,7 +6705,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wind__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wind__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/wind__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wind__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_227) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wind__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_221) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wind__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wind__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wind__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wind__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/wind__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wind__functions.c.i: cmake_force
@@ -6899,7 +6719,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/yaw_estimator_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/yaw_estimator_status__functions.c.o: rosidl_generator_c/px4_msgs/msg/detail/yaw_estimator_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/yaw_estimator_status__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_228) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/yaw_estimator_status__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_222) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/yaw_estimator_status__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/yaw_estimator_status__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/yaw_estimator_status__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/yaw_estimator_status__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/yaw_estimator_status__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/yaw_estimator_status__functions.c.i: cmake_force
@@ -6913,7 +6733,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/deta
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/srv/detail/vehicle_command__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/srv/detail/vehicle_command__functions.c.o: rosidl_generator_c/px4_msgs/srv/detail/vehicle_command__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/srv/detail/vehicle_command__functions.c.o: CMakeFiles/px4_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_229) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/srv/detail/vehicle_command__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_223) "Building C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/srv/detail/vehicle_command__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/srv/detail/vehicle_command__functions.c.o -MF CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/srv/detail/vehicle_command__functions.c.o.d -o CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/srv/detail/vehicle_command__functions.c.o -c /home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/rosidl_generator_c/px4_msgs/srv/detail/vehicle_command__functions.c
 
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/srv/detail/vehicle_command__functions.c.i: cmake_force
@@ -6942,7 +6762,6 @@ px4_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/arming_check_request__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/autotune_attitude_control_status__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/battery_status__functions.c.o" \
-"CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_capture__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_status__functions.c.o" \
@@ -7011,6 +6830,7 @@ px4_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/home_position__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/hover_thrust_estimate__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c.o" \
+"CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_status__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/iridiumsbd_status__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/irlock_report__functions.c.o" \
@@ -7072,15 +6892,13 @@ px4_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rc_parameter_map__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_reply__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__functions.c.o" \
-"CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c.o" \
-"CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c.o" \
-"CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.c.o" \
-"CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c.o" \
-"CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.c.o" \
-"CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.c.o" \
-"CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c.o" \
-"CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c.o" \
-"CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.c.o" \
+"CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.o" \
+"CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.o" \
+"CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.o" \
+"CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.o" \
+"CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.o" \
+"CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.o" \
+"CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_status__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_time_estimate__functions.c.o" \
@@ -7111,9 +6929,7 @@ px4_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c.o" \
-"CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c.o" \
-"CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tune_control__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_request__functions.c.o" \
@@ -7146,8 +6962,6 @@ px4_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_status__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_thrust_setpoint__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c.o" \
-"CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.o" \
-"CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vtol_vehicle_status__functions.c.o" \
 "CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wheel_encoders__functions.c.o" \
@@ -7174,7 +6988,6 @@ libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/arming_check_request__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/autotune_attitude_control_status__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/battery_status__functions.c.o
-libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_capture__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_status__functions.c.o
@@ -7243,6 +7056,7 @@ libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/home_position__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/hover_thrust_estimate__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c.o
+libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_status__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/iridiumsbd_status__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/irlock_report__functions.c.o
@@ -7304,15 +7118,13 @@ libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rc_parameter_map__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_reply__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__functions.c.o
-libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c.o
-libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c.o
-libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.c.o
-libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c.o
-libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.c.o
-libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.c.o
-libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c.o
-libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c.o
-libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.c.o
+libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.o
+libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.o
+libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.o
+libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.o
+libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.o
+libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.o
+libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_status__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_time_estimate__functions.c.o
@@ -7343,9 +7155,7 @@ libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c.o
-libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c.o
-libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tune_control__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_request__functions.c.o
@@ -7378,8 +7188,6 @@ libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_status__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_thrust_setpoint__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c.o
-libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.o
-libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vtol_vehicle_status__functions.c.o
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wheel_encoders__functions.c.o
@@ -7391,7 +7199,7 @@ libpx4_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__r
 libpx4_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libpx4_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libpx4_msgs__rosidl_generator_c.so: CMakeFiles/px4_msgs__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_230) "Linking C shared library libpx4_msgs__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/niweiss/CPE-Capstone-2024-2025/ws_sensor_combined/build/px4_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_224) "Linking C shared library libpx4_msgs__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/px4_msgs__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -7418,7 +7226,6 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/arming_check_request.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/autotune_attitude_control_status.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/battery_status.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/buffer128.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/button_event.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/camera_capture.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/camera_status.h
@@ -7499,10 +7306,6 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/battery_status__functions.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/battery_status__struct.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/battery_status__type_support.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/buffer128__struct.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/buffer128__type_support.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/button_event__struct.h
@@ -7775,6 +7578,10 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/input_rc__struct.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/input_rc__type_support.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__struct.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_status__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_status__functions.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_status__struct.h
@@ -8019,42 +7826,34 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__functions.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__struct.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__type_support.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__struct.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__type_support.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__struct.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__type_support.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__struct.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__type_support.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__struct.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__type_support.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__struct.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__type_support.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__struct.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__type_support.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__struct.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__type_support.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__struct.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__type_support.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__struct.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__type_support.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__struct.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__struct.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__type_support.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__struct.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__struct.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__type_support.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__struct.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__struct.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__struct.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__type_support.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/rpm__struct.h
@@ -8175,18 +7974,10 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/timesync_status__struct.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/timesync_status__type_support.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__struct.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__type_support.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__struct.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__type_support.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__struct.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/transponder_report__struct.h
@@ -8315,14 +8106,6 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__struct.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__struct.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__struct.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.c
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__struct.h
@@ -8395,6 +8178,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/home_position.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/hover_thrust_estimate.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/input_rc.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/internal_combustion_engine_control.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/internal_combustion_engine_status.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/iridiumsbd_status.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/irlock_report.h
@@ -8456,15 +8240,13 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/rc_parameter_map.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/register_ext_component_reply.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/register_ext_component_request.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/rover_ackermann_guidance_status.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/rover_ackermann_setpoint.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/rover_ackermann_status.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/rover_differential_guidance_status.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/rover_differential_setpoint.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/rover_differential_status.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/rover_mecanum_guidance_status.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/rover_mecanum_setpoint.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/rover_mecanum_status.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/rover_attitude_setpoint.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/rover_attitude_status.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/rover_rate_setpoint.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/rover_rate_status.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/rover_steering_setpoint.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/rover_throttle_setpoint.h
+CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/rover_velocity_status.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/rpm.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/rtl_status.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/rtl_time_estimate.h
@@ -8495,9 +8277,7 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/telemetry_status.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/tiltrotor_extra_controls.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/timesync_status.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/trajectory_bezier.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/trajectory_setpoint.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/trajectory_waypoint.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/transponder_report.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/tune_control.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/uavcan_parameter_request.h
@@ -8530,8 +8310,6 @@ CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/vehicle_status.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/vehicle_thrust_setpoint.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/vehicle_torque_setpoint.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/vehicle_trajectory_bezier.h
-CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/vehicle_trajectory_waypoint.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/velocity_limits.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/vtol_vehicle_status.h
 CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/px4_msgs/msg/wheel_encoders.h

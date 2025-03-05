@@ -4037,259 +4037,6 @@ CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_b
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
 
-CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_buffer128_s.c.o: rosidl_generator_py/px4_msgs/msg/_buffer128_s.c \
-  /usr/include/stdc-predef.h \
-  /usr/include/python3.10/Python.h \
-  /usr/include/python3.10/patchlevel.h \
-  /usr/include/python3.10/pyconfig.h \
-  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
-  /usr/include/python3.10/pymacconfig.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/features.h \
-  /usr/include/features-time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
-  /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/string.h \
-  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/strings.h \
-  /usr/include/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/errno.h \
-  /usr/include/linux/errno.h \
-  /usr/include/x86_64-linux-gnu/asm/errno.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
-  /usr/include/stdlib.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
-  /usr/include/assert.h \
-  /usr/include/python3.10/pyport.h \
-  /usr/include/inttypes.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/math.h \
-  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
-  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
-  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  /usr/include/x86_64-linux-gnu/sys/time.h \
-  /usr/include/time.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
-  /usr/include/x86_64-linux-gnu/bits/timex.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/x86_64-linux-gnu/sys/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
-  /usr/include/x86_64-linux-gnu/bits/statx.h \
-  /usr/include/linux/stat.h \
-  /usr/include/linux/types.h \
-  /usr/include/x86_64-linux-gnu/asm/types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
-  /usr/include/python3.10/exports.h \
-  /usr/include/python3.10/pymacro.h \
-  /usr/include/python3.10/pymath.h \
-  /usr/include/python3.10/pymem.h \
-  /usr/include/python3.10/cpython/pymem.h \
-  /usr/include/python3.10/object.h \
-  /usr/include/python3.10/cpython/object.h \
-  /usr/include/python3.10/objimpl.h \
-  /usr/include/python3.10/cpython/objimpl.h \
-  /usr/include/python3.10/typeslots.h \
-  /usr/include/python3.10/pyhash.h \
-  /usr/include/python3.10/cpython/pydebug.h \
-  /usr/include/python3.10/bytearrayobject.h \
-  /usr/include/python3.10/cpython/bytearrayobject.h \
-  /usr/include/python3.10/bytesobject.h \
-  /usr/include/python3.10/cpython/bytesobject.h \
-  /usr/include/python3.10/unicodeobject.h \
-  /usr/include/ctype.h \
-  /usr/include/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/python3.10/cpython/unicodeobject.h \
-  /usr/include/python3.10/longobject.h \
-  /usr/include/python3.10/longintrepr.h \
-  /usr/include/python3.10/boolobject.h \
-  /usr/include/python3.10/floatobject.h \
-  /usr/include/python3.10/complexobject.h \
-  /usr/include/python3.10/rangeobject.h \
-  /usr/include/python3.10/memoryobject.h \
-  /usr/include/python3.10/tupleobject.h \
-  /usr/include/python3.10/cpython/tupleobject.h \
-  /usr/include/python3.10/listobject.h \
-  /usr/include/python3.10/cpython/listobject.h \
-  /usr/include/python3.10/dictobject.h \
-  /usr/include/python3.10/cpython/dictobject.h \
-  /usr/include/python3.10/cpython/odictobject.h \
-  /usr/include/python3.10/enumobject.h \
-  /usr/include/python3.10/setobject.h \
-  /usr/include/python3.10/methodobject.h \
-  /usr/include/python3.10/cpython/methodobject.h \
-  /usr/include/python3.10/moduleobject.h \
-  /usr/include/python3.10/funcobject.h \
-  /usr/include/python3.10/classobject.h \
-  /usr/include/python3.10/fileobject.h \
-  /usr/include/python3.10/cpython/fileobject.h \
-  /usr/include/python3.10/pycapsule.h \
-  /usr/include/python3.10/code.h \
-  /usr/include/python3.10/cpython/code.h \
-  /usr/include/python3.10/pyframe.h \
-  /usr/include/python3.10/traceback.h \
-  /usr/include/python3.10/cpython/traceback.h \
-  /usr/include/python3.10/sliceobject.h \
-  /usr/include/python3.10/cellobject.h \
-  /usr/include/python3.10/iterobject.h \
-  /usr/include/python3.10/cpython/initconfig.h \
-  /usr/include/python3.10/genobject.h \
-  /usr/include/python3.10/pystate.h \
-  /usr/include/python3.10/cpython/pystate.h \
-  /usr/include/python3.10/abstract.h \
-  /usr/include/python3.10/cpython/abstract.h \
-  /usr/include/python3.10/descrobject.h \
-  /usr/include/python3.10/genericaliasobject.h \
-  /usr/include/python3.10/warnings.h \
-  /usr/include/python3.10/weakrefobject.h \
-  /usr/include/python3.10/structseq.h \
-  /usr/include/python3.10/namespaceobject.h \
-  /usr/include/python3.10/cpython/picklebufobject.h \
-  /usr/include/python3.10/cpython/pytime.h \
-  /usr/include/python3.10/codecs.h \
-  /usr/include/python3.10/pyerrors.h \
-  /usr/include/python3.10/cpython/pyerrors.h \
-  /usr/include/python3.10/pythread.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
-  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/python3.10/context.h \
-  /usr/include/python3.10/modsupport.h \
-  /usr/include/python3.10/compile.h \
-  /usr/include/python3.10/cpython/compile.h \
-  /usr/include/python3.10/pythonrun.h \
-  /usr/include/python3.10/cpython/pythonrun.h \
-  /usr/include/python3.10/pylifecycle.h \
-  /usr/include/python3.10/cpython/pylifecycle.h \
-  /usr/include/python3.10/ceval.h \
-  /usr/include/python3.10/cpython/ceval.h \
-  /usr/include/python3.10/sysmodule.h \
-  /usr/include/python3.10/cpython/sysmodule.h \
-  /usr/include/python3.10/osmodule.h \
-  /usr/include/python3.10/intrcheck.h \
-  /usr/include/python3.10/import.h \
-  /usr/include/python3.10/cpython/import.h \
-  /usr/include/python3.10/bltinmodule.h \
-  /usr/include/python3.10/eval.h \
-  /usr/include/python3.10/cpython/pyctype.h \
-  /usr/include/python3.10/pystrtod.h \
-  /usr/include/python3.10/pystrcmp.h \
-  /usr/include/python3.10/fileutils.h \
-  /usr/include/python3.10/cpython/fileutils.h \
-  /usr/include/python3.10/cpython/pyfpe.h \
-  /usr/include/python3.10/tracemalloc.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  /usr/include/python3.10/numpy/ndarrayobject.h \
-  /usr/include/python3.10/numpy/ndarraytypes.h \
-  /usr/include/python3.10/numpy/npy_common.h \
-  /usr/include/python3.10/numpy/numpyconfig.h \
-  /usr/include/python3.10/numpy/_numpyconfig.h \
-  /usr/include/python3.10/numpy/npy_endian.h \
-  /usr/include/python3.10/numpy/npy_cpu.h \
-  /usr/include/python3.10/numpy/utils.h \
-  /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
-  /usr/include/python3.10/numpy/__multiarray_api.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/buffer128__struct.h \
-  rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.h \
-  rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
-
 CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_button_event_s.c.o: rosidl_generator_py/px4_msgs/msg/_button_event_s.c \
   /usr/include/stdc-predef.h \
   /usr/include/python3.10/Python.h \
@@ -21420,6 +21167,257 @@ CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_i
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
 
+CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.c.o: rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.c \
+  /usr/include/stdc-predef.h \
+  /usr/include/python3.10/Python.h \
+  /usr/include/python3.10/patchlevel.h \
+  /usr/include/python3.10/pyconfig.h \
+  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
+  /usr/include/python3.10/pymacconfig.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/stdio.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/string.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/strings.h \
+  /usr/include/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/linux/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/assert.h \
+  /usr/include/python3.10/pyport.h \
+  /usr/include/inttypes.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/sys/time.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/sys/stat.h \
+  /usr/include/x86_64-linux-gnu/bits/stat.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+  /usr/include/x86_64-linux-gnu/bits/statx.h \
+  /usr/include/linux/stat.h \
+  /usr/include/linux/types.h \
+  /usr/include/x86_64-linux-gnu/asm/types.h \
+  /usr/include/asm-generic/types.h \
+  /usr/include/asm-generic/int-ll64.h \
+  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+  /usr/include/asm-generic/bitsperlong.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
+  /usr/include/python3.10/exports.h \
+  /usr/include/python3.10/pymacro.h \
+  /usr/include/python3.10/pymath.h \
+  /usr/include/python3.10/pymem.h \
+  /usr/include/python3.10/cpython/pymem.h \
+  /usr/include/python3.10/object.h \
+  /usr/include/python3.10/cpython/object.h \
+  /usr/include/python3.10/objimpl.h \
+  /usr/include/python3.10/cpython/objimpl.h \
+  /usr/include/python3.10/typeslots.h \
+  /usr/include/python3.10/pyhash.h \
+  /usr/include/python3.10/cpython/pydebug.h \
+  /usr/include/python3.10/bytearrayobject.h \
+  /usr/include/python3.10/cpython/bytearrayobject.h \
+  /usr/include/python3.10/bytesobject.h \
+  /usr/include/python3.10/cpython/bytesobject.h \
+  /usr/include/python3.10/unicodeobject.h \
+  /usr/include/ctype.h \
+  /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/python3.10/cpython/unicodeobject.h \
+  /usr/include/python3.10/longobject.h \
+  /usr/include/python3.10/longintrepr.h \
+  /usr/include/python3.10/boolobject.h \
+  /usr/include/python3.10/floatobject.h \
+  /usr/include/python3.10/complexobject.h \
+  /usr/include/python3.10/rangeobject.h \
+  /usr/include/python3.10/memoryobject.h \
+  /usr/include/python3.10/tupleobject.h \
+  /usr/include/python3.10/cpython/tupleobject.h \
+  /usr/include/python3.10/listobject.h \
+  /usr/include/python3.10/cpython/listobject.h \
+  /usr/include/python3.10/dictobject.h \
+  /usr/include/python3.10/cpython/dictobject.h \
+  /usr/include/python3.10/cpython/odictobject.h \
+  /usr/include/python3.10/enumobject.h \
+  /usr/include/python3.10/setobject.h \
+  /usr/include/python3.10/methodobject.h \
+  /usr/include/python3.10/cpython/methodobject.h \
+  /usr/include/python3.10/moduleobject.h \
+  /usr/include/python3.10/funcobject.h \
+  /usr/include/python3.10/classobject.h \
+  /usr/include/python3.10/fileobject.h \
+  /usr/include/python3.10/cpython/fileobject.h \
+  /usr/include/python3.10/pycapsule.h \
+  /usr/include/python3.10/code.h \
+  /usr/include/python3.10/cpython/code.h \
+  /usr/include/python3.10/pyframe.h \
+  /usr/include/python3.10/traceback.h \
+  /usr/include/python3.10/cpython/traceback.h \
+  /usr/include/python3.10/sliceobject.h \
+  /usr/include/python3.10/cellobject.h \
+  /usr/include/python3.10/iterobject.h \
+  /usr/include/python3.10/cpython/initconfig.h \
+  /usr/include/python3.10/genobject.h \
+  /usr/include/python3.10/pystate.h \
+  /usr/include/python3.10/cpython/pystate.h \
+  /usr/include/python3.10/abstract.h \
+  /usr/include/python3.10/cpython/abstract.h \
+  /usr/include/python3.10/descrobject.h \
+  /usr/include/python3.10/genericaliasobject.h \
+  /usr/include/python3.10/warnings.h \
+  /usr/include/python3.10/weakrefobject.h \
+  /usr/include/python3.10/structseq.h \
+  /usr/include/python3.10/namespaceobject.h \
+  /usr/include/python3.10/cpython/picklebufobject.h \
+  /usr/include/python3.10/cpython/pytime.h \
+  /usr/include/python3.10/codecs.h \
+  /usr/include/python3.10/pyerrors.h \
+  /usr/include/python3.10/cpython/pyerrors.h \
+  /usr/include/python3.10/pythread.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/python3.10/context.h \
+  /usr/include/python3.10/modsupport.h \
+  /usr/include/python3.10/compile.h \
+  /usr/include/python3.10/cpython/compile.h \
+  /usr/include/python3.10/pythonrun.h \
+  /usr/include/python3.10/cpython/pythonrun.h \
+  /usr/include/python3.10/pylifecycle.h \
+  /usr/include/python3.10/cpython/pylifecycle.h \
+  /usr/include/python3.10/ceval.h \
+  /usr/include/python3.10/cpython/ceval.h \
+  /usr/include/python3.10/sysmodule.h \
+  /usr/include/python3.10/cpython/sysmodule.h \
+  /usr/include/python3.10/osmodule.h \
+  /usr/include/python3.10/intrcheck.h \
+  /usr/include/python3.10/import.h \
+  /usr/include/python3.10/cpython/import.h \
+  /usr/include/python3.10/bltinmodule.h \
+  /usr/include/python3.10/eval.h \
+  /usr/include/python3.10/cpython/pyctype.h \
+  /usr/include/python3.10/pystrtod.h \
+  /usr/include/python3.10/pystrcmp.h \
+  /usr/include/python3.10/fileutils.h \
+  /usr/include/python3.10/cpython/fileutils.h \
+  /usr/include/python3.10/cpython/pyfpe.h \
+  /usr/include/python3.10/tracemalloc.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+  /usr/include/python3.10/numpy/ndarrayobject.h \
+  /usr/include/python3.10/numpy/ndarraytypes.h \
+  /usr/include/python3.10/numpy/npy_common.h \
+  /usr/include/python3.10/numpy/numpyconfig.h \
+  /usr/include/python3.10/numpy/_numpyconfig.h \
+  /usr/include/python3.10/numpy/npy_endian.h \
+  /usr/include/python3.10/numpy/npy_cpu.h \
+  /usr/include/python3.10/numpy/utils.h \
+  /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
+  /usr/include/python3.10/numpy/__multiarray_api.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
+  rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__struct.h \
+  rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.h \
+  rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
+
 CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_status_s.c.o: rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_status_s.c \
   /usr/include/stdc-predef.h \
   /usr/include/python3.10/Python.h \
@@ -36776,7 +36774,7 @@ CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_r
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
 
-CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_ackermann_guidance_status_s.c.o: rosidl_generator_py/px4_msgs/msg/_rover_ackermann_guidance_status_s.c \
+CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.c.o: rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.c \
   /usr/include/stdc-predef.h \
   /usr/include/python3.10/Python.h \
   /usr/include/python3.10/patchlevel.h \
@@ -37023,11 +37021,11 @@ CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_r
   /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
   /usr/include/python3.10/numpy/__multiarray_api.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__struct.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.h \
+  rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__struct.h \
+  rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.h \
   rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
 
-CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_ackermann_setpoint_s.c.o: rosidl_generator_py/px4_msgs/msg/_rover_ackermann_setpoint_s.c \
+CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.c.o: rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.c \
   /usr/include/stdc-predef.h \
   /usr/include/python3.10/Python.h \
   /usr/include/python3.10/patchlevel.h \
@@ -37274,11 +37272,11 @@ CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_r
   /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
   /usr/include/python3.10/numpy/__multiarray_api.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__struct.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.h \
+  rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__struct.h \
+  rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.h \
   rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
 
-CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_ackermann_status_s.c.o: rosidl_generator_py/px4_msgs/msg/_rover_ackermann_status_s.c \
+CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.c.o: rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.c \
   /usr/include/stdc-predef.h \
   /usr/include/python3.10/Python.h \
   /usr/include/python3.10/patchlevel.h \
@@ -37525,11 +37523,11 @@ CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_r
   /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
   /usr/include/python3.10/numpy/__multiarray_api.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__struct.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.h \
+  rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__struct.h \
+  rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.h \
   rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
 
-CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_differential_guidance_status_s.c.o: rosidl_generator_py/px4_msgs/msg/_rover_differential_guidance_status_s.c \
+CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.c.o: rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.c \
   /usr/include/stdc-predef.h \
   /usr/include/python3.10/Python.h \
   /usr/include/python3.10/patchlevel.h \
@@ -37776,11 +37774,11 @@ CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_r
   /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
   /usr/include/python3.10/numpy/__multiarray_api.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__struct.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.h \
+  rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__struct.h \
+  rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.h \
   rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
 
-CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_differential_setpoint_s.c.o: rosidl_generator_py/px4_msgs/msg/_rover_differential_setpoint_s.c \
+CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.c.o: rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.c \
   /usr/include/stdc-predef.h \
   /usr/include/python3.10/Python.h \
   /usr/include/python3.10/patchlevel.h \
@@ -38027,11 +38025,11 @@ CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_r
   /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
   /usr/include/python3.10/numpy/__multiarray_api.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__struct.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.h \
+  rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__struct.h \
+  rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.h \
   rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
 
-CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_differential_status_s.c.o: rosidl_generator_py/px4_msgs/msg/_rover_differential_status_s.c \
+CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.c.o: rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.c \
   /usr/include/stdc-predef.h \
   /usr/include/python3.10/Python.h \
   /usr/include/python3.10/patchlevel.h \
@@ -38278,11 +38276,11 @@ CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_r
   /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
   /usr/include/python3.10/numpy/__multiarray_api.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__struct.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.h \
+  rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__struct.h \
+  rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.h \
   rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
 
-CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_mecanum_guidance_status_s.c.o: rosidl_generator_py/px4_msgs/msg/_rover_mecanum_guidance_status_s.c \
+CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.c.o: rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.c \
   /usr/include/stdc-predef.h \
   /usr/include/python3.10/Python.h \
   /usr/include/python3.10/patchlevel.h \
@@ -38529,510 +38527,8 @@ CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_r
   /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
   /usr/include/python3.10/numpy/__multiarray_api.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__struct.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.h \
-  rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
-
-CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_mecanum_setpoint_s.c.o: rosidl_generator_py/px4_msgs/msg/_rover_mecanum_setpoint_s.c \
-  /usr/include/stdc-predef.h \
-  /usr/include/python3.10/Python.h \
-  /usr/include/python3.10/patchlevel.h \
-  /usr/include/python3.10/pyconfig.h \
-  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
-  /usr/include/python3.10/pymacconfig.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/features.h \
-  /usr/include/features-time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
-  /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/string.h \
-  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/strings.h \
-  /usr/include/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/errno.h \
-  /usr/include/linux/errno.h \
-  /usr/include/x86_64-linux-gnu/asm/errno.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
-  /usr/include/stdlib.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
-  /usr/include/assert.h \
-  /usr/include/python3.10/pyport.h \
-  /usr/include/inttypes.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/math.h \
-  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
-  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
-  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  /usr/include/x86_64-linux-gnu/sys/time.h \
-  /usr/include/time.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
-  /usr/include/x86_64-linux-gnu/bits/timex.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/x86_64-linux-gnu/sys/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
-  /usr/include/x86_64-linux-gnu/bits/statx.h \
-  /usr/include/linux/stat.h \
-  /usr/include/linux/types.h \
-  /usr/include/x86_64-linux-gnu/asm/types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
-  /usr/include/python3.10/exports.h \
-  /usr/include/python3.10/pymacro.h \
-  /usr/include/python3.10/pymath.h \
-  /usr/include/python3.10/pymem.h \
-  /usr/include/python3.10/cpython/pymem.h \
-  /usr/include/python3.10/object.h \
-  /usr/include/python3.10/cpython/object.h \
-  /usr/include/python3.10/objimpl.h \
-  /usr/include/python3.10/cpython/objimpl.h \
-  /usr/include/python3.10/typeslots.h \
-  /usr/include/python3.10/pyhash.h \
-  /usr/include/python3.10/cpython/pydebug.h \
-  /usr/include/python3.10/bytearrayobject.h \
-  /usr/include/python3.10/cpython/bytearrayobject.h \
-  /usr/include/python3.10/bytesobject.h \
-  /usr/include/python3.10/cpython/bytesobject.h \
-  /usr/include/python3.10/unicodeobject.h \
-  /usr/include/ctype.h \
-  /usr/include/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/python3.10/cpython/unicodeobject.h \
-  /usr/include/python3.10/longobject.h \
-  /usr/include/python3.10/longintrepr.h \
-  /usr/include/python3.10/boolobject.h \
-  /usr/include/python3.10/floatobject.h \
-  /usr/include/python3.10/complexobject.h \
-  /usr/include/python3.10/rangeobject.h \
-  /usr/include/python3.10/memoryobject.h \
-  /usr/include/python3.10/tupleobject.h \
-  /usr/include/python3.10/cpython/tupleobject.h \
-  /usr/include/python3.10/listobject.h \
-  /usr/include/python3.10/cpython/listobject.h \
-  /usr/include/python3.10/dictobject.h \
-  /usr/include/python3.10/cpython/dictobject.h \
-  /usr/include/python3.10/cpython/odictobject.h \
-  /usr/include/python3.10/enumobject.h \
-  /usr/include/python3.10/setobject.h \
-  /usr/include/python3.10/methodobject.h \
-  /usr/include/python3.10/cpython/methodobject.h \
-  /usr/include/python3.10/moduleobject.h \
-  /usr/include/python3.10/funcobject.h \
-  /usr/include/python3.10/classobject.h \
-  /usr/include/python3.10/fileobject.h \
-  /usr/include/python3.10/cpython/fileobject.h \
-  /usr/include/python3.10/pycapsule.h \
-  /usr/include/python3.10/code.h \
-  /usr/include/python3.10/cpython/code.h \
-  /usr/include/python3.10/pyframe.h \
-  /usr/include/python3.10/traceback.h \
-  /usr/include/python3.10/cpython/traceback.h \
-  /usr/include/python3.10/sliceobject.h \
-  /usr/include/python3.10/cellobject.h \
-  /usr/include/python3.10/iterobject.h \
-  /usr/include/python3.10/cpython/initconfig.h \
-  /usr/include/python3.10/genobject.h \
-  /usr/include/python3.10/pystate.h \
-  /usr/include/python3.10/cpython/pystate.h \
-  /usr/include/python3.10/abstract.h \
-  /usr/include/python3.10/cpython/abstract.h \
-  /usr/include/python3.10/descrobject.h \
-  /usr/include/python3.10/genericaliasobject.h \
-  /usr/include/python3.10/warnings.h \
-  /usr/include/python3.10/weakrefobject.h \
-  /usr/include/python3.10/structseq.h \
-  /usr/include/python3.10/namespaceobject.h \
-  /usr/include/python3.10/cpython/picklebufobject.h \
-  /usr/include/python3.10/cpython/pytime.h \
-  /usr/include/python3.10/codecs.h \
-  /usr/include/python3.10/pyerrors.h \
-  /usr/include/python3.10/cpython/pyerrors.h \
-  /usr/include/python3.10/pythread.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
-  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/python3.10/context.h \
-  /usr/include/python3.10/modsupport.h \
-  /usr/include/python3.10/compile.h \
-  /usr/include/python3.10/cpython/compile.h \
-  /usr/include/python3.10/pythonrun.h \
-  /usr/include/python3.10/cpython/pythonrun.h \
-  /usr/include/python3.10/pylifecycle.h \
-  /usr/include/python3.10/cpython/pylifecycle.h \
-  /usr/include/python3.10/ceval.h \
-  /usr/include/python3.10/cpython/ceval.h \
-  /usr/include/python3.10/sysmodule.h \
-  /usr/include/python3.10/cpython/sysmodule.h \
-  /usr/include/python3.10/osmodule.h \
-  /usr/include/python3.10/intrcheck.h \
-  /usr/include/python3.10/import.h \
-  /usr/include/python3.10/cpython/import.h \
-  /usr/include/python3.10/bltinmodule.h \
-  /usr/include/python3.10/eval.h \
-  /usr/include/python3.10/cpython/pyctype.h \
-  /usr/include/python3.10/pystrtod.h \
-  /usr/include/python3.10/pystrcmp.h \
-  /usr/include/python3.10/fileutils.h \
-  /usr/include/python3.10/cpython/fileutils.h \
-  /usr/include/python3.10/cpython/pyfpe.h \
-  /usr/include/python3.10/tracemalloc.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  /usr/include/python3.10/numpy/ndarrayobject.h \
-  /usr/include/python3.10/numpy/ndarraytypes.h \
-  /usr/include/python3.10/numpy/npy_common.h \
-  /usr/include/python3.10/numpy/numpyconfig.h \
-  /usr/include/python3.10/numpy/_numpyconfig.h \
-  /usr/include/python3.10/numpy/npy_endian.h \
-  /usr/include/python3.10/numpy/npy_cpu.h \
-  /usr/include/python3.10/numpy/utils.h \
-  /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
-  /usr/include/python3.10/numpy/__multiarray_api.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__struct.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.h \
-  rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
-
-CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_mecanum_status_s.c.o: rosidl_generator_py/px4_msgs/msg/_rover_mecanum_status_s.c \
-  /usr/include/stdc-predef.h \
-  /usr/include/python3.10/Python.h \
-  /usr/include/python3.10/patchlevel.h \
-  /usr/include/python3.10/pyconfig.h \
-  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
-  /usr/include/python3.10/pymacconfig.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/features.h \
-  /usr/include/features-time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
-  /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/string.h \
-  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/strings.h \
-  /usr/include/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/errno.h \
-  /usr/include/linux/errno.h \
-  /usr/include/x86_64-linux-gnu/asm/errno.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
-  /usr/include/stdlib.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
-  /usr/include/assert.h \
-  /usr/include/python3.10/pyport.h \
-  /usr/include/inttypes.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/math.h \
-  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
-  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
-  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  /usr/include/x86_64-linux-gnu/sys/time.h \
-  /usr/include/time.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
-  /usr/include/x86_64-linux-gnu/bits/timex.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/x86_64-linux-gnu/sys/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
-  /usr/include/x86_64-linux-gnu/bits/statx.h \
-  /usr/include/linux/stat.h \
-  /usr/include/linux/types.h \
-  /usr/include/x86_64-linux-gnu/asm/types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
-  /usr/include/python3.10/exports.h \
-  /usr/include/python3.10/pymacro.h \
-  /usr/include/python3.10/pymath.h \
-  /usr/include/python3.10/pymem.h \
-  /usr/include/python3.10/cpython/pymem.h \
-  /usr/include/python3.10/object.h \
-  /usr/include/python3.10/cpython/object.h \
-  /usr/include/python3.10/objimpl.h \
-  /usr/include/python3.10/cpython/objimpl.h \
-  /usr/include/python3.10/typeslots.h \
-  /usr/include/python3.10/pyhash.h \
-  /usr/include/python3.10/cpython/pydebug.h \
-  /usr/include/python3.10/bytearrayobject.h \
-  /usr/include/python3.10/cpython/bytearrayobject.h \
-  /usr/include/python3.10/bytesobject.h \
-  /usr/include/python3.10/cpython/bytesobject.h \
-  /usr/include/python3.10/unicodeobject.h \
-  /usr/include/ctype.h \
-  /usr/include/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/python3.10/cpython/unicodeobject.h \
-  /usr/include/python3.10/longobject.h \
-  /usr/include/python3.10/longintrepr.h \
-  /usr/include/python3.10/boolobject.h \
-  /usr/include/python3.10/floatobject.h \
-  /usr/include/python3.10/complexobject.h \
-  /usr/include/python3.10/rangeobject.h \
-  /usr/include/python3.10/memoryobject.h \
-  /usr/include/python3.10/tupleobject.h \
-  /usr/include/python3.10/cpython/tupleobject.h \
-  /usr/include/python3.10/listobject.h \
-  /usr/include/python3.10/cpython/listobject.h \
-  /usr/include/python3.10/dictobject.h \
-  /usr/include/python3.10/cpython/dictobject.h \
-  /usr/include/python3.10/cpython/odictobject.h \
-  /usr/include/python3.10/enumobject.h \
-  /usr/include/python3.10/setobject.h \
-  /usr/include/python3.10/methodobject.h \
-  /usr/include/python3.10/cpython/methodobject.h \
-  /usr/include/python3.10/moduleobject.h \
-  /usr/include/python3.10/funcobject.h \
-  /usr/include/python3.10/classobject.h \
-  /usr/include/python3.10/fileobject.h \
-  /usr/include/python3.10/cpython/fileobject.h \
-  /usr/include/python3.10/pycapsule.h \
-  /usr/include/python3.10/code.h \
-  /usr/include/python3.10/cpython/code.h \
-  /usr/include/python3.10/pyframe.h \
-  /usr/include/python3.10/traceback.h \
-  /usr/include/python3.10/cpython/traceback.h \
-  /usr/include/python3.10/sliceobject.h \
-  /usr/include/python3.10/cellobject.h \
-  /usr/include/python3.10/iterobject.h \
-  /usr/include/python3.10/cpython/initconfig.h \
-  /usr/include/python3.10/genobject.h \
-  /usr/include/python3.10/pystate.h \
-  /usr/include/python3.10/cpython/pystate.h \
-  /usr/include/python3.10/abstract.h \
-  /usr/include/python3.10/cpython/abstract.h \
-  /usr/include/python3.10/descrobject.h \
-  /usr/include/python3.10/genericaliasobject.h \
-  /usr/include/python3.10/warnings.h \
-  /usr/include/python3.10/weakrefobject.h \
-  /usr/include/python3.10/structseq.h \
-  /usr/include/python3.10/namespaceobject.h \
-  /usr/include/python3.10/cpython/picklebufobject.h \
-  /usr/include/python3.10/cpython/pytime.h \
-  /usr/include/python3.10/codecs.h \
-  /usr/include/python3.10/pyerrors.h \
-  /usr/include/python3.10/cpython/pyerrors.h \
-  /usr/include/python3.10/pythread.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
-  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/python3.10/context.h \
-  /usr/include/python3.10/modsupport.h \
-  /usr/include/python3.10/compile.h \
-  /usr/include/python3.10/cpython/compile.h \
-  /usr/include/python3.10/pythonrun.h \
-  /usr/include/python3.10/cpython/pythonrun.h \
-  /usr/include/python3.10/pylifecycle.h \
-  /usr/include/python3.10/cpython/pylifecycle.h \
-  /usr/include/python3.10/ceval.h \
-  /usr/include/python3.10/cpython/ceval.h \
-  /usr/include/python3.10/sysmodule.h \
-  /usr/include/python3.10/cpython/sysmodule.h \
-  /usr/include/python3.10/osmodule.h \
-  /usr/include/python3.10/intrcheck.h \
-  /usr/include/python3.10/import.h \
-  /usr/include/python3.10/cpython/import.h \
-  /usr/include/python3.10/bltinmodule.h \
-  /usr/include/python3.10/eval.h \
-  /usr/include/python3.10/cpython/pyctype.h \
-  /usr/include/python3.10/pystrtod.h \
-  /usr/include/python3.10/pystrcmp.h \
-  /usr/include/python3.10/fileutils.h \
-  /usr/include/python3.10/cpython/fileutils.h \
-  /usr/include/python3.10/cpython/pyfpe.h \
-  /usr/include/python3.10/tracemalloc.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  /usr/include/python3.10/numpy/ndarrayobject.h \
-  /usr/include/python3.10/numpy/ndarraytypes.h \
-  /usr/include/python3.10/numpy/npy_common.h \
-  /usr/include/python3.10/numpy/numpyconfig.h \
-  /usr/include/python3.10/numpy/_numpyconfig.h \
-  /usr/include/python3.10/numpy/npy_endian.h \
-  /usr/include/python3.10/numpy/npy_cpu.h \
-  /usr/include/python3.10/numpy/utils.h \
-  /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
-  /usr/include/python3.10/numpy/__multiarray_api.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__struct.h \
-  rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.h \
+  rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__struct.h \
+  rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.h \
   rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
 
 CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rpm_s.c.o: rosidl_generator_py/px4_msgs/msg/_rpm_s.c \
@@ -46593,259 +46089,6 @@ CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_t
   rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.h \
   rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
 
-CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.c.o: rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.c \
-  /usr/include/stdc-predef.h \
-  /usr/include/python3.10/Python.h \
-  /usr/include/python3.10/patchlevel.h \
-  /usr/include/python3.10/pyconfig.h \
-  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
-  /usr/include/python3.10/pymacconfig.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/features.h \
-  /usr/include/features-time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
-  /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/string.h \
-  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/strings.h \
-  /usr/include/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/errno.h \
-  /usr/include/linux/errno.h \
-  /usr/include/x86_64-linux-gnu/asm/errno.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
-  /usr/include/stdlib.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
-  /usr/include/assert.h \
-  /usr/include/python3.10/pyport.h \
-  /usr/include/inttypes.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/math.h \
-  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
-  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
-  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  /usr/include/x86_64-linux-gnu/sys/time.h \
-  /usr/include/time.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
-  /usr/include/x86_64-linux-gnu/bits/timex.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/x86_64-linux-gnu/sys/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
-  /usr/include/x86_64-linux-gnu/bits/statx.h \
-  /usr/include/linux/stat.h \
-  /usr/include/linux/types.h \
-  /usr/include/x86_64-linux-gnu/asm/types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
-  /usr/include/python3.10/exports.h \
-  /usr/include/python3.10/pymacro.h \
-  /usr/include/python3.10/pymath.h \
-  /usr/include/python3.10/pymem.h \
-  /usr/include/python3.10/cpython/pymem.h \
-  /usr/include/python3.10/object.h \
-  /usr/include/python3.10/cpython/object.h \
-  /usr/include/python3.10/objimpl.h \
-  /usr/include/python3.10/cpython/objimpl.h \
-  /usr/include/python3.10/typeslots.h \
-  /usr/include/python3.10/pyhash.h \
-  /usr/include/python3.10/cpython/pydebug.h \
-  /usr/include/python3.10/bytearrayobject.h \
-  /usr/include/python3.10/cpython/bytearrayobject.h \
-  /usr/include/python3.10/bytesobject.h \
-  /usr/include/python3.10/cpython/bytesobject.h \
-  /usr/include/python3.10/unicodeobject.h \
-  /usr/include/ctype.h \
-  /usr/include/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/python3.10/cpython/unicodeobject.h \
-  /usr/include/python3.10/longobject.h \
-  /usr/include/python3.10/longintrepr.h \
-  /usr/include/python3.10/boolobject.h \
-  /usr/include/python3.10/floatobject.h \
-  /usr/include/python3.10/complexobject.h \
-  /usr/include/python3.10/rangeobject.h \
-  /usr/include/python3.10/memoryobject.h \
-  /usr/include/python3.10/tupleobject.h \
-  /usr/include/python3.10/cpython/tupleobject.h \
-  /usr/include/python3.10/listobject.h \
-  /usr/include/python3.10/cpython/listobject.h \
-  /usr/include/python3.10/dictobject.h \
-  /usr/include/python3.10/cpython/dictobject.h \
-  /usr/include/python3.10/cpython/odictobject.h \
-  /usr/include/python3.10/enumobject.h \
-  /usr/include/python3.10/setobject.h \
-  /usr/include/python3.10/methodobject.h \
-  /usr/include/python3.10/cpython/methodobject.h \
-  /usr/include/python3.10/moduleobject.h \
-  /usr/include/python3.10/funcobject.h \
-  /usr/include/python3.10/classobject.h \
-  /usr/include/python3.10/fileobject.h \
-  /usr/include/python3.10/cpython/fileobject.h \
-  /usr/include/python3.10/pycapsule.h \
-  /usr/include/python3.10/code.h \
-  /usr/include/python3.10/cpython/code.h \
-  /usr/include/python3.10/pyframe.h \
-  /usr/include/python3.10/traceback.h \
-  /usr/include/python3.10/cpython/traceback.h \
-  /usr/include/python3.10/sliceobject.h \
-  /usr/include/python3.10/cellobject.h \
-  /usr/include/python3.10/iterobject.h \
-  /usr/include/python3.10/cpython/initconfig.h \
-  /usr/include/python3.10/genobject.h \
-  /usr/include/python3.10/pystate.h \
-  /usr/include/python3.10/cpython/pystate.h \
-  /usr/include/python3.10/abstract.h \
-  /usr/include/python3.10/cpython/abstract.h \
-  /usr/include/python3.10/descrobject.h \
-  /usr/include/python3.10/genericaliasobject.h \
-  /usr/include/python3.10/warnings.h \
-  /usr/include/python3.10/weakrefobject.h \
-  /usr/include/python3.10/structseq.h \
-  /usr/include/python3.10/namespaceobject.h \
-  /usr/include/python3.10/cpython/picklebufobject.h \
-  /usr/include/python3.10/cpython/pytime.h \
-  /usr/include/python3.10/codecs.h \
-  /usr/include/python3.10/pyerrors.h \
-  /usr/include/python3.10/cpython/pyerrors.h \
-  /usr/include/python3.10/pythread.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
-  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/python3.10/context.h \
-  /usr/include/python3.10/modsupport.h \
-  /usr/include/python3.10/compile.h \
-  /usr/include/python3.10/cpython/compile.h \
-  /usr/include/python3.10/pythonrun.h \
-  /usr/include/python3.10/cpython/pythonrun.h \
-  /usr/include/python3.10/pylifecycle.h \
-  /usr/include/python3.10/cpython/pylifecycle.h \
-  /usr/include/python3.10/ceval.h \
-  /usr/include/python3.10/cpython/ceval.h \
-  /usr/include/python3.10/sysmodule.h \
-  /usr/include/python3.10/cpython/sysmodule.h \
-  /usr/include/python3.10/osmodule.h \
-  /usr/include/python3.10/intrcheck.h \
-  /usr/include/python3.10/import.h \
-  /usr/include/python3.10/cpython/import.h \
-  /usr/include/python3.10/bltinmodule.h \
-  /usr/include/python3.10/eval.h \
-  /usr/include/python3.10/cpython/pyctype.h \
-  /usr/include/python3.10/pystrtod.h \
-  /usr/include/python3.10/pystrcmp.h \
-  /usr/include/python3.10/fileutils.h \
-  /usr/include/python3.10/cpython/fileutils.h \
-  /usr/include/python3.10/cpython/pyfpe.h \
-  /usr/include/python3.10/tracemalloc.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  /usr/include/python3.10/numpy/ndarrayobject.h \
-  /usr/include/python3.10/numpy/ndarraytypes.h \
-  /usr/include/python3.10/numpy/npy_common.h \
-  /usr/include/python3.10/numpy/numpyconfig.h \
-  /usr/include/python3.10/numpy/_numpyconfig.h \
-  /usr/include/python3.10/numpy/npy_endian.h \
-  /usr/include/python3.10/numpy/npy_cpu.h \
-  /usr/include/python3.10/numpy/utils.h \
-  /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
-  /usr/include/python3.10/numpy/__multiarray_api.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__struct.h \
-  rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.h \
-  rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
-
 CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_trajectory_setpoint_s.c.o: rosidl_generator_py/px4_msgs/msg/_trajectory_setpoint_s.c \
   /usr/include/stdc-predef.h \
   /usr/include/python3.10/Python.h \
@@ -47095,259 +46338,6 @@ CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_t
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__struct.h \
   rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.h \
-  rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
-
-CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.c.o: rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.c \
-  /usr/include/stdc-predef.h \
-  /usr/include/python3.10/Python.h \
-  /usr/include/python3.10/patchlevel.h \
-  /usr/include/python3.10/pyconfig.h \
-  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
-  /usr/include/python3.10/pymacconfig.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/features.h \
-  /usr/include/features-time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
-  /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/string.h \
-  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/strings.h \
-  /usr/include/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/errno.h \
-  /usr/include/linux/errno.h \
-  /usr/include/x86_64-linux-gnu/asm/errno.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
-  /usr/include/stdlib.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
-  /usr/include/assert.h \
-  /usr/include/python3.10/pyport.h \
-  /usr/include/inttypes.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/math.h \
-  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
-  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
-  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  /usr/include/x86_64-linux-gnu/sys/time.h \
-  /usr/include/time.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
-  /usr/include/x86_64-linux-gnu/bits/timex.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/x86_64-linux-gnu/sys/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
-  /usr/include/x86_64-linux-gnu/bits/statx.h \
-  /usr/include/linux/stat.h \
-  /usr/include/linux/types.h \
-  /usr/include/x86_64-linux-gnu/asm/types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
-  /usr/include/python3.10/exports.h \
-  /usr/include/python3.10/pymacro.h \
-  /usr/include/python3.10/pymath.h \
-  /usr/include/python3.10/pymem.h \
-  /usr/include/python3.10/cpython/pymem.h \
-  /usr/include/python3.10/object.h \
-  /usr/include/python3.10/cpython/object.h \
-  /usr/include/python3.10/objimpl.h \
-  /usr/include/python3.10/cpython/objimpl.h \
-  /usr/include/python3.10/typeslots.h \
-  /usr/include/python3.10/pyhash.h \
-  /usr/include/python3.10/cpython/pydebug.h \
-  /usr/include/python3.10/bytearrayobject.h \
-  /usr/include/python3.10/cpython/bytearrayobject.h \
-  /usr/include/python3.10/bytesobject.h \
-  /usr/include/python3.10/cpython/bytesobject.h \
-  /usr/include/python3.10/unicodeobject.h \
-  /usr/include/ctype.h \
-  /usr/include/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/python3.10/cpython/unicodeobject.h \
-  /usr/include/python3.10/longobject.h \
-  /usr/include/python3.10/longintrepr.h \
-  /usr/include/python3.10/boolobject.h \
-  /usr/include/python3.10/floatobject.h \
-  /usr/include/python3.10/complexobject.h \
-  /usr/include/python3.10/rangeobject.h \
-  /usr/include/python3.10/memoryobject.h \
-  /usr/include/python3.10/tupleobject.h \
-  /usr/include/python3.10/cpython/tupleobject.h \
-  /usr/include/python3.10/listobject.h \
-  /usr/include/python3.10/cpython/listobject.h \
-  /usr/include/python3.10/dictobject.h \
-  /usr/include/python3.10/cpython/dictobject.h \
-  /usr/include/python3.10/cpython/odictobject.h \
-  /usr/include/python3.10/enumobject.h \
-  /usr/include/python3.10/setobject.h \
-  /usr/include/python3.10/methodobject.h \
-  /usr/include/python3.10/cpython/methodobject.h \
-  /usr/include/python3.10/moduleobject.h \
-  /usr/include/python3.10/funcobject.h \
-  /usr/include/python3.10/classobject.h \
-  /usr/include/python3.10/fileobject.h \
-  /usr/include/python3.10/cpython/fileobject.h \
-  /usr/include/python3.10/pycapsule.h \
-  /usr/include/python3.10/code.h \
-  /usr/include/python3.10/cpython/code.h \
-  /usr/include/python3.10/pyframe.h \
-  /usr/include/python3.10/traceback.h \
-  /usr/include/python3.10/cpython/traceback.h \
-  /usr/include/python3.10/sliceobject.h \
-  /usr/include/python3.10/cellobject.h \
-  /usr/include/python3.10/iterobject.h \
-  /usr/include/python3.10/cpython/initconfig.h \
-  /usr/include/python3.10/genobject.h \
-  /usr/include/python3.10/pystate.h \
-  /usr/include/python3.10/cpython/pystate.h \
-  /usr/include/python3.10/abstract.h \
-  /usr/include/python3.10/cpython/abstract.h \
-  /usr/include/python3.10/descrobject.h \
-  /usr/include/python3.10/genericaliasobject.h \
-  /usr/include/python3.10/warnings.h \
-  /usr/include/python3.10/weakrefobject.h \
-  /usr/include/python3.10/structseq.h \
-  /usr/include/python3.10/namespaceobject.h \
-  /usr/include/python3.10/cpython/picklebufobject.h \
-  /usr/include/python3.10/cpython/pytime.h \
-  /usr/include/python3.10/codecs.h \
-  /usr/include/python3.10/pyerrors.h \
-  /usr/include/python3.10/cpython/pyerrors.h \
-  /usr/include/python3.10/pythread.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
-  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/python3.10/context.h \
-  /usr/include/python3.10/modsupport.h \
-  /usr/include/python3.10/compile.h \
-  /usr/include/python3.10/cpython/compile.h \
-  /usr/include/python3.10/pythonrun.h \
-  /usr/include/python3.10/cpython/pythonrun.h \
-  /usr/include/python3.10/pylifecycle.h \
-  /usr/include/python3.10/cpython/pylifecycle.h \
-  /usr/include/python3.10/ceval.h \
-  /usr/include/python3.10/cpython/ceval.h \
-  /usr/include/python3.10/sysmodule.h \
-  /usr/include/python3.10/cpython/sysmodule.h \
-  /usr/include/python3.10/osmodule.h \
-  /usr/include/python3.10/intrcheck.h \
-  /usr/include/python3.10/import.h \
-  /usr/include/python3.10/cpython/import.h \
-  /usr/include/python3.10/bltinmodule.h \
-  /usr/include/python3.10/eval.h \
-  /usr/include/python3.10/cpython/pyctype.h \
-  /usr/include/python3.10/pystrtod.h \
-  /usr/include/python3.10/pystrcmp.h \
-  /usr/include/python3.10/fileutils.h \
-  /usr/include/python3.10/cpython/fileutils.h \
-  /usr/include/python3.10/cpython/pyfpe.h \
-  /usr/include/python3.10/tracemalloc.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  /usr/include/python3.10/numpy/ndarrayobject.h \
-  /usr/include/python3.10/numpy/ndarraytypes.h \
-  /usr/include/python3.10/numpy/npy_common.h \
-  /usr/include/python3.10/numpy/numpyconfig.h \
-  /usr/include/python3.10/numpy/_numpyconfig.h \
-  /usr/include/python3.10/numpy/npy_endian.h \
-  /usr/include/python3.10/numpy/npy_cpu.h \
-  /usr/include/python3.10/numpy/utils.h \
-  /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
-  /usr/include/python3.10/numpy/__multiarray_api.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__struct.h \
-  rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.h \
   rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
@@ -55426,516 +54416,6 @@ CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_v
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
 
-CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.c.o: rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.c \
-  /usr/include/stdc-predef.h \
-  /usr/include/python3.10/Python.h \
-  /usr/include/python3.10/patchlevel.h \
-  /usr/include/python3.10/pyconfig.h \
-  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
-  /usr/include/python3.10/pymacconfig.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/features.h \
-  /usr/include/features-time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
-  /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/string.h \
-  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/strings.h \
-  /usr/include/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/errno.h \
-  /usr/include/linux/errno.h \
-  /usr/include/x86_64-linux-gnu/asm/errno.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
-  /usr/include/stdlib.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
-  /usr/include/assert.h \
-  /usr/include/python3.10/pyport.h \
-  /usr/include/inttypes.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/math.h \
-  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
-  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
-  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  /usr/include/x86_64-linux-gnu/sys/time.h \
-  /usr/include/time.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
-  /usr/include/x86_64-linux-gnu/bits/timex.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/x86_64-linux-gnu/sys/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
-  /usr/include/x86_64-linux-gnu/bits/statx.h \
-  /usr/include/linux/stat.h \
-  /usr/include/linux/types.h \
-  /usr/include/x86_64-linux-gnu/asm/types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
-  /usr/include/python3.10/exports.h \
-  /usr/include/python3.10/pymacro.h \
-  /usr/include/python3.10/pymath.h \
-  /usr/include/python3.10/pymem.h \
-  /usr/include/python3.10/cpython/pymem.h \
-  /usr/include/python3.10/object.h \
-  /usr/include/python3.10/cpython/object.h \
-  /usr/include/python3.10/objimpl.h \
-  /usr/include/python3.10/cpython/objimpl.h \
-  /usr/include/python3.10/typeslots.h \
-  /usr/include/python3.10/pyhash.h \
-  /usr/include/python3.10/cpython/pydebug.h \
-  /usr/include/python3.10/bytearrayobject.h \
-  /usr/include/python3.10/cpython/bytearrayobject.h \
-  /usr/include/python3.10/bytesobject.h \
-  /usr/include/python3.10/cpython/bytesobject.h \
-  /usr/include/python3.10/unicodeobject.h \
-  /usr/include/ctype.h \
-  /usr/include/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/python3.10/cpython/unicodeobject.h \
-  /usr/include/python3.10/longobject.h \
-  /usr/include/python3.10/longintrepr.h \
-  /usr/include/python3.10/boolobject.h \
-  /usr/include/python3.10/floatobject.h \
-  /usr/include/python3.10/complexobject.h \
-  /usr/include/python3.10/rangeobject.h \
-  /usr/include/python3.10/memoryobject.h \
-  /usr/include/python3.10/tupleobject.h \
-  /usr/include/python3.10/cpython/tupleobject.h \
-  /usr/include/python3.10/listobject.h \
-  /usr/include/python3.10/cpython/listobject.h \
-  /usr/include/python3.10/dictobject.h \
-  /usr/include/python3.10/cpython/dictobject.h \
-  /usr/include/python3.10/cpython/odictobject.h \
-  /usr/include/python3.10/enumobject.h \
-  /usr/include/python3.10/setobject.h \
-  /usr/include/python3.10/methodobject.h \
-  /usr/include/python3.10/cpython/methodobject.h \
-  /usr/include/python3.10/moduleobject.h \
-  /usr/include/python3.10/funcobject.h \
-  /usr/include/python3.10/classobject.h \
-  /usr/include/python3.10/fileobject.h \
-  /usr/include/python3.10/cpython/fileobject.h \
-  /usr/include/python3.10/pycapsule.h \
-  /usr/include/python3.10/code.h \
-  /usr/include/python3.10/cpython/code.h \
-  /usr/include/python3.10/pyframe.h \
-  /usr/include/python3.10/traceback.h \
-  /usr/include/python3.10/cpython/traceback.h \
-  /usr/include/python3.10/sliceobject.h \
-  /usr/include/python3.10/cellobject.h \
-  /usr/include/python3.10/iterobject.h \
-  /usr/include/python3.10/cpython/initconfig.h \
-  /usr/include/python3.10/genobject.h \
-  /usr/include/python3.10/pystate.h \
-  /usr/include/python3.10/cpython/pystate.h \
-  /usr/include/python3.10/abstract.h \
-  /usr/include/python3.10/cpython/abstract.h \
-  /usr/include/python3.10/descrobject.h \
-  /usr/include/python3.10/genericaliasobject.h \
-  /usr/include/python3.10/warnings.h \
-  /usr/include/python3.10/weakrefobject.h \
-  /usr/include/python3.10/structseq.h \
-  /usr/include/python3.10/namespaceobject.h \
-  /usr/include/python3.10/cpython/picklebufobject.h \
-  /usr/include/python3.10/cpython/pytime.h \
-  /usr/include/python3.10/codecs.h \
-  /usr/include/python3.10/pyerrors.h \
-  /usr/include/python3.10/cpython/pyerrors.h \
-  /usr/include/python3.10/pythread.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
-  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/python3.10/context.h \
-  /usr/include/python3.10/modsupport.h \
-  /usr/include/python3.10/compile.h \
-  /usr/include/python3.10/cpython/compile.h \
-  /usr/include/python3.10/pythonrun.h \
-  /usr/include/python3.10/cpython/pythonrun.h \
-  /usr/include/python3.10/pylifecycle.h \
-  /usr/include/python3.10/cpython/pylifecycle.h \
-  /usr/include/python3.10/ceval.h \
-  /usr/include/python3.10/cpython/ceval.h \
-  /usr/include/python3.10/sysmodule.h \
-  /usr/include/python3.10/cpython/sysmodule.h \
-  /usr/include/python3.10/osmodule.h \
-  /usr/include/python3.10/intrcheck.h \
-  /usr/include/python3.10/import.h \
-  /usr/include/python3.10/cpython/import.h \
-  /usr/include/python3.10/bltinmodule.h \
-  /usr/include/python3.10/eval.h \
-  /usr/include/python3.10/cpython/pyctype.h \
-  /usr/include/python3.10/pystrtod.h \
-  /usr/include/python3.10/pystrcmp.h \
-  /usr/include/python3.10/fileutils.h \
-  /usr/include/python3.10/cpython/fileutils.h \
-  /usr/include/python3.10/cpython/pyfpe.h \
-  /usr/include/python3.10/tracemalloc.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  /usr/include/python3.10/numpy/ndarrayobject.h \
-  /usr/include/python3.10/numpy/ndarraytypes.h \
-  /usr/include/python3.10/numpy/npy_common.h \
-  /usr/include/python3.10/numpy/numpyconfig.h \
-  /usr/include/python3.10/numpy/_numpyconfig.h \
-  /usr/include/python3.10/numpy/npy_endian.h \
-  /usr/include/python3.10/numpy/npy_cpu.h \
-  /usr/include/python3.10/numpy/utils.h \
-  /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
-  /usr/include/python3.10/numpy/__multiarray_api.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__struct.h \
-  rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__struct.h \
-  rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.h \
-  rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h \
-  rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.h
-
-CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.c.o: rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.c \
-  /usr/include/stdc-predef.h \
-  /usr/include/python3.10/Python.h \
-  /usr/include/python3.10/patchlevel.h \
-  /usr/include/python3.10/pyconfig.h \
-  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
-  /usr/include/python3.10/pymacconfig.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/features.h \
-  /usr/include/features-time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
-  /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/string.h \
-  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/strings.h \
-  /usr/include/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/errno.h \
-  /usr/include/linux/errno.h \
-  /usr/include/x86_64-linux-gnu/asm/errno.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
-  /usr/include/stdlib.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
-  /usr/include/assert.h \
-  /usr/include/python3.10/pyport.h \
-  /usr/include/inttypes.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/math.h \
-  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
-  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
-  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  /usr/include/x86_64-linux-gnu/sys/time.h \
-  /usr/include/time.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
-  /usr/include/x86_64-linux-gnu/bits/timex.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/x86_64-linux-gnu/sys/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
-  /usr/include/x86_64-linux-gnu/bits/statx.h \
-  /usr/include/linux/stat.h \
-  /usr/include/linux/types.h \
-  /usr/include/x86_64-linux-gnu/asm/types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
-  /usr/include/python3.10/exports.h \
-  /usr/include/python3.10/pymacro.h \
-  /usr/include/python3.10/pymath.h \
-  /usr/include/python3.10/pymem.h \
-  /usr/include/python3.10/cpython/pymem.h \
-  /usr/include/python3.10/object.h \
-  /usr/include/python3.10/cpython/object.h \
-  /usr/include/python3.10/objimpl.h \
-  /usr/include/python3.10/cpython/objimpl.h \
-  /usr/include/python3.10/typeslots.h \
-  /usr/include/python3.10/pyhash.h \
-  /usr/include/python3.10/cpython/pydebug.h \
-  /usr/include/python3.10/bytearrayobject.h \
-  /usr/include/python3.10/cpython/bytearrayobject.h \
-  /usr/include/python3.10/bytesobject.h \
-  /usr/include/python3.10/cpython/bytesobject.h \
-  /usr/include/python3.10/unicodeobject.h \
-  /usr/include/ctype.h \
-  /usr/include/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/python3.10/cpython/unicodeobject.h \
-  /usr/include/python3.10/longobject.h \
-  /usr/include/python3.10/longintrepr.h \
-  /usr/include/python3.10/boolobject.h \
-  /usr/include/python3.10/floatobject.h \
-  /usr/include/python3.10/complexobject.h \
-  /usr/include/python3.10/rangeobject.h \
-  /usr/include/python3.10/memoryobject.h \
-  /usr/include/python3.10/tupleobject.h \
-  /usr/include/python3.10/cpython/tupleobject.h \
-  /usr/include/python3.10/listobject.h \
-  /usr/include/python3.10/cpython/listobject.h \
-  /usr/include/python3.10/dictobject.h \
-  /usr/include/python3.10/cpython/dictobject.h \
-  /usr/include/python3.10/cpython/odictobject.h \
-  /usr/include/python3.10/enumobject.h \
-  /usr/include/python3.10/setobject.h \
-  /usr/include/python3.10/methodobject.h \
-  /usr/include/python3.10/cpython/methodobject.h \
-  /usr/include/python3.10/moduleobject.h \
-  /usr/include/python3.10/funcobject.h \
-  /usr/include/python3.10/classobject.h \
-  /usr/include/python3.10/fileobject.h \
-  /usr/include/python3.10/cpython/fileobject.h \
-  /usr/include/python3.10/pycapsule.h \
-  /usr/include/python3.10/code.h \
-  /usr/include/python3.10/cpython/code.h \
-  /usr/include/python3.10/pyframe.h \
-  /usr/include/python3.10/traceback.h \
-  /usr/include/python3.10/cpython/traceback.h \
-  /usr/include/python3.10/sliceobject.h \
-  /usr/include/python3.10/cellobject.h \
-  /usr/include/python3.10/iterobject.h \
-  /usr/include/python3.10/cpython/initconfig.h \
-  /usr/include/python3.10/genobject.h \
-  /usr/include/python3.10/pystate.h \
-  /usr/include/python3.10/cpython/pystate.h \
-  /usr/include/python3.10/abstract.h \
-  /usr/include/python3.10/cpython/abstract.h \
-  /usr/include/python3.10/descrobject.h \
-  /usr/include/python3.10/genericaliasobject.h \
-  /usr/include/python3.10/warnings.h \
-  /usr/include/python3.10/weakrefobject.h \
-  /usr/include/python3.10/structseq.h \
-  /usr/include/python3.10/namespaceobject.h \
-  /usr/include/python3.10/cpython/picklebufobject.h \
-  /usr/include/python3.10/cpython/pytime.h \
-  /usr/include/python3.10/codecs.h \
-  /usr/include/python3.10/pyerrors.h \
-  /usr/include/python3.10/cpython/pyerrors.h \
-  /usr/include/python3.10/pythread.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
-  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/python3.10/context.h \
-  /usr/include/python3.10/modsupport.h \
-  /usr/include/python3.10/compile.h \
-  /usr/include/python3.10/cpython/compile.h \
-  /usr/include/python3.10/pythonrun.h \
-  /usr/include/python3.10/cpython/pythonrun.h \
-  /usr/include/python3.10/pylifecycle.h \
-  /usr/include/python3.10/cpython/pylifecycle.h \
-  /usr/include/python3.10/ceval.h \
-  /usr/include/python3.10/cpython/ceval.h \
-  /usr/include/python3.10/sysmodule.h \
-  /usr/include/python3.10/cpython/sysmodule.h \
-  /usr/include/python3.10/osmodule.h \
-  /usr/include/python3.10/intrcheck.h \
-  /usr/include/python3.10/import.h \
-  /usr/include/python3.10/cpython/import.h \
-  /usr/include/python3.10/bltinmodule.h \
-  /usr/include/python3.10/eval.h \
-  /usr/include/python3.10/cpython/pyctype.h \
-  /usr/include/python3.10/pystrtod.h \
-  /usr/include/python3.10/pystrcmp.h \
-  /usr/include/python3.10/fileutils.h \
-  /usr/include/python3.10/cpython/fileutils.h \
-  /usr/include/python3.10/cpython/pyfpe.h \
-  /usr/include/python3.10/tracemalloc.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  /usr/include/python3.10/numpy/ndarrayobject.h \
-  /usr/include/python3.10/numpy/ndarraytypes.h \
-  /usr/include/python3.10/numpy/npy_common.h \
-  /usr/include/python3.10/numpy/numpyconfig.h \
-  /usr/include/python3.10/numpy/_numpyconfig.h \
-  /usr/include/python3.10/numpy/npy_endian.h \
-  /usr/include/python3.10/numpy/npy_cpu.h \
-  /usr/include/python3.10/numpy/utils.h \
-  /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
-  /usr/include/python3.10/numpy/__multiarray_api.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
-  rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__struct.h \
-  rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__struct.h \
-  rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.h \
-  rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h \
-  rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.h
-
 CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_velocity_limits_s.c.o: rosidl_generator_py/px4_msgs/msg/_velocity_limits_s.c \
   /usr/include/stdc-predef.h \
   /usr/include/python3.10/Python.h \
@@ -57457,8 +55937,6 @@ rosidl_generator_c/px4_msgs/msg/detail/yaw_estimator_status__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/yaw_estimator_status__struct.h:
 
-rosidl_generator_py/px4_msgs/msg/_yaw_estimator_status_s.c:
-
 rosidl_generator_c/px4_msgs/msg/detail/wind__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/wind__struct.h:
@@ -57475,11 +55953,7 @@ rosidl_generator_py/px4_msgs/msg/_vtol_vehicle_status_s.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__struct.h:
 
-rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.c:
-
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.h:
-
-rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.c:
+rosidl_generator_py/px4_msgs/msg/_velocity_limits_s.c:
 
 rosidl_generator_py/px4_msgs/msg/_vehicle_torque_setpoint_s.c:
 
@@ -57493,6 +55967,8 @@ rosidl_generator_c/px4_msgs/msg/detail/vehicle_roi__struct.h:
 
 rosidl_generator_py/px4_msgs/msg/_vehicle_roi_s.c:
 
+rosidl_generator_c/px4_msgs/msg/detail/vehicle_rates_setpoint__functions.h:
+
 rosidl_generator_py/px4_msgs/msg/_vehicle_optical_flow_s.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_magnetometer__functions.h:
@@ -57504,6 +55980,8 @@ rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position__struct.h:
 rosidl_generator_py/px4_msgs/msg/_vehicle_local_position_s.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_land_detected__functions.h:
+
+rosidl_generator_py/px4_msgs/msg/_vehicle_imu_status_s.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu__functions.h:
 
@@ -57527,7 +56005,7 @@ rosidl_generator_py/px4_msgs/msg/_vehicle_constraints_s.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_command__struct.h:
 
-rosidl_generator_py/px4_msgs/msg/_vehicle_command_s.c:
+rosidl_generator_c/px4_msgs/msg/detail/vehicle_command_ack__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude__functions.h:
 
@@ -57544,6 +56022,8 @@ rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_velocity__struct.h:
 rosidl_generator_py/px4_msgs/msg/_vehicle_angular_velocity_s.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_acceleration_setpoint__struct.h:
+
+rosidl_generator_py/px4_msgs/msg/_vehicle_angular_acceleration_setpoint_s.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_air_data__struct.h:
 
@@ -57575,13 +56055,7 @@ rosidl_generator_py/px4_msgs/msg/_tune_control_s.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/transponder_report__struct.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.h:
-
-rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.c:
-
 rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.h:
 
@@ -57589,13 +56063,13 @@ rosidl_generator_c/px4_msgs/msg/detail/timesync_status__struct.h:
 
 rosidl_generator_py/px4_msgs/msg/_timesync_status_s.c:
 
+rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__struct.h:
+
 rosidl_generator_py/px4_msgs/msg/_telemetry_status_s.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/unregister_ext_component__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/tecs_status__struct.h:
-
-rosidl_generator_py/px4_msgs/msg/_tecs_status_s.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/task_stack_info__functions.h:
 
@@ -57619,13 +56093,9 @@ rosidl_generator_c/px4_msgs/msg/detail/sensors_status__struct.h:
 
 rosidl_generator_py/px4_msgs/msg/_sensors_status_s.c:
 
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__struct.h:
-
 rosidl_generator_c/px4_msgs/msg/detail/sensors_status_imu__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/sensor_uwb__functions.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/sensor_uwb__struct.h:
 
 rosidl_generator_py/px4_msgs/msg/_sensor_uwb_s.c:
 
@@ -57641,6 +56111,8 @@ rosidl_generator_c/px4_msgs/msg/detail/sensor_hygrometer__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro__functions.h:
 
+rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro__struct.h:
+
 rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.h:
 
 rosidl_generator_py/px4_msgs/msg/_sensor_gyro_s.c:
@@ -57650,6 +56122,8 @@ rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fifo__struct.h:
 rosidl_generator_py/px4_msgs/msg/_sensor_mag_s.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fft__functions.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fft__struct.h:
 
 rosidl_generator_py/px4_msgs/msg/_sensor_gyro_fft_s.c:
 
@@ -57695,53 +56169,41 @@ rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/rpm__struct.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro__struct.h:
+rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__struct.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__functions.h:
+rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.h:
+rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.c:
 
-rosidl_generator_py/px4_msgs/msg/_rover_mecanum_setpoint_s.c:
+rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.h:
 
-rosidl_generator_py/px4_msgs/msg/_velocity_limits_s.c:
+rosidl_generator_c/px4_msgs/msg/detail/sensor_uwb__struct.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.h:
+rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.c:
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_guidance_status__struct.h:
+rosidl_generator_py/px4_msgs/msg/_vehicle_command_s.c:
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__functions.h:
+rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.c:
 
-rosidl_generator_py/px4_msgs/msg/_rover_differential_status_s.c:
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_command_ack__functions.h:
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__struct.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__functions.h:
+rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.c:
 
-rosidl_generator_py/px4_msgs/msg/_vehicle_angular_acceleration_setpoint_s.c:
+rosidl_generator_py/px4_msgs/msg/_tecs_status_s.c:
 
-rosidl_generator_py/px4_msgs/msg/_rover_differential_setpoint_s.c:
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__struct.h:
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__struct.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fft__struct.h:
+rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.c:
 
-rosidl_generator_py/px4_msgs/msg/_rover_differential_guidance_status_s.c:
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__struct.h:
-
-rosidl_generator_py/px4_msgs/msg/_rover_ackermann_status_s.c:
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_rates_setpoint__functions.h:
-
-rosidl_generator_py/px4_msgs/msg/_rover_ackermann_setpoint_s.c:
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__struct.h:
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_reply__struct.h:
-
-rosidl_generator_py/px4_msgs/msg/_rover_ackermann_guidance_status_s.c:
 
 rosidl_generator_py/px4_msgs/msg/_register_ext_component_reply_s.c:
 
@@ -57787,8 +56249,6 @@ rosidl_generator_c/px4_msgs/msg/detail/sensor_accel_fifo__struct.h:
 
 rosidl_generator_py/px4_msgs/msg/_rpm_s.c:
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_guidance_status__functions.h:
-
 rosidl_generator_c/px4_msgs/msg/detail/power_monitor__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/sensor_correction__functions.h:
@@ -57802,8 +56262,6 @@ rosidl_generator_py/px4_msgs/msg/_power_button_state_s.c:
 rosidl_generator_py/px4_msgs/msg/_position_setpoint_s.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/position_controller_status__functions.h:
-
-rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/position_controller_landing_status__functions.h:
 
@@ -57901,21 +56359,21 @@ rosidl_generator_c/px4_msgs/msg/detail/obstacle_distance__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/obstacle_distance__struct.h:
 
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__struct.h:
+
 rosidl_generator_py/px4_msgs/msg/_obstacle_distance_s.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/npfg_status__functions.h:
+
+rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.c:
 
 rosidl_generator_py/px4_msgs/msg/_npfg_status_s.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__struct.h:
 
-rosidl_generator_py/px4_msgs/msg/_normalized_unsigned_setpoint_s.c:
-
 rosidl_generator_c/px4_msgs/msg/detail/navigator_status__struct.h:
 
 rosidl_generator_py/px4_msgs/msg/_navigator_status_s.c:
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_setpoint__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/navigator_mission_item__functions.h:
 
@@ -57941,9 +56399,9 @@ rosidl_generator_py/px4_msgs/msg/_mission_result_s.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/message_format_response__struct.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/rover_mecanum_status__struct.h:
-
 rosidl_generator_c/px4_msgs/msg/detail/message_format_request__functions.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/message_format_request__struct.h:
 
@@ -57951,7 +56409,7 @@ rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/mavlink_tunnel__functions.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__struct.h:
+rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/mavlink_tunnel__struct.h:
 
@@ -57980,8 +56438,6 @@ rosidl_generator_c/px4_msgs/msg/detail/mission_result__struct.h:
 /usr/include/python3.10/numpy/npy_common.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/estimator_event_flags__functions.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/orb_test__struct.h:
 
@@ -58026,8 +56482,6 @@ rosidl_generator_c/px4_msgs/msg/detail/task_stack_info__struct.h:
 /usr/include/python3.10/tracemalloc.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/sensor_gps__functions.h:
-
-rosidl_generator_py/px4_msgs/msg/_rover_mecanum_guidance_status_s.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source1d__functions.h:
 
@@ -58121,6 +56575,8 @@ rosidl_generator_c/px4_msgs/msg/detail/actuator_armed__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/actuator_controls_status__struct.h:
 
+rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/actuator_controls_status__functions.h:
@@ -58152,8 +56608,6 @@ rosidl_generator_c/px4_msgs/msg/detail/can_interface_status__struct.h:
 /usr/include/python3.10/cpython/methodobject.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/sensor_airflow__functions.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_setpoint__struct.h:
 
 /usr/include/python3.10/classobject.h:
 
@@ -58329,6 +56783,8 @@ rosidl_generator_c/px4_msgs/msg/detail/flight_phase_estimation__struct.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.h:
+
 /usr/include/python3.10/cpython/ceval.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
@@ -58336,8 +56792,6 @@ rosidl_generator_c/px4_msgs/msg/detail/flight_phase_estimation__struct.h:
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/math.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__struct.h:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
@@ -58443,8 +56897,6 @@ rosidl_generator_c/px4_msgs/msg/detail/orb_test_large__struct.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.h:
-
 rosidl_generator_c/px4_msgs/msg/detail/sensor_mag__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/pwm_input__struct.h:
@@ -58497,6 +56949,8 @@ rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__struct.h:
 
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
+rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__struct.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/dataman_response__functions.h:
@@ -58508,8 +56962,6 @@ rosidl_generator_c/px4_msgs/msg/detail/dataman_response__functions.h:
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 rosidl_generator_py/px4_msgs/msg/_vehicle_command_ack_s.c:
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
@@ -58551,6 +57003,10 @@ rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu_status__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/estimator_bias3d__struct.h:
 
+rosidl_generator_py/px4_msgs/msg/_normalized_unsigned_setpoint_s.c:
+
+rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.h:
+
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_command__functions.h:
@@ -58564,6 +57020,8 @@ rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__struct.h:
 rosidl_generator_py/px4_msgs/msg/_gimbal_device_attitude_status_s.c:
 
 /usr/include/python3.10/cpython/compile.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__struct.h:
 
 rosidl_generator_py/px4_msgs/msg/_debug_vect_s.c:
 
@@ -58643,8 +57101,6 @@ rosidl_generator_c/px4_msgs/msg/detail/estimator_bias3d__functions.h:
 
 rosidl_generator_py/px4_msgs/msg/_fuel_tank_status_s.c:
 
-rosidl_generator_py/px4_msgs/msg/_rover_mecanum_status_s.c:
-
 rosidl_generator_c/px4_msgs/msg/detail/gimbal_controls__functions.h:
 
 rosidl_generator_py/px4_msgs/msg/_parameter_set_value_response_s.c:
@@ -58692,8 +57148,6 @@ rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__struct.h:
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow_vel__functions.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_setpoint__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/airspeed__struct.h:
 
@@ -58781,8 +57235,6 @@ rosidl_generator_py/px4_msgs/msg/_generator_status_s.c:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/buffer128__struct.h:
-
 rosidl_generator_c/px4_msgs/msg/detail/hover_thrust_estimate__functions.h:
 
 /usr/include/linux/posix_types.h:
@@ -58794,8 +57246,6 @@ rosidl_generator_c/px4_msgs/msg/detail/airspeed_wind__struct.h:
 rosidl_generator_py/px4_msgs/msg/_actuator_outputs_s.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/actuator_outputs__struct.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_ackermann_status__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/actuator_outputs__functions.h:
 
@@ -58867,12 +57317,6 @@ rosidl_generator_py/px4_msgs/msg/_battery_status_s.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/battery_status__functions.h:
 
-rosidl_generator_py/px4_msgs/msg/_buffer128_s.c:
-
-rosidl_generator_py/px4_msgs/msg/_vehicle_imu_status_s.c:
-
-rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.h:
-
 rosidl_generator_py/px4_msgs/msg/_button_event_s.c:
 
 rosidl_generator_c/px4_msgs/msg/detail/landing_gear_wheel__struct.h:
@@ -58930,6 +57374,10 @@ rosidl_generator_c/px4_msgs/msg/detail/sensors_status__functions.h:
 rosidl_generator_c/px4_msgs/msg/detail/sensor_selection__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/config_overrides__functions.h:
+
+rosidl_generator_py/px4_msgs/msg/_yaw_estimator_status_s.c:
+
+rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.c:
 
 rosidl_generator_py/px4_msgs/msg/_control_allocator_status_s.c:
 
@@ -59075,8 +57523,6 @@ rosidl_generator_c/px4_msgs/msg/detail/estimator_selector_status__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/estimator_selector_status__functions.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__struct.h:
-
 rosidl_generator_c/px4_msgs/msg/detail/estimator_sensor_bias__functions.h:
 
 rosidl_generator_py/px4_msgs/msg/_estimator_states_s.c:
@@ -59128,8 +57574,6 @@ rosidl_generator_py/px4_msgs/msg/_mavlink_tunnel_s.c:
 rosidl_generator_c/px4_msgs/msg/detail/figure_eight_status__functions.h:
 
 rosidl_generator_py/px4_msgs/msg/_follow_target_estimator_s.c:
-
-rosidl_generator_c/px4_msgs/msg/detail/rover_differential_status__struct.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_reply__functions.h:
 

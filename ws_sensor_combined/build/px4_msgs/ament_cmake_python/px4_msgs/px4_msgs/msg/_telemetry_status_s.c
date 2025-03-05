@@ -338,15 +338,6 @@ bool px4_msgs__msg__telemetry_status__convert_from_py(PyObject * _pymsg, void * 
     ros_message->heartbeat_component_osd = (Py_True == field);
     Py_DECREF(field);
   }
-  {  // heartbeat_component_obstacle_avoidance
-    PyObject * field = PyObject_GetAttrString(_pymsg, "heartbeat_component_obstacle_avoidance");
-    if (!field) {
-      return false;
-    }
-    assert(PyBool_Check(field));
-    ros_message->heartbeat_component_obstacle_avoidance = (Py_True == field);
-    Py_DECREF(field);
-  }
   {  // heartbeat_component_vio
     PyObject * field = PyObject_GetAttrString(_pymsg, "heartbeat_component_vio");
     if (!field) {
@@ -381,15 +372,6 @@ bool px4_msgs__msg__telemetry_status__convert_from_py(PyObject * _pymsg, void * 
     }
     assert(PyBool_Check(field));
     ros_message->heartbeat_component_uart_bridge = (Py_True == field);
-    Py_DECREF(field);
-  }
-  {  // avoidance_system_healthy
-    PyObject * field = PyObject_GetAttrString(_pymsg, "avoidance_system_healthy");
-    if (!field) {
-      return false;
-    }
-    assert(PyBool_Check(field));
-    ros_message->avoidance_system_healthy = (Py_True == field);
     Py_DECREF(field);
   }
   {  // open_drone_id_system_healthy
@@ -784,17 +766,6 @@ PyObject * px4_msgs__msg__telemetry_status__convert_to_py(void * raw_ros_message
       }
     }
   }
-  {  // heartbeat_component_obstacle_avoidance
-    PyObject * field = NULL;
-    field = PyBool_FromLong(ros_message->heartbeat_component_obstacle_avoidance ? 1 : 0);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "heartbeat_component_obstacle_avoidance", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
   {  // heartbeat_component_vio
     PyObject * field = NULL;
     field = PyBool_FromLong(ros_message->heartbeat_component_vio ? 1 : 0);
@@ -833,17 +804,6 @@ PyObject * px4_msgs__msg__telemetry_status__convert_to_py(void * raw_ros_message
     field = PyBool_FromLong(ros_message->heartbeat_component_uart_bridge ? 1 : 0);
     {
       int rc = PyObject_SetAttrString(_pymessage, "heartbeat_component_uart_bridge", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // avoidance_system_healthy
-    PyObject * field = NULL;
-    field = PyBool_FromLong(ros_message->avoidance_system_healthy ? 1 : 0);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "avoidance_system_healthy", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

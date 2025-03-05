@@ -32,7 +32,7 @@ px4_msgs__msg__GimbalDeviceInformation__init(px4_msgs__msg__GimbalDeviceInformat
   // pitch_max
   // yaw_min
   // yaw_max
-  // gimbal_device_compid
+  // gimbal_device_id
   return true;
 }
 
@@ -57,7 +57,7 @@ px4_msgs__msg__GimbalDeviceInformation__fini(px4_msgs__msg__GimbalDeviceInformat
   // pitch_max
   // yaw_min
   // yaw_max
-  // gimbal_device_compid
+  // gimbal_device_id
 }
 
 bool
@@ -132,8 +132,8 @@ px4_msgs__msg__GimbalDeviceInformation__are_equal(const px4_msgs__msg__GimbalDev
   if (lhs->yaw_max != rhs->yaw_max) {
     return false;
   }
-  // gimbal_device_compid
-  if (lhs->gimbal_device_compid != rhs->gimbal_device_compid) {
+  // gimbal_device_id
+  if (lhs->gimbal_device_id != rhs->gimbal_device_id) {
     return false;
   }
   return true;
@@ -183,8 +183,8 @@ px4_msgs__msg__GimbalDeviceInformation__copy(
   output->yaw_min = input->yaw_min;
   // yaw_max
   output->yaw_max = input->yaw_max;
-  // gimbal_device_compid
-  output->gimbal_device_compid = input->gimbal_device_compid;
+  // gimbal_device_id
+  output->gimbal_device_id = input->gimbal_device_id;
   return true;
 }
 

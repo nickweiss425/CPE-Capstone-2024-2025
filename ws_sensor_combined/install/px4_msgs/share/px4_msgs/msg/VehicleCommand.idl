@@ -6,6 +6,7 @@
 module px4_msgs {
   module msg {
     module VehicleCommand_Constants {
+      const uint32 MESSAGE_VERSION = 0;
       @verbatim (language="comment", text=
         "test command")
       const uint16 VEHICLE_CMD_CUSTOM_0 = 0;

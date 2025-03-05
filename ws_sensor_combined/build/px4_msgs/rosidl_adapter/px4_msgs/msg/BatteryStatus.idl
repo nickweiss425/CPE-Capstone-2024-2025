@@ -7,66 +7,67 @@ module px4_msgs {
   module msg {
     typedef float float__14[14];
     module BatteryStatus_Constants {
-      const uint8 BATTERY_SOURCE_POWER_MODULE = 0;
-      const uint8 BATTERY_SOURCE_EXTERNAL = 1;
-      const uint8 BATTERY_SOURCE_ESCS = 2;
+      const uint32 MESSAGE_VERSION = 0;
+      const uint8 SOURCE_POWER_MODULE = 0;
+      const uint8 SOURCE_EXTERNAL = 1;
+      const uint8 SOURCE_ESCS = 2;
       @verbatim (language="comment", text=
         "no battery low voltage warning active")
-      const uint8 BATTERY_WARNING_NONE = 0;
+      const uint8 WARNING_NONE = 0;
       @verbatim (language="comment", text=
         "warning of low voltage")
-      const uint8 BATTERY_WARNING_LOW = 1;
+      const uint8 WARNING_LOW = 1;
       @verbatim (language="comment", text=
         "critical voltage, return / abort immediately")
-      const uint8 BATTERY_WARNING_CRITICAL = 2;
+      const uint8 WARNING_CRITICAL = 2;
       @verbatim (language="comment", text=
         "immediate landing required")
-      const uint8 BATTERY_WARNING_EMERGENCY = 3;
+      const uint8 WARNING_EMERGENCY = 3;
       @verbatim (language="comment", text=
         "the battery has failed completely")
-      const uint8 BATTERY_WARNING_FAILED = 4;
+      const uint8 WARNING_FAILED = 4;
       @verbatim (language="comment", text=
         "Battery is diagnosed to be defective or an error occurred, usage is discouraged / prohibited. Possible causes (faults) are listed in faults field.")
-      const uint8 BATTERY_STATE_UNHEALTHY = 6;
+      const uint8 STATE_UNHEALTHY = 6;
       @verbatim (language="comment", text=
         "Battery is charging")
-      const uint8 BATTERY_STATE_CHARGING = 7;
+      const uint8 STATE_CHARGING = 7;
       @verbatim (language="comment", text=
         "Battery has deep discharged")
-      const uint8 BATTERY_FAULT_DEEP_DISCHARGE = 0;
+      const uint8 FAULT_DEEP_DISCHARGE = 0;
       @verbatim (language="comment", text=
         "Voltage spikes")
-      const uint8 BATTERY_FAULT_SPIKES = 1;
+      const uint8 FAULT_SPIKES = 1;
       @verbatim (language="comment", text=
         "One or more cells have failed")
-      const uint8 BATTERY_FAULT_CELL_FAIL = 2;
+      const uint8 FAULT_CELL_FAIL = 2;
       @verbatim (language="comment", text=
         "Over-current")
-      const uint8 BATTERY_FAULT_OVER_CURRENT = 3;
+      const uint8 FAULT_OVER_CURRENT = 3;
       @verbatim (language="comment", text=
         "Over-temperature")
-      const uint8 BATTERY_FAULT_OVER_TEMPERATURE = 4;
+      const uint8 FAULT_OVER_TEMPERATURE = 4;
       @verbatim (language="comment", text=
         "Under-temperature fault")
-      const uint8 BATTERY_FAULT_UNDER_TEMPERATURE = 5;
+      const uint8 FAULT_UNDER_TEMPERATURE = 5;
       @verbatim (language="comment", text=
         "Vehicle voltage is not compatible with this battery (batteries on same power rail should have similar voltage).")
-      const uint8 BATTERY_FAULT_INCOMPATIBLE_VOLTAGE = 6;
+      const uint8 FAULT_INCOMPATIBLE_VOLTAGE = 6;
       @verbatim (language="comment", text=
         "Battery firmware is not compatible with current autopilot firmware")
-      const uint8 BATTERY_FAULT_INCOMPATIBLE_FIRMWARE = 7;
+      const uint8 FAULT_INCOMPATIBLE_FIRMWARE = 7;
       @verbatim (language="comment", text=
         "Battery model is not supported by the system")
-      const uint8 BATTERY_FAULT_INCOMPATIBLE_MODEL = 8;
+      const uint8 FAULT_INCOMPATIBLE_MODEL = 8;
       @verbatim (language="comment", text=
         "hardware problem")
-      const uint8 BATTERY_FAULT_HARDWARE_FAILURE = 9;
+      const uint8 FAULT_HARDWARE_FAILURE = 9;
       @verbatim (language="comment", text=
         "Battery had a problem while arming")
-      const uint8 BATTERY_FAULT_FAILED_TO_ARM = 10;
+      const uint8 FAULT_FAILED_TO_ARM = 10;
       @verbatim (language="comment", text=
         "Counter - keep it as last element!")
-      const uint8 BATTERY_FAULT_COUNT = 11;
+      const uint8 FAULT_COUNT = 11;
       const uint8 MAX_INSTANCES = 4;
     };
     struct BatteryStatus {

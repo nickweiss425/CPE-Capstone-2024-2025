@@ -53,8 +53,6 @@ px4_msgs__msg__VehicleStatus__init(px4_msgs__msg__VehicleStatus * msg)
   // open_drone_id_system_healthy
   // parachute_system_present
   // parachute_system_healthy
-  // avoidance_system_required
-  // avoidance_system_valid
   // rc_calibration_in_progress
   // calibration_enabled
   // pre_flight_checks_pass
@@ -103,8 +101,6 @@ px4_msgs__msg__VehicleStatus__fini(px4_msgs__msg__VehicleStatus * msg)
   // open_drone_id_system_healthy
   // parachute_system_present
   // parachute_system_healthy
-  // avoidance_system_required
-  // avoidance_system_valid
   // rc_calibration_in_progress
   // calibration_enabled
   // pre_flight_checks_pass
@@ -260,14 +256,6 @@ px4_msgs__msg__VehicleStatus__are_equal(const px4_msgs__msg__VehicleStatus * lhs
   if (lhs->parachute_system_healthy != rhs->parachute_system_healthy) {
     return false;
   }
-  // avoidance_system_required
-  if (lhs->avoidance_system_required != rhs->avoidance_system_required) {
-    return false;
-  }
-  // avoidance_system_valid
-  if (lhs->avoidance_system_valid != rhs->avoidance_system_valid) {
-    return false;
-  }
   // rc_calibration_in_progress
   if (lhs->rc_calibration_in_progress != rhs->rc_calibration_in_progress) {
     return false;
@@ -363,10 +351,6 @@ px4_msgs__msg__VehicleStatus__copy(
   output->parachute_system_present = input->parachute_system_present;
   // parachute_system_healthy
   output->parachute_system_healthy = input->parachute_system_healthy;
-  // avoidance_system_required
-  output->avoidance_system_required = input->avoidance_system_required;
-  // avoidance_system_valid
-  output->avoidance_system_valid = input->avoidance_system_valid;
   // rc_calibration_in_progress
   output->rc_calibration_in_progress = input->rc_calibration_in_progress;
   // calibration_enabled
