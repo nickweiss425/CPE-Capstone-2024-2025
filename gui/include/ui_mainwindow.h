@@ -20,6 +20,7 @@
 #include <QtWidgets/QWidget>
 #include <QButtonGroup>
 #include "waypointmanager.hpp"
+#include "videowidget.hpp"
 
 QT_BEGIN_NAMESPACE
 
