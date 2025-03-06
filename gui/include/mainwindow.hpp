@@ -35,8 +35,9 @@ public slots:
 
 private:
     Ui::MainWindow *ui;
-    StatePublisher *statePublisher; // Publisher for flight state
-    StateSubscriber *stateSubscriber; // Subscriber for flight state
+    std::shared_ptr<StatePublisher> statePublisher; // Publisher for flight state
+    std::shared_ptr<StateSubscriber> stateSubscriber; // Subscriber for flight state
+    std::unique_ptr<ROSThread> rosThread;
     GPSWidget *gpsWidget;       // GPS widget for displaying coordinates
     IMUWidget *imuWidget;       // IMU widget for displaying imu data
 
