@@ -32,8 +32,11 @@ MainWindow::MainWindow(QWidget *parent)
     connectionStatusWidget = new ConnectionStatusWidget(ui->connectionStatusLabel, ui->startFlightButton);
 
     // Set up the flight state publisher/subscriber
-    statePublisher = new StatePublisher();
-    stateSubscriber = new StateSubscriber();
+    statePublisher = std::make_shared<StatePublisher>();
+    stateSubscriber = std::make_shared<StateSubscriber>();
+    // create ros thread for subscriber
+    rosThread = std::make_unique<ROSThread>(stateSubscriber);
+    rosThread->start();
 
     // Set up the video widget in the videoView
     ui->videoWidget->setObjectName("videoWidget");
@@ -72,7 +75,7 @@ void MainWindow::setupConnections() {
     connect(ui->confirmHoverButton, &QPushButton::clicked, this, &MainWindow::handleWaypointUpdate);
     connect(ui->waypointManager, &WaypointManager::getWaypointAttributes, this, &MainWindow::updateWaypointAttributes);
     connect(this, &MainWindow::setWaypointAttributes, ui->waypointManager, &WaypointManager::updateWaypointAttributes);
-    connect(stateSubscriber, &StateSubscriber::stateReceived, this, &MainWindow::handleDroneStateReceive);
+    connect(stateSubscriber.get(), &StateSubscriber::stateReceived, this, &MainWindow::handleDroneStateReceive);
     connect(ui->waypointManager, &WaypointManager::resetWaypointButtons, this, &MainWindow::resetWaypointAttributes);
 
     // Wait for the map to load before connecting signals
