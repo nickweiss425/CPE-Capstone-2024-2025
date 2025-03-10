@@ -30,6 +30,8 @@ LoraSubscriber::LoraSubscriber(): Node("lora_subscriber") {
           "desired_state", 10, std::bind(&LoraSubscriber::flight_state_topic_callback, this, _1));
     heartbeat_subscription_ = this->create_subscription<std_msgs::msg::Empty>(
           "/heartbeat", 10, std::bind(&LoraSubscriber::heartbeat_topic_callback, this, _1));
+    flight_command_subscription_ = this->create_subscription<gui_messages::msg::FlightCommand>(
+          "flight_command", 10, std::bind(&LoraSubscriber::flight_command_topic_callback, this, _1));
 
     /* init serial port */
     try {
@@ -135,3 +137,29 @@ void LoraSubscriber::heartbeat_topic_callback(const std_msgs::msg::Empty &msg)
     }
 }
 
+
+/* Receive ROS STATE data and publish to serial */
+void LoraSubscriber::flight_command_topic_callback(const gui_messages::msg::FlightCommand &msg)
+{
+    RCLCPP_INFO(this->get_logger(), "LORA subscriber handling flight command");
+    flight_command_serialized_t fc;
+    fc.latitude_deg = msg.latitude_deg;
+    fc.longitude_deg = msg.longitude_deg;
+    fc.altitude = msg.altitude;
+    fc.radius = msg.radius;
+    fc.length = msg.length;
+    fc.duration = msg.duration;
+    fc.waypoint_type = msg.waypoint_type;
+    static char preamble[PREAMBLESIZE + 1] = ":)";
+
+    /* create byte array to hold data */
+    uint8_t buffer[sizeof(flight_command_serialized_t) + PREAMBLESIZE];
+    std::memcpy(buffer, preamble, PREAMBLESIZE);
+    std::memcpy(buffer + PREAMBLESIZE, &fc, sizeof(flight_command_serialized_t));
+
+    /* write to serial port byte by byte*/
+    for (size_t i = 0; i < sizeof(flight_command_serialized_t) + PREAMBLESIZE; i++)
+    {
+        serial_ << buffer[i];
+    }
+}
