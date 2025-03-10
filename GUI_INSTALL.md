@@ -12,7 +12,7 @@ sudo apt install qtlocation5-dev\
 sudo apt install qtpositioning5-dev\
 sudo apt install qtmultimedia5-dev\
 sudo apt install x11-xserver-utils\
-sudo apt insall qml-module-qtquick-window2\
+sudo apt install qml-module-qtquick-window2\
 \
 Windows:\
 choco install vcxsrv (elevated command prompt)\
@@ -28,7 +28,11 @@ sudo apt install qml-module-qtpositioning\
 sudo apt install qml-module-qtquick-controls2\
 git checkout qt-gui\
 cd into the repo\
-"cmake . -B build" when inside CPE-Capstone-2024-2025/qt-gui\
-cd build\
-make\
+cd into gui\gui_messages\
+colcon build
+source install/setup.sh
+cd ..
+colcon build when inside CPE-Capstone-2024-2025/gui
+source install/setup.sh
+cd build/flight_control/
 ./flight_control
