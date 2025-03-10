@@ -321,6 +321,7 @@ void MainWindow::handleDroneStateReceive(const std_msgs::msg::Int32 &msg) {
         case flight_states::FlightState::SQUARE_PATH:
         case flight_states::FlightState::FIGURE8_PATH:
             RCLCPP_INFO(rclcpp::get_logger("MainWindow"), "Received path completion acknowledgment: %d", static_cast<int>(state));
+            emit ui->waypointManager->popWaypoint();
             QTimer::singleShot(m_lastDelayDuration, this, &MainWindow::processNextWaypoint);
             break;
 
@@ -375,8 +376,6 @@ flight_states::FlightState MainWindow::getFlightState(const Waypoint &waypoint) 
         if (dataLogger_->getRecording()) {
             dataLogger_->log_data("Processing next waypoint");
         }
-
-        emit ui->waypointManager->popWaypoint();
 
         // Check if we have waypoints available
         if (ui->waypointManager->hasWaypoints()) {
