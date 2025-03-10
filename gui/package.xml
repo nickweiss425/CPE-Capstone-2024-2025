@@ -5,13 +5,23 @@
   <version>1.0.0</version>
   <description>NGCP Flight control</description>
   <maintainer email="jcarls20@calpoly.edu">root</maintainer>
-  <license>TODO: License declaration</license>
+  <license>none</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
   <depend>rclcpp</depend>
   <depend>gui_messages</depend>
   <depend>qtbase5-dev</depend>
   <depend>sensor_msgs</depend>
+  <depend>qtquickcontrols2-5-dev</depend>
+  <depend>qtlocation5-dev</depend>
+  <depend>qtpositioning5-dev</depend>
+  <depend>qtmultimedia5-dev</depend>
+  <depend>x11-xserver-utils</depend>
+  <depend>qml-module-qtquick-window2</depend>
+  <depend>qml-module-qtquick2</depend>
+  <depend>qml-module-qtlocation</depend>
+  <depend>qml-module-qtpositioning</depend>
+  <depend>qml-module-qtquick-controls2</depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
@@ -20,3 +30,4 @@
     <build_type>ament_cmake</build_type>
   </export>
 </package>
+
