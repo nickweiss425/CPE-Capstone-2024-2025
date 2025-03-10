@@ -39,15 +39,15 @@
  using namespace std::chrono_literals;
  using namespace px4_msgs::msg;
  using namespace gui_messages::msg;
- 
- 
- 
- 
- 
- 
- 
- 
- 
+  
+  
+  
+  
+  
+  
+  
+  
+  
  class OffboardControl : public rclcpp::Node // new class that inherits from ROS 2 node class
  {
  public:
@@ -71,11 +71,6 @@
 		 command_ack_publisher_ = this->create_publisher<std_msgs::msg::Int32>("/waypoint_ack", 10);
  
  
-		 // subscriber to read desired state messages from gui
-		 // gui_command_subscriber_ = this->create_subscription<std_msgs::msg::Int32>(
-		 //     "desired_state", 10, std::bind(&OffboardControl::stateCallback, this, std::placeholders::_1));
- 
- 
 		 // subscriber to monitor local location of the drone
 		 odometry_subscriber_ = this->create_subscription<VehicleOdometry>(
 			 "/fmu/out/vehicle_odometry", qos, std::bind(&OffboardControl::odometryCallback, this, std::placeholders::_1));
@@ -84,7 +79,7 @@
 		 // subscriber to monitor gps location of drone
 		 gps_px4_subscriber_ = this->create_subscription<SensorGps>(
 			 "/fmu/out/vehicle_gps_position",  qos, std::bind(&OffboardControl::gpsCallback, this, std::placeholders::_1));
-		
+	 
 		 // subscriber to sensor information from the drone
 		 sensor_px4_subscriber_ = this->create_subscription<SensorCombined>(
 			 "/fmu/out/sensor_combined",  qos, std::bind(&OffboardControl::sensorCallback, this, std::placeholders::_1));
@@ -96,20 +91,17 @@
  
  
  
- 
- 
- 
 		 offboard_setpoint_counter_ = 0;
 		 gui_data_delay_ = 0;
  
  
 		 // timer to ensure this block of code runs every 100ms
 		 auto timer_callback = [this]() -> void {
-			
+		 
 			 if (offboard_setpoint_counter_ == 10) {
 				 // Change to Offboard mode after 10 setpoints
 				 this->publish_vehicle_command(VehicleCommand::VEHICLE_CMD_DO_SET_MODE, 1, 6);
-				
+			 
 				 // delay data publishing to 1 time out of 10 callbacks (1 sec)
 				 gui_data_delay_++;
 				 if (gui_data_delay_ == 10){
@@ -131,10 +123,12 @@
 						 break;
 					 // land at set home position: local position of 0,0,0
 					 case FlightState::HOME_LAND:
-						 publish_trajectory_setpoint(0.0, 0.0, 0.0);                    
+						 handleHomeLandingState();                    
 						 break;
-					 case FlightState::WAYPOINT_HOLD:
-						 publish_trajectory_setpoint(target_x_, target_y_, target_altitude_);
+					 case FlightState::LOITER_WAYPOINT:
+						 handleLoiterWaypointState(target_x_, target_y_, target_altitude_);
+						 break;
+					 case FlightState::LOITER:
 						 break;
 					 // fly to edge of circle, centered around given waypoint
 					 case FlightState::CIRCLE_WAYPOINT:
@@ -162,12 +156,12 @@
 						 break;
 					 // land directly below where drone currently is
 					 case FlightState::LAND_IN_PLACE:
-						 publish_trajectory_setpoint(cur_x_, cur_y_, 0.0);
+						 handleLandInPlaceState();
 						 break;
-				 }
-			 }
- 
- 
+				  }
+			  }
+  
+  
 			 // offboard_control_mode needs to be paired with trajectory_setpoint
 			 publish_offboard_control_mode();
  
@@ -185,8 +179,8 @@
  
 	 void arm();
 	 void disarm();
- 
- 
+  
+  
  private:
 	 // enum to hold flight states for state machine
 	 enum class FlightState {
@@ -195,7 +189,8 @@
 		 HOME_LAND = 2,
 		 CIRCLE_WAYPOINT = 3,
 		 CIRCLE_PATH = 4,
-		 WAYPOINT_HOLD = 5,
+		 LOITER_WAYPOINT = 5,
+		 LOITER = 6,
 		 SQUARE_WAYPOINT = 7,
 		 SQUARE_PATH = 8,
 		 LAND_IN_PLACE = 9,
@@ -225,10 +220,10 @@
 	 rclcpp::Subscription<VehicleOdometry>::SharedPtr odometry_subscriber_;
 	 rclcpp::Subscription<SensorCombined>::SharedPtr sensor_px4_subscriber_;
 	 rclcpp::Subscription<FlightCommand>::SharedPtr flight_command_subscriber_;
- 
- 
- 
- 
+  
+  
+  
+  
 	 std::atomic<uint64_t> timestamp_;   //!< common synced timestamped
  
  
@@ -300,16 +295,9 @@
  
  
  
- 
- 
- 
- 
 	 void publish_offboard_control_mode();
 	 void publish_trajectory_setpoint(float x, float y, float z);
 	 void publish_vehicle_command(uint16_t command, float param1 = 0.0, float param2 = 0.0);
- 
- 
- 
  
  
  
@@ -330,34 +318,62 @@
 	 // helper function to handle launching the drone to given altitude
 	 void handleTakeoffState(float initial_altitude)
 	 {
-		// Arm the vehicle
-		this->arm();
-		if (!check_at_setpoint(0, 0, initial_altitude, 0.2)){
-			publish_trajectory_setpoint(0, 0, initial_altitude);
-		}
-		// send ack once reached takeoff location
-		else{
-			RCLCPP_INFO(this->get_logger(), "PUBLISHING TAKEOFF ACK\n");
-			auto ack_msg = std_msgs::msg::Int32();
-			ack_msg.data = static_cast<int>(FlightState::TAKEOFF);
-			command_ack_publisher_->publish(ack_msg);
-		}
-
+		 // Arm the vehicle
+		 this->arm();
+		 if (!check_at_setpoint(0, 0, initial_altitude, 0.2)){
+			 publish_trajectory_setpoint(0, 0, initial_altitude);
+		 }
+		 // send ack once reached takeoff location
+		 else{
+			 RCLCPP_INFO(this->get_logger(), "PUBLISHING TAKEOFF ACK\n");
+			 auto ack_msg = std_msgs::msg::Int32();
+			 ack_msg.data = static_cast<int>(FlightState::TAKEOFF);
+			 command_ack_publisher_->publish(ack_msg);
+		 }
+ 
 	 }
+  
  
+	 // helper function to handle returning the drone to home position
+	 void handleLandInPlaceState(void)
+	 {
+		 if (!check_at_setpoint(cur_x_, cur_y_, 0.0, 0.2)){
+			 publish_trajectory_setpoint(cur_x_, cur_y_, 0.0);
+		 }
+		 else{
+			 this->disarm();
+			 current_state_ = FlightState::LANDED;
+		 }
  
+	 }
+  
 	 // helper function to handle returning the drone to home position
 	 void handleHomeLandingState(void)
 	 {
-		 publish_trajectory_setpoint(0.0, 0.0, 0.0);
+		 if (!check_at_setpoint(0.0, 0.0, 0.0, 0.2)){
+			 publish_trajectory_setpoint(0.0, 0.0, 0.0);
+		 }
+		 else{
+			 this->disarm();
+			 current_state_ = FlightState::LANDED;
+		 }
+ 
 	 }
  
  
 	 // keep sending trajectory setpoint messages until at target setpoint
-	 void handleWaypointState(float x, float y, float z)
+	 void handleLoiterWaypointState(float x, float y, float z)
 	 {  
-		 if (!check_at_setpoint(x, y, z, 2)){
+		 if (!check_at_setpoint(x, y, z, 0.2)){
 			 publish_trajectory_setpoint(x, y, z);
+		 }
+		 else{
+			 // send ACK to gui
+			 RCLCPP_INFO(this->get_logger(), "PUBLISHING LOITER ACK\n");
+			 auto ack_msg = std_msgs::msg::Int32();
+			 ack_msg.data = static_cast<int>(FlightState::LOITER);
+			 command_ack_publisher_->publish(ack_msg);
+			 current_state_ = FlightState::LOITER;
 		 }
 	 }
  
@@ -410,7 +426,7 @@
 		 else if (figure8_y < waypoint_y){
 			 angle_ -= angular_step_;
 		 }
-		
+	 
  
  
 		 // if on right part of 8 and drone comes back to start, change to left part of 8
@@ -452,7 +468,7 @@
 			 auto ack_msg = std_msgs::msg::Int32();
 			 ack_msg.data = static_cast<int>(FlightState::CIRCLE_PATH);
 			 command_ack_publisher_->publish(ack_msg);
-						
+					 
  
  
 			 current_state_ = FlightState::CIRCLE_PATH;
@@ -516,7 +532,7 @@
 			 auto ack_msg = std_msgs::msg::Int32();
 			 ack_msg.data = static_cast<int>(FlightState::SQUARE_PATH);
 			 command_ack_publisher_->publish(ack_msg);
-						
+					 
  
  
 			 current_state_ = FlightState::SQUARE_PATH;
@@ -586,21 +602,6 @@
 	 }
  
  
-	
- 
- 
-	 // function that gets called when a new state from topic is received
-	 // void stateCallback(const std_msgs::msg::Int32::SharedPtr msg) {
-	 //     int state_int = msg->data;
-	 //  // make sure valid state is received
-	 //     if (state_int >= 0 && state_int <= 11) {
-	 //         current_state_ = static_cast<FlightState>(state_int);
-	 //         RCLCPP_INFO(this->get_logger(), "Received new state: %s", flightStateToString(state_int).c_str());
-	 //     } else {
-	 //         RCLCPP_WARN(this->get_logger(), "Invalid state received: %s", flightStateToString(state_int).c_str());
-	 //     }
-	 // }
- 
  
 	 // callback function for when drone receives odometry messages from uorb topic
 	 void odometryCallback(const VehicleOdometry msg) {
@@ -622,7 +623,7 @@
 		 current_state_ = static_cast<FlightState>(msg.waypoint_type);
 		 updateLocalTargets();
 		 std::cout << "Received Flight Command:\n" << "Latitude: " << target_lat_ << "\nLongitude: " << target_lon_ << "\nAltitude: " << target_altitude_ << "\nRadius: " << circle_radius_ <<  "\nLength: " << square_length_ << std::endl;
-		
+	 
 	 }
  
  
@@ -648,7 +649,7 @@
  
 	 // callback function for when drone receives gps messages
 	 void gpsCallback(const SensorGps msg) {
-		
+	 
 		 // update in class variables
 		 cur_lat_ = msg.latitude_deg;
 		 cur_lon_ = msg.longitude_deg;
@@ -731,8 +732,11 @@
 			 case FlightState::CIRCLE_PATH:
 				 return "CIRCLE_PATH";
 				 break;
-			 case FlightState::WAYPOINT_HOLD:
-				 return "WAYPOINT_HOLD";
+			 case FlightState::LOITER_WAYPOINT:
+				 return "LOITER_WAYPOINT";
+				 break;
+			 case FlightState::LOITER:
+				 return "LOITER";
 				 break;
 			 case FlightState::SQUARE_WAYPOINT:
 				 return "SQUARE_WAYPOINT";
@@ -754,12 +758,12 @@
 			 }
 	 }
  };
- 
- 
- 
- 
- 
- 
+  
+  
+  
+  
+  
+  
  /**
   * @brief Send a command to Arm the vehicle
   */
@@ -776,8 +780,8 @@
  
 	 //RCLCPP_INFO(this->get_logger(), "Arm command send");
  }
- 
- 
+  
+  
  /**
   * @brief Send a command to Disarm the vehicle
   */
@@ -788,8 +792,8 @@
  
 	 //RCLCPP_INFO(this->get_logger(), "Disarm command send");
  }
- 
- 
+  
+  
  /**
   * @brief Publish the offboard control mode.
   *        For this example, only position and altitude controls are active.
@@ -805,8 +809,8 @@
 	 msg.timestamp = this->get_clock()->now().nanoseconds() / 1000;
 	 offboard_control_mode_publisher_->publish(msg);
  }
- 
- 
+  
+  
  /**
   * @brief Publish a trajectory setpoint
   *        For this example, it sends a trajectory setpoint to make the
@@ -820,14 +824,14 @@
 	 msg.timestamp = this->get_clock()->now().nanoseconds() / 1000;
 	 trajectory_setpoint_publisher_->publish(msg);
  }
- 
- 
- 
- 
- 
- 
- 
- 
+  
+  
+  
+  
+  
+  
+  
+  
  /**
   * @brief Publish vehicle commands
   * @param command   Command code (matches VehicleCommand and MAVLink MAV_CMD codes)
@@ -861,7 +865,8 @@
 	 rclcpp::shutdown();
 	 return 0;
  }
- 
- 
- 
+  
+  
+  
+  
  
