@@ -86,6 +86,9 @@ void MainWindow::setupConnections() {
         connect(map, SIGNAL(waypointSelected(int)), ui->waypointManager, SLOT(onWaypointSelected(int)));
         connect(map, SIGNAL(waypointRemoved(int)), ui->waypointManager, SLOT(onWaypointRemoved(int)));
         connect(gpsWidget, &GPSWidget::coordinatesUpdated, ui->waypointManager, &WaypointManager::getDronePosition);
+        connect(ui->waypointManager, &WaypointManager::popWaypoint, this, [this]() {
+            QMetaObject::invokeMethod(ui->mapView->rootObject(), "onPopWaypoint");
+        });
         connect(ui->waypointManager, &WaypointManager::updateDronePosition, this, [this](double lat, double lon) {
             QMetaObject::invokeMethod(ui->mapView->rootObject(), "updateDronePosition", Q_ARG(QVariant, lat), Q_ARG(QVariant, lon));
         });
@@ -166,7 +169,7 @@ void MainWindow::toggleRecording() {
  * It also changes the text of the toggle recording button to the record icon.
  */
 void MainWindow::stopFlight() {
-    statePublisher->publish_state(0, 0, 0, 0, 0, 0, flight_states::FlightState::LANDED);
+    statePublisher->publish_state(0, 0, 0, 0, 0, 0, flight_states::FlightState::HOME_LAND);
     ui->toggleRecordingButton->setText(QCoreApplication::translate("MainWindow", "\342\217\272", nullptr));
     auto dataLogger_ = DataLogger::getInstance();
     if (dataLogger_->getRecording()) {
@@ -313,7 +316,7 @@ void MainWindow::handleDroneStateReceive(const std_msgs::msg::Int32 &msg) {
             QTimer::singleShot(m_lastDelayDuration, this, &MainWindow::processNextWaypoint);
             break;
 
-        case flight_states::FlightState::WAYPOINT_HOLD:
+        case flight_states::FlightState::LOITER:
         case flight_states::FlightState::CIRCLE_PATH:
         case flight_states::FlightState::SQUARE_PATH:
         case flight_states::FlightState::FIGURE8_PATH:
@@ -345,7 +348,7 @@ void MainWindow::handleDroneStateReceive(const std_msgs::msg::Int32 &msg) {
 flight_states::FlightState MainWindow::getFlightState(const Waypoint &waypoint) {
     switch (waypoint.type) {
         case WaypointType::LOITER:
-            return flight_states::FlightState::WAYPOINT_HOLD;
+            return flight_states::FlightState::LOITER_WAYPOINT;
         case WaypointType::CIRCLE:
             return flight_states::FlightState::CIRCLE_WAYPOINT;
         case WaypointType::FIGUREEIGHT:
@@ -372,6 +375,8 @@ flight_states::FlightState MainWindow::getFlightState(const Waypoint &waypoint) 
         if (dataLogger_->getRecording()) {
             dataLogger_->log_data("Processing next waypoint");
         }
+
+        emit ui->waypointManager->popWaypoint();
 
         // Check if we have waypoints available
         if (ui->waypointManager->hasWaypoints()) {

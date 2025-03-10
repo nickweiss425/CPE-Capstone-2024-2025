@@ -30,6 +30,10 @@ Rectangle {
         updateDroneRotation()
     }
 
+    function onPopWaypoint() {
+        markers.shift()
+    }
+
     // Make the drone icon point towards the first coordinate
     function updateDroneRotation() {
         if (markers.length > 0) {

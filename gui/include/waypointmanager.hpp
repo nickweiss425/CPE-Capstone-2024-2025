@@ -43,6 +43,7 @@ signals:
     void updateWaypointVisual(int index, int type);
     void updateDronePosition(double latitude, double longitude);
     void resetWaypointButtons();
+    void popWaypoint();
 
 public slots:
     void onWaypointAdded(double latitude, double longitude);
