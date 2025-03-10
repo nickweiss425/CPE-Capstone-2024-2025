@@ -8,6 +8,7 @@
 #include "sensor_msgs/msg/imu.hpp"
 #include "std_msgs/msg/int32.hpp"
 #include "std_msgs/msg/empty.hpp"
+#include "gui_messages/msg/flight_command.hpp"
 
 using std::placeholders::_1;
 
@@ -27,6 +28,7 @@ private:
     rclcpp::Publisher<sensor_msgs::msg::Imu>::SharedPtr imu_publisher_;
     rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr flight_state_publisher_;
     rclcpp::Publisher<std_msgs::msg::Empty>::SharedPtr heartbeat_publisher_;
+    rclcpp::Publisher<gui_messages::msg::FlightCommand>::SharedPtr flight_command_publisher_;
 
     /* libserial */
     LibSerial::SerialStream serial_;
@@ -36,5 +38,6 @@ private:
     void publish_imu(uint8_t *raw_msg);
     void publish_state(uint8_t *raw_msg);
     void publish_heartbeat(uint8_t *raw_msg);
+    void publish_flight_command(uint8_t *raw_msg);
 };
 

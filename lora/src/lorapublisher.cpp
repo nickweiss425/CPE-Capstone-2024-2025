@@ -25,6 +25,7 @@ LoraPublisher::LoraPublisher(): Node("lora_publisher") {
     imu_publisher_ = this->create_publisher<sensor_msgs::msg::Imu>("/imu", 10);
     flight_state_publisher_ = this->create_publisher<std_msgs::msg::Int32>("/desired_state", 10);
     heartbeat_publisher_ = this->create_publisher<std_msgs::msg::Empty>("/heartbeat", 10);
+    flight_command_publisher_ = this->create_publisher<gui_messages::msg::FlightCommand>("flight_command", 10);
 
     /* init serial port */
     try {
@@ -101,6 +102,10 @@ void LoraPublisher::timer_callback()
             total_bytes = sizeof(heartbeat_serialized_t);
             RCLCPP_INFO(this->get_logger(), "Received HEARTBEAT message");
             break;
+        case topic_st::FLIGHT_COMMAND:
+            total_bytes = sizeof(flight_command_serialized_t);
+            RCLCPP_INFO(this->get_logger(), "Received FLIGHT_COMMAND message");
+            break;
         default:
             RCLCPP_INFO(this->get_logger(), "Received unknown message");
             delete[] msg;
@@ -131,6 +136,9 @@ void LoraPublisher::timer_callback()
                 break;
             case topic_st::HEARTBEAT:
                 publish_heartbeat(msg);
+                break;
+            case topic_st::FLIGHT_COMMAND:
+                publish_flight_command(msg);
                 break;
             default:
                 RCLCPP_INFO(this->get_logger(), "Received unknown message topic.");
@@ -199,3 +207,21 @@ void LoraPublisher::publish_heartbeat(uint8_t *raw_msg)
     heartbeat_publisher_->publish(msg);
 }
 
+
+/* Publish received FLIGHT_COMMAND data to ROS node */
+void LoraPublisher::publish_flight_command(uint8_t *raw_msg)
+{
+    RCLCPP_INFO(this->get_logger(), "LORA received /desired_state");
+
+    flight_command_serialized_t *fc = (flight_command_serialized_t *)(raw_msg);
+    auto msg = gui_messages::msg::FlightCommand();
+    msg.latitude_deg = fc->latitude_deg;
+    msg.longitude_deg = fc->longitude_deg;
+    msg.altitude = fc->altitude;
+    msg.radius = fc->radius;
+    msg.length = fc->length;
+    msg.duration = fc->duration;
+    msg.waypoint_type = fc->waypoint_type;
+
+    flight_command_publisher_->publish(msg);
+}
