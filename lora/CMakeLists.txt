@@ -10,6 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(gui_messages REQUIRED)
 
 # Manually link libserial
 find_library(SERIAL_LIB serial)
@@ -20,8 +21,8 @@ add_executable(subscriber src/lorasubscriber.cpp)
 add_executable(publisher src/lorapublisher.cpp)
 target_link_libraries(subscriber ${SERIAL_LIB})
 target_link_libraries(publisher ${SERIAL_LIB})
-ament_target_dependencies(subscriber rclcpp std_msgs sensor_msgs)
-ament_target_dependencies(publisher rclcpp std_msgs sensor_msgs)
+ament_target_dependencies(subscriber rclcpp std_msgs sensor_msgs gui_messages)
+ament_target_dependencies(publisher rclcpp std_msgs sensor_msgs gui_messages)
 
 install(TARGETS
   subscriber

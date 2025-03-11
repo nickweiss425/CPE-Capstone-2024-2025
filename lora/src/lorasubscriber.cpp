@@ -28,8 +28,14 @@ LoraSubscriber::LoraSubscriber(): Node("lora_subscriber") {
           "/imu", 10, std::bind(&LoraSubscriber::imu_topic_callback, this, _1));
     flight_state_subscription_ = this->create_subscription<std_msgs::msg::Int32>(
           "desired_state", 10, std::bind(&LoraSubscriber::flight_state_topic_callback, this, _1));
-    heartbeat_subscription_ = this->create_subscription<std_msgs::msg::Empty>(
-          "/heartbeat", 10, std::bind(&LoraSubscriber::heartbeat_topic_callback, this, _1));
+    heartbeat_ping_subscription_ = this->create_subscription<std_msgs::msg::Empty>(
+          "/heartbeat/ping", 10, std::bind(&LoraSubscriber::heartbeat_ping_topic_callback, this, _1));
+    heartbeat_ack_subscription_ = this->create_subscription<std_msgs::msg::Empty>(
+          "/heartbeat/ack", 10, std::bind(&LoraSubscriber::heartbeat_ack_topic_callback, this, _1));
+    flight_command_subscription_ = this->create_subscription<gui_messages::msg::FlightCommand>(
+          "flight_command", 10, std::bind(&LoraSubscriber::flight_command_topic_callback, this, _1));
+    waypoint_ack_subscription_ = this->create_subscription<std_msgs::msg::Int32>(
+          "/waypoint_ack", 10, std::bind(&LoraSubscriber::waypoint_ack_topic_callback, this, _1));
 
     /* init serial port */
     try {
@@ -114,24 +120,93 @@ void LoraSubscriber::flight_state_topic_callback(const std_msgs::msg::Int32 &msg
 }
 
 
-/* Receive ROS HEARTBEAT message and publish to serial */
-void LoraSubscriber::heartbeat_topic_callback(const std_msgs::msg::Empty &msg)
+/* Receive ROS HEARTBEAT PING message and publish to serial */
+void LoraSubscriber::heartbeat_ping_topic_callback(const std_msgs::msg::Empty &msg)
 {
     (void)msg;
 
-    RCLCPP_INFO(this->get_logger(), "LORA subscriber handling heartbeat");
-    heartbeat_serialized_t hs;
+    RCLCPP_INFO(this->get_logger(), "LORA subscriber handling heartbeat ping");
+    heartbeat_ping_serialized_t hs;
     static char preamble[PREAMBLESIZE + 1] = ":)";
 
     /* create byte array to hold data */
-    uint8_t buffer[sizeof(heartbeat_serialized_t) + PREAMBLESIZE];
+    uint8_t buffer[sizeof(heartbeat_ping_serialized_t) + PREAMBLESIZE];
     std::memcpy(buffer, preamble, PREAMBLESIZE);
-    std::memcpy(buffer + PREAMBLESIZE, &hs, sizeof(heartbeat_serialized_t));
+    std::memcpy(buffer + PREAMBLESIZE, &hs, sizeof(heartbeat_ping_serialized_t));
 
     /* write to serial port byte by byte*/
-    for (size_t i = 0; i < sizeof(heartbeat_serialized_t) + PREAMBLESIZE; i++)
+    for (size_t i = 0; i < sizeof(heartbeat_ping_serialized_t) + PREAMBLESIZE; i++)
     {
         serial_ << buffer[i];
     }
 }
 
+
+/* Receive ROS HEARTBEAT ACK message and publish to serial */
+void LoraSubscriber::heartbeat_ack_topic_callback(const std_msgs::msg::Empty &msg)
+{
+    (void)msg;
+
+    RCLCPP_INFO(this->get_logger(), "LORA subscriber handling heartbeat ack");
+    heartbeat_ack_serialized_t hs;
+    static char preamble[PREAMBLESIZE + 1] = ":)";
+
+    /* create byte array to hold data */
+    uint8_t buffer[sizeof(heartbeat_ack_serialized_t) + PREAMBLESIZE];
+    std::memcpy(buffer, preamble, PREAMBLESIZE);
+    std::memcpy(buffer + PREAMBLESIZE, &hs, sizeof(heartbeat_ack_serialized_t));
+
+    /* write to serial port byte by byte*/
+    for (size_t i = 0; i < sizeof(heartbeat_ack_serialized_t) + PREAMBLESIZE; i++)
+    {
+        serial_ << buffer[i];
+    }
+}
+
+
+/* Receive ROS STATE data and publish to serial */
+void LoraSubscriber::flight_command_topic_callback(const gui_messages::msg::FlightCommand &msg)
+{
+    RCLCPP_INFO(this->get_logger(), "LORA subscriber handling flight command");
+    flight_command_serialized_t fc;
+    fc.latitude_deg = msg.latitude_deg;
+    fc.longitude_deg = msg.longitude_deg;
+    fc.altitude = msg.altitude;
+    fc.radius = msg.radius;
+    fc.length = msg.length;
+    fc.duration = msg.duration;
+    fc.waypoint_type = msg.waypoint_type;
+    static char preamble[PREAMBLESIZE + 1] = ":)";
+
+    /* create byte array to hold data */
+    uint8_t buffer[sizeof(flight_command_serialized_t) + PREAMBLESIZE];
+    std::memcpy(buffer, preamble, PREAMBLESIZE);
+    std::memcpy(buffer + PREAMBLESIZE, &fc, sizeof(flight_command_serialized_t));
+
+    /* write to serial port byte by byte*/
+    for (size_t i = 0; i < sizeof(flight_command_serialized_t) + PREAMBLESIZE; i++)
+    {
+        serial_ << buffer[i];
+    }
+}
+
+
+/* Receive WAYPOINT ACK data and publish to serial */
+void LoraSubscriber::waypoint_ack_topic_callback(const std_msgs::msg::Int32 &msg)
+{
+    RCLCPP_INFO(this->get_logger(), "LORA subscriber handling waypoint ack");
+    waypoint_ack_serialized_t wa;
+    wa.ack = msg.data;
+    static char preamble[PREAMBLESIZE + 1] = ":)";
+
+    /* create byte array to hold data */
+    uint8_t buffer[sizeof(waypoint_ack_serialized_t) + PREAMBLESIZE];
+    std::memcpy(buffer, preamble, PREAMBLESIZE);
+    std::memcpy(buffer + PREAMBLESIZE, &wa, sizeof(waypoint_ack_serialized_t));
+
+    /* write to serial port byte by byte*/
+    for (size_t i = 0; i < sizeof(waypoint_ack_serialized_t) + PREAMBLESIZE; i++)
+    {
+        serial_ << buffer[i];
+    }
+}

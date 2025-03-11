@@ -13,12 +13,13 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(gui_messages REQUIRED)
 
 add_executable(groundstation src/groundstation.cpp)
 add_executable(drone src/drone.cpp)
 
 ament_target_dependencies(groundstation rclcpp std_msgs)
-ament_target_dependencies(drone rclcpp std_msgs)
+ament_target_dependencies(drone rclcpp std_msgs gui_messages)
 
 install(TARGETS
   groundstation

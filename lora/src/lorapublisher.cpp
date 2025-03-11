@@ -24,7 +24,10 @@ LoraPublisher::LoraPublisher(): Node("lora_publisher") {
     gps_publisher_ = this->create_publisher<sensor_msgs::msg::NavSatFix>("/gps/fix", 10);
     imu_publisher_ = this->create_publisher<sensor_msgs::msg::Imu>("/imu", 10);
     flight_state_publisher_ = this->create_publisher<std_msgs::msg::Int32>("/desired_state", 10);
-    heartbeat_publisher_ = this->create_publisher<std_msgs::msg::Empty>("/heartbeat", 10);
+    heartbeat_ping_publisher_ = this->create_publisher<std_msgs::msg::Empty>("/heartbeat/ping", 10);
+    heartbeat_ack_publisher_ = this->create_publisher<std_msgs::msg::Empty>("/heartbeat/ack", 10);
+    flight_command_publisher_ = this->create_publisher<gui_messages::msg::FlightCommand>("flight_command", 10);
+    waypoint_ack_publisher_ = this->create_publisher<std_msgs::msg::Int32>("/waypoint_ack", 10);
 
     /* init serial port */
     try {
@@ -97,9 +100,21 @@ void LoraPublisher::timer_callback()
             total_bytes = sizeof(flight_state_serialized_t);
             RCLCPP_INFO(this->get_logger(), "Received STATE message");
             break;
-        case topic_st::HEARTBEAT:
-            total_bytes = sizeof(heartbeat_serialized_t);
-            RCLCPP_INFO(this->get_logger(), "Received HEARTBEAT message");
+        case topic_st::HEARTBEAT_PING:
+            total_bytes = sizeof(heartbeat_ping_serialized_t);
+            RCLCPP_INFO(this->get_logger(), "Received HEARTBEAT PING message");
+            break;
+        case topic_st::HEARTBEAT_ACK:
+            total_bytes = sizeof(heartbeat_ack_serialized_t);
+            RCLCPP_INFO(this->get_logger(), "Received HEARTBEAT ACK message");
+            break;
+        case topic_st::FLIGHT_COMMAND:
+            total_bytes = sizeof(flight_command_serialized_t);
+            RCLCPP_INFO(this->get_logger(), "Received FLIGHT COMMAND message");
+            break;
+        case topic_st::WAYPOINT_ACK:
+            total_bytes = sizeof(waypoint_ack_serialized_t);
+            RCLCPP_INFO(this->get_logger(), "Received WAYPOINT ACK message");
             break;
         default:
             RCLCPP_INFO(this->get_logger(), "Received unknown message");
@@ -129,8 +144,17 @@ void LoraPublisher::timer_callback()
             case topic_st::DESIRED_STATE:
                 publish_state(msg);
                 break;
-            case topic_st::HEARTBEAT:
-                publish_heartbeat(msg);
+            case topic_st::HEARTBEAT_PING:
+                publish_heartbeat_ping(msg);
+                break;
+            case topic_st::HEARTBEAT_ACK:
+                publish_heartbeat_ack(msg);
+                break;
+            case topic_st::FLIGHT_COMMAND:
+                publish_flight_command(msg);
+                break;
+            case topic_st::WAYPOINT_ACK:
+                publish_waypoint_ack(msg);
                 break;
             default:
                 RCLCPP_INFO(this->get_logger(), "Received unknown message topic.");
@@ -189,13 +213,55 @@ void LoraPublisher::publish_state(uint8_t *raw_msg)
 }
 
 
-/* Publish received HEARTBEAT to ROS node */
-void LoraPublisher::publish_heartbeat(uint8_t *raw_msg)
+/* Publish received HEARTBEAT PING to ROS node */
+void LoraPublisher::publish_heartbeat_ping(uint8_t *raw_msg)
 {
-    RCLCPP_INFO(this->get_logger(), "LORA received /heartbeat");
+    RCLCPP_INFO(this->get_logger(), "LORA received /heartbeat/ping");
     (void)raw_msg;
 
     auto msg = std_msgs::msg::Empty();
-    heartbeat_publisher_->publish(msg);
+    heartbeat_ping_publisher_->publish(msg);
 }
 
+
+/* Publish received HEARTBEAT ACK to ROS node */
+void LoraPublisher::publish_heartbeat_ack(uint8_t *raw_msg)
+{
+    RCLCPP_INFO(this->get_logger(), "LORA received /heartbeat/ack");
+    (void)raw_msg;
+
+    auto msg = std_msgs::msg::Empty();
+    heartbeat_ack_publisher_->publish(msg);
+}
+
+
+/* Publish received FLIGHT_COMMAND data to ROS node */
+void LoraPublisher::publish_flight_command(uint8_t *raw_msg)
+{
+    RCLCPP_INFO(this->get_logger(), "LORA received flight_command");
+
+    flight_command_serialized_t *fc = (flight_command_serialized_t *)(raw_msg);
+    auto msg = gui_messages::msg::FlightCommand();
+    msg.latitude_deg = fc->latitude_deg;
+    msg.longitude_deg = fc->longitude_deg;
+    msg.altitude = fc->altitude;
+    msg.radius = fc->radius;
+    msg.length = fc->length;
+    msg.duration = fc->duration;
+    msg.waypoint_type = fc->waypoint_type;
+
+    flight_command_publisher_->publish(msg);
+}
+
+
+/* Publish received WAYPOINT ACK data to ROS node */
+void LoraPublisher::publish_waypoint_ack(uint8_t *raw_msg)
+{
+    RCLCPP_INFO(this->get_logger(), "LORA received /waypoint_ack");
+
+    waypoint_ack_serialized_t *wa = (waypoint_ack_serialized_t *)(raw_msg);
+    auto msg = std_msgs::msg::Int32();
+    msg.data = wa->ack;
+
+    waypoint_ack_publisher_->publish(msg);
+}
