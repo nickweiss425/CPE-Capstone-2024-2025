@@ -115,8 +115,9 @@
 				 switch (current_state_) {
 					 // landed state, no work to do
 					 case FlightState::LANDED:
+					 	 handleLandedState();
 						 break;
-					 // fly straight up from home to given altitude
+					 // fly straight up from home to standard altitude
 					 case FlightState::TAKEOFF:
 						 handleTakeoffState(-10);
 						 break;
@@ -337,24 +338,36 @@
 	 // helper function to handle returning the drone to home position
 	 void handleLandInPlaceState(void)
 	 {
-		 if (!check_at_setpoint(cur_x_, cur_y_, 0.0, 0.2)){
-			 publish_trajectory_setpoint(cur_x_, cur_y_, 0.0);
+		 if (!check_at_setpoint(cur_x_, cur_y_, -10.0, 0.2)){
+			 publish_trajectory_setpoint(cur_x_, cur_y_, -10.0);
 		 }
 		 else{
-			 this->disarm();
 			 current_state_ = FlightState::LANDED;
 		 }
  
 	 }
-  
+	 
+	 // land straight below where drone is and disarm
+	 void handleLandedState(void){
+		VehicleCommand msg{};
+		msg.timestamp = this->get_clock()->now().nanoseconds() / 1000; // Convert to microseconds
+        msg.command = px4_msgs::msg::VehicleCommand::VEHICLE_CMD_NAV_LAND;
+        msg.target_system = 1;
+        msg.target_component = 1;
+        msg.source_system = 1;
+        msg.source_component = 1;
+        msg.from_external = true;
+		vehicle_command_publisher_->publish(msg);
+		this->disarm();
+	 }
+
 	 // helper function to handle returning the drone to home position
 	 void handleHomeLandingState(void)
 	 {
-		 if (!check_at_setpoint(0.0, 0.0, 0.0, 0.2)){
-			 publish_trajectory_setpoint(0.0, 0.0, 0.0);
+		 if (!check_at_setpoint(0.0, 0.0, -10.0, 0.2)){
+			 publish_trajectory_setpoint(0.0, 0.0, -10.0);
 		 }
 		 else{
-			 this->disarm();
 			 current_state_ = FlightState::LANDED;
 		 }
  
