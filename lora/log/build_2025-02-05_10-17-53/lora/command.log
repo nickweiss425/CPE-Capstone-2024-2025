@@ -1,4 +1,0 @@
-Invoking command in '/home/niweiss/CPE-Capstone-2024-2025/lora/build/lora': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/niweiss/CPE-Capstone-2024-2025/lora/build/lora -- -j16 -l16
-Invoked command in '/home/niweiss/CPE-Capstone-2024-2025/lora/build/lora' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/niweiss/CPE-Capstone-2024-2025/lora/build/lora -- -j16 -l16
-Invoking command in '/home/niweiss/CPE-Capstone-2024-2025/lora/build/lora': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/niweiss/CPE-Capstone-2024-2025/lora/build/lora
-Invoked command in '/home/niweiss/CPE-Capstone-2024-2025/lora/build/lora' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/niweiss/CPE-Capstone-2024-2025/lora/build/lora
