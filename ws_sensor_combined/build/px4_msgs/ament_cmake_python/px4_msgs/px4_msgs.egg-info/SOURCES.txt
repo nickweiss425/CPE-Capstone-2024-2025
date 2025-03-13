@@ -21,7 +21,6 @@ px4_msgs/msg/_arming_check_reply.py
 px4_msgs/msg/_arming_check_request.py
 px4_msgs/msg/_autotune_attitude_control_status.py
 px4_msgs/msg/_battery_status.py
-px4_msgs/msg/_buffer128.py
 px4_msgs/msg/_button_event.py
 px4_msgs/msg/_camera_capture.py
 px4_msgs/msg/_camera_status.py
@@ -152,17 +151,8 @@ px4_msgs/msg/_rc_channels.py
 px4_msgs/msg/_rc_parameter_map.py
 px4_msgs/msg/_register_ext_component_reply.py
 px4_msgs/msg/_register_ext_component_request.py
-px4_msgs/msg/_rover_ackermann_guidance_status.py
-px4_msgs/msg/_rover_ackermann_setpoint.py
-px4_msgs/msg/_rover_ackermann_status.py
 px4_msgs/msg/_rover_attitude_setpoint.py
 px4_msgs/msg/_rover_attitude_status.py
-px4_msgs/msg/_rover_differential_guidance_status.py
-px4_msgs/msg/_rover_differential_setpoint.py
-px4_msgs/msg/_rover_differential_status.py
-px4_msgs/msg/_rover_mecanum_guidance_status.py
-px4_msgs/msg/_rover_mecanum_setpoint.py
-px4_msgs/msg/_rover_mecanum_status.py
 px4_msgs/msg/_rover_rate_setpoint.py
 px4_msgs/msg/_rover_rate_status.py
 px4_msgs/msg/_rover_steering_setpoint.py
@@ -198,9 +188,7 @@ px4_msgs/msg/_tecs_status.py
 px4_msgs/msg/_telemetry_status.py
 px4_msgs/msg/_tiltrotor_extra_controls.py
 px4_msgs/msg/_timesync_status.py
-px4_msgs/msg/_trajectory_bezier.py
 px4_msgs/msg/_trajectory_setpoint.py
-px4_msgs/msg/_trajectory_waypoint.py
 px4_msgs/msg/_transponder_report.py
 px4_msgs/msg/_tune_control.py
 px4_msgs/msg/_uavcan_parameter_request.py
@@ -233,8 +221,6 @@ px4_msgs/msg/_vehicle_roi.py
 px4_msgs/msg/_vehicle_status.py
 px4_msgs/msg/_vehicle_thrust_setpoint.py
 px4_msgs/msg/_vehicle_torque_setpoint.py
-px4_msgs/msg/_vehicle_trajectory_bezier.py
-px4_msgs/msg/_vehicle_trajectory_waypoint.py
 px4_msgs/msg/_velocity_limits.py
 px4_msgs/msg/_vtol_vehicle_status.py
 px4_msgs/msg/_wheel_encoders.py

@@ -112,7 +112,6 @@
  
  
 				 // check current command state from GUI
-				 //RCLCPP_INFO(this->get_logger(), "CURRENT STATE: %s", flightStateToString(static_cast<int>(current_state_)).c_str());
 				 switch (current_state_) {
 					 // landed state, no work to do
 					 case FlightState::LANDED:
@@ -129,6 +128,7 @@
 						 handleLoiterWaypointState(target_x_, target_y_, target_altitude_);
 						 break;
 					 case FlightState::LOITER:
+						 publish_trajectory_setpoint(target_x_, target_y_, target_altitude_);
 						 break;
 					 // fly to edge of circle, centered around given waypoint
 					 case FlightState::CIRCLE_WAYPOINT:
